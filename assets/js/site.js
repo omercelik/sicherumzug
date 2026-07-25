@@ -108,27 +108,41 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   var photosInput = document.getElementById('form-photos');
   var previewContainer = document.getElementById('file-preview-container');
   if (photosInput && previewContainer) {
-    var loadedFiles = [];
+    var selectedFiles = [];
     function updateInputAndRender() {
       var dt = new DataTransfer();
-      loadedFiles.forEach(function(f) { dt.items.add(f); });
+      selectedFiles.forEach(function(f) { dt.items.add(f); });
       photosInput.files = dt.files;
+      if (selectedFiles.length === 0) photosInput.value = '';
+      renderPreviews();
+    }
+    function renderPreviews() {
       previewContainer.innerHTML = '';
-      loadedFiles.forEach(function(file, idx) {
+      selectedFiles.forEach(function(file, index) {
         var wrapper = document.createElement('div');
-        wrapper.className = 'relative aspect-square rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105';
+        wrapper.className = 'relative aspect-square rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 group';
+
         var img = document.createElement('img');
         img.className = 'h-full w-full object-cover';
         img.alt = file.name;
-        wrapper.appendChild(img);
+
         var btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'absolute top-1.5 right-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-white shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors z-10 cursor-pointer';
-        btn.innerHTML = '<span class="material-symbols-outlined text-sm font-bold" style="font-size: 14px;">close</span>';
-        btn.setAttribute('aria-label', 'Foto entfernen: ' + file.name);
-        btn.onclick = function() {
-          loadedFiles.splice(idx, 1);
+        btn.className = 'absolute top-1.5 right-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-white shadow hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 transition-all duration-200 z-10';
+        btn.setAttribute('aria-label', 'Foto entfernen');
+        btn.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">close</span>';
+        btn.addEventListener('click', function() {
+          selectedFiles.splice(index, 1);
           updateInputAndRender();
+        });
+
+        wrapper.appendChild(img);
+        wrapper.appendChild(btn);
+        previewContainer.appendChild(wrapper);
+
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          img.src = e.target.result;
         };
         wrapper.appendChild(btn);
         previewContainer.appendChild(wrapper);
@@ -139,8 +153,8 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     }
     photosInput.addEventListener('change', function() {
       if (photosInput.files) {
-        Array.prototype.forEach.call(photosInput.files, function(f) {
-          if (f.type.startsWith('image/')) loadedFiles.push(f);
+        Array.prototype.forEach.call(photosInput.files, function(file) {
+          if (file.type.startsWith('image/')) selectedFiles.push(file);
         });
         updateInputAndRender();
       }
