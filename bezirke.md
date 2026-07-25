@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Entrümpelung in Wien & Österreich"
-seo_title: "Entrümpelung Standorte Wien & Österreich | Sicher Team"
-description: "Alle Standortseiten von Sicher Team – Schwerpunkt Wien, dazu Hubs in Niederösterreich, Burgenland, Steiermark, Kärnten, Oberösterreich und Salzburg."
+title: "Umzug & Übersiedlung in Wien & Österreich"
+seo_title: "Umzug Standorte Wien & Österreich | Sicher Team"
+description: "Alle Standortseiten von Sicher Team für Umzug & Übersiedlung – Schwerpunkt Wien, dazu Hubs in allen Bundesländern."
 permalink: /bezirke/
 kicker: "Standorte"
 ---
@@ -18,7 +18,7 @@ kicker: "Standorte"
         Dienstleister suchen müssen. Wählen Sie Ihr Bundesland, entdecken Sie die jeweiligen Bezirksseiten und fordern Sie ein maßgeschneidertes Angebot an.
       </p>
       <p class="mt-3 text-base text-text-light">
-        Wenn Sie direkt eine <a href="{{ '/leistungen/raeumung/' | relative_url }}" class="font-semibold text-primary hover:underline">Entrümpelung Wien zum Fixpreis</a> buchen möchten, führt unsere Leistungsseite sofort zu Preisen, Ablauf und Kontakt.
+        Wenn Sie direkt eine <a href="{{ '/leistungen/umzug-wien/' | relative_url }}" class="font-semibold text-primary hover:underline">Umzug Wien zum Fixpreis</a> buchen möchten, führt unsere Leistungsseite sofort zu Preisen, Ablauf und Kontakt.
       </p>
       <div class="mt-6 flex flex-col gap-3 sm:flex-row">
         <a href="{{ '/angebot/' | relative_url }}" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-white hover:bg-primary-light">
@@ -41,15 +41,15 @@ kicker: "Standorte"
     </div>
     <div class="mt-10 rounded-3xl bg-white p-6 shadow-lg">
       <p class="text-sm font-semibold uppercase tracking-[0.3em] text-primary-accent">Meistgesuchte Bezirke</p>
-      <p class="mt-2 text-base text-text-light">Diese Seiten decken Suchanfragen wie „Entrümpelung 1180 Wien“ oder „Wohnungsräumung 1210“ ab – direkt verlinkt, damit Sie ohne Umwege zum passenden Angebot kommen.</p>
+      <p class="mt-2 text-base text-text-light">Diese Seiten decken Suchanfragen wie „Umzug 1180 Wien“ oder „Übersiedlung 1210“ ab – direkt verlinkt, damit Sie ohne Umwege zum passenden Angebot kommen.</p>
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {% assign hot_districts = "
-          haushaltsaufloesung-1170-wien:Entrümpelung 1170 Wien,
-          haushaltsaufloesung-1180-wien:Entrümpelung 1180 Wien,
-          haushaltsaufloesung-1190-wien:Döbling & Grinzing,
-          haushaltsaufloesung-1210-wien:Floridsdorf & Donauraum,
-          haushaltsaufloesung-1220-wien:Donaustadt & Seestadt,
-          haushaltsaufloesung-klosterneuburg:Klosterneuburg & Ölberg
+          umzug-1170-wien:Umzug 1170 Wien,
+          umzug-1180-wien:Umzug 1180 Wien,
+          umzug-1190-wien:Döbling & Grinzing,
+          umzug-1210-wien:Floridsdorf & Donauraum,
+          umzug-1220-wien:Donaustadt & Seestadt,
+          umzug-klosterneuburg:Klosterneuburg & Ölberg
         " | split: "," %}
         {% for entry in hot_districts %}
         {% assign parts = entry | split: ":" %}
@@ -73,7 +73,7 @@ kicker: "Standorte"
       <article class="flex h-full flex-col justify-between rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
         <div>
           <p class="text-l font-semibold uppercase tracking-[0.3em] text-primary">{{ state.kicker | default: 'Bundesland' }}</p>
-          <h3 class="mt-2 text-xl font-bold text-primary">Entrümpelung in {{ state.title }}</h3>
+          <h3 class="mt-2 text-xl font-bold text-primary">Umzug in {{ state.title }}</h3>
           <p class="mt-2 text-sm text-text-light">{{ state.description }}</p>
           <ul class="mt-4 space-y-1 text-sm text-primary max-h-48 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-200">
             {% for location in locations %}

@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Professioneller Umzug & Übersiedlung in Österreich | Sicher Team"
-seo_title: "Sicher Team | Professioneller Umzug & Übersiedlung in ganz Österreich"
+seo_title: "Umzugsfirma Österreich | Möbeltransport & Montage"
 description: "Sicher Team ist Ihr voll versicherter Partner für Umzug & Übersiedlung in ganz Österreich. 100% Fixpreis, All-Risk-Transportversicherung & geschultes Fachpersonal."
 hero:
   title: "Professioneller Umzug & Übersiedlung in Österreich"
