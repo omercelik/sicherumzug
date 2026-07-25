@@ -68,7 +68,7 @@ Besonderes Augenmerk legen wir auf zerbrechliche Gegenstände aus Küche und Woh
 
 Ein Umzug ist erst dann wirklich abgeschlossen, wenn alle Möbel an ihrem Platz stehen und aufgebaut sind. Unser Team in Salzburg verfügt über erfahrene Tischler und Monteure, die sich mit allen gängigen Möbelsystemen namhafter Hersteller bestens auskennen. Auch bei antiken Stücken wissen unsere Experten genau, wo sie ansetzen müssen.
 
-Wir demontieren Ihre Betten, Schränke, komplexen Regalsysteme und auf Wunsch auch Küchen fachgerecht und bauen sie am Zielort wieder präzise auf. Dabei achten wir darauf, dass alle Verbindungen stabil sind, Dübel fest sitzen und die Türen und Schubladen einwandfrei schließen. Auch die professionelle Wandmontage von Hängeschränken, großen Spiegeln, Lampen oder Flatscreen-Fernsehern übernehmen wir gerne für Sie. Sollten Anpassungsarbeiten nötig sein, beispielsweise weil ein Schrank im neuen Raum aufgrund einer veränderten Raumhöhe oder einer Dachschräge gekürzt werden muss, führen unsere Tischler diese Arbeiten direkt und professionell durch.
+Unsere geschulten Tischler demontieren Ihre Betten, Schränke und Regalsysteme fachgerecht und bauen sie am Zielort präzise wieder auf. Dabei garantieren wir höchste Qualität und Stabilität bei jedem Möbelstück.
 
 ### Transparenz und Sicherheit: Unsere Fixpreisgarantie
 
@@ -80,7 +80,7 @@ Zudem ist Ihr Hab und Gut bei uns in sicheren Händen. Wir verfügen über eine 
 
 ### Nachhaltigkeit im Umzugswesen
 
-Auch im Transportbereich wird das Thema Nachhaltigkeit immer wichtiger. Wir achten darauf, Leerfahrten zu minimieren und unsere Routen durch Salzburg optimal zu planen, um Treibstoff zu sparen und Emissionen zu reduzieren. Zudem verwenden wir Umzugskartons, die aus recyceltem Material bestehen und mehrfach verwendet werden können, bevor sie fachgerecht recycelt werden. Wir empfehlen unseren Kunden, nicht mehr benötigte, aber intakte Möbelstücke zu spenden oder weiterzuverkaufen, anstatt sie wegzuwerfen, um Ressourcen zu schonen. Wenn Sie Verpackungsmaterialien nach dem Umzug nicht mehr benötigen, nehmen wir diese bei der Endabnahme gerne wieder mit.
+Wir setzen auf ressourcenschonende Umzüge. Durch optimierte Tourenplanung und die Mehrfachverwendung unserer stabilen Umzugskartons leisten wir einen Beitrag zum Umweltschutz in Ihrer Region.
 
 ### Checkliste: So bereiten Sie Ihren Umzug optimal vor
 

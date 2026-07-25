@@ -1,12 +1,16 @@
-- title: Kostenlose Besichtigung
-  description: Kontaktieren Sie uns per Formular, Telefon oder WhatsApp. Wir vereinbaren eine schnelle, kostenlose Besichtigung vor Ort oder via Foto-Check.
-  icon: phone
+- title: Volumen- & Bedarfsanalyse
+  description: Kostenlose Besichtigung und Volumenberechnung (in Kubikmeter) vor Ort oder via Foto/Video-Check zur exakten Bedarfsermittlung.
+  icon: straight_straighten
   order: 1
 - title: Schriftliches Fixpreis-Angebot
-  description: Sie erhalten ein verbindliches Angebot inklusive aller Leistungen (Transport, De-/Montage, Versicherung) – garantiert ohne versteckte Kosten.
-  icon: gavel
+  description: Sie erhalten ein verbindliches, detailliertes Angebot inklusive Verpackungsmaterial, De-/Montage und All-Risk-Transportversicherung – garantiert ohne versteckte Kosten.
+  icon: description
   order: 2
-- title: Entspannter Umzugstag
-  description: Unser geschultes Fachpersonal führt den sicheren Möbeltransport pünktlich und sorgfältig durch. Sie können sich entspannt zurücklehnen.
+- title: Verpackung, Demontage & Sicherer Transport
+  description: Fachmännische Verpackung, Demontage Ihrer Möbel und sicherer Transport im luftgefederten LKW durch unser geschultes Personal.
   icon: local_shipping
   order: 3
+- title: Montage & Schlüsselfertige Übergabe
+  description: Millimetergenaue Möbelmontage am neuen Standort und gemeinsame Endabnahme für einen stressfreien Abschluss.
+  icon: hand_gesture
+  order: 4

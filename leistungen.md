@@ -1,8 +1,8 @@
 ---
 layout: service-index
-title: "Professionelle Entrümpelung in Wien"
-seo_title: "Räumungsfirma Wien | Leistungen & Wertanrechnung"
-description: "Entrümpelungsleistungen für Wien und Ostösterreich. Privat, Gewerbe und Spezialfälle mit Fixpreis, Wertanrechnung, WhatsApp-Kontakt und Expressservice."
+title: "Professioneller Umzug & Übersiedlung in Österreich"
+seo_title: "Umzugsfirma Österreich | Leistungen & Montage"
+description: "Umzugsleistungen für Wien und Österreich. Privat, Gewerbe mit Fixpreis, Transportversicherung und Montage."
 kicker: "Leistungen"
 permalink: /leistungen/
 include_form: true
@@ -22,7 +22,7 @@ categories:
     title: "Wertanrechnung"
     description: "Wir rechnen Antiquitäten, Möbel und Altwaren nur im Zuge von Entrümpelung/Räumung an – faire Gutschrift statt Einzelankauf."
 ---
-Sicher Team ist Ihr vertrauenswürdiger Partner für jede Art von Räumung in Wien. Von der privaten Wohnungsauflösung über komplette Firmenauflösungen bis hin zu sensiblen Spezialfällen bieten wir eine professionelle, transparente und faire Lösung. Unser Versprechen: **Fixpreis + maximaler Wertanrechnung**. Größere Projekte betreuen wir gemeinsam mit Partnern auch außerhalb Wiens – inklusive Planung, Transport und Wertanrechnung.
+Sicher Team ist Ihr vertrauenswürdiger Partner für jede Art von Umzug & Übersiedlung in Österreich. Von der privaten Übersiedlung über komplette Firmenumzüge bis hin zu sensiblen Spezialfällen bieten wir eine professionelle, transparente und faire Lösung. Unser Versprechen: **Fixpreis + Transportversicherung + Montage**. Größere Projekte betreuen wir gemeinsam mit Partnern auch außerhalb Wiens – inklusive Planung und Transport.
 
 Wir bündeln alle Leistungen auf dieser Seite, damit Sie schnell jede Angebotsvariante finden und direkt zur passenden Detailseite navigieren können.
 
@@ -51,14 +51,14 @@ Mehr Stimmen – inklusive Projektfotos und Wertanrechnung-Beispielen – finden
 
 ### Beliebte Leistungen im Überblick
 
-- [Entrümpelung Wien zum Fixpreis](/leistungen/entruempelung-wien/) für Komplettprojekte in allen 23 Bezirken
-- [Wohnungsauflösung Wien](/leistungen/haushaltsaufloesung/) mit Wertanrechnung
-- [Wohnungsauflösung Wien](/leistungen/wohnungsaufloesung/) für Mieterwechsel, Übergaben und Fixpreise
-- [Wohnungsauflösung Wien Überblick](/leistungen/haushaltsaufloesung-ueberblick/) als Leitfaden zu Kosten und Ablauf
-- [Hausräumung Wien](/leistungen/hausraeumung/) für Einfamilien- und Reihenhäuser
-- [Garagenräumung Wien](/leistungen/garagenraeumung/) für volle Garagen, Werkbänke und Lagerecken
-- [Zimmer Räumung Wien](/leistungen/zimmer-raeumung/) für Studentenwohnungen und WGs
-- [Messie-Entrümpelung Wien](/leistungen/messie-entruempelung/) inklusive Hygieneplan
+- [Umzug Wien zum Fixpreis](/leistungen/umzug-wien/) für Komplettprojekte in allen 23 Bezirken
+- [Umzug Wien](/leistungen/umzug-wien/) mit Wertanrechnung
+- [Wohnungsübersiedlung Wien](/leistungen/umzug-wien/) für Mieterwechsel, Übergaben und Fixpreise
+- [Umzug Wien Überblick](/leistungen/umzug-ueberblick/) als Leitfaden zu Kosten und Ablauf
+- [Hausumzug Wien](/leistungen/hausumzug/) für Einfamilien- und Reihenhäuser
+- [Spezialtransporte Wien](/leistungen/spezialtransporte/) für volle Garagen, Werkbänke und Lagerecken
+- [Studentenumzug Wien](/leistungen/studentenumzug/) für Studentenwohnungen und WGs
+- [Wohlfühl-Umzug Wien](/leistungen/wohlfuehl-umzug/) inklusive Hygieneplan
 
 ### Gewerbliche Umzüge & Leistungen
 

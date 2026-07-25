@@ -9,18 +9,18 @@
 {% assign canonical_base = site.canonical_base_url | default: site.url %}
 {% assign canonical_source = page.canonical %}
 {% if canonical_source %}
-{% if canonical_source contains '://' %}
-<link rel="canonical" href="{{ canonical_source }}">
+  {% if canonical_source contains '://' %}
+    <link rel="canonical" href="{{ canonical_source }}">
+  {% elsif canonical_base %}
+    <link rel="canonical" href="{{ canonical_base | append: canonical_source }}">
+  {% else %}
+    <link rel="canonical" href="{{ canonical_source | absolute_url }}">
+  {% endif %}
 {% elsif canonical_base %}
-<link rel="canonical" href="{{ canonical_base | append: canonical_source }}">
+  {% assign canonical_path = page.url | default: '/' %}
+  <link rel="canonical" href="{{ canonical_base | append: canonical_path }}">
 {% else %}
-<link rel="canonical" href="{{ canonical_source | absolute_url }}">
-{% endif %}
-{% elsif canonical_base %}
-{% assign canonical_path = page.url | default: '/' %}
-<link rel="canonical" href="{{ canonical_base | append: canonical_path }}">
-{% else %}
-<link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% endif %}
 
 <!-- Open Graph -->
