@@ -144,7 +144,11 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         reader.onload = function(e) {
           img.src = e.target.result;
         };
-        reader.readAsDataURL(file);
+        wrapper.appendChild(btn);
+        previewContainer.appendChild(wrapper);
+        var r = new FileReader();
+        r.onload = function(e) { img.src = e.target.result; };
+        r.readAsDataURL(file);
       });
     }
     photosInput.addEventListener('change', function() {
