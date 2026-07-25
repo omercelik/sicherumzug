@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
 
   // Close mobile menu on Escape key press
   document.addEventListener('keydown', function handleEscapeKey(e) {
-    if (e.key === 'Escape' || e.keyCode === 27) {
+    if (e.key === 'Escape' || e.key === 'Esc' || e.keyCode === 27) {
       if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
         mobileMenuToggle();
       }
@@ -48,15 +48,6 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   if (yearTarget) {
     yearTarget.textContent = new Date().getFullYear();
   }
-
-  // Handle Escape key to close mobile menu
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' || event.key === 'Esc') {
-      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-        mobileMenuToggle();
-      }
-    }
-  });
 
   Array.prototype.forEach.call(faqButtons, function register(btn) {
     btn.addEventListener('click', function handleFaqToggle() {
