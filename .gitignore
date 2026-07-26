@@ -8,5 +8,3 @@ _site/
 *.pyc
 __pycache__/
 jekyll_build.log
-expand_content.py
-rewrite_states.py

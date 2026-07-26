@@ -67,35 +67,6 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     });
   });
 
-  var toggleDistrictsBtn = document.getElementById('toggle-districts');
-  if (toggleDistrictsBtn) {
-    toggleDistrictsBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      var allItems = document.querySelectorAll('#districts-list .district-item');
-      var isExpanded = toggleDistrictsBtn.getAttribute('data-expanded') === 'true';
-
-      Array.prototype.forEach.call(allItems, function(item, index) {
-        if (index >= 5) {
-          if (isExpanded) {
-            item.classList.add('hidden');
-          } else {
-            item.classList.remove('hidden');
-          }
-        }
-      });
-
-      if (isExpanded) {
-        toggleDistrictsBtn.textContent = 'Mehr anzeigen ↓';
-        toggleDistrictsBtn.setAttribute('data-expanded', 'false');
-        toggleDistrictsBtn.setAttribute('aria-expanded', 'false');
-      } else {
-        toggleDistrictsBtn.textContent = 'Weniger anzeigen ↑';
-        toggleDistrictsBtn.setAttribute('data-expanded', 'true');
-        toggleDistrictsBtn.setAttribute('aria-expanded', 'true');
-      }
-    });
-  }
-
   var photosInput = document.getElementById('form-photos');
   var previewContainer = document.getElementById('file-preview-container');
   if (photosInput && previewContainer) {
