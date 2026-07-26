@@ -109,6 +109,25 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     }
     function renderPreviews() {
       previewContainer.innerHTML = '';
+
+      var countIndicator = document.getElementById('file-count-indicator');
+      if (selectedFiles.length > 0) {
+        if (!countIndicator) {
+          countIndicator = document.createElement('p');
+          countIndicator.id = 'file-count-indicator';
+          countIndicator.className = 'mt-2 text-xs font-bold text-primary transition-all duration-200';
+          previewContainer.parentNode.insertBefore(countIndicator, previewContainer.nextSibling);
+        }
+        countIndicator.textContent = selectedFiles.length === 1
+          ? '1 Foto ausgewählt'
+          : selectedFiles.length + ' Fotos ausgewählt';
+        countIndicator.style.display = 'block';
+      } else {
+        if (countIndicator) {
+          countIndicator.style.display = 'none';
+        }
+      }
+
       selectedFiles.forEach(function(file, index) {
         var wrapper = document.createElement('div');
         wrapper.className = 'relative aspect-square rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 group';
@@ -131,12 +150,6 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         wrapper.appendChild(btn);
         previewContainer.appendChild(wrapper);
 
-        var reader = new FileReader();
-        reader.onload = function(e) {
-          img.src = e.target.result;
-        };
-        wrapper.appendChild(btn);
-        previewContainer.appendChild(wrapper);
         var r = new FileReader();
         r.onload = function(e) { img.src = e.target.result; };
         r.readAsDataURL(file);
@@ -148,6 +161,99 @@ document.addEventListener('DOMContentLoaded', function domReady() {
           if (file.type.startsWith('image/')) selectedFiles.push(file);
         });
         updateInputAndRender();
+      }
+    });
+  }
+
+  // Live validation for form fields
+  var postcodeInp = document.getElementById('form-postcode');
+  var phoneInp = document.getElementById('form-phone');
+  var emailInp = document.getElementById('form-email');
+
+  function setFieldError(input, errorMsg) {
+    if (!input) return;
+    var errorId = input.id + '-error';
+    var errorEl = document.getElementById(errorId);
+    if (errorMsg) {
+      input.classList.remove('border-gray-200', 'focus:border-primary-light', 'focus:ring-primary-light/30');
+      input.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500/30');
+      if (!errorEl) {
+        errorEl = document.createElement('p');
+        errorEl.id = errorId;
+        errorEl.className = 'mt-1.5 text-xs text-red-600 font-bold flex items-center gap-1 transition-all duration-200';
+        input.parentNode.appendChild(errorEl);
+      }
+      errorEl.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">warning</span><span>' + errorMsg + '</span>';
+      input.setAttribute('aria-invalid', 'true');
+      input.setAttribute('aria-describedby', errorId);
+    } else {
+      input.classList.add('border-gray-200', 'focus:border-primary-light', 'focus:ring-primary-light/30');
+      input.classList.remove('border-red-500', 'focus:border-red-500', 'focus:ring-red-500/30');
+      if (errorEl) {
+        errorEl.remove();
+      }
+      input.removeAttribute('aria-invalid');
+      input.removeAttribute('aria-describedby');
+    }
+  }
+
+  if (postcodeInp) {
+    postcodeInp.addEventListener('input', function() {
+      var val = postcodeInp.value;
+      if (val && !/^[0-9]{4}$/.test(val)) {
+        if (val.length === 4 || !/^[0-9]*$/.test(val)) {
+          setFieldError(postcodeInp, 'PLZ muss aus genau 4 Ziffern bestehen.');
+        }
+      } else {
+        setFieldError(postcodeInp, null);
+      }
+    });
+    postcodeInp.addEventListener('blur', function() {
+      var val = postcodeInp.value;
+      if (!val) {
+        setFieldError(postcodeInp, 'PLZ ist ein Pflichtfeld.');
+      } else if (!/^[0-9]{4}$/.test(val)) {
+        setFieldError(postcodeInp, 'Geben Sie eine gültige 4-stellige PLZ ein (z.B. 1010).');
+      } else {
+        setFieldError(postcodeInp, null);
+      }
+    });
+  }
+
+  if (phoneInp) {
+    phoneInp.addEventListener('input', function() {
+      var val = phoneInp.value;
+      if (val && !/^[0-9\s\+\-\(\)]+$/.test(val)) {
+        setFieldError(phoneInp, 'Ungültige Zeichen in der Telefonnummer.');
+      } else {
+        setFieldError(phoneInp, null);
+      }
+    });
+    phoneInp.addEventListener('blur', function() {
+      var val = phoneInp.value;
+      if (!val) {
+        setFieldError(phoneInp, 'Telefonnummer ist ein Pflichtfeld.');
+      } else if (val.replace(/[^0-9]/g, '').length < 5) {
+        setFieldError(phoneInp, 'Bitte geben Sie eine gültige Telefonnummer ein (mind. 5 Ziffern).');
+      } else {
+        setFieldError(phoneInp, null);
+      }
+    });
+  }
+
+  if (emailInp) {
+    emailInp.addEventListener('input', function() {
+      var val = emailInp.value;
+      if (val && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+        setFieldError(emailInp, null);
+      }
+    });
+    emailInp.addEventListener('blur', function() {
+      var val = emailInp.value;
+      if (val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+        setFieldError(emailInp, 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+      } else {
+        setFieldError(emailInp, null);
       }
     });
   }
