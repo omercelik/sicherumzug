@@ -133,7 +133,6 @@ exclude:
   - vendor
   - plans
   - AGENTS.md
-  - analyze_seo.py
   - .bundle
 
 include:
