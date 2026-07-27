@@ -158,9 +158,17 @@ layout: default
       <p class="text-xs font-bold uppercase tracking-widest text-primary-accent">Leistungen</p>
       <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-primary tracking-tight">Unsere Leistungen für Umzug, Räumung & Entrümpelung</h2>
       <p class="mt-3 text-lg text-text-light leading-relaxed">{{ page.services_intro }}</p>
-      <div class="mt-6 flex justify-center">
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
         <a href="{{ '/leistungen/umzug-oesterreich/' | relative_url }}" class="inline-flex items-center gap-2 rounded-full bg-primary hover:bg-primary-light px-6 py-3 text-sm font-bold text-white shadow hover:shadow-md transition-all duration-200">
           Umzug & Übersiedlung zum Fixpreis
+          <span class="material-symbols-outlined text-base">north_east</span>
+        </a>
+        <a href="{{ '/leistungen/raeumung/' | relative_url }}" class="inline-flex items-center gap-2 rounded-full bg-primary hover:bg-primary-light px-6 py-3 text-sm font-bold text-white shadow hover:shadow-md transition-all duration-200">
+          Räumung & Wohnungsauflösung Wien
+          <span class="material-symbols-outlined text-base">north_east</span>
+        </a>
+        <a href="{{ '/leistungen/entruempelung/' | relative_url }}" class="inline-flex items-center gap-2 rounded-full bg-primary hover:bg-primary-light px-6 py-3 text-sm font-bold text-white shadow hover:shadow-md transition-all duration-200">
+          Entrümpelung & Wertanrechnung
           <span class="material-symbols-outlined text-base">north_east</span>
         </a>
       </div>
@@ -168,7 +176,7 @@ layout: default
     <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
       {% assign moving_services = "" | split: "," %}
       {% for item in site.data.service_cards %}
-        {% if item.title contains 'Umzug' or item.title contains 'Übersiedlung' or item.title contains 'Transport' %}
+        {% if item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
           {% assign moving_services = moving_services | push: item %}
         {% endif %}
       {% endfor %}
@@ -198,9 +206,11 @@ layout: default
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
         {% assign clearing_services = "" | split: "," %}
         {% for item in site.data.service_cards %}
-          {% if item.title contains 'Räumung' or item.title contains 'Entrümpelung' or item.title contains 'Auflösung' or item.title contains 'Verlassenschaften' %}
-            {% assign clearing_services = clearing_services | push: item %}
-          {% endif %}
+          {% unless item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
+            {% if item.title contains 'Räumung' or item.title contains 'Entrümpelung' or item.title contains 'Auflösung' or item.title contains 'Verlassenschaften' or item.title contains 'Keller' or item.title contains 'Garagen' %}
+              {% assign clearing_services = clearing_services | push: item %}
+            {% endif %}
+          {% endunless %}
         {% endfor %}
         {% for card in clearing_services %}
         <a href="{{ card.url | relative_url }}" class="group flex flex-col justify-between rounded-2xl border border-gray-100 bg-white p-6 text-left shadow-sm hover:shadow-md transition-all duration-300">
