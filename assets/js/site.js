@@ -25,10 +25,25 @@ window.mobileMenuToggle = function mobileMenuToggle() {
   }
 };
 
-window.toggleSubMenu = function toggleSubMenu(targetId) {
+window.toggleSubMenu = function toggleSubMenu(btn, targetId) {
+  if (arguments.length === 1 || typeof btn === 'string') {
+    targetId = btn;
+    btn = null;
+  }
   var target = document.getElementById(targetId);
   if (!target) return;
-  target.classList.toggle('hidden');
+  var isHidden = target.classList.toggle('hidden');
+  if (btn) {
+    btn.setAttribute('aria-expanded', !isHidden);
+    var icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      if (!isHidden) {
+        icon.classList.add('rotate-180');
+      } else {
+        icon.classList.remove('rotate-180');
+      }
+    }
+  }
 };
 
 document.addEventListener('DOMContentLoaded', function domReady() {
@@ -137,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   }
 
   // Live validation for form fields
+  var nameInp = document.getElementById('form-name');
   var postcodeInp = document.getElementById('form-postcode');
   var phoneInp = document.getElementById('form-phone');
   var emailInp = document.getElementById('form-email');
@@ -225,6 +241,37 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         setFieldError(emailInp, 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
       } else {
         setFieldError(emailInp, null);
+      }
+    });
+  }
+
+  if (nameInp) {
+    nameInp.addEventListener('input', function() {
+      if (nameInp.value.trim()) {
+        setFieldError(nameInp, null);
+      }
+    });
+    nameInp.addEventListener('blur', function() {
+      if (!nameInp.value.trim()) {
+        setFieldError(nameInp, 'Name ist ein Pflichtfeld.');
+      } else {
+        setFieldError(nameInp, null);
+      }
+    });
+  }
+
+  // Submit loading state to prevent double submission
+  var quoteForm = document.querySelector('form[action*="formspree.io"]');
+  if (quoteForm) {
+    quoteForm.addEventListener('submit', function() {
+      if (quoteForm.checkValidity && !quoteForm.checkValidity()) {
+        return;
+      }
+      var submitBtn = quoteForm.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+        submitBtn.innerHTML = '<span class="animate-spin mr-2 h-5 w-5 border-2 border-white border-t-transparent rounded-full inline-block"></span> Wird gesendet...';
       }
     });
   }

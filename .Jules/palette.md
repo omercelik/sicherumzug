@@ -17,3 +17,7 @@
 ## 2026-07-26 - Dynamic Form Validation and Selected File Counters
 **Learning:** Adding live accessible input validation (using `aria-invalid` and `aria-describedby` linked to dynamic warning message tags) alongside responsive file count indicators drastically reduces submit-time frustration and reinforces user confidence in static contact forms.
 **Action:** Always implement client-side interactive error checking on critical required/formatted input fields (like postcodes and phone numbers) and pair multiple file selections with a clear, localized selection count summary.
+
+## 2026-07-27 - Mobile Accordion WAI-ARIA Toggles & Form Submission Spinner
+**Learning:** For collapsible menus and mobile sub-navigation overlays, passing `this` to inline JavaScript handlers lets us dynamically maintain the `aria-expanded` state of triggers while smoothly rotating chevrons via CSS transitions. Additionally, intercepting valid static form submissions to disable buttons and display a localized CSS-animated loading spinner prevents duplicate requests and delivers reassuring immediate feedback.
+**Action:** Connect mobile accordion button triggers with target panels using `aria-expanded` and `aria-controls` linked via `this` context. Always disable form submit buttons post-validation and show an explicit spinner to prevent double-submissions.
