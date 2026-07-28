@@ -17,3 +17,7 @@
 ## 2026-07-26 - Dynamic Form Validation and Selected File Counters
 **Learning:** Adding live accessible input validation (using `aria-invalid` and `aria-describedby` linked to dynamic warning message tags) alongside responsive file count indicators drastically reduces submit-time frustration and reinforces user confidence in static contact forms.
 **Action:** Always implement client-side interactive error checking on critical required/formatted input fields (like postcodes and phone numbers) and pair multiple file selections with a clear, localized selection count summary.
+
+## 2026-07-28 - Native Double-Submit Prevention and Visual Submit State
+**Learning:** Preventing duplicate form submissions natively on static websites without AJAX requires intercepting the `submit` event, applying disabled CSS styling immediately, and using `setTimeout(..., 0)` to asynchronously disable the submit button. This ensures browsers successfully dispatch the form while visually feedbacking a CSS-animated loading spinner and 'Wird gesendet...' state.
+**Action:** Intercept native form submissions, inject animated SVGs with loading text, and disable the trigger asynchronously within a macrotask callback.
