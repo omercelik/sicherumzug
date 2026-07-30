@@ -105,6 +105,7 @@
     {% elsif hero_preload %}
     <link rel="preload" href="{{ hero_preload | relative_url }}" as="image" fetchpriority="high"/>
     {% endif %}
+    {% include meta_tags.html %}
     {% include seo.html %}
     <!-- GDPR Consent Management -->
 <script>

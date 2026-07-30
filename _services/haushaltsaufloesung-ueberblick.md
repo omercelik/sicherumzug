@@ -199,8 +199,8 @@ Als **Wohnungsauflösungsunternehmen in Wien** nutzen wir das dichte Netzwerk:
 
 ## 📞 Kontakt für Wohnungsauflösung Wien
 
-**📞 Telefon**: +43 660 6060628
-**💬 WhatsApp**: [Direkt chatten](https://wa.me/436606060628)
+**📞 Telefon**: +43 660 6060775
+**💬 WhatsApp**: [Direkt chatten](https://wa.me/436606060775)
 **📧 E-Mail**: office@sicher-umzug.at
 **🌐 Online**: [Kostenloses Angebot anfordern](/angebot/)
 

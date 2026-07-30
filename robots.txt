@@ -26,6 +26,9 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: CCBot
 Allow: /
 
@@ -49,3 +52,4 @@ User-agent: SemrushBot
 Disallow: /
 
 Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap-images.xml

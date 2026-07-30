@@ -126,8 +126,8 @@ Bei Übergabestress oder Wasserschaden prüfen wir Express-Slots, sichern Haltev
 
 ## Kontakt für Ihre Räumung in Wien
 
-- **Telefon:** +43 660 6060628
-- **WhatsApp:** [Direkt chatten](https://wa.me/436606060628)
+- **Telefon:** +43 660 6060775
+- **WhatsApp:** [Direkt chatten](https://wa.me/436606060775)
 - **Online:** [Kostenloses Angebot anfordern](/angebot/)
 
 Nennen Sie im Erstkontakt kurz Objektart, Frist und ob Demontagen/Container nötig sind – dann liefern wir sofort einen Termin- und Logistikvorschlag.
