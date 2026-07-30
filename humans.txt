@@ -1,0 +1,11 @@
+# humans.txt
+
+/* TEAM */
+  Engineer: Jules AI
+  Contact: office@sicher-umzug.at
+
+/* SITE */
+  Last update: 2025
+  Language: de
+  Doctype: HTML5
+  IDE: None

@@ -187,8 +187,8 @@ Besonders in Villen und gehobenen Wohnlagen:
 
 ## Kontakt für Wien Hausräumung
 
-**📞 Telefon**: +43 660 6060628
-**💬 WhatsApp**: [Direkt chatten](https://wa.me/436606060628)
+**📞 Telefon**: +43 660 6060775
+**💬 WhatsApp**: [Direkt chatten](https://wa.me/436606060775)
 **📧 E-Mail**: office@sicher-umzug.at
 **🌐 Online**: [Kostenloses Angebot anfordern](/angebot/)
 

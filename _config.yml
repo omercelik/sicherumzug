@@ -7,12 +7,12 @@ url: "https://sicherteam.github.io"
 canonical_base_url: "https://sicher-umzug.at"
 baseurl: "/sicherumzug/"
 email: office@sicher-umzug.at
-phone: "+43 660 6060628"
-whatsapp: "https://wa.me/436606060628"
+phone: "+43 660 6060775"
+whatsapp: "https://wa.me/436606060775"
 
 address:
-  street: "Grinzinger Str. 1"
-  postal_code: "1190"
+  street: "Wildgartenallee 1"
+  postal_code: "1120"
   city: "Wien"
   country: "AT"
 
@@ -146,8 +146,8 @@ local_business:
   type: HomeAndConstructionBusiness
   price_range: "€€"
   geo:
-    latitude: 48.2596
-    longitude: 16.3554
+    latitude: 48.1633
+    longitude: 16.3114
   service_area:
     - Wien
     - Niederösterreich
