@@ -21,3 +21,7 @@
 ## 2026-07-28 - Native Double-Submit Prevention and Visual Submit State
 **Learning:** Preventing duplicate form submissions natively on static websites without AJAX requires intercepting the `submit` event, applying disabled CSS styling immediately, and using `setTimeout(..., 0)` to asynchronously disable the submit button. This ensures browsers successfully dispatch the form while visually feedbacking a CSS-animated loading spinner and 'Wird gesendet...' state.
 **Action:** Intercept native form submissions, inject animated SVGs with loading text, and disable the trigger asynchronously within a macrotask callback.
+
+## 2026-07-30 - Focus Redirects for Form Validation and Keyboard Dismiss for CSS Megamenus
+**Learning:** While live input validation reduces errors, intercepting the form's `submit` event to block submissions on invalid state and programmatically focusing the first invalid field is essential for screen reader and keyboard accessibility. Additionally, CSS-only megamenus using `group-hover` and `group-focus-within` can be easily dismissed by keyboard users by listening for the `Escape` key globally and calling `.blur()` on the active element within the menu context.
+**Action:** Always block submissions of forms with custom live validation errors and auto-focus the first invalid input. For CSS-only hover/focus menus, implement global `Escape` key handlers that blur active triggers to close them immediately.
