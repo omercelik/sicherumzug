@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   }
 
   // Live validation for form fields
+  var nameInp = document.getElementById('form-name');
   var postcodeInp = document.getElementById('form-postcode');
   var phoneInp = document.getElementById('form-phone');
   var emailInp = document.getElementById('form-email');
@@ -166,6 +167,21 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       input.removeAttribute('aria-invalid');
       input.removeAttribute('aria-describedby');
     }
+  }
+
+  if (nameInp) {
+    nameInp.addEventListener('input', function() {
+      if (nameInp.value.trim()) {
+        setFieldError(nameInp, null);
+      }
+    });
+    nameInp.addEventListener('blur', function() {
+      if (!nameInp.value.trim()) {
+        setFieldError(nameInp, 'Name ist ein Pflichtfeld.');
+      } else {
+        setFieldError(nameInp, null);
+      }
+    });
   }
 
   if (postcodeInp) {
