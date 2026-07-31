@@ -20,7 +20,7 @@ module.exports = {
           DEFAULT: "#064e3b", // emerald-900 (dark green)
           light: "#059669",   // emerald-600
           button: "#059669",
-          accent: "#10b981"   // emerald-500
+          accent: "#047857"   // emerald-700
         },
         content: {
           accent: "#059669",

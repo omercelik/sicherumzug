@@ -6,22 +6,8 @@
   content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}">
 <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
 <meta name="author" content="{{ site.author | default: organization_name }}">
-{% assign canonical_base = site.canonical_base_url | default: site.url %}
-{% assign canonical_source = page.canonical %}
-{% if canonical_source %}
-  {% if canonical_source contains '://' %}
-    <link rel="canonical" href="{{ canonical_source }}">
-  {% elsif canonical_base %}
-    <link rel="canonical" href="{{ canonical_base | append: canonical_source }}">
-  {% else %}
-    <link rel="canonical" href="{{ canonical_source | absolute_url }}">
-  {% endif %}
-{% elsif canonical_base %}
-  {% assign canonical_path = page.url | default: '/' %}
-  <link rel="canonical" href="{{ canonical_base | append: canonical_path }}">
-{% else %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-{% endif %}
+
+<!-- Canonical tags handled in meta_tags.html -->
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ page.seo_title | default: page.title | default: organization_name }}">
