@@ -18,6 +18,6 @@
 **Learning:** Adding live accessible input validation (using `aria-invalid` and `aria-describedby` linked to dynamic warning message tags) alongside responsive file count indicators drastically reduces submit-time frustration and reinforces user confidence in static contact forms.
 **Action:** Always implement client-side interactive error checking on critical required/formatted input fields (like postcodes and phone numbers) and pair multiple file selections with a clear, localized selection count summary.
 
-## 2026-07-27 - Mobile Accordion WAI-ARIA Toggles & Form Submission Spinner
-**Learning:** For collapsible menus and mobile sub-navigation overlays, passing `this` to inline JavaScript handlers lets us dynamically maintain the `aria-expanded` state of triggers while smoothly rotating chevrons via CSS transitions. Additionally, intercepting valid static form submissions to disable buttons and display a localized CSS-animated loading spinner prevents duplicate requests and delivers reassuring immediate feedback.
-**Action:** Connect mobile accordion button triggers with target panels using `aria-expanded` and `aria-controls` linked via `this` context. Always disable form submit buttons post-validation and show an explicit spinner to prevent double-submissions.
+## 2026-07-28 - Native Double-Submit Prevention and Visual Submit State
+**Learning:** Preventing duplicate form submissions natively on static websites without AJAX requires intercepting the `submit` event, applying disabled CSS styling immediately, and using `setTimeout(..., 0)` to asynchronously disable the submit button. This ensures browsers successfully dispatch the form while visually feedbacking a CSS-animated loading spinner and 'Wird gesendet...' state.
+**Action:** Intercept native form submissions, inject animated SVGs with loading text, and disable the trigger asynchronously within a macrotask callback.

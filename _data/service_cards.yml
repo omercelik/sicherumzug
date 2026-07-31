@@ -1,15 +1,15 @@
-- title: Umzug & Übersiedlung
-  description: Professioneller Privatumzug & Büroumzug in ganz Österreich. Sicherer Transport mit All-Risk-Transportversicherung, geschultem Personal und zum garantierten Fixpreis.
+- title: Umzug & Übersiedlung Österreich
+  description: Professioneller Privatumzug & Firmenumzug bundesweit. Sicherer Transport mit All-Risk-Transportversicherung, Demontage/Montage und 100% Fixpreisgarantie.
   url: /leistungen/umzug-oesterreich/
   icon: local_shipping
-- title: Räumung & Wohnungsauflösung
-  description: Komplette Räumung, Wohnungsauflösung und Haushaltsauflösung von Häusern, Wohnungen und Gewerbeobjekten mit besenreiner Übergabe und Fixpreisgarantie.
+- title: Räumung & Hausauflösung Wien
+  description: Komplette Räumung von Wohnungen, Häusern und Gewerbeobjekten in Wien & Umgebung. Inklusive besenreiner Übergabe, Containerlogistik und Fixpreis.
   url: /leistungen/raeumung/
-  icon: home
-- title: Entrümpelung & Entsorgung
-  description: Fixpreis-Entrümpelung mit zertifizierter Entsorgung inklusive Wertanrechnung, besenreiner Übergabe und umweltgerechter Mülltrennung.
-  url: /leistungen/entruempelung-wien/
-  icon: delete
+  icon: location_city
+- title: Entrümpelung & Wertanrechnung
+  description: Professionelle Entrümpelung mit fairer Wertanrechnung. Fachgerechte Mülltrennung, umweltfreundliche Entsorgung und besenreine Hinterlassung zum Festpreis.
+  url: /leistungen/entruempelung/
+  icon: recycling
 - title: Kellerräumung
   description: Wir schaffen Platz in Keller, Garage oder Hobbyraum und entsorgen fachgerecht.
   url: /leistungen/kellerraeumung/
