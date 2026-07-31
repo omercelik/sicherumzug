@@ -7,7 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-include-cache"
   gem "csv"
+  gem "webrick", "~> 1.8"
 end
 
 # Required when running `bundle exec jekyll serve` locally on Ruby 3+
- gem "webrick", "~> 1.8"
