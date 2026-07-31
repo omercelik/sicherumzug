@@ -244,4 +244,25 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
     });
   }
+
+  // Double-submit prevention and direct loading feedback on the quote form
+  var quoteForm = document.querySelector('form[action*="formspree.io"]');
+  if (quoteForm) {
+    quoteForm.addEventListener('submit', function handleFormSubmit() {
+      var submitBtn = quoteForm.querySelector('button[type="submit"]');
+      if (!submitBtn) return;
+
+      // Inject CSS-animated loading spinner SVG alongside 'Wird gesendet...' text
+      submitBtn.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span>Wird gesendet...</span>';
+
+      // Apply disabled styles to make button visually disabled and prevent double submission
+      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+      submitBtn.classList.remove('hover:bg-primary-accent', 'hover:-translate-y-0.5', 'hover:shadow-xl', 'cursor-pointer');
+
+      // Asynchronously disable the button to allow native form action to submit the request
+      setTimeout(function() {
+        submitBtn.disabled = true;
+      }, 0);
+    });
+  }
 });
