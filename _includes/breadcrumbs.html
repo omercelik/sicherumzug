@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4">
     <ol class="flex items-center space-x-2 text-sm text-gray-600">
       <li class="flex items-center">
-        <a href="{{ '/' | relative_url }}" class="hover:text-primary transition-colors">Home</a>
+        <a href="{{ '/' | relative_url }}" class="hover:text-primary transition-opacity">Home</a>
       </li>
 
       {% assign breadcrumbs = page.breadcrumbs %}
@@ -11,30 +11,30 @@
           {% case page.collection %}
           {% when 'services' %}
             <li class="flex items-center">
-              <span class="mx-2 text-gray-400">/</span>
-              <a href="{{ '/leistungen/' | relative_url }}" class="hover:text-primary transition-colors">Leistungen</a>
+              <span class="mx-2 text-gray-600">/</span>
+              <a href="{{ '/leistungen/' | relative_url }}" class="hover:text-primary transition-opacity">Leistungen</a>
             </li>
           {% when 'districts' %}
             <li class="flex items-center">
-              <span class="mx-2 text-gray-400">/</span>
-              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-colors">Bezirke</a>
+              <span class="mx-2 text-gray-600">/</span>
+              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-opacity">Bezirke</a>
             </li>
           {% when 'guides' %}
             <li class="flex items-center">
-              <span class="mx-2 text-gray-400">/</span>
-              <a href="{{ '/ratgeber/' | relative_url }}" class="hover:text-primary transition-colors">Ratgeber</a>
+              <span class="mx-2 text-gray-600">/</span>
+              <a href="{{ '/ratgeber/' | relative_url }}" class="hover:text-primary transition-opacity">Ratgeber</a>
             </li>
           {% when 'states' %}
             <li class="flex items-center">
-              <span class="mx-2 text-gray-400">/</span>
-              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-colors">Bundesländer</a>
+              <span class="mx-2 text-gray-600">/</span>
+              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-opacity">Bundesländer</a>
             </li>
           {% endcase %}
         {% endif %}
       {% endif %}
 
       <li class="flex items-center">
-        <span class="mx-2 text-gray-400">/</span>
+        <span class="mx-2 text-gray-600">/</span>
         <span class="text-primary font-medium" aria-current="page">{{ page.title | default: site.brand_name }}</span>
       </li>
     </ol>

@@ -55,7 +55,7 @@ kicker: "Standorte"
         {% assign parts = entry | split: ":" %}
         {% assign slug = parts[0] | strip %}
         {% assign label = parts[1] | default: slug %}
-        <a href="{{ '/leistungen/' | append: slug | append: '/' | relative_url }}" class="flex items-center justify-between rounded-2xl border border-gray-200 bg-background-light px-4 py-3 text-left text-primary transition hover:border-primary hover:bg-white">
+        <a href="{{ '/leistungen/' | append: slug | append: '/' | relative_url }}" class="flex items-center justify-between rounded-2xl border border-gray-200 bg-background-light px-4 py-3 text-left text-primary transition-opacity hover:border-primary hover:bg-white">
           <span class="text-base font-semibold">{{ label | strip }}</span>
           <span class="material-symbols-outlined text-primary">north_east</span>
         </a>
