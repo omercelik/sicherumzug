@@ -50,11 +50,16 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   mobileMenu = document.getElementById('mobile-menu');
   faqButtons = document.querySelectorAll('[data-faq-toggle]');
 
-  // Close mobile menu on Escape key press
+  // Close mobile menu or desktop megamenus on Escape key press
   document.addEventListener('keydown', function handleEscapeKey(e) {
     if (e.key === 'Escape' || e.key === 'Esc' || e.keyCode === 27) {
       if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
         mobileMenuToggle();
+      } else {
+        var activeEl = document.activeElement;
+        if (activeEl && activeEl.closest('[data-mega-panel], .group')) {
+          activeEl.blur();
+        }
       }
     }
   });
@@ -184,6 +189,62 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     }
   }
 
+  function validateName() {
+    if (!nameInp) return true;
+    var val = nameInp.value.trim();
+    if (!val) {
+      setFieldError(nameInp, 'Name ist ein Pflichtfeld.');
+      return false;
+    }
+    setFieldError(nameInp, null);
+    return true;
+  }
+
+  function validatePostcode() {
+    if (!postcodeInp) return true;
+    var val = postcodeInp.value;
+    if (!val) {
+      setFieldError(postcodeInp, 'PLZ ist ein Pflichtfeld.');
+      return false;
+    }
+    if (!/^[0-9]{4}$/.test(val)) {
+      setFieldError(postcodeInp, 'Geben Sie eine gültige 4-stellige PLZ ein (z.B. 1010).');
+      return false;
+    }
+    setFieldError(postcodeInp, null);
+    return true;
+  }
+
+  function validatePhone() {
+    if (!phoneInp) return true;
+    var val = phoneInp.value;
+    if (!val) {
+      setFieldError(phoneInp, 'Telefonnummer ist ein Pflichtfeld.');
+      return false;
+    }
+    if (!/^[0-9\s\+\-\(\)]+$/.test(val)) {
+      setFieldError(phoneInp, 'Ungültige Zeichen in der Telefonnummer.');
+      return false;
+    }
+    if (val.replace(/[^0-9]/g, '').length < 5) {
+      setFieldError(phoneInp, 'Bitte geben Sie eine gültige Telefonnummer ein (mind. 5 Ziffern).');
+      return false;
+    }
+    setFieldError(phoneInp, null);
+    return true;
+  }
+
+  function validateEmail() {
+    if (!emailInp) return true;
+    var val = emailInp.value;
+    if (val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+      setFieldError(emailInp, 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+      return false;
+    }
+    setFieldError(emailInp, null);
+    return true;
+  }
+
   if (nameInp) {
     nameInp.addEventListener('input', function() {
       if (nameInp.value.trim()) {
@@ -191,11 +252,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
     });
     nameInp.addEventListener('blur', function() {
-      if (!nameInp.value.trim()) {
-        setFieldError(nameInp, 'Name ist ein Pflichtfeld.');
-      } else {
-        setFieldError(nameInp, null);
-      }
+      validateName();
     });
   }
 
@@ -211,14 +268,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
     });
     postcodeInp.addEventListener('blur', function() {
-      var val = postcodeInp.value;
-      if (!val) {
-        setFieldError(postcodeInp, 'PLZ ist ein Pflichtfeld.');
-      } else if (!/^[0-9]{4}$/.test(val)) {
-        setFieldError(postcodeInp, 'Geben Sie eine gültige 4-stellige PLZ ein (z.B. 1010).');
-      } else {
-        setFieldError(postcodeInp, null);
-      }
+      validatePostcode();
     });
   }
 
@@ -232,14 +282,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
     });
     phoneInp.addEventListener('blur', function() {
-      var val = phoneInp.value;
-      if (!val) {
-        setFieldError(phoneInp, 'Telefonnummer ist ein Pflichtfeld.');
-      } else if (val.replace(/[^0-9]/g, '').length < 5) {
-        setFieldError(phoneInp, 'Bitte geben Sie eine gültige Telefonnummer ein (mind. 5 Ziffern).');
-      } else {
-        setFieldError(phoneInp, null);
-      }
+      validatePhone();
     });
   }
 
@@ -251,19 +294,33 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
     });
     emailInp.addEventListener('blur', function() {
-      var val = emailInp.value;
-      if (val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-        setFieldError(emailInp, 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-      } else {
-        setFieldError(emailInp, null);
-      }
+      validateEmail();
     });
   }
 
   // Double-submit prevention and direct loading feedback on the quote form
   var quoteForm = document.querySelector('form[action*="formspree.io"]');
   if (quoteForm) {
-    quoteForm.addEventListener('submit', function handleFormSubmit() {
+    quoteForm.addEventListener('submit', function handleFormSubmit(e) {
+      var isNameValid = validateName();
+      var isPostcodeValid = validatePostcode();
+      var isPhoneValid = validatePhone();
+      var isEmailValid = validateEmail();
+
+      if (!isNameValid || !isPostcodeValid || !isPhoneValid || !isEmailValid) {
+        e.preventDefault();
+        var firstInvalid = null;
+        if (!isNameValid) firstInvalid = nameInp;
+        else if (!isPhoneValid) firstInvalid = phoneInp;
+        else if (!isPostcodeValid) firstInvalid = postcodeInp;
+        else if (!isEmailValid) firstInvalid = emailInp;
+
+        if (firstInvalid) {
+          firstInvalid.focus();
+        }
+        return;
+      }
+
       var submitBtn = quoteForm.querySelector('button[type="submit"]');
       if (!submitBtn) return;
 
