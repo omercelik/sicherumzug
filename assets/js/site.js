@@ -25,10 +25,25 @@ window.mobileMenuToggle = function mobileMenuToggle() {
   }
 };
 
-window.toggleSubMenu = function toggleSubMenu(targetId) {
+window.toggleSubMenu = function toggleSubMenu(btn, targetId) {
+  if (arguments.length === 1 || typeof btn === 'string') {
+    targetId = btn;
+    btn = null;
+  }
   var target = document.getElementById(targetId);
   if (!target) return;
-  target.classList.toggle('hidden');
+  var isHidden = target.classList.toggle('hidden');
+  if (btn) {
+    btn.setAttribute('aria-expanded', !isHidden);
+    var icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      if (!isHidden) {
+        icon.classList.add('rotate-180');
+      } else {
+        icon.classList.remove('rotate-180');
+      }
+    }
+  }
 };
 
 document.addEventListener('DOMContentLoaded', function domReady() {
