@@ -6,6 +6,8 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
   gem "jekyll-include-cache"
+  gem "csv"
+  gem "webrick"
 end
 
 # Required when running `bundle exec jekyll serve` locally on Ruby 3+
