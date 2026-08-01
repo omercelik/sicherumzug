@@ -1,0 +1,13 @@
+<div class="fixed top-0 left-0 w-full h-1 z-50 bg-background-light">
+  <div id="reading-progress" class="h-full bg-crimson" style="width: 0%;"></div>
+</div>
+<script>
+document.addEventListener('scroll', function() {
+  const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  if (scrollTotal > 0) {
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    const progress = (scrollPosition / scrollTotal) * 100;
+    document.getElementById('reading-progress').style.width = progress + '%';
+  }
+});
+</script>

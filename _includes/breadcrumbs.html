@@ -1,42 +1,30 @@
-<nav class="py-4 bg-background-light/50" aria-label="Breadcrumb">
-  <div class="container mx-auto px-4">
-    <ol class="flex items-center space-x-2 text-sm text-gray-600">
-      <li class="flex items-center">
-        <a href="{{ '/' | relative_url }}" class="hover:text-primary transition-opacity">Home</a>
-      </li>
+{% if page.url != '/' %}
+<nav class="bg-surface-background py-3 border-b border-gray-100" aria-label="Breadcrumb">
+  <div class="container mx-auto px-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-text-body overflow-x-auto whitespace-nowrap scrollbar-none">
+    <a href="{{ '/' | relative_url }}" class="hover:text-crimson transition-colors flex items-center gap-1">
+      <span class="material-symbols-outlined text-[1rem]">home</span>
+      <span>Home</span>
+    </a>
+    <span class="material-symbols-outlined text-sm text-gray-300">chevron_right</span>
 
-      {% assign breadcrumbs = page.breadcrumbs %}
-      {% if breadcrumbs == nil %}
-        {% if page.collection %}
-          {% case page.collection %}
-          {% when 'services' %}
-            <li class="flex items-center">
-              <span class="mx-2 text-gray-600">/</span>
-              <a href="{{ '/leistungen/' | relative_url }}" class="hover:text-primary transition-opacity">Leistungen</a>
-            </li>
-          {% when 'districts' %}
-            <li class="flex items-center">
-              <span class="mx-2 text-gray-600">/</span>
-              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-opacity">Bezirke</a>
-            </li>
-          {% when 'guides' %}
-            <li class="flex items-center">
-              <span class="mx-2 text-gray-600">/</span>
-              <a href="{{ '/ratgeber/' | relative_url }}" class="hover:text-primary transition-opacity">Ratgeber</a>
-            </li>
-          {% when 'states' %}
-            <li class="flex items-center">
-              <span class="mx-2 text-gray-600">/</span>
-              <a href="{{ '/bezirke/' | relative_url }}" class="hover:text-primary transition-opacity">Bundesländer</a>
-            </li>
-          {% endcase %}
+    {% assign current_url = '' %}
+    {% assign url_parts = page.url | split: '/' %}
+
+    {% for part in url_parts %}
+      {% if part != '' %}
+        {% assign current_url = current_url | append: '/' | append: part %}
+        {% if forloop.last %}
+          <span class="text-primary-dark font-bold max-w-[200px] truncate" aria-current="page">{{ page.title }}</span>
+        {% else %}
+          {% assign breadcrumb_title = part | capitalize | replace: '-', ' ' %}
+          {% if part == 'leistungen' %}{% assign breadcrumb_title = 'Leistungen' %}{% endif %}
+          {% if part == 'bezirke' %}{% assign breadcrumb_title = 'Bezirke' %}{% endif %}
+          {% if part == 'ratgeber' %}{% assign breadcrumb_title = 'Ratgeber' %}{% endif %}
+          <a href="{{ current_url | append: '/' | relative_url }}" class="hover:text-crimson transition-colors">{{ breadcrumb_title }}</a>
+          <span class="material-symbols-outlined text-sm text-gray-300">chevron_right</span>
         {% endif %}
       {% endif %}
-
-      <li class="flex items-center">
-        <span class="mx-2 text-gray-600">/</span>
-        <span class="text-primary font-medium" aria-current="page">{{ page.title | default: site.brand_name }}</span>
-      </li>
-    </ol>
+    {% endfor %}
   </div>
 </nav>
+{% endif %}
