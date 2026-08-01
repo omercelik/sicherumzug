@@ -16,20 +16,36 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Legacy colors mapped to new Nordic Slate & Crimson Signal branding for safe migration
         primary: {
-          DEFAULT: "#064e3b", // emerald-900 (dark green)
-          light: "#059669",   // emerald-600
-          button: "#059669",
-          accent: "#047857"   // emerald-700
+          DEFAULT: "#2F3B45", // Nordic Slate replacing old dark green
+          light: "#3A4A57",   // Lighter slate
+          button: "#C62839",  // Buttons use Crimson Signal
+          accent: "#C62839"   // Accents use Crimson Signal
         },
         content: {
-          accent: "#059669",
-          light: "#047857"
+          accent: "#C62839",
+          light: "#3A4A57"
         },
-        "background-light": "#f8fafc",
-        "background-dark": "#022c22", // emerald-950
-        "text-light": "#1e293b",
-        "text-dark": "#f8fafc"
+        "background-light": "#F7F8FA",
+        "background-dark": "#1F2933",
+        "text-light": "#4B5563",
+        "text-dark": "#F7F8FA",
+
+        // New explicit design system tokens
+        nordic: {
+          DEFAULT: "#2F3B45",
+          light: "#3A4A57",
+          dark: "#1F2933",
+        },
+        crimson: {
+          DEFAULT: "#C62839",
+          hover: "#A3212F",
+        },
+        surface: {
+          DEFAULT: "#FFFFFF",
+          background: "#F7F8FA",
+        }
       },
       fontFamily: {
         display: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Roboto", "sans-serif"]
