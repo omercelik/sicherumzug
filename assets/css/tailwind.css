@@ -28,7 +28,7 @@ body {
 }
 
 @font-face {
-  font-family: 'Material Symbols Outlined';
+  font-family: 'Material Symbols Outlined Local';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -36,7 +36,8 @@ body {
 }
 
 .material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
+  /* Fallback to local if CDN fails, but explicitly use the CDN font family first */
+  font-family: 'Material Symbols Outlined', 'Material Symbols Outlined Local', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
