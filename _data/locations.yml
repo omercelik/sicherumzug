@@ -1,0 +1,102 @@
+- state: "Wien"
+  slug: "wien"
+  cities:
+    - name: "Wien (alle Bezirke)"
+      slug: "wien"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+        - name: "Entrümpelung"
+          slug: "entruempelung"
+
+- state: "Niederösterreich"
+  slug: "niederoesterreich"
+  cities:
+    - name: "St. Pölten"
+      slug: "st-poelten"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+    - name: "Wiener Neustadt"
+      slug: "wiener-neustadt"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+    - name: "Baden"
+      slug: "baden"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Burgenland"
+  slug: "burgenland"
+  cities:
+    - name: "Eisenstadt"
+      slug: "eisenstadt"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Steiermark"
+  slug: "steiermark"
+  cities:
+    - name: "Graz"
+      slug: "graz"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Oberösterreich"
+  slug: "oberoesterreich"
+  cities:
+    - name: "Linz"
+      slug: "linz"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+    - name: "Wels"
+      slug: "wels"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Salzburg"
+  slug: "salzburg"
+  cities:
+    - name: "Salzburg"
+      slug: "salzburg"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Tirol"
+  slug: "tirol"
+  cities:
+    - name: "Innsbruck"
+      slug: "innsbruck"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Kärnten"
+  slug: "kaernten"
+  cities:
+    - name: "Klagenfurt"
+      slug: "klagenfurt"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+    - name: "Villach"
+      slug: "villach"
+      services:
+        - name: "Umzug"
+          slug: "umzug"
+
+- state: "Vorarlberg"
+  slug: "vorarlberg"
+  cities:
+    - name: "Dornbirn"
+      slug: "dornbirn"
+      services:
+        - name: "Umzug"
+          slug: "umzug"

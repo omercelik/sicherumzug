@@ -26,7 +26,7 @@ layout: default
           </div>
         </aside>
 
-        <div class="lg:col-span-3 richtext">
+        <div class="lg:col-span-3 richtext" role="document">
           {{ content }}
         </div>
       </div>
@@ -78,12 +78,16 @@ layout: default
     </div>
   </div>
 </section>
-{% if page.faqs %}
+{% assign faq_items = page.faqs %}
+{% if faq_items == nil and page.use_global_faqs %}
+  {% assign faq_items = site.data.faqs %}
+{% endif %}
+{% if faq_items %}
 <section class="bg-white py-12">
   <div class="container mx-auto px-4">
     <h2 class="text-2xl font-extrabold text-primary">FAQ</h2>
     <div class="mt-6 space-y-4">
-      {% for faq in page.faqs %}
+      {% for faq in faq_items %}
       <details class="group rounded-2xl border border-gray-200 bg-background-light p-4 shadow-sm hover:shadow-md transition-opacity duration-200">
         <summary class="flex cursor-pointer items-center justify-between text-left text-base font-semibold text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg list-none [&::-webkit-details-marker]:hidden">
           <span class="pr-4">{{ faq.question }}</span>

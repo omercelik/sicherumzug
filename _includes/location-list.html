@@ -1,0 +1,22 @@
+<div class="location-list">
+  {% for state in site.data.locations %}
+  <div class="mb-8">
+    <h3 class="text-xl font-bold mb-4">{{ state.state }}</h3>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for city in state.cities %}
+      <li class="bg-white p-4 rounded shadow">
+        <span class="font-semibold block mb-2">{{ city.name }}</span>
+        <ul class="text-sm text-gray-600 space-y-1">
+          {% for service in city.services %}
+          <li>
+            <!-- Future link: /{{ state.slug }}/{{ city.slug }}/{{ service.slug }}/ -->
+            <span class="text-gray-800">{{ service.name }} in {{ city.name }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

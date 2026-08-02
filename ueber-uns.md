@@ -34,4 +34,10 @@ Unsere Umzugs- und Räumungsexperten in ganz Österreich kennen die lokalen Gege
 - Vollständige Betriebshaftpflichtversicherung
 - DSGVO-konforme Vernichtung von sensiblen Daten & Akten
 
+## Warum eine Besichtigung vor Ort so wichtig ist
+Bei größeren Projekten in Wien, Niederösterreich oder dem Burgenland empfehlen wir eine persönliche Begehung. So können wir Tragewege prüfen, eine Halteverbotszone planen und den Aufwand (sowie eine mögliche Wertanrechnung) auf den Cent genau kalkulieren.
+
+## Was passiert nach der Kontaktaufnahme?
+Sobald Sie sich melden, vereinbaren wir eine kostenlose Erstbesichtigung (via WhatsApp-Fotos oder direkt bei Ihnen). Danach erhalten Sie unser schriftliches Angebot. Wenn Sie einverstanden sind, fixieren wir den Termin und übernehmen die restliche Arbeit.
+
 **Fragen?** [Melden Sie sich jederzeit bei uns](/angebot/). Wir freuen uns darauf, Ihr Projekt kennenzulernen.
