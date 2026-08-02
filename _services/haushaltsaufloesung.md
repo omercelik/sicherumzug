@@ -5,7 +5,7 @@ description: "Ihre Wohnungsauflösung in Wien. Komplette Wohnungsauflösungen mi
 kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
-hero_image: /topbg.webp
+
 highlights:
   - Gratis Erstbesichtigung & schriftlicher Fixpreis
   - Maximaler Wertanrechnung für Antiquitäten und Möbel

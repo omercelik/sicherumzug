@@ -5,7 +5,7 @@ description: "Ihre Entrümpelung heute planen. Als Räumungsfirma übernehmen wi
 kicker: "Privat"
 intent_primary: informational
 intent_secondary: commercial
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung und schriftlicher Fixpreis"
   - "Wertanrechnung für Möbel, Geräte und Sammlungen"
@@ -39,7 +39,7 @@ permalink: /leistungen/entruempelung/
 ---
 ## Entrümpelung und Hausentrümpelung mit Fixpreis
 
-Eine Entrümpelung oder komplette Hausentrümpelung ist dann einfach, wenn man eine professionelle Räumungsfirma beauftragen kann. Bei uns sind Sortierung, Entsorgung und Wertanrechnung klar geregelt. Unser Fokus liegt auf Verwertung, sauberer Trennung und einem Fixpreis, der nachvollziehbar bleibt.
+Als zertifizierte Räumungsfirma mit langjähriger Erfahrung in Österreich garantieren wir Ihnen einen stressfreien Ablauf. Eine Entrümpelung oder komplette Hausentrümpelung ist dann einfach, wenn man Profis vertraut. Bei Sicher Team sind Sortierung, Entsorgung und die Wertanrechnung klar geregelt. Unser Fokus liegt auf Verwertung, sauberer Mülltrennung (Sperrmüll, Holz, Elektro) und einem Fixpreis, der absolut transparent bleibt.
 
 ## Für wen die Entrümpelung passt
 

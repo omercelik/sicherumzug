@@ -7,7 +7,7 @@ kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Österreichweit"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung in ganz Österreich"
   - "Schriftliche Fixpreisgarantie ohne versteckte Kosten"
@@ -35,7 +35,7 @@ faqs:
   - question: "Sind meine Möbel beim Transport versichert?"
     answer: "Ja, Sicher Team ist voll haftpflichtversichert und bietet eine All-Risk-Transportversicherung bis zu einer Deckungssumme von € 1.000.000. Ihr Umzugsgut ist somit bestens geschützt."
   - question: "Bieten Sie auch die Entrümpelung von Altmöbeln an?"
-    answer: "Ja! Wir sind spezialisiert auf die Kombination aus Umzug und Entrümpelung. Möbel, die Sie nicht in das neue Heim mitnehmen möchten, können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+    answer: "Ja! Wir sind spezialisiert auf die Kombination aus Umzug und Entrümpelung. Möbel, die Sie nicht in das neue Heim mitnehmen möchten, können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
 schema_type: Service
 service_type: Umzug Österreich
 service_schema:

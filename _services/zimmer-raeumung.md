@@ -3,7 +3,7 @@ title: "Zimmer Räumung Wien"
 seo_title: "Zimmer Räumung Wien - WG & Keller entrümpeln zum Fixpreis"
 description: "Professionelle Zimmer Räumung in Wien für Studentenwohnungen, WGs und Einzelräume. Gratis Erstbesichtigung, Fixpreis & Wertanrechnung."
 kicker: "Privat"
-hero_image: /topbg.webp
+
 highlights:
   - "Spezialisten für Studentenwohnungen und WG-Auflösungen"
   - "Flexible Termine auch zu Semesterbeginn/-ende"

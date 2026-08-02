@@ -7,7 +7,7 @@ kicker: "Privat & Gewerbe"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Graz & Steiermark"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung in Graz und Umgebung"
   - "Schriftliche Fixpreisgarantie ohne versteckte Kosten"
@@ -35,7 +35,7 @@ faqs:
   - question: "Kümmert sich Sicher Team um Halteverbote?"
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
-    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
 schema_type: Service
 service_type: Umzug Graz
 service_schema:

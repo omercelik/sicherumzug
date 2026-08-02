@@ -17,7 +17,7 @@ faqs:
 - answer: Ja, wir arbeiten diskret und stimmen uns mit Angehörigen, Notaren oder Hausverwaltungen
     ab.
   question: Übernehmen Sie Wohnungsauflösungen im Todesfall?
-hero_image: /topbg.webp
+
 hero_kicker: Wien
 highlights:
 - Fixpreis nach Besichtigung mit transparenter Wertanrechnung

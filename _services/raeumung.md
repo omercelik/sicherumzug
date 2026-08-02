@@ -6,7 +6,7 @@ kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Wien"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung & schriftlicher Fixpreis"
   - "Demontage von Küchen, Einbauten & Gewerberegalen"

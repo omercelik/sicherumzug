@@ -7,7 +7,7 @@ kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Wien & Umgebung"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung in allen 23 Bezirken"
   - "Schriftliche Fixpreisgarantie ohne versteckte Kosten"
@@ -35,9 +35,11 @@ faqs:
   - question: "Kümmert sich Sicher Team um Halteverbote in Wien?"
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen in allen 23 Wiener Bezirken, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
-    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
+  - question: "Wie lange im Voraus sollte ich die Umzugsfirma buchen?"
+    answer: "Wir empfehlen, Ihren Umzug in Wien mindestens 2-4 Wochen im Voraus zu planen. Besonders zum Monatsende oder an Wochenenden sind wir oft schnell ausgebucht. Für sehr dringende Fälle bieten wir nach Verfügbarkeit auch einen Express-Umzug an."
 schema_type: Service
-service_type: Umzug Wien
+service_type: Privatumzug
 service_schema:
   type: Service
   name: "Umzug Wien - Sicher Team"
@@ -58,6 +60,11 @@ permalink: /leistungen/umzug-wien/
 ## Professioneller Umzug in Wien zum garantierten Fixpreis
 
 Ein **Umzug in Wien** erfordert aufgrund enger Gassen, hoher Stockwerke in Altbauten und schwieriger Parkplatzsituationen eine präzise Planung. Als erfahrene **Umzugsfirma in Wien** garantiert Sicher Team Ihnen einen vollkommen stressfreien Ablauf. Unser geschultes, fest angestelltes Team demontiert Ihre Einrichtungsgegenstände, verpackt empfindliche Stücke transportsicher und führt den sicheren **Möbeltransport** in allen 23 Wiener Bezirken durch.
+
+<figure>
+  <img src="/assets/images/hero/desktop.webp" alt="Möbelpacker von Sicher Team beim sicheren Transport von Umzugskartons in einem Wiener Altbau" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <figcaption class="text-sm text-gray-500 text-center">Fachgerechter Möbeltransport und Übersiedlung durch unsere erfahrenen Wiener Umzugsteams.</figcaption>
+</figure>
 
 Egal ob es sich um einen **Privatumzug**, einen **Firmenumzug**, einen **Büroumzug** oder einen sensiblen **Seniorenumzug** bzw. **Studentenumzug** handelt – unser **Umzugsservice** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen **Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren.
 
@@ -84,9 +91,12 @@ Wir bieten Ihnen die perfekte Kombination aus **Privatumzug** und **Räumung**:
 
 ## Warum Sicher Team für Ihren Wien-Umzug wählen?
 
+Als etabliertes Umzugsunternehmen in Wien bieten wir Ihnen höchste Qualitäts- und Sicherheitsstandards:
+
+- **Über 15 Jahre Erfahrung:** Mehr als 5000 erfolgreich abgewickelte Umzüge und Übersiedlungen in ganz Österreich.
 - **Echte Wiener Teams:** Wir beschäftigen ausschließlich geschultes, uniformiertes und fest angestelltes Fachpersonal.
-- **Sicherheit geht vor:** Voll haftpflichtversichert und transportversichert bis € 1.000.000.
-- **Keine versteckten Kosten:** Verbindliche Angebote mit Fixpreisgarantie, inklusive aller Stockwerke und Zufahrten.
+- **Umfassender Versicherungsschutz:** Voll haftpflichtversichert und transportversichert bis zu einer Deckungssumme von 1.000.000 EUR.
+- **Keine versteckten Kosten:** Verbindliche Angebote mit schriftlicher Fixpreisgarantie, inklusive aller Stockwerke und Zufahrten.
 - **WhatsApp-Support:** Senden Sie uns Fotos oder Videos und Sie erhalten sofort ein unverbindliches Preisangebot.
 
 > [Kostenloses Angebot anfordern](/angebot/) oder direkt per [WhatsApp chatten]({{ site.whatsapp }}).

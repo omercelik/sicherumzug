@@ -3,7 +3,7 @@ title: "Verlassenschaften & Nachlassräumung"
 seo_title: "Verlassenschaften & Nachlassräumung Wien - Wertanrechnung"
 description: "Ihre Verlassenschaft Wien. Wir bieten Verlassenschaftsräumung Wien und Verlassenschaften Ankauf Wien an, inkl. Abstimmung mit Notaren und Fixpreis."
 kicker: "Spezialfall"
-hero_image: /topbg.webp
+
 highlights:
   - Diskrete Teams & persönliche Ansprechpartnerin
   - Wertgutachten für Antiquitäten und Kunst

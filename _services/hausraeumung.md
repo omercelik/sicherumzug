@@ -3,7 +3,7 @@ title: "Hausräumung Wien"
 seo_title: "Hausräumung & Hausentrümpelung Wien - Fixpreis"
 description: "Ihre Hausräumung und Hausentrümpelung in Wien. Für Hausräumungen von Einfamilienhäusern bieten wir Fixpreis & maximalen Wertanrechnung an."
 kicker: "Privat"
-hero_image: /topbg.webp
+
 highlights:
   - "Spezialisten für Einfamilienhäuser und Reihenhaus-Räumungen"
   - "Erfahrung mit Mehrgenerationen-Haushalten und geerbten Häusern"
