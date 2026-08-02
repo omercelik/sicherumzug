@@ -6,7 +6,7 @@ categories: umzug steuern finanzen
 description: "Wussten Sie, dass Sie unter bestimmten Bedingungen die Umzugskosten in Österreich steuerlich geltend machen können? Erfahren Sie hier, wie das funktioniert."
 ---
 
-# Umzugskosten von der Steuer absetzen: Leitfaden für Österreich
+
 
 Ein Umzug, ob mit einer professionellen Spedition oder in Eigenregie, ist mit finanziellen Aufwendungen verbunden. Die gute Nachricht: In Österreich lassen sich unter bestimmten Voraussetzungen Teile dieser Kosten im Rahmen der Arbeitnehmerveranlagung (Lohnsteuerausgleich) oder der Einkommensteuererklärung steuerlich geltend machen. In diesem Ratgeber erklären wir Ihnen, wann der Fiskus sich an Ihrer Übersiedlung beteiligt und welche Belege Sie dafür benötigen.
 

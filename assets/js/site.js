@@ -9,6 +9,8 @@ window.mobileMenuToggle = function mobileMenuToggle() {
   if (!mobileMenu) return;
   mobileMenu.classList.toggle('hidden');
   var isHidden = mobileMenu.classList.contains('hidden');
+  var openBtn = document.getElementById('mobile-menu-open');
+  if(openBtn) openBtn.setAttribute('aria-expanded', !isHidden);
   setBodyOverflow(!isHidden);
 
   // Focus management

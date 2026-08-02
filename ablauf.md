@@ -30,4 +30,10 @@ Am Umzugstag verpackt unser geschultes Fachpersonal Ihr Hab und Gut professionel
 
 Am neuen Standort entladen wir Ihre Möbel und kümmern uns um die millimetergenaue Montage am Wunschplatz. Nach einem abschließenden Rundgang erfolgt die schlüsselfertige Übergabe. Erst wenn alles perfekt steht und Sie absolut zufrieden sind, ist unser Auftrag abgeschlossen.
 
+## Wie lange dauert ein Umzug im Durchschnitt?
+Die Dauer hängt von Faktoren wie Distanz, Volumen und der gebuchten Leistung (De-/Montage) ab. Die meisten Standardumzüge innerhalb Wiens erledigen wir jedoch an einem einzigen Arbeitstag, sodass Sie abends bereits in Ihrer neuen Wohnung schlafen können.
+
+## Was kostet ein professioneller Umzug?
+Nach der Volumenanalyse erhalten Sie von uns immer einen absoluten Fixpreis. Dies bedeutet, dass Sie im Voraus genau wissen, welche Kosten anfallen – ohne versteckte Aufschläge für Stockwerke, Wochenendeinsätze oder Verkehrsstaus.
+
 > **Bereit für Schritt 1?** Fordern Sie jetzt Ihr kostenloses Angebot für Ihren Umzug an und sichern Sie sich Ihren Wunschtermin.
