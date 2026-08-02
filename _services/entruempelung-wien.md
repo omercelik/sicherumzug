@@ -33,8 +33,10 @@ faqs:
     answer: "In Wien meist innerhalb von 2–5 Werktagen, Express nach Verfügbarkeit. Halteverbotszonen beantragen wir parallel."
   - question: "Koordinieren Sie auch MA 48 und Sondermüll?"
     answer: "Ja. Wir buchen Mistplatz-Termine, nutzen 48er-Tandler-Boxen und organisieren bei Bedarf Container für Sonderfraktionen."
+  - question: "Wie funktioniert die Wertanrechnung genau?"
+    answer: "Bei der Erstbesichtigung schätzen wir den Wert von gut erhaltenen Möbeln, Antiquitäten oder Elektronik. Dieser Wert wird transparent als Gutschrift in unserem Angebot ausgewiesen und verringert somit die Gesamtkosten Ihrer Räumung."
 schema_type: Service
-service_type: Entrümpelung Wien
+service_type: Entrümpelung
 service_schema:
   type: Service
   name: "Entrümpelung Wien - Sicher Team"

@@ -36,8 +36,10 @@ faqs:
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen in allen 23 Wiener Bezirken, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
     answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+  - question: "Wie lange im Voraus sollte ich die Umzugsfirma buchen?"
+    answer: "Wir empfehlen, Ihren Umzug in Wien mindestens 2-4 Wochen im Voraus zu planen. Besonders zum Monatsende oder an Wochenenden sind wir oft schnell ausgebucht. Für sehr dringende Fälle bieten wir nach Verfügbarkeit auch einen Express-Umzug an."
 schema_type: Service
-service_type: Umzug Wien
+service_type: Privatumzug
 service_schema:
   type: Service
   name: "Umzug Wien - Sicher Team"

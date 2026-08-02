@@ -1,0 +1,47 @@
+name: "Sicher Umzug"
+legal_name: "Sicher Umzug e.U."
+description: "Professionelle Umzugsfirma und Entrümpelungsexperten in Österreich. Wir bieten stressfreie Übersiedlungen, Privatumzüge, Firmenumzüge und besenreine Entrümpelungen."
+slogan: "Ihr sicherer Weg ins neue Zuhause."
+
+contact:
+  phone: "+43 1 234 5678"
+  email: "office@sicherumzug.at"
+  address:
+    street: "Musterstraße 1"
+    postal_code: "1010"
+    city: "Wien"
+    country: "Österreich"
+  business_hours: "Mo-Sa: 08:00 - 18:00 Uhr"
+
+trust_signals:
+  experience_years: 15
+  successful_projects: 5000
+  insurance: "Vollversichert bis zu 1.000.000 EUR"
+  guarantee: "Festpreisgarantie ohne versteckte Kosten"
+  team: "Erfahrenes und fest angestelltes Fachpersonal"
+
+core_services:
+  - "Privatumzug"
+  - "Firmenumzug"
+  - "Seniorenumzug"
+  - "Entrümpelung & Räumung"
+  - "Möbelmontage & Demontage"
+  - "Verpackungsservice"
+
+service_areas:
+  - "Wien"
+  - "Niederösterreich"
+  - "Burgenland"
+  - "Österreichweit"
+
+quality_standards:
+  - "Besichtigung und Angebot kostenlos"
+  - "Transparente Kostenvoranschläge"
+  - "Pünktlichkeit und Zuverlässigkeit"
+  - "Umweltgerechte Entsorgung bei Entrümpelungen"
+
+process:
+  step_1: "Kostenlose Besichtigung & Beratung"
+  step_2: "Unverbindliches Festpreisangebot"
+  step_3: "Sichere Verpackung & Transport"
+  step_4: "Montage & Übergabe am Zielort"

@@ -35,9 +35,13 @@ faqs:
   - question: "Kümmert sich Sicher Team um Halteverbote?"
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
-    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Alte Schreibtische oder defekte IT-Geräte können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+  - question: "Wie lange dauert ein Büroumzug?"
+    answer: "Die Dauer hängt von der Unternehmensgröße ab. Ein kleines Büro mit 5-10 Arbeitsplätzen übersiedeln wir meist an einem Tag. Um den Betriebsablauf nicht zu stören, bieten wir auch Wochenend-Umzüge an."
+  - question: "Werden unsere sensiblen Akten sicher transportiert?"
+    answer: "Diskretion und Datenschutz haben oberste Priorität. Sensible Dokumente transportieren wir sicher in speziellen Aktenboxen und bieten auf Wunsch auch DSGVO-konforme Aktenvernichtung an."
 schema_type: Service
-service_type: Umzug Wien
+service_type: Firmenumzug
 service_schema:
   type: Service
   name: "Umzug Wien - Sicher Team"
