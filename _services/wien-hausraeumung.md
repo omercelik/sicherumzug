@@ -3,7 +3,7 @@ title: "Wien Hausräumung"
 seo_title: "Hausräumung Wien - Komplette Räumung mit Fixpreis | Sicher Team"
 description: "Professionelle Wien Hausräumung: Einfamilienhäuser, Villen & Gewerbe. Fixpreis, Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke verfügbar!"
 kicker: "Haus"
-hero_image: /topbg.webp
+
 highlights:
   - "Spezialisiert auf Einfamilienhäuser & Villen"
   - "Garten- & Außenbereichentrümpelung inklusive"

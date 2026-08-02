@@ -18,7 +18,7 @@ faqs:
 - answer: Wien, Niederösterreich und Burgenland – immer gekoppelt an einen bestätigten
     Entrümpelungs-, Räumungs- oder Verlassenschaftsauftrag.
   question: In welchen Regionen?
-hero_image: /topbg.webp
+
 highlights:
 - Keine Einzelabholung – nur mit Entrümpelung/Räumung
 - Wertanrechnung für Sammlungen, Porzellan, Bücher

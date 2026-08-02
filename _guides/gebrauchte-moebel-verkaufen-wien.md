@@ -15,7 +15,7 @@ faqs:
 - answer: Je Stück eine Gesamtaufnahme und zwei Detailfotos von Oberfläche, Kanten
     und Beschlägen. Mit diesen Bildern ist eine erste Bewertung deutlich belastbarer.
   question: Welche Fotos helfen bei einer schnellen Ersteinschätzung?
-hero_image: /topbg.webp
+
 intent_stage: consideration
 kicker: Möbelbewertung
 last_reviewed: 2026-02-09

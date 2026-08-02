@@ -4,7 +4,7 @@ title: "Entrümpelung Wien: MA 48 und Wertanrechnung richtig kombinieren"
 seo_title: "Entrümpelung Wien MA 48 + Wertanrechnung"
 description: "So koordinieren Sie MA 48 Abholung, Wertanrechnung und Zimmer Räumung in Wien. Terminplanung, Kostenfallen und wann sich welche Option lohnt."
 date: 2025-12-04
-hero_image: /topbg.webp
+
 kicker: "MA 48 & Wertanrechnung"
 reading_time: 6
 permalink: /ratgeber/ma48-Wertanrechnung-entrumpelung-wien/

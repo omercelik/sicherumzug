@@ -6,7 +6,7 @@ kicker: "Wertanrechnung"
 hero_kicker: "Gratis Räumung"
 intent_primary: transactional
 intent_secondary: local
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung & Wertermittlung"
   - "Gratis Entrümpelung bei entsprechendem Gegenwert möglich"
@@ -66,13 +66,13 @@ Das Prinzip der **Räumung mit Wertanrechnung** (auch Wertanrechnung genannt) is
 
 Anstatt mühsam Einzelstücke auf Flohmärkten oder Online-Plattformen zu verkaufen und sich parallel um die Entsorgung des Rests zu kümmern, bieten wir Ihnen eine All-in-One Lösung.
 
-### Unsere Expertise (EEAT) für Ihren Wertanrechnung
+### Unsere Expertise für Ihre Wertanrechnung
 
-Als etabliertes Wiener Entrümpelungsunternehmen mit jahrelanger Erfahrung im Altwarenhandel garantieren wir eine professionelle Schätzung. Unser internes Team erkennt den wahren Wert Ihrer Gegenstände. Wir garantieren:
+Als etabliertes Wiener Entrümpelungsunternehmen mit über 15 Jahren Erfahrung im Altwarenhandel und einer 1.000.000 EUR Betriebshaftpflichtversicherung garantieren wir eine professionelle Schätzung. Unser fest angestelltes Experten-Team erkennt den wahren Wert Ihrer Gegenstände. Wir garantieren:
 
-- **Fachgerechte Bewertung:** Expertise bei Antiquitäten, Kunst, Teppichen und Designklassikern.
-- **Transparente Kalkulation:** Wir listen die Räumungskosten und den ermittelten Ankaufswert offen auf.
-- **Keine versteckten Gebühren:** Garantiertes Fixpreis-Modell nach der Besichtigung.
+- **Fachgerechte Bewertung:** Expertise bei Antiquitäten, Kunst, Teppichen und Designklassikern durch jahrelange Marktkenntnis.
+- **Transparente Kalkulation:** Wir listen die Räumungskosten und den ermittelten Ankaufswert offen auf – ohne versteckte Kosten.
+- **Sichere Abwicklung:** Alle Transporte und Räumungen sind durch unsere All-Risk-Transportversicherung gedeckt.
 - **Nachhaltigkeit:** Wiederverwendbares gelangt in den Kreislauf zurück (z.B. 48er-Tandler), was die Umwelt und Ihr Budget schont.
 
 ## Kostenlose Wohnungsauflösung: Wann ist sie möglich?

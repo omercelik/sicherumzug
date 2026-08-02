@@ -3,7 +3,7 @@ title: "Messie-Entrümpelung Wien"
 seo_title: "Messie Entrümpelung Wien | Diskrete Spezialräumung"
 description: "Ihre Messie Entrümpelung Wien. Speziell geschulte Teams für komplexe Situationen inklusive Desinfektion und Sozialarbeit-geeigneter Dokumentation."
 kicker: "Spezialfall"
-hero_image: /topbg.webp
+
 highlights:
   - Diskrete Einsätze ohne Beschriftung
   - Schutz- & Desinfektionsmaßnahmen inklusive

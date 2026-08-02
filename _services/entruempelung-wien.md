@@ -6,7 +6,7 @@ kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Wien"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung mit Wertanalyse"
   - "Wertanrechnung für Möbel, Antiquitäten, Technik"
@@ -58,7 +58,14 @@ redirect_from:
 
 ## Professionelle Entrümpelung Wien mit Fixpreis & Wertanrechnung
 
-Eine professionelle Entrümpelung in Wien heißt für uns als Räumungsfirma: sortieren, verwerten, entsorgen, egal ob es um eine komplette Wohnungsentrümpelung geht. Wir kombinieren Wertanalyse, Spendenwege und transparente Entsorgung im Fixpreis. WhatsApp-Fotos ([Chat starten]({{ site.whatsapp }})) reichen für die Ersteinschätzung, vor Ort klären wir Zugänge, Spendenoptionen, Mistplatz-Termine und MA 48. Wir bedienen alle 23 Wiener Bezirke – Anfahrt, Halteverbote und Wertanrechnung sind im Ablauf eingeplant.
+Eine professionelle Entrümpelung in Wien heißt für uns als Räumungsfirma: sortieren, verwerten, entsorgen, egal ob es um eine komplette Wohnungsentrümpelung geht. Wir kombinieren Wertanalyse, Spendenwege und transparente Entsorgung im Fixpreis.
+
+<figure>
+  <img src="/assets/images/hero/desktop.webp" alt="Mitarbeiter von Sicher Team bei der strukturierten Sortierung und Entrümpelung einer Wohnung in Wien" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <figcaption class="text-sm text-gray-500 text-center">Strukturierte Trennung von Sperrmüll und verwertbaren Gegenständen bei einer Entrümpelung in Wien.</figcaption>
+</figure>
+
+WhatsApp-Fotos ([Chat starten]({{ site.whatsapp }})) reichen für die Ersteinschätzung, vor Ort klären wir Zugänge, Spendenoptionen, Mistplatz-Termine und MA 48. Wir bedienen alle 23 Wiener Bezirke – Anfahrt, Halteverbote und Wertanrechnung sind im Ablauf eingeplant.
 
 ## Bezirke, Umgebung und in der Nähe
 
@@ -66,10 +73,13 @@ Wir sind in allen 23 Bezirken aktiv und übernehmen Entrümpelungen auch in der 
 
 ## Warum Entrümpelung Wien mit Sicher Team?
 
-- **Wertanrechnung zuerst:** Wir bewerten Antiquitäten, Möbel, Sammlungen und Technik transparent.
-- **Spenden und Wiederverwendung:** 48er-Tandler-Boxen, Sozialpartner und Weitergabe reduzieren Entsorgungskosten.
-- **Feinsortierung statt Komplettabwurf:** Bücher, Textilien, Elektro, Holz, Metall – jede Fraktion geht auf den richtigen Weg.
-- **Fixpreis nach Besichtigung:** Enthält Sortierung, Entsorgung, Dokumentation und Nachweis für Hausverwaltungen.
+Als zertifizierter Fachbetrieb für Räumungen in Österreich bieten wir Ihnen absolute Sicherheit und Transparenz:
+
+- **15 Jahre Expertise:** Unser geschultes, fest angestelltes Personal wickelt jede Räumung professionell ab.
+- **Umfassender Versicherungsschutz:** Voll haftpflichtversichert – so sind Sie und das Gebäude bei jedem Schritt auf der sicheren Seite.
+- **Wertanrechnung zuerst:** Wir bewerten Antiquitäten, Möbel, Sammlungen und Technik transparent und reduzieren so Ihre Kosten.
+- **Spenden und Wiederverwendung:** 48er-Tandler-Boxen, Sozialpartner und Weitergabe reduzieren Entsorgungskosten und schonen die Umwelt.
+- **Fixpreis nach Besichtigung:** Verbindliche Angebote ohne versteckte Kosten inklusive Dokumentation für die Hausverwaltung.
 
 ### Leistungen mit Wertfokus
 

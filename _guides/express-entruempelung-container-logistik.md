@@ -3,7 +3,7 @@ date: 2026-02-09
 description: 'So funktioniert eine kurzfristige Entrümpelung mit Containerdienst:
   Ablauf, Kosten, Genehmigungen und warum Sicher Team binnen 24 Stunden starten
   kann.'
-hero_image: /topbg.webp
+
 kicker: Express-Service
 layout: guide
 permalink: /ratgeber/express-entruempelung-container-logistik/

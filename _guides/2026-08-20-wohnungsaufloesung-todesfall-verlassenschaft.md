@@ -29,7 +29,7 @@ Sichern Sie zeitnah alle persönlichen Dokumente (Testament, Versicherungspolizz
 ### 2. Die Besichtigung für die Räumung
 Sobald der Notar die Verlassenschaft freigegeben hat (bzw. die Einantwortung erfolgt ist), vereinbaren Sie mit uns einen kostenlosen Besichtigungstermin. Gehen Sie vorher mit der Familie durch die Räume und markieren Sie (z.B. mit Post-its), welche Erinnerungsstücke, Möbel oder Fotos in der Familie verbleiben sollen.
 
-### 3. Schätzung und Wertausgleich (Verlassenschaftsankauf)
+### 3. Schätzung und Wertanrechnung (Wertausgleich) (Verlassenschaftsankauf)
 Wir begutachten den restlichen Hausrat. Österreichische Altbauwohnungen verbergen oft Schätze, deren Wert Laien nicht direkt erkennen (Altwiener Möbel, Porzellan, Bilder). Wir schätzen diese fair ab. Der vereinbarte Ankaufswert wird direkt von den Kosten für die Entsorgung des unverwertbaren Rests (Sperrmüll, alte Matratzen) abgezogen. So kann die Räumung im besten Fall sogar kostenneutral für die Erben ausfallen.
 
 ### 4. Besenreine Räumung und Übergabe

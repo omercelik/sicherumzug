@@ -4,7 +4,7 @@ title: "MA 48 Mistplatz: Regeln, Abfallwege und Checkliste 2026"
 seo_title: "MA 48 Mistplatz: Regeln, Abfallwege und Checkliste 2026"
 description: "Praxisleitfaden für Wien: Welche Abfälle beim MA 48 Mistplatz wohin gehören, wie Sie Problemstoffe trennen und wann ein Profi wirtschaftlicher ist."
 date: 2026-02-09
-hero_image: /topbg.webp
+
 kicker: "MA 48"
 reading_time: 9
 permalink: /ratgeber/ma48-mistplatz-checkliste/

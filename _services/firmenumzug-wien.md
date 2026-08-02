@@ -7,7 +7,7 @@ kicker: "Gewerbe"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Wien & Umgebung"
-hero_image: /topbg.webp
+
 highlights:
   - "Gratis Erstbesichtigung in Wien und Umgebung"
   - "Schriftliche Fixpreisgarantie ohne versteckte Kosten"
@@ -35,7 +35,7 @@ faqs:
   - question: "Kümmert sich Sicher Team um Halteverbote?"
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
-    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Alte Schreibtische oder defekte IT-Geräte können wir fachgerecht entrümpeln und im Zuge des Wertausgleichs direkt anrechnen."
+    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Alte Schreibtische oder defekte IT-Geräte können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
   - question: "Wie lange dauert ein Büroumzug?"
     answer: "Die Dauer hängt von der Unternehmensgröße ab. Ein kleines Büro mit 5-10 Arbeitsplätzen übersiedeln wir meist an einem Tag. Um den Betriebsablauf nicht zu stören, bieten wir auch Wochenend-Umzüge an."
   - question: "Werden unsere sensiblen Akten sicher transportiert?"
@@ -88,9 +88,12 @@ Wir bieten Ihnen die perfekte Kombination aus **Privatumzug** und **Räumung**:
 
 ## Warum Sicher Team für Ihren Umzug wählen?
 
-- **Regionale Expertise:** Wir kennen Wien und garantieren reibungslose Abläufe.
-- **Sicherheit geht vor:** Voll haftpflichtversichert und transportversichert.
-- **Keine versteckten Kosten:** Verbindliche Angebote mit Fixpreisgarantie.
-- **WhatsApp-Support:** Schnelle und unverbindliche Einschätzung via Fotos.
+Als zertifizierte Umzugsfirma bringen wir die nötige Expertise für Ihren sensiblen Firmenumzug mit:
+
+- **Langjährige Erfahrung:** Mit über 15 Jahren Erfahrung und mehr als 5000 erfolgreichen Projekten wissen wir genau, worauf es ankommt.
+- **Regionale Expertise:** Wir kennen Wien und garantieren reibungslose Abläufe, von der Genehmigung bis zum Transport.
+- **Sicherheit geht vor:** Wir sind voll haftpflichtversichert und bieten eine All-Risk-Transportversicherung bis zu 1.000.000 EUR.
+- **Fest angestelltes Fachpersonal:** Ihr Inventar wird ausschließlich von unserem geschulten und erfahrenen Team bewegt.
+- **Keine versteckten Kosten:** Verbindliche Angebote mit unserer bewährten Fixpreisgarantie.
 
 > [Kostenloses Angebot anfordern](/angebot/) oder direkt per [WhatsApp chatten]({{ site.whatsapp }}).

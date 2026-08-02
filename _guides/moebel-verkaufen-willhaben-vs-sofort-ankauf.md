@@ -4,7 +4,7 @@ title: "Möbel verkaufen: Willhaben vs. Sofort-Wertanrechnung"
 seo_title: "Möbel verkaufen: Willhaben vs. Sofort-Wertanrechnung"
 description: "Vergleich für Möbelverkauf in Wien: Aufwand und Erlös. Wann sich Willhaben lohnt und wann unsere Sofort-Wertanrechnung bei der Entrümpelung schneller ist."
 date: 2026-02-09
-hero_image: /topbg.webp
+
 kicker: "Möbelverkauf"
 reading_time: 7
 permalink: /ratgeber/moebel-verkaufen-willhaben-vs-sofort-ankauf/

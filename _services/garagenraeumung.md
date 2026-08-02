@@ -3,7 +3,7 @@ title: "Garagenräumung Wien"
 seo_title: "Garagenräumung Wien - Garage entrümpeln mit Fixpreis"
 description: "Garagenräumung in Wien inklusive Demontage, Abtransport und Wertanrechnung. Fixpreis, schnelle Termine, besenreine Hinterlassung."
 kicker: "Privat"
-hero_image: /topbg.webp
+
 highlights:
   - "Platz für Auto, Werkbank und Lager"
   - "Sichere Trennung von Sondermüll"
