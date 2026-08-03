@@ -21,25 +21,25 @@ checklist:
   - "Fachgerechte Demontage und Montage Ihrer Möbel"
   - "Kombination aus Umzug und besenreiner Entrümpelung"
 process:
-  - title: "Kostenloser Foto-Check"
-    description: "Senden Sie uns Fotos oder Videos per WhatsApp für eine schnelle und unkomplizierte Ersteinschätzung in Wien."
-  - title: "Besichtigung & Fixpreis"
-    description: "Wir besichtigen Ihr Objekt kostenlos und erstellen ein verbindliches Fixpreisangebot für Ihren Umzug."
-  - title: "Stressfreier Umzugstag"
-    description: "Unser eingespieltes Team demontiert Ihre Möbel, verpackt alles transportsicher und führt den Transport durch."
-  - title: "Einzug & Montage"
-    description: "Am neuen Wohnort bauen wir Ihre Möbel wunschgemäß auf und übergeben das alte Objekt auf Wunsch besenrein."
+  - title: "Planung & Beratung"
+    description: "Unsere Experten (über 15 Jahre Branchenerfahrung) erstellen gemeinsam mit Ihnen einen detaillierten Ablaufplan für den Firmenumzug, um Ausfallzeiten zu minimieren."
+  - title: "Logistik & Vorbereitung"
+    description: "Wir liefern rechtzeitig spezielle Archivkartons und IT-Wannen für eine sichere Vorbereitung Ihrer Unterlagen und Technik. Lesen Sie dazu auch unsere Tipps zum Thema [Umzugskartons berechnen](/ratgeber/umzugskartons-verpackungsmaterial-berechnen/)."
+  - title: "Der Umzugstag"
+    description: "Unser geschultes Team führt die Übersiedlung strukturiert und zügig nach Plan durch – auch an Wochenenden."
+  - title: "Betriebsbereitschaft"
+    description: "Am neuen Standort wird alles sofort an seinen Bestimmungsort gebracht, Möbel montiert und die IT-Plätze vorbereitet."
 faqs:
-  - question: "Was kostet ein Umzug in Wien?"
-    answer: "Die Kosten hängen vom Arbeitsaufwand, dem Stockwerk und der Entfernung ab. Nach einer kostenlosen Besichtigung in Wien erhalten Sie ein verbindliches Fixpreis-Angebot ohne versteckte Kosten."
-  - question: "Kümmert sich Sicher Team um Halteverbote?"
-    answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen, damit der Möbeltransporter am Umzugstag sicher parken kann."
-  - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
-    answer: "Ja! Wir verbinden Umzug und Entrümpelung. Alte Schreibtische oder defekte IT-Geräte können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
-  - question: "Wie lange dauert ein Büroumzug?"
-    answer: "Die Dauer hängt von der Unternehmensgröße ab. Ein kleines Büro mit 5-10 Arbeitsplätzen übersiedeln wir meist an einem Tag. Um den Betriebsablauf nicht zu stören, bieten wir auch Wochenend-Umzüge an."
-  - question: "Werden unsere sensiblen Akten sicher transportiert?"
-    answer: "Diskretion und Datenschutz haben oberste Priorität. Sensible Dokumente transportieren wir sicher in speziellen Aktenboxen und bieten auf Wunsch auch DSGVO-konforme Aktenvernichtung an."
+  - question: "Bieten Sie Firmenumzüge auch am Wochenende an?"
+    answer: "Ja, um den laufenden Betrieb so wenig wie möglich zu stören, führen wir Firmen- und Büroübersiedlungen in Wien sehr oft am Wochenende oder über Nacht durch."
+  - question: "Sind unsere Computer und Server beim Umzug versichert?"
+    answer: "Selbstverständlich. Wir verfügen über eine umfassende Betriebshaftpflicht- und Transportversicherung bis zu 1.000.000 EUR, die auch empfindliche IT-Ausstattung und Elektronik abdeckt."
+  - question: "Können Sie auch schwere Geräte wie Tresore oder Kopierer transportieren?"
+    answer: "Ja, als professionelle Umzugsfirma verfügen wir über das nötige Equipment (z.B. Treppensteiger) und das Fachwissen für den Schwerlasttransport in Bürogebäuden."
+  - question: "Was passiert mit alten Büromöbeln, die wir nicht mehr brauchen?"
+    answer: "Wir kümmern uns auf Wunsch um die fachgerechte [Firmenauflösung und Gewerberäumung](/leistungen/firmenaufloesung/). Verwertbare Büromöbel rechnen wir Ihnen über unseren Wertausgleich an, der Rest wird umweltfreundlich entsorgt."
+  - question: "Was kostet ein Büroumzug in Wien?"
+    answer: "Die Kosten hängen vom Arbeitsaufwand, der Unternehmensgröße und dem IT-Aufwand ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Fixpreis-Angebot ohne versteckte Kosten. Siehe auch unsere [allgemeinen Infos zu Umzugskosten](/ratgeber/umzugskosten-oesterreich-sparen/)."
 schema_type: Service
 service_type: Firmenumzug
 service_schema:
@@ -59,13 +59,13 @@ schema_price_description: "Individuelle Fixpreis-Kalkulation nach kostenloser Be
 permalink: /leistungen/firmenumzug-wien/
 ---
 
-## Ihr reibungsloser Firmenumzug in Wien
+## Ihr reibungsloser Firmenumzug in Wien (B2B Übersiedlung)
 
-Ein **Umzug in Wien** erfordert eine präzise Planung und ein starkes, verlässliches Team. Als erfahrene **Umzugsfirma** garantiert Sicher Team Ihnen einen vollkommen stressfreien Ablauf. Unser geschultes, fest angestelltes Team demontiert Ihre Einrichtungsgegenstände, verpackt empfindliche Stücke transportsicher und führt den sicheren **Möbeltransport** zuverlässig durch. Wir kennen die regionalen Gegebenheiten in **Wien** genau und planen Routen, Ladezeiten und Halteverbote vorausschauend.
+Ein **Firmenumzug in Wien** erfordert eine präzise Planung und ein starkes, verlässliches Team. Jeder Tag Ausfallzeit kostet Ihr Unternehmen Geld. Als erfahrene **Umzugsfirma** garantiert Sicher Team B2B-Kunden einen vollkommen stressfreien Ablauf mit minimalen Betriebsunterbrechungen. Unser geschultes, fest angestelltes Team demontiert Ihre Büromöbel, verpackt empfindliche IT-Infrastruktur transportsicher und führt den sicheren **Büroumzug** zuverlässig durch. Wir kennen die regionalen Gegebenheiten in **Wien** genau und planen Routen, Ladezeiten und Halteverbote vorausschauend.
 
-Egal ob es sich um einen **Privatumzug**, einen **Firmenumzug**, einen **Büroumzug** oder einen sensiblen **Seniorenumzug** handelt – unser **Umzugsservice** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen **Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren. Wir bieten zudem als Ergänzung **Räumung**, **Entrümpelung** und **Messie-Räumung** an, um alle Ihre Bedürfnisse abzudecken.
+Egal ob es sich um ein kleines Startup oder ein großes Unternehmen handelt – unser **Umzugsservice für Gewerbekunden** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen IT-**Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren. Wir bieten zudem als Ergänzung die [Räumung](/leistungen/firmenaufloesung/) und umweltgerechte Entsorgung von Altmobiliar an.
 
-Mit unserer **Fixpreisgarantie** und der integrierten **Transportversicherung** bis zu einer Deckungssumme von € 1.000.000 sind Sie von der ersten Kartonpackung über den **Möbeltransport** und die **Möbelmontage** bis zum fertigen Aufbau in Ihrem neuen Zuhause auf der sicheren Seite. Verlassen Sie sich auf unsere absolute Professionalität für Ihre **Übersiedlung**.
+Mit unserer bewährten **Fixpreisgarantie** und der integrierten **Transportversicherung** bis zu einer Deckungssumme von € 1.000.000 sind Ihre Server, Monitore und Dokumente von der ersten Kartonpackung bis zum fertigen Aufbau im neuen Büro auf der sicheren Seite. Verlassen Sie sich auf unsere absolute Professionalität für Ihre **Firmenübersiedlung**.
 
 ## Umfassender Umzugsservice & Spezialtransporte
 

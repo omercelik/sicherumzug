@@ -24,20 +24,20 @@ process:
   - title: "Kostenloser Foto-Check"
     description: "Senden Sie uns Fotos oder Videos per WhatsApp für eine schnelle und unkomplizierte Ersteinschätzung."
   - title: "Besichtigung & Fixpreis"
-    description: "Wir besichtigen Ihr Objekt kostenlos in Wien und Umgebung und erstellen ein verbindliches Fixpreisangebot."
+    description: "Wir besichtigen Ihr Objekt kostenlos in Wien und Umgebung und erstellen ein verbindliches Fixpreisangebot mit absoluter Festpreisgarantie ohne versteckte Kosten."
   - title: "Stressfreier Umzugstag"
-    description: "Unser eingespieltes Wiener Team demontiert Ihre Möbel, verpackt alles transportsicher und führt den Transport durch."
+    description: "Unser fest angestelltes, erfahrenes Fachpersonal (über 15 Jahre Erfahrung) demontiert Ihre Möbel, verpackt alles transportsicher und führt den Transport durch."
   - title: "Einzug & Montage"
-    description: "Am neuen Wohnort bauen wir Ihre Möbel wunschgemäß auf und übergeben das alte Objekt auf Wunsch besenrein."
+    description: "Am neuen Wohnort bauen wir Ihre Möbel wunschgemäß auf und übergeben das alte Objekt auf Wunsch besenrein. Alles ist durch unsere Versicherung bis 1.000.000 EUR gedeckt."
 faqs:
   - question: "Was kostet ein Umzug in Wien?"
-    answer: "Ein einfacher Wohnungsumzug in Wien startet oft schon ab 250 Euro. Der genaue Preis hängt vom Arbeitsaufwand, dem Stockwerk und der Entfernung ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Fixpreis-Angebot."
+    answer: "Ein einfacher Wohnungsumzug in Wien startet oft schon ab 250 Euro. Der genaue Preis hängt vom Arbeitsaufwand, dem Stockwerk und der Entfernung ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Fixpreis-Angebot. Detaillierte Infos finden Sie in unserem [Ratgeber zu Umzugskosten](/ratgeber/umzugskosten-oesterreich-sparen/)."
   - question: "Kümmert sich Sicher Team um Halteverbote in Wien?"
     answer: "Ja, wir übernehmen die komplette behördliche Anmeldung und Aufstellung von Halteverbotszonen in allen 23 Wiener Bezirken, damit der Möbeltransporter am Umzugstag sicher parken kann."
   - question: "Bieten Sie auch die Entsorgung von Altmöbeln an?"
     answer: "Ja! Wir verbinden Umzug und Entrümpelung. Möbel, die nicht mitgenommen werden, können wir fachgerecht entrümpeln und durch unsere Wertanrechnung (Wertausgleich) direkt gegenrechnen."
   - question: "Wie lange im Voraus sollte ich die Umzugsfirma buchen?"
-    answer: "Wir empfehlen, Ihren Umzug in Wien mindestens 2-4 Wochen im Voraus zu planen. Besonders zum Monatsende oder an Wochenenden sind wir oft schnell ausgebucht. Für sehr dringende Fälle bieten wir nach Verfügbarkeit auch einen Express-Umzug an."
+    answer: "Wir empfehlen, Ihren Umzug in Wien mindestens 2-4 Wochen im Voraus zu planen. Besonders zum Monatsende oder an Wochenenden sind wir oft schnell ausgebucht. Für sehr dringende Fälle bieten wir nach Verfügbarkeit auch einen Express-Umzug an. Zur perfekten Vorbereitung nutzen Sie gerne unsere [Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/)."
 schema_type: Service
 service_type: Privatumzug
 service_schema:
@@ -62,8 +62,8 @@ permalink: /leistungen/umzug-wien/
 Ein **Umzug in Wien** erfordert aufgrund enger Gassen, hoher Stockwerke in Altbauten und schwieriger Parkplatzsituationen eine präzise Planung. Als erfahrene **Umzugsfirma in Wien** garantiert Sicher Team Ihnen einen vollkommen stressfreien Ablauf. Unser geschultes, fest angestelltes Team demontiert Ihre Einrichtungsgegenstände, verpackt empfindliche Stücke transportsicher und führt den sicheren **Möbeltransport** in allen 23 Wiener Bezirken durch.
 
 <figure>
-  <img src="/assets/images/hero/desktop.webp" alt="Möbelpacker von Sicher Team beim sicheren Transport von Umzugskartons in einem Wiener Altbau" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
-  <figcaption class="text-sm text-gray-500 text-center">Fachgerechter Möbeltransport und Übersiedlung durch unsere erfahrenen Wiener Umzugsteams.</figcaption>
+  <img src="/assets/images/hero/desktop.webp" alt="Möbelpacker von Sicher Team beim sicheren Transport von Umzugskartons in einem Wiener Altbau" width="800" height="533" fetchpriority="high" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <figcaption class="text-sm text-gray-500 text-center">Fachgerechter Möbeltransport und Übersiedlung durch unser fest angestelltes, geschultes Fachpersonal.</figcaption>
 </figure>
 
 Egal ob es sich um einen **Privatumzug**, einen **Firmenumzug**, einen **Büroumzug** oder einen sensiblen **Seniorenumzug** bzw. **Studentenumzug** handelt – unser **Umzugsservice** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen **Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren.
