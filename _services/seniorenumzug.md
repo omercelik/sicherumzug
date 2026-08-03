@@ -34,6 +34,11 @@ faqs:
 
 ## Behutsamer Seniorenumzug mit Full-Service
 
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Stressfreier Seniorenumzug mit Komplettservice" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Stressfreier Seniorenumzug mit Komplettservice</figcaption>
+</figure>
+
 Ein Umzug im Alter, sei es in eine kleinere Wohnung, zu Angehörigen oder in ein betreutes Wohnen bzw. Pflegeheim, ist ein großer emotionaler Schritt. Die körperliche Anstrengung und der organisatorische Stress sollten dabei nicht zur Belastung werden.
 
 Unser All-Inclusive-Paket für **Seniorenumzüge in Wien und Österreich** nimmt Ihnen und Ihren Angehörigen alle Sorgen ab. Mit viel Empathie und Geduld kümmern wir uns um jeden Schritt: Vom sorgfältigen Einpacken Ihres Hausrats mit unserem [Verpackungsservice](/leistungen/umzug-wien/), über den sicheren Transport bis hin zur schlüsselfertigen Einrichtung am neuen Wohnort.

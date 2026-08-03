@@ -1,44 +1,54 @@
 ---
-title: "Wohnungsauflösung Wien Überblick"
-seo_title: "Wohnungsauflösung Wien | Überblick & Fixpreis"
-description: "Kompletter Überblick zur Wohnungsauflösung in Wien: Kosten, Ablauf, Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke mit MA48-Anbindung!"
-kicker: "Überblick"
-
+title: Wohnungsauflösung Wien Überblick
+seo_title: Wohnungsauflösung Wien | Überblick & Fixpreis
+description: 'Kompletter Überblick zur Wohnungsauflösung in Wien: Kosten, Ablauf,
+  Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke mit MA48-Anbindung!'
+kicker: Überblick
 highlights:
-  - "Kompletter Überblick: Kosten, Ablauf & Wertanrechnung"
-  - "Alle 23 Wiener Bezirke mit lokalen Entsorgungsstellen"
-  - "Transparente Preisgestaltung & Fixpreis-Garantie"
-  - "Erfahrung mit 1000+ Wohnungsauflösungen in Wien"
+- 'Kompletter Überblick: Kosten, Ablauf & Wertanrechnung'
+- Alle 23 Wiener Bezirke mit lokalen Entsorgungsstellen
+- Transparente Preisgestaltung & Fixpreis-Garantie
+- Erfahrung mit 1000+ Wohnungsauflösungen in Wien
 checklist:
-  - "Preisübersicht nach Wohnungsgröße"
-  - "Detaillierte Schritt-für-Schritt Anleitung"
-  - "Wertanrechnung für Möbel, Kunst & Antiquitäten"
-  - "Entsorgung über 21 Wiener MA48-Mistplätze"
-  - "Rechtliche Aspekte & Versicherungsschutz"
-  - "Häufige Fragen & Antworten"
+- Preisübersicht nach Wohnungsgröße
+- Detaillierte Schritt-für-Schritt Anleitung
+- Wertanrechnung für Möbel, Kunst & Antiquitäten
+- Entsorgung über 21 Wiener MA48-Mistplätze
+- Rechtliche Aspekte & Versicherungsschutz
+- Häufige Fragen & Antworten
 process:
-  - title: "Kostenlose Erstberatung"
-    description: "Telefonische Besprechung der wichtigsten Details und erste Kosteneinschätzung."
-  - title: "Vor-Ort-Besichtigung"
-    description: "Detaillierte Begutachtung, Inventarisierung und schriftliches Fixpreis-Angebot."
-  - title: "Professionelle Räumung"
-    description: "Systematische Räumung mit Wertanrechnung und umweltgerechter Entsorgung."
-  - title: "besenreine Hinterlassung"
-    description: "Komplette Reinigung, Protokollierung und schriftliche Abnahme."
+- title: Kostenlose Erstberatung
+  description: Telefonische Besprechung der wichtigsten Details und erste Kosteneinschätzung.
+- title: Vor-Ort-Besichtigung
+  description: Detaillierte Begutachtung, Inventarisierung und schriftliches Fixpreis-Angebot.
+- title: Professionelle Räumung
+  description: Systematische Räumung mit Wertanrechnung und umweltgerechter Entsorgung.
+- title: besenreine Hinterlassung
+  description: Komplette Reinigung, Protokollierung und schriftliche Abnahme.
 faqs:
-  - question: "Was kostet eine Wohnungsauflösung in Wien?"
-    answer: "Abhängig von Größe und Zustand: Zimmer ab 150€, 2-Zimmer-Wohnung 250-400€, große Wohnung 400-800€, Einfamilienhaus 600-1200€. Nach Besichtigung erhalten Sie einen konkreten Fixpreis."
-  - question: "Wie funktioniert der Wertanrechnung?"
-    answer: "Wir bewerten Antiquitäten, Möbel, Kunst und Wertgegenstände direkt vor Ort. Der ermittelte Wert wird vom Fixpreis abgezogen - oft macht das Ihre Wohnungsauflösung deutlich günstiger."
-  - question: "Welche Wiener Bezirke betreuen Sie?"
-    answer: "Alle 23 Wiener Bezirke von der Innenstadt (1. Bezirk) bis zu den Vorstädten (23. Bezirk). Wir kennen die lokalen Besonderheiten und Entsorgungsstellen jedes Bezirks."
-  - question: "Wie schnell ist eine Wohnungsauflösung möglich?"
-    answer: "Termine sind meist innerhalb von 2-3 Werktagen verfügbar. Kleine Wohnungen sind oft noch am selben Tag geräumt, größere Objekte benötigen 1-2 Tage."
-  - question: "Was passiert mit Sperrmüll?"
-    answer: "Wir entsorgen Sperrmüll umweltgerecht bei den Wiener MA48-Mistplätzen. Für gut erhaltene Gegenstände nutzen wir die 48er-Tandler-Boxen zur Wiederverwendung."
+- question: Was kostet eine Wohnungsauflösung in Wien?
+  answer: 'Abhängig von Größe und Zustand: Zimmer ab 150€, 2-Zimmer-Wohnung 250-400€,
+    große Wohnung 400-800€, Einfamilienhaus 600-1200€. Nach Besichtigung erhalten
+    Sie einen konkreten Fixpreis.'
+- question: Wie funktioniert der Wertanrechnung?
+  answer: Wir bewerten Antiquitäten, Möbel, Kunst und Wertgegenstände direkt vor Ort.
+    Der ermittelte Wert wird vom Fixpreis abgezogen - oft macht das Ihre Wohnungsauflösung
+    deutlich günstiger.
+- question: Welche Wiener Bezirke betreuen Sie?
+  answer: Alle 23 Wiener Bezirke von der Innenstadt (1. Bezirk) bis zu den Vorstädten
+    (23. Bezirk). Wir kennen die lokalen Besonderheiten und Entsorgungsstellen jedes
+    Bezirks.
+- question: Wie schnell ist eine Wohnungsauflösung möglich?
+  answer: Termine sind meist innerhalb von 2-3 Werktagen verfügbar. Kleine Wohnungen
+    sind oft noch am selben Tag geräumt, größere Objekte benötigen 1-2 Tage.
+- question: Was passiert mit Sperrmüll?
+  answer: Wir entsorgen Sperrmüll umweltgerecht bei den Wiener MA48-Mistplätzen. Für
+    gut erhaltene Gegenstände nutzen wir die 48er-Tandler-Boxen zur Wiederverwendung.
 schema_type: Service
 service_type: Wohnungsauflösung Wien Überblick
-permalink: /leistungen/haushaltsaufloesung-ueberblick/
+permalink: "/leistungen/haushaltsaufloesung-ueberblick/"
+intent_primary: Wohnungsauflösung
+intent_secondary: Haushaltsauflösung
 ---
 
 ## Wohnungsauflösung Wien: Ihr kompletter Überblick

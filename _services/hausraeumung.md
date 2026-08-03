@@ -1,38 +1,45 @@
 ---
-title: "Hausräumung Wien"
-seo_title: "Hausräumung & Hausentrümpelung Wien - Fixpreis"
-description: "Ihre Hausräumung und Hausentrümpelung in Wien. Für Hausräumungen von Einfamilienhäusern bieten wir Fixpreis & maximalen Wertanrechnung an."
-kicker: "Privat"
-
+title: Hausräumung Wien
+seo_title: Hausräumung & Hausentrümpelung Wien - Fixpreis
+description: Ihre Hausräumung und Hausentrümpelung in Wien. Für Hausräumungen von
+  Einfamilienhäusern bieten wir Fixpreis & maximalen Wertanrechnung an.
+kicker: Privat
 highlights:
-  - "Spezialisten für Einfamilienhäuser und Reihenhaus-Räumungen"
-  - "Erfahrung mit Mehrgenerationen-Haushalten und geerbten Häusern"
-  - "Große Möbel, Keller & Dachböden - alles inklusive"
-  - "Professioneller Wertanrechnung für Antiquitäten & Sammlungen"
+- Spezialisten für Einfamilienhäuser und Reihenhaus-Räumungen
+- Erfahrung mit Mehrgenerationen-Haushalten und geerbten Häusern
+- Große Möbel, Keller & Dachböden - alles inklusive
+- Professioneller Wertanrechnung für Antiquitäten & Sammlungen
 checklist:
-  - "Komplette Wohnungsauflösung inklusive Keller & Dachboden"
-  - "Möbel, Küchengeräte & Einbauten"
-  - "Garten, Garage & Nebengebäude"
-  - "Wertvolle Gegenstände & Sammlungen"
+- Komplette Wohnungsauflösung inklusive Keller & Dachboden
+- Möbel, Küchengeräte & Einbauten
+- Garten, Garage & Nebengebäude
+- Wertvolle Gegenstände & Sammlungen
 process:
-  - title: "Umfassende Hausanalyse"
-    description: "Wir bewerten das gesamte Haus inklusive aller Nebenräume, Keller und Dachböden."
-  - title: "Maximaler Wertanrechnung"
-    description: "Antiquitäten, Kunst und Sammlungen werden von Experten bewertet und angerechnet."
-  - title: "Strukturierte Räumung"
-    description: "Systematische Räumung von unten nach oben, Schutz der Bausubstanz."
-  - title: "Vollständige Übergabe"
-    description: "besenreine Hinterlassung inklusive Außenbereich und Nebengebäuden."
+- title: Umfassende Hausanalyse
+  description: Wir bewerten das gesamte Haus inklusive aller Nebenräume, Keller und
+    Dachböden.
+- title: Maximaler Wertanrechnung
+  description: Antiquitäten, Kunst und Sammlungen werden von Experten bewertet und
+    angerechnet.
+- title: Strukturierte Räumung
+  description: Systematische Räumung von unten nach oben, Schutz der Bausubstanz.
+- title: Vollständige Übergabe
+  description: besenreine Hinterlassung inklusive Außenbereich und Nebengebäuden.
 faqs:
-  - question: "Wie lange dauert eine Hausräumung?"
-    answer: "Je nach Größe 1-3 Tage. Wir planen die Räumung systematisch und halten uns an vereinbarte Zeitfenster."
-  - question: "Räumen Sie auch Keller und Dachböden?"
-    answer: "Ja, alle Nebenräume sind im Preis inkludiert. Oft finden sich dort die wertvollsten Gegenstände."
-  - question: "Können Sie bei geerbten Häusern helfen?"
-    answer: "Absolut - wir verstehen die emotionale Belastung und bieten diskrete, respektvolle Abwicklung."
+- question: Wie lange dauert eine Hausräumung?
+  answer: Je nach Größe 1-3 Tage. Wir planen die Räumung systematisch und halten uns
+    an vereinbarte Zeitfenster.
+- question: Räumen Sie auch Keller und Dachböden?
+  answer: Ja, alle Nebenräume sind im Preis inkludiert. Oft finden sich dort die wertvollsten
+    Gegenstände.
+- question: Können Sie bei geerbten Häusern helfen?
+  answer: Absolut - wir verstehen die emotionale Belastung und bieten diskrete, respektvolle
+    Abwicklung.
 schema_type: Service
 service_type: Hausräumung Wien
-permalink: /leistungen/hausraeumung/
+permalink: "/leistungen/hausraeumung/"
+intent_primary: Wohnungsauflösung
+intent_secondary: Hausräumung
 ---
 ## Hausräumung Wien: Komplette Lösungen für Einfamilienhäuser
 

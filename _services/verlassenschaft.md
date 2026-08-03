@@ -1,34 +1,40 @@
 ---
-title: "Verlassenschaften & Nachlassräumung"
-seo_title: "Verlassenschaften & Nachlassräumung Wien - Wertanrechnung"
-description: "Ihre Verlassenschaft Wien. Wir bieten Verlassenschaftsräumung Wien und Verlassenschaften Ankauf Wien an, inkl. Abstimmung mit Notaren und Fixpreis."
-kicker: "Spezialfall"
-
+title: Verlassenschaften & Nachlassräumung
+seo_title: Verlassenschaften & Nachlassräumung Wien - Wertanrechnung
+description: Ihre Verlassenschaft Wien. Wir bieten Verlassenschaftsräumung Wien und
+  Verlassenschaften Ankauf Wien an, inkl. Abstimmung mit Notaren und Fixpreis.
+kicker: Spezialfall
 highlights:
-  - Diskrete Teams & persönliche Ansprechpartnerin
-  - Wertgutachten für Antiquitäten und Kunst
-  - Zusammenarbeit mit Notaren & Hausverwaltungen
+- Diskrete Teams & persönliche Ansprechpartnerin
+- Wertgutachten für Antiquitäten und Kunst
+- Zusammenarbeit mit Notaren & Hausverwaltungen
 checklist:
-  - Komplette Haushalte & Villen
-  - Archive, Bibliotheken & Sammlungen
-  - Keller, Dachboden & Garagen
+- Komplette Haushalte & Villen
+- Archive, Bibliotheken & Sammlungen
+- Keller, Dachboden & Garagen
 process:
-  - title: Sensible Besichtigung
-    description: Gemeinsamer Rundgang, Inventarliste und Klärung emotionaler Stücke.
-  - title: Wertbewertung
-    description: Zusammen mit Partner-Auktion Häusern bewerten wir Kunst & Antiquitäten.
-  - title: Räumung
-    description: Teams arbeiten diskret, sortieren Erinnerungsstücke separat und entsorgen würdevoll.
-  - title: Finale Übergabe
-    description: Besenrein inkl. Schlüsselprotokoll, Fotos und Liste der verwerteten Gegenstände.
+- title: Sensible Besichtigung
+  description: Gemeinsamer Rundgang, Inventarliste und Klärung emotionaler Stücke.
+- title: Wertbewertung
+  description: Zusammen mit Partner-Auktion Häusern bewerten wir Kunst & Antiquitäten.
+- title: Räumung
+  description: Teams arbeiten diskret, sortieren Erinnerungsstücke separat und entsorgen
+    würdevoll.
+- title: Finale Übergabe
+  description: Besenrein inkl. Schlüsselprotokoll, Fotos und Liste der verwerteten
+    Gegenstände.
 faqs:
-  - question: Können Familienmitglieder nicht vor Ort sein?
-    answer: Wir stimmen jedes Detail digital ab und senden Protokolle & Fotos nach jeder Phase.
-  - question: Arbeiten Sie mit Rechtsanwält:innen?
-    answer: Ja, wir koordinieren uns mit Notaren oder Anwälten und übernehmen auf Wunsch die komplette Dokumentation.
+- question: Können Familienmitglieder nicht vor Ort sein?
+  answer: Wir stimmen jedes Detail digital ab und senden Protokolle & Fotos nach jeder
+    Phase.
+- question: Arbeiten Sie mit Rechtsanwält:innen?
+  answer: Ja, wir koordinieren uns mit Notaren oder Anwälten und übernehmen auf Wunsch
+    die komplette Dokumentation.
 schema_type: Service
 service_type: Verlassenschaft
-permalink: /leistungen/verlassenschaft/
+permalink: "/leistungen/verlassenschaft/"
+intent_primary: Verlassenschaftsräumung
+intent_secondary: Verlassenschaft Ankauf
 ---
 ## Verlassenschaft Wien: Respektvolle Verlassenschaftsräumung
 

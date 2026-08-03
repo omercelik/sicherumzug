@@ -1,36 +1,45 @@
 ---
-title: "Möbel Ankauf? Wertanrechnung nur mit Entrümpelung"
-seo_title: "Möbel Ankauf? Wertanrechnung nur mit Entrümpelung"
-description: "Wir rechnen den Wert von Möbeln ausschließlich als Teil unserer Entrümpelung oder Räumung an. Keine Einzelabholung – Anrechnung direkt auf den Fixpreis."
-kicker: "Wertanrechnung"
-
+title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
+seo_title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
+description: Wir rechnen den Wert von Möbeln ausschließlich als Teil unserer Entrümpelung
+  oder Räumung an. Keine Einzelabholung – Anrechnung direkt auf den Fixpreis.
+kicker: Wertanrechnung
 highlights:
-  - "Keine Einzelabholung – nur mit Entrümpelung/Räumung"
-  - "Wertanrechnung für Designermöbel & hochwertige Stücke"
-  - "Gutschrift oder Teil-Auszahlung beim Projektstart"
+- Keine Einzelabholung – nur mit Entrümpelung/Räumung
+- Wertanrechnung für Designermöbel & hochwertige Stücke
+- Gutschrift oder Teil-Auszahlung beim Projektstart
 checklist:
-  - "Designklassiker, hochwertige Vollholzmöbel, intakte Küchen"
-  - "Schrankwände, Bibliotheken, Ess- und Wohnzimmer-Ensembles"
-  - "Büromöbel & Geschäftsausstattung bei Firmenräumung"
+- Designklassiker, hochwertige Vollholzmöbel, intakte Küchen
+- Schrankwände, Bibliotheken, Ess- und Wohnzimmer-Ensembles
+- Büromöbel & Geschäftsausstattung bei Firmenräumung
 process:
-  - title: "Fotos & Kurzbeschreibung senden"
-    description: "Wir bewerten Ihre Möbel vorab und planen die Wertanrechnung für das Räumungsangebot."
-  - title: "Besichtigung + Fixpreis mit Anrechnung"
-    description: "Vor Ort bewerten wir Zustand und Menge und ziehen den Wert direkt vom Räumungs-Fixpreis ab."
-  - title: "Räumung & Gutschrift"
-    description: "Beim Starttermin führen wir die Räumung durch, nehmen die Möbel mit und verrechnen die vereinbarte Summe."
+- title: Fotos & Kurzbeschreibung senden
+  description: Wir bewerten Ihre Möbel vorab und planen die Wertanrechnung für das
+    Räumungsangebot.
+- title: Besichtigung + Fixpreis mit Anrechnung
+  description: Vor Ort bewerten wir Zustand und Menge und ziehen den Wert direkt vom
+    Räumungs-Fixpreis ab.
+- title: Räumung & Gutschrift
+  description: Beim Starttermin führen wir die Räumung durch, nehmen die Möbel mit
+    und verrechnen die vereinbarte Summe.
 faqs:
-  - question: "Bieten Sie einen reinen Möbel Ankauf?"
-    answer: "Nein. Wir holen keine Möbel einzeln ab und kaufen nicht separat an. Die Anrechnung erfolgt nur, wenn wir auch die Entrümpelung oder Räumung übernehmen."
-  - question: "Welche Möbel rechnen Sie an?"
-    answer: "Designklassiker, hochwertige Vollholzmöbel, intakte Küchen oder Büroeinrichtungen in gutem Zustand. Stark abgenutzte oder beschädigte Stücke werden regulär entsorgt."
-  - question: "Wie wird ausbezahlt?"
-    answer: "Der Wert wird direkt auf den Räumungs-Fixpreis angerechnet. Auf Wunsch ist eine Teil-Auszahlung beim Projektstart möglich."
-  - question: "Wo bieten Sie die Wertanrechnung an?"
-    answer: "In Wien, Niederösterreich und Burgenland – immer im Rahmen eines bestätigten Entrümpelungs-, Räumungs- oder Verlassenschaftsauftrags."
+- question: Bieten Sie einen reinen Möbel Ankauf?
+  answer: Nein. Wir holen keine Möbel einzeln ab und kaufen nicht separat an. Die
+    Anrechnung erfolgt nur, wenn wir auch die Entrümpelung oder Räumung übernehmen.
+- question: Welche Möbel rechnen Sie an?
+  answer: Designklassiker, hochwertige Vollholzmöbel, intakte Küchen oder Büroeinrichtungen
+    in gutem Zustand. Stark abgenutzte oder beschädigte Stücke werden regulär entsorgt.
+- question: Wie wird ausbezahlt?
+  answer: Der Wert wird direkt auf den Räumungs-Fixpreis angerechnet. Auf Wunsch ist
+    eine Teil-Auszahlung beim Projektstart möglich.
+- question: Wo bieten Sie die Wertanrechnung an?
+  answer: In Wien, Niederösterreich und Burgenland – immer im Rahmen eines bestätigten
+    Entrümpelungs-, Räumungs- oder Verlassenschaftsauftrags.
 schema_type: Service
 service_type: Möbel Wertanrechnung
-permalink: /leistungen/moebel-ankauf/
+permalink: "/leistungen/moebel-ankauf/"
+intent_primary: Wertanrechnung
+intent_secondary: Möbel Ankauf
 ---
 ## Wertanrechnung für Möbel nur in Verbindung mit Entrümpelung & Räumung
 
