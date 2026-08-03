@@ -27,7 +27,7 @@ faqs:
   - question: "Was passiert mit Möbeln, die nicht mitgenommen werden?"
     answer: "Gegenstände, für die im neuen, oft kleineren Zuhause kein Platz ist, entrümpeln wir fachgerecht. Gut erhaltene Möbel oder Antiquitäten verrechnen wir fair über unser Wertanrechnungssystem."
   - question: "Was kostet ein Seniorenumzug in Wien?"
-    answer: "Die Kosten hängen vom genauen Aufwand ab. Wir bieten eine kostenlose Vor-Ort-Besichtigung an, nach der Sie einen transparenten Fixpreis ohne versteckte Kosten erhalten. Eine gleichzeitige [Haushaltsauflösung](/leistungen/haushaltsaufloesung/) kann die Kosten durch Wertanrechnung deutlich senken."
+    answer: "Die Kosten hängen vom genauen Aufwand ab. Wir bieten eine kostenlose Vor-Ort-Besichtigung an, nach der Sie einen transparenten Fixpreis ohne versteckte Kosten erhalten. Eine gleichzeitige [Haushaltsauflösung](/ratgeber/wohnungsaufloesung-nach-todesfall/) kann die Kosten durch Wertanrechnung deutlich senken."
   - question: "Müssen wir beim Umzugstag anwesend sein?"
     answer: "Nein, Sie können uns vertrauensvoll die Schlüssel übergeben. Wir übernehmen den kompletten Ablauf bis zur schlüsselfertigen Übergabe im neuen Zuhause oder betreuten Wohnen."
 ---
@@ -35,19 +35,19 @@ faqs:
 ## Behutsamer Seniorenumzug mit Full-Service
 
 <figure class="my-8">
-  <img src="/topbg.webp" alt="Stressfreier Seniorenumzug mit Komplettservice" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
-  <figcaption class="text-sm text-center text-gray-500 mt-2">Stressfreier Seniorenumzug mit Komplettservice</figcaption>
+  <img src="/topbg.webp" alt="Stressfreier Seniorenumzug mit Komplettservice" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" fetchpriority="high">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Stressfreier Seniorenumzug mit Komplettservice durch unser geschultes Fachpersonal</figcaption>
 </figure>
 
 Ein Umzug im Alter, sei es in eine kleinere Wohnung, zu Angehörigen oder in ein betreutes Wohnen bzw. Pflegeheim, ist ein großer emotionaler Schritt. Die körperliche Anstrengung und der organisatorische Stress sollten dabei nicht zur Belastung werden.
 
-Unser All-Inclusive-Paket für **Seniorenumzüge in Wien und Österreich** nimmt Ihnen und Ihren Angehörigen alle Sorgen ab. Mit viel Empathie und Geduld kümmern wir uns um jeden Schritt: Vom sorgfältigen Einpacken Ihres Hausrats mit unserem [Verpackungsservice](/leistungen/umzug-wien/), über den sicheren Transport bis hin zur schlüsselfertigen Einrichtung am neuen Wohnort.
+Unser All-Inclusive-Paket für **Seniorenumzüge in Wien und Österreich** nimmt Ihnen und Ihren Angehörigen alle Sorgen ab. Mit viel Empathie und über 15 Jahren Erfahrung kümmern wir uns um jeden Schritt: Vom sorgfältigen Einpacken Ihres Hausrats mit unserem Verpackungsservice, über den sicheren Transport bis hin zur schlüsselfertigen Einrichtung am neuen Wohnort.
 
 ### Was unseren Umzugsservice für Senioren besonders macht
 
 - **Alles aus einer Hand:** Vom Abbau der Schrankwand über das Aufhängen der Lampen bis zum Einräumen des Geschirrs.
 - **Kombination mit Entrümpelung:** Was nicht mit umziehen soll, wird von uns im Zuge einer [Wohnungsräumung](/leistungen/wohnungsraeumung/) diskret geräumt und umweltgerecht entsorgt.
-- **Transparenz:** Wir arbeiten ausschließlich mit [fairen Fixpreisen](/preise/) – garantiert ohne versteckte Nachzahlungen.
+- **Transparenz:** Wir arbeiten ausschließlich mit fairen Fixpreisen und Fixpreisgarantie – absolut ohne versteckte Nachzahlungen.
 
 ### Der Ablauf Ihres Seniorenumzugs
 
