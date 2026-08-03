@@ -171,3 +171,59 @@ To ensure Gemini, ChatGPT, and AI Overviews understand Sicher Team:
 *   **DO NOT** cannibalize intent. (e.g., "Umzug Wien" and "Umzugsfirma Wien" should likely be the same page or distinctly targeted to avoid competing against ourselves).
 *   **DO NOT** use exact match anchor text repeatedly (e.g., linking "Umzug Wien" 15 times). Use semantic variations ("unsere Zentrale in Wien", "Ihre Übersiedlung").
 *   **DO NOT** create doorway pages (e.g., duplicating the "Privatumzug" page for 50 different small towns with no unique content).
+
+---
+
+## 10. Implementation Priority Matrix
+
+### Priority 1: Must-have improvements for authority
+**1. Centralized Entity Data File**
+*   *Justification:* Standardizes NAP (Name, Address, Phone) and service catalogs for AI and Schema generation.
+*   *Expected SEO/AI Impact:* High. Ensures Gemini and Google have one undeniable source of truth.
+*   *Difficulty:* Low (YAML editing).
+*   *Dependencies:* None.
+*   *Risk level:* Low.
+
+**2. Umzug Main Pillar Page & Schema Alignment**
+*   *Justification:* Resolves the current authority gap where Entrümpelung overshadows Umzug.
+*   *Expected SEO/AI Impact:* Very High. Sets the correct primary entity (`MovingCompany`).
+*   *Difficulty:* Medium (Requires structured content and accurate schema implementation).
+*   *Dependencies:* Centralized Entity Data (Priority 1).
+*   *Risk level:* Low.
+
+**3. Privatumzug & Firmenumzug Core Pillars**
+*   *Justification:* These are the highest commercial-intent searches. Users want to know specifically if you handle their type of move.
+*   *Expected SEO/AI Impact:* High commercial value; essential for semantic depth.
+*   *Difficulty:* Medium (Content creation).
+*   *Dependencies:* Umzug Main Pillar (Priority 1).
+*   *Risk level:* Low.
+
+### Priority 2: Important improvements
+**1. Cost & Planning Guides (Kosten, Checkliste)**
+*   *Justification:* Captures top-of-funnel informational traffic. Proves EEAT by answering real user questions transparently.
+*   *Expected SEO/AI Impact:* High (Informational queries often trigger AI Overviews).
+*   *Difficulty:* Medium (Requires high-quality, accurate writing).
+*   *Dependencies:* None directly, but links should point to Core Pillars.
+*   *Risk level:* Low.
+
+**2. Secondary Core Pillars (Montage, Verpackungsservice, Seniorenumzug)**
+*   *Justification:* Fleshes out the primary cluster fully, demonstrating comprehensive service capability.
+*   *Expected SEO/AI Impact:* Medium. Supports the main Umzug entity.
+*   *Difficulty:* Low to Medium.
+*   *Dependencies:* None.
+*   *Risk level:* Low.
+
+**3. Internal Link Rebalancing**
+*   *Justification:* Current links may heavily favor the legacy Entrümpelung pages. Need to ensure PageRank flows to the new Umzug pillars.
+*   *Expected SEO/AI Impact:* Medium/High. Crucial for crawler prioritization.
+*   *Difficulty:* Medium (Requires auditing existing pages).
+*   *Dependencies:* New Umzug Pillars must exist first.
+*   *Risk level:* Medium (If done via aggressive anchor text stuffing, which we will avoid).
+
+### Priority 3: Future opportunities
+**1. Strategic Location Hubs (e.g., Graz, Linz)**
+*   *Justification:* Captures non-Vienna local search traffic.
+*   *Expected SEO/AI Impact:* High (Local SEO expansion).
+*   *Difficulty:* High (Requires generating *unique* local content, not just find/replace).
+*   *Dependencies:* The national Umzug authority must be firmly established first to avoid these pages being seen as thin/doorway.
+*   *Risk level:* High (Doorway page penalty risk if executed poorly).
