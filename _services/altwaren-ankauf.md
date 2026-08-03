@@ -18,13 +18,12 @@ faqs:
 - answer: Wien, Niederösterreich und Burgenland – immer gekoppelt an einen bestätigten
     Entrümpelungs-, Räumungs- oder Verlassenschaftsauftrag.
   question: In welchen Regionen?
-
 highlights:
 - Keine Einzelabholung – nur mit Entrümpelung/Räumung
 - Wertanrechnung für Sammlungen, Porzellan, Bücher
 - Gutschrift oder Teil-Auszahlung beim Projektstart
 kicker: Wertanrechnung
-permalink: /leistungen/altwaren-ankauf/
+permalink: "/leistungen/altwaren-ankauf/"
 process:
 - description: Wir prüfen Zustand und Marktwert vorab und planen die Anrechnung im
     Räumungsangebot.
@@ -39,9 +38,16 @@ schema_type: Service
 seo_title: Altwaren Ankauf Wien - Wertanrechnung & Barankauf
 service_type: Altwaren Wertanrechnung
 title: Altwaren Ankauf? Wertanrechnung nur mit Entrümpelung
+intent_primary: Wertanrechnung
+intent_secondary: Altwaren Ankauf
 ---
 
 ## Wertanrechnung für Altwaren nur in Verbindung mit Entrümpelung & Räumung
+
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Altwaren Ankauf und Wertanrechnung direkt vor Ort" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Altwaren Ankauf und Wertanrechnung direkt vor Ort</figcaption>
+</figure>
 
 **Wichtig:** Wir bieten keinen separaten Altwaren-Ankauf. Eine Anrechnung erfolgt ausschließlich, wenn wir auch die Entrümpelung, Räumung oder Verlassenschaft durchführen.
 

@@ -1,38 +1,44 @@
 ---
-title: "Zimmer Räumung Wien"
-seo_title: "Zimmer Räumung Wien - WG & Keller entrümpeln zum Fixpreis"
-description: "Professionelle Zimmer Räumung in Wien für Studentenwohnungen, WGs und Einzelräume. Gratis Erstbesichtigung, Fixpreis & Wertanrechnung."
-kicker: "Privat"
-
+title: Zimmer Räumung Wien
+seo_title: Zimmer Räumung Wien - WG & Keller entrümpeln zum Fixpreis
+description: Professionelle Zimmer Räumung in Wien für Studentenwohnungen, WGs und
+  Einzelräume. Gratis Erstbesichtigung, Fixpreis & Wertanrechnung.
+kicker: Privat
 highlights:
-  - "Spezialisten für Studentenwohnungen und WG-Auflösungen"
-  - "Flexible Termine auch zu Semesterbeginn/-ende"
-  - "Schnelle Räumung bei Auszug oder Studienwechsel"
-  - "Wertanrechnung für Möbel, Küchengeräte & Elektrogeräte"
+- Spezialisten für Studentenwohnungen und WG-Auflösungen
+- Flexible Termine auch zu Semesterbeginn/-ende
+- Schnelle Räumung bei Auszug oder Studienwechsel
+- Wertanrechnung für Möbel, Küchengeräte & Elektrogeräte
 checklist:
-  - "Möbel, Küche & Elektrogeräte"
-  - "Bücher, Elektronik & Kleidung"
-  - "Verpackungsmaterialien & Dekoration"
-  - "Abfalltrennung & Entsorgung"
+- Möbel, Küche & Elektrogeräte
+- Bücher, Elektronik & Kleidung
+- Verpackungsmaterialien & Dekoration
+- Abfalltrennung & Entsorgung
 process:
-  - title: "Kostenlose Erstbewertung"
-    description: "Wir schätzen Menge und Wert Ihrer Gegenstände - oft genügt ein Blick auf Fotos oder ein kurzer Termin."
-  - title: "Flexibles Fixpreis-Angebot"
-    description: "Transparente Kosten für die komplette Zimmer Räumung - ohne versteckte Gebühren."
-  - title: "Schnelle Räumung"
-    description: "Effiziente Räumung noch am selben Tag möglich - ideal für Mietvertrags-Enden."
-  - title: "WG-Kompatibel"
-    description: "Sensible Abwicklung bei WG-Auflösungen mit mehreren Mietparteien."
+- title: Kostenlose Erstbewertung
+  description: Wir schätzen Menge und Wert Ihrer Gegenstände - oft genügt ein Blick
+    auf Fotos oder ein kurzer Termin.
+- title: Flexibles Fixpreis-Angebot
+  description: Transparente Kosten für die komplette Zimmer Räumung - ohne versteckte
+    Gebühren.
+- title: Schnelle Räumung
+  description: Effiziente Räumung noch am selben Tag möglich - ideal für Mietvertrags-Enden.
+- title: WG-Kompatibel
+  description: Sensible Abwicklung bei WG-Auflösungen mit mehreren Mietparteien.
 faqs:
-  - question: "Wie schnell können Sie ein Zimmer räumen?"
-    answer: "Oft noch am selben Tag - wir sind flexibel bei Auszugsfristen und Semesterwechseln."
-  - question: "Nehmen Sie auch Möbel mit?"
-    answer: "Ja, wir kaufen funktionstüchtige Möbel und Elektrogeräte an und rechnen den Wert an."
-  - question: "Können Sie bei WG-Auflösungen helfen?"
-    answer: "Absolut - wir koordinieren mit allen Mietparteien und handhaben Wertanrechnung zwischen Bewohnern."
+- question: Wie schnell können Sie ein Zimmer räumen?
+  answer: Oft noch am selben Tag - wir sind flexibel bei Auszugsfristen und Semesterwechseln.
+- question: Nehmen Sie auch Möbel mit?
+  answer: Ja, wir kaufen funktionstüchtige Möbel und Elektrogeräte an und rechnen
+    den Wert an.
+- question: Können Sie bei WG-Auflösungen helfen?
+  answer: Absolut - wir koordinieren mit allen Mietparteien und handhaben Wertanrechnung
+    zwischen Bewohnern.
 schema_type: Service
 service_type: Zimmer Räumung Wien
-permalink: /leistungen/zimmer-raeumung/
+permalink: "/leistungen/zimmer-raeumung/"
+intent_primary: Entrümpelung
+intent_secondary: Zimmerräumung
 ---
 ## Zimmer Räumung Wien: Flexibel bei Studenten & Berufstätigen
 

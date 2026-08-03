@@ -1,40 +1,50 @@
 ---
-title: "Dachbodenräumung Wien"
-seo_title: "Dachbodenräumung Wien - Dachboden entrümpeln Fixpreis"
-description: "Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser und Lastenaufzüge. Fixpreis, Wertanrechnung und Unterstützung bei Genehmigungen."
-kicker: "Privat"
-
+title: Dachbodenräumung Wien
+seo_title: Dachbodenräumung Wien - Dachboden entrümpeln Fixpreis
+description: Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser
+  und Lastenaufzüge. Fixpreis, Wertanrechnung und Unterstützung bei Genehmigungen.
+kicker: Privat
 highlights:
-  - "Sichere Räumung über schmale Stiegen"
-  - "Vorsichtige Behandlung historischer Substanz"
-  - "Spitzboden-Aufbereitung für Ausbau"
-  - "Experten für Wiener Altbauten"
+- Sichere Räumung über schmale Stiegen
+- Vorsichtige Behandlung historischer Substanz
+- Spitzboden-Aufbereitung für Ausbau
+- Experten für Wiener Altbauten
 checklist:
-  - "Alte Koffer & Trunkes"
-  - "Möbel & Sperrmüll"
-  - "Zertifizierte Entsorgung"
-  - "Fotodokumentation"
+- Alte Koffer & Trunkes
+- Möbel & Sperrmüll
+- Zertifizierte Entsorgung
+- Fotodokumentation
 process:
-  - title: "Dachboden-Check"
-    description: "Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser und Lastenaufzüge."
-  - title: "Dachboden-Räumung"
-    description: "Dachbodenräumung mit vorsichtiger Behandlung historischer Substanz."
-  - title: "Entsorgung & Recycling"
-    description: "Abtransport über enge Wiener Stiegenhäuser mit Lastenaufzügen."
-  - title: "Dachboden-Aufbereitung"
-    description: "Für optimale Ausbauvorbereitung von Spitzböden."
+- title: Dachboden-Check
+  description: Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser
+    und Lastenaufzüge.
+- title: Dachboden-Räumung
+  description: Dachbodenräumung mit vorsichtiger Behandlung historischer Substanz.
+- title: Entsorgung & Recycling
+  description: Abtransport über enge Wiener Stiegenhäuser mit Lastenaufzügen.
+- title: Dachboden-Aufbereitung
+  description: Für optimale Ausbauvorbereitung von Spitzböden.
 faqs:
-  - question: "Können Sie auch sehr enge Stiegenhäuser befahren?"
-    answer: "Ja, wir kennen die Wiener Altbau-Problematik und haben kleine, wendige Fahrzeuge."
-  - question: "Was passiert mit historischen Gegenständen?"
-    answer: "Wir bewerten und verkaufen Antiquitäten oder vermitteln sie an Museen oder Sammler."
-  - question: "Können Sie auch den Dachboden für Ausbau vorbereiten?"
-    answer: "Ja, wir bereiten Dachböden optimal für geplante Ausbauten oder Renovierungen vor."
+- question: Können Sie auch sehr enge Stiegenhäuser befahren?
+  answer: Ja, wir kennen die Wiener Altbau-Problematik und haben kleine, wendige Fahrzeuge.
+- question: Was passiert mit historischen Gegenständen?
+  answer: Wir bewerten und verkaufen Antiquitäten oder vermitteln sie an Museen oder
+    Sammler.
+- question: Können Sie auch den Dachboden für Ausbau vorbereiten?
+  answer: Ja, wir bereiten Dachböden optimal für geplante Ausbauten oder Renovierungen
+    vor.
 schema_type: Service
 service_type: Dachbodenräumung Wien
-permalink: /leistungen/dachbodenraeumung/
+permalink: "/leistungen/dachbodenraeumung/"
+intent_primary: Entrümpelung
+intent_secondary: Dachbodenräumung
 ---
 ## Dachbodenräumung Wien: Vorsichtige Behandlung historischer Substanz
+
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Professionelle Dachbodenräumung durch das Sicher Team in Wien" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Professionelle Dachbodenräumung durch das Sicher Team in Wien</figcaption>
+</figure>
 
 Als Teil unserer [Räumung Wien Services](/leistungen/raeumung/) sind wir spezialisiert auf sichere Dachbodenräumungen in allen Wiener Bezirken. Eine Dachboden Räumung Wien bedeutet für uns viel Feingefühl und eine klare Logistik, egal ob Altbau oder Neubau.
 

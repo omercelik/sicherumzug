@@ -1,37 +1,42 @@
 ---
-title: "Firmen- & Büroauflösung Wien"
-seo_title: "Firmen- & Büroauflösung Wien - Betriebsauflösung"
-description: "Ihre Firmenauflösung Wien. Wir bieten Betriebsauflösung, Büroauflösung Wien und Firmen Auflösung für Büros und Gewerberäume mit Fixpreis an."
-kicker: "Gewerblich"
-
+title: Firmen- & Büroauflösung Wien
+seo_title: Firmen- & Büroauflösung Wien - Betriebsauflösung
+description: Ihre Firmenauflösung Wien. Wir bieten Betriebsauflösung, Büroauflösung
+  Wien und Firmen Auflösung für Büros und Gewerberäume mit Fixpreis an.
+kicker: Gewerblich
 highlights:
-  - Projektleitung & Zeitplan nach Meilensteinen
-  - DSGVO-konforme Datenvernichtung mit Zertifikat
-  - Wochenend- & Nachteinsätze ohne Aufpreis
+- Projektleitung & Zeitplan nach Meilensteinen
+- DSGVO-konforme Datenvernichtung mit Zertifikat
+- Wochenend- & Nachteinsätze ohne Aufpreis
 checklist:
-  - Büro- & Arbeitsplatzmöbel
-  - IT & Server-Racks inkl. Datenlöschung
-  - Archivbestände mit Vernichtungsnachweis
-  - Ladenbau, Regale & Messestände
+- Büro- & Arbeitsplatzmöbel
+- IT & Server-Racks inkl. Datenlöschung
+- Archivbestände mit Vernichtungsnachweis
+- Ladenbau, Regale & Messestände
 process:
-  - title: Intake & Standortanalyse
-    description: Wir klären Lieferantenzufahrten, Lastenaufzüge und Brandschutzauflagen.
-  - title: Inventarisierung
-    description: Verwertbare Assets werden bewertet, Restmengen mengenmäßig erfasst.
-  - title: Rückbau & Räumung
-    description: Wir demontieren Möbel, entfernen Bodenbeläge und sorgen für Schadstofftrennung.
-  - title: Übergabe mit Abnahmeprotokoll
-    description: Besenreines Objekt inklusive Fotos und Schlüsselprotokoll.
+- title: Intake & Standortanalyse
+  description: Wir klären Lieferantenzufahrten, Lastenaufzüge und Brandschutzauflagen.
+- title: Inventarisierung
+  description: Verwertbare Assets werden bewertet, Restmengen mengenmäßig erfasst.
+- title: Rückbau & Räumung
+  description: Wir demontieren Möbel, entfernen Bodenbeläge und sorgen für Schadstofftrennung.
+- title: Übergabe mit Abnahmeprotokoll
+  description: Besenreines Objekt inklusive Fotos und Schlüsselprotokoll.
 faqs:
-  - question: Arbeiten Sie mit Facility- und IT-Teams zusammen?
-    answer: Ja, wir koordinieren uns mit internen Teams oder externen Dienstleistern und integrieren deren Checklisten.
-  - question: Können Sie mehrere Standorte parallel räumen?
-    answer: Dank mehrerer Teams und Partnerbetriebe übernehmen wir Projekte in ganz Wien & NÖ parallel.
-  - question: Bieten Sie auch eine büroaufloesung an?
-    answer: Ja, wir übernehmen Büroauflösungen inklusive Demontage, Aktenvernichtung und Übergabeprotokoll zum Fixpreis.
+- question: Arbeiten Sie mit Facility- und IT-Teams zusammen?
+  answer: Ja, wir koordinieren uns mit internen Teams oder externen Dienstleistern
+    und integrieren deren Checklisten.
+- question: Können Sie mehrere Standorte parallel räumen?
+  answer: Dank mehrerer Teams und Partnerbetriebe übernehmen wir Projekte in ganz
+    Wien & NÖ parallel.
+- question: Bieten Sie auch eine büroaufloesung an?
+  answer: Ja, wir übernehmen Büroauflösungen inklusive Demontage, Aktenvernichtung
+    und Übergabeprotokoll zum Fixpreis.
 schema_type: Service
 service_type: Firmenauflösung
-permalink: /leistungen/firmenaufloesung/
+permalink: "/leistungen/firmenaufloesung/"
+intent_primary: Betriebsauflösung
+intent_secondary: Firmenauflösung
 ---
 ## Firmenauflösung & Büroauflösung Wien: Sorgenfreie Firmen Auflösung
 

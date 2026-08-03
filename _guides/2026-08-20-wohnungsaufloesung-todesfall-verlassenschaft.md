@@ -8,7 +8,7 @@ description: "Die Auflösung einer Wohnung nach einem Todesfall ist emotional be
 
 
 
-Der Verlust eines nahestehenden Menschen ist eine Ausnahmesituation. Zu der tiefen Trauer gesellt sich oft die große bürokratische und organisatorische Last, sich um den Nachlass und die Wohnungsauflösung kümmern zu müssen. Eine Verlassenschaftsräumung in Wien oder Österreich ist keine gewöhnliche Entrümpelung, sondern erfordert höchstes Feingefühl, Pietät und juristisches Wissen über den Notar-Ablauf. Dieser Leitfaden soll Hinterbliebenen helfen, diesen schweren Weg Schritt für Schritt zu bewältigen.
+Der Verlust eines nahestehenden Menschen ist eine Ausnahmesituation. Zu der tiefen Trauer gesellt sich oft die große bürokratische und organisatorische Last, sich um den Nachlass und die Wohnungsauflösung kümmern zu müssen. Eine [Verlassenschaftsräumung](/leistungen/verlassenschaft/) in Wien oder Österreich ist keine gewöhnliche Entrümpelung, sondern erfordert höchstes Feingefühl, Pietät und juristisches Wissen über den Notar-Ablauf. Dieser Leitfaden soll Hinterbliebenen helfen, diesen schweren Weg Schritt für Schritt zu bewältigen.
 
 ## Der richtige Zeitpunkt für die Wohnungsauflösung
 

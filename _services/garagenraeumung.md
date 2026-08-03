@@ -1,42 +1,49 @@
 ---
-title: "Garagenräumung Wien"
-seo_title: "Garagenräumung Wien - Garage entrümpeln mit Fixpreis"
-description: "Garagenräumung in Wien inklusive Demontage, Abtransport und Wertanrechnung. Fixpreis, schnelle Termine, besenreine Hinterlassung."
-kicker: "Privat"
-
+title: Garagenräumung Wien
+seo_title: Garagenräumung Wien - Garage entrümpeln mit Fixpreis
+description: Garagenräumung in Wien inklusive Demontage, Abtransport und Wertanrechnung.
+  Fixpreis, schnelle Termine, besenreine Hinterlassung.
+kicker: Privat
 highlights:
-  - "Platz für Auto, Werkbank und Lager"
-  - "Sichere Trennung von Sondermüll"
-  - "Schnelle Termine auch am Wochenende"
-  - "besenreine Hinterlassung inklusive"
+- Platz für Auto, Werkbank und Lager
+- Sichere Trennung von Sondermüll
+- Schnelle Termine auch am Wochenende
+- besenreine Hinterlassung inklusive
 checklist:
-  - "Werkzeuge, Regale, Maschinen"
-  - "Reifen, Fahrräder, Sportgeräte"
-  - "Farben, Öle, Batterien"
-  - "Sperrmüll und Metall"
+- Werkzeuge, Regale, Maschinen
+- Reifen, Fahrräder, Sportgeräte
+- Farben, Öle, Batterien
+- Sperrmüll und Metall
 process:
-  - title: "Kostenlose Einschätzung"
-    description: "Fotos oder Besichtigung reichen für einen verbindlichen Fixpreis."
-  - title: "Räumung und Sortierung"
-    description: "Wir trennen Wertvolles, Wiederverwendbares und Entsorgung."
-  - title: "Wertanrechnung und Entsorgung"
-    description: "Verwertbares wird gegengerechnet, der Rest umweltgerecht entsorgt."
-  - title: "Übergabe"
-    description: "Besenrein mit optionaler Fotodokumentation."
+- title: Kostenlose Einschätzung
+  description: Fotos oder Besichtigung reichen für einen verbindlichen Fixpreis.
+- title: Räumung und Sortierung
+  description: Wir trennen Wertvolles, Wiederverwendbares und Entsorgung.
+- title: Wertanrechnung und Entsorgung
+  description: Verwertbares wird gegengerechnet, der Rest umweltgerecht entsorgt.
+- title: Übergabe
+  description: Besenrein mit optionaler Fotodokumentation.
 faqs:
-  - question: "Wie schnell ist eine Garagenräumung möglich?"
-    answer: "Meist innerhalb weniger Tage, Express-Termine sind nach Verfügbarkeit möglich."
-  - question: "Kümmern Sie sich um Sondermüll aus der Garage?"
-    answer: "Ja, Farben, Öle, Batterien und Chemikalien trennen wir fachgerecht."
-  - question: "Kann ich Garage und Keller gemeinsam räumen lassen?"
-    answer: "Ja, Kombi-Projekte sind häufig und meist günstiger."
-  - question: "Gibt es einen Fixpreis?"
-    answer: "Ja, nach Besichtigung oder Fotocheck erhalten Sie einen verbindlichen Fixpreis."
+- question: Wie schnell ist eine Garagenräumung möglich?
+  answer: Meist innerhalb weniger Tage, Express-Termine sind nach Verfügbarkeit möglich.
+- question: Kümmern Sie sich um Sondermüll aus der Garage?
+  answer: Ja, Farben, Öle, Batterien und Chemikalien trennen wir fachgerecht.
+- question: Kann ich Garage und Keller gemeinsam räumen lassen?
+  answer: Ja, Kombi-Projekte sind häufig und meist günstiger.
+- question: Gibt es einen Fixpreis?
+  answer: Ja, nach Besichtigung oder Fotocheck erhalten Sie einen verbindlichen Fixpreis.
 schema_type: Service
 service_type: Garagenräumung Wien
-permalink: /leistungen/garagenraeumung/
+permalink: "/leistungen/garagenraeumung/"
+intent_primary: Entrümpelung
+intent_secondary: Garagenräumung
 ---
 ## Garagenräumung Wien: Platz für Auto, Werkbank und Lager
+
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Sichere und schnelle Garagenräumung in Österreich" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Sichere und schnelle Garagenräumung in Österreich</figcaption>
+</figure>
 
 Als Teil unserer [Räumung Wien Services](/leistungen/raeumung/) übernehmen wir **garagenräumung** in allen Wiener Bezirken. Garagen werden schnell zum Lager für Werkzeug, Reifen und Kartons. Wir schaffen wieder Platz für das, was wirklich hinein gehört, und sorgen für eine saubere, sichere Übergabe.
 

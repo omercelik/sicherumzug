@@ -1,40 +1,48 @@
 ---
-title: "Entrümpelungsdienst | Flexible Hilfe nach Bedarf"
-seo_title: "Entrümpelungsdienst | Abholung, Teilräume, Fixpreis"
-description: "Entrümpelungsdienst für einzelne Räume und gezielte Abholungen. Fixpreis nach Foto-Check, saubere Entsorgung."
-kicker: "Privat"
-
+title: Entrümpelungsdienst | Flexible Hilfe nach Bedarf
+seo_title: Entrümpelungsdienst | Abholung, Teilräume, Fixpreis
+description: Entrümpelungsdienst für einzelne Räume und gezielte Abholungen. Fixpreis
+  nach Foto-Check, saubere Entsorgung.
+kicker: Privat
 highlights:
-  - "Teilbereiche wie Keller, Zimmer oder Garage"
-  - "Abholung und fachgerechte Entsorgung"
-  - "Wertanrechnung für verwertbare Stücke"
-  - "Fixpreis nach Foto-Check oder Besichtigung"
+- Teilbereiche wie Keller, Zimmer oder Garage
+- Abholung und fachgerechte Entsorgung
+- Wertanrechnung für verwertbare Stücke
+- Fixpreis nach Foto-Check oder Besichtigung
 checklist:
-  - "Sperrige Möbel und Geräte"
-  - "Gemischter Hausrat und Restmengen"
-  - "Abtransport und Recycling"
-  - "Kurzfristige Termine nach Verfügbarkeit"
+- Sperrige Möbel und Geräte
+- Gemischter Hausrat und Restmengen
+- Abtransport und Recycling
+- Kurzfristige Termine nach Verfügbarkeit
 process:
-  - title: "Anfrage mit Fotos"
-    description: "Sie senden Fotos oder eine kurze Liste. Wir klären Umfang und Zugang."
-  - title: "Fixpreis"
-    description: "Wir bewerten Menge und Aufwand und senden ein schriftliches Angebot."
-  - title: "Abholung"
-    description: "Unser Team holt ab, sortiert und entsorgt fachgerecht."
-  - title: "Abschluss"
-    description: "Sie erhalten eine saubere Fläche und auf Wunsch eine Dokumentation."
+- title: Anfrage mit Fotos
+  description: Sie senden Fotos oder eine kurze Liste. Wir klären Umfang und Zugang.
+- title: Fixpreis
+  description: Wir bewerten Menge und Aufwand und senden ein schriftliches Angebot.
+- title: Abholung
+  description: Unser Team holt ab, sortiert und entsorgt fachgerecht.
+- title: Abschluss
+  description: Sie erhalten eine saubere Fläche und auf Wunsch eine Dokumentation.
 faqs:
-  - question: "Wofür eignet sich ein Entrümpelungsdienst?"
-    answer: "Für einzelne Räume, Restmengen oder gezielte Abholungen. Ideal, wenn keine Komplett-Räumung nötig ist."
-  - question: "Gibt es einen Fixpreis?"
-    answer: "Ja. Nach Foto-Check oder Besichtigung erhalten Sie ein schriftliches Angebot."
-  - question: "Was passiert mit verwertbaren Stücken?"
-    answer: "Wir rechnen verwertbare Gegenstände an und reduzieren damit den Fixpreis."
+- question: Wofür eignet sich ein Entrümpelungsdienst?
+  answer: Für einzelne Räume, Restmengen oder gezielte Abholungen. Ideal, wenn keine
+    Komplett-Räumung nötig ist.
+- question: Gibt es einen Fixpreis?
+  answer: Ja. Nach Foto-Check oder Besichtigung erhalten Sie ein schriftliches Angebot.
+- question: Was passiert mit verwertbaren Stücken?
+  answer: Wir rechnen verwertbare Gegenstände an und reduzieren damit den Fixpreis.
 schema_type: Service
 service_type: Entrümpelungsdienst
-permalink: /leistungen/entruempelungsdienst/
+permalink: "/leistungen/entruempelungsdienst/"
+intent_primary: Entrümpelung
+intent_secondary: Räumungsdienst
 ---
 ## Entrümpelungsdienst für gezielte Aufgaben
+
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Professioneller Entrümpelungsdienst für Wohnungen und Häuser" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Professioneller Entrümpelungsdienst für Wohnungen und Häuser</figcaption>
+</figure>
 
 Als professioneller Entrümpelungsdienst mit über 15 Jahren Erfahrung in der Abfallwirtschaft und Logistik sind wir Ihr idealer Partner für Teilräumungen. Ein Entrümpelungsdienst ist ideal, wenn Sie einzelne Räume oder Teilbereiche räumen lassen möchten. Unser voll versichertes Team holt ab, trennt Materialien fachgerecht und entsorgt sie umweltschonend auf offiziellen Mistplätzen. Sie behalten die Kontrolle über den Umfang und erhalten einen klaren, verbindlichen Fixpreis.
 

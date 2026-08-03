@@ -1,39 +1,45 @@
 ---
-title: "Räumungsfirma | Komplettservice mit Fixpreis"
-seo_title: "Räumungsfirma | Komplettservice, Fixpreis, Wertanrechnung"
-description: "Räumungsfirma für komplette Räumungen mit Fixpreis, Wertanrechnung und Übergabe. Planung, Demontage und Entsorgung aus einer Hand."
-kicker: "Privat"
-
+title: Räumungsfirma | Komplettservice mit Fixpreis
+seo_title: Räumungsfirma | Komplettservice, Fixpreis, Wertanrechnung
+description: Räumungsfirma für komplette Räumungen mit Fixpreis, Wertanrechnung und
+  Übergabe. Planung, Demontage und Entsorgung aus einer Hand.
+kicker: Privat
 highlights:
-  - "Komplette Entrümpelungen inklusive Demontage"
-  - "Fixpreis mit dokumentiertem Wertanrechnung"
-  - "Planung, Logistik und fachgerechte Entsorgung"
-  - "besenreine Hinterlassung mit Protokoll"
+- Komplette Entrümpelungen inklusive Demontage
+- Fixpreis mit dokumentiertem Wertanrechnung
+- Planung, Logistik und fachgerechte Entsorgung
+- besenreine Hinterlassung mit Protokoll
 checklist:
-  - "Wohnungen, Häuser und Nebenräume"
-  - "Demontage von Küchen, Einbauten und Regalen"
-  - "Trennung von Sperrmüll, Elektro und Sondermüll"
-  - "Schutz von Böden, Wänden und Zugängen"
-  - "Übergabeprotokoll und optionaler Entsorgungsnachweis"
+- Wohnungen, Häuser und Nebenräume
+- Demontage von Küchen, Einbauten und Regalen
+- Trennung von Sperrmüll, Elektro und Sondermüll
+- Schutz von Böden, Wänden und Zugängen
+- Übergabeprotokoll und optionaler Entsorgungsnachweis
 process:
-  - title: "Besichtigung"
-    description: "Wir prüfen Umfang, Zugänge und Besonderheiten und planen das Projekt."
-  - title: "Fixpreis"
-    description: "Sie erhalten ein schriftliches Angebot mit Wertanrechnung und klarer Leistungsbeschreibung."
-  - title: "Umsetzung"
-    description: "Unser Team räumt strukturiert, demontiert fachgerecht und sortiert Materialien."
-  - title: "Übergabe"
-    description: "besenreine Hinterlassung mit Protokoll und optionaler Dokumentation."
+- title: Besichtigung
+  description: Wir prüfen Umfang, Zugänge und Besonderheiten und planen das Projekt.
+- title: Fixpreis
+  description: Sie erhalten ein schriftliches Angebot mit Wertanrechnung und klarer
+    Leistungsbeschreibung.
+- title: Umsetzung
+  description: Unser Team räumt strukturiert, demontiert fachgerecht und sortiert
+    Materialien.
+- title: Übergabe
+  description: besenreine Hinterlassung mit Protokoll und optionaler Dokumentation.
 faqs:
-  - question: "Was macht eine Räumungsfirma?"
-    answer: "Eine Räumungsfirma übernimmt die komplette Planung, Räumung, Demontage, Entsorgung und Übergabe in einem Projekt."
-  - question: "Wie erhalte ich einen Fixpreis?"
-    answer: "Nach Foto-Check oder Besichtigung erhalten Sie ein schriftliches Angebot mit klaren Leistungen."
-  - question: "Gibt es Wertanrechnung?"
-    answer: "Ja. Verwertbare Stücke werden bewertet und direkt auf den Fixpreis angerechnet."
+- question: Was macht eine Räumungsfirma?
+  answer: Eine Räumungsfirma übernimmt die komplette Planung, Räumung, Demontage,
+    Entsorgung und Übergabe in einem Projekt.
+- question: Wie erhalte ich einen Fixpreis?
+  answer: Nach Foto-Check oder Besichtigung erhalten Sie ein schriftliches Angebot
+    mit klaren Leistungen.
+- question: Gibt es Wertanrechnung?
+  answer: Ja. Verwertbare Stücke werden bewertet und direkt auf den Fixpreis angerechnet.
 schema_type: Service
 service_type: Räumungsfirma
-permalink: /leistungen/entruempelungsfirma/
+permalink: "/leistungen/entruempelungsfirma/"
+intent_primary: Entrümpelung
+intent_secondary: Räumungsfirma
 ---
 ## Räumungsfirma für komplette Projekte
 

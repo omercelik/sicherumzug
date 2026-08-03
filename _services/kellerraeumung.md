@@ -1,41 +1,52 @@
 ---
-title: "Kellerräumung Wien"
-seo_title: "Kellerräumung Wien - Keller entrümpeln mit Fixpreis & Wertanrechnung"
-description: "Ihre Kellerräumung WIEN. Wir schaffen Platz in Keller, Garage oder Hobbyraum – mit Express-Terminen, Wertanrechnung und fachgerechter Räumung."
-kicker: "Privat"
-
+title: Kellerräumung Wien
+seo_title: Kellerräumung Wien - Keller entrümpeln mit Fixpreis & Wertanrechnung
+description: Ihre Kellerräumung WIEN. Wir schaffen Platz in Keller, Garage oder Hobbyraum
+  – mit Express-Terminen, Wertanrechnung und fachgerechter Räumung.
+kicker: Privat
 highlights:
-  - "Platz schaffen für neue Projekte"
-  - "Strukturierte Räumung"
-  - "Räumung & Entfeuchtung"
-  - "Express-Termine möglich"
+- Platz schaffen für neue Projekte
+- Strukturierte Räumung
+- Räumung & Entfeuchtung
+- Express-Termine möglich
 checklist:
-  - "Werkzeuge & Elektrogeräte"
-  - "Vintage & Fundgruben"
-  - "Möbel & Sperrmüll"
-  - "Strukturierte Sortierung"
+- Werkzeuge & Elektrogeräte
+- Vintage & Fundgruben
+- Möbel & Sperrmüll
+- Strukturierte Sortierung
 process:
-  - title: "Kostenlose Erstbewertung"
-  - title: "Räumung & Sortierung"
-    description: "Systematische Räumung von unten nach oben, Schutz der Bausubstanz."
-  - title: "Verwertung & Entsorgung"
-    description: "Sie erhalten einen verbindlichen Preis inklusive aller Gebühren und Transport."
-  - title: "Übergabe & Abrechnung"
-    description: "Sie erhalten einen verbindlichen Preis inklusive aller Gebühren und Transport."
+- title: Kostenlose Erstbewertung
+- title: Räumung & Sortierung
+  description: Systematische Räumung von unten nach oben, Schutz der Bausubstanz.
+- title: Verwertung & Entsorgung
+  description: Sie erhalten einen verbindlichen Preis inklusive aller Gebühren und
+    Transport.
+- title: Übergabe & Abrechnung
+  description: Sie erhalten einen verbindlichen Preis inklusive aller Gebühren und
+    Transport.
 faqs:
-  - question: "Was kostet eine Kellerräumung?"
-    answer: "Die Kosten variieren je nach Größe und Inhalt. Wir geben Ihnen einen fairen Festpreis nach der Besichtigung."
-  - question: "Nehmen Sie auch Wertvolles mit?"
-    answer: "Wir verkaufen funktionstüchtige Gegenstände für Sie oder kaufen sie direkt an."
-  - question: "Können Sie Keller und Dachboden gleichzeitig räumen?"
-    answer: "Ja, oft macht ein Paket-Angebot für mehrere Bereiche Sinn."
-  - question: "Wie schnell können Sie?"
-    answer: "Kellerräumungen sind meist binnen 2-3 Tagen möglich, oft auch schneller."
+- question: Was kostet eine Kellerräumung?
+  answer: Die Kosten variieren je nach Größe und Inhalt. Wir geben Ihnen einen fairen
+    Festpreis nach der Besichtigung.
+- question: Nehmen Sie auch Wertvolles mit?
+  answer: Wir verkaufen funktionstüchtige Gegenstände für Sie oder kaufen sie direkt
+    an.
+- question: Können Sie Keller und Dachboden gleichzeitig räumen?
+  answer: Ja, oft macht ein Paket-Angebot für mehrere Bereiche Sinn.
+- question: Wie schnell können Sie?
+  answer: Kellerräumungen sind meist binnen 2-3 Tagen möglich, oft auch schneller.
 schema_type: Service
 service_type: Kellerräumung Wien
-permalink: /leistungen/kellerraeumung/
+permalink: "/leistungen/kellerraeumung/"
+intent_primary: Entrümpelung
+intent_secondary: Kellerräumung
 ---
 ## Kellerräumung WIEN: Platz schaffen für neue Projekte
+
+<figure class="my-8">
+  <img src="/topbg.webp" alt="Kellerräumung und Entsorgung in Wien" class="w-full h-auto rounded-lg shadow-md" width="1200" height="600" loading="lazy">
+  <figcaption class="text-sm text-center text-gray-500 mt-2">Kellerräumung und Entsorgung in Wien</figcaption>
+</figure>
 
 Als Teil unserer [Räumung Wien Services](/leistungen/raeumung/) sind wir spezialisiert auf jede Kellerräumung in Wien und systematische Kellerentrümpelungen in allen Wiener Bezirken. Ein Keller ist oft eine Schatztruhe oder ein Problemkind – oder beides zugleich. Alte Möbel, Kisten voller Erinnerungen, Werkzeuge, nicht mehr gebrauchte Geräte: In einem typischen Wiener Keller schlummert oft so viel, dass es für eine kleine Wohnung reichen würde. Wir bringen Ordnung ins Chaos und schaffen Platz für neue Projekte.
 

@@ -1,23 +1,29 @@
 ---
 layout: service
-title: "Günstiger Studentenumzug"
-description: "Stressfrei, flexibel und leistbar: Unsere Umzugslösungen für Studenten in Österreich. Vom DIY-Transport bis zum Möbelmontage-Service."
-kicker: "Für Studenten"
-permalink: /leistungen/studentenumzug/
+title: Günstiger Studentenumzug
+description: 'Stressfrei, flexibel und leistbar: Unsere Umzugslösungen für Studenten
+  in Österreich. Vom DIY-Transport bis zum Möbelmontage-Service.'
+kicker: Für Studenten
+permalink: "/leistungen/studentenumzug/"
 highlights:
-  - "Flexibel: Vom Reinen Transport bis zum Full-Service"
-  - "Transparente Fixpreise ohne Überraschungen"
-  - "Optionale Beiladung quer durch Österreich"
+- 'Flexibel: Vom Reinen Transport bis zum Full-Service'
+- Transparente Fixpreise ohne Überraschungen
+- Optionale Beiladung quer durch Österreich
 checklist:
-  - "Bereitstellung von Umzugskartons und Material"
-  - "Nur Transport (Sie packen, wir fahren)"
-  - "Möbelmontage für IKEA-Schränke und Co."
-  - "Unterstützung bei WG-Zimmer-Auflösungen"
+- Bereitstellung von Umzugskartons und Material
+- Nur Transport (Sie packen, wir fahren)
+- Möbelmontage für IKEA-Schränke und Co.
+- Unterstützung bei WG-Zimmer-Auflösungen
 faqs:
-  - question: "Bieten Sie Studentenrabatte an?"
-    answer: "Wir kalkulieren unsere Preise immer fair und transparent. Sprechen Sie uns bei Ihrer Anfrage an und zeigen Sie Ihren Studentenausweis vor, um von unseren flexiblen Budget-Optionen zu profitieren."
-  - question: "Können Sie auch nur ein einzelnes gebrauchtes Sofa transportieren?"
-    answer: "Ja, für Willhaben-Einkäufe oder den Transport einzelner Möbelstücke bieten wir schnelle und günstige Kleintransporte an."
+- question: Bieten Sie Studentenrabatte an?
+  answer: Wir kalkulieren unsere Preise immer fair und transparent. Sprechen Sie uns
+    bei Ihrer Anfrage an und zeigen Sie Ihren Studentenausweis vor, um von unseren
+    flexiblen Budget-Optionen zu profitieren.
+- question: Können Sie auch nur ein einzelnes gebrauchtes Sofa transportieren?
+  answer: Ja, für Willhaben-Einkäufe oder den Transport einzelner Möbelstücke bieten
+    wir schnelle und günstige Kleintransporte an.
+intent_primary: Umzug
+intent_secondary: Studentenumzug
 ---
 
 Der Studienbeginn in einer neuen Stadt wie Wien oder Graz ist teuer genug. Ein Umzug sollte das knappe Studentenbudget nicht zusätzlich belasten. Trotzdem muss niemand alles selbst schleppen!

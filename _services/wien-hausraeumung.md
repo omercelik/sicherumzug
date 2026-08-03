@@ -1,42 +1,48 @@
 ---
-title: "Wien Hausräumung"
-seo_title: "Hausräumung Wien - Komplette Räumung mit Fixpreis | Sicher Team"
-description: "Professionelle Wien Hausräumung: Einfamilienhäuser, Villen & Gewerbe. Fixpreis, Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke verfügbar!"
-kicker: "Haus"
-
+title: Wien Hausräumung
+seo_title: Hausräumung Wien - Komplette Räumung mit Fixpreis | Sicher Team
+description: 'Professionelle Wien Hausräumung: Einfamilienhäuser, Villen & Gewerbe.
+  Fixpreis, Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke verfügbar!'
+kicker: Haus
 highlights:
-  - "Spezialisiert auf Einfamilienhäuser & Villen"
-  - "Garten- & Außenbereichentrümpelung inklusive"
-  - "Wertanrechnung für Kunst, Antiquitäten & Sammlungen"
-  - "Logistik für alle Wiener Bezirke & Hanglagen"
+- Spezialisiert auf Einfamilienhäuser & Villen
+- Garten- & Außenbereichentrümpelung inklusive
+- Wertanrechnung für Kunst, Antiquitäten & Sammlungen
+- Logistik für alle Wiener Bezirke & Hanglagen
 checklist:
-  - "Einfamilienhäuser in Vorstadtlagen"
-  - "Villen & Reihenhäuser mit Garten"
-  - "Gewerbeobjekte & Lagerhallen"
-  - "Landwirtschaftliche Betriebe"
-  - "Garten-, Keller- & Dachbodenräumungen"
-  - "Schwimmbäder & Nebengebäude"
+- Einfamilienhäuser in Vorstadtlagen
+- Villen & Reihenhäuser mit Garten
+- Gewerbeobjekte & Lagerhallen
+- Landwirtschaftliche Betriebe
+- Garten-, Keller- & Dachbodenräumungen
+- Schwimmbäder & Nebengebäude
 process:
-  - title: "Gebäudebewertung & Planung"
-    description: "Analyse der Immobilie inklusive Nebengebäude, Garten und Spezialräumen."
-  - title: "Spezialgeräte & Logistik"
-    description: "Einsatz von Staplern, Containern und Multilift-Fahrzeugen bei Bedarf."
-  - title: "Wertanrechnung für Sammlungen"
-    description: "Professionelle Bewertung von Kunst, Antiquitäten und Wertgegenständen."
-  - title: "Kompletträumung & Übergabe"
-    description: "Räumung aller Bereiche inklusive Außenanlagen und besenreine Hinterlassung."
+- title: Gebäudebewertung & Planung
+  description: Analyse der Immobilie inklusive Nebengebäude, Garten und Spezialräumen.
+- title: Spezialgeräte & Logistik
+  description: Einsatz von Staplern, Containern und Multilift-Fahrzeugen bei Bedarf.
+- title: Wertanrechnung für Sammlungen
+  description: Professionelle Bewertung von Kunst, Antiquitäten und Wertgegenständen.
+- title: Kompletträumung & Übergabe
+  description: Räumung aller Bereiche inklusive Außenanlagen und besenreine Hinterlassung.
 faqs:
-  - question: "Wie lange dauert eine Wien Hausräumung?"
-    answer: "Je nach Größe 1-3 Tage. Einfamilienhäuser mit Garten benötigen meist 2-3 Tage für eine komplette Räumung."
-  - question: "Räumen Sie auch Gärten und Swimmingpools?"
-    answer: "Ja, wir räumen auch Gärten, Swimmingpools, Gartenhäuschen und Nebengebäude. Schwimmbäder werden professionell gereinigt und gefüllt übergeben."
-  - question: "Was passiert mit wertvollen Sammlungen?"
-    answer: "Unsere Profis bewerten Kunst, Antiquitäten und Sammlungen fair und rechnen den Wert an. Für besondere Stücke vermitteln wir an Auktionshäuser."
-  - question: "Wie erfolgt die Zufahrt bei engen Wiener Gassen?"
-    answer: "Wir planen die Zufahrt detailliert, organisieren Halteverbotszonen und setzen bei Bedarf kleinere, wendige Fahrzeuge ein."
+- question: Wie lange dauert eine Wien Hausräumung?
+  answer: Je nach Größe 1-3 Tage. Einfamilienhäuser mit Garten benötigen meist 2-3
+    Tage für eine komplette Räumung.
+- question: Räumen Sie auch Gärten und Swimmingpools?
+  answer: Ja, wir räumen auch Gärten, Swimmingpools, Gartenhäuschen und Nebengebäude.
+    Schwimmbäder werden professionell gereinigt und gefüllt übergeben.
+- question: Was passiert mit wertvollen Sammlungen?
+  answer: Unsere Profis bewerten Kunst, Antiquitäten und Sammlungen fair und rechnen
+    den Wert an. Für besondere Stücke vermitteln wir an Auktionshäuser.
+- question: Wie erfolgt die Zufahrt bei engen Wiener Gassen?
+  answer: Wir planen die Zufahrt detailliert, organisieren Halteverbotszonen und setzen
+    bei Bedarf kleinere, wendige Fahrzeuge ein.
 schema_type: Service
 service_type: Wien Hausräumung
-permalink: /leistungen/wien-hausraeumung/
+permalink: "/leistungen/wien-hausraeumung/"
+intent_primary: Wohnungsauflösung
+intent_secondary: Hausräumung
 ---
 
 ## Wien Hausräumung: Ihr Partner für große Räumungen

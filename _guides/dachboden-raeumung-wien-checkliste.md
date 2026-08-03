@@ -20,7 +20,7 @@ faqs:
 permalink: /ratgeber/dachboden-raeumung-wien-checkliste/
 ---
 
-Eine Dachbodenräumung in Wien ist selten ein schneller Wochenendjob. Steile Altbau-Stiegen, niedrige Luken, Spitzböden ohne Licht und historische Substanz erfordern Planung, Schutzmaterial und oft Spezialwerkzeug. Dieser Leitfaden zeigt, wann der Gang zum Mistplatz der MA 48 reicht, wann sich der Profi lohnt und wie Sie mit Wertanrechnung sogar Geld zurückholen.
+Eine [Dachbodenräumung in Wien](/leistungen/dachbodenraeumung/) ist selten ein schneller Wochenendjob. Steile Altbau-Stiegen, niedrige Luken, Spitzböden ohne Licht und historische Substanz erfordern Planung, Schutzmaterial und oft Spezialwerkzeug. Dieser Leitfaden zeigt, wann der Gang zum Mistplatz der MA 48 reicht, wann sich der Profi lohnt und wie Sie mit Wertanrechnung sogar Geld zurückholen.
 
 ## Dachboden Räumung Wien – Besonderheiten auf einen Blick
 

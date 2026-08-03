@@ -1,34 +1,36 @@
 ---
-title: "Gastro & Retail Räumung"
-seo_title: "Gastronomie Räumung Wien - Restaurant Entrümpelung"
-description: "Komplette Räumung von Restaurants, Cafés und Shops inklusive Kühltechnik und Hygieneauflagen. Wertanrechnung für Ausstattung und schnelle Terminplanung."
-kicker: "Gewerblich"
-
+title: Gastro & Retail Räumung
+seo_title: Gastronomie Räumung Wien - Restaurant Entrümpelung
+description: Komplette Räumung von Restaurants, Cafés und Shops inklusive Kühltechnik
+  und Hygieneauflagen. Wertanrechnung für Ausstattung und schnelle Terminplanung.
+kicker: Gewerblich
 highlights:
-  - Erfahrung mit Fettabscheidern & HACCP-Dokumentation
-  - Rückbau von Theken, Lüftungen & Kühlhäusern
-  - Spenden & Wiederverkauf von Inventar auf Wunsch
+- Erfahrung mit Fettabscheidern & HACCP-Dokumentation
+- Rückbau von Theken, Lüftungen & Kühlhäusern
+- Spenden & Wiederverkauf von Inventar auf Wunsch
 checklist:
-  - Küchen- & Barbereiche
-  - Tische, Stühle & Deko
-  - Kühlgeräte, Kaffeemaschinen & Zapfanlagen
+- Küchen- & Barbereiche
+- Tische, Stühle & Deko
+- Kühlgeräte, Kaffeemaschinen & Zapfanlagen
 process:
-  - title: Hygienekonforme Demontage
-    description: Geräte werden gereinigt, verplombt und für Weiterverkauf aufbereitet.
-  - title: Fettabscheider & Entlüftung
-    description: Wir kümmern uns um Reinigung und Stilllegung.
-  - title: Verkaufsflächen
-    description: Regale, Kassentische und POS-Technik werden fachgerecht entfernt.
-  - title: Abschluss
-    description: Bodenreinigung, Geruchsbeseitigung und Protokoll für den Vermieter.
+- title: Hygienekonforme Demontage
+  description: Geräte werden gereinigt, verplombt und für Weiterverkauf aufbereitet.
+- title: Fettabscheider & Entlüftung
+  description: Wir kümmern uns um Reinigung und Stilllegung.
+- title: Verkaufsflächen
+  description: Regale, Kassentische und POS-Technik werden fachgerecht entfernt.
+- title: Abschluss
+  description: Bodenreinigung, Geruchsbeseitigung und Protokoll für den Vermieter.
 faqs:
-  - question: Können Geräte wiederverwertet werden?
-    answer: Ja, wir vermitteln Ankäufer oder spenden an Sozialmärkte – inklusive Wertanrechnung.
-  - question: Erledigen Sie Behördenwege?
-    answer: Wir unterstützen bei Magistratswegen (MA 59, MA 48) und kümmern uns um Abmeldungen.
+- question: Können Geräte wiederverwertet werden?
+  answer: Ja, wir vermitteln Ankäufer oder spenden an Sozialmärkte – inklusive Wertanrechnung.
+- question: Erledigen Sie Behördenwege?
+  answer: Wir unterstützen bei Magistratswegen (MA 59, MA 48) und kümmern uns um Abmeldungen.
 schema_type: Service
 service_type: Gastro Räumung
-permalink: /leistungen/gastronomie-raeumung/
+permalink: "/leistungen/gastronomie-raeumung/"
+intent_primary: Betriebsauflösung
+intent_secondary: Gastronomie Räumung
 ---
 ## Spezialisten für Gastronomie & Einzelhandel
 
