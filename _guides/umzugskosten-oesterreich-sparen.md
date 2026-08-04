@@ -24,7 +24,15 @@ In diesem detaillierten Ratgeber schlüsseln wir die **Umzugskosten in Österrei
 
 ---
 
+## TL;DR: Was kostet ein Umzug?
+Ein professioneller Umzug in Österreich kostet im Durchschnitt zwischen **350 € (1-Zimmer-Wohnung)** und **1.500 € (3-Zimmer-Wohnung)**. Für größere Häuser oder Fernumzüge beginnen die Preise meist ab 1.500 €. Der Preis hängt vor allem von Volumen, Transportweg und Zusatzleistungen (wie Möbelmontage) ab.
+
+**Entscheidungshilfe:** Suchen Sie nach dem billigsten Stundentarif oder nach Sicherheit? Ein verbindlicher Fixpreis schützt Sie vor versteckten Kosten am Umzugstag.
+
+---
+
 ## Die wichtigsten Preistreiber: Was beeinflusst die Umzugskosten?
+
 
 Um ein Angebot für eine Übersiedlung realistisch einschätzen zu können, ist es wichtig, die zugrunde liegenden Kostenfaktoren zu verstehen. Jede Wohnung und jedes Haus ist individuell, weshalb es keine pauschalen Standardpreise geben kann.
 
