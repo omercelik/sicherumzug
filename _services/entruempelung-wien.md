@@ -92,6 +92,16 @@ Als zertifizierter Fachbetrieb für Räumungen in Österreich bieten wir Ihnen a
 
 Wertanrechnung senkt den Fixpreis spürbar. So bleibt eine Entrümpelung in Wien oft günstig, ohne dass an Qualität gespart wird.
 
+**So funktioniert die Wertanrechnung in der Praxis (Beispielkalkulation):**
+
+| Leistung / Gegenstand | Kosten / Wert |
+| :--- | :--- |
+| **Räumungskosten (Personal, Transporter, Deponiegebühren)** | 1.200,00 € |
+| **Wertanrechnung (Antike Kommode)** | - 150,00 € |
+| **Wertanrechnung (Gut erhaltener Kühlschrank)** | - 80,00 € |
+| **Wertanrechnung (Sammlung / Bücher)** | - 120,00 € |
+| **Ihr finaler Fixpreis** | **850,00 €** |
+
 Richtwerte helfen bei der Einschätzung. Je mehr Verwertbares vorhanden ist, desto kleiner wird der Fixpreis:
 
 - Zimmer: ab 150 € – meist geringer Aufwand, schneller Foto-Check

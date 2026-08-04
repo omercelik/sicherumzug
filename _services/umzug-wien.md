@@ -84,9 +84,10 @@ Wir bieten Ihnen die perfekte Kombination aus **Privatumzug** und **Räumung**:
 ## Unsere Umzugsleistungen in Wien
 
 - **Privatumzüge & Übersiedlungen:** Umzüge von Wohnungen und Häusern in Wien und ganz Österreich.
+- **Auslandsumzug & Internationaler Umzug:** Wir begleiten Ihren [Auslandsumzug](/leistungen/auslandsumzug/) sicher in die gesamte DACH-Region inklusive Zollabwicklung.
 - **Firmenumzug & Büroübersiedlung:** Minimierung von Betriebsunterbrechungen durch strukturierte und schnelle Durchführung.
 - **Ein- & Auspackservice:** Fachgerechtes Einpacken Ihres Hausstands in robuste Umzugskartons.
-- **Möbel-Demontage & Montage:** Fachmännischer Abbau und passgenauer Wiederaufbau Ihrer Möbel.
+- **Möbel-Demontage & Montage:** Nutzen Sie unsere professionelle [Möbelmontage](/leistungen/moebelmontage/) für fachmännischen Abbau, Küchenabbau und passgenauen Wiederaufbau Ihrer Einrichtung.
 - **Halteverbotszonen:** Behördliche Genehmigung und pünktliche Aufstellung der Halteverbotsschilder.
 
 ## Warum Sicher Team für Ihren Wien-Umzug wählen?

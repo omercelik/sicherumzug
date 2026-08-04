@@ -59,6 +59,18 @@ Wenn Slots frei sind, starten wir in Wien am selben Tag. Ein kurzer Foto-Check p
 
 Unsere Teams arbeiten strukturiert und schonend, damit Böden, Stiegenhaus und Lift geschützt bleiben. Auf Wunsch erstellen wir ein Übergabeprotokoll und dokumentieren die besenreine Wohnung für Vermieter oder Hausverwaltung.
 
+## Wohnungsauflösung vs. Haushaltsauflösung – Was ist der Unterschied?
+
+Oft werden diese Begriffe synonym verwendet. Um Ihnen die Entscheidung zu erleichtern, haben wir die wichtigsten Unterschiede zusammengefasst:
+
+| Merkmal | Wohnungsauflösung | Haushaltsauflösung |
+| :--- | :--- | :--- |
+| **Fokus** | Räumung und Übergabe an den Vermieter | Komplette Auflösung des Hausstands inkl. Kleidung & Hausrat |
+| **Umfang** | Möbel, Sperrmüll, oft inkl. Demontage | Alles, bis zum letzten Löffel |
+| **Dauer** | Meist 1–2 Tage | Oft mehrere Tage, inkl. Spenden-Logistik |
+| **Zielgruppe** | Vermieter, Erben (bei reiner Räumung), Hausverwaltungen | Angehörige (Verlassenschaft), Umzug ins Pflegeheim |
+| **Passender Service** | Diese Seite | [Zur Haushaltsauflösung](/leistungen/haushaltsaufloesung/) |
+
 ## Wohnungsauflösung im Todesfall
 
 Bei sensiblen Fällen arbeiten wir besonders diskret. Wir trennen Erinnerungsstücke, koordinieren Termine und liefern eine nachvollziehbare Dokumentation. Mehr Hinweise finden Sie im Ratgeber [Wohnungsauflösung nach Todesfall](/ratgeber/wohnungsaufloesung-nach-todesfall/).
