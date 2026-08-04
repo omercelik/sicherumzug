@@ -102,6 +102,13 @@ Wertanrechnung senkt den Fixpreis spürbar. So bleibt eine Entrümpelung in Wien
 | **Wertanrechnung (Sammlung / Bücher)** | - 120,00 € |
 | **Ihr finaler Fixpreis** | **850,00 €** |
 
+**Was wird typischerweise angerechnet?**
+Nicht alles, was noch funktioniert, hat einen Wiederverkaufswert. Wir klären das transparent vorab. Gute Chancen auf Wertanrechnung haben:
+- **Gut erhaltene Altbau-Möbel & Antiquitäten** (z.B. Biedermeier, Jugendstil, echte Vollholz-Designklassiker).
+- **Moderne, funktionierende Haushaltsgroßgeräte** (Waschmaschinen, neuere Kühlschränke der Energieklasse A/B).
+- **Spezifische Sammlungen** (Schallplatten, alte Münzen, hochwertiges Porzellan oder Kunst).
+- *Hinweis:* Normale IKEA-Möbel oder stark abgenutzte Sofas haben meist keinen Restwert für den Weiterverkauf, können aber oft noch von uns an Sozialpartner in Wien gespendet werden, was immerhin die Deponiegebühren spart.
+
 Richtwerte helfen bei der Einschätzung. Je mehr Verwertbares vorhanden ist, desto kleiner wird der Fixpreis:
 
 - Zimmer: ab 150 € – meist geringer Aufwand, schneller Foto-Check
