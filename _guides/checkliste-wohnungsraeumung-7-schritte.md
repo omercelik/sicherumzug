@@ -65,7 +65,7 @@ Die Wohnung ist leer. Nun folgt der letzte Schliff:
 
 Eine Wohnungsräumung muss kein Albtraum sein. Wenn Sie diese Checkliste Schritt für Schritt abarbeiten, sparen Sie Zeit und Nerven.
 
-Möchten Sie es sich noch einfacher machen? **Übergeben Sie die schwere Arbeit an Sicher Team.** Wir kümmern uns um Schritt 4 bis 7! Rufen Sie uns an oder senden Sie uns Fotos per WhatsApp für eine schnelle Ersteinschätzung. Wir garantieren Ihnen einen [Fixpreis](/preise/) und eine besenreine Hinterlassung in ganz Wien. Holen Sie sich jetzt Ihr [unverbindliches Angebot](/angebot/).
+Möchten Sie es sich noch einfacher machen? **Übergeben Sie die schwere Arbeit an Sicher Team.** Wir kümmern uns um Schritt 4 bis 7! Rufen Sie uns an oder senden Sie uns Fotos per WhatsApp für eine schnelle Ersteinschätzung. Wir garantieren Ihnen einen [Fixpreis](/preise/) und eine [stressfreie und besenreine Räumung](/leistungen/wohnungsaufloesung/) in ganz Wien. Holen Sie sich jetzt Ihr [unverbindliches Angebot](/angebot/).
 
 
 

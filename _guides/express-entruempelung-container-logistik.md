@@ -14,7 +14,7 @@ title: Express Entrümpelung & Containerlogistik in Wien und Umgebung
 
 ## Wenn es schnell gehen muss
 
-Wasserschaden, Kündigung vom Vermieter oder kurzfristiger Verkauf – manchmal bleibt keine Woche Zeit. Unsere **Express Entrümpelung** bringt binnen 24 Stunden ein Einsatzteam mit Container oder Ladefahrzeug vor Ort. Damit der Ablauf reibungslos funktioniert, koordinieren wir Halteverbote, MA 48-Termine, Containerdienst und Wertanrechnung in einem Schritt.
+Wasserschaden, Kündigung vom Vermieter oder kurzfristiger Verkauf – manchmal bleibt keine Woche Zeit. Unsere **Express Entrümpelung** bringt binnen 24 Stunden ein Einsatzteam mit Container oder Ladefahrzeug vor Ort. Erfahren Sie mehr über unseren [Express-Notdienst](/leistungen/express-notdienst/). Damit der Ablauf reibungslos funktioniert, koordinieren wir Halteverbote, MA 48-Termine, Containerdienst und Wertanrechnung in einem Schritt.
 
 ## Express-Ablauf in vier Schritten
 

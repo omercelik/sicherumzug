@@ -74,4 +74,4 @@ Laut österreichischem Meldegesetz müssen Sie sich innerhalb von drei Tagen nac
 Mit der richtigen Planung und einem professionellen Partner an der Seite verliert jeder Umzug seinen Schrecken. Haken Sie Punkt für Punkt ab und lassen Sie uns den schweren Teil erledigen.
 
 **Sind Sie in der Planungsphase und suchen einen verlässlichen Partner?**
-Kontaktieren Sie uns frühzeitig, um Ihren Wunschtermin zu sichern und Ihr maßgeschneidertes Fixpreis-Angebot zu erhalten. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie uns frühzeitig, um Ihren Wunschtermin zu sichern und Ihr maßgeschneidertes Fixpreis-Angebot zu erhalten. [Jetzt kostenloses Angebot anfordern](/angebot) oder erfahren Sie mehr über unsere [Unterstützung bei der gesamten Vorbereitung](/leistungen/umzug-wien/).

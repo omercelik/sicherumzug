@@ -78,7 +78,7 @@ Ein großes Problem in der Umzugsbranche sind intransparente Stundentarife. Viel
 - Bei unvorhergesehenen Verzögerungen (z.B. Stau oder enger Aufzug) trägt der Kunde das volle finanzielle Risiko.
 
 ### Das Sicher-Prinzip: Transparent und verlässlich
-Als erfahrene Umzugsfirma lehnen wir intransparente Praktiken konsequent ab. Nach einer kostenlosen und unverbindlichen Vor-Ort-Besichtigung oder einer digitalen Einschätzung per Foto/Video kalkulieren wir ein verbindliches Festpreis-Angebot. Diese **Fixpreisgarantie** schützt Sie vor bösen Überraschungen: Der vereinbarte Preis steht fest – ganz gleich, wie viele Stunden der Umzug am Ende tatsächlich dauert. Erfahren Sie mehr über unsere Arbeitsweise bei einem [Firmenumzug](/leistungen/firmenumzug-wien/) oder [Privatumzug](/leistungen/umzug-wien/).
+Als erfahrene Umzugsfirma lehnen wir intransparente Praktiken konsequent ab. Nach einer kostenlosen und unverbindlichen Vor-Ort-Besichtigung oder einer digitalen Einschätzung per Foto/Video kalkulieren wir ein verbindliches Festpreis-Angebot. Diese **Fixpreisgarantie** schützt Sie vor bösen Überraschungen: Der vereinbarte Preis steht fest – ganz gleich, wie viele Stunden der Umzug am Ende tatsächlich dauert. Erfahren Sie mehr über unsere Arbeitsweise bei einer effizienten Firmenübersiedlung oder wenn Sie [professionelle Unterstützung beim Wohnungswechsel](/leistungen/umzug-wien/) benötigen.
 
 ---
 

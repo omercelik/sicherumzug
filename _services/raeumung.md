@@ -70,7 +70,7 @@ Wenn Objekte, egal ob bei einer Wohnungsräumung in Wien oder großen Projekten,
 
 Wenn Slots frei sind, übernehmen wir Räumungen am selben Tag. Ein Foto-Check per WhatsApp genügt für die Ersteinschätzung. Den Fixpreis bestätigen wir nach der Besichtigung. Bei sehr engen Zufahrten oder Halteverboten stimmen wir die Logistik sofort ab.
 
-> [Räumung Wien anfragen](/angebot/) oder per [WhatsApp {{ site.phone }}]({{ site.whatsapp }}) schreiben.
+> [Professionelle Unterstützung für Ihre Räumung anfragen](/angebot/) oder per [WhatsApp {{ site.phone }}]({{ site.whatsapp }}) schreiben.
 
 ## Was eine Räumung bei uns umfasst
 
@@ -80,13 +80,13 @@ Wenn Slots frei sind, übernehmen wir Räumungen am selben Tag. Ein Foto-Check p
 - besenreine Hinterlassung inkl. Protokoll und Schlüsselrückgabe auf Wunsch
 - Arbeiten in Randzeiten, wenn Hausordnung oder Betrieb es verlangen
 
-Mehr Hinweise zur Abnahme finden Sie im Ratgeber [Räumung Wien Übergabeprotokoll](/ratgeber/raeumung-wien-uebergabeprotokoll/).
+Mehr Hinweise zur Abnahme finden Sie im Ratgeber [Schritt-für-Schritt Vorbereitung der Räumung](/ratgeber/checkliste-wohnungsraeumung-7-schritte/).
 
 ## Zwangsräumung Wohnung
 
 Wir führen Räumungen nur nach schriftlicher Beauftragung und klarer Terminfreigabe durch. Bei Zwangsräumungen arbeiten wir strukturiert und dokumentieren die Übergabe, damit Eigentümer oder Hausverwaltung eine nachvollziehbare Abnahme erhalten. Rechtliche Fragen klären Sie bitte vorab mit den zuständigen Stellen.
 
-> Schnellstart? [Räumung Wien anfragen](/angebot/) oder [WhatsApp {{ site.phone }}]({{ site.whatsapp }}) – wir antworten, solange das Handy online ist.
+> Schnellstart? [Unverbindliches Angebot anfragen](/angebot/) oder [WhatsApp {{ site.phone }}]({{ site.whatsapp }}) – wir antworten, solange das Handy online ist.
 
 ## Ablauf für planbare Übergaben
 

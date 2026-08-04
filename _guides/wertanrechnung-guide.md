@@ -68,7 +68,7 @@ Nicht alles lässt sich verkaufen. Wir sorgen für:
 
 Wer Wertanrechnung strategisch nutzt, spart Kosten und bekommt Platz für Neues. Unser Team hilft Ihnen von der Bewertung bis zur Auszahlung.
 
-[**Wertanrechnung jetzt prüfen lassen**](/angebot/)
+[**Wertanrechnung jetzt prüfen lassen**](/angebot/) oder mehr über eine [Gratis Entrümpelung](/leistungen/gratis-entruempelung/) durch Wertausgleich erfahren.
 
 
 
