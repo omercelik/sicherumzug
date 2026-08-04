@@ -5,9 +5,8 @@ description: "Sicher Team ist Ihr voll versicherter Partner für Umzug & Übersi
 lang: de-AT
 url: "https://sicher-umzug.at"
 canonical_base_url: "https://sicher-umzug.at"
-baseurl: "/sicherumzug"
-#url: "https://sicher-umzug.at"
-#baseurl: ""
+baseurl: ""
+
 email: office@sicher-umzug.at
 phone: "+43 660 6060775"
 whatsapp: "https://wa.me/436606060775"
