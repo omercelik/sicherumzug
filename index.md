@@ -12,7 +12,7 @@ hero:
 brand_intro:
   kicker: "Umzugs-Experten"
   heading: "Sicher Team – Ihr Spezialist für stressfreie Übersiedlungen in Österreich"
-  text: "Als staatlich konzessioniertes und voll versichertes Umzugsunternehmen bieten wir Ihnen den perfekten Komplettservice für Privatumzüge und Firmenumzüge. Unser bestens geschultes Fachpersonal übernimmt das sichere Verpacken Ihrer Möbel, die fachgerechte Demontage und Montage sowie den geschützten Transport. Mit unserer All-Risk-Transportversicherung und transparenten Fixpreisen ohne versteckte Kosten können Sie sich entspannt zurücklehnen, während wir Ihren Umzug professionell und zuverlässig abwickeln."
+  text: "Sicher Team ist Ihr staatlich konzessioniertes und voll versichertes Umzugsunternehmen in Österreich. Wir bieten Ihnen den perfekten Komplettservice für Privatumzüge und Firmenumzüge in Wien und ganz Österreich. Unser bestens geschultes Fachpersonal übernimmt das sichere Verpacken Ihrer Möbel, die fachgerechte Demontage und Montage sowie den geschützten Transport. Vertrauen Sie auf unsere 15 Jahre Erfahrung, die All-Risk-Transportversicherung bis 1.000.000 EUR und transparente Fixpreise ohne versteckte Kosten. Fordern Sie jetzt Ihre kostenlose Besichtigung an."
   bullets:
     - "**Sicherer Möbeltransport:** Modernes Equipment und geschultes Personal sorgen für den unversehrten Transport Ihrer Einrichtung, inklusive Spezialverpackungen."
     - "**Fachgerechte De- & Montage:** Wir übernehmen den Abbau und millimetergenauen Aufbau Ihrer Schränke, Betten und Küchen am neuen Wohnort."
