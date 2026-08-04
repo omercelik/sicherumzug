@@ -19,7 +19,7 @@
     "url": "https://github.com/sicherteam/sicherumzug/issues"
   },
   "homepage": "https://github.com/sicherteam/sicherumzug#readme",
-  "devDependencies": {
+  "dependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.10",
     "tailwindcss": "^3.4.18"
