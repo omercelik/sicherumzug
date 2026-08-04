@@ -43,6 +43,10 @@ Ein Umzug im Alter, sei es in eine kleinere Wohnung, zu Angehörigen oder in ein
 
 Unser All-Inclusive-Paket für **Seniorenumzüge in Wien und Österreich** nimmt Ihnen und Ihren Angehörigen alle Sorgen ab. Mit viel Empathie und über 15 Jahren Erfahrung kümmern wir uns um jeden Schritt: Vom sorgfältigen Einpacken Ihres Hausrats mit unserem Verpackungsservice, über den sicheren Transport bis hin zur schlüsselfertigen Einrichtung am neuen Wohnort.
 
+### Enge Koordination mit Pflegeheimen und Seniorenresidenzen
+
+Ein reibungsloser Ablauf ist beim Einzug in eine Pflegeeinrichtung entscheidend. Wir übernehmen auf Wunsch die komplette Kommunikation und Terminabstimmung mit der Hausleitung der Seniorenresidenz oder des Pflegeheims. So stellen wir sicher, dass vorgegebene Einzugszeiten, Anlieferungszonen für unsere Möbelpacker und spezielle Richtlinien der Einrichtung strikt eingehalten werden. Für Sie oder Ihre Angehörigen entfällt der organisatorische Aufwand vollständig.
+
 ### Was unseren Umzugsservice für Senioren besonders macht
 
 - **Alles aus einer Hand:** Vom Abbau der Schrankwand über das Aufhängen der Lampen bis zum Einräumen des Geschirrs.

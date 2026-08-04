@@ -67,6 +67,10 @@ Egal ob es sich um ein kleines Startup oder ein großes Unternehmen handelt – 
 
 Mit unserer bewährten **Fixpreisgarantie** und der integrierten **Transportversicherung** bis zu einer Deckungssumme von € 1.000.000 sind Ihre Server, Monitore und Dokumente von der ersten Kartonpackung bis zum fertigen Aufbau im neuen Büro auf der sicheren Seite. Verlassen Sie sich auf unsere absolute Professionalität für Ihre **Firmenübersiedlung**.
 
+## Transparente Übergabe & B2B-Protokolle
+
+Wir wissen, dass im Geschäftsumfeld Nachvollziehbarkeit und Dokumentation oberste Priorität haben. Für jeden Firmenumzug erstellen wir auf Wunsch ein detailliertes Übergabeprotokoll. Dieses dokumentiert den Zustand der Räumlichkeiten vor und nach dem Auszug und sichert Sie rechtlich gegenüber Hausverwaltungen oder Eigentümern ab. Unsere Case Studies aus über 5.000 erfolgreichen Projekten – von kleinen Agenturen bis hin zu großen Konzernzentralen in Wien – belegen unsere Zuverlässigkeit als bevorzugter B2B-Partner.
+
 ## Umfassender Umzugsservice & Spezialtransporte
 
 Unsere Expertise deckt alle Facetten einer modernen **Übersiedlung** in Wien ab. Wir sind nicht nur für den klassischen Umzug da, sondern führen auch anspruchsvolle Spezialtransporte wie einen **Klaviertransport** oder einen schnellen **Express Umzug** zuverlässig durch. Mit modernen Hilfsmitteln und strapazierfähigem Verpackungsmaterial bringen wir selbst schwerste Lasten sicher ans Ziel.
