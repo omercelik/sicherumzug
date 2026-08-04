@@ -14,7 +14,7 @@ description: Nach dem Umzug steht der Papierkram an. Erfahren Sie, welche Meldef
 
 ---
 
-Ein [Umzug in Wien](/dienstleistungen/privatumzug/) oder ganz Österreich ist erst dann wirklich abgeschlossen, wenn auch alle behördlichen Pflichten erfüllt sind. Der Papierkram mag lästig sein, aber das Versäumen von Meldefristen kann in Österreich schnell zu empfindlichen Verwaltungsstrafen führen. In diesem Guide erklären wir Ihnen genau, was Sie wann erledigen müssen.
+Ein [Umzug in Wien](/dienstleistungen/umzug-wien/) oder ganz Österreich ist erst dann wirklich abgeschlossen, wenn auch alle behördlichen Pflichten erfüllt sind. Der Papierkram mag lästig sein, aber das Versäumen von Meldefristen kann in Österreich schnell zu empfindlichen Verwaltungsstrafen führen. In diesem Guide erklären wir Ihnen genau, was Sie wann erledigen müssen.
 
 ## Der neue Meldezettel: Die wichtigste Frist
 

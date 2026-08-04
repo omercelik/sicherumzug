@@ -36,7 +36,7 @@ Ziehen Sie um, weil Sie eine größere Wohnung für die Familie brauchen, mit de
 Wenn die berufliche Veranlassung gegeben ist, können Sie eine Vielzahl an Positionen geltend machen. Heben Sie zwingend **alle Rechnungen und Belege** auf!
 
 Absetzbar sind unter anderem:
-*   **Kosten für die Umzugsfirma:** Die Rechnung für ein professionelles Umzugsunternehmen (wie [Sicher Team](/dienstleistungen/privatumzug/)).
+*   **Kosten für die Umzugsfirma:** Die Rechnung für ein professionelles Umzugsunternehmen (wie [Sicher Team](/dienstleistungen/umzug-wien/)).
 *   **Miet-Transporter:** Kosten für Leihwagen und den dafür getankten Treibstoff.
 *   **Verpackungsmaterial:** Umzugskartons, Luftpolsterfolie, Klebeband.
 *   **Maklergebühren:** Provisionen für die Vermittlung der neuen Mietwohnung.

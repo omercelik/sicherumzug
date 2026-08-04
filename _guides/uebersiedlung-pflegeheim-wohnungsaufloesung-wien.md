@@ -77,7 +77,7 @@ Lassen Sie uns diese schwere Aufgabe gemeinsam bewältigen. Kontaktieren Sie uns
 ## Häufige Fragen (FAQ) zur Wohnungsauflösung bei Pflegeheim-Umzügen
 
 ### Was dürfen Senioren ins Pflegeheim mitnehmen?
-In den meisten Wiener Pflegeheimen (wie z.B. den Häusern zum Leben) ist der Platz begrenzt. Meist dürfen nur ein bequemer Lieblingssessel, persönliche Bilder, ein kleines Kastl und natürlich Kleidung mitgenommen werden. Wir helfen gerne beim Transport dieser wenigen, aber emotional wichtigen Gegenstände im Rahmen eines [Seniorenumzugs](/dienstleistungen/privatumzug/).
+In den meisten Wiener Pflegeheimen (wie z.B. den Häusern zum Leben) ist der Platz begrenzt. Meist dürfen nur ein bequemer Lieblingssessel, persönliche Bilder, ein kleines Kastl und natürlich Kleidung mitgenommen werden. Wir helfen gerne beim Transport dieser wenigen, aber emotional wichtigen Gegenstände im Rahmen eines [Seniorenumzugs](/dienstleistungen/umzug-wien/).
 
 ### Wie lange dauert die komplette Wohnungsauflösung?
 Nach der kostenlosen Besichtigung in Wien räumen wir eine durchschnittliche Wohnung oft innerhalb von 1-2 Arbeitstagen komplett besenrein, sodass Sie die Wohnung fristgerecht an die Hausverwaltung oder den Vermieter (z.B. Wiener Wohnen) übergeben können.

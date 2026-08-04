@@ -85,7 +85,7 @@ Konzentrieren Sie sich auf Ihr neues Leben im Ausland – wir kümmern uns um de
 ## Häufige Fragen (FAQ) zur Wohnungsauflösung bei Auswanderung
 
 ### Was passiert mit meinen Möbeln, wenn ich nach Deutschland oder in die Schweiz ziehe?
-Wenn Sie ins europäische Ausland ziehen, lohnt sich ein professioneller [Auslandsumzug](/dienstleistungen/auslandsumzug/). Sicher Team transportiert Ihre wichtigsten Möbel sicher nach Deutschland, in die Schweiz oder andere EU-Länder, während wir den Rest der Wohnung in Wien entrümpeln und besenrein übergeben.
+Wenn Sie ins europäische Ausland ziehen, lohnt sich ein professioneller [Auslandsumzug](/dienstleistungen/umzug-wien/). Sicher Team transportiert Ihre wichtigsten Möbel sicher nach Deutschland, in die Schweiz oder andere EU-Länder, während wir den Rest der Wohnung in Wien entrümpeln und besenrein übergeben.
 
 ### Muss ich bei der Räumung persönlich anwesend sein?
 Nein. Viele unserer Kunden befinden sich zum Zeitpunkt der Entrümpelung bereits im Ausland. Wir dokumentieren den gesamten Fortschritt fotografisch, übergeben die Schlüssel auf Wunsch direkt an die Hausverwaltung (z.B. Wiener Wohnen) oder den Vermieter und senden Ihnen das Übergabeprotokoll digital zu.
