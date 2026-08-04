@@ -59,6 +59,8 @@ permalink: /leistungen/umzug-wien/
 
 ## Professioneller Umzug in Wien zum garantierten Fixpreis
 
+**Sicher Team** ist Ihr verlässlicher Partner für Umzüge und Übersiedlungen in Wien und ganz Österreich. Mit über 15 Jahren Erfahrung und einer inkludierten All-Risk-Transportversicherung bis zu 1.000.000 Euro garantieren wir Privat- und Firmenkunden einen stressfreien Ablauf zum transparenten Fixpreis. Wir fokussieren uns vollständig auf professionelle Logistik.
+
 Ein **Umzug in Wien** erfordert aufgrund enger Gassen, hoher Stockwerke in Altbauten und schwieriger Parkplatzsituationen eine präzise Planung. Als erfahrene **Umzugsfirma in Wien** garantiert Sicher Team Ihnen einen vollkommen stressfreien Ablauf. Unser geschultes, fest angestelltes Team demontiert Ihre Einrichtungsgegenstände, verpackt empfindliche Stücke transportsicher und führt den sicheren **Möbeltransport** in allen 23 Wiener Bezirken durch.
 
 <figure>
@@ -81,7 +83,7 @@ Wir bieten Ihnen die perfekte Kombination aus **Privatumzug** und **Räumung**:
 - Alle nicht mehr benötigten Gegenstände im alten Objekt, im Keller oder auf dem Dachboden werden von uns im selben Schritt fachgerecht entrümpelt.
 - Durch unsere faire **Wertanrechnung** von verwertbaren Möbeln, Antiquitäten, Altwaren oder Technik reduzieren sich die Gesamtkosten Ihres Umzugs deutlich.
 
-## Unsere Umzugsleistungen in Wien
+## Welche Umzugsdienste bietet Sicher Team an?
 
 - **Privatumzüge & Übersiedlungen:** Umzüge von Wohnungen und Häusern in Wien und ganz Österreich.
 - **Auslandsumzug & Internationaler Umzug:** Wir begleiten Ihren [Auslandsumzug](/leistungen/auslandsumzug/) sicher in die gesamte DACH-Region inklusive Zollabwicklung.
