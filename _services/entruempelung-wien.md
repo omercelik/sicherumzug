@@ -118,7 +118,7 @@ Wenn Slots frei sind, starten wir in Wien am selben Tag. Ein kurzer Foto-Check p
 
 ## Wohnungsauflösung gesucht?
 
-Wenn der Fokus auf einer kompletten Wohnungsauflösung liegt, finden Sie den passenden Ablauf, Fixpreis-Details und Übergabe-Checklisten auf unserer Seite [Wohnungsauflösung Wien](/leistungen/wohnungsaufloesung/).
+Wenn der Fokus auf einer kompletten Wohnungsauflösung liegt, finden Sie den passenden Ablauf, Fixpreis-Details und Übergabe-Checklisten auf unserer Seite [Wohnungsauflösung Wien](/leistungen/wohnungsaufloesung/). Zusätzlich können Sie sich an unserer [Schritt-für-Schritt Vorbereitung der Räumung](/ratgeber/checkliste-wohnungsraeumung-7-schritte/) orientieren.
 
 Eine allgemeine Übersicht ohne Standortbezug finden Sie auf der Seite [Entrümpelung](/leistungen/entruempelung/).
 

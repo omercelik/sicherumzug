@@ -27,7 +27,7 @@ faqs:
 ---
 Die Frage nach dem Preis ist berechtigt, aber sie wird oft zu kurz gestellt. Eine Wohnungsauflösung kostet nicht wegen der Wohnfläche allein, sondern wegen Ablaufkomplexität. Dieser Leitfaden zeigt Ihnen die reale Preislogik für 2026 in Wien und wie Sie Angebote richtig vergleichen.
 
-Wenn Sie direkt konkrete Zahlen für Ihr Objekt brauchen, starten Sie über unser [Angebot](/angebot/). Für die operative Umsetzung sind [Räumung](/leistungen/raeumung/) und [Wohnungsauflösung](/leistungen/haushaltsaufloesung/) die zentralen Leistungsseiten.
+Wenn Sie direkt konkrete Zahlen für Ihr Objekt brauchen, starten Sie über unser [Angebot](/angebot/). Für die operative Umsetzung sind [Räumung](/leistungen/raeumung/) und professionelle [Hilfe bei der kompletten Haushaltsauflösung](/leistungen/haushaltsaufloesung/) die zentralen Leistungsseiten.
 
 ## Die 6 grossen Kostentreiber
 

@@ -113,7 +113,7 @@ Unsere **Kellerräumung** folgt einem erprobten System:
 
 Wiener Keller haben ihre Eigenarten:
 
-- **Feuchte Wände**: Unsere [Räumung Wien](/leistungen/raeumung/) Teams kennen das Wiener Klima
+- **Feuchte Wände**: Unsere erfahrenen [Räumungsteams](/leistungen/raeumung/) kennen das Wiener Klima
 - **Enge Stiegenhäuser**: Wir haben Erfahrung mit engen Wiener Stiegen
 - **Versteckte Schätze**: Oft finden sich wertvolle Antiquitäten
 - **Sondermüll**: Von Farben bis zu alten Chemikalien

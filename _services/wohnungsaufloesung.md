@@ -71,6 +71,6 @@ Eine allgemeine Übersicht ohne Standortbezug finden Sie auf der Seite [Leistung
 
 ## Verwandte Dienstleistungen
 
-- **[Wohnungsauflösung](/leistungen/haushaltsaufloesung/):** Für komplette Haushalte und größere Objekte.
-- **[Räumung Wien](/leistungen/raeumung/):** Wenn ganze Liegenschaften leer werden müssen.
-- **[Entrümpelung Wien](/leistungen/entruempelung-wien/):** Wenn Wertanrechnung und Sortierung im Fokus stehen.
+- **[Haushaltsauflösung](/leistungen/haushaltsaufloesung/):** Für komplette Haushalte und größere Objekte.
+- **[Professionelle Liegenschaftsräumung](/leistungen/raeumung/):** Wenn ganze Liegenschaften leer werden müssen.
+- **[Entrümpelung in Wien](/leistungen/entruempelung-wien/):** Wenn Wertanrechnung und Sortierung im Fokus stehen.

@@ -56,4 +56,4 @@ Unser All-Inclusive-Paket für **Seniorenumzüge in Wien und Österreich** nimmt
 3. **Der Umzugstag:** Unser geschultes Team verpackt und transportiert alles mit höchster Sorgfalt.
 4. **Schlüsselfertige Übergabe:** Wir verlassen den Ort erst, wenn Sie sich in Ihrem neuen Zuhause rundum wohlfühlen.
 
-> **Sie suchen Unterstützung bei der Planung?** Lesen Sie auch unseren ausführlichen Ratgeber zur [ultimativen Umzugs-Checkliste](/ratgeber/ultimative-umzugs-checkliste/). Wir beraten Sie gerne unverbindlich!
+> **Sie suchen Unterstützung bei der Planung?** Lesen Sie auch unseren ausführlichen Ratgeber zur [Seniorenumzug Hilfe](/ratgeber/seniorenumzug-oesterreich-profi-hilfe/). Wir beraten Sie gerne unverbindlich!
