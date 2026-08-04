@@ -62,7 +62,7 @@ permalink: /leistungen/umzug-wien/
 Ein **Umzug in Wien** erfordert aufgrund enger Gassen, hoher Stockwerke in Altbauten und schwieriger Parkplatzsituationen eine präzise Planung. Als erfahrene **Umzugsfirma in Wien** garantiert Sicher Team Ihnen einen vollkommen stressfreien Ablauf. Unser geschultes, fest angestelltes Team demontiert Ihre Einrichtungsgegenstände, verpackt empfindliche Stücke transportsicher und führt den sicheren **Möbeltransport** in allen 23 Wiener Bezirken durch.
 
 <figure>
-  <img src="/assets/images/hero/desktop.webp" alt="Möbelpacker von Sicher Team beim sicheren Transport von Umzugskartons in einem Wiener Altbau" width="800" height="533" fetchpriority="high" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <img src="/assets/images/hero/desktop.avif" alt="Möbelpacker von Sicher Team beim sicheren Transport von Umzugskartons in einem Wiener Altbau" width="800" height="533" fetchpriority="high" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
   <figcaption class="text-sm text-gray-500 text-center">Fachgerechter Möbeltransport und Übersiedlung durch unser fest angestelltes, geschultes Fachpersonal.</figcaption>
 </figure>
 
