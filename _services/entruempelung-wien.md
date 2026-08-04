@@ -61,7 +61,7 @@ redirect_from:
 Eine professionelle Entrümpelung in Wien heißt für uns als Räumungsfirma: sortieren, verwerten, entsorgen, egal ob es um eine komplette Wohnungsentrümpelung geht. Wir kombinieren Wertanalyse, Spendenwege und transparente Entsorgung im Fixpreis.
 
 <figure>
-  <img src="/assets/images/hero/desktop.webp" alt="Mitarbeiter von Sicher Team bei der strukturierten Sortierung und Entrümpelung einer Wohnung in Wien" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <img src="/assets/images/hero/desktop.avif" alt="Mitarbeiter von Sicher Team bei der strukturierten Sortierung und Entrümpelung einer Wohnung in Wien" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
   <figcaption class="text-sm text-gray-500 text-center">Strukturierte Trennung von Sperrmüll und verwertbaren Gegenständen bei einer Entrümpelung in Wien.</figcaption>
 </figure>
 

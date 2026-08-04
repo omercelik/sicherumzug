@@ -59,7 +59,7 @@ permalink: /leistungen/gratis-raeumung/
 Eine komplette Wohnungsauflösung oder Hausräumung ist oft mit viel Stress, Zeitaufwand und hohen Kosten für Abtransport und Entsorgung verbunden. Als professionelles Wiener Räumungsunternehmen bieten wir Ihnen eine smarte und budgetfreundliche Alternative: Die **Gratis Räumung durch Wertanrechnung**.
 
 <figure>
-  <img src="/assets/images/hero/desktop.webp" alt="Sicher Team Experte bei der Begutachtung von antiken Möbeln für eine Gratis Räumung in Wien" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
+  <img src="/assets/images/hero/desktop.avif" alt="Sicher Team Experte bei der Begutachtung von antiken Möbeln für eine Gratis Räumung in Wien" width="800" height="533" loading="lazy" class="rounded-xl shadow-md w-full h-auto mt-4 mb-2">
   <figcaption class="text-sm text-gray-500 text-center">Vor-Ort-Besichtigung und Schätzung von Antiquitäten für eine kostenlose Räumung durch Wertanrechnung.</figcaption>
 </figure>
 

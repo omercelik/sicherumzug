@@ -37,25 +37,25 @@ open_hours:
 
 quote_form_action: "https://formspree.io/f/mqagkeya"
 logo: /logo.svg
-og_image: /assets/images/hero/desktop.webp
+og_image: /assets/images/hero/desktop.avif
 og_image_alt: "Sicher Team im Einsatz"
 
 images:
-  hero_mobile: /assets/images/hero/mobile.webp
-  hero_desktop: /assets/images/hero/desktop.webp
+  hero_mobile: /assets/images/hero/mobile.avif
+  hero_desktop: /assets/images/hero/desktop.avif
   hero_mobile_srcset:
-    - url: /assets/images/hero/mobile-400w.webp
+    - url: /assets/images/hero/mobile-400w.avif
       descriptor: "400w"
-    - url: /assets/images/hero/mobile-800w.webp
+    - url: /assets/images/hero/mobile-800w.avif
       descriptor: "800w"
-    - url: /assets/images/hero/mobile.webp
+    - url: /assets/images/hero/mobile.avif
       descriptor: "1100w"
   hero_desktop_srcset:
-    - url: /assets/images/hero/desktop-1200w.webp
+    - url: /assets/images/hero/desktop-1200w.avif
       descriptor: "1200w"
-    - url: /assets/images/hero/desktop-1440w.webp
+    - url: /assets/images/hero/desktop-1440w.avif
       descriptor: "1440w"
-    - url: /assets/images/hero/desktop.webp
+    - url: /assets/images/hero/desktop.avif
       descriptor: "1632w"
   hero_dimensions:
     desktop:
