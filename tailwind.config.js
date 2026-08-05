@@ -21,7 +21,7 @@ module.exports = {
           DEFAULT: "#2F3B45", // Nordic Slate replacing old dark green
           light: "#3A4A57",   // Lighter slate
           button: "#C62839",  // Buttons use Crimson Signal
-          accent: "#EF4444"   // Adjusted accent color for better WCAG AA contrast (e.g., on dark footers)
+          accent: "#C62839"   // Uses Crimson Signal for WCAG AA 4.5:1 contrast on light backgrounds
         },
         content: {
           accent: "#C62839",

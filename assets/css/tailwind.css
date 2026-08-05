@@ -189,15 +189,16 @@ body {
    PRECISION UI/UX ACCESSIBILITY OVERRIDES (WCAG AA 4.5:1 COMPLIANT)
    ========================================================================== */
 @layer utilities {
-  .bg-white .text-primary-accent,
-  .bg-background-light .text-primary-accent,
-  section[class*="bg-white"] .text-primary-accent,
-  section[class*="bg-background-light"] .text-primary-accent {
-    color: #166534;
+  /* Override accent color on dark backgrounds to Red-300 (#fca5a5) for WCAG AA contrast */
+  .dark .text-primary-accent,
+  footer .text-primary-accent,
+  [data-hero-banner] .text-primary-accent {
+    color: #fca5a5;
   }
 
-  #form-message-counter,
-  .text-text-light\/80 {
-    color: #374151;
+  .dark .hover\:text-primary-accent:hover,
+  footer .hover\:text-primary-accent:hover,
+  [data-hero-banner] .hover\:text-primary-accent:hover {
+    color: #f87171;
   }
 }
