@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Kleingarten & Schrebergarten Räumung in Wien: Diskret, Schnell & Besenrein"
 seo_title: "Kleingarten Räumung Wien: Schrebergarten & Pachtauflösung"
 description: "Professionelle Räumung von Kleingärten & Schrebergärten in Wien. Inklusive Wertanrechnung, Abbau von Gartenhäusern & MA 48 Entsorgung. Jetzt Fixpreis sichern!"

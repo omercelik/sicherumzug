@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Entrümpelungsdienst | Flexible Hilfe nach Bedarf
 seo_title: Entrümpelungsdienst | Abholung, Teilräume, Fixpreis
 description: Entrümpelungsdienst für einzelne Räume und gezielte Abholungen. Fixpreis

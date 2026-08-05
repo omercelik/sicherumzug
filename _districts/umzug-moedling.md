@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Umzug Mödling"
 seo_title: "Umzug Mödling - Professionelle Umzugsfirma & Übersiedlung"
 description: "Professioneller Umzug in Mödling. Ihre erfahrene Umzugsfirma für Villenumzüge, Privatumzüge und Firmenumzüge mit Fixpreisgarantie und lokaler Expertise."

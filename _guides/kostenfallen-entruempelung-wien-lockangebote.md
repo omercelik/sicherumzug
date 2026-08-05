@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Kostenfallen bei Entrümpelungen in Wien: Vorsicht vor Lockangeboten"
 seo_title: "Entrümpelung Wien Kostenfallen: Warnung vor Gratis-Räumung"
 description: "Vorsicht vor Lockangeboten! So erkennen Sie unseriöse Entrümpelungsfirmen in Wien. Alles über versteckte Kosten, illegale Entsorgung & echte Wertanrechnung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Möbeltransport in Österreich: Sicherer Transport für Ihre Einrichtung"
 seo_title: "Möbeltransport Österreich – Kosten, Ablauf & Profi-Tipps"
 description: "Suchen Sie einen sicheren Möbeltransport in Österreich? Erfahren Sie alles über Kosten, den professionellen Ablauf, Schutzmaßnahmen und die richtige Verpackung."

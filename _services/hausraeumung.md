@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Hausräumung Wien
 seo_title: Hausräumung & Hausentrümpelung Wien - Fixpreis
 description: Ihre Hausräumung und Hausentrümpelung in Wien. Für Hausräumungen von

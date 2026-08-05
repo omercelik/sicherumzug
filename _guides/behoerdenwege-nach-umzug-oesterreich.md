@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Behörden nach dem Umzug in Österreich: Ihr praktischer Amtsweg-Leitfaden"
 seo_title: "Behörden nach Umzug Österreich – Fristen & Adressänderung"
 description: "Welche Behördenwege stehen nach dem Umzug in Österreich an? Erfahren Sie alles über Meldezettel, Kfz-Ummeldung, Fristen, Dokumente und praktische Online-Tools."

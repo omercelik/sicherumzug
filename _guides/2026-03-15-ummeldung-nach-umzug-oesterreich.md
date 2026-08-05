@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Ummeldung nach dem Umzug: Welche Behördenwege in Österreich wichtig sind"
 date: 2026-03-15 15:00:00 +0100

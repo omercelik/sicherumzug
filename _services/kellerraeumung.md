@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Kellerräumung Wien
 seo_title: Kellerräumung Wien - Keller entrümpeln mit Fixpreis & Wertanrechnung
 description: Ihre Kellerräumung WIEN. Wir schaffen Platz in Keller, Garage oder Hobbyraum

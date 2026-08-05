@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wohnungsräumung für Senioren: Sanfter Umzug planen"
 seo_title: "Wohnungsräumung Senioren Wien - Sanfter Umzug & Wertanrechnung"
 description: "So organisieren Sie eine seniorengerechte Wohnungsräumung in Wien, Niederösterreich und Burgenland - mit Wertanrechnung, Sozialnetz und Besenrein-Garantie."

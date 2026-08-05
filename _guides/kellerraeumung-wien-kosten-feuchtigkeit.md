@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Kellerräumung Wien: Kosten, Feuchtigkeit und Problemstoffe"
 seo_title: "Kellerräumung Wien | Kosten, Ablauf, Problemstoffe"
 description: "Richtwerte für die Kellerräumung in Wien, typische Kostenfaktoren und wie Sie mit Feuchtigkeit, Schimmel und Problemstoffen umgehen."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "MA 48 Entrümpelung Wien: Kosten, Ablauf & Alternativen"
 seo_title: "MA 48 Entrümpelung Wien: Kosten, Ablauf & Alternativen"
 description: "Alles zur MA 48 Entrümpelung: Kosten für Sperrmüllabholung, Mulden-Bestellung und wann sich eine private Firma mit Wertanrechnung lohnt."

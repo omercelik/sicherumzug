@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Räumungexperte Wien: So läuft die Besichtigung zum Fixpreis"
 seo_title: "Räumungexperte Wien | Besichtigung, Fixpreis, Ablauf"
 description: "Was macht ein Räumungexperte vor Ort? Ablauf der Besichtigung, Fragen, Unterlagen und wie der Fixpreis entsteht."

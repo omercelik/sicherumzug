@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Ganze Bibliothek & Sammlungen auflösen in Wien: Spenden, verkaufen oder anrechnen lassen?"
 seo_title: "Bibliothek & Sammlungen auflösen Wien: Wertanrechnung & Ankauf"
 description: "Große Büchersammlungen und Antiquitäten in Wien auflösen: Wie Sie tausende Bücher profitabel über unsere Wertanrechnung entsorgen oder verwerten lassen."

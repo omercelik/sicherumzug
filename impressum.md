@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
 title: "Impressum & Datenschutz"
 seo_title: "Sicher Team - Impressum & Datenschutz Wien"

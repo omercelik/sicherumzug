@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung Burgenland Nord & Mitte: Mattersburg, Rust, Oberpullendorf"
 seo_title: "Entrümpelung Burgenland Nord: Fixpreis, Wertanrechnung, Logistik"
 description: "So planen wir Entrümpelungen in Mattersburg, Rust und Oberpullendorf: Fixpreis, Wertanrechnung, Containerlogistik und regionale Besonderheiten."

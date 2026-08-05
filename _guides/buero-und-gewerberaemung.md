@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Büro- und Gewerberäumung DSGVO-konform abwickeln"
 seo_title: "Büro- und Gewerberäumung Wien - DSGVO, Entsorgung & Fixpreis"
 description: "Ablaufplan für Geschäftsauflösungen inklusive IT-Deinstallation, Aktenvernichtung und Fixpreisstruktur."

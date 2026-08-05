@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: service-index
 title: "Professioneller Umzug & Übersiedlung in Österreich"
 seo_title: "Umzugsfirma Österreich | Leistungen & Montage"

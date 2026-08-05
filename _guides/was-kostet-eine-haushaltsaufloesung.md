@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Was kostet eine Wohnungsauflösung in Wien? Preislogik 2026"
 seo_title: "Wohnungsauflösung Kosten Wien 2026"
 description: "Ausführlicher Kostenleitfaden für Wien: Welche Faktoren den Preis treiben, wie Bezirkslogistik wirkt und wann Sie ein verbindliches Angebot einholen sollten."

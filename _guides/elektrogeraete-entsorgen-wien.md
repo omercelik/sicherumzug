@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Elektrogeräte entsorgen: Richtige Wege für Wien & Umgebung"
 seo_title: "Elektrogeräte entsorgen Wien - Richtlinie für Entrümpelung"
 description: "Was tun mit Kühlschrank, Waschmaschine oder Server-Rack? Alle Optionen für Wien, Niederösterreich und Burgenland in einer Übersicht."

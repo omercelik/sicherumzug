@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Die ultimative Umzugs-Checkliste: Planung, Packen und Einzug"
 date: 2026-08-15 09:00:00 +0200

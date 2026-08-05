@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Antiquitäten Ankauf? Wertanrechnung mit Entrümpelung
 seo_title: Antiquitäten Wertanrechnung Wien – fair & diskret bei Räumung
 description: Wir bewerten Antiquitäten und rechnen den Wert bei Entrümpelung, Räumung

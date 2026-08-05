@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Zimmer Räumung Wien: WG-Übergabe, Zeitplan und Kostenfaktoren"
 seo_title: "Zimmer Räumung Wien | WG-Übergabe, Zeitplan, Fixpreis"
 description: "So klappt die Zimmer Räumung in Wien: Ablauf, WG-Übergabe, Kostenfaktoren und wann sich Wertanrechnung lohnt."

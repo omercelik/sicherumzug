@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Umzug St. Pölten"
 seo_title: "Umzug St. Pölten - Professionelle Umzugsfirma & Übersiedlung"
 description: "Zuverlässiger Umzug in St. Pölten. Ihre professionelle Umzugsfirma für Behörden, Firmen und Privatumzüge mit Fixpreisgarantie."

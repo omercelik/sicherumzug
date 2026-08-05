@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung nach Mietnomaden in Wien: Kosten, Ablauf & Rechte für Vermieter"
 seo_title: "Mietnomaden Räumung Wien: Ablauf, Kosten & Hilfe für Vermieter"
 description: "Mietnomaden in Wien: Schritt-für-Schritt Leitfaden zur Entrümpelung. So minimieren Vermieter Kosten, sichern Beweise und räumen rechtssicher."

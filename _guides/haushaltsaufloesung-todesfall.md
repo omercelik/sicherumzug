@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wohnungsauflösung nach einem Todesfall: Was ist zu beachten?"
 seo_title: "Wohnungsauflösung nach Todesfall Wien - Ablauf & Checkliste"
 description: "Ein Leitfaden zu den wichtigsten rechtlichen und organisatorischen Schritten bei der Auflösung einer Wohnung nach einem Todesfall."

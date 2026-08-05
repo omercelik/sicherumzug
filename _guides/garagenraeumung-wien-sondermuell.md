@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Garagenräumung in Wien: Sondermüll, Reifen und Altöl richtig entsorgen"
 seo_title: "Garagenräumung Wien: Entsorgung von Reifen, Altöl & Sondermüll"
 description: "Ratgeber zur Garagenräumung in Wien: So entsorgen Sie Autoreifen, Altöl, Lacke und Chemikalien legal und umweltgerecht über die MA 48."

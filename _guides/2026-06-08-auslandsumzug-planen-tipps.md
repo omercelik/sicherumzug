@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Auslandsumzug planen: Was Sie bei einem Umzug über die Grenze beachten müssen"
 date: 2026-06-08 09:30:00 +0200

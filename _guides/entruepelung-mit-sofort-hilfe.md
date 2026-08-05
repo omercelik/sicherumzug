@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung mit Sofort-Hilfe: Express-Räumungen in Wien"
 seo_title: "Entrümpelung Soforthilfe Wien - Express Räumung & Notfälle"
 description: "Wenn es schnell gehen muss: So funktionieren Express-Entrümpelungen bei Wasserschäden, Umzug oder unerwarteten Notfällen."

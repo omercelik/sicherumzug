@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Checkliste für die Wohnungsauflösung"
 seo_title: "Checkliste Wohnungsauflösung - Schritt für Schritt in Wien"
 description: "Schritt-für-Schritt-Checkliste zur Wohnungsauflösung mit Zeitplan, Aufgaben vor Ort und Vorlagen. Ideal zur Vorbereitung auf Besichtigung und Räumung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung im Gemeindebau: Tipps für die Rückgabe an Wiener Wohnen"
 seo_title: "Entrümpelung Gemeindebau Wien | Rückgabe an Wiener Wohnen"
 description: "So gelingt die Wohnungsrückgabe im Gemeindebau. Vorgaben von Wiener Wohnen, Besenreinheit und wie Sie bei der Entrümpelung Kosten sparen."

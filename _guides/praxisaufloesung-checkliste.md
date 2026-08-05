@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Praxisauflösung in Wien: Checkliste und Ablauf"
 seo_title: "Praxisauflösung Wien - Checkliste, Ablauf und Fixpreis"
 description: "Schritt-für-Schritt Checkliste für Praxisauflösungen in Wien. Fokus auf Datenschutz, Medizingeräte, Entsorgung und besenreine Hinterlassung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wohnungsentrümpelung Wien: Ablauf, Kosten & MA 48 vs. Profi"
 seo_title: "Wohnungsentrümpelung Wien: Ablauf, Kosten & MA 48"
 description: "So planen Sie eine Wohnungsentrümpelung in Wien: Ablauf, Kostenbeispiele, MA 48 vs. Räumungsfirma, Wertanrechnung und Checkliste für die Übergabe."

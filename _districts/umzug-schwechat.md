@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 checklist:
 - Altbau- und Neubauwohnungen rund um Hauptplatz, Wiener Straße und Bruck-Hainburger
   Straße

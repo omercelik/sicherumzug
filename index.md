@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: home
 title: "Professioneller Umzug & Übersiedlung in Österreich | Sicher Team"
 seo_title: "Umzugsfirma Österreich | Möbeltransport & Montage"

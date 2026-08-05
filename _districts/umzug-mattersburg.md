@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 checklist:
 - Wohnungen und Stadthäuser rund um Hauptplatz, Bahnstraße und Arena
 - Einfamilien- und Reihenhäuser in Bad Sauerbrunn, Walbersdorf und Mattersburg-Siedlungen

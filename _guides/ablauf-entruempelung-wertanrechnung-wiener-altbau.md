@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Ablauf einer Entrümpelung mit Wertanrechnung im Wiener Altbau: Logistik, Halteverbote & MA 48"
 seo_title: "Entrümpelung Wiener Altbau: Ablauf, Logistik & MA 48"
 description: "So läuft eine Wohnungsräumung im Wiener Altbau ab. Alles zu Logistik, Halteverboten, MA 48 Mülltrennung und direkter Wertanrechnung. Jetzt informieren."

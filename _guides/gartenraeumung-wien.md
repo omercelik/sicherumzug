@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Gartenräumung Wien: Frühjahrsputz, Herbstlaub & Gartenmöbel Entsorgung"
 seo_title: "Gartenräumung Wien - Gartenmöbel & Grünschnitt Entsorgung"
 description: "Professionelle Gartenräumung in Wien: Gartenmöbel Entsorgung, Grünschnitt, Gartenhaus Räumung & Wertanrechnung. Termine in ganz Wien & Umgebung."

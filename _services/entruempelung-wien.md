@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung Wien | Wertanrechnung & Sortierung"
 seo_title: "Entrümpelung Wien - Wertanrechnung, Sortierung & Fixpreis"
 description: "Professionelle Entrümpelung in Wien. Als erfahrene Räumungsfirma bieten wir Wohnungsentrümpelung mit Wertanrechnung, Sortierung und Fixpreis an."

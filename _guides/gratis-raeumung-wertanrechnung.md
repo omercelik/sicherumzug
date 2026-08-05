@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Gratis Räumung Wien mit Wertanrechnung"
 seo_title: "Gratis Räumung Wien | Wertanrechnung & Foto-Check"
 description: "Wie Ankauf und Wertanrechnung eine Wohnungsauflösung finanzieren: Foto-Check, Beispiele, Wertetreiber und klare Schritte für Wien und Umgebung."

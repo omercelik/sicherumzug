@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Verpackungstipps für den Umzug: Richtig packen wie die Profis"
 seo_title: "Verpackungstipps Umzug – Kartons richtig packen & schützen"
 description: "Erfahren Sie die besten Verpackungstipps für Ihren Umzug. Wie Sie Kartons packen, Glas und Porzellan schützen und Transportschäden effektiv vermeiden."

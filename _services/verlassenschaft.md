@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Verlassenschaften & Nachlassräumung
 seo_title: Verlassenschaften & Nachlassräumung Wien - Wertanrechnung
 description: Ihre Verlassenschaft Wien. Wir bieten Verlassenschaftsräumung Wien und

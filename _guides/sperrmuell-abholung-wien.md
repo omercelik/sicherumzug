@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Sperrmüllabholung in Wien: Privat oder MA 48?"
 seo_title: "Sperrmüllabholung Wien - MA 48 vs Firma, Kosten & Tipps"
 description: "Ein Leitfaden zur schnellen und günstigen Sperrmüllbeseitigung. Wir vergleichen die Servicelevels und zeigen, wann sich welche Option lohnt."

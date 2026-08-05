@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Gratis Entrümpelung Wien | Kostenlose Räumung durch Wertanrechnung"
 seo_title: "Gratis Entrümpelung Wien - Räumung mit Wertanrechnung"
 description: "Suchen Sie eine gratis Entrümpelung in Wien? Wir bieten kostenlose Wohnungsauflösung durch direkte Wertanrechnung von Möbeln und Altwaren. Jetzt anfragen!"

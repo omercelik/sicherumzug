@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung nach Brand- oder Wasserschaden in Wien: Schnelle Hilfe"
 seo_title: "Entrümpelung nach Brandschaden & Wasserschaden Wien"
 description: "Soforthilfe bei Entrümpelung nach Brand- oder Wasserschaden in Wien. Fachgerechte Entsorgung, Geruchsneutralisation & rasche Abwicklung für Versicherungen."

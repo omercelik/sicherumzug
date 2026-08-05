@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Möbelmontage beim Umzug: Tipps für den perfekten Schrank-Abbau"
 date: 2026-08-23 09:00:00 +0200

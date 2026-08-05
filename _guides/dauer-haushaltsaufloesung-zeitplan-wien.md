@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wie lange dauert eine Wohnungsauflösung in Wien? (Zeitplan)"
 seo_title: "Dauer Wohnungsauflösung Wien: Zeitplan & Ablauf in Tagen"
 description: "Wie lange dauert eine Wohnungsauflösung in Wien? Realistischer Zeitplan in Tagen für 1- bis 4-Zimmer-Wohnungen, Messie-Räumungen und Keller."

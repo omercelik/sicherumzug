@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Verlassenschaftsankauf & Notarablauf in Wien: Schritt-für-Schritt"
 seo_title: "Verlassenschaftsankauf Wien: Notar, Ablauf & Wertanrechnung"
 description: "Ratgeber Verlassenschaften in Wien: So funktioniert der Ablauf beim Notar (Gerichtskommissär), die Nachlassschätzung und der Verlassenschaftsankauf."

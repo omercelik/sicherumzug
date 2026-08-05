@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Die perfekte Checkliste für die Wohnungsräumung"
 seo_title: "Checkliste Wohnungsräumung: 7 Schritte zur Übergabe in Wien"
 description: "Wo fängt man bei einer Entrümpelung an? Nutzen Sie unsere 7-Schritte-Checkliste für eine stressfreie, besenreine Wohnungsräumung in Wien."

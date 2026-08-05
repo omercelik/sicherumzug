@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung | Fixpreis & Wertanrechnung"
 seo_title: "Entrümpelung & Hausentrümpelung | Räumungsfirma beauftragen"
 description: "Ihre Entrümpelung heute planen. Als Räumungsfirma übernehmen wir jede Hausentrümpelung mit Fixpreis, Wertanrechnung und fachgerechter Entsorgung."

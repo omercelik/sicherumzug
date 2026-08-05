@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
 seo_title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
 description: Wir rechnen den Wert von Möbeln ausschließlich als Teil unserer Entrümpelung

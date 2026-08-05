@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Studentenumzug in Österreich: Günstig und schlau ins neue Semester starten"
 seo_title: "Studentenumzug Österreich – Günstige Tipps, Logistik & Beihilfen"
 description: "Der ultimative Guide für den Studentenumzug in Österreich. Erfahren Sie, wie Sie günstig in eine WG oder ein Studentenwohnheim übersiedeln, Beihilfen nutzen und Kosten sparen."
