@@ -414,6 +414,8 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       if (phoneInp) formData.append('phone', phoneInp.value);
       if (postcodeInp) formData.append('postcode', postcodeInp.value);
       if (messageInp) formData.append('message', messageInp.value);
+      formData.append('source_page', window.location.href);
+      formData.append('page_title', document.title);
 
       var subjectInp = quoteForm.querySelector('input[name="subject"]');
       if (subjectInp) formData.append('subject', subjectInp.value);
