@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       </p>
     `;
   }
-          quoteForm.reset();
+          
           if (typeof selectedFiles !== 'undefined') {
             selectedFiles = [];
             updateInputAndRender();
