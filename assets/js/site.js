@@ -436,10 +436,31 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         const data = await res.json();
 
         if (res.ok && data.success) {
-          if (responseDiv) {
-            responseDiv.innerText = data.message || 'Ihre Nachricht wurde erfolgreich gesendet!';
-            responseDiv.className = 'mt-4 text-center text-sm font-bold text-emerald-600';
-          }
+
+  // Formular ausblenden
+  quoteForm.classList.add('hidden');
+
+  if (responseDiv) {
+    responseDiv.className = 'mt-6 rounded-2xl bg-green-50 border border-green-200 p-8 text-center shadow-sm';
+
+    responseDiv.innerHTML = `
+      <span class="material-symbols-outlined text-5xl text-green-600">
+        check_circle
+      </span>
+
+      <h3 class="mt-4 text-xl font-bold text-gray-900">
+        Vielen Dank!
+      </h3>
+
+      <p class="mt-2 text-gray-700">
+        Ihre Anfrage wurde erfolgreich gesendet.
+      </p>
+
+      <p class="mt-2 text-sm text-gray-600">
+        Wir melden uns schnellstmöglich bei Ihnen.
+      </p>
+    `;
+  }
           quoteForm.reset();
           if (typeof selectedFiles !== 'undefined') {
             selectedFiles = [];
