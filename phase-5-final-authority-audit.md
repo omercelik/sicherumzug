@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 5: Final Authority Audit & Long-Term Growth Strategy
 
 ## 1. Current SEO Authority Status

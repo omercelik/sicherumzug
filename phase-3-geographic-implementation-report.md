@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.6 Geographic Authority Implementation Report
 
 ## Overview

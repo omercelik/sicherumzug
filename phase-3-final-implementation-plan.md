@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.7 - Final AI / LLM Optimization & Implementation Plan
 
 This plan details the specific, non-destructive actions proposed to optimize the Sicher Team website for AI and LLM extraction, based on the site-wide audit.

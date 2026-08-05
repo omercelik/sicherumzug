@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 5: Final Strategic Implementation Roadmap
 
 Based on the findings from the Final Authority Audit (`phase-5-final-authority-audit.md`), this roadmap outlines the final strategic improvements to solidify "Sicher Team" as the topical authority for moving and clearance services in Austria.

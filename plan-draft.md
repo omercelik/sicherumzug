@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 1. Update `index.md`: In `brand_intro.text`, clearly establish "Sicher Team" as a professional moving company in Austria.
 2. Update `_services/umzug-wien.md` and `_services/umzug-oesterreich.md`: Hardcode trust signals and clarify WHO/WHAT/WHERE/WHY/NEXT.
 3. Update `_services/raeumung.md`: Inject "Sicher Team" as the secondary provider. Update `_services/entruempelung.md` similarly.

@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3: Geographic Authority Blueprint
 
 ## 1. Current Geographic Coverage
