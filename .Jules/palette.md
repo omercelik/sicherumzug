@@ -29,3 +29,7 @@
 ## 2026-08-03 - Live Character Counters and focus-visible Rings on High-Priority CTAs
 **Learning:** Adding a live character counter utilizing `aria-live="polite"` on textareas helps prevent input limit errors for assistive technologies and keyboard users in a static form context. Moreover, implementing explicit `focus-visible` rings with brand-compliant color schemes across floating sticky CTA banners and submit buttons ensures a unified keyboard navigation journey.
 **Action:** Always pair `maxlength` limits with a live aria-live character counter and visual threshold warnings (e.g. changing text color at 90% limit). Ensure all action elements (floating headers, sticky footers) utilize `focus-visible:ring-2` to support clear accessibility focus states.
+
+## 2026-08-05 - Live Austrian Region Detection for Postcode Validation
+**Learning:** Providing real-time local region confirmation when typing a postcode in a localized service area drastically increases user trust and confidence. Coupling this with the existing dynamic error system and updating `aria-describedby` dynamically ensures high screen-reader accessibility and zero cognitive friction.
+**Action:** Always map national postcode prefixes to regional locations to provide immediate positive visual and auditory feedback on location coverage during typing.
