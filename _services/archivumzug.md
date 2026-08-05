@@ -67,8 +67,8 @@ Als etablierte **Umzugsfirma für Gewerbekunden** wissen wir genau, worauf es an
 
 ### Kombinierbar mit dem Firmenumzug
 
-Selbstverständlich führen wir den Archivumzug auch als Teilbereich eines kompletten [Firmenumzugs](/leistungen/firmenumzug-wien/) durch. Während ein Team Ihre Büroarbeitsplätze, IT-Hardware und Möbel demontiert und sicher transportiert, kümmert sich ein spezialisiertes Team parallel ausschließlich um die systematische Übersiedlung Ihres Archivs.
+Selbstverständlich führen wir den Archivumzug auch als Teilbereich einer kompletten [Firmenübersiedlung in Wien](/leistungen/firmenumzug-wien/) durch. Während ein Team Ihre Büroarbeitsplätze, IT-Hardware und Möbel demontiert und sicher transportiert, kümmert sich ein spezialisiertes Team parallel ausschließlich um die systematische Übersiedlung Ihres Archivs.
 
-Ist am alten Standort noch alter, nicht mehr benötigter Hausrat oder Möbelbestand zurückgeblieben? Dann übernehmen wir im Nachgang auch gerne die besenreine [Entrümpelung](/leistungen/entruempelung-wien/) und fachgerechte Entsorgung.
+Ist am alten Standort noch alter, nicht mehr benötigter Hausrat oder Möbelbestand zurückgeblieben? Dann übernehmen wir im Nachgang auch gerne die besenreine [Firmenräumung und Entsorgung](/leistungen/entruempelung-wien/).
 
 Vertrauen Sie bei Ihren sensiblen Unternehmensdaten auf Profis. Kontaktieren Sie Sicher Team noch heute für eine kostenlose Besichtigung Ihres Archivs in Wien und erhalten Sie ein maßgeschneidertes Fixpreis-Angebot.

@@ -108,7 +108,7 @@ Alle Gegenstände, die nicht mit übersiedeln sollen, werden von uns fachgerecht
 
 Wir arbeiten nicht mit vagen Stundensätzen, die durch Verzögerungen im Stau teuer werden, sondern ausschließlich mit verbindlichen Fixpreisen. Die Kalkulation basiert auf:
 *   **Volumen:** Menge der Möbel und Kartons.
-*   **Distanz:** Findet der Umzug innerhalb von Graz statt oder ist es ein Fernumzug aus [Wien](/leistungen/umzug-wien/)?
+*   **Distanz:** Findet der Umzug innerhalb von Graz statt oder ist es ein Fernumzug aus [unserem Hauptstandort in Wien](/leistungen/umzug-wien/)?
 *   **Logistik vor Ort:** In welchem Stockwerk befinden sich die Wohnungen? Gibt es einen Aufzug?
 *   **Services:** Haben Sie Einpack- und Montageservices hinzugebucht?
 

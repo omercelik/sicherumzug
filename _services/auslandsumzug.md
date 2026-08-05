@@ -68,6 +68,6 @@ Weitere wertvolle Tipps zur Vorbereitung finden Sie in unserem ausführlichen Ra
 
 Gerade bei einem **Auslandsumzug** ist Sicherheit oberstes Gebot. Wir bieten Ihnen eine erweiterte Transportversicherung an, die speziell auf lange Strecken und internationale Transporte zugeschnitten ist. Zudem garantieren wir Ihnen auch bei internationalen Übersiedlungen unsere bewährte **Fixpreisgarantie** ohne versteckte Kosten.
 
-Wenn Sie parallel zu Ihrem Auslandsumzug Unterstützung bei der Auflösung Ihres alten Wohnsitzes in Österreich benötigen, übernehmen wir gerne auch die fachgerechte [Wohnungsauflösung](/leistungen/wohnungsaufloesung/) oder [Entrümpelung](/leistungen/entruempelung-wien/). Planen Sie einen lokalen Umzug innerhalb Wiens? Informieren Sie sich über unsere Kernkompetenz: [Umzug Wien](/leistungen/umzug-wien/).
+Wenn Sie parallel zu Ihrem Auslandsumzug Unterstützung bei der Auflösung Ihres alten Wohnsitzes in Österreich benötigen, übernehmen wir gerne auch die fachgerechte [Wohnungsauflösung](/leistungen/wohnungsaufloesung/) oder [besenreine Räumung in Wien](/leistungen/entruempelung-wien/). Planen Sie einen lokalen Umzug innerhalb Wiens? Informieren Sie sich über unsere Kernkompetenz: [professionelle Übersiedlung in Wien](/leistungen/umzug-wien/).
 
 > Sie planen einen Auslandsumzug? [Kostenloses Angebot anfordern](/angebot/) oder direkt per [WhatsApp chatten]({{ site.whatsapp }}) für eine erste Einschätzung.
