@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Delogierung in Österreich: Ablauf, Rechte und Räumung"
 date: 2025-11-20 10:00:00 +0200

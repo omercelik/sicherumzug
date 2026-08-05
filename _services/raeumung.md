@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Räumung Wien | Komplettservice für leerstehende Objekte"
 seo_title: "Räumung WIEN & Wohnungsräumung - Komplettservice"
 description: "Ihre Räumung in Wien und Wohnungsräumung mit Fokus auf Demontage, Containerlogistik und Übergabeprotokoll. Fixpreis und MA 48-Abstimmung inklusive."

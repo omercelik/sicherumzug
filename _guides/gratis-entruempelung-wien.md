@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Gratis Entrümpelung in Wien: Überblick mit MA 48 & Wertanrechnung"
 seo_title: "Gratis Entrümpelung Wien | Überblick: MA 48, Spenden & Wertanrechnung"
 description: "Wie Sie MA 48, Spenden und Wertanrechnung kombinieren, um die Entrümpelung in Wien deutlich zu vergünstigen oder kostenlos zu erhalten."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Hotel- & Gastronomie Räumung in Wien: Gewerbe-Entrümpelung"
 seo_title: "Gastronomie & Hotel Räumung Wien: Gewerbe Entrümpelung"
 description: "Professionelle B2B Räumung für Hotels & Gastronomie in Wien. Demontage von Großküchen, Diskretion, WKO-konforme MA 48 Entsorgung & Wertanrechnung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Entrümpelung Wien: MA 48 und Wertanrechnung richtig kombinieren"
 seo_title: "Entrümpelung Wien MA 48 + Wertanrechnung"

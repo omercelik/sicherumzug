@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wohnungsräumung kostenlos melden: Formulare & Fristen"
 seo_title: "Wohnungsräumung kostenlos melden - Wien & NÖ Leitfaden"
 description: "So melden Sie Ihre Wohnungsräumung bei MA 48, Bezirk oder Gemeinde, welche Formulare nötig sind und wie Sie Gebühren sparen."

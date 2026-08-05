@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Messie-Entrümpelung Wien
 seo_title: Messie Entrümpelung Wien | Diskrete Spezialräumung
 description: Ihre Messie Entrümpelung Wien. Speziell geschulte Teams für komplexe

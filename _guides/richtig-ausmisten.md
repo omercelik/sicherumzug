@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Richtig ausmisten: So schaffen Sie Platz und Ordnung"
 seo_title: "Richtig ausmisten - Platz schaffen mit Profi Entrümpelung"
 description: "Lernen Sie bewährte Methoden kennen, um vor einer Wohnungsauflösung oder einem Umzug effektiv auszumisten und den Überblick zu behalten."

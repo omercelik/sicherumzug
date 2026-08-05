@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Was tun mit alten Schätzen? Verkaufen, Spenden, Recyceln"
 seo_title: "Alte Schätze verwerten - Verkaufen, Spenden & Recycling Tipps"
 description: "Erfahren Sie, wie Sie gut erhaltene Gegenstände bei einer Wohnungsauflösung gewinnbringend verkaufen oder sinnvoll spenden können."

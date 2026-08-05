@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Dachbodenräumung Wien
 seo_title: Dachbodenräumung Wien - Dachboden entrümpeln Fixpreis
 description: Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: service
 title: "Verpackungsservice Wien & Österreich | Profi Einpackservice"
 seo_title: "Verpackungsservice Wien - Stressfrei umziehen mit Einpackservice"

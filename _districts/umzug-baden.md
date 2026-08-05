@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Umzug Baden"
 seo_title: "Umzug Baden - Professionelle Umzugsfirma & Übersiedlung"
 description: "Sicherer Umzug in Baden. Ihre zuverlässige Umzugsfirma für Villenumzüge im Kurpark, Privatumzüge und Firmenumzüge mit Fixpreisgarantie."

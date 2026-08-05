@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Umzugskartons berechnen: Wie viel Verpackungsmaterial brauchen Sie wirklich?"
 date: 2026-08-22 09:00:00 +0200

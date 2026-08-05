@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Gratis Räumung Wien | Kostenlose Wohnungs- & Hausräumung"
 seo_title: "Gratis Räumung Wien - Kostenlose Räumung mit Wertanrechnung"
 description: "Professionelle gratis Räumung in Wien & NÖ gesucht? Sichern Sie sich eine kostenlose Wohnungsräumung durch unseren fairen Wertanrechnung für Möbel und Altwaren."

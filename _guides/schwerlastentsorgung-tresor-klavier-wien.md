@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Schwerlastentsorgung Wien: Tresore, Klaviere und Maschinen richtig räumen"
 seo_title: "Schwerlastentsorgung Wien: Tresor, Klavier & Maschinen entsorgen"
 description: "Spezialist für Schwerlastentsorgung in Wien: So lassen Sie Tresore, Klaviere, Heizkessel und Industriemaschinen sicher und ohne Schäden abtransportieren."

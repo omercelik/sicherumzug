@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wertanrechnung Räumung Wien: So läuft die faire Anrechnung von Fundstücken"
 seo_title: "Wertanrechnung Räumung Wien - Ablauf, Beispiele & Unterlagen"
 description: "Anleitung für Wertanrechnung-Räumungen in Wien: Definition, Ablauf, Checkliste und Praxisbeispiele für Dachboden, Zimmer und Verlassenschaft."

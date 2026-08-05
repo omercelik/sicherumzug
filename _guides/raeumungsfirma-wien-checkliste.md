@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Räumungsfirma Wien: Checkliste für Fixpreis & Wertanrechnung"
 seo_title: "Räumungsfirma Wien - Checkliste, Fixpreis, Wertanrechnung & MA 48"
 description: "Wie Sie eine seriöse Räumungsfirma in Wien erkennen: Checkliste, Warnsignale, Fixpreis, Wertanrechnung, MA 48-Koordination und was ins Protokoll gehört."

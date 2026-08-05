@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Verlassenschaften in Wien richtig schätzen: Was ist Müll, was ist wertvoll?"
 seo_title: "Verlassenschaften Wien schätzen: Müll vs. Wertvoll"
 description: "Experten-Guide zur Schätzung von Verlassenschaften in Wien. Lernen Sie, wie Wertanrechnung funktioniert, was wertvoll ist und wie Sie Kosten sparen."

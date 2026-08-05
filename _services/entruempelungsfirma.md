@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Räumungsfirma | Komplettservice mit Fixpreis
 seo_title: Räumungsfirma | Komplettservice, Fixpreis, Wertanrechnung
 description: Räumungsfirma für komplette Räumungen mit Fixpreis, Wertanrechnung und

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 
 title: "Die ultimative Umzug Checkliste: Stressfrei übersiedeln Schritt für Schritt"
 seo_title: "Umzug Checkliste – Perfekt planen 3 Monate vorher bis danach"

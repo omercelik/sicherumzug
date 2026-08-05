@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung zum Jahresabschluss: Firmen fit für 2026 machen"
 seo_title: "Firmen Entrümpelung Jahresabschluss - DSGVO & Inventur"
 description: "Checkliste für Betriebe, die vor dem Jahresabschluss Lager, Büros oder Archive räumen wollen. Inklusive DSGVO- und Steuerhinweisen."

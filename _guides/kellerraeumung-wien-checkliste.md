@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Kellerräumung Wien: Checkliste, Ablauf & Kosten mit Wertanrechnung"
 seo_title: "Kellerräumung Wien - Checkliste, Ablauf, Kosten & Wertanrechnung"
 description: "Kellerräumung in Wien planen: klare Checkliste, Ablauf, Kostenfaktoren, Wertanrechnung und Tipps für feuchte Keller, Elektro und Sperrmüll."

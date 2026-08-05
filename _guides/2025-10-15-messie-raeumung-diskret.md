@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Professionelle Messie-Räumung: Ablauf und diskrete Hilfe"
 date: 2025-10-15 12:00:00 +0200

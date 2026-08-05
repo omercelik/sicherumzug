@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Hausräumung Wien: Checkliste, Ablauf & Kosten mit Wertanrechnung"
 seo_title: "Hausräumung Wien - Checkliste, Ablauf, Kosten & Wertanrechnung"
 description: "So planen Sie eine Hausräumung in Wien: Schritt-für-Schritt-Ablauf, Kostenfaktoren, Garten- und Dachbodenräumung, MA 48 Optionen und fairer Wertanrechnung."

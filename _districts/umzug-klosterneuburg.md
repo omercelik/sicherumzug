@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 checklist:
 - Villen und Einfamilienhäuser in Weidling, Kierling und am Ölberg
 - Wohnungen in der historischen Altstadt und entlang der Donau

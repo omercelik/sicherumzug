@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Umzug 1110 Wien
 footer_title: "Umzug & Übersiedlung 1110 (Simmering)"
 seo_title: Umzug 1110 Wien - Übersiedlung Simmering

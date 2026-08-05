@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Übersiedlung ins Pflegeheim: Wohnungsauflösung in Wien diskret organisieren"
 seo_title: "Pflegeheim Übersiedlung Wien: Wohnungsauflösung & Wertanrechnung"
 description: "Wenn Angehörige ins Pflegeheim nach Wien übersiedeln: Erfahren Sie alles über die diskrete Wohnungsauflösung, schnelle Abläufe und faire Wertanrechnung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Garagenräumung Wien
 seo_title: Garagenräumung Wien - Garage entrümpeln mit Fixpreis
 description: Garagenräumung in Wien inklusive Demontage, Abtransport und Wertanrechnung.

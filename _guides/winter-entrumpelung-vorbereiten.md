@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung vor dem Winter: So bleibt alles frei und sicher"
 seo_title: "Entrümpelung vor Winter - Checkliste für Wien & Umgebung"
 description: "Tipps für Haus, Keller und Außenflächen, damit die Winterperiode ohne Überraschungen startet - inklusive Halteverbote, Frostschutz und Notdienst."

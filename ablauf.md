@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
 title: "Ihr Weg zum perfekten Umzug"
 seo_title: "Umzug & Übersiedlung Ablauf Österreich | So läuft Ihr Umzug"

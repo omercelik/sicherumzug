@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Lager- & Gewerbeparkräumung
 seo_title: Gewerbe & Lagerräumung Wien - Betriebe entrümpeln
 description: Lager ausräumen in Wien. Effiziente Lagerräumung von Produktionshallen

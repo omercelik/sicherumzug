@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Küche abbauen und umziehen: Anleitung, Tipps & Profi-Service in Österreich"
 date: 2026-08-11 09:00:00 +0200

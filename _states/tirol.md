@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Professioneller Umzug & Übersiedlung in Tirol"
 seo_title: "Umzug & Übersiedlung Tirol | Sicher Team"
 description: "Professionelle Umzugs- und Übersiedlungsdienste in Tirol. Wir bieten Transporte und als Zusatzleistung Spezialtransporte an."

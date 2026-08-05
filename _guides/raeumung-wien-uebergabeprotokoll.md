@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Räumung Wien: Übergabeprotokoll, Besenrein und Schlüsselrückgabe"
 seo_title: "Räumung Wien | Übergabeprotokoll, Besenrein, Schlüssel"
 description: "So gelingt die Übergabe nach der Räumung in Wien: Protokollpunkte, Fotodokumentation und typische Fehler vermeiden."

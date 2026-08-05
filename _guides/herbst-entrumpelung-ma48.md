@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Herbst-Entrümpelung: MA 48 Termine optimal nutzen"
 seo_title: "Herbst Entrümpelung Wien - MA 48 Termine & Fixpreis"
 description: "So verbinden Sie Herbstputz, MA 48 Sperrmülltermine und professionelle Entrümpelung zu einer kostensparenden Lösung."

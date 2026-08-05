@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis"
 seo_title: "Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis"
 description: "Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht."

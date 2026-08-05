@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: service
 title: Express Umzugs-Notdienst
 description: 'Wenn es schnell gehen muss: Unser Express-Notdienst in Österreich rettet

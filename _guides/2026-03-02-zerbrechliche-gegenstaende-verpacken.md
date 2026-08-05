@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Zerbrechliche Gegenstände richtig verpacken: Tipps für Geschirr und Gläser"
 date: 2026-03-02 11:15:00 +0100

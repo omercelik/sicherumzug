@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Firmenumzug in Österreich: Erfolgreiche Planung für Ihr Unternehmen"
 seo_title: "Firmenumzug Österreich – Leitfaden, Kosten & Betriebsverlagerung"
 description: "Planen Sie einen Firmenumzug in Österreich? Erfahren Sie alles über die professionelle Organisation, Kosten, DSGVO-konforme Räumung und minimale Ausfallzeiten."

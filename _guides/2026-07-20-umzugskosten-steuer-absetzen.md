@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Umzugskosten von der Steuer absetzen: Tipps für Österreich (Arbeitnehmerveranlagung)"
 date: 2026-07-20 11:30:00 +0200

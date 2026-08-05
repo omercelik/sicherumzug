@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung österreichweit: Steiermark, Kärnten, Oberösterreich & Salzburg"
 seo_title: "Entrümpelung Österreichweit - Neue Standorte & Notdienst"
 description: "Standorte in Wien, Niederösterreich, Burgenland, Steiermark, Kärnten, Oberösterreich und Salzburg – mit Fixpreis, Wertanrechnung und Notdienst."

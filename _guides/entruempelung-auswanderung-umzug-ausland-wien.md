@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung bei Auswanderung aus Wien: Stressfrei ins Ausland"
 seo_title: "Entrümpelung Auswanderung Wien: Umzug ins Ausland & Wohnungsauflösung"
 description: "Wohnungsauflösung vor der Auswanderung aus Wien. Alles muss weg! Wir bieten Wertanrechnung, besenreine Hinterlassung an Wiener Wohnen & Express-Räumung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Wien Hausräumung
 seo_title: Hausräumung Wien - Komplette Räumung mit Fixpreis | Sicher Team
 description: 'Professionelle Wien Hausräumung: Einfamilienhäuser, Villen & Gewerbe.

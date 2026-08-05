@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Halteverbot für die Entrümpelung in Wien beantragen"
 seo_title: "Halteverbot Entrümpelung Wien - Antrag, MA 48 & Tipps"
 description: "Schritt-für-Schritt-Anleitung für Halteverbotszonen bei Wohnungsauflösungen inklusive Fristen, Kosten und typischen Fehlern."

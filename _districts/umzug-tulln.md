@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 checklist:
 - Altstadtwohnungen rund um Hauptplatz, Egon Schiele Museum und Minoritenplatz
 - Einfamilienhäuser und Reihenhäuser in Langenlebarn, Königstetten und Zeiselmauer

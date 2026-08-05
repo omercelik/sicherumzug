@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wohnungsauflösung in Wien"
 seo_title: "Wohnungsauflösung Wien - Entrümpelung mit Fixpreis & Wertanrechnung"
 description: "Ihre Wohnungsauflösung in Wien. Komplette Wohnungsauflösungen mit Fixpreisgarantie, Wertanrechnung und besenreiner Übergabe ohne versteckte Kosten."

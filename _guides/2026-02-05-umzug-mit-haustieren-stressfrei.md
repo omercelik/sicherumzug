@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Umzug mit Haustieren: So bleibt Ihr Hund oder Ihre Katze stressfrei"
 date: 2026-02-05 10:30:00 +0100

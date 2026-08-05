@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Checkliste Lager-Entrümpelung: Vom Regalsystem bis zur Übergabe"
 seo_title: "Lager Entrümpelung Checkliste - Wien NÖ Burgenland"
 description: "Schritt-für-Schritt-Plan für Lager- und Hallenräumungen inklusive Gefahrgut, Übergabeprotokoll und DSGVO-konformer Dokumentation."

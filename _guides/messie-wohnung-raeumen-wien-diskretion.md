@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Messie-Wohnung räumen in Wien: Ablauf, Diskretion und hygienische Wiederherstellung"
 seo_title: "Messie-Wohnung räumen Wien | Diskret, Schnell & Besenrein"
 description: "Eine Messie-Wohnung in Wien auflösen? Wir garantieren 100% Diskretion, professionelle Mülltrennung (MA 48) und eine hygienische, besenreine Hinterlassung."

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
 title: "Ausmisten vor dem Umzug: So trennen Sie sich von unnötigem Ballast"
 date: 2026-05-10 11:00:00 +0200

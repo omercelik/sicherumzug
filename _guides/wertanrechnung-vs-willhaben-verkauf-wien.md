@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wertanrechnung vs. Willhaben-Verkauf bei Wohnungsräumungen in Wien: Ein Kosten-Zeit-Vergleich"
 seo_title: "Wertanrechnung vs. Willhaben Verkauf: Wien Kosten Vergleich"
 description: "Wohnung räumen in Wien: Lohnt sich der Einzelverkauf auf Willhaben oder ist die direkte Wertanrechnung durch eine Räumungsfirma besser? Ein Vergleich."

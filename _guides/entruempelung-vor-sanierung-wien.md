@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung vor der Sanierung in Wien: Was muss raus, was darf bleiben?"
 seo_title: "Entrümpelung vor Sanierung Wien | Demontage & Räumung"
 description: "Planen Sie eine Renovierung in Wien? Wir entrümpeln Ihren Altbau, demontieren Böden & Möbel und übergeben die Wohnung besenrein an Ihre Handwerker."

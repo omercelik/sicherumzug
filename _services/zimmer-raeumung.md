@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: Zimmer Räumung Wien
 seo_title: Zimmer Räumung Wien - WG & Keller entrümpeln zum Fixpreis
 description: Professionelle Zimmer Räumung in Wien für Studentenwohnungen, WGs und

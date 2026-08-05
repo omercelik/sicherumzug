@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 checklist:
 - Altbauwohnungen rund um Hauptplatz, Donaustraße und Stadtpark
 - Einfamilienhäuser in Stockerau, Korneuburg und den Bisamberger Hanglagen

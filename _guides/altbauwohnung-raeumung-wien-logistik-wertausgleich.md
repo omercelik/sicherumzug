@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Altbauwohnung Räumung in Wien: Kosten, Logistik & Wertanrechnung"
 seo_title: "Altbauwohnung Räumung Wien: Logistik, Kosten & Wertanrechnung"
 description: "Räumung von Altbauwohnungen in Wien: Erfahren Sie alles über enge Stiegenhäuser, Halteverbotszonen, Parkpickerl und wie die Wertanrechnung Ihre Kosten senkt."

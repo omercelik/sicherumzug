@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Wertanrechnung meistern: So senken Sie Ihre Räumungskosten"
 seo_title: "Wertanrechnung Entrümpelung - Möbel, Antiquitäten, Sammlungen"
 description: "Praktische Anleitung zur Wertanrechnung mit Beispielen aus Wien, Niederösterreich und Burgenland. Inklusive Kontaktpunkten für Ankauf und Fixpreis."

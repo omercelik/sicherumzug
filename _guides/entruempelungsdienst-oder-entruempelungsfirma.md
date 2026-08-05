@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Entrümpelung: Entrümpelungsdienst oder Räumungsfirma?"
 seo_title: "Entrümpelung - Entrümpelungsdienst oder Räumungsfirma wählen"
 description: "Entrümpelung planen? Vergleich von Entrümpelungsdienst und Räumungsfirma, typische Leistungen, Kostenfaktoren und Checkliste für seriöse Angebote."

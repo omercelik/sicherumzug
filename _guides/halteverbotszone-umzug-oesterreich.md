@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Halteverbotszone für den Umzug einrichten: Vorschriften und Ablauf in Österreich"
 seo_title: "Halteverbotszone Umzug Österreich – Kosten, Fristen & Antrag"
 description: "Wie beantrage ich eine Halteverbotszone für den Umzug in Österreich? Erfahren Sie alles über Fristen, Kosten, Genehmigungen und das richtige Aufstellen."
