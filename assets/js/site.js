@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         if (res.ok && data.success) {
 
   // Formular ausblenden
-  quoteForm.classList.add('hidden');
+  quoteForm.classList.add('none');
 
 if (responseDiv) {
   responseDiv.className = 'mt-8 rounded-3xl bg-green-50 border-2 border-green-200 p-10 text-center shadow-lg animate-fade-in';
