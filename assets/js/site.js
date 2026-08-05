@@ -168,6 +168,13 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     if (!input) return;
     var errorId = input.id + '-error';
     var errorEl = document.getElementById(errorId);
+
+    // Clear postcode success region when error is present
+    if (input.id === 'form-postcode' && errorMsg) {
+      var regionEl = document.getElementById('form-postcode-region');
+      if (regionEl) regionEl.remove();
+    }
+
     if (errorMsg) {
       input.classList.remove('border-gray-200', 'focus:border-primary-light', 'focus:ring-primary-light/30');
       input.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500/30');
@@ -188,6 +195,41 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
       input.removeAttribute('aria-invalid');
       input.removeAttribute('aria-describedby');
+    }
+  }
+
+  function updatePostcodeFeedback() {
+    if (!postcodeInp) return;
+    var val = postcodeInp.value;
+    var regionId = 'form-postcode-region';
+    var regionEl = document.getElementById(regionId);
+
+    if (/^[0-9]{4}$/.test(val)) {
+      var firstChar = val.charAt(0);
+      var region = '';
+      if (firstChar === '1') region = 'Wien';
+      else if (firstChar === '2' || firstChar === '3') region = 'Niederösterreich';
+      else if (firstChar === '4') region = 'Oberösterreich';
+      else if (firstChar === '5') region = 'Salzburg';
+      else if (firstChar === '6') region = 'Tirol / Vorarlberg';
+      else if (firstChar === '7') region = 'Burgenland';
+      else if (firstChar === '8') region = 'Steiermark';
+      else if (firstChar === '9') region = 'Kärnten';
+
+      if (region) {
+        if (!regionEl) {
+          regionEl = document.createElement('p');
+          regionEl.id = regionId;
+          regionEl.className = 'mt-1.5 text-xs text-emerald-600 font-bold flex items-center gap-1 transition-all duration-200';
+          postcodeInp.parentNode.appendChild(regionEl);
+        }
+        regionEl.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">check_circle</span><span>Region: ' + region + ' (Service verfügbar)</span>';
+        postcodeInp.setAttribute('aria-describedby', regionId);
+      } else {
+        if (regionEl) regionEl.remove();
+      }
+    } else {
+      if (regionEl) regionEl.remove();
     }
   }
 
@@ -214,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       return false;
     }
     setFieldError(postcodeInp, null);
+    updatePostcodeFeedback();
     return true;
   }
 
@@ -264,9 +307,18 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       if (val && !/^[0-9]{4}$/.test(val)) {
         if (val.length === 4 || !/^[0-9]*$/.test(val)) {
           setFieldError(postcodeInp, 'PLZ muss aus genau 4 Ziffern bestehen.');
+        } else {
+          setFieldError(postcodeInp, null);
+          var regionEl = document.getElementById('form-postcode-region');
+          if (regionEl) regionEl.remove();
         }
+      } else if (/^[0-9]{4}$/.test(val)) {
+        setFieldError(postcodeInp, null);
+        updatePostcodeFeedback();
       } else {
         setFieldError(postcodeInp, null);
+        var regionEl = document.getElementById('form-postcode-region');
+        if (regionEl) regionEl.remove();
       }
     });
     postcodeInp.addEventListener('blur', function() {
