@@ -440,27 +440,40 @@ document.addEventListener('DOMContentLoaded', function domReady() {
   // Formular ausblenden
   quoteForm.classList.add('hidden');
 
-  if (responseDiv) {
-    responseDiv.className = 'mt-6 rounded-2xl bg-green-50 border border-green-200 p-8 text-center shadow-sm';
+if (responseDiv) {
+  responseDiv.className = 'mt-8 rounded-3xl bg-green-50 border-2 border-green-200 p-10 text-center shadow-lg animate-fade-in';
 
-    responseDiv.innerHTML = `
-      <span class="material-symbols-outlined text-5xl text-green-600">
-        check_circle
+  responseDiv.innerHTML = `
+    <div class="flex justify-center">
+      <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
+        <span class="material-symbols-outlined text-6xl text-green-600">
+          check_circle
+        </span>
+      </div>
+    </div>
+
+    <h3 class="mt-6 text-3xl font-extrabold text-gray-900">
+      Vielen Dank!
+    </h3>
+
+    <p class="mt-4 text-lg font-semibold text-gray-700">
+      Ihre Anfrage wurde erfolgreich übermittelt.
+    </p>
+
+    <p class="mt-3 text-base text-gray-600 leading-relaxed">
+      Wir haben Ihre Nachricht erhalten und melden uns
+      schnellstmöglich bei Ihnen.
+    </p>
+
+    <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
+      <span class="material-symbols-outlined text-xl">
+        phone_in_talk
       </span>
+      Wir kontaktieren Sie persönlich
+    </div>
+  `;
+}
 
-      <h3 class="mt-4 text-xl font-bold text-gray-900">
-        Vielen Dank!
-      </h3>
-
-      <p class="mt-2 text-gray-700">
-        Ihre Anfrage wurde erfolgreich gesendet.
-      </p>
-
-      <p class="mt-2 text-sm text-gray-600">
-        Wir melden uns schnellstmöglich bei Ihnen.
-      </p>
-    `;
-  }
           
           if (typeof selectedFiles !== 'undefined') {
             selectedFiles = [];
