@@ -10,9 +10,9 @@
         <h3 class="text-lg font-black tracking-tight text-white">{{ site.social.name | default: site.brand_name }}</h3>
         <p class="text-sm text-white/70 leading-relaxed">Staatlich konzessionierter Fachbetrieb für Umzug, Räumung und Entrümpelung in ganz Österreich. Fixpreis-Garantie, Wertanrechnung &amp; All-Risk-Transportversicherung.</p>
         <address class="space-y-2 text-sm text-white/80 not-italic">
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-accent">location_on</span>{{ site.address.street }}, {{ site.address.postal_code }} {{ site.address.city }}</p>
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-accent">call</span>Tel: <a class="hover:text-primary-accent font-bold" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a></p>
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-primary-accent">mail</span>Email: <a class="hover:text-primary-accent font-bold" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">location_on</span>{{ site.address.street }}, {{ site.address.postal_code }} {{ site.address.city }}</p>
+          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">call</span>Tel: <a class="hover:text-red-400 font-bold" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a></p>
+          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">mail</span>Email: <a class="hover:text-red-400 font-bold" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </address>
       </div>
       <div>
@@ -20,10 +20,10 @@
         <ul class="mt-4 space-y-2.5 text-sm">
           {% for group in site.data.navigation.services %}
             {% for item in group.items %}
-              <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+              <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
             {% endfor %}
           {% endfor %}
-          <li><a class="text-primary-accent hover:text-white font-bold block pt-2 border-t border-white/5" href="{{ '/leistungen/' | relative_url }}">Alle Leistungen</a></li>
+          <li><a class="text-red-400 hover:text-white font-bold block pt-2 border-t border-white/5" href="{{ '/leistungen/' | relative_url }}">Alle Leistungen</a></li>
         </ul>
       </div>
       {% if states.size > 0 %}
@@ -31,28 +31,28 @@
         <h3 class="text-base font-bold text-white uppercase tracking-wider">Bundesländer</h3>
         <ul class="mt-4 space-y-2.5 text-sm">
           {% for state in states %}
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ state.url | relative_url }}">{{ state.title }}</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ state.url | relative_url }}">{{ state.title }}</a></li>
           {% endfor %}
-          <li><a class="text-primary-accent hover:text-white font-bold block pt-2 border-t border-white/5" href="{{ '/bezirke/' | relative_url }}">Alle Standorte</a></li>
+          <li><a class="text-red-400 hover:text-white font-bold block pt-2 border-t border-white/5" href="{{ '/bezirke/' | relative_url }}">Alle Standorte</a></li>
         </ul>
       </div>
       {% endif %}
       <div>
         <h3 class="text-base font-bold text-white uppercase tracking-wider">Mehr</h3>
         <ul class="mt-4 space-y-2.5 text-sm">
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/ablauf/' | relative_url }}">Ablauf</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/preise/' | relative_url }}">Preise</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/ratgeber/' | relative_url }}">Ratgeber</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/ratgeber/raeumungsfirma-wien-checkliste/' | relative_url }}">Räumungsfirma Wien Leitfaden</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/ueber-uns/' | relative_url }}">Über Uns</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/angebot/' | relative_url }}">Gratis Angebot</a></li>
-          <li><a class="text-white/70 hover:text-primary-accent transition-opacity block py-0.5" href="{{ '/impressum/' | relative_url }}">Impressum &amp; Datenschutz</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/ablauf/' | relative_url }}">Ablauf</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/preise/' | relative_url }}">Preise</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/ratgeber/' | relative_url }}">Ratgeber</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/ratgeber/raeumungsfirma-wien-checkliste/' | relative_url }}">Räumungsfirma Wien Leitfaden</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/ueber-uns/' | relative_url }}">Über Uns</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/angebot/' | relative_url }}">Gratis Angebot</a></li>
+          <li><a class="text-white/70 hover:text-red-400 transition-opacity block py-0.5" href="{{ '/impressum/' | relative_url }}">Impressum &amp; Datenschutz</a></li>
         </ul>
         <div class="mt-6 pt-4 border-t border-white/5 flex gap-4">
-          <a class="text-white/60 hover:text-primary-accent transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-accent rounded-full p-1 inline-flex items-center justify-center" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook">
+          <a class="text-white/60 hover:text-red-400 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded-full p-1 inline-flex items-center justify-center" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook">
             <span class="material-symbols-outlined text-xl">public</span>
           </a>
-          <a class="text-white/60 hover:text-primary-accent transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-accent rounded-full p-1 inline-flex items-center justify-center" href="{{ site.instagram }}" aria-label="Instagram">
+          <a class="text-white/60 hover:text-red-400 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded-full p-1 inline-flex items-center justify-center" href="{{ site.instagram }}" aria-label="Instagram">
             <span class="material-symbols-outlined text-xl">photo_camera</span>
           </a>
         </div>
