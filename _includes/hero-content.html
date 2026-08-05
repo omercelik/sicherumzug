@@ -9,7 +9,7 @@
 <div class="{{ container_classes }}">
   <div class="{{ content_classes }}">
     {% if include.kicker and include.show_kicker != false %}
-    <p class="inline-block rounded px-3 py-1 text-sm md:text-base font-semibold uppercase tracking-[0.4em] bg-primary/95 text-primary-accent leading-none">{{ include.kicker }}</p>
+    <p class="inline-block rounded px-3 py-1 text-sm md:text-base font-semibold uppercase tracking-[0.4em] bg-primary/95 text-crimson leading-none">{{ include.kicker }}</p>
     {% endif %}
     {% if include.title %}
     <h1 class="text-[2rem] font-black leading-tight {{ title_class }}" data-hero-heading>{{ include.title }}</h1>
@@ -60,16 +60,16 @@
     {% endif %}
     <div class="mt-8 flex flex-col sm:flex-row items-center gap-4">
       {% if primary_label and primary_url %}
-        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto items-center justify-center rounded-full bg-crimson hover:bg-crimson-hover text-white px-8 py-4 text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto min-h-[56px] items-center justify-center rounded-full bg-crimson hover:bg-crimson-hover text-white px-8 py-4 text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-opacity duration-200">
           {{ primary_label }}
         </a>
       {% endif %}
       <div class="flex flex-row gap-3 w-full sm:w-auto">
-        <a href="{{ whatsapp_url }}" class="flex flex-1 sm:flex-initial items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ whatsapp_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
           <span class="material-symbols-outlined text-lg text-white">chat</span>
           {{ whatsapp_label }}
         </a>
-        <a href="{{ call_url }}" class="flex flex-1 sm:flex-initial items-center justify-center gap-2 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ call_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
           <span class="material-symbols-outlined text-lg">call</span>
           <span class="whitespace-nowrap">{{ call_label }}</span>
         </a>
