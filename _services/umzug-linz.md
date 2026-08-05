@@ -109,7 +109,7 @@ Was übersiedelt wird, transportieren wir sicher ans Ziel. Alles andere wird ent
 
 Wir lehnen intransparente Stundensätze ab, bei denen Kunden oft für Pausen oder Staus bezahlen müssen. Unsere Preise sind Fixpreise und richten sich nach harten Fakten:
 *   **Volumen:** Wie viele LKW-Ladungen werden benötigt?
-*   **Distanz:** Übersiedeln Sie innerhalb von Linz oder kommen Sie aus [Wien](/leistungen/umzug-wien/)?
+*   **Distanz:** Übersiedeln Sie innerhalb von Linz oder kommen Sie aus der [Bundeshauptstadt Wien](/leistungen/umzug-wien/)?
 *   **Logistik vor Ort:** Welches Stockwerk? Gibt es einen Lift? Müssen lange Tragewege überbrückt werden?
 *   **Zusatzleistungen:** Benötigen Sie unseren Einpack- oder Montageservice?
 
