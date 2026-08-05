@@ -369,17 +369,18 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     updateCounter();
   }
 
-  // Double-submit prevention and direct loading feedback on the quote form
-  var quoteForm = document.querySelector('form[action*="formspree.io"]');
+  const WORKER_URL = 'https://form-handler.yasin2celik-62a.workers.dev';
+  var quoteForm = document.getElementById('contactForm');
   if (quoteForm) {
-    quoteForm.addEventListener('submit', function handleFormSubmit(e) {
+    quoteForm.addEventListener('submit', async function handleFormSubmit(e) {
+      e.preventDefault();
+
       var isNameValid = validateName();
       var isPostcodeValid = validatePostcode();
       var isPhoneValid = validatePhone();
       var isEmailValid = validateEmail();
 
       if (!isNameValid || !isPostcodeValid || !isPhoneValid || !isEmailValid) {
-        e.preventDefault();
         var firstInvalid = null;
         if (!isNameValid) firstInvalid = nameInp;
         else if (!isPhoneValid) firstInvalid = phoneInp;
@@ -393,19 +394,74 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       }
 
       var submitBtn = quoteForm.querySelector('button[type="submit"]');
-      if (!submitBtn) return;
+      const responseDiv = document.getElementById('formResponse');
+      if (responseDiv) {
+        responseDiv.innerText = 'Wird gesendet...';
+        responseDiv.className = 'mt-4 text-center text-sm font-bold text-gray-700';
+      }
 
-      // Inject CSS-animated loading spinner SVG alongside 'Wird gesendet...' text
-      submitBtn.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span>Wird gesendet...</span>';
-
-      // Apply disabled styles to make button visually disabled and prevent double submission
-      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
-      submitBtn.classList.remove('hover:bg-primary-accent', 'hover:-translate-y-0.5', 'hover:shadow-xl', 'cursor-pointer');
-
-      // Asynchronously disable the button to allow native form action to submit the request
-      setTimeout(function() {
+      if (submitBtn) {
+        var originalBtnContent = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span>Wird gesendet...</span>';
+        submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+        submitBtn.classList.remove('hover:bg-primary-accent', 'hover:-translate-y-0.5', 'hover:shadow-xl', 'cursor-pointer');
         submitBtn.disabled = true;
-      }, 0);
+      }
+
+      const formData = new FormData();
+      if (nameInp) formData.append('name', nameInp.value);
+      if (emailInp) formData.append('email', emailInp.value);
+      if (phoneInp) formData.append('phone', phoneInp.value);
+      if (postcodeInp) formData.append('postcode', postcodeInp.value);
+      if (messageInp) formData.append('message', messageInp.value);
+
+      var subjectInp = quoteForm.querySelector('input[name="subject"]');
+      if (subjectInp) formData.append('subject', subjectInp.value);
+
+      const fileInput = document.getElementById('form-photos');
+      if (fileInput && fileInput.files.length > 0) {
+        for (let i = 0; i < fileInput.files.length; i++) {
+          formData.append('files', fileInput.files[i]);
+        }
+      }
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          if (responseDiv) {
+            responseDiv.innerText = data.message || 'Ihre Nachricht wurde erfolgreich gesendet!';
+            responseDiv.className = 'mt-4 text-center text-sm font-bold text-emerald-600';
+          }
+          quoteForm.reset();
+          if (typeof selectedFiles !== 'undefined') {
+            selectedFiles = [];
+            updateInputAndRender();
+          }
+        } else {
+          if (responseDiv) {
+            responseDiv.innerText = 'Fehler: ' + (data.message || 'Ein Fehler ist aufgetreten.');
+            responseDiv.className = 'mt-4 text-center text-sm font-bold text-red-600';
+          }
+        }
+      } catch (err) {
+        if (responseDiv) {
+          responseDiv.innerText = 'Es ist ein Verbindungsfehler aufgetreten.';
+          responseDiv.className = 'mt-4 text-center text-sm font-bold text-red-600';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.innerHTML = originalBtnContent;
+          submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+          submitBtn.classList.add('hover:bg-primary-accent', 'hover:-translate-y-0.5', 'hover:shadow-xl', 'cursor-pointer');
+          submitBtn.disabled = false;
+        }
+      }
     });
   }
 });

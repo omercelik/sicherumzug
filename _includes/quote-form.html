@@ -1,4 +1,4 @@
-<form action="{{ site.quote_form_action }}" method="POST" enctype="multipart/form-data" class="space-y-4">
+<form id="contactForm" enctype="multipart/form-data" class="space-y-4">
   <input type="hidden" name="subject" value="Neue Anfrage über die Website"/>
   <div>
     <label class="text-sm font-bold text-gray-700" for="form-name">Name*</label>
@@ -37,4 +37,5 @@
     </button>
     <p class="text-xs text-text-light/75 text-center">Wir melden uns innerhalb eines Werktags mit einem Terminvorschlag.</p>
   </div>
+  <div id="formResponse" class="mt-4 text-center text-sm font-bold"></div>
 </form>
