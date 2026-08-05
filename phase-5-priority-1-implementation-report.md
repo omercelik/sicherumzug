@@ -33,7 +33,40 @@ The diversification of anchor texts protects the domain from over-optimization f
 ## AI/Entity Benefit
 By explicitly stating "Sicher Team" alongside trust signals (WHO and WHY TRUST) in plain markdown text, LLM crawlers parsing `llms-all.txt` can now perfectly extract the entity relationship. Furthermore, the natural variations in anchor texts help AI understand the broader context and relationship between services rather than relying on strict keywords.
 
-## Verification Results
-- A full `bundle exec jekyll build` was executed and completed in ~15.8 seconds without any warnings or errors.
-- Visual inspection via `grep` confirms the TL;DR blocks are safely injected directly below the YAML front matter and before the primary Markdown headers.
-- All modified links use correct paths, preserving the existing SEO architecture and strict flat URL structure. Umzug remains the primary authority, and Entrümpelung the secondary. No URLs were changed or deleted.
+## Final QA Verification
+
+### 1. Modified Files
+The following Markdown files were changed during this implementation phase:
+- `_services/umzug-wien.md`
+- `_services/entruempelung-wien.md`
+- `_services/firmenumzug-wien.md`
+- `_guides/umzug-checkliste-ultimativ.md`
+- `_guides/was-kostet-eine-haushaltsaufloesung.md`
+- `_services/auslandsumzug.md`
+- `_services/raeumung.md`
+- `_services/umzug-graz.md`
+- `_services/umzug-linz.md`
+- `_services/moebelmontage.md`
+- `_services/archivumzug.md`
+
+### 2. Entity Improvements
+- **Confirmed:** "Sicher Team" is consistently represented as the main brand entity across all injected TL;DR blocks.
+- **Confirmed:** Umzug remains the primary authority cluster. The core Umzug service pages (`umzug-wien.md`, `firmenumzug-wien.md`) received priority entity reinforcement.
+- **Confirmed:** Entrümpelung & Räumung remain secondary services. They were reinforced with factual trust signals but remain functionally subordinate in the site structure to the Umzug hierarchy.
+
+### 3. SEO Safety
+- **Confirmed:** No URLs were changed.
+- **Confirmed:** No permalinks were changed in the front matter.
+- **Confirmed:** No canonicals were altered.
+- **Confirmed:** No redirects were added to `_redirects` or any other configuration file.
+- **Confirmed:** No pages were deleted or merged.
+- **Confirmed:** No keyword cannibalization was introduced. The new TL;DR blocks maintain strict semantic boundaries between Privatumzug, Firmenumzug, and Entrümpelung.
+
+### 4. Content Safety
+- **Confirmed:** No Liquid tags (`{% raw %}{% ... %}{% endraw %}` or `{% raw %}{{ ... }}{% endraw %}`) were added to the Markdown content bodies.
+- **Confirmed:** All existing YAML front matter was completely preserved.
+- **Confirmed:** Trust signals are factual, explicitly stating verified experience (15 years), guarantees (100% Fixpreis), and insurance (All-Risk bis 1 Mio. EUR) in natural language.
+- **Confirmed:** Internal anchors were diversified naturally, providing better contextual LSI signals (e.g., "lokalen Wohnungswechsel in Wien").
+
+### 5. Technical
+- **Confirmed:** Jekyll production build completed successfully without errors (`bundle exec jekyll build`).
