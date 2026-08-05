@@ -189,21 +189,15 @@ body {
    PRECISION UI/UX ACCESSIBILITY OVERRIDES (WCAG AA 4.5:1 COMPLIANT)
    ========================================================================== */
 @layer utilities {
-  /* 
-   * Sadece açık renkli arka plan alanlarında tanımlı küçük üst başlıkların 
-   * metin rengini tam 4.52:1 kontrast oranına getiren hassas renk tanımlaması.
-   * Düzeni (flex/grid/position) ve koyu zeminli Hero alanlarını %100 korur.
-   */
   .bg-white .text-primary-accent,
   .bg-background-light .text-primary-accent,
   section[class*="bg-white"] .text-primary-accent,
   section[class*="bg-background-light"] .text-primary-accent {
-    color: #1E5E3A; /* WCAG 2.1 AA Okunabilirlik Standardı (4.52:1 Ratio) */
+    color: #166534;
   }
 
-  /* Form mesaj sayacı & ikincil açık silik metinler için kontrast ayarı */
   #form-message-counter,
   .text-text-light\/80 {
-    color: #4B5563; /* Gray-600 - Tam 4.6:1 Kontrast */
+    color: #374151;
   }
 }
