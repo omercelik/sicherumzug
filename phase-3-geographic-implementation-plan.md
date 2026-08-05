@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.5: Geographic Implementation Plan
 
 Based on the approved Phase 3 Geographic Authority Blueprint, this document outlines the concrete implementation steps to establish a robust, AI-friendly, and SEO-optimized geographic architecture.

@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.3: Information Authority Implementation Plan
 
 This plan classifies content gap opportunities identified during the Information Authority Audit into prioritized actions, ensuring no new pages are created prematurely and existing authority is strengthened first.

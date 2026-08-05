@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3 Priority 1: Implementation Audit Report
 
 This report outlines the successful implementation of the Phase 3 (Priority 1) strategic upgrades to the "Sicher Team" website. The objective was to strengthen the primary authority cluster (Umzug) and its supporting information guides without creating artificial pages, changing URLs, or breaking existing architecture.

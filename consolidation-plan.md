@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Consolidation Plan: Semantic Authority & Cannibalization Resolution
 
 *Note: No pages have been merged or deleted. This document serves as the roadmap for future structural optimizations after explicit approval.*

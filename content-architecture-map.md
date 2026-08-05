@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Content Architecture Map: Sicher Umzug
 
 ## 1. Main Entity & Core Topic

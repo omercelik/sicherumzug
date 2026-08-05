@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.4: AI & Entity Leadership Implementation Report
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.3: Priority 1 Implementation Report
 
 This report outlines the targeted approach for the Priority 1 Implementation phase. Based on the rules to avoid creating new pages prematurely and focusing on high business value, we have selected three existing foundational guides to upgrade.

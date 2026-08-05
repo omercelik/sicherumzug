@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.1 – Competitive Gap Analysis Implementation Report
 
 ## Overview

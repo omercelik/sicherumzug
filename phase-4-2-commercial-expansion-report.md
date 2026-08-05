@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.2: Commercial Authority Expansion Report
 
 ## Overview

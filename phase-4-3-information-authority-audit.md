@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 4.3: Information Authority Audit Report
 
 ## 1. Existing Informational Guides Analysis

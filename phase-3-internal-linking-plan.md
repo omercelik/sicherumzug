@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.3 Internal Linking Plan
 
 ## 1. Service <-> Guide Authority Network

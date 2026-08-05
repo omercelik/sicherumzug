@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.7 - Final AI / LLM Optimization & Site-wide Semantic Review Audit
 
 ## 1. Introduction

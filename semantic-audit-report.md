@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Content Gap Analysis & Semantic Audit Report
 
 ## 1. Executive Summary

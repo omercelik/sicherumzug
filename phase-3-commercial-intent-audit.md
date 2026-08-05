@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+llm_exclude: true
+---
 # Phase 3.4 Commercial Intent Gap Analysis
 
 ## 1. Existing Commercial Pages Evaluation
