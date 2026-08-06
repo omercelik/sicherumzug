@@ -1,3 +1,33 @@
+<!-- Top Announcement Bar -->
+<div class="bg-slate-950 border-b border-slate-800/80 py-2 overflow-hidden whitespace-nowrap">
+  <!-- Desktop -->
+  <div class="hidden md:flex justify-between items-center max-w-7xl mx-auto px-4 text-xs font-semibold text-slate-300">
+    <span>🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
+    <span>🛡️ All-Risk Transportversicherung bis €100.000</span>
+    <span>⭐ 4.9/5 Sterne aus 450+ Bewertungen in Österreich</span>
+  </div>
+  <!-- Mobile Marquee -->
+  <div class="flex md:hidden overflow-hidden">
+    <div class="animate-marquee flex w-max gap-4 text-xs font-semibold text-slate-300" style="will-change: transform;">
+      <span class="shrink-0">🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">⚡ Express-Umzug innerhalb von 24h möglich</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">🛡️ All-Risk Schutz bis €100.000 versichert</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">📸 Foto per WhatsApp senden & Fixpreis erhalten</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="shrink-0">🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">⚡ Express-Umzug innerhalb von 24h möglich</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">🛡️ All-Risk Schutz bis €100.000 versichert</span>
+      <span class="shrink-0">•</span>
+      <span class="shrink-0">📸 Foto per WhatsApp senden & Fixpreis erhalten</span>
+    </div>
+  </div>
+</div>
+
 <header class="sticky top-0 z-50 bg-primary text-white shadow-md">
   <div class="container mx-auto px-4">
     <div class="flex py-2 min-h-[5rem] items-center justify-between">
@@ -74,24 +104,15 @@
         <a class="hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg transition-opacity py-4" href="{{ link.url | relative_url }}">{{ link.label }}</a>
         {% endfor %}
 
-        <!-- Phone call CTA -->
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="inline-flex items-center gap-1.5 hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg transition-opacity py-4">
+        <!-- Visible Direct Phone Call CTA Button -->
+        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 font-black rounded-xl px-5 py-2.5 flex items-center gap-2 text-sm whitespace-nowrap shadow-lg shadow-orange-500/20 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2">
           <span class="material-symbols-outlined text-base">call</span>
           <span>{{ site.phone }}</span>
-        </a>
-
-        <!-- Main Button CTA -->
-        <a class="rounded-full bg-crimson hover:bg-crimson-hover text-white px-5 py-2 shadow-sm hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity" href="{{ site.data.navigation.cta.url | relative_url }}">
-          {{ site.data.navigation.cta.label }}
         </a>
       </nav>
 
       <!-- Mobile Right Utility -->
       <div class="flex items-center gap-3 lg:hidden">
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="inline-flex items-center rounded-full bg-crimson px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-crimson-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity">
-          <span class="material-symbols-outlined text-sm mr-1">call</span>
-          Rufen
-        </a>
         <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-white bg-white/10 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
