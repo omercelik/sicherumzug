@@ -8,46 +8,61 @@
 
 <div class="{{ container_classes }}">
   <div class="{{ content_classes }}">
-    {% if include.kicker and include.show_kicker != false %}
-    <p class="inline-block rounded px-3 py-1 text-sm md:text-base font-semibold uppercase tracking-[0.4em] bg-primary/95 text-crimson leading-none">{{ include.kicker }}</p>
-    {% endif %}
-    {% if include.title %}
-    <h1 class="text-[2rem] font-black leading-tight {{ title_class }}" data-hero-heading>{{ include.title }}</h1>
-    {% endif %}
-    {% if include.subtitle %}
-    <p class="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl {{ subtitle_class }}">{{ include.subtitle }}</p>
-    {% endif %}
+    <!-- Micro-Badge (Social Proof Tag) -->
+    <div class="bg-orange-500/10 border border-orange-500/30 text-orange-300 text-xs font-bold px-3 py-1 rounded-full w-max flex items-center gap-2 mb-4">
+      ⚡ JETZT ANFRAGEN & 100% FIXPREIS SICHERN
+    </div>
 
-    {% if include.highlights %}
-    <div class="flex flex-wrap gap-3 text-sm mt-3">
-      {% for highlight in include.highlights %}
-      <span class="rounded-full border border-white/30 bg-white/5 px-4 py-2">{{ highlight }}</span>
-      {% endfor %}
+    <!-- H1 Headline -->
+    <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4" data-hero-heading>
+      Professioneller Umzug & Räumung — <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">Stressfrei, Sicher & Zum Fixpreis</span>
+    </h1>
+
+    <!-- Sub-Paragraph (Service Anchors) -->
+    <p class="text-slate-300 text-base md:text-lg max-w-3xl mb-6">
+      Sicher Team ist Ihr verlässlicher Experte für <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Privatumzüge</span>, <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Firmenumzüge</span> und <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Räumung & Entrümpelung</span> österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie.
+    </p>
+
+    <!-- Modern 2x2 Feature Grid (Micro-Glassmorphism) -->
+    <div class="grid grid-cols-2 gap-3 mt-6">
+      <div class="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-3.5 flex flex-col items-start justify-center transition-all hover:border-orange-500/40 hover:bg-slate-800/60 text-white">
+        <div class="flex items-center gap-2 mb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-orange-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+          </svg>
+          <span class="text-sm font-semibold">Möbeltransport</span>
+        </div>
+        <span class="text-xs text-slate-300">Österreichweit</span>
+      </div>
+      <div class="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-3.5 flex flex-col items-start justify-center transition-all hover:border-orange-500/40 hover:bg-slate-800/60 text-white">
+        <div class="flex items-center gap-2 mb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-orange-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+          </svg>
+          <span class="text-sm font-semibold">Montage-Service</span>
+        </div>
+        <span class="text-xs text-slate-300">Profi-Handwerker</span>
+      </div>
+      <div class="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-3.5 flex flex-col items-start justify-center transition-all hover:border-orange-500/40 hover:bg-slate-800/60 text-white">
+        <div class="flex items-center gap-2 mb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-orange-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+          </svg>
+          <span class="text-sm font-semibold">Fixpreis-Garantie</span>
+        </div>
+        <span class="text-xs text-slate-300">0€ Zusatzkosten</span>
+      </div>
+      <div class="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-3.5 flex flex-col items-start justify-center transition-all hover:border-orange-500/40 hover:bg-slate-800/60 text-white">
+        <div class="flex items-center gap-2 mb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-orange-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+          </svg>
+          <span class="text-sm font-semibold">Vollversichert</span>
+        </div>
+        <span class="text-xs text-slate-300">All-Risk Schutz</span>
+      </div>
     </div>
-    {% endif %}
-    {% assign risk_items = include.risk_items | default: site.data.risk_reversal %}
-    {% assign has_active_risk = false %}
-    {% if risk_items %}
-      {% for risk in risk_items %}
-        {% if risk.active != false %}
-          {% assign has_active_risk = true %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    {% if has_active_risk %}
-    <div class="mt-4 flex flex-wrap gap-2 text-xs md:text-sm">
-      {% assign sorted_risk_items = risk_items | sort: 'priority' %}
-      {% for risk in sorted_risk_items %}
-      {% if risk.active != false %}
-      <span class="inline-flex items-center gap-1 rounded-full border border-white/30 bg-black/20 px-3 py-1" title="{{ risk.detail }}">
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">{{ risk.icon | default: 'verified' }}</span>
-        <span>{{ risk.label }}</span>
-      </span>
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
 
     {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label %}
     {% assign primary_url = cta_variant.primary_url | default: include.primary_cta.url | default: include.primary_url %}

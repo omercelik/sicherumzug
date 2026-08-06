@@ -1,29 +1,18 @@
-{% assign sticky_cta = site.data.cta_variants.sticky | default: site.data.cta_variants.default %}
-<div class="fixed bottom-0 left-0 right-0 z-40 h-auto border-t border-emerald-900/10 bg-white/95 px-3.5 pt-3 pb-2.5 shadow-[0_-8px_30px_rgb(0,0,0,0.06)] backdrop-blur-md dark:border-white/10 dark:bg-background-dark/95">
-  <div class="mx-auto flex w-full max-w-xl gap-3">
-    <!-- Call Action Button -->
-    <a href="tel:{{ site.phone | replace: ' ', '' }}" class="flex flex-1 min-h-[48px] md:min-h-[52px] items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary-light px-5 py-3 text-sm md:text-base font-bold text-white shadow-sm hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-all duration-200">
-      <span class="material-symbols-outlined text-lg">call</span>
-      <span>{{ sticky_cta.call_label | default: "Anrufen" }}</span>
+<!-- Mobile Sticky Bottom Bar (Conversion Engine) -->
+<div class="fixed bottom-0 inset-x-0 z-50 md:hidden">
+  <div class="bg-slate-950/90 backdrop-blur-xl border-t border-slate-800/80 p-3 pb-safe shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.5)] flex gap-2.5">
+
+    <!-- Button 1 (Direct Call - Primary) -->
+    <a href="tel:{{ site.phone | replace: ' ', '' }}" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 font-bold rounded-xl py-3.5 px-3 flex-1 flex items-center justify-center gap-2 text-center text-[11px] uppercase tracking-wider shadow-lg shadow-orange-500/20 active:scale-95 transition-all">
+      <span class="material-symbols-outlined text-base">call</span>
+      <span>JETZT ANRUFEN</span>
     </a>
-    <!-- WhatsApp Action Button -->
-    <a href="{{ site.whatsapp }}" class="flex flex-1 min-h-[48px] md:min-h-[52px] items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 text-sm md:text-base font-bold text-white shadow-sm hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-all duration-200">
-      <img src="{{ site.images.whatsapp | relative_url }}" class="h-5 w-5" alt="WhatsApp Icon" loading="lazy" width="20" height="20"/>
-      <span class="flex flex-col items-center justify-center text-center leading-[1.1]">
-        {% assign w_label = sticky_cta.whatsapp_label | default: "WhatsApp" %}
-        {% if w_label == 'WhatsApp Foto senden' %}
-          <span class="text-[13px] md:text-sm">WhatsApp</span>
-          <span class="text-[12px] md:text-[12px] font-medium opacity-90">Foto senden</span>
-        {% elsif w_label == 'Express per WhatsApp' %}
-          <span class="text-[13px] md:text-sm">Express per</span>
-          <span class="text-[12px] md:text-[12px] font-medium opacity-90">WhatsApp</span>
-        {% else %}
-          <span>{{ w_label }}</span>
-        {% endif %}
-      </span>
+
+    <!-- Button 2 (WhatsApp Photo Quote - Secondary) -->
+    <a href="{{ site.whatsapp }}" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl py-3.5 px-3 flex-1 flex items-center justify-center gap-2 text-center text-[11px] uppercase tracking-wider shadow-lg shadow-emerald-900/30 active:scale-95 transition-all">
+      <span class="material-symbols-outlined text-base">chat</span>
+      <span>WHATSAPP FOTO SENDEN</span>
     </a>
+
   </div>
-  {% if sticky_cta.subtext %}
-  <p class="mx-auto mt-2 max-w-xl text-center text-[10px] md:text-xs font-semibold tracking-wide uppercase text-text-light dark:text-text-dark/60">{{ sticky_cta.subtext }}</p>
-  {% endif %}
 </div>
