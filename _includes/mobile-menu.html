@@ -3,22 +3,26 @@
 {% assign states = '' | split: '' %}
 {% endif %}
 {% assign states = states | sort: 'order' %}
-<div id="mobile-menu" class="fixed inset-0 z-50 hidden flex-col bg-background-dark text-white lg:hidden" data-mobile-menu>
+<div id="mobile-menu" class="fixed inset-0 z-50 hidden flex-col bg-slate-950 text-white lg:hidden" data-mobile-menu>
   <div class="flex items-center justify-between gap-4 border-b border-white/10 p-4">
-    <a href="{{ '/' | relative_url }}" class="flex max-w-[65vw] items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg">
+    <a href="{{ '/' | relative_url }}" class="flex items-center gap-3 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 group">
       <span class="sr-only">{{ site.brand_name }}</span>
-      <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="{{ site.brand_name }}" class="h-[45px] w-auto" width="808" height="270" />
+      <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="{{ site.brand_name }}" class="h-10 sm:h-12 w-auto shrink-0" width="56" height="56" />
+      <span class="flex items-center text-xl font-extrabold tracking-wide leading-none whitespace-nowrap">
+        <span class="text-white">SICHER</span>
+        <span class="ml-0.5 bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent group-hover:from-amber-400 group-hover:to-orange-400 transition-all">TEAM</span>
+      </span>
     </a>
-    <button id="mobile-menu-close" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity" onclick="mobileMenuToggle()" aria-label="Menü schließen">
-      <span class="material-symbols-outlined text-2xl">close</span>
+    <button id="mobile-menu-close" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 transition-opacity" onclick="mobileMenuToggle()" aria-label="Menü schließen">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
     </button>
   </div>
   <div class="flex-1 overflow-y-auto px-6 py-6 space-y-6">
     <!-- Services -->
     <div>
-      <button class="flex w-full items-center justify-between border-b border-white/10 py-3 text-lg font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" aria-expanded="false" aria-controls="mobile-services" onclick="toggleSubMenu(this, 'mobile-services')">
+      <button class="flex w-full items-center justify-between border-b border-white/10 py-3 text-lg font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1" aria-expanded="false" aria-controls="mobile-services" onclick="toggleSubMenu(this, 'mobile-services')">
         <span>Leistungen</span>
-        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transition-transform duration-200 group-hover:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
       </button>
       <div id="mobile-services" role="region" class="hidden space-y-4 pt-3 pl-2">
         {% for group in site.data.navigation.services %}
@@ -26,31 +30,31 @@
           <p class="mb-1 text-xs font-bold uppercase tracking-wider text-white/50">{{ group.label }}</p>
           <ul class="space-y-2 text-sm border-l border-white/10 pl-3">
             {% for item in group.items %}
-            <li><a class="block py-1 hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" href="{{ item.url | relative_url }}" onclick="mobileMenuToggle()">{{ item.title }}</a></li>
+            <li><a class="block py-1 {% if page.url == item.url %}text-amber-400 font-bold{% else %}hover:text-amber-400{% endif %} focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1 transition-colors duration-200" href="{{ item.url | relative_url }}" onclick="mobileMenuToggle()">{{ item.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
         {% endfor %}
-        <a class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" href="{{ '/leistungen/' | relative_url }}" onclick="mobileMenuToggle()">
+        <a class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1" href="{{ '/leistungen/' | relative_url }}" onclick="mobileMenuToggle()">
           Alle Leistungen ansehen
-          <span class="material-symbols-outlined text-base">north_east</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg>
         </a>
       </div>
     </div>
 
     <!-- Bundesländer -->
     <div>
-      <button class="flex w-full items-center justify-between border-b border-white/10 py-3 text-lg font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" aria-expanded="false" aria-controls="mobile-districts" onclick="toggleSubMenu(this, 'mobile-districts')">
+      <button class="flex w-full items-center justify-between border-b border-white/10 py-3 text-lg font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1" aria-expanded="false" aria-controls="mobile-districts" onclick="toggleSubMenu(this, 'mobile-districts')">
         <span>Bundesländer</span>
-        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transition-transform duration-200 group-hover:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
       </button>
       <div id="mobile-districts" role="region" class="hidden space-y-2 pt-3 pl-2 text-sm border-l border-white/10 ml-2 pl-3">
         {% for state in site.data.navigation.districts %}
-        <a class="block py-1 hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" href="{{ state.url | relative_url }}" onclick="mobileMenuToggle()">{{ state.title }}</a>
+        <a class="block py-1 {% if page.url == state.url %}text-amber-400 font-bold{% else %}hover:text-amber-400{% endif %} focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1 transition-colors duration-200" href="{{ state.url | relative_url }}" onclick="mobileMenuToggle()">{{ state.title }}</a>
         {% endfor %}
-        <a class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" href="{{ '/bezirke/' | relative_url }}" onclick="mobileMenuToggle()">
+        <a class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1" href="{{ '/bezirke/' | relative_url }}" onclick="mobileMenuToggle()">
           Alle Standorte anzeigen
-          <span class="material-symbols-outlined text-base">north_east</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg>
         </a>
       </div>
     </div>
@@ -58,11 +62,11 @@
     <!-- Custom Links -->
     <div class="space-y-4 pt-2">
       {% for link in site.data.navigation.links %}
-      <a class="block border-b border-white/10 py-3 text-lg font-semibold hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light/40 rounded px-1" href="{{ link.url | relative_url }}" onclick="mobileMenuToggle()">{{ link.label }}</a>
+      <a class="block border-b border-white/10 py-3 text-lg font-semibold {% if page.url == link.url %}text-amber-400 font-bold{% else %}hover:text-amber-400{% endif %} focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 rounded px-1 transition-colors duration-200" href="{{ link.url | relative_url }}" onclick="mobileMenuToggle()">{{ link.label }}</a>
       {% endfor %}
     </div>
   </div>
-  <div class="border-t border-white/10 p-6 bg-background-dark/50">
-    <a class="flex w-full items-center justify-center rounded-full bg-crimson hover:bg-crimson-hover py-3.5 text-white font-bold shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity" href="{{ site.data.navigation.cta.url | relative_url }}" onclick="mobileMenuToggle()">{{ site.data.navigation.cta.label }}</a>
+  <div class="border-t border-white/10 p-6 bg-slate-950/50">
+    <a class="flex w-full items-center justify-center rounded-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 py-3.5 text-slate-950 font-bold shadow-[0_0_15px_rgba(245,158,11,0.2)] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition-all duration-300" href="{{ site.data.navigation.cta.url | relative_url }}" onclick="mobileMenuToggle()">{{ site.data.navigation.cta.label }}</a>
   </div>
 </div>
