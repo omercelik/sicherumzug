@@ -32,18 +32,27 @@
   <div class="container mx-auto px-4">
     <div class="flex py-2 h-16 sm:h-18 items-center justify-between">
 
-<a href="{{ '/' | relative_url }}" class="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg">
-        <span class="sr-only">{{ site.brand_name }}</span>
-        <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="Sicher Team Logo" title="{{ site.brand_name }}" class="h-14 w-auto" width="66" height="66" />
+<a
+  href="{{ '/' | relative_url }}"
+  class="flex items-center gap-3 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+>
+  <span class="sr-only">{{ site.brand_name }}</span>
+
+  <img
+    src="{{ site.logo | default: '/logo.svg' | relative_url }}"
+    alt="Sicher Team Logo"
+    title="{{ site.brand_name }}"
+    class="h-12 w-auto shrink-0"
+    width="56"
+    height="56"
+  />
+
+  <span class="flex items-center text-xl sm:text-2xl font-extrabold tracking-wide leading-none whitespace-nowrap">
+    <span class="text-white">SICHER</span>
+    <span class="ml-0.5 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">TEAM</span>
+  </span>
 </a>
       
-
-        <!-- Brand Text Perfectly Aligned -->
-        <span class="text-xl sm:text-2xl font-bold text-white tracking-wider whitespace-nowrap leading-none flex items-center">
-          SICHER<span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent ml-0.5">TEAM</span>
-        </span>
-      </a>
-
       {% assign states = site.states | default: site.collections.states.docs %}
       {% if states == nil %}
         {% assign states = '' | split: '' %}
