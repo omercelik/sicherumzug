@@ -69,7 +69,7 @@
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             <span class="absolute bottom-3 left-1/2 h-[2px] w-0 -translate-x-1/2 bg-amber-400 transition-all duration-250 ease-out group-hover:w-full {% if page.url contains '/leistungen/' %}w-full{% endif %}"></span>
           </button>
-          <div class="invisible absolute left-1/2 z-30 mt-1 w-[600px] -translate-x-1/2 rounded-2xl bg-slate-800 border border-slate-700/50 p-6 text-slate-200 opacity-0 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+          <div class="invisible absolute left-1/2 z-30 mt-1 w-[600px] -translate-x-1/2 rounded-2xl bg-slate-800 border border-slate-700/50 p-6 text-slate-200 opacity-0 shadow-xl shadow-black/20 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
             <div class="grid grid-cols-2 gap-6">
               {% for group in site.data.navigation.services %}
               <div>
@@ -102,7 +102,7 @@
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             <span class="absolute bottom-3 left-1/2 h-[2px] w-0 -translate-x-1/2 bg-amber-400 transition-all duration-250 ease-out group-hover:w-full {% if page.url contains '/bezirke/' or page.url contains '/standorte/' %}w-full{% endif %}"></span>
           </button>
-          <div class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-slate-800 border border-slate-700/50 p-4 text-slate-200 opacity-0 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+          <div class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-slate-800 border border-slate-700/50 p-4 text-slate-200 opacity-0 shadow-xl shadow-black/20 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
             <p class="mb-3 text-xs font-bold uppercase tracking-wider text-amber-400">Unsere Standorte</p>
             <ul class="space-y-2 text-sm">
               {% for state in site.data.navigation.districts %}
@@ -127,7 +127,7 @@
         {% endfor %}
 
         <!-- Main Button CTA -->
-        <a class="rounded-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-bold px-6 py-2.5 shadow-[0_0_15px_rgba(245,158,11,0.2)] hover:shadow-[0_0_25px_rgba(245,158,11,0.4)] hover:-translate-y-0.5 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" href="{{ site.data.navigation.cta.url | relative_url }}">
+        <a class="rounded-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-bold px-6 py-2.5 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" href="{{ site.data.navigation.cta.url | relative_url }}">
           {{ site.data.navigation.cta.label }}
         </a>
       </nav>
