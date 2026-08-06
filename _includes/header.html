@@ -33,9 +33,9 @@
     <div class="flex py-2 min-h-[5rem] items-center justify-between">
       <a href="{{ '/' | relative_url }}" class="flex items-center gap-2 sm:gap-2.5 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg">
         <span class="sr-only">{{ site.brand_name }}</span>
-        <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="Sicher Team Logo" title="{{ site.brand_name }}" class="h-10 sm:h-11 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="44" height="44" />
-        <span class="text-base sm:text-xl lg:text-2xl font-black tracking-tight text-white group-hover:opacity-90 transition whitespace-nowrap">
-            SICHER<span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">TEAM</span>
+        <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="Sicher Team Logo" title="{{ site.brand_name }}" class="h-13 sm:h-13 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="44" height="44" />
+        <span class="text-base sm:text-xl lg:text-2xl font-black text-white tracking-tight group-hover:text-crimson transition whitespace-nowrap">
+            SICHER<span class="text-crimson">TEAM</span>
         </span>
       </a>
       {% assign states = site.states | default: site.collections.states.docs %}
@@ -104,10 +104,11 @@
         <a class="hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg transition-opacity py-4" href="{{ link.url | relative_url }}">{{ link.label }}</a>
         {% endfor %}
 
-        <!-- Visible Direct Phone Call CTA Button -->
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 font-black rounded-xl px-5 py-2.5 flex items-center gap-2 text-sm whitespace-nowrap shadow-lg shadow-orange-500/20 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2">
-          <span class="material-symbols-outlined text-base">call</span>
-          <span>{{ site.phone }}</span>
+      
+
+        <!-- Main Button CTA -->
+        <a class="rounded-full bg-crimson hover:bg-crimson-hover text-white px-5 py-2 shadow-sm hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 transition-opacity" href="{{ site.data.navigation.cta.url | relative_url }}">
+          {{ site.data.navigation.cta.label }}
         </a>
       </nav>
 
