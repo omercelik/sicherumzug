@@ -30,7 +30,7 @@ layout: default
 
   <div class="absolute left-0 top-0 z-30 w-full bg-gradient-to-br from-primary/95 to-transparent">
     <div class="container mx-auto px-4 md:px-6 py-2">
-      <p class="text-sm md:text-base font-semibold uppercase tracking-[0.4em] text-primary-accent">{{ hero_kicker }}</p>
+      <p class="text-sm md:text-base font-semibold uppercase tracking-widest text-primary-accent">{{ hero_kicker }}</p>
     </div>
   </div>
   {% include hero-content.html
@@ -56,7 +56,7 @@ layout: default
 </section>
 <section class="bg-white py-4">
   <div class="container mx-auto px-4">
-    <div class="flex flex-wrap gap-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+    <div class="flex flex-wrap gap-3 text-center text-sm font-semibold uppercase tracking-widest text-primary">
       {% assign risk_items = site.data.risk_reversal | where: 'active', true | sort: 'priority' %}
       {% for risk in risk_items %}
       <span class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-background-light px-4 py-2" title="{{ risk.detail }}">
@@ -90,13 +90,13 @@ layout: default
       </div>
       <aside class="lg:col-span-1">
         <div class="sticky top-24 rounded-3xl bg-background-light p-6 shadow-xl">
-          <p class="text-l font-semibold uppercase tracking-[0.3em] text-primary-accent">Kostenloses Angebot</p>
+          <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kostenloses Angebot</p>
           <h2 class="mt-3 text-2xl font-extrabold text-primary">Direkt anfragen</h2>
           {% include quote-form.html %}
 
           <div class="mt-8 pt-6 border-t border-gray-200 hidden lg:block">
             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-3">Auf dieser Seite</h3>
-            <div class="text-sm text-text-light hover:[&_a]:text-crimson">
+            <div class="text-sm text-text-light hover:[&_a]:text-orange-500">
               {% include toc.html html=content %}
             </div>
           </div>
@@ -112,7 +112,7 @@ layout: default
     <div class="mt-6 grid gap-6 md:grid-cols-2">
       {% for step in page.process %}
       <div class="rounded-2xl border border-gray-200 bg-white p-6">
-        <p class="text-l font-semibold uppercase tracking-[0.3em] text-primary-accent">Schritt {{ forloop.index }}</p>
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Schritt {{ forloop.index }}</p>
         <h3 class="mt-3 text-xl font-bold text-primary">{{ step.title }}</h3>
         <p class="mt-2 text-sm text-text-light">{{ step.description }}</p>
       </div>
@@ -125,11 +125,11 @@ layout: default
 <section class="bg-background-light py-12">
   <div class="container mx-auto px-4">
     <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-primary-accent">Lokaler Nachweis</p>
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Lokaler Nachweis</p>
       <h2 class="mt-3 text-2xl font-extrabold text-primary">Standort-Check für {{ page.title }}</h2>
       <p class="mt-3 text-sm text-text-light">{{ page.local_logistics_note }}</p>
       <p class="mt-3 text-sm text-text-light">{{ page.micro_case }}</p>
-      <p class="mt-4 text-xs uppercase tracking-[0.2em] text-gray-500">Stand {{ page.proof_date | date: "%d.%m.%Y" }}</p>
+      <p class="mt-4 text-xs uppercase tracking-widest text-gray-500">Stand {{ page.proof_date | date: "%d.%m.%Y" }}</p>
     </div>
   </div>
 </section>
@@ -172,7 +172,7 @@ layout: default
       {% endif %}
       {% for guide in related limit:3 %}
       <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p class="text-xs uppercase tracking-[0.3em] text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
+        <p class="text-xs uppercase tracking-widest text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
         <h3 class="mt-2 text-lg font-bold text-primary">{{ guide.title }}</h3>
         <p class="mt-2 text-sm text-text-light">{{ guide.excerpt | strip_html | truncate: 120 }}</p>
         <a href="{{ guide.url | relative_url }}" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Lesen {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}</a>
