@@ -1,47 +1,64 @@
-```css
 @import "tailwindcss";
+
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================
    DESIGN SYSTEM
-   Nordic Slate + High-Contrast Orange
+   Nordic Slate + Premium Orange
    WCAG 2.2 AA / SEO / GEO / Premium UI
    ========================================================== */
 
 @theme {
 
   /* ----------------------------------------------------------
-     CORE BRAND COLORS
+     BRAND / SLATE
      ---------------------------------------------------------- */
 
-  --color-primary: #0f172a;          /* Slate 900 */
-  --color-primary-light: #1e293b;    /* Slate 800 */
-  --color-primary-dark: #020617;     /* Slate 950 */
-
-  /* ----------------------------------------------------------
-     ORANGE ACCENT
-     Orange is primarily for CTA, icons and emphasis.
-     ---------------------------------------------------------- */
-
-  --color-amber-accent: #f97316;     /* Orange 500 */
-  --color-amber-hover: #ea580c;      /* Orange 600 */
-  --color-amber-content: #c2410c;    /* Orange 700 - AA on light */
-
-  /* Legacy aliases */
-  --color-primary-button: #f97316;
-  --color-primary-accent: #f97316;
-  --color-content-accent: #c2410c;
-  --color-crimson: #f97316;
-  --color-crimson-hover: #ea580c;
-
-  /* ----------------------------------------------------------
-     NORDIC SLATE SYSTEM
-     ---------------------------------------------------------- */
+  --color-primary: #0f172a;
+  --color-primary-light: #1e293b;
+  --color-primary-dark: #020617;
 
   --color-nordic: #1e293b;
   --color-nordic-light: #334155;
   --color-nordic-dark: #0f172a;
+
+  /* ----------------------------------------------------------
+     PREMIUM ORANGE
+     
+     Orange 500:
+     decorative / dark-background accent
+
+     Orange 400:
+     dark-background readable accent
+
+     Orange 700:
+     light-background text + buttons
+
+     Orange 800:
+     hover / strong contrast
+     ---------------------------------------------------------- */
+
+  --color-amber-accent: #f97316;
+  --color-amber-hover: #ea580c;
+
+  --color-amber-content: #c2410c;
+  --color-amber-strong: #9a3412;
+
+  /* ----------------------------------------------------------
+     SEMANTIC ALIASES
+     ---------------------------------------------------------- */
+
+  --color-primary-button: #c2410c;
+  --color-primary-accent: #f97316;
+  --color-content-accent: #c2410c;
+
+  /*
+   * Legacy compatibility only.
+   * These are NOT red/crimson colors anymore.
+   */
+  --color-crimson: #f97316;
+  --color-crimson-hover: #ea580c;
 
   /* ----------------------------------------------------------
      BACKGROUNDS
@@ -92,14 +109,17 @@
 
 
 /* ==========================================================
-   ROOT
+   ROOT DESIGN TOKENS
    ========================================================== */
 
 :root {
+
   color-scheme: light;
 
   --page-bg: #f8fafc;
+
   --surface: #ffffff;
+  --surface-soft: #f1f5f9;
 
   --text-primary: #0f172a;
   --text-secondary: #475569;
@@ -108,19 +128,38 @@
   --border-light: #e2e8f0;
   --border-medium: #cbd5e1;
 
+  /* Orange */
   --brand-orange: #f97316;
   --brand-orange-hover: #ea580c;
+
+  /*
+   * AA-safe orange for text on light backgrounds
+   */
   --brand-orange-dark: #c2410c;
 
-  --dark-bg: #0f172a;
-  --dark-surface: #1e293b;
+  /*
+   * Stronger orange for focus / maximum contrast
+   */
+  --brand-orange-strong: #9a3412;
+
+  /* Dark system */
+  --dark-bg: #020617;
+  --dark-surface: #0f172a;
+  --dark-surface-raised: #1e293b;
   --dark-border: #334155;
 
+  /* Layout */
   --content-width: 80rem;
   --content-padding: 1rem;
 }
 
+
+/* ==========================================================
+   RESPONSIVE ROOT SPACING
+   ========================================================== */
+
 @media (min-width: 768px) {
+
   :root {
     --content-padding: 1.5rem;
   }
@@ -155,18 +194,16 @@ body {
 /* ==========================================================
    GLOBAL CONTAINER
    ----------------------------------------------------------
-   IMPORTANT:
-   Every major section should use:
-   .container.mx-auto.px-4.md\:px-6
-
-   This keeps the entire website on one vertical grid.
+   Keeps every major section aligned to one vertical grid.
    ========================================================== */
 
 .container {
   width: 100%;
   max-width: var(--content-width);
+
   margin-left: auto;
   margin-right: auto;
+
   padding-left: var(--content-padding);
   padding-right: var(--content-padding);
 }
@@ -200,7 +237,7 @@ h3 {
 
 
 /* ==========================================================
-   LINKS
+   GLOBAL LINKS
    ========================================================== */
 
 a {
@@ -212,12 +249,19 @@ a {
     transform 160ms ease;
 }
 
+
+/* ==========================================================
+   ACCESSIBLE FOCUS
+   ----------------------------------------------------------
+   Strong visible focus indicator.
+   ========================================================== */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid #f97316;
+  outline: 3px solid var(--brand-orange-strong);
   outline-offset: 3px;
 }
 
@@ -237,49 +281,39 @@ select:focus-visible {
   background-repeat: no-repeat;
 }
 
+
 @media (max-width: 767px) {
+
   [data-hero-banner] {
-    --hero-image: var(--hero-mobile, var(--hero-desktop));
+    --hero-image: var(
+      --hero-mobile,
+      var(--hero-desktop)
+    );
   }
 }
 
 
-/* ==========================================================
-   HERO CONTENT ALIGNMENT
-   ========================================================== */
-
-[data-hero-banner] > .container {
-  width: 100%;
-  max-width: var(--content-width);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* ==========================================================
-   HERO SCRIM
-   ----------------------------------------------------------
-   Strong enough for white text.
-   ========================================================== */
-
-[data-hero-banner]::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(2, 6, 23, 0.78) 0%,
-      rgba(2, 6, 23, 0.82) 55%,
-      rgba(2, 6, 23, 0.94) 100%
-    );
-}
+/*
+ * IMPORTANT:
+ * The actual hero HTML already contains its own scrim:
+ *
+ * bg-gradient-to-b
+ * from-slate-950/75
+ * via-slate-950/80
+ * to-slate-950/90
+ *
+ * Therefore we deliberately DO NOT add ::after here.
+ *
+ * This prevents:
+ * - double darkening
+ * - text being covered
+ * - unnecessary stacking contexts
+ * - inconsistent hero contrast
+ */
 
 
 /* ==========================================================
-   HERO TEXT
+   HERO CONTENT
    ========================================================== */
 
 [data-hero-banner] h1,
@@ -292,30 +326,62 @@ select:focus-visible {
   color: #e2e8f0;
 }
 
-[data-hero-banner] .text-orange-400,
-[data-hero-banner] .text-orange-500,
+
+/*
+ * Accent on dark hero.
+ *
+ * Orange 400 is intentionally used here.
+ */
+
 [data-hero-banner] .text-primary-accent {
+  color: #fb923c;
+}
+
+[data-hero-banner] .text-orange-400 {
+  color: #fb923c;
+}
+
+[data-hero-banner] .text-orange-500 {
   color: #fb923c;
 }
 
 
 /* ==========================================================
-   PREMIUM ORANGE ACCENT
-   ----------------------------------------------------------
-   Accent should remain controlled.
+   PREMIUM ORANGE SYSTEM
    ========================================================== */
+
+/*
+ * Decorative accent
+ */
 
 .text-primary-accent {
   color: var(--brand-orange);
 }
 
+
+/*
+ * AA-safe content accent on light surfaces
+ */
+
 .text-content-accent {
   color: var(--brand-orange-dark);
 }
 
+
+/*
+ * Accent background
+ *
+ * Mainly decorative.
+ */
+
 .bg-primary-accent {
   background-color: var(--brand-orange);
 }
+
+
+/*
+ * Accent border
+ */
 
 .border-primary-accent {
   border-color: var(--brand-orange);
@@ -323,10 +389,7 @@ select:focus-visible {
 
 
 /* ==========================================================
-   PRIMARY BUTTON
-   ----------------------------------------------------------
-   Orange 500 + Slate 950
-   Strong AA contrast.
+   PRIMARY / DARK SYSTEM
    ========================================================== */
 
 .bg-primary {
@@ -338,17 +401,53 @@ select:focus-visible {
 }
 
 
-/* Orange CTA */
+/* ==========================================================
+   PRIMARY ORANGE BUTTON
+   ----------------------------------------------------------
+   IMPORTANT:
+   Orange 500 + white text is NOT sufficient for normal AA text.
+   
+   Therefore actual CTA buttons use Orange 700.
+   ========================================================== */
 
-.bg-primary-button,
+.bg-primary-button {
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
+}
+
+.bg-primary-button:hover {
+  background-color: var(--brand-orange-strong);
+}
+
+
+/*
+ * Legacy Tailwind usage:
+ *
+ * bg-primary-accent
+ *
+ * maps to AA-safe button orange.
+ */
+
 .bg-primary-accent {
-  background-color: var(--brand-orange);
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
 }
 
-.hover\:bg-primary-button:hover,
 .hover\:bg-primary-accent:hover {
-  background-color: var(--brand-orange-hover);
+  background-color: var(--brand-orange-strong);
 }
+
+
+/*
+ * Existing code using:
+ *
+ * bg-orange-500
+ *
+ * should remain visually orange.
+ *
+ * We do NOT globally override Tailwind's orange utilities,
+ * because they may be used for decorative elements.
+ */
 
 
 /* ==========================================================
@@ -357,7 +456,9 @@ select:focus-visible {
 
 .premium-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+
+  border: 1px solid var(--border-light);
+
   border-radius: 1.5rem;
 
   box-shadow:
@@ -373,7 +474,7 @@ select:focus-visible {
 .premium-card:hover {
   transform: translateY(-2px);
 
-  border-color: #cbd5e1;
+  border-color: var(--border-medium);
 
   box-shadow:
     0 4px 6px rgba(15, 23, 42, 0.05),
@@ -413,7 +514,7 @@ select:focus-visible {
 
 
 /* ==========================================================
-   DARK SURFACES
+   DARK BACKGROUND UTILITIES
    ========================================================== */
 
 .bg-background-dark {
@@ -426,35 +527,37 @@ select:focus-visible {
 
 
 /* ==========================================================
+   DARK SURFACE
+   ========================================================== */
+
+.dark-surface {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+
+/* ==========================================================
    TRUST BAR
    ========================================================== */
 
 .trust-badge {
   font-size: 0.8125rem;
+
   line-height: 1.4;
 
   letter-spacing: 0.06em;
+
   text-transform: uppercase;
 
   font-weight: 700;
-}
-
-.trust-badge::selection {
-  background: #f97316;
-  color: #020617;
 }
 
 
 /* ==========================================================
    SECTION RHYTHM
    ----------------------------------------------------------
-   Prevents random visual protrusions between sections.
+   Prevents visual jumps and inconsistent section structure.
    ========================================================== */
-
-.defer-section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
-}
 
 section {
   position: relative;
@@ -463,6 +566,11 @@ section {
 section > .container {
   position: relative;
   z-index: 1;
+}
+
+.defer-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
 
 
@@ -525,8 +633,12 @@ section > .container {
   }
 
   .richtext blockquote {
-    @apply rounded-r-lg border-l-4 border-orange-500 bg-orange-50/60 py-2 pl-4 italic text-slate-700;
+    @apply rounded-r-lg border-l-4 border-orange-600 bg-orange-50/60 py-2 pl-4 italic text-slate-700;
   }
+
+  /*
+   * AA-safe orange text on light backgrounds.
+   */
 
   .richtext a {
     @apply font-semibold text-orange-700 underline decoration-orange-500/40 underline-offset-4 transition-colors;
@@ -544,6 +656,7 @@ section > .container {
     @apply mt-6 w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm;
 
     border-collapse: collapse;
+
     table-layout: auto;
   }
 
@@ -578,7 +691,9 @@ input,
 textarea,
 select {
   border-color: #cbd5e1;
+
   background-color: #ffffff;
+
   color: #0f172a;
 }
 
@@ -587,12 +702,32 @@ textarea::placeholder {
   color: #64748b;
 }
 
+
+/*
+ * Focus:
+ * Orange border + visible focus ring.
+ */
+
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #f97316;
+  border-color: var(--brand-orange-dark);
+
   box-shadow:
-    0 0 0 3px rgba(249, 115, 22, 0.18);
+    0 0 0 3px rgba(194, 65, 12, 0.18);
+}
+
+
+/*
+ * Disabled form controls
+ */
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
 }
 
 
@@ -605,11 +740,11 @@ select:focus {
 }
 
 [data-faq-toggle]:hover {
-  color: #c2410c;
+  color: var(--brand-orange-dark);
 }
 
 [data-faq-toggle]:focus-visible {
-  outline: 3px solid #f97316;
+  outline: 3px solid var(--brand-orange-strong);
   outline-offset: 3px;
 }
 
@@ -620,10 +755,15 @@ select:focus {
 
 @font-face {
   font-family: "Material Symbols Outlined Local";
+
   font-style: normal;
   font-weight: 400;
+
   font-display: swap;
-  src: url("../fonts/material-symbols-outlined.woff2") format("woff2");
+
+  src:
+    url("../fonts/material-symbols-outlined.woff2")
+    format("woff2");
 }
 
 .material-symbols-outlined {
@@ -634,20 +774,25 @@ select:focus {
 
   font-weight: normal;
   font-style: normal;
+
   font-size: 1em;
+
   line-height: 1;
 
   letter-spacing: normal;
+
   text-transform: none;
 
   display: inline-block;
 
   white-space: nowrap;
+
   word-wrap: normal;
 
   direction: ltr;
 
   -webkit-font-feature-settings: "liga";
+
   -webkit-font-smoothing: antialiased;
 
   font-feature-settings: "liga";
@@ -674,29 +819,36 @@ select:focus {
 
 
 /* ==========================================================
-   SELECTION
+   TEXT SELECTION
    ========================================================== */
 
 ::selection {
-  background-color: #f97316;
-  color: #020617;
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
 }
 
 
 /* ==========================================================
    ACCESSIBILITY
-   ----------------------------------------------------------
    WCAG 2.2 AA
    ========================================================== */
 
 @layer utilities {
 
-  /* Accent remains visible on dark surfaces */
+  /*
+   * ----------------------------------------------------------
+   * DARK SURFACES
+   * ----------------------------------------------------------
+   *
+   * Orange 400 provides strong readability on dark slate.
+   */
+
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
     color: #fb923c;
   }
+
 
   .dark .hover\:text-primary-accent:hover,
   footer .hover\:text-primary-accent:hover,
@@ -704,10 +856,56 @@ select:focus {
     color: #fdba74;
   }
 
-  /* Light backgrounds need darker orange */
+
+  /*
+   * ----------------------------------------------------------
+   * LIGHT SURFACES
+   * ----------------------------------------------------------
+   *
+   * Orange 700 is used for readable text.
+   */
+
   .bg-white .text-primary-accent,
   .bg-background-light .text-primary-accent {
     color: #c2410c;
+  }
+
+
+  /*
+   * Content accent utility
+   */
+
+  .text-content-accent {
+    color: #c2410c;
+  }
+
+
+  /*
+   * Legacy crimson classes.
+   *
+   * They remain only so old templates don't break.
+   * They are now completely mapped to the orange system.
+   */
+
+  .text-crimson {
+    color: var(--brand-orange-dark);
+  }
+
+  .bg-crimson {
+    background-color: var(--brand-orange-dark);
+    color: #ffffff;
+  }
+
+  .border-crimson {
+    border-color: var(--brand-orange);
+  }
+
+  .hover\:text-crimson:hover {
+    color: var(--brand-orange-strong);
+  }
+
+  .hover\:bg-crimson:hover {
+    background-color: var(--brand-orange-strong);
   }
 }
 
@@ -721,9 +919,13 @@ select:focus {
   *,
   *::before,
   *::after {
+
     animation-duration: 0.01ms !important;
+
     animation-iteration-count: 1 !important;
+
     transition-duration: 0.01ms !important;
+
     scroll-behavior: auto !important;
   }
 }
@@ -763,7 +965,9 @@ select:focus {
 
   [data-hero-banner] {
     background-image: none !important;
+
     background-color: #ffffff !important;
+
     color: #000000 !important;
   }
 
@@ -775,4 +979,3 @@ select:focus {
     display: none !important;
   }
 }
-```
