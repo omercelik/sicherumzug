@@ -4,41 +4,45 @@
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================
-   DESIGN TOKENS — Tailwind CSS v4
+   DESIGN TOKENS — Tailwind CSS v4 (Saf AA Nordic & Amber System)
    ========================================================== */
 
 @theme {
-  /* Primary / Nordic */
-  --color-primary: #2f3b45;
-  --color-primary-light: #3a4a57;
-  --color-primary-dark: #1f2933;
-  --color-primary-button: #c62839;
-  --color-primary-accent: #c62839;
+  /* Nordic Slate Base */
+  --color-primary: #1e293b;         /* Slate 800 */
+  --color-primary-light: #334155;   /* Slate 700 */
+  --color-primary-dark: #0f172a;    /* Slate 900 */
 
-  /* Content */
-  --color-content-accent: #c62839;
-  --color-content-light: #3a4a57;
+  /* Amber Signal System */
+  --color-amber-accent: #f59e0b;   /* Amber 500 — CTA, Buton, İkon, Badge BG */
+  --color-amber-hover: #d97706;    /* Amber 600 — Hover & Active Durumları */
+  --color-amber-content: #b45309;  /* Amber 700 — Açık Zeminde Okunabilir Metin (AA Safe) */
 
-  /* Background */
-  --color-background-light: #f7f8fa;
-  --color-background-dark: #1f2933;
+  /* Semantic Aliases */
+  --color-primary-button: #f59e0b;
+  --color-primary-accent: #f59e0b;
+  --color-content-accent: #b45309; /* Açık zemindeki metin vurgusu */
 
-  /* Text */
-  --color-text-light: #4b5563;
-  --color-text-dark: #f7f8fa;
+  /* Legacy Compatibility (Eski Crimson sınıflarını kırmadan Amber'e bağlar) */
+  --color-crimson: #f59e0b;
+  --color-crimson-hover: #d97706;
 
-  /* Nordic */
-  --color-nordic: #2f3b45;
-  --color-nordic-light: #3a4a57;
-  --color-nordic-dark: #1f2933;
+  /* Nordic System Aliases */
+  --color-nordic: #1e293b;
+  --color-nordic-light: #334155;
+  --color-nordic-dark: #0f172a;
 
-  /* Crimson */
-  --color-crimson: #c62839;
-  --color-crimson-hover: #a3212f;
+  /* Backgrounds & Surfaces */
+  --color-background-light: #f8fafc; /* Slate 50 */
+  --color-background-dark: #0f172a;  /* Slate 900 */
+
+  /* Text Elements */
+  --color-text-light: #475569;      /* Slate 600 */
+  --color-text-dark: #e2e8f0;       /* Slate 200 — Mat Kırık Beyaz (Dark Zemin) */
 
   /* Surface */
   --color-surface: #ffffff;
-  --color-surface-background: #f7f8fa;
+  --color-surface-background: #f8fafc;
 
   /* Typography */
   --font-display:
@@ -65,33 +69,29 @@
 }
 
 /* ==========================================================
-   BASE
+   BASE & RESET
    ========================================================== */
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 body {
   font-family: var(--font-display);
-  background-color: #f5f5f5;
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ==========================================================
-   HERO
+   HERO BANNER
    ========================================================== */
 
 [data-hero-banner] {
   --hero-image: var(--hero-desktop);
-
-  background-image:
-    linear-gradient(
-      rgba(10, 35, 66, 0.15),
-      rgba(10, 35, 66, 0.45)
-    ),
-    var(--hero-image);
-
+  background-image: var(--hero-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ body {
 }
 
 /* ==========================================================
-   SCROLLBAR
+   CUSTOM SCROLLBAR
    ========================================================== */
 
 ::-webkit-scrollbar {
@@ -146,8 +146,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(10, 35, 66, 0.55);
+  background-color: var(--color-primary-light);
   border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-background-light);
 }
 
 /* ==========================================================
@@ -181,12 +185,12 @@ body {
 }
 
 /* ==========================================================
-   RICHTEXT
+   RICHTEXT COMPONENTS (AA Metin Güvenliği Entegre Edildi)
    ========================================================== */
 
 @layer components {
   .richtext {
-    @apply max-w-none text-base leading-relaxed text-text-light;
+    @apply max-w-none text-base leading-relaxed text-slate-600;
   }
 
   .richtext > *:first-child {
@@ -194,15 +198,15 @@ body {
   }
 
   .richtext h2 {
-    @apply mt-10 text-3xl font-extrabold text-primary;
+    @apply mt-10 text-3xl font-extrabold text-slate-900 tracking-tight;
   }
 
   .richtext h3 {
-    @apply mt-8 text-2xl font-bold text-primary;
+    @apply mt-8 text-2xl font-bold text-slate-900 tracking-tight;
   }
 
   .richtext h4 {
-    @apply mt-6 text-xl font-semibold text-primary;
+    @apply mt-6 text-xl font-semibold text-slate-900;
   }
 
   .richtext p,
@@ -221,42 +225,42 @@ body {
   }
 
   .richtext li {
-    @apply text-base leading-relaxed text-text-light;
+    @apply text-base leading-relaxed text-slate-600;
   }
 
   .richtext blockquote {
-    @apply border-l-4 border-primary/40 pl-4 italic text-primary;
+    @apply border-l-4 border-amber-500 pl-4 italic text-slate-700 bg-amber-50/40 py-2 rounded-r-lg;
   }
 
   .richtext a {
-    @apply font-semibold text-primary underline-offset-4 hover:text-primary-light;
+    /* Açık zeminde Amber 700 (#b45309) kullanarak AA kontrastı garanti altına aldık */
+    @apply font-semibold text-[var(--color-amber-content)] underline decoration-amber-500/40 underline-offset-4 hover:decoration-amber-700 hover:text-amber-800 transition-colors;
   }
 
   .richtext strong {
-    @apply font-semibold text-primary;
+    @apply font-bold text-slate-900;
   }
 
   .richtext table {
-    @apply mt-6 w-full border-collapse rounded-lg border border-primary/20 bg-white text-left shadow-sm;
-
+    @apply mt-6 w-full border-collapse rounded-xl border border-slate-200 bg-white text-left shadow-sm overflow-hidden;
     table-layout: auto;
   }
 
   .richtext thead {
-    @apply bg-primary text-text-dark;
+    @apply bg-slate-800 text-slate-100;
   }
 
   .richtext thead th {
-    @apply px-4 py-3 text-xs font-semibold uppercase tracking-wide text-background-light;
+    @apply px-4 py-3 text-xs font-semibold uppercase tracking-wider text-slate-200;
   }
 
   .richtext tbody tr:nth-child(even) {
-    @apply bg-background-light;
+    @apply bg-slate-50/50;
   }
 
   .richtext th,
   .richtext td {
-    @apply border-b border-primary/10 px-4 py-3 align-top text-sm text-text-light;
+    @apply border-b border-slate-100 px-4 py-3 align-top text-sm text-slate-600;
   }
 
   .richtext tbody tr:last-child td {
@@ -279,7 +283,7 @@ body {
 
   .richtext th,
   .richtext td {
-    padding: 0.5rem;
+    padding: 0.625rem;
     font-size: 0.75rem;
     line-height: 1rem;
     white-space: normal;
@@ -289,19 +293,19 @@ body {
 }
 
 /* ==========================================================
-   ACCESSIBILITY OVERRIDES
+   ACCESSIBILITY OVERRIDES (Koyu Zeminde Parlak Amber Koruması)
    ========================================================== */
 
 @layer utilities {
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
-    color: #fca5a5;
+    color: #fbbf24; /* Amber 400 — Koyu zeminde yüksek okunabilirlik */
   }
 
   .dark .hover\:text-primary-accent:hover,
   footer .hover\:text-primary-accent:hover,
   [data-hero-banner] .hover\:text-primary-accent:hover {
-    color: #f87171;
+    color: #f59e0b;
   }
 }
