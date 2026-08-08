@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         btn.type = 'button';
         btn.className = 'absolute top-1.5 right-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-white shadow hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 transition-all duration-200 z-10';
         btn.setAttribute('aria-label', 'Foto entfernen');
-        btn.innerHTML = `{% include svg/close.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em" %}`;
+        btn.innerHTML = `{% include svg/close.svg class="w-4 h-4 shrink-0 !font-bold fill-current" %}`;
         btn.addEventListener('click', function() {
           selectedFiles.splice(index, 1);
           updateInputAndRender();
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         errorEl.className = 'mt-1.5 text-xs text-red-600 font-bold flex items-center gap-1 transition-all duration-200';
         input.parentNode.appendChild(errorEl);
       }
-      errorEl.innerHTML = `{% include svg/warning.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em inline" %}` + `<span>${errorMsg}</span>`;
+      errorEl.innerHTML = `{% include svg/warning.svg class="w-4 h-4 shrink-0 !font-bold inline fill-current" %}` + `<span>${errorMsg}</span>`;
       input.setAttribute('aria-invalid', 'true');
       input.setAttribute('aria-describedby', errorId);
     } else {
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
           regionEl.className = 'mt-1.5 text-xs text-emerald-600 font-bold flex items-center gap-1 transition-all duration-200';
           postcodeInp.parentNode.appendChild(regionEl);
         }
-        regionEl.innerHTML = `{% include svg/check_circle.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em inline" %}` + `<span>Region: ${region} (Service verfügbar)</span>`;
+        regionEl.innerHTML = `{% include svg/check_circle.svg class="w-4 h-4 shrink-0 !font-bold inline fill-current" %}` + `<span>Region: ${region} (Service verfügbar)</span>`;
         postcodeInp.setAttribute('aria-describedby', regionId);
       } else {
         if (regionEl) regionEl.remove();
@@ -448,7 +448,7 @@ if (responseDiv) {
   responseDiv.innerHTML = `
     <div class="flex justify-center">
       <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
-        {% include svg/check_circle.svg class="text-6xl text-green-600 fill-current w-1em h-1em mx-auto mb-4" %}
+        {% include svg/check_circle.svg class="w-16 h-16 shrink-0 text-green-600 fill-current mx-auto mb-4" %}
       </div>
     </div>
 
@@ -466,7 +466,7 @@ if (responseDiv) {
     </p>
 
     <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
-      {% include svg/phone_in_talk.svg class="text-xl fill-current w-1em h-1em" %}
+      {% include svg/phone_in_talk.svg class="w-6 h-6 shrink-0 fill-current" %}
       Wir kontaktieren Sie persönlich
     </div>
   `;
