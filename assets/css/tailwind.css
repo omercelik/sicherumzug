@@ -4,7 +4,7 @@
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================
-   DESIGN TOKENS — Tailwind CSS v4 (Saf AA Nordic & Amber System)
+   DESIGN TOKENS — Nordic Slate & High-Contrast Orange System
    ========================================================== */
 
 @theme {
@@ -13,19 +13,18 @@
   --color-primary-light: #334155;   /* Slate 700 */
   --color-primary-dark: #0f172a;    /* Slate 900 */
 
-  /* Amber Signal System */
-  --color-amber-accent: #f59e0b;   /* Amber 500 — CTA, Buton, İkon, Badge BG */
-  --color-amber-hover: #d97706;    /* Amber 600 — Hover & Active Durumları */
-  --color-amber-content: #b45309;  /* Amber 700 — Açık Zeminde Okunabilir Metin (AA Safe) */
+  /* Live Orange / Amber System (High-Contrast CTA) */
+  --color-amber-accent: #f97316;   /* Orange 500 — Ana CTA & Canlı Vurgular */
+  --color-amber-hover: #ea580c;    /* Orange 600 — Hover Durumu */
+  --color-amber-content: #c2410c;  /* Orange 700 — Açık Zeminde AA Güvenli Metin */
 
-  /* Semantic Aliases */
-  --color-primary-button: #f59e0b;
-  --color-primary-accent: #f59e0b;
-  --color-content-accent: #b45309; /* Açık zemindeki metin vurgusu */
+  /* Semantic Aliases (Eski Crimson sınıfları artık Turuncu Patlamasına bağlı) */
+  --color-primary-button: #f97316;
+  --color-primary-accent: #f97316;
+  --color-content-accent: #c2410c;
 
-  /* Legacy Compatibility (Eski Crimson sınıflarını kırmadan Amber'e bağlar) */
-  --color-crimson: #f59e0b;
-  --color-crimson-hover: #d97706;
+  --color-crimson: #f97316;
+  --color-crimson-hover: #ea580c;
 
   /* Nordic System Aliases */
   --color-nordic: #1e293b;
@@ -38,7 +37,7 @@
 
   /* Text Elements */
   --color-text-light: #475569;      /* Slate 600 */
-  --color-text-dark: #e2e8f0;       /* Slate 200 — Mat Kırık Beyaz (Dark Zemin) */
+  --color-text-dark: #ffffff;       /* Net Canlı Beyaz (Dark Zeminler) */
 
   /* Surface */
   --color-surface: #ffffff;
@@ -58,13 +57,8 @@
   --animate-marquee: marquee 25s linear infinite;
 
   @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-
-    100% {
-      transform: translateX(-50%);
-    }
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
   }
 }
 
@@ -185,7 +179,7 @@ body {
 }
 
 /* ==========================================================
-   RICHTEXT COMPONENTS (AA Metin Güvenliği Entegre Edildi)
+   RICHTEXT COMPONENTS
    ========================================================== */
 
 @layer components {
@@ -229,12 +223,11 @@ body {
   }
 
   .richtext blockquote {
-    @apply border-l-4 border-amber-500 pl-4 italic text-slate-700 bg-amber-50/40 py-2 rounded-r-lg;
+    @apply border-l-4 border-orange-500 pl-4 italic text-slate-700 bg-orange-50/40 py-2 rounded-r-lg;
   }
 
   .richtext a {
-    /* Açık zeminde Amber 700 (#b45309) kullanarak AA kontrastı garanti altına aldık */
-    @apply font-semibold text-[var(--color-amber-content)] underline decoration-amber-500/40 underline-offset-4 hover:decoration-amber-700 hover:text-amber-800 transition-colors;
+    @apply font-semibold text-[var(--color-amber-content)] underline decoration-orange-500/40 underline-offset-4 hover:decoration-orange-700 hover:text-orange-800 transition-colors;
   }
 
   .richtext strong {
@@ -247,7 +240,7 @@ body {
   }
 
   .richtext thead {
-    @apply bg-slate-800 text-slate-100;
+    @apply bg-slate-800 text-white;
   }
 
   .richtext thead th {
@@ -269,43 +262,19 @@ body {
 }
 
 /* ==========================================================
-   MOBILE RICHTEXT TABLES
-   ========================================================== */
-
-@media (max-width: 640px) {
-  .richtext table {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .richtext th,
-  .richtext td {
-    padding: 0.625rem;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    white-space: normal;
-    word-break: break-word;
-    hyphens: auto;
-  }
-}
-
-/* ==========================================================
-   ACCESSIBILITY OVERRIDES (Koyu Zeminde Parlak Amber Koruması)
+   ACCESSIBILITY OVERRIDES
    ========================================================== */
 
 @layer utilities {
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
-    color: #fbbf24; /* Amber 400 — Koyu zeminde yüksek okunabilirlik */
+    color: #f97316;
   }
 
   .dark .hover\:text-primary-accent:hover,
   footer .hover\:text-primary-accent:hover,
   [data-hero-banner] .hover\:text-primary-accent:hover {
-    color: #f59e0b;
+    color: #fbbf24;
   }
 }
