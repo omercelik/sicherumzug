@@ -2,10 +2,10 @@
 <nav class="bg-surface-background py-3 border-b border-gray-100" aria-label="Breadcrumb">
   <div class="container mx-auto px-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-text-body overflow-x-auto whitespace-nowrap scrollbar-none">
     <a href="{{ '/' | relative_url }}" class="hover:text-crimson transition-colors flex items-center gap-1">
-      {% include svg/home.svg class="text-[1rem] fill-current w-1em h-1em" %}
+      {% include svg/home.svg class="w-4 h-4 shrink-0 fill-current" %}
       <span>Home</span>
     </a>
-    {% include svg/chevron_right.svg class="text-sm text-gray-300 fill-current w-1em h-1em" %}
+    {% include svg/chevron_right.svg class="w-4 h-4 shrink-0 text-gray-300 fill-current" %}
 
     {% assign current_url = '' %}
     {% assign url_parts = page.url | split: '/' %}
@@ -21,7 +21,7 @@
           {% if part == 'bezirke' %}{% assign breadcrumb_title = 'Bezirke' %}{% endif %}
           {% if part == 'ratgeber' %}{% assign breadcrumb_title = 'Ratgeber' %}{% endif %}
           <a href="{{ current_url | append: '/' | relative_url }}" class="hover:text-crimson transition-colors">{{ breadcrumb_title }}</a>
-          {% include svg/chevron_right.svg class="text-sm text-gray-300 fill-current w-1em h-1em" %}
+          {% include svg/chevron_right.svg class="w-4 h-4 shrink-0 text-gray-300 fill-current" %}
         {% endif %}
       {% endif %}
     {% endfor %}
