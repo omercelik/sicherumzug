@@ -4,7 +4,7 @@
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================
-   DESIGN TOKENS — Tailwind CSS v4 (Saf AA 4.5:1 - 6:1 Palette)
+   DESIGN TOKENS — Tailwind CSS v4 (Saf AA Nordic & Amber System)
    ========================================================== */
 
 @theme {
@@ -13,19 +13,21 @@
   --color-primary-light: #334155;   /* Slate 700 */
   --color-primary-dark: #0f172a;    /* Slate 900 */
 
-  /* Saf AA Amber Signal (Kontrast ~5.2:1) */
-  --color-amber-accent: #f59e0b;    /* Amber 500 */
-  --color-amber-hover: #d97706;     /* Amber 600 */
+  /* Amber Signal System */
+  --color-amber-accent: #f59e0b;   /* Amber 500 — CTA, Buton, İkon, Badge BG */
+  --color-amber-hover: #d97706;    /* Amber 600 — Hover & Active Durumları */
+  --color-amber-content: #b45309;  /* Amber 700 — Açık Zeminde Okunabilir Metin (AA Safe) */
 
+  /* Semantic Aliases */
   --color-primary-button: #f59e0b;
   --color-primary-accent: #f59e0b;
-  --color-content-accent: #f59e0b;
+  --color-content-accent: #b45309; /* Açık zemindeki metin vurgusu */
 
-  /* Backward Compatibility (Eski Crimson sınıflarını kırmadan Amber'e bağlar) */
+  /* Legacy Compatibility (Eski Crimson sınıflarını kırmadan Amber'e bağlar) */
   --color-crimson: #f59e0b;
   --color-crimson-hover: #d97706;
 
-  /* Nordic System */
+  /* Nordic System Aliases */
   --color-nordic: #1e293b;
   --color-nordic-light: #334155;
   --color-nordic-dark: #0f172a;
@@ -34,9 +36,9 @@
   --color-background-light: #f8fafc; /* Slate 50 */
   --color-background-dark: #0f172a;  /* Slate 900 */
 
-  /* Text Elements (Saf AA yumuşaklığı) */
+  /* Text Elements */
   --color-text-light: #475569;      /* Slate 600 */
-  --color-text-dark: #e2e8f0;       /* Slate 200 - Mat Kırık Beyaz */
+  --color-text-dark: #e2e8f0;       /* Slate 200 — Mat Kırık Beyaz (Dark Zemin) */
 
   /* Surface */
   --color-surface: #ffffff;
@@ -183,7 +185,7 @@ body {
 }
 
 /* ==========================================================
-   RICHTEXT COMPONENTS (Saf AA Matlaştırma)
+   RICHTEXT COMPONENTS (AA Metin Güvenliği Entegre Edildi)
    ========================================================== */
 
 @layer components {
@@ -231,7 +233,8 @@ body {
   }
 
   .richtext a {
-    @apply font-semibold text-amber-600 underline decoration-amber-500/40 underline-offset-4 hover:decoration-amber-600 hover:text-amber-700 transition-colors;
+    /* Açık zeminde Amber 700 (#b45309) kullanarak AA kontrastı garanti altına aldık */
+    @apply font-semibold text-[var(--color-amber-content)] underline decoration-amber-500/40 underline-offset-4 hover:decoration-amber-700 hover:text-amber-800 transition-colors;
   }
 
   .richtext strong {
@@ -290,14 +293,14 @@ body {
 }
 
 /* ==========================================================
-   ACCESSIBILITY OVERRIDES (Amber Contrast Protection)
+   ACCESSIBILITY OVERRIDES (Koyu Zeminde Parlak Amber Koruması)
    ========================================================== */
 
 @layer utilities {
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
-    color: #fbbf24; /* Amber 400 */
+    color: #fbbf24; /* Amber 400 — Koyu zeminde yüksek okunabilirlik */
   }
 
   .dark .hover\:text-primary-accent:hover,
