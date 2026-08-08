@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 var mobileMenu = document.getElementById('mobile-menu');
 var faqButtons = document.querySelectorAll('[data-faq-toggle]');
