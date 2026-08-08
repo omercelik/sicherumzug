@@ -1,8 +1,6 @@
-{% assign container_classes = include.container_classes | default: 'container relative z-20 mx-auto p-4 pt-6 md:pt-8 text-white' %}
+{% assign container_classes = include.container_classes | default: 'container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white' %}
 {% assign content_classes = include.content_classes | default: 'max-w-4xl space-y-4 md:space-y-5' %}
 {% assign cta_wrap_classes = include.cta_wrap_classes | default: 'flex flex-col gap-3 pt-4' %}
-{% assign title_class = include.title_class | default: '' %}
-{% assign subtitle_class = include.subtitle_class | default: '' %}
 {% assign cta_variant_key = include.cta_variant | default: 'default' %}
 {% assign cta_variant = site.data.cta_variants[cta_variant_key] | default: site.data.cta_variants.default %}
 
@@ -15,12 +13,20 @@
 
     <!-- H1 Headline -->
     <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4" data-hero-heading>
-      Professioneller Umzug & Räumung — <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">Stressfrei, Sicher & Zum Fixpreis</span>
+      {% if include.title %}
+        {{ include.title }}
+      {% else %}
+        Professioneller Umzug & Räumung — <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">Stressfrei, Sicher & Zum Fixpreis</span>
+      {% endif %}
     </h1>
 
     <!-- Sub-Paragraph (Service Anchors) -->
     <p class="text-slate-300 text-base md:text-lg max-w-3xl mb-6">
-      Sicher Team ist Ihr verlässlicher Experte für <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Privatumzüge</span>, <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Firmenumzüge</span> und <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Räumung & Entrümpelung</span> österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie.
+      {% if include.subtitle %}
+        {{ include.subtitle }}
+      {% else %}
+        Sicher Team ist Ihr verlässlicher Experte für <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Privatumzüge</span>, <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Firmenumzüge</span> und <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Räumung & Entrümpelung</span> österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie.
+      {% endif %}
     </p>
 
     <!-- Modern 2x2 Feature Grid (Micro-Glassmorphism) -->
@@ -64,8 +70,8 @@
       </div>
     </div>
 
-    {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label %}
-    {% assign primary_url = cta_variant.primary_url | default: include.primary_cta.url | default: include.primary_url %}
+    {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label | default: 'Gratis Besichtigung sichern' %}
+    {% assign primary_url = cta_variant.primary_url | default: include.primary_cta.url | default: include.primary_url | default: '#angebot' %}
     {% assign whatsapp_label = cta_variant.whatsapp_label | default: include.whatsapp_label | default: 'WhatsApp' %}
     {% assign whatsapp_url = include.whatsapp_url | default: cta_variant.whatsapp_url | default: site.whatsapp %}
     {% assign call_label = cta_variant.call_label | default: include.call_label | default: site.phone %}
@@ -75,26 +81,26 @@
     {% endif %}
     <div class="mt-8 flex flex-col sm:flex-row items-center gap-4">
       {% if primary_label and primary_url %}
-        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto min-h-[56px] items-center justify-center rounded-full bg-crimson hover:bg-crimson-hover text-white px-8 py-4 text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto min-h-[56px] items-center justify-center rounded-full bg-crimson hover:bg-crimson-hover text-white px-8 py-4 text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
           {{ primary_label }}
         </a>
       {% endif %}
       <div class="flex flex-row gap-3 w-full sm:w-auto">
-        <a href="{{ whatsapp_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-2 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ whatsapp_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-2 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
           <span class="material-symbols-outlined text-[22px] text-white">chat</span>
           <span class="flex flex-col items-center justify-center text-center leading-[1.1]">
             {% if whatsapp_label == 'WhatsApp Foto senden' %}
               <span class="text-[13px] md:text-sm">WhatsApp</span>
-              <span class="text-[12px] md:text-[12px] font-medium opacity-90">Foto senden</span>
+              <span class="text-[12px] font-medium opacity-90">Foto senden</span>
             {% elsif whatsapp_label == 'Express per WhatsApp' %}
               <span class="text-[13px] md:text-sm">Express per</span>
-              <span class="text-[12px] md:text-[12px] font-medium opacity-90">WhatsApp</span>
+              <span class="text-[12px] font-medium opacity-90">WhatsApp</span>
             {% else %}
               <span>{{ whatsapp_label }}</span>
             {% endif %}
           </span>
         </a>
-        <a href="{{ call_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-opacity duration-200">
+        <a href="{{ call_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
           <span class="material-symbols-outlined text-lg">call</span>
           <span class="whitespace-nowrap">{{ call_label }}</span>
         </a>
