@@ -67,7 +67,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
+<section class="bg-white py-16">
   <div class="container mx-auto px-4">
     <div class="grid gap-10 lg:grid-cols-3">
       <div class="lg:col-span-2">
@@ -89,14 +89,14 @@ layout: default
         {% endif %}
       </div>
       <aside class="lg:col-span-1">
-        <div class="sticky top-24 rounded-3xl bg-background-light p-6 shadow-xl">
+        <div class="sticky top-24 rounded-3xl bg-white p-8 shadow-sm border border-gray-100">
           <p class="text-l font-semibold uppercase tracking-[0.3em] text-primary-accent">Kostenloses Angebot</p>
           <h2 class="mt-3 text-2xl font-extrabold text-primary">Direkt anfragen</h2>
           {% include quote-form.html %}
 
           <div class="mt-8 pt-6 border-t border-gray-200 hidden lg:block">
             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-3">Auf dieser Seite</h3>
-            <div class="text-sm text-text-light hover:[&_a]:text-crimson">
+            <div class="text-sm text-text-light hover:[&_a]:text-orange-600">
               {% include toc.html html=content %}
             </div>
           </div>
@@ -106,12 +106,12 @@ layout: default
   </div>
 </section>
 {% if page.process %}
-<section class="bg-background-light py-12">
+<section class="bg-background-light py-16">
   <div class="container mx-auto px-4">
     <h2 class="text-2xl font-extrabold text-primary">Ihr Ablauf</h2>
     <div class="mt-6 grid gap-6 md:grid-cols-2">
       {% for step in page.process %}
-      <div class="rounded-2xl border border-gray-200 bg-white p-6">
+      <div class="flex h-full flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 text-left shadow-sm hover:shadow-lg transition-opacity duration-200">
         <p class="text-l font-semibold uppercase tracking-[0.3em] text-primary-accent">Schritt {{ forloop.index }}</p>
         <h3 class="mt-3 text-xl font-bold text-primary">{{ step.title }}</h3>
         <p class="mt-2 text-sm text-text-light">{{ step.description }}</p>
@@ -122,9 +122,9 @@ layout: default
 </section>
 {% endif %}
 {% if page.collection == 'districts' %}
-<section class="bg-background-light py-12">
+<section class="bg-background-light py-16">
   <div class="container mx-auto px-4">
-    <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+    <div class="rounded-3xl border border-gray-100 bg-white p-8 text-left shadow-sm">
       <p class="text-sm font-semibold uppercase tracking-[0.3em] text-primary-accent">Lokaler Nachweis</p>
       <h2 class="mt-3 text-2xl font-extrabold text-primary">Standort-Check für {{ page.title }}</h2>
       <p class="mt-3 text-sm text-text-light">{{ page.local_logistics_note }}</p>
@@ -139,12 +139,12 @@ layout: default
   {% assign faq_items = site.data.faqs %}
 {% endif %}
 {% if faq_items %}
-<section class="bg-white py-12">
+<section class="bg-white py-16">
   <div class="container mx-auto px-4">
     <h2 class="text-2xl font-extrabold text-primary">FAQ</h2>
     <div class="mt-6 space-y-4">
       {% for faq in faq_items %}
-      <details class="group rounded-2xl border border-gray-200 bg-background-light p-4 shadow-sm hover:shadow-md transition-opacity duration-200">
+      <details class="group rounded-2xl border border-gray-100 bg-background-light p-4 shadow-sm hover:shadow-lg transition-opacity duration-200">
         <summary class="flex cursor-pointer items-center justify-between text-left text-base font-semibold text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg list-none [&::-webkit-details-marker]:hidden">
           <span class="pr-4">{{ faq.question }}</span>
           {% include svg/expand_more.svg class="w-6 h-6 shrink-0 transition-transform duration-200 group-open:rotate-180 fill-current" %}
@@ -159,7 +159,7 @@ layout: default
 </section>
 {% endif %}
 {% if site.guides.size > 0 %}
-<section class="bg-background-light py-12">
+<section class="bg-background-light py-16">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between">
       <h2 class="text-2xl font-extrabold text-primary">Nützliche Artikel</h2>
@@ -171,7 +171,7 @@ layout: default
       {% assign related = site.guides | sort: 'date' | reverse %}
       {% endif %}
       {% for guide in related limit:3 %}
-      <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <article class="flex h-full flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 text-left shadow-sm hover:shadow-lg transition-opacity duration-200 shadow-sm">
         <p class="text-xs uppercase tracking-[0.3em] text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
         <h3 class="mt-2 text-lg font-bold text-primary">{{ guide.title }}</h3>
         <p class="mt-2 text-sm text-text-light">{{ guide.excerpt | strip_html | truncate: 120 }}</p>
