@@ -21,7 +21,7 @@ Why it matters:
 Recommended solution:
 - Add `layout: null` to the frontmatter of `assets/js/site.js` and `browserconfig.xml`.
 Do not:
-- Do not remove the frontmatter entirely, as `site.js` still relies on Liquid includes (`{% include svg/close.svg %}`).
+- Do not remove the frontmatter entirely, as `site.js` still relies on Liquid includes (`{% raw %}{% include svg/close.svg %}{% endraw %}`).
 Verification required:
 - Test that navigating to `/assets/js/site.js` returns raw JavaScript. Verify that tapping the mobile menu accordion triggers `hidden` class removal and updates `aria-expanded` to `true`.
 
@@ -41,7 +41,7 @@ Root cause:
 Why it matters:
 - Severely degrades visual quality. Seeing the word "chat" instead of a WhatsApp icon looks broken and confusing.
 Recommended solution:
-- Convert the remaining `<span class="material-symbols-outlined">...</span>` tags in `_layouts/home.html` and `_includes/hero-content.html` to inline SVGs following the `{% include svg/... %}` pattern used elsewhere, to fully eliminate the external font dependency.
+- Convert the remaining `<span class="material-symbols-outlined">...</span>` tags in `_layouts/home.html` and `_includes/hero-content.html` to inline SVGs following the `{% raw %}{% include svg/... %}{% endraw %}` pattern used elsewhere, to fully eliminate the external font dependency.
 - Remove the `@font-face` declaration for Material Symbols from `assets/css/tailwind.css`.
 Do not:
 - Do not download and re-introduce the `.woff2` font file. Stick strictly to the inline SVG migration.
