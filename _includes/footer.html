@@ -16,9 +16,9 @@
         </a>
         <p class="text-sm text-white/70 leading-relaxed">Staatlich konzessionierter Fachbetrieb für Umzug, Räumung und Entrümpelung in ganz Österreich. Fixpreis-Garantie, Wertanrechnung &amp; All-Risk-Transportversicherung.</p>
         <address class="space-y-2 text-sm text-white/80 not-italic">
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">location_on</span>{{ site.address.street }}, {{ site.address.postal_code }} {{ site.address.city }}</p>
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">call</span>Tel: <a class="hover:text-red-400 font-bold" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a></p>
-          <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-red-400">mail</span>Email: <a class="hover:text-red-400 font-bold" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <p class="flex items-center gap-2">{% include svg/location_on.svg class="text-base text-red-400 fill-current w-1em h-1em" %}{{ site.address.street }}, {{ site.address.postal_code }} {{ site.address.city }}</p>
+          <p class="flex items-center gap-2">{% include svg/call.svg class="text-base text-red-400 fill-current w-1em h-1em" %}Tel: <a class="hover:text-red-400 font-bold" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a></p>
+          <p class="flex items-center gap-2">{% include svg/mail.svg class="text-base text-red-400 fill-current w-1em h-1em" %}Email: <a class="hover:text-red-400 font-bold" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </address>
       </div>
       <div>
@@ -56,10 +56,10 @@
         </ul>
         <div class="mt-6 pt-4 border-t border-white/5 flex gap-4">
           <a class="text-white/60 hover:text-red-400 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded-full p-1 inline-flex items-center justify-center" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook">
-            <span class="material-symbols-outlined text-xl">public</span>
+            {% include svg/public.svg class="text-xl fill-current w-1em h-1em" %}
           </a>
           <a class="text-white/60 hover:text-red-400 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded-full p-1 inline-flex items-center justify-center" href="{{ site.instagram }}" aria-label="Instagram">
-            <span class="material-symbols-outlined text-xl">photo_camera</span>
+            {% include svg/photo_camera.svg class="text-xl fill-current w-1em h-1em" %}
           </a>
         </div>
 
