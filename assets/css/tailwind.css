@@ -23,27 +23,28 @@
   --color-nordic-light: #334155;
   --color-nordic-dark: #0f172a;
 
+
   /* ----------------------------------------------------------
-     PREMIUM ORANGE
-     
+     PREMIUM ORANGE SYSTEM
+
      Orange 500:
-     decorative / dark-background accent
+     Decorative / visual accent
 
      Orange 400:
-     dark-background readable accent
+     Readable on dark surfaces
 
      Orange 700:
-     light-background text + buttons
+     Readable text + CTA on light surfaces
 
      Orange 800:
-     hover / strong contrast
+     Hover / stronger contrast
      ---------------------------------------------------------- */
 
   --color-amber-accent: #f97316;
   --color-amber-hover: #ea580c;
-
   --color-amber-content: #c2410c;
   --color-amber-strong: #9a3412;
+
 
   /* ----------------------------------------------------------
      SEMANTIC ALIASES
@@ -56,9 +57,12 @@
   /*
    * Legacy compatibility only.
    * These are NOT red/crimson colors anymore.
+   * They map to the current orange system.
    */
+
   --color-crimson: #f97316;
   --color-crimson-hover: #ea580c;
+
 
   /* ----------------------------------------------------------
      BACKGROUNDS
@@ -70,12 +74,14 @@
   --color-surface: #ffffff;
   --color-surface-background: #f8fafc;
 
+
   /* ----------------------------------------------------------
      TEXT
      ---------------------------------------------------------- */
 
   --color-text-light: #475569;
   --color-text-dark: #ffffff;
+
 
   /* ----------------------------------------------------------
      TYPOGRAPHY
@@ -89,6 +95,7 @@
     BlinkMacSystemFont,
     "Roboto",
     sans-serif;
+
 
   /* ----------------------------------------------------------
      ANIMATION
@@ -113,7 +120,6 @@
    ========================================================== */
 
 :root {
-
   color-scheme: light;
 
   --page-bg: #f8fafc;
@@ -132,14 +138,10 @@
   --brand-orange: #f97316;
   --brand-orange-hover: #ea580c;
 
-  /*
-   * AA-safe orange for text on light backgrounds
-   */
+  /* AA-safe orange for text on light surfaces */
   --brand-orange-dark: #c2410c;
 
-  /*
-   * Stronger orange for focus / maximum contrast
-   */
+  /* Strong focus / high contrast orange */
   --brand-orange-strong: #9a3412;
 
   /* Dark system */
@@ -151,15 +153,17 @@
   /* Layout */
   --content-width: 80rem;
   --content-padding: 1rem;
+
+  /* Icon system */
+  --icon-size-xs: 1rem;
+  --icon-size-sm: 1.125rem;
+  --icon-size-md: 1.25rem;
+  --icon-size-lg: 1.5rem;
+  --icon-size-xl: 1.75rem;
 }
 
 
-/* ==========================================================
-   RESPONSIVE ROOT SPACING
-   ========================================================== */
-
 @media (min-width: 768px) {
-
   :root {
     --content-padding: 1.5rem;
   }
@@ -193,8 +197,13 @@ body {
 
 /* ==========================================================
    GLOBAL CONTAINER
-   ----------------------------------------------------------
-   Keeps every major section aligned to one vertical grid.
+
+   All major sections should use:
+
+   .container.mx-auto.px-4.md\:px-6
+
+   This keeps the entire site aligned to one
+   consistent vertical grid.
    ========================================================== */
 
 .container {
@@ -252,8 +261,8 @@ a {
 
 /* ==========================================================
    ACCESSIBLE FOCUS
-   ----------------------------------------------------------
-   Strong visible focus indicator.
+
+   WCAG 2.2 AA
    ========================================================== */
 
 a:focus-visible,
@@ -285,30 +294,32 @@ select:focus-visible {
 @media (max-width: 767px) {
 
   [data-hero-banner] {
-    --hero-image: var(
-      --hero-mobile,
-      var(--hero-desktop)
-    );
+    --hero-image:
+      var(--hero-mobile, var(--hero-desktop));
   }
+
 }
 
 
 /*
  * IMPORTANT:
- * The actual hero HTML already contains its own scrim:
+ *
+ * The hero HTML already contains its own scrim:
  *
  * bg-gradient-to-b
  * from-slate-950/75
  * via-slate-950/80
  * to-slate-950/90
  *
- * Therefore we deliberately DO NOT add ::after here.
+ * Therefore we intentionally DO NOT create another
+ * ::after overlay here.
  *
  * This prevents:
+ *
  * - double darkening
- * - text being covered
  * - unnecessary stacking contexts
- * - inconsistent hero contrast
+ * - inconsistent contrast
+ * - visual heaviness
  */
 
 
@@ -327,11 +338,7 @@ select:focus-visible {
 }
 
 
-/*
- * Accent on dark hero.
- *
- * Orange 400 is intentionally used here.
- */
+/* Dark hero accent */
 
 [data-hero-banner] .text-primary-accent {
   color: #fb923c;
@@ -350,38 +357,28 @@ select:focus-visible {
    PREMIUM ORANGE SYSTEM
    ========================================================== */
 
-/*
- * Decorative accent
- */
+/* Decorative accent */
 
 .text-primary-accent {
   color: var(--brand-orange);
 }
 
 
-/*
- * AA-safe content accent on light surfaces
- */
+/* AA-safe content accent */
 
 .text-content-accent {
   color: var(--brand-orange-dark);
 }
 
 
-/*
- * Accent background
- *
- * Mainly decorative.
- */
+/* Decorative orange background */
 
 .bg-primary-accent {
   background-color: var(--brand-orange);
 }
 
 
-/*
- * Accent border
- */
+/* Accent border */
 
 .border-primary-accent {
   border-color: var(--brand-orange);
@@ -403,11 +400,8 @@ select:focus-visible {
 
 /* ==========================================================
    PRIMARY ORANGE BUTTON
-   ----------------------------------------------------------
-   IMPORTANT:
-   Orange 500 + white text is NOT sufficient for normal AA text.
-   
-   Therefore actual CTA buttons use Orange 700.
+
+   Orange 700 + white text
    ========================================================== */
 
 .bg-primary-button {
@@ -421,11 +415,12 @@ select:focus-visible {
 
 
 /*
- * Legacy Tailwind usage:
+ * Legacy usage:
  *
  * bg-primary-accent
  *
- * maps to AA-safe button orange.
+ * When used as a button/background,
+ * make it AA-safe.
  */
 
 .bg-primary-accent {
@@ -439,14 +434,15 @@ select:focus-visible {
 
 
 /*
- * Existing code using:
+ * IMPORTANT:
+ *
+ * We intentionally DO NOT globally override:
  *
  * bg-orange-500
+ * bg-orange-400
  *
- * should remain visually orange.
- *
- * We do NOT globally override Tailwind's orange utilities,
- * because they may be used for decorative elements.
+ * because those utilities may be used for
+ * decorative elements.
  */
 
 
@@ -542,7 +538,6 @@ select:focus-visible {
 
 .trust-badge {
   font-size: 0.8125rem;
-
   line-height: 1.4;
 
   letter-spacing: 0.06em;
@@ -555,8 +550,9 @@ select:focus-visible {
 
 /* ==========================================================
    SECTION RHYTHM
-   ----------------------------------------------------------
-   Prevents visual jumps and inconsistent section structure.
+
+   Keeps the page visually aligned and prevents
+   random protrusions between sections.
    ========================================================== */
 
 section {
@@ -584,6 +580,238 @@ section > .container {
 
 .border-gray-200 {
   border-color: #cbd5e1;
+}
+
+
+/* ==========================================================
+   SVG ICON SYSTEM
+   ========================================================== */
+
+/*
+ * All SVG icons should:
+ *
+ * - remain proportional
+ * - never shrink unexpectedly
+ * - never grow to viewport size
+ * - inherit currentColor
+ *
+ * Preferred markup:
+ *
+ * <svg class="icon icon-md" ...>
+ *
+ * or:
+ *
+ * <span class="icon icon-md">
+ *   <svg ...>
+ * </span>
+ */
+
+
+/* Base SVG behavior */
+
+svg {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+
+/*
+ * Standard icon class
+ */
+
+.icon {
+  display: inline-block;
+  flex: 0 0 auto;
+
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+
+  max-width: var(--icon-size-md);
+  max-height: var(--icon-size-md);
+
+  vertical-align: middle;
+
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+
+/* Icon sizes */
+
+.icon-xs {
+  width: var(--icon-size-xs);
+  height: var(--icon-size-xs);
+
+  max-width: var(--icon-size-xs);
+  max-height: var(--icon-size-xs);
+}
+
+.icon-sm {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+
+  max-width: var(--icon-size-sm);
+  max-height: var(--icon-size-sm);
+}
+
+.icon-md {
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+
+  max-width: var(--icon-size-md);
+  max-height: var(--icon-size-md);
+}
+
+.icon-lg {
+  width: var(--icon-size-lg);
+  height: var(--icon-size-lg);
+
+  max-width: var(--icon-size-lg);
+  max-height: var(--icon-size-lg);
+}
+
+.icon-xl {
+  width: var(--icon-size-xl);
+  height: var(--icon-size-xl);
+
+  max-width: var(--icon-size-xl);
+  max-height: var(--icon-size-xl);
+}
+
+
+/*
+ * SVGs used inside an element with .icon-wrapper
+ */
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+}
+
+.icon-wrapper > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  max-width: 1.25rem;
+  max-height: 1.25rem;
+
+  flex: 0 0 1.25rem;
+}
+
+
+/* ==========================================================
+   MOBILE SVG ICON SAFETY
+   ========================================================== */
+
+@media (max-width: 639px) {
+
+  .icon,
+  .icon-sm,
+  .icon-md,
+  .icon-lg,
+  .icon-xl {
+    flex-shrink: 0;
+  }
+
+  /*
+   * Normal inline icons should remain compact on mobile.
+   */
+
+  .icon-md {
+    width: 1.125rem;
+    height: 1.125rem;
+
+    max-width: 1.125rem;
+    max-height: 1.125rem;
+  }
+
+  .icon-lg {
+    width: 1.375rem;
+    height: 1.375rem;
+
+    max-width: 1.375rem;
+    max-height: 1.375rem;
+  }
+
+  .icon-xl {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE STICKY CTA ICONS
+
+   Specifically protects the bottom conversion bar
+   from oversized SVG icons.
+   ========================================================== */
+
+@media (max-width: 767px) {
+
+  .fixed.bottom-0 svg {
+    width: 1.125rem !important;
+    height: 1.125rem !important;
+
+    max-width: 1.125rem !important;
+    max-height: 1.125rem !important;
+
+    min-width: 1.125rem;
+    min-height: 1.125rem;
+
+    flex: 0 0 1.125rem;
+
+    display: inline-block;
+  }
+
+}
+
+
+/*
+ * If the SVG include receives the class:
+ *
+ * class="text-base fill-current w-1em h-1em"
+ *
+ * keep the SVG controlled on mobile.
+ */
+
+@media (max-width: 639px) {
+
+  .fixed.bottom-0 a svg {
+    width: 1.125rem !important;
+    height: 1.125rem !important;
+  }
+
+}
+
+
+/* ==========================================================
+   SVG COLOR INHERITANCE
+   ========================================================== */
+
+.icon,
+.icon svg,
+.icon-wrapper svg,
+button svg,
+a svg {
+  color: inherit;
+}
+
+
+/*
+ * Do not force fill on SVGs that are explicitly stroke-based.
+ */
+
+.icon[data-stroke],
+.icon-wrapper[data-stroke] svg {
+  fill: none;
 }
 
 
@@ -637,7 +865,7 @@ section > .container {
   }
 
   /*
-   * AA-safe orange text on light backgrounds.
+   * AA-safe orange text on light surfaces.
    */
 
   .richtext a {
@@ -656,7 +884,6 @@ section > .container {
     @apply mt-6 w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm;
 
     border-collapse: collapse;
-
     table-layout: auto;
   }
 
@@ -680,6 +907,7 @@ section > .container {
   .richtext tbody tr:last-child td {
     @apply border-b-0;
   }
+
 }
 
 
@@ -691,9 +919,7 @@ input,
 textarea,
 select {
   border-color: #cbd5e1;
-
   background-color: #ffffff;
-
   color: #0f172a;
 }
 
@@ -704,8 +930,7 @@ textarea::placeholder {
 
 
 /*
- * Focus:
- * Orange border + visible focus ring.
+ * Focus state
  */
 
 input:focus,
@@ -719,7 +944,7 @@ select:focus {
 
 
 /*
- * Disabled form controls
+ * Disabled controls
  */
 
 input:disabled,
@@ -776,23 +1001,19 @@ select:disabled {
   font-style: normal;
 
   font-size: 1em;
-
   line-height: 1;
 
   letter-spacing: normal;
-
   text-transform: none;
 
   display: inline-block;
 
   white-space: nowrap;
-
   word-wrap: normal;
 
   direction: ltr;
 
   -webkit-font-feature-settings: "liga";
-
   -webkit-font-smoothing: antialiased;
 
   font-feature-settings: "liga";
@@ -849,7 +1070,6 @@ select:disabled {
     color: #fb923c;
   }
 
-
   .dark .hover\:text-primary-accent:hover,
   footer .hover\:text-primary-accent:hover,
   [data-hero-banner] .hover\:text-primary-accent:hover {
@@ -872,7 +1092,7 @@ select:disabled {
 
 
   /*
-   * Content accent utility
+   * Content accent
    */
 
   .text-content-accent {
@@ -881,10 +1101,14 @@ select:disabled {
 
 
   /*
-   * Legacy crimson classes.
+   * ----------------------------------------------------------
+   * LEGACY CRIMSON COMPATIBILITY
+   * ----------------------------------------------------------
    *
-   * They remain only so old templates don't break.
-   * They are now completely mapped to the orange system.
+   * These classes are kept only so old templates
+   * do not break.
+   *
+   * They are now completely mapped to orange.
    */
 
   .text-crimson {
@@ -907,6 +1131,7 @@ select:disabled {
   .hover\:bg-crimson:hover {
     background-color: var(--brand-orange-strong);
   }
+
 }
 
 
@@ -919,15 +1144,14 @@ select:disabled {
   *,
   *::before,
   *::after {
-
     animation-duration: 0.01ms !important;
-
     animation-iteration-count: 1 !important;
 
     transition-duration: 0.01ms !important;
 
     scroll-behavior: auto !important;
   }
+
 }
 
 
@@ -949,6 +1173,7 @@ select:disabled {
   h2 {
     letter-spacing: -0.02em;
   }
+
 }
 
 
@@ -965,9 +1190,7 @@ select:disabled {
 
   [data-hero-banner] {
     background-image: none !important;
-
     background-color: #ffffff !important;
-
     color: #000000 !important;
   }
 
@@ -978,4 +1201,5 @@ select:disabled {
   .no-print {
     display: none !important;
   }
+
 }
