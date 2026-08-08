@@ -1,49 +1,69 @@
+```css
 @import "tailwindcss";
-
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================
-   DESIGN TOKENS — Nordic Slate & High-Contrast Orange System
+   DESIGN SYSTEM
+   Nordic Slate + High-Contrast Orange
+   WCAG 2.2 AA / SEO / GEO / Premium UI
    ========================================================== */
 
 @theme {
-  /* Nordic Slate Base */
-  --color-primary: #1e293b;         /* Slate 800 */
-  --color-primary-light: #334155;   /* Slate 700 */
-  --color-primary-dark: #0f172a;    /* Slate 900 */
 
-  /* Live Orange / Amber System (High-Contrast CTA) */
-  --color-amber-accent: #f97316;   /* Orange 500 — Ana CTA & Canlı Vurgular */
-  --color-amber-hover: #ea580c;    /* Orange 600 — Hover Durumu */
-  --color-amber-content: #c2410c;  /* Orange 700 — Açık Zeminde AA Güvenli Metin */
+  /* ----------------------------------------------------------
+     CORE BRAND COLORS
+     ---------------------------------------------------------- */
 
-  /* Semantic Aliases (Eski Crimson sınıfları artık Turuncu Patlamasına bağlı) */
+  --color-primary: #0f172a;          /* Slate 900 */
+  --color-primary-light: #1e293b;    /* Slate 800 */
+  --color-primary-dark: #020617;     /* Slate 950 */
+
+  /* ----------------------------------------------------------
+     ORANGE ACCENT
+     Orange is primarily for CTA, icons and emphasis.
+     ---------------------------------------------------------- */
+
+  --color-amber-accent: #f97316;     /* Orange 500 */
+  --color-amber-hover: #ea580c;      /* Orange 600 */
+  --color-amber-content: #c2410c;    /* Orange 700 - AA on light */
+
+  /* Legacy aliases */
   --color-primary-button: #f97316;
   --color-primary-accent: #f97316;
   --color-content-accent: #c2410c;
-
   --color-crimson: #f97316;
   --color-crimson-hover: #ea580c;
 
-  /* Nordic System Aliases */
+  /* ----------------------------------------------------------
+     NORDIC SLATE SYSTEM
+     ---------------------------------------------------------- */
+
   --color-nordic: #1e293b;
   --color-nordic-light: #334155;
   --color-nordic-dark: #0f172a;
 
-  /* Backgrounds & Surfaces */
-  --color-background-light: #f8fafc; /* Slate 50 */
-  --color-background-dark: #0f172a;  /* Slate 900 */
+  /* ----------------------------------------------------------
+     BACKGROUNDS
+     ---------------------------------------------------------- */
 
-  /* Text Elements */
-  --color-text-light: #475569;      /* Slate 600 */
-  --color-text-dark: #ffffff;       /* Net Canlı Beyaz (Dark Zeminler) */
+  --color-background-light: #f8fafc;
+  --color-background-dark: #0f172a;
 
-  /* Surface */
   --color-surface: #ffffff;
   --color-surface-background: #f8fafc;
 
-  /* Typography */
+  /* ----------------------------------------------------------
+     TEXT
+     ---------------------------------------------------------- */
+
+  --color-text-light: #475569;
+  --color-text-dark: #ffffff;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY
+     ---------------------------------------------------------- */
+
   --font-display:
     "Inter",
     "Segoe UI",
@@ -53,38 +73,164 @@
     "Roboto",
     sans-serif;
 
-  /* Animation */
+  /* ----------------------------------------------------------
+     ANIMATION
+     ---------------------------------------------------------- */
+
   --animate-marquee: marquee 25s linear infinite;
 
   @keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
+
 /* ==========================================================
-   BASE & RESET
+   ROOT
    ========================================================== */
 
 :root {
   color-scheme: light;
+
+  --page-bg: #f8fafc;
+  --surface: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+
+  --brand-orange: #f97316;
+  --brand-orange-hover: #ea580c;
+  --brand-orange-dark: #c2410c;
+
+  --dark-bg: #0f172a;
+  --dark-surface: #1e293b;
+  --dark-border: #334155;
+
+  --content-width: 80rem;
+  --content-padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 1.5rem;
+  }
+}
+
+
+/* ==========================================================
+   BASE RESET
+   ========================================================== */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--page-bg);
 }
 
 body {
-  font-family: var(--font-display);
-  background-color: var(--color-background-light);
-  color: var(--color-text-light);
+  margin: 0;
   min-height: 100vh;
+
+  font-family: var(--font-display);
+
+  background-color: var(--page-bg);
+  color: var(--text-secondary);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
 }
 
+
 /* ==========================================================
-   HERO BANNER
+   GLOBAL CONTAINER
+   ----------------------------------------------------------
+   IMPORTANT:
+   Every major section should use:
+   .container.mx-auto.px-4.md\:px-6
+
+   This keeps the entire website on one vertical grid.
+   ========================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+}
+
+
+/* ==========================================================
+   HEADINGS
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+
+h1 {
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  letter-spacing: -0.02em;
+}
+
+
+/* ==========================================================
+   LINKS
+   ========================================================== */
+
+a {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}
+
+
+/* ==========================================================
+   HERO
    ========================================================== */
 
 [data-hero-banner] {
   --hero-image: var(--hero-desktop);
+
+  position: relative;
+
   background-image: var(--hero-image);
   background-size: cover;
   background-position: center;
@@ -97,92 +243,248 @@ body {
   }
 }
 
+
 /* ==========================================================
-   MATERIAL SYMBOLS
+   HERO CONTENT ALIGNMENT
    ========================================================== */
 
-@font-face {
-  font-family: "Material Symbols Outlined Local";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/material-symbols-outlined.woff2") format("woff2");
+[data-hero-banner] > .container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.material-symbols-outlined {
-  font-family:
-    "Material Symbols Outlined",
-    "Material Symbols Outlined Local",
-    sans-serif;
-
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1em;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-
-  -webkit-font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-}
 
 /* ==========================================================
-   CUSTOM SCROLLBAR
+   HERO SCRIM
+   ----------------------------------------------------------
+   Strong enough for white text.
    ========================================================== */
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+[data-hero-banner]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 6, 23, 0.78) 0%,
+      rgba(2, 6, 23, 0.82) 55%,
+      rgba(2, 6, 23, 0.94) 100%
+    );
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary-light);
-  border-radius: 999px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--color-background-light);
-}
 
 /* ==========================================================
-   GENERAL UTILITIES
+   HERO TEXT
+   ========================================================== */
+
+[data-hero-banner] h1,
+[data-hero-banner] h2,
+[data-hero-banner] h3 {
+  color: #ffffff;
+}
+
+[data-hero-banner] p {
+  color: #e2e8f0;
+}
+
+[data-hero-banner] .text-orange-400,
+[data-hero-banner] .text-orange-500,
+[data-hero-banner] .text-primary-accent {
+  color: #fb923c;
+}
+
+
+/* ==========================================================
+   PREMIUM ORANGE ACCENT
+   ----------------------------------------------------------
+   Accent should remain controlled.
+   ========================================================== */
+
+.text-primary-accent {
+  color: var(--brand-orange);
+}
+
+.text-content-accent {
+  color: var(--brand-orange-dark);
+}
+
+.bg-primary-accent {
+  background-color: var(--brand-orange);
+}
+
+.border-primary-accent {
+  border-color: var(--brand-orange);
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+   ----------------------------------------------------------
+   Orange 500 + Slate 950
+   Strong AA contrast.
+   ========================================================== */
+
+.bg-primary {
+  background-color: var(--dark-bg);
+}
+
+.hover\:bg-primary-light:hover {
+  background-color: var(--dark-surface);
+}
+
+
+/* Orange CTA */
+
+.bg-primary-button,
+.bg-primary-accent {
+  background-color: var(--brand-orange);
+}
+
+.hover\:bg-primary-button:hover,
+.hover\:bg-primary-accent:hover {
+  background-color: var(--brand-orange-hover);
+}
+
+
+/* ==========================================================
+   PREMIUM CARD SYSTEM
+   ========================================================== */
+
+.premium-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 8px 24px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 4px 6px rgba(15, 23, 42, 0.05),
+    0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ==========================================================
+   DARK SECTION SYSTEM
+   ========================================================== */
+
+.section-dark {
+  background:
+    linear-gradient(
+      180deg,
+      #020617 0%,
+      #0f172a 100%
+    );
+
+  color: #e2e8f0;
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: #ffffff;
+}
+
+.section-dark p {
+  color: #cbd5e1;
+}
+
+.section-dark .card {
+  background: rgba(30, 41, 59, 0.72);
+  border-color: #334155;
+}
+
+
+/* ==========================================================
+   DARK SURFACES
+   ========================================================== */
+
+.bg-background-dark {
+  background-color: #0f172a;
+}
+
+.bg-primary-dark {
+  background-color: #020617;
+}
+
+
+/* ==========================================================
+   TRUST BAR
    ========================================================== */
 
 .trust-badge {
-  font-size: 0.875rem;
-  letter-spacing: 0.08em;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  font-weight: 700;
 }
+
+.trust-badge::selection {
+  background: #f97316;
+  color: #020617;
+}
+
+
+/* ==========================================================
+   SECTION RHYTHM
+   ----------------------------------------------------------
+   Prevents random visual protrusions between sections.
+   ========================================================== */
 
 .defer-section {
   content-visibility: auto;
   contain-intrinsic-size: auto 900px;
 }
 
-/* ==========================================================
-   REDUCED MOTION
-   ========================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+section {
+  position: relative;
 }
 
+section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+
 /* ==========================================================
-   RICHTEXT COMPONENTS
+   SECTION DIVIDERS
+   ========================================================== */
+
+.border-gray-100 {
+  border-color: #e2e8f0;
+}
+
+.border-gray-200 {
+  border-color: #cbd5e1;
+}
+
+
+/* ==========================================================
+   RICH TEXT
    ========================================================== */
 
 @layer components {
+
   .richtext {
     @apply max-w-none text-base leading-relaxed text-slate-600;
   }
@@ -192,11 +494,11 @@ body {
   }
 
   .richtext h2 {
-    @apply mt-10 text-3xl font-extrabold text-slate-900 tracking-tight;
+    @apply mt-10 text-3xl font-extrabold tracking-tight text-slate-900;
   }
 
   .richtext h3 {
-    @apply mt-8 text-2xl font-bold text-slate-900 tracking-tight;
+    @apply mt-8 text-2xl font-bold tracking-tight text-slate-900;
   }
 
   .richtext h4 {
@@ -223,11 +525,15 @@ body {
   }
 
   .richtext blockquote {
-    @apply border-l-4 border-orange-500 pl-4 italic text-slate-700 bg-orange-50/40 py-2 rounded-r-lg;
+    @apply rounded-r-lg border-l-4 border-orange-500 bg-orange-50/60 py-2 pl-4 italic text-slate-700;
   }
 
   .richtext a {
-    @apply font-semibold text-[var(--color-amber-content)] underline decoration-orange-500/40 underline-offset-4 hover:decoration-orange-700 hover:text-orange-800 transition-colors;
+    @apply font-semibold text-orange-700 underline decoration-orange-500/40 underline-offset-4 transition-colors;
+  }
+
+  .richtext a:hover {
+    @apply text-orange-800 decoration-orange-700;
   }
 
   .richtext strong {
@@ -235,7 +541,9 @@ body {
   }
 
   .richtext table {
-    @apply mt-6 w-full border-collapse rounded-xl border border-slate-200 bg-white text-left shadow-sm overflow-hidden;
+    @apply mt-6 w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm;
+
+    border-collapse: collapse;
     table-layout: auto;
   }
 
@@ -248,7 +556,7 @@ body {
   }
 
   .richtext tbody tr:nth-child(even) {
-    @apply bg-slate-50/50;
+    @apply bg-slate-50;
   }
 
   .richtext th,
@@ -261,20 +569,210 @@ body {
   }
 }
 
+
 /* ==========================================================
-   ACCESSIBILITY OVERRIDES
+   FORM SYSTEM
+   ========================================================== */
+
+input,
+textarea,
+select {
+  border-color: #cbd5e1;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #f97316;
+  box-shadow:
+    0 0 0 3px rgba(249, 115, 22, 0.18);
+}
+
+
+/* ==========================================================
+   FAQ
+   ========================================================== */
+
+[data-faq-toggle] {
+  color: #0f172a;
+}
+
+[data-faq-toggle]:hover {
+  color: #c2410c;
+}
+
+[data-faq-toggle]:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}
+
+
+/* ==========================================================
+   MATERIAL SYMBOLS
+   ========================================================== */
+
+@font-face {
+  font-family: "Material Symbols Outlined Local";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/material-symbols-outlined.woff2") format("woff2");
+}
+
+.material-symbols-outlined {
+  font-family:
+    "Material Symbols Outlined",
+    "Material Symbols Outlined Local",
+    sans-serif;
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1;
+
+  letter-spacing: normal;
+  text-transform: none;
+
+  display: inline-block;
+
+  white-space: nowrap;
+  word-wrap: normal;
+
+  direction: ltr;
+
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  font-feature-settings: "liga";
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+   ========================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f8fafc;
+}
+
+
+/* ==========================================================
+   SELECTION
+   ========================================================== */
+
+::selection {
+  background-color: #f97316;
+  color: #020617;
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY
+   ----------------------------------------------------------
+   WCAG 2.2 AA
    ========================================================== */
 
 @layer utilities {
+
+  /* Accent remains visible on dark surfaces */
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
-    color: #f97316;
+    color: #fb923c;
   }
 
   .dark .hover\:text-primary-accent:hover,
   footer .hover\:text-primary-accent:hover,
   [data-hero-banner] .hover\:text-primary-accent:hover {
-    color: #fbbf24;
+    color: #fdba74;
+  }
+
+  /* Light backgrounds need darker orange */
+  .bg-white .text-primary-accent,
+  .bg-background-light .text-primary-accent {
+    color: #c2410c;
   }
 }
+
+
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE SAFETY
+   ========================================================== */
+
+@media (max-width: 639px) {
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    letter-spacing: -0.02em;
+  }
+}
+
+
+/* ==========================================================
+   PRINT
+   ========================================================== */
+
+@media print {
+
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  [data-hero-banner] {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  [data-hero-banner] * {
+    color: #000000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+```
