@@ -1,20 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+/* ==========================================================
+   DESIGN TOKENS — Tailwind CSS v4
+   ========================================================== */
+
+@theme {
+  /* Primary / Nordic */
+  --color-primary: #2f3b45;
+  --color-primary-light: #3a4a57;
+  --color-primary-dark: #1f2933;
+  --color-primary-button: #c62839;
+  --color-primary-accent: #c62839;
+
+  /* Content */
+  --color-content-accent: #c62839;
+  --color-content-light: #3a4a57;
+
+  /* Background */
+  --color-background-light: #f7f8fa;
+  --color-background-dark: #1f2933;
+
+  /* Text */
+  --color-text-light: #4b5563;
+  --color-text-dark: #f7f8fa;
+
+  /* Nordic */
+  --color-nordic: #2f3b45;
+  --color-nordic-light: #3a4a57;
+  --color-nordic-dark: #1f2933;
+
+  /* Crimson */
+  --color-crimson: #c62839;
+  --color-crimson-hover: #a3212f;
+
+  /* Surface */
+  --color-surface: #ffffff;
+  --color-surface-background: #f7f8fa;
+
+  /* Typography */
+  --font-display:
+    "Inter",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Roboto",
+    sans-serif;
+
+  /* Animation */
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* ==========================================================
+   BASE
+   ========================================================== */
 
 :root {
   color-scheme: light dark;
 }
 
 body {
-  font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  background-color: #F5F5F5;
+  font-family: var(--font-display);
+  background-color: #f5f5f5;
   min-height: 100vh;
 }
 
+/* ==========================================================
+   HERO
+   ========================================================== */
+
 [data-hero-banner] {
   --hero-image: var(--hero-desktop);
-  background-image: linear-gradient(rgba(10, 35, 66, 0.15), rgba(10, 35, 66, 0.45)), var(--hero-image);
+
+  background-image:
+    linear-gradient(
+      rgba(10, 35, 66, 0.15),
+      rgba(10, 35, 66, 0.45)
+    ),
+    var(--hero-image);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,22 +99,28 @@ body {
 
 @media (max-width: 767px) {
   [data-hero-banner] {
-    /* Swap to mobile hero asset when available */
     --hero-image: var(--hero-mobile, var(--hero-desktop));
   }
 }
 
+/* ==========================================================
+   MATERIAL SYMBOLS
+   ========================================================== */
+
 @font-face {
-  font-family: 'Material Symbols Outlined Local';
+  font-family: "Material Symbols Outlined Local";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/material-symbols-outlined.woff2') format('woff2');
+  src: url("../fonts/material-symbols-outlined.woff2") format("woff2");
 }
 
 .material-symbols-outlined {
-  /* Fallback to local if CDN fails, but explicitly use the CDN font family first */
-  font-family: 'Material Symbols Outlined', 'Material Symbols Outlined Local', sans-serif;
+  font-family:
+    "Material Symbols Outlined",
+    "Material Symbols Outlined Local",
+    sans-serif;
+
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
@@ -48,9 +131,14 @@ body {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
+
+/* ==========================================================
+   SCROLLBAR
+   ========================================================== */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -62,6 +150,10 @@ body {
   border-radius: 999px;
 }
 
+/* ==========================================================
+   GENERAL UTILITIES
+   ========================================================== */
+
 .trust-badge {
   font-size: 0.875rem;
   letter-spacing: 0.08em;
@@ -69,19 +161,28 @@ body {
 }
 
 .defer-section {
-  /* Delay layout/paint work for below-the-fold sections without layout shifts */
   content-visibility: auto;
   contain-intrinsic-size: auto 900px;
 }
 
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================================
+   RICHTEXT
+   ========================================================== */
 
 @layer components {
   .richtext {
@@ -137,6 +238,7 @@ body {
 
   .richtext table {
     @apply mt-6 w-full border-collapse rounded-lg border border-primary/20 bg-white text-left shadow-sm;
+
     table-layout: auto;
   }
 
@@ -160,36 +262,37 @@ body {
   .richtext tbody tr:last-child td {
     @apply border-b-0;
   }
+}
 
-  @media (max-width: 640px) {
-    .richtext table {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
+/* ==========================================================
+   MOBILE RICHTEXT TABLES
+   ========================================================== */
 
-    .richtext th,
-    .richtext td {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      font-size: 0.75rem;
-      line-height: 1rem;
-      white-space: normal;
-      word-break: break-word;
-      hyphens: auto;
-    }
+@media (max-width: 640px) {
+  .richtext table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .richtext th,
+  .richtext td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
   }
 }
 
-/* ==========================================================================
-   PRECISION UI/UX ACCESSIBILITY OVERRIDES (WCAG AA 4.5:1 COMPLIANT)
-   ========================================================================== */
+/* ==========================================================
+   ACCESSIBILITY OVERRIDES
+   ========================================================== */
+
 @layer utilities {
-  /* Override accent color on dark backgrounds to Red-300 (#fca5a5) for WCAG AA contrast */
   .dark .text-primary-accent,
   footer .text-primary-accent,
   [data-hero-banner] .text-primary-accent {
