@@ -449,7 +449,7 @@ if (responseDiv) {
   responseDiv.innerHTML = `
     <div class="flex justify-center">
       <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
-        {% include svg/check_circle.svg class="w-16 h-16 shrink-0 text-green-600 fill-current mx-auto mb-4" %}
+        {% include svg/check_circle.svg class="w-[18px] h-[18px] shrink-0 text-green-600 fill-current mx-auto mb-4" %}
       </div>
     </div>
 
@@ -467,7 +467,7 @@ if (responseDiv) {
     </p>
 
     <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
-      {% include svg/phone_in_talk.svg class="w-6 h-6 shrink-0 fill-current" %}
+      {% include svg/phone_in_talk.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
       Wir kontaktieren Sie persönlich
     </div>
   `;
