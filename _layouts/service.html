@@ -60,7 +60,7 @@ layout: default
       {% assign risk_items = site.data.risk_reversal | where: 'active', true | sort: 'priority' %}
       {% for risk in risk_items %}
       <span class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-background-light px-4 py-2" title="{{ risk.detail }}">
-        {% capture icon_path %}svg/{{ risk.icon | default: 'verified'  }}.svg{% endcapture %}{% include {{ icon_path }} class="w-5 h-5 shrink-0 fill-current" %}
+        {% capture icon_path %}svg/{{ risk.icon | default: 'verified'  }}.svg{% endcapture %}{% include {{ icon_path }} class="w-[18px] h-[18px] shrink-0 fill-current" %}
         <span>{{ risk.label }}</span>
       </span>
       {% endfor %}
@@ -80,7 +80,7 @@ layout: default
           <ul class="mt-4 space-y-2">
             {% for item in page.checklist %}
             <li class="flex items-start gap-3 text-sm text-text-light">
-              {% include svg/task_alt.svg class="w-5 h-5 shrink-0 text-primary fill-current" %}
+              {% include svg/task_alt.svg class="w-[18px] h-[18px] shrink-0 text-primary fill-current" %}
               <span>{{ item }}</span>
             </li>
             {% endfor %}
@@ -147,7 +147,7 @@ layout: default
       <details class="group rounded-2xl border border-gray-200 bg-background-light p-4 shadow-sm hover:shadow-md transition-opacity duration-200">
         <summary class="flex cursor-pointer items-center justify-between text-left text-base font-semibold text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2 rounded-lg list-none [&::-webkit-details-marker]:hidden">
           <span class="pr-4">{{ faq.question }}</span>
-          {% include svg/expand_more.svg class="w-6 h-6 shrink-0 transition-transform duration-200 group-open:rotate-180 fill-current" %}
+          {% include svg/expand_more.svg class="w-[18px] h-[18px] shrink-0 transition-transform duration-200 group-open:rotate-180 fill-current" %}
         </summary>
         <div class="mt-3 border-t border-gray-100/50 pt-3">
           <p class="text-sm text-text-light">{{ faq.answer }}</p>
@@ -175,7 +175,7 @@ layout: default
         <p class="text-xs uppercase tracking-widest text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
         <h3 class="mt-2 text-lg font-bold text-primary">{{ guide.title }}</h3>
         <p class="mt-2 text-sm text-text-light">{{ guide.excerpt | strip_html | truncate: 120 }}</p>
-        <a href="{{ guide.url | relative_url }}" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">Lesen {% include svg/north_east.svg class="w-5 h-5 shrink-0 fill-current" %}</a>
+        <a href="{{ guide.url | relative_url }}" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Lesen {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}</a>
       </article>
       {% endfor %}
     </div>

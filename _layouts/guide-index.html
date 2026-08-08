@@ -28,7 +28,7 @@ layout: default
         </div>
         <a href="{{ guide.url | relative_url }}" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
           {{ guide.button_text | default: 'Weiterlesen' }}
-          {% include svg/north_east.svg class="w-5 h-5 shrink-0 fill-current" %}
+          {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
         </a>
       </article>
       {% endfor %}

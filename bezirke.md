@@ -26,7 +26,7 @@ kicker: "Standorte"
           Kostenloses Angebot anfordern
         </a>
         <a href="tel:{{ site.phone | replace: ' ', '' }}" class="inline-flex items-center justify-center rounded-full border border-primary px-6 py-3 text-base font-semibold text-primary hover:bg-primary/5">
-          {% include svg/call.svg class="mr-2 w-5 h-5 shrink-0 fill-current" %}
+          {% include svg/call.svg class="mr-2 w-[18px] h-[18px] shrink-0 fill-current" %}
           {{ site.phone }}
         </a>
       </div>
@@ -58,7 +58,7 @@ kicker: "Standorte"
         {% assign label = parts[1] | default: slug %}
         <a href="{{ '/leistungen/' | append: slug | append: '/' | relative_url }}" class="flex items-center justify-between rounded-2xl border border-gray-200 bg-background-light px-4 py-3 text-left text-primary transition-opacity hover:border-primary hover:bg-white">
           <span class="text-base font-semibold">{{ label | strip }}</span>
-          {% include svg/north_east.svg class="w-5 h-5 shrink-0 text-primary fill-current" %}
+          {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 text-primary fill-current" %}
         </a>
         {% endfor %}
       </div>
