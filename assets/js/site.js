@@ -1,3 +1,5 @@
+---
+---
 var mobileMenu = document.getElementById('mobile-menu');
 var faqButtons = document.querySelectorAll('[data-faq-toggle]');
 
@@ -37,7 +39,7 @@ window.toggleSubMenu = function toggleSubMenu(btn, targetId) {
   var isHidden = target.classList.toggle('hidden');
   if (btn) {
     btn.setAttribute('aria-expanded', !isHidden);
-    var icon = btn.querySelector('.material-symbols-outlined');
+    var icon = btn.querySelector('svg');
     if (icon) {
       if (!isHidden) {
         icon.classList.add('rotate-180');
@@ -78,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
       if (!answer) return;
       var isHidden = answer.classList.toggle('hidden');
       btn.setAttribute('aria-expanded', !isHidden);
-      var icon = btn.querySelector('.material-symbols-outlined');
+      var icon = btn.querySelector('svg');
       if (icon) {
         if (!isHidden) {
           icon.classList.add('rotate-180');
@@ -133,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         btn.type = 'button';
         btn.className = 'absolute top-1.5 right-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-white shadow hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 transition-all duration-200 z-10';
         btn.setAttribute('aria-label', 'Foto entfernen');
-        btn.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">close</span>';
+        btn.innerHTML = `{% include svg/close.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em" %}`;
         btn.addEventListener('click', function() {
           selectedFiles.splice(index, 1);
           updateInputAndRender();
@@ -184,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
         errorEl.className = 'mt-1.5 text-xs text-red-600 font-bold flex items-center gap-1 transition-all duration-200';
         input.parentNode.appendChild(errorEl);
       }
-      errorEl.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">warning</span><span>' + errorMsg + '</span>';
+      errorEl.innerHTML = `{% include svg/warning.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em inline" %}` + `<span>${errorMsg}</span>`;
       input.setAttribute('aria-invalid', 'true');
       input.setAttribute('aria-describedby', errorId);
     } else {
@@ -223,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function domReady() {
           regionEl.className = 'mt-1.5 text-xs text-emerald-600 font-bold flex items-center gap-1 transition-all duration-200';
           postcodeInp.parentNode.appendChild(regionEl);
         }
-        regionEl.innerHTML = '<span class="material-symbols-outlined !text-[14px] !leading-none !font-bold">check_circle</span><span>Region: ' + region + ' (Service verfügbar)</span>';
+        regionEl.innerHTML = `{% include svg/check_circle.svg class="!text-[14px] !leading-none !font-bold fill-current w-1em h-1em inline" %}` + `<span>Region: ${region} (Service verfügbar)</span>`;
         postcodeInp.setAttribute('aria-describedby', regionId);
       } else {
         if (regionEl) regionEl.remove();
@@ -446,9 +448,7 @@ if (responseDiv) {
   responseDiv.innerHTML = `
     <div class="flex justify-center">
       <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
-        <span class="material-symbols-outlined text-6xl text-green-600">
-          check_circle
-        </span>
+        {% include svg/check_circle.svg class="text-6xl text-green-600 fill-current w-1em h-1em mx-auto mb-4" %}
       </div>
     </div>
 
@@ -466,9 +466,7 @@ if (responseDiv) {
     </p>
 
     <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
-      <span class="material-symbols-outlined text-xl">
-        phone_in_talk
-      </span>
+      {% include svg/phone_in_talk.svg class="text-xl fill-current w-1em h-1em" %}
       Wir kontaktieren Sie persönlich
     </div>
   `;
