@@ -66,7 +66,7 @@
         <div class="group relative">
           <button class="flex items-center gap-1 py-4 text-slate-200 hover:text-amber-400 focus:outline-none transition-colors" type="button">
             Leistungen
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 shrink-0 fill-current" %}
           </button>
           <div class="invisible absolute left-1/2 z-30 mt-1 w-[520px] -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-800 p-6 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
             <div class="grid grid-cols-2 gap-6">
@@ -98,7 +98,7 @@
         <div class="group relative">
           <button class="flex items-center gap-1 py-4 text-slate-200 hover:text-amber-400 focus:outline-none transition-colors" type="button">
             Bundesländer
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 shrink-0 fill-current" %}
           </button>
           <div class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-800 p-4 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
             <p class="mb-3 text-xs font-bold uppercase tracking-wider text-amber-400">Unsere Standorte</p>
@@ -130,7 +130,7 @@
       <!-- Mobile Right Utility -->
       <div class="flex items-center gap-3 lg:hidden">
         <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-white bg-white/10 hover:bg-white/20 active:scale-95 transition-all focus:outline-none" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg class="w-6 h-6 shrink-0 fill-current" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
       </div>
 
