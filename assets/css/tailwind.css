@@ -752,49 +752,6 @@ svg {
 }
 
 
-/* ==========================================================
-   MOBILE STICKY CTA ICONS
-
-   Specifically protects the bottom conversion bar
-   from oversized SVG icons.
-   ========================================================== */
-
-@media (max-width: 767px) {
-
-  .fixed.bottom-0 svg {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-
-    max-width: 1.125rem !important;
-    max-height: 1.125rem !important;
-
-    min-width: 1.125rem;
-    min-height: 1.125rem;
-
-    flex: 0 0 1.125rem;
-
-    display: inline-block;
-  }
-
-}
-
-
-/*
- * If the SVG include receives the class:
- *
- * class="text-base fill-current w-1em h-1em"
- *
- * keep the SVG controlled on mobile.
- */
-
-@media (max-width: 639px) {
-
-  .fixed.bottom-0 a svg {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-  }
-
-}
 
 
 /* ==========================================================
