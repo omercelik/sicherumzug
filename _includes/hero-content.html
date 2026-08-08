@@ -1,77 +1,36 @@
 {% assign container_classes = include.container_classes | default: 'container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white' %}
 {% assign content_classes = include.content_classes | default: 'max-w-4xl mx-auto text-left md:text-center space-y-4 md:space-y-5' %}
-{% assign cta_wrap_classes = include.cta_wrap_classes | default: 'flex flex-col gap-3 pt-4' %}
 {% assign cta_variant_key = include.cta_variant | default: 'default' %}
 {% assign cta_variant = site.data.cta_variants[cta_variant_key] | default: site.data.cta_variants.default %}
 
 <div class="{{ container_classes }}">
   <div class="{{ content_classes }}">
     
-    <!-- Micro-Badge (Social Proof Tag) - Masaüstünde Ortalanmış -->
-    <div class="bg-orange-500/10 border border-orange-500/30 text-orange-300 text-xs font-bold px-3 py-1 rounded-full w-max flex items-center gap-2 mb-4 backdrop-blur-sm md:mx-auto">
-      ⚡ JETZT ANFRAGEN & 100% FIXPREIS SICHERN
+    <!-- Micro-Badge (Social Proof Tag) -->
+    <div class="bg-slate-900/40 border border-slate-700/40 text-orange-400 text-xs font-bold px-4 py-1.5 rounded-full w-max flex items-center gap-2 mb-4 backdrop-blur-md md:mx-auto shadow-sm">
+      <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 20 20"><path d="M10 2L2 6v5.5c0 4.14 3.41 7.91 8 9.5 4.59-1.59 8-5.36 8-9.5V6l-8-4zm0 2.37l6 3v4.13c0 3.16-2.4 6.08-6 7.37-3.6-1.29-6-4.21-6-7.37V7.37l6-3zM8.3 13.3l-2.6-2.6 1.41-1.41 1.19 1.19 4.29-4.29 1.41 1.41-5.7 5.7z"/></svg>
+      100% FIXPREISGARANTIE
     </div>
 
-    <!-- H1 Headline (Masaüstünde Ortalanmış + Turuncu Gradyan Vurgulu) -->
-    <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4 tracking-tight" data-hero-heading>
+    <!-- H1 Headline -->
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 tracking-tight" data-hero-heading>
       {% if include.title %}
         {{ include.title }}
       {% else %}
-        Professioneller Umzug & Räumung — <span class="bg-gradient-to-r from-orange-400 via-amber-400 to-amber-500 bg-clip-text text-transparent">Stressfrei, Sicher & Zum Fixpreis</span>
+        Professioneller Umzug & Räumung — <span class="text-orange-400">Stressfrei, Sicher & Zum Fixpreis</span>
       {% endif %}
     </h1>
 
-    <!-- Sub-Paragraph (Masaüstünde Ortalanmış) -->
-    <p class="text-slate-300 text-base md:text-lg max-w-3xl mb-6 leading-relaxed md:mx-auto">
+    <!-- Sub-Paragraph -->
+    <p class="text-slate-200 text-lg md:text-xl max-w-3xl mb-8 leading-relaxed md:mx-auto font-medium">
       {% if include.subtitle %}
         {{ include.subtitle }}
       {% else %}
-        Sicher Team ist Ihr verlässlicher Experte für <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Privatumzüge</span>, <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Firmenumzüge</span> und <span class="text-orange-400 underline decoration-orange-500/50 underline-offset-4 font-semibold">Räumung & Entrümpelung</span> österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie.
+        Sicher Team ist Ihr verlässlicher Experte für Privatumzüge, Firmenumzüge und Räumung & Entrümpelung österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie.
       {% endif %}
     </p>
 
-    <!-- Modern 2x2 Feature Grid (Masaüstünde Ortalanmış) -->
-    <div class="grid grid-cols-2 gap-3 mt-6 max-w-2xl md:mx-auto">
-      <div class="bg-slate-900/40 backdrop-blur-md border border-slate-700/40 rounded-2xl p-3.5 flex flex-col items-start md:items-center justify-center transition-all hover:border-orange-500/40 hover:bg-slate-900/60 text-white md:text-center">
-        <div class="flex items-center gap-2 mb-1">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 shrink-0 text-orange-400">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-          </svg>
-          <span class="text-sm font-semibold">Möbeltransport</span>
-        </div>
-        <span class="text-xs text-slate-300">Österreichweit</span>
-      </div>
-      <div class="bg-slate-900/40 backdrop-blur-md border border-slate-700/40 rounded-2xl p-3.5 flex flex-col items-start md:items-center justify-center transition-all hover:border-orange-500/40 hover:bg-slate-900/60 text-white md:text-center">
-        <div class="flex items-center gap-2 mb-1">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 shrink-0 text-orange-400">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-          </svg>
-          <span class="text-sm font-semibold">Montage-Service</span>
-        </div>
-        <span class="text-xs text-slate-300">Profi-Handwerker</span>
-      </div>
-      <div class="bg-slate-900/40 backdrop-blur-md border border-slate-700/40 rounded-2xl p-3.5 flex flex-col items-start md:items-center justify-center transition-all hover:border-orange-500/40 hover:bg-slate-900/60 text-white md:text-center">
-        <div class="flex items-center gap-2 mb-1">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 shrink-0 text-orange-400">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-          </svg>
-          <span class="text-sm font-semibold">Fixpreis-Garantie</span>
-        </div>
-        <span class="text-xs text-slate-300">0€ Zusatzkosten</span>
-      </div>
-      <div class="bg-slate-900/40 backdrop-blur-md border border-slate-700/40 rounded-2xl p-3.5 flex flex-col items-start md:items-center justify-center transition-all hover:border-orange-500/40 hover:bg-slate-900/60 text-white md:text-center">
-        <div class="flex items-center gap-2 mb-1">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 shrink-0 text-orange-400">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-          </svg>
-          <span class="text-sm font-semibold">Vollversichert</span>
-        </div>
-        <span class="text-xs text-slate-300">All-Risk Schutz</span>
-      </div>
-    </div>
-
-    <!-- CTA Buttons (Masaüstünde Ortalanmış + Patlayan Turuncu Ana Buton) -->
+    <!-- CTA Group -->
     {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label | default: 'Gratis Besichtigung sichern' %}
     {% assign primary_url = cta_variant.primary_url | default: include.primary_cta.url | default: include.primary_url | default: '#angebot' %}
     {% assign whatsapp_label = cta_variant.whatsapp_label | default: include.whatsapp_label | default: 'WhatsApp' %}
@@ -82,10 +41,9 @@
       {% assign call_url = site.phone | replace: ' ', '' | prepend: 'tel:' %}
     {% endif %}
 
-    <div class="mt-8 flex flex-col sm:flex-row items-center md:justify-center gap-4">
+    <div class="mt-8 flex flex-col sm:flex-row items-center md:justify-center gap-6">
       {% if primary_label and primary_url %}
-        <!-- Ana Buton: Canlı Patlayan Turuncu (Orange 500 + Dark Text) -->
-        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto min-h-[56px] items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 text-slate-950 px-8 py-4 text-base font-black shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-0.5 transition-all duration-200">
+        <a href="{{ primary_url | relative_url }}" class="flex w-full sm:w-auto min-h-[56px] items-center justify-center rounded-xl bg-orange-500 hover:bg-orange-600 text-slate-950 px-8 py-4 text-lg font-bold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500">
           {{ primary_label }}
         </a>
       {% endif %}
@@ -96,13 +54,11 @@
           {% include svg/chat.svg class="w-[18px] h-[18px] text-white fill-current" %}
           <span class="flex flex-col items-center justify-center text-center leading-[1.1]">
             {% if whatsapp_label == 'WhatsApp Foto senden' %}
-              <span class="text-[13px] md:text-sm">WhatsApp</span>
-              <span class="text-[12px] font-medium opacity-90">Foto senden</span>
+              WhatsApp<br><span class="text-xs font-medium opacity-80">Foto senden</span>
             {% elsif whatsapp_label == 'Express per WhatsApp' %}
-              <span class="text-[13px] md:text-sm">Express per</span>
-              <span class="text-[12px] font-medium opacity-90">WhatsApp</span>
+              Express per<br><span class="text-xs font-medium opacity-80">WhatsApp</span>
             {% else %}
-              <span>{{ whatsapp_label }}</span>
+              {{ whatsapp_label }}
             {% endif %}
           </span>
         </a>
@@ -112,6 +68,22 @@
           {% include svg/call.svg class="w-[18px] h-[18px] text-orange-400 fill-current" %}
           <span class="whitespace-nowrap">{{ call_label }}</span>
         </a>
+      </div>
+    </div>
+
+    <!-- Restrained Trust Indicators -->
+    <div class="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-4 text-xs font-medium text-slate-300">
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Möbeltransport
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Montage-Service
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        All-Risk Versichert
       </div>
     </div>
 
