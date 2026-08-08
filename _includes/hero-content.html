@@ -48,11 +48,11 @@
         </a>
       {% endif %}
       
-      <div class="flex flex-row gap-6 items-center w-full sm:w-auto justify-center">
-        <!-- WhatsApp Link -->
-        <a href="{{ whatsapp_url }}" class="group flex items-center gap-2 text-sm font-semibold text-slate-200 hover:text-emerald-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-md px-2 py-1">
-          <svg class="w-6 h-6 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12.031 21.054c-1.636 0-3.221-.428-4.631-1.238l-5.143 1.348 1.373-5.016c-.886-1.442-1.353-3.1-1.353-4.8 0-5.158 4.195-9.351 9.356-9.351 5.161 0 9.356 4.193 9.356 9.351 0 5.159-4.195 9.351-9.356 9.351m5.228-6.721c-.287-.144-1.696-.835-1.958-.93-.263-.095-.454-.143-.645.144-.191.287-.741.93-.909 1.121-.167.191-.334.215-.621.071-.286-.143-1.21-.445-2.305-1.417-.852-.756-1.426-1.692-1.593-1.979-.167-.287-.018-.442.126-.585.129-.129.287-.334.43-.501.144-.167.191-.287.287-.478.096-.191.048-.358-.024-.501-.072-.143-.645-1.553-.884-2.125-.233-.559-.471-.483-.645-.492-.167-.008-.358-.01-.549-.01-.191 0-.501.072-.764.358-.263.287-1.003.98-1.003 2.389 0 1.409 1.027 2.771 1.171 2.962.143.191 2.022 3.084 4.896 4.318.683.293 1.217.467 1.634.598.686.216 1.312.185 1.805.112.551-.082 1.696-.693 1.935-1.361.239-.668.239-1.242.167-1.361-.071-.121-.262-.192-.549-.336"/></svg>
-          <span class="text-left leading-tight">
+      <div class="flex flex-row gap-3 w-full sm:w-auto">
+        <!-- WhatsApp Butonu -->
+        <a href="{{ whatsapp_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-2 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+          {% include svg/chat.svg class="text-[22px] text-white fill-current" %}
+          <span class="flex flex-col items-center justify-center text-center leading-[1.1]">
             {% if whatsapp_label == 'WhatsApp Foto senden' %}
               WhatsApp<br><span class="text-xs font-medium opacity-80">Foto senden</span>
             {% elsif whatsapp_label == 'Express per WhatsApp' %}
@@ -63,9 +63,9 @@
           </span>
         </a>
 
-        <!-- Phone Link -->
-        <a href="{{ call_url }}" class="group flex items-center gap-2 text-sm font-semibold text-slate-200 hover:text-orange-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded-md px-2 py-1">
-          <svg class="w-6 h-6 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+        <!-- Telefon Butonu -->
+        <a href="{{ call_url }}" class="flex flex-1 sm:flex-initial min-h-[56px] items-center justify-center gap-2 rounded-full border border-white/20 hover:border-white bg-white/10 hover:bg-white/20 px-6 py-4 text-sm font-bold text-white shadow hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+          {% include svg/call.svg class="text-lg text-orange-400 fill-current" %}
           <span class="whitespace-nowrap">{{ call_label }}</span>
         </a>
       </div>
