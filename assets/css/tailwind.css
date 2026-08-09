@@ -365,7 +365,7 @@ select:focus-visible {
 /* Decorative accent */
 
 .text-primary-accent {
-  color: var(--brand-orange);
+  color: var(--brand-orange-dark); /* Ensure AA contrast on light background by default */
 }
 
 
@@ -1013,6 +1013,18 @@ select:disabled {
   .bg-white .text-primary-accent,
   .bg-background-light .text-primary-accent {
     color: #c2410c;
+  }
+
+  /* Ensure text-primary-accent has correct contrast inside bg-primary (dark) */
+  .bg-primary .text-primary-accent,
+  .bg-primary-dark .text-primary-accent {
+    color: #fb923c !important;
+  }
+
+  /* Fix headings inside dark blocks */
+  .bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6,
+  .bg-primary-dark h1, .bg-primary-dark h2, .bg-primary-dark h3, .bg-primary-dark h4, .bg-primary-dark h5, .bg-primary-dark h6 {
+      color: #ffffff !important;
   }
 
 
