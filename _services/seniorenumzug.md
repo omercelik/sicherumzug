@@ -51,7 +51,7 @@ Ein reibungsloser Ablauf ist beim Einzug in eine Pflegeeinrichtung entscheidend.
 ### Was unseren Umzugsservice für Senioren besonders macht
 
 - **Alles aus einer Hand:** Vom Abbau der Schrankwand über das Aufhängen der Lampen bis zum Einräumen des Geschirrs.
-- **Kombination mit Entrümpelung:** Was nicht mit umziehen soll, wird von uns im Zuge einer [Wohnungsräumung](/leistungen/wohnungsraeumung/) diskret geräumt und umweltgerecht entsorgt.
+- **Kombination mit Entrümpelung:** Was nicht mit umziehen soll, wird von uns im Zuge einer [Wohnungsräumung](/leistungen/wohnungsaufloesung/) diskret geräumt und umweltgerecht entsorgt.
 - **Transparenz:** Wir arbeiten ausschließlich mit fairen Fixpreisen und Fixpreisgarantie – absolut ohne versteckte Nachzahlungen.
 
 ### Der Ablauf Ihres Seniorenumzugs

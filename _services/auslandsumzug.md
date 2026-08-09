@@ -63,7 +63,7 @@ Wir führen regelmäßig internationale Umzüge zwischen Österreich, Deutschlan
 
 Der Umzug in ein Nicht-EU-Land, wie etwa die Schweiz, erfordert eine präzise **Zollabwicklung**. Das Umzugsgut muss detailliert in Inventarlisten erfasst und bei den Zollbehörden deklariert werden. Wir unterstützen Sie bei der Erstellung dieser Listen und informieren Sie über die notwendigen Zolldokumente, damit Ihr Transport an der Grenze nicht aufgehalten wird.
 
-Weitere wertvolle Tipps zur Vorbereitung finden Sie in unserem ausführlichen Ratgeber zum Thema [Auslandsumzug planen](/ratgeber/auslandsumzug-planen-tipps/).
+Weitere wertvolle Tipps zur Vorbereitung finden Sie in unserem ausführlichen Ratgeber zum Thema [Auslandsumzug planen](/ratgeber/internationaler-umzug-oesterreich-profi/).
 
 ### Sicherheit und Versicherung auf langen Wegen
 

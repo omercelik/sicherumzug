@@ -81,3 +81,7 @@ Die Umsetzung startet mit der Priorisierung von Engpassbereichen, danach folgen 
 Senden Sie aktuelle Fotos, Postleitzahl, Etage, Liftstatus und den gewünschten Termin. Wenn Nebenflächen oder Sonderthemen vorhanden sind, markieren Sie diese direkt mit. Über [unser Angebot](/angebot/) erhalten Sie für 1070 Wien eine klare Rückmeldung zu Aufwand, Reihenfolge und Zeitfenster.
 
 Gerade in 1070 Wien zahlt sich eine kurze Vorab-Abstimmung mit allen Beteiligten aus. Sie verhindert, dass Freigaben oder Zugangsthemen erst während der Durchführung geklärt werden müssen.
+
+
+### Umzug Logistik für diesen Bezirk
+Neubau (1070 Wien) ist bekannt für schmale Einbahnstraßen und dichte Verbauung. Wir kümmern uns im Vorfeld um Halteverbotszonen in der oft stark frequentierten Lerchenfelder Straße oder Mariahilfer Straße. Bei Altbauten ohne Lift setzen wir unseren Möbelaufzug ein.

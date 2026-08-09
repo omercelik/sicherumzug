@@ -41,7 +41,7 @@ The sitemap (`sitemap.xml`) is correctly generating using the `jekyll-sitemap` p
 
 **Identify Thin/Duplicate Pages:**
 Currently, several potential duplicate or low-value pages are being indexed via the sitemap because they lack exclusion flags. These were previously identified in `consolidation-plan.md` as candidates for consolidation but are still generating unique URLs. Examples:
-- `/leistungen/entruempelung/`, `/leistungen/entruempelungsdienst/`, `/leistungen/entruempelungsfirma/`
+- `/leistungen/entruempelung/`, `/leistungen/entruempelung/`, `/leistungen/entruempelungsfirma/`
 - `/leistungen/gratis-entruempelung/`, `/leistungen/gratis-raeumung/`
 - `/leistungen/wohnungsaufloesung/`, `/leistungen/haushaltsaufloesung/`, `/leistungen/haushaltsaufloesung-ueberblick/`
 - `/leistungen/hausraeumung/`, `/leistungen/wien-hausraeumung/`

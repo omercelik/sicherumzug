@@ -25,7 +25,7 @@ Wenn die Temperaturen sinken, füllen sich die Terminkalender der **MA 48**. Vie
 2. **MA 48 Termin:** Buchen Sie online oder telefonisch. Notieren Sie Datum, erlaubte Mengen und Abholort.
 3. **Professionelle Unterstützung:** Reservieren Sie unseren Einsatz ein bis zwei Tage vor dem MA 48 Termin. Wir sortieren vor, packen und transportieren.
 
-> Tipp: In manchen Bezirken (z. B. 1220, 1230) sind Herbsttermine besonders gefragt. Nutzen Sie unsere Bezirksseiten wie [Wohnungsauflösung Donaustadt](/leistungen/haushaltsaufloesung-1220-wien/) für lokale Hinweise.
+> Tipp: In manchen Bezirken (z. B. 1220, 1230) sind Herbsttermine besonders gefragt. Nutzen Sie unsere Bezirksseiten wie [Wohnungsauflösung Donaustadt](/leistungen/haushaltsaufloesung/) für lokale Hinweise.
 
 ## 2. Was übernimmt MA 48, was unser Team?
 

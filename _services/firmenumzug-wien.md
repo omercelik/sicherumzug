@@ -25,7 +25,7 @@ process:
   - title: "Planung & Beratung"
     description: "Unsere Experten (über 15 Jahre Branchenerfahrung) erstellen gemeinsam mit Ihnen einen detaillierten Ablaufplan für den Firmenumzug, um Ausfallzeiten zu minimieren."
   - title: "Logistik & Vorbereitung"
-    description: "Wir liefern rechtzeitig spezielle Archivkartons und IT-Wannen für eine sichere Vorbereitung Ihrer Unterlagen und Technik. Lesen Sie dazu auch unsere Tipps zum Thema [Umzugskartons berechnen](/ratgeber/umzugskartons-verpackungsmaterial-berechnen/)."
+    description: "Wir liefern rechtzeitig spezielle Archivkartons und IT-Wannen für eine sichere Vorbereitung Ihrer Unterlagen und Technik. Lesen Sie dazu auch unsere Tipps zum Thema [Umzugskartons berechnen](/ratgeber/2026-08-22-umzugskartons-verpackungsmaterial-berechnen/)."
   - title: "Der Umzugstag"
     description: "Unser geschultes Team führt die Übersiedlung strukturiert und zügig nach Plan durch – auch an Wochenenden."
   - title: "Betriebsbereitschaft"

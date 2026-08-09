@@ -88,3 +88,6 @@ Um Ihnen die Organisation zu erleichtern, haben wir eine allgemeine Checkliste z
 Jedes größere Projekt, sei es eine Umgestaltung, eine Räumung oder ein Standortwechsel, ist eine Herausforderung. Mit der richtigen Einstellung, einer detaillierten Planung und gegebenenfalls der Unterstützung durch erfahrene Experten lassen sich diese Aufgaben jedoch sehr gut bewältigen. Behalten Sie das Ziel im Auge, arbeiten Sie strukturiert Ihre Checklisten ab und bewahren Sie Ruhe, auch wenn nicht alles exakt nach Plan läuft.
 
 Denken Sie daran: Jeder abgeschlossene Schritt bringt Sie Ihrem Ziel näher. Nutzen Sie die Gelegenheit, sich von altem Ballast zu befreien und Platz für Neues zu schaffen. Wir hoffen, dieser Ratgeber hat Ihnen wertvolle Impulse und praktische Hilfestellungen für Ihr Vorhaben gegeben. Bei weiteren Fragen oder dem Wunsch nach professioneller Unterstützung stehen wir Ihnen selbstverständlich gerne mit Rat und Tat zur Seite.
+
+### Zusätzliche Standorte & Flexibilität
+Wir erweitern unser Netz kontinuierlich, um Ihnen auch in Randbezirken oder ländlichen Gebieten einen zeitnahen und verlässlichen Service bieten zu können. Unsere regional verankerten Teams kennen die lokalen Gegebenheiten (wie z.B. Mistplätze und spezifische Abfallverordnungen) ganz genau.

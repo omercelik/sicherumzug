@@ -145,7 +145,7 @@ Total files audited: 121
 - **Audited 121 Markdown guides:** Created a scoring system to prioritize fixing the weakest and most commercially valuable pages.
 - **Improved High-Priority Guides:** Replaced generic AI-filler content in 5 top-priority files with highly relevant, Austrian-specific expert text, avoiding boilerplate automation.
 - **Added "TL;DR Quick Answers":** Ensured the highest value guides answer the search intent directly at the top of the page.
-- **Fixed CTAs and Internal Linking:** Integrated semantic anchor text linking directly to relevant service pages (`/dienstleistungen/privatumzug/`, `/dienstleistungen/raeumung/`, etc.) without relying on raw Liquid tags in the Markdown body.
+- **Fixed CTAs and Internal Linking:** Integrated semantic anchor text linking directly to relevant service pages (`/dienstleistungen/privatumzug/`, `/leistungen/raeumung/`, etc.) without relying on raw Liquid tags in the Markdown body.
 - **Strengthened EEAT Context:** Explicitly referenced local authorities and entities like "MA 48", "Wiener Wohnen", "Magistratische Bezirksämter" to signal authentic regional expertise in Austria.
 
 ## Priority Recommendations for Future Phases
