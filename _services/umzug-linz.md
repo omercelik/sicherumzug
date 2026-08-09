@@ -97,7 +97,7 @@ Effizienz und Planungssicherheit sind unser Versprechen. So läuft die Übersied
 
 1.  **Die erste Einschätzung:** Schicken Sie uns unkompliziert Fotos per WhatsApp, oder vereinbaren Sie eine kostenfreie Vor-Ort-Besichtigung in Linz für eine genaue Aufwandsschätzung.
 2.  **Das Fixpreis-Angebot:** Wir berechnen das nötige Ladevolumen, das Material und den Zeitaufwand. Sie erhalten ein Angebot mit einer garantierten Fixpreisgarantie.
-3.  **Die Vorbereitung:** Wenn nötig, beantragen wir die Ladezonen und liefern stabile Umzugskartons. Zur optimalen Vorbereitung können Sie unsere [Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/) nutzen.
+3.  **Die Vorbereitung:** Wenn nötig, beantragen wir die Ladezonen und liefern stabile Umzugskartons. Zur optimalen Vorbereitung können Sie unsere [Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/) nutzen.
 4.  **Der Umzugstag:** Unser eigenes, uniformiertes und erfahrenes Fachpersonal baut ab, packt ein und verlädt alles transportsicher im LKW.
 5.  **Ankunft & Aufbau:** Am neuen Standort laden wir zügig aus und bauen alle Möbel wunschgemäß auf. Das alte Objekt hinterlassen wir auf Wunsch besenrein.
 

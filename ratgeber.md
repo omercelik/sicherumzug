@@ -13,9 +13,9 @@ Fehlt ein Thema rund um Umzug, Räumung, Verlassenschaft oder den Ablauf in Ihre
 
 ### Bereich A: Recht, Nachlass und Finanzierung
 
-- [Wohnungsauflösung nach Todesfall in Wien](/ratgeber/wohnungsaufloesung-nach-todesfall/)
+- [Wohnungsauflösung nach Todesfall in Wien](/ratgeber/haushaltsaufloesung-todesfall/)
 - [Nachlassverbindlichkeiten bei Wohnungsauflösung](/ratgeber/nachlassverbindlichkeiten-wohnungsaufloesung/)
-- [Entrümpelung steuerlich absetzen in Wien](/ratgeber/entruempelung-steuer-absetzen-wien/)
+- [Entrümpelung steuerlich absetzen in Wien](/ratgeber/umzugskosten-oesterreich-sparen/)
 - [Delogierung & Zwangsräumung Wien \| Hilfe für Vermieter](/ratgeber/delogierung-zwangsraeumung-wien-vermieter/)
 - [Entrümpelung nach Mietnomaden in Wien: Rechte & Kosten](/ratgeber/entruempelung-mietnomaden-wien/)
 - [Verlassenschaftsankauf & Notarablauf in Wien](/ratgeber/verlassenschaftsankauf-notar-wien/)
@@ -45,7 +45,7 @@ Fehlt ein Thema rund um Umzug, Räumung, Verlassenschaft oder den Ablauf in Ihre
 - [Räumung Wien: Übergabeprotokoll und besenrein](/ratgeber/raeumung-wien-uebergabeprotokoll/)
 - [Räumung Wien: 5 fatale Fehler bei Entrümpelungsfirmen](/ratgeber/raeumung-wien-5-fatale-fehler/)
 - [Firmenauflösung & Büroräumung in Wien: DSGVO & Verwertung](/ratgeber/firmenauflesung-bueroraeumung-wien-dsgvo/)
-- [Messie-Wohnung entrümpeln: Diskretion & Ablauf in Wien](/ratgeber/messie-wohnung-raeumen-wien-diskretion/)
+- [Messie-Wohnung entrümpeln: Diskretion & Ablauf in Wien](/ratgeber/messie-wohnung-aufloesen/)
 - [Entrümpelung im Gemeindebau: Tipps für die Rückgabe](/ratgeber/entruempelung-gemeindebau-wiener-wohnen/)
 - [Entrümpelung vor der Sanierung: Was muss raus?](/ratgeber/entruempelung-vor-sanierung-wien/)
 - [Altbauwohnung Räumung in Wien: Kosten, Logistik & Wertanrechnung](/ratgeber/altbauwohnung-raeumung-wien-logistik-Wertanrechnung/)

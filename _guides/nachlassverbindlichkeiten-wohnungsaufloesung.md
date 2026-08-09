@@ -153,7 +153,7 @@ Wenn Sie einen Nachlassfall ohne Reibungsverluste abwickeln wollen, starten Sie 
 
 Passende Vertiefungen für die direkte Umsetzung:
 
-- [Wohnungsauflösung nach Todesfall](/ratgeber/wohnungsaufloesung-nach-todesfall/)
+- [Wohnungsauflösung nach Todesfall](/ratgeber/haushaltsaufloesung-todesfall/)
 - [Verlassenschaft professionell abwickeln](/leistungen/verlassenschaft/)
 - [Wohnungsauflösung mit dokumentiertem Ablauf](/leistungen/haushaltsaufloesung/)
 

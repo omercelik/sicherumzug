@@ -51,7 +51,7 @@ Sobald Sie legalen Zutritt haben, ist lückenlose Dokumentation entscheidend fü
 
 ## 3. Ablauf der professionellen Entrümpelung
 
-Mietnomaden-Wohnungen ähneln oft [Messie-Wohnungen](/ratgeber/messie-wohnung-raeumen-wien-diskretion/). Der Ablauf erfordert Spezialwissen, insbesondere bei der Mülltrennung nach MA 48 Richtlinien.
+Mietnomaden-Wohnungen ähneln oft [Messie-Wohnungen](/ratgeber/messie-wohnung-aufloesen/). Der Ablauf erfordert Spezialwissen, insbesondere bei der Mülltrennung nach MA 48 Richtlinien.
 
 | Phase | Maßnahmen | Dauer (Schätzung) |
 | :--- | :--- | :--- |

@@ -1,8 +1,8 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
-title: "Wohnungsauflösung in Wien"
-seo_title: "Wohnungsauflösung Wien - Entrümpelung mit Fixpreis & Wertanrechnung"
-description: "Ihre Wohnungsauflösung in Wien. Komplette Wohnungsauflösungen mit Fixpreisgarantie, Wertanrechnung und besenreiner Übergabe ohne versteckte Kosten."
+title: "Haushaltsauflösung in Österreich"
+seo_title: "Haushaltsauflösung & kompletter Hausstand auflösen | Fixpreis"
+description: "Professionelle Haushaltsauflösung in Österreich. Diskrete und fachgerechte Auflösung des kompletten Hausstands bei Todesfall, Pflegeheim oder Auswanderung."
 kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
@@ -34,14 +34,14 @@ faqs:
   - question: Räumen Sie auch Keller und Nebenräume?
     answer: Ja, sämtliche Nebenräume, Kellerabteile und Dachböden sind im Angebot inkludiert.
 schema_type: Service
-service_type: Wohnungsauflösung
+service_type: Haushaltsauflösung
 permalink: /leistungen/haushaltsaufloesung/
 ---
-## Wohnungsauflösung in Wien mit Wertanrechnung
+## Komplette Haushaltsauflösung – Diskret und Professionell
 
-Eine komplette Wohnungsauflösung ist oft emotional und organisatorisch belastend. Wir übernehmen alles – von der ersten Besichtigung bis zur besenreinen Übergabe – und machen aus dem Projekt eine klare, planbare Aufgabe.
+Eine Haushaltsauflösung ist oft emotional und organisatorisch belastend. Wir übernehmen alles – von der ersten Besichtigung bis zur besenreinen Übergabe – und machen aus dem Projekt eine klare, planbare Aufgabe.
 
-## Wohnungsauflösung noch am selben Tag
+## Mehr als nur eine Räumung
 
 Wenn Slots frei sind und der Zugang geklärt ist, übernehmen wir Wohnungsauflösungen am selben Tag. Ein kurzer Foto-Check per WhatsApp genügt für die Ersteinschätzung. Den Fixpreis bestätigen wir nach der Besichtigung vor Ort.
 

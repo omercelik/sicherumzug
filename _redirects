@@ -238,3 +238,95 @@
 /raeumungexperte-wien-besichtigung /ratgeber/raeumungexperte-wien-besichtigung/ 301
 /entruempelung-gemeindebau-wiener-wohnen/ /ratgeber/entruempelung-gemeindebau-wiener-wohnen/ 301
 /entruempelung-gemeindebau-wiener-wohnen /ratgeber/entruempelung-gemeindebau-wiener-wohnen/ 301
+
+# Legacy Service & WP Redirects
+/service/kuechenmontage/ /leistungen/moebelmontage/ 301
+/service/kuechenmontage /leistungen/moebelmontage/ 301
+/gallery-addon/ 410
+/service-category/business/ /leistungen/firmenumzug-wien/ 301
+/service-category/business /leistungen/firmenumzug-wien/ 301
+/online-termin/ /angebot/ 301
+/online-termin /angebot/ 301
+/service/privatumzug/ /leistungen/privatumzug/ 301
+/service/privatumzug /leistungen/privatumzug/ 301
+/service/firma-buero-umzug/ /leistungen/firmenumzug-wien/ 301
+/service/firma-buero-umzug /leistungen/firmenumzug-wien/ 301
+/bestellformular/ /angebot/ 301
+/bestellformular /angebot/ 301
+/preisliste/ /preise/ 301
+/preisliste /preise/ 301
+/umzugsangebote-einholen/ /angebot/ 301
+/umzugsangebote-einholen /angebot/ 301
+/service/auslandsumzug/ /ratgeber/internationaler-umzug-oesterreich-profi/ 301
+/service/auslandsumzug /ratgeber/internationaler-umzug-oesterreich-profi/ 301
+/uber-uns/ /ueber-uns/ 301
+/uber-uns /ueber-uns/ 301
+
+# Legacy WordPress Assets
+/wp-includes/js/wp-emoji-release.min.js* 410
+
+# 404 Resolution for GSC URLs
+/service/verpackungsmaterial/ /leistungen/verpackungsservice/ 301
+/service/verpackungsmaterial /leistungen/verpackungsservice/ 301
+/ratgeber/2026-05-24-kueche-abbauen-und-umziehen/ /ratgeber/kueche-abbauen-umziehen/ 301
+/ratgeber/2026-05-24-kueche-abbauen-und-umziehen /ratgeber/kueche-abbauen-umziehen/ 301
+/ratgeber/2026-08-11-kueche-abbauen-umziehen/ /ratgeber/kueche-abbauen-umziehen/ 301
+/ratgeber/2026-08-11-kueche-abbauen-umziehen /ratgeber/kueche-abbauen-umziehen/ 301
+/ratgeber/2026-05-10-ausmisten-vor-dem-umzug/ /ratgeber/richtig-ausmisten/ 301
+/ratgeber/2026-05-10-ausmisten-vor-dem-umzug /ratgeber/richtig-ausmisten/ 301
+/ratgeber/2026-08-12-ausmisten-vor-umzug-wien/ /ratgeber/richtig-ausmisten/ 301
+/ratgeber/2026-08-12-ausmisten-vor-umzug-wien /ratgeber/richtig-ausmisten/ 301
+/ratgeber/2026-03-15-ummeldung-nach-umzug-oesterreich/ /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
+/ratgeber/2026-03-15-ummeldung-nach-umzug-oesterreich /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
+/ratgeber/2026-08-08-behoerdenwege-ummelden-oesterreich/ /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
+/ratgeber/2026-08-08-behoerdenwege-ummelden-oesterreich /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
+/ratgeber/2025-11-20-delogierung-oesterreich-ablauf/ /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
+/ratgeber/2025-11-20-delogierung-oesterreich-ablauf /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
+/ratgeber/2026-08-19-delogierung-zwangsraeumung-oesterreich/ /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
+/ratgeber/2026-08-19-delogierung-zwangsraeumung-oesterreich /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
+/ratgeber/2026-01-10-die-ultimative-umzugs-checkliste/ /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/2026-01-10-die-ultimative-umzugs-checkliste /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/2026-08-15-ultimative-umzugs-checkliste/ /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/2026-08-15-ultimative-umzugs-checkliste /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/umzug-checkliste-ultimativ/ /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/umzug-checkliste-ultimativ /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/2026-04-26-halteverbotszone-fuer-umzug-beantragen/ /ratgeber/halteverbotszone-umzug-oesterreich/ 301
+/ratgeber/2026-04-26-halteverbotszone-fuer-umzug-beantragen /ratgeber/halteverbotszone-umzug-oesterreich/ 301
+/ratgeber/2026-08-10-halteverbotszone-umzug-wien/ /ratgeber/halteverbotszone-umzug-oesterreich/ 301
+/ratgeber/2026-08-10-halteverbotszone-umzug-wien /ratgeber/halteverbotszone-umzug-oesterreich/ 301
+/ratgeber/2025-10-15-messie-raeumung-diskret/ /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/2025-10-15-messie-raeumung-diskret /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/2026-08-18-messie-raeumung-wien-diskret/ /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/2026-08-18-messie-raeumung-wien-diskret /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/messie-wohnung-raeumen-wien-diskretion/ /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/messie-wohnung-raeumen-wien-diskretion /ratgeber/messie-wohnung-aufloesen/ 301
+/ratgeber/2026-04-12-moebelpacker-vs-diy-umzug/ /ratgeber/moebelpacker-vs-diy-umzug/ 301
+/ratgeber/2026-04-12-moebelpacker-vs-diy-umzug /ratgeber/moebelpacker-vs-diy-umzug/ 301
+/ratgeber/2026-08-13-moebelpacker-vs-diy-umzug/ /ratgeber/moebelpacker-vs-diy-umzug/ 301
+/ratgeber/2026-08-13-moebelpacker-vs-diy-umzug /ratgeber/moebelpacker-vs-diy-umzug/ 301
+/ratgeber/2026-04-01-seniorenumzug-ohne-stress/ /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
+/ratgeber/2026-04-01-seniorenumzug-ohne-stress /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
+/ratgeber/2026-08-04-seniorenumzug-wien-stressfrei/ /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
+/ratgeber/2026-08-04-seniorenumzug-wien-stressfrei /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
+/ratgeber/2026-06-22-tresortransport-schwere-lasten/ /ratgeber/tresortransport-schwerlast-oesterreich/ 301
+/ratgeber/2026-06-22-tresortransport-schwere-lasten /ratgeber/tresortransport-schwerlast-oesterreich/ 301
+/ratgeber/2026-08-05-tresortransport-schwerlast-oesterreich/ /ratgeber/tresortransport-schwerlast-oesterreich/ 301
+/ratgeber/2026-08-05-tresortransport-schwerlast-oesterreich /ratgeber/tresortransport-schwerlast-oesterreich/ 301
+/ratgeber/2026-02-05-umzug-mit-haustieren-stressfrei/ /ratgeber/umzug-mit-haustieren/ 301
+/ratgeber/2026-02-05-umzug-mit-haustieren-stressfrei /ratgeber/umzug-mit-haustieren/ 301
+/ratgeber/2026-08-16-umzug-mit-haustieren-oesterreich/ /ratgeber/umzug-mit-haustieren/ 301
+/ratgeber/2026-08-16-umzug-mit-haustieren-oesterreich /ratgeber/umzug-mit-haustieren/ 301
+/ratgeber/2026-07-20-umzugskosten-steuer-absetzen/ /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/2026-07-20-umzugskosten-steuer-absetzen /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/2026-08-14-umzugskosten-steuer-absetzen-oesterreich/ /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/2026-08-14-umzugskosten-steuer-absetzen-oesterreich /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/entruempelung-steuer-absetzen-wien/ /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/entruempelung-steuer-absetzen-wien /ratgeber/umzugskosten-oesterreich-sparen/ 301
+/ratgeber/2026-03-02-zerbrechliche-gegenstaende-verpacken/ /ratgeber/zerbrechliche-gegenstaende-verpacken/ 301
+/ratgeber/2026-03-02-zerbrechliche-gegenstaende-verpacken /ratgeber/zerbrechliche-gegenstaende-verpacken/ 301
+/ratgeber/2026-08-17-zerbrechliche-gegenstaende-verpacken/ /ratgeber/zerbrechliche-gegenstaende-verpacken/ 301
+/ratgeber/2026-08-17-zerbrechliche-gegenstaende-verpacken /ratgeber/zerbrechliche-gegenstaende-verpacken/ 301
+/ratgeber/2026-08-20-wohnungsaufloesung-todesfall-verlassenschaft/ /ratgeber/haushaltsaufloesung-todesfall/ 301
+/ratgeber/2026-08-20-wohnungsaufloesung-todesfall-verlassenschaft /ratgeber/haushaltsaufloesung-todesfall/ 301
+/ratgeber/wohnungsaufloesung-nach-todesfall/ /ratgeber/haushaltsaufloesung-todesfall/ 301
+/ratgeber/wohnungsaufloesung-nach-todesfall /ratgeber/haushaltsaufloesung-todesfall/ 301

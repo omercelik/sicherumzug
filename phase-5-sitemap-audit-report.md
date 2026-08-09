@@ -15,7 +15,7 @@ The sitemap (`sitemap.xml`) is correctly generating using the `jekyll-sitemap` p
 - `/leistungen/raeumung/`
 
 **Important Guide Pages:**
-- `/ratgeber/umzug-checkliste-ultimativ/`
+- `/ratgeber/umzug-oesterreich-profi-guide/`
 - `/ratgeber/was-kostet-eine-haushaltsaufloesung/`
 
 **Geographic Pages:**

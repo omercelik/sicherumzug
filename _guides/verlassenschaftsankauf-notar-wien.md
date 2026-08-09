@@ -44,7 +44,7 @@ In Österreich wird jede Verlassenschaft zwingend gerichtlich abgehandelt. Der P
 Für die Verlassenschaftsabhandlung beim Notar wird oft ein Schätzwert des Hausrats benötigt.
 
 *   **Antiquitäten und Kunst:** Erfordern oft einen beeideten Sachverständigen, besonders bei hohem Wert.
-*   **Normaler Hausrat:** Für gewöhnliche Möbel und Haushaltsgegenstände reicht dem Notar oft eine grobe Aufstellung oder die Schätzung einer professionellen Räumungsfirma, die ohnehin eine Besichtigung für die [Wohnungsauflösung](/ratgeber/wohnungsaufloesung-nach-todesfall/) durchführt.
+*   **Normaler Hausrat:** Für gewöhnliche Möbel und Haushaltsgegenstände reicht dem Notar oft eine grobe Aufstellung oder die Schätzung einer professionellen Räumungsfirma, die ohnehin eine Besichtigung für die [Wohnungsauflösung](/ratgeber/haushaltsaufloesung-todesfall/) durchführt.
 
 *Tipp:* Trennen Sie emotionale Erinnerungsstücke (Fotos, Briefe) frühzeitig von den Gegenständen, die verkauft oder entsorgt werden sollen, sobald der Notar die Wohnung freigegeben hat.
 

@@ -1,7 +1,7 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
-title: Wien Hausräumung
-seo_title: Hausräumung Wien - Komplette Räumung mit Fixpreis | Sicher Team
+title: "Hausräumung Wien"
+seo_title: "Hausräumung Wien - Villen, Reihenhäuser & Gewerbe | Fixpreis"
 description: 'Professionelle Wien Hausräumung: Einfamilienhäuser, Villen & Gewerbe.
   Fixpreis, Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke verfügbar!'
 kicker: Haus
@@ -40,7 +40,7 @@ faqs:
   answer: Wir planen die Zufahrt detailliert, organisieren Halteverbotszonen und setzen
     bei Bedarf kleinere, wendige Fahrzeuge ein.
 schema_type: Service
-service_type: Wien Hausräumung
+service_type: Hausräumung Wien
 permalink: "/leistungen/wien-hausraeumung/"
 intent_primary: Wohnungsauflösung
 intent_secondary: Hausräumung
