@@ -96,7 +96,7 @@ Transparenz und Planbarkeit stehen bei uns an erster Stelle. So funktioniert uns
 
 1.  **Die Bedarfsanalyse:** Sie kontaktieren uns und senden uns unkompliziert Fotos per WhatsApp, oder wir führen eine kostenlose Besichtigung vor Ort in Graz durch.
 2.  **Das Angebot:** Sie erhalten von uns ein maßgeschneidertes Angebot mit einer absoluten Fixpreisgarantie.
-3.  **Die Planung:** Wir übernehmen die Beantragung der Halteverbotszone und organisieren auf Wunsch Umzugskartons. Zur besten Vorbereitung legen wir Ihnen unsere [Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/) ans Herz.
+3.  **Die Planung:** Wir übernehmen die Beantragung der Halteverbotszone und organisieren auf Wunsch Umzugskartons. Zur besten Vorbereitung legen wir Ihnen unsere [Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/) ans Herz.
 4.  **Der Umzugstag:** Unser fest angestelltes und erfahrenes Team erscheint pünktlich. Wir verpacken sensibles Inventar, verladen alles effizient und fahren sicher zum neuen Standort.
 5.  **Ankunft & Montage:** Am Zielort laden wir aus, tragen die Kartons in die vorgesehenen Räume und montieren Ihre Möbel fachmännisch.
 

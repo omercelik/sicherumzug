@@ -63,7 +63,7 @@ Hier ist ein professioneller Ablauf meist sicherer, weil Verantwortung, Teamstä
 - Dokumentationsbedarf
 - Abstimmung mit mehreren Beteiligten
 
-In Nachlassfällen ist eine strukturierte Prozessführung zentral. Lesen Sie dazu auch [Wohnungsauflösung nach Todesfall](/ratgeber/wohnungsaufloesung-nach-todesfall/) und [Nachlassverbindlichkeiten](/ratgeber/nachlassverbindlichkeiten-wohnungsaufloesung/).
+In Nachlassfällen ist eine strukturierte Prozessführung zentral. Lesen Sie dazu auch [Wohnungsauflösung nach Todesfall](/ratgeber/haushaltsaufloesung-todesfall/) und [Nachlassverbindlichkeiten](/ratgeber/nachlassverbindlichkeiten-wohnungsaufloesung/).
 
 ### Szenario 4: Wertgegenstände vorhanden
 

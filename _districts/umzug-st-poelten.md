@@ -88,7 +88,7 @@ Unser Ziel ist es, Ihnen die Last der Übersiedlung komplett abzunehmen. So gehe
 
 1.  **Unverbindliche Analyse:** Schicken Sie uns erste Fotos über WhatsApp oder wir besuchen Sie für eine kostenlose Vor-Ort-Besichtigung in St. Pölten.
 2.  **Fixpreis-Angebot:** Sie erhalten von uns einen schriftlichen Kostenvoranschlag mit absoluter Fixpreisgarantie.
-3.  **Vorbereitung:** Wir kümmern uns um die nötigen Halteverbotszonen in der Stadt und stellen auf Wunsch Umzugsmaterial bereit. Tipps zur Vorbereitung finden Sie auf unserer [ultimativen Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/).
+3.  **Vorbereitung:** Wir kümmern uns um die nötigen Halteverbotszonen in der Stadt und stellen auf Wunsch Umzugsmaterial bereit. Tipps zur Vorbereitung finden Sie auf unserer [ultimativen Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/).
 4.  **Der Umzugstag:** Unser eigenes, fest angestelltes Personal erscheint pünktlich. Wir demontieren, sichern und verladen Ihre Möbel mit höchster Sorgfalt.
 5.  **Ankunft & Aufbau:** Am Zielort laden wir alles aus, montieren die Möbel und platzieren Kartons genau dort, wo Sie sie benötigen.
 

@@ -5,7 +5,7 @@ checklist:
 - Kellerabteile, Dachböden und Nebenräume
 - Demontage von Küchen und Einbauten
 - Sperrmüll, Elektro und Sonderfraktionen
-description: Ihre Wohnungsräumung Wien. Wir bieten komplette Wohnungsauflösung und Wohnung Entrümpelung Wien mit Fixpreis, Wertanrechnung und besenreiner Übergabe an.
+description: "Schnelle Wohnungsauflösung und Wohnungsräumung in Wien. Übergabefertig für Vermieter und Hausverwaltungen inkl. Demontage und besenreiner Reinigung."
 faqs:
 - answer: Der Preis hängt von Größe, Zugänglichkeit und Menge ab. Nach der Besichtigung
     erhalten Sie einen Fixpreis, der Wertgegenstände berücksichtigt.
@@ -41,9 +41,9 @@ process:
 - description: Besenrein mit Fotodokumentation und Schlüsselprotokoll nach Wunsch.
   title: Übergabe
 schema_type: Service
-seo_title: 'Wohnungsräumung & Wohnung Entrümpelung Wien - Fixpreis'
+seo_title: "Wohnungsauflösung Wien & Wohnungsräumung zum Fixpreis"
 service_type: Wohnungsauflösung Wien
-title: Wohnungsauflösung Wien
+title: "Wohnungsauflösung & Wohnungsräumung Wien"
 ---
 
 ## Wohnungsräumung & Wohnung Entrümpelung Wien mit Fixpreis
@@ -74,7 +74,7 @@ Oft werden diese Begriffe synonym verwendet. Um Ihnen die Entscheidung zu erleic
 
 ## Wohnungsauflösung im Todesfall
 
-Bei sensiblen Fällen arbeiten wir besonders diskret. Wir trennen Erinnerungsstücke, koordinieren Termine und liefern eine nachvollziehbare Dokumentation. Mehr Hinweise finden Sie im Ratgeber [Wohnungsauflösung nach Todesfall](/ratgeber/wohnungsaufloesung-nach-todesfall/).
+Bei sensiblen Fällen arbeiten wir besonders diskret. Wir trennen Erinnerungsstücke, koordinieren Termine und liefern eine nachvollziehbare Dokumentation. Mehr Hinweise finden Sie im Ratgeber [Wohnungsauflösung nach Todesfall](/ratgeber/haushaltsaufloesung-todesfall/).
 
 ## Wien, Bezirke und Umgebung
 

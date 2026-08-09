@@ -53,7 +53,7 @@ These files are internal strategy, planning, and audit documents intended solely
 ## Verification Results
 
 1.  **Sitemap Exclusion:** Verified. A production build (`JEKYLL_ENV=production bundle exec jekyll build`) confirmed that none of the above internal files are generated in `_site/sitemap.xml`.
-2.  **Commercial / Guide Pages Unaffected:** Verified. All existing commercial service pages, guide pages, and location pages (e.g. `/leistungen/umzug-wien/`, `/ratgeber/umzug-checkliste-ultimativ/`) remain fully present in the sitemap.
+2.  **Commercial / Guide Pages Unaffected:** Verified. All existing commercial service pages, guide pages, and location pages (e.g. `/leistungen/umzug-wien/`, `/ratgeber/umzug-oesterreich-profi-guide/`) remain fully present in the sitemap.
 3.  **No URL / Permalink Changes:** Verified. No `permalink`, `canonical`, or URL structures were modified across any files in the repository.
 4.  **LLM Exclude Functionality:** Verified. The `llm_exclude` attribute was added because the current `llms.txt`, `llms-full.txt`, and `llms-all.txt` layouts natively support filtering out pages with `item.llm_exclude != true`, ensuring these internal files do not pollute the LLM content index.
 

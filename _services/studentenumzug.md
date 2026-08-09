@@ -37,6 +37,6 @@ intent_primary: Umzug
 intent_secondary: Studentenumzug
 ---
 
-Der Studienbeginn in einer neuen Stadt wie Wien oder Graz ist teuer genug. Ein Umzug sollte das knappe Studentenbudget nicht zusätzlich belasten. Trotzdem muss niemand alles selbst schleppen! Zur Planung empfehlen wir auch unsere beliebte [Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/).
+Der Studienbeginn in einer neuen Stadt wie Wien oder Graz ist teuer genug. Ein Umzug sollte das knappe Studentenbudget nicht zusätzlich belasten. Trotzdem muss niemand alles selbst schleppen! Zur Planung empfehlen wir auch unsere beliebte [Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/).
 
 Unser Studentenumzug-Service passt sich genau Ihren Bedürfnissen an. Sie wollen Geld sparen und selbst einpacken und tragen? Wir stellen den Lkw und einen erfahrenen Fahrer (Transport-Service). Sie brauchen Hilfe bei der Demontage des schweren Kleiderschranks oder haben ein wertvolles E-Piano? Wir bieten modulare Hilfe an. Und für Distanzen quer durch Österreich nutzen Sie unsere kostengünstigen Beiladungen. Zuverlässig, schnell und voll versichert zum garantierten Fixpreis.

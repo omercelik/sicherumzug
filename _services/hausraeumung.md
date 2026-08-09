@@ -1,9 +1,8 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
-title: Hausräumung Wien
-seo_title: Hausräumung & Hausentrümpelung Wien - Fixpreis
-description: Ihre Hausräumung und Hausentrümpelung in Wien. Für Hausräumungen von
-  Einfamilienhäusern bieten wir Fixpreis & maximalen Wertanrechnung an.
+title: "Hausräumung Österreich | Komplette Hausentrümpelung"
+seo_title: "Hausräumung & Hausentrümpelung in ganz Österreich - Fixpreis"
+description: "Professionelle Hausräumung für Einfamilienhäuser und Reihenhäuser in Österreich. Bundesweite Hausentrümpelung inkl. Keller, Dachboden und Garten."
 kicker: Privat
 highlights:
 - Spezialisten für Einfamilienhäuser und Reihenhaus-Räumungen
@@ -37,7 +36,7 @@ faqs:
   answer: Absolut - wir verstehen die emotionale Belastung und bieten diskrete, respektvolle
     Abwicklung.
 schema_type: Service
-service_type: Hausräumung Wien
+service_type: Hausräumung
 permalink: "/leistungen/hausraeumung/"
 intent_primary: Wohnungsauflösung
 intent_secondary: Hausräumung

@@ -16,7 +16,7 @@ faqs:
     answer: Der Mietvertrag geht auf die Erben über. Sie haben ein Sonderkündigungsrecht, müssen aber die Kündigungsfristen einhalten.
 permalink: /ratgeber/haushaltsaufloesung-todesfall/
 ---
-Die [Auflösung einer Wohnung nach einem Todesfall](/ratgeber/wohnungsaufloesung-nach-todesfall/) ist eine emotionale und organisatorische Herausforderung. Neben der Trauer müssen sich die Hinterbliebenen um viele formale Angelegenheiten kümmern.
+Die [Auflösung einer Wohnung nach einem Todesfall](/ratgeber/haushaltsaufloesung-todesfall/) ist eine emotionale und organisatorische Herausforderung. Neben der Trauer müssen sich die Hinterbliebenen um viele formale Angelegenheiten kümmern.
 
 ## Rechtliche Rahmenbedingungen
 

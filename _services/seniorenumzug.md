@@ -28,7 +28,7 @@ faqs:
   - question: "Was passiert mit Möbeln, die nicht mitgenommen werden?"
     answer: "Gegenstände, für die im neuen, oft kleineren Zuhause kein Platz ist, entrümpeln wir fachgerecht. Gut erhaltene Möbel oder Antiquitäten verrechnen wir fair über unser Wertanrechnungssystem."
   - question: "Was kostet ein Seniorenumzug in Wien?"
-    answer: "Die Kosten hängen vom genauen Aufwand ab. Wir bieten eine kostenlose Vor-Ort-Besichtigung an, nach der Sie einen transparenten Fixpreis ohne versteckte Kosten erhalten. Eine gleichzeitige [Haushaltsauflösung](/ratgeber/wohnungsaufloesung-nach-todesfall/) kann die Kosten durch Wertanrechnung deutlich senken."
+    answer: "Die Kosten hängen vom genauen Aufwand ab. Wir bieten eine kostenlose Vor-Ort-Besichtigung an, nach der Sie einen transparenten Fixpreis ohne versteckte Kosten erhalten. Eine gleichzeitige [Haushaltsauflösung](/ratgeber/haushaltsaufloesung-todesfall/) kann die Kosten durch Wertanrechnung deutlich senken."
   - question: "Müssen wir beim Umzugstag anwesend sein?"
     answer: "Nein, Sie können uns vertrauensvoll die Schlüssel übergeben. Wir übernehmen den kompletten Ablauf bis zur schlüsselfertigen Übergabe im neuen Zuhause oder betreuten Wohnen."
 ---
