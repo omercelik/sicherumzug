@@ -7,7 +7,7 @@ description: "Mehr als nur Sterne: Lesen Sie echte Erfahrungsberichte aus Wohnun
 permalink: /bewertungen/
 hero_preload: /topbg.webp
 ---
-{% include breadcrumbs.html %}
+
 {% assign testimonials = site.data.testimonials %}
 {% assign review_count = testimonials | size %}
 {% assign average_rating = 0 %}
@@ -20,29 +20,34 @@ hero_preload: /topbg.webp
 {% endif %}
 {% assign average_rating_display = average_rating | round: 1 %}
 
-<section class="relative overflow-hidden bg-primary text-white">
-  <div class="container mx-auto px-4 py-20">
+<section class="relative min-h-[50vh] flex flex-col justify-center text-white overflow-hidden bg-slate-950" data-hero-banner>
+  <picture class="absolute inset-0 z-0">
+    <img src="/topbg.webp" alt="Bewertungen" class="h-full w-full object-cover object-center" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="absolute inset-0 z-10 bg-gradient-to-b from-slate-950/75 via-slate-950/80 to-slate-950/90 backdrop-blur-[1px]"></div>
+  {% include breadcrumbs.html %}
+  <div class="container relative z-20 mx-auto px-4 py-16 md:py-24 text-white">
     <div class="max-w-3xl space-y-5">
       <p class="text-l font-semibold uppercase tracking-[0.4em] text-primary-accent">Bewertungen</p>
       <h1 class="text-4xl font-black leading-tight md:text-5xl">Das sagen Kund:innen über Sicher Team</h1>
       <p class="text-lg text-white/90">Transparente Erfahrungsberichte mit dokumentierten Fixpreisen, Wertanrechnung und besenreinen Übergaben in ganz Wien &amp; NÖ.</p>
-      <div class="grid gap-4 rounded-2xl bg-white/10 p-6 text-sm font-semibold uppercase tracking-[0.2em] text-white md:grid-cols-2">
+      <div class="grid gap-4 rounded-2xl bg-slate-800/80 border border-slate-700/50 p-6 text-sm font-semibold uppercase tracking-[0.2em] text-white md:grid-cols-2">
         <div>
           <p class="text-4xl font-black tracking-normal">{{ average_rating_display | replace: '.', ',' }}</p>
-          <p class="text-xs font-medium uppercase tracking-[0.3em] text-white/80">Durchschnitt</p>
+          <p class="text-xs font-medium uppercase tracking-[0.3em] text-slate-300">Durchschnitt</p>
         </div>
         <div>
           <p class="text-4xl font-black tracking-normal">{{ average_rating_display | replace: '.', ',' }} ★</p>
-          <p class="text-xs font-medium uppercase tracking-[0.3em] text-white/80">Google &amp; ProvenExpert</p>
+          <p class="text-xs font-medium uppercase tracking-[0.3em] text-slate-300">Google &amp; ProvenExpert</p>
         </div>
       </div>
-      <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-white/80 sm:flex-row sm:items-center">
+      <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 sm:flex-row sm:items-center">
         <div class="inline-flex items-center gap-2">
-          {% include svg/verified.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
+          {% include svg/verified.svg class="w-[18px] h-[18px] shrink-0 text-orange-500 fill-current" %}
           Fixpreis &amp; Wertanrechnung bestätigt
         </div>
         <div class="inline-flex items-center gap-2">
-          {% include svg/shield_with_heart.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
+          {% include svg/shield_with_heart.svg class="w-[18px] h-[18px] shrink-0 text-orange-500 fill-current" %}
           Voll versichert &amp; dokumentiert
         </div>
       </div>
