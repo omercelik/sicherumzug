@@ -78,7 +78,7 @@ Lassen Sie uns diese schwere Aufgabe gemeinsam bewältigen. Kontaktieren Sie uns
 ## Häufige Fragen (FAQ) zur Wohnungsauflösung bei Pflegeheim-Umzügen
 
 ### Was dürfen Senioren ins Pflegeheim mitnehmen?
-In den meisten Wiener Pflegeheimen (wie z.B. den Häusern zum Leben) ist der Platz begrenzt. Meist dürfen nur ein bequemer Lieblingssessel, persönliche Bilder, ein kleines Kastl und natürlich Kleidung mitgenommen werden. Wir helfen gerne beim Transport dieser wenigen, aber emotional wichtigen Gegenstände im Rahmen eines [Seniorenumzugs](/dienstleistungen/umzug-wien/).
+In den meisten Wiener Pflegeheimen (wie z.B. den Häusern zum Leben) ist der Platz begrenzt. Meist dürfen nur ein bequemer Lieblingssessel, persönliche Bilder, ein kleines Kastl und natürlich Kleidung mitgenommen werden. Wir helfen gerne beim Transport dieser wenigen, aber emotional wichtigen Gegenstände im Rahmen eines [Seniorenumzugs](/leistungen/umzug-wien/).
 
 ### Wie lange dauert die komplette Wohnungsauflösung?
 Nach der kostenlosen Besichtigung in Wien räumen wir eine durchschnittliche Wohnung oft innerhalb von 1-2 Arbeitstagen komplett besenrein, sodass Sie die Wohnung fristgerecht an die Hausverwaltung oder den Vermieter (z.B. Wiener Wohnen) übergeben können.
@@ -88,7 +88,7 @@ Unser Team kümmert sich um alles. Wenn der Mietvertrag es vorschreibt, demontie
 
 ## Unser Versprechen an Angehörige
 
-Wir vom Sicher Team wissen, dass eine [Wohnungsauflösung](/dienstleistungen/wohnungsaufloesung/) in dieser Lebensphase mehr ist als nur das Tragen von Möbeln. Es geht um Respekt vor den Erinnerungen und die Entlastung der Familie. Wir arbeiten diskret, pünktlich und transparent.
+Wir vom Sicher Team wissen, dass eine [Wohnungsauflösung](/leistungen/wohnungsaufloesung/) in dieser Lebensphase mehr ist als nur das Tragen von Möbeln. Es geht um Respekt vor den Erinnerungen und die Entlastung der Familie. Wir arbeiten diskret, pünktlich und transparent.
 
 **Nutzen Sie unsere kostenlose Erstbesichtigung mit Wertanrechnung.**
 Wir kommen unverbindlich in Wien oder Niederösterreich vorbei, schätzen den Restwert des Hausrats und erstellen Ihnen einen garantierten Fixpreis – ohne versteckte Kosten.

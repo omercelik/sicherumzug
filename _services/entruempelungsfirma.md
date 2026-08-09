@@ -65,7 +65,7 @@ Wir kalkulieren alle Arbeitsschritte vorab. Das Angebot bleibt stabil, weil Demo
 
 ## Räumungsfirma oder Entrümpelungsdienst
 
-Für einzelne Räume oder Abholungen reicht oft ein [Entrümpelungsdienst](/leistungen/entruempelungsdienst/). Wenn es um komplette Räumungen geht, ist die Räumungsfirma die bessere Wahl.
+Für einzelne Räume oder Abholungen reicht oft ein [Entrümpelungsdienst](/leistungen/entruempelung/). Wenn es um komplette Räumungen geht, ist die Räumungsfirma die bessere Wahl.
 
 > [Räumungsfirma anfragen](/angebot/) oder telefonisch unter [{{ site.phone }}](tel:{{ site.phone | replace: ' ', '' }}).
 

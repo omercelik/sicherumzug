@@ -55,7 +55,7 @@ Mehr Stimmen – inklusive Projektfotos und Wertanrechnung-Beispielen – finden
 - [Umzug Wien zum Fixpreis](/leistungen/umzug-wien/) für Komplettprojekte in allen 23 Bezirken
 - [Umzug Wien](/leistungen/umzug-wien/) mit Wertanrechnung
 - [Wohnungsübersiedlung Wien](/leistungen/umzug-wien/) für Mieterwechsel, Übergaben und Fixpreise
-- [Umzug Wien Überblick](/leistungen/umzug-ueberblick/) als Leitfaden zu Kosten und Ablauf
+- [Umzug Wien Überblick](/umzugsservice/) als Leitfaden zu Kosten und Ablauf
 - [Hausumzug Wien](/leistungen/hausumzug/) für Einfamilien- und Reihenhäuser
 - [Spezialtransporte Wien](/leistungen/spezialtransporte/) für volle Garagen, Werkbänke und Lagerecken
 - [Studentenumzug Wien](/leistungen/studentenumzug/) für Studentenwohnungen und WGs

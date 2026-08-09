@@ -12,7 +12,7 @@ llm_exclude: true
 ### Candidate 1: Entrümpelungsdienst vs. Entrümpelungsfirma vs. Entrümpelung
 *   **URLs:**
     *   `/leistungen/entruempelung/`
-    *   `/leistungen/entruempelungsdienst/`
+    *   `/leistungen/entruempelung/`
     *   `/leistungen/entruempelungsfirma/`
 *   **Primary Intent:** Transactional/Informational – Users looking to hire a company to clear out a space.
 *   **Cannibalization Risk:** High. Google and AI search engines view these three URLs as targeting the exact same semantic intent. This splits authority and link equity.

@@ -242,7 +242,7 @@
 # Legacy Service & WP Redirects
 /service/kuechenmontage/ /leistungen/moebelmontage/ 301
 /service/kuechenmontage /leistungen/moebelmontage/ 301
-/gallery-addon/ 410
+/gallery-addon/ / 301
 /service-category/business/ /leistungen/firmenumzug-wien/ 301
 /service-category/business /leistungen/firmenumzug-wien/ 301
 /online-termin/ /angebot/ 301
@@ -278,8 +278,6 @@
 /ratgeber/2026-08-12-ausmisten-vor-umzug-wien /ratgeber/richtig-ausmisten/ 301
 /ratgeber/2026-03-15-ummeldung-nach-umzug-oesterreich/ /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
 /ratgeber/2026-03-15-ummeldung-nach-umzug-oesterreich /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
-/ratgeber/2026-08-08-behoerdenwege-ummelden-oesterreich/ /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
-/ratgeber/2026-08-08-behoerdenwege-ummelden-oesterreich /ratgeber/behoerdenwege-nach-umzug-oesterreich/ 301
 /ratgeber/2025-11-20-delogierung-oesterreich-ablauf/ /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
 /ratgeber/2025-11-20-delogierung-oesterreich-ablauf /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
 /ratgeber/2026-08-19-delogierung-zwangsraeumung-oesterreich/ /ratgeber/delogierung-zwangsraeumung-wien-vermieter/ 301
@@ -296,8 +294,6 @@
 /ratgeber/2026-08-10-halteverbotszone-umzug-wien /ratgeber/halteverbotszone-umzug-oesterreich/ 301
 /ratgeber/2025-10-15-messie-raeumung-diskret/ /ratgeber/messie-wohnung-aufloesen/ 301
 /ratgeber/2025-10-15-messie-raeumung-diskret /ratgeber/messie-wohnung-aufloesen/ 301
-/ratgeber/2026-08-18-messie-raeumung-wien-diskret/ /ratgeber/messie-wohnung-aufloesen/ 301
-/ratgeber/2026-08-18-messie-raeumung-wien-diskret /ratgeber/messie-wohnung-aufloesen/ 301
 /ratgeber/messie-wohnung-raeumen-wien-diskretion/ /ratgeber/messie-wohnung-aufloesen/ 301
 /ratgeber/messie-wohnung-raeumen-wien-diskretion /ratgeber/messie-wohnung-aufloesen/ 301
 /ratgeber/2026-04-12-moebelpacker-vs-diy-umzug/ /ratgeber/moebelpacker-vs-diy-umzug/ 301
@@ -308,12 +304,6 @@
 /ratgeber/2026-04-01-seniorenumzug-ohne-stress /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
 /ratgeber/2026-08-04-seniorenumzug-wien-stressfrei/ /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
 /ratgeber/2026-08-04-seniorenumzug-wien-stressfrei /ratgeber/seniorenumzug-oesterreich-profi-hilfe/ 301
-/ratgeber/2026-06-22-tresortransport-schwere-lasten/ /ratgeber/tresortransport-schwerlast-oesterreich/ 301
-/ratgeber/2026-06-22-tresortransport-schwere-lasten /ratgeber/tresortransport-schwerlast-oesterreich/ 301
-/ratgeber/2026-08-05-tresortransport-schwerlast-oesterreich/ /ratgeber/tresortransport-schwerlast-oesterreich/ 301
-/ratgeber/2026-08-05-tresortransport-schwerlast-oesterreich /ratgeber/tresortransport-schwerlast-oesterreich/ 301
-/ratgeber/2026-02-05-umzug-mit-haustieren-stressfrei/ /ratgeber/umzug-mit-haustieren/ 301
-/ratgeber/2026-02-05-umzug-mit-haustieren-stressfrei /ratgeber/umzug-mit-haustieren/ 301
 /ratgeber/2026-08-16-umzug-mit-haustieren-oesterreich/ /ratgeber/umzug-mit-haustieren/ 301
 /ratgeber/2026-08-16-umzug-mit-haustieren-oesterreich /ratgeber/umzug-mit-haustieren/ 301
 /ratgeber/2026-07-20-umzugskosten-steuer-absetzen/ /ratgeber/umzugskosten-oesterreich-sparen/ 301
@@ -330,3 +320,25 @@
 /ratgeber/2026-08-20-wohnungsaufloesung-todesfall-verlassenschaft /ratgeber/haushaltsaufloesung-todesfall/ 301
 /ratgeber/wohnungsaufloesung-nach-todesfall/ /ratgeber/haushaltsaufloesung-todesfall/ 301
 /ratgeber/wohnungsaufloesung-nach-todesfall /ratgeber/haushaltsaufloesung-todesfall/ 301
+
+
+# SEO Recovery - 404s
+/gratis-angebot/ https://sicher-umzug.at/angebot/ 301
+/dienstleistungen/wohnungsaufloesung/ https://sicher-umzug.at/leistungen/wohnungsaufloesung/ 301
+/leistungen/umzug-ueberblick/ https://sicher-umzug.at/umzugsservice/ 301
+/ratgeber/auslandsumzug-planen-tipps/ https://sicher-umzug.at/ratgeber/internationaler-umzug-oesterreich-profi/ 301
+/uber-uns/ https://sicher-umzug.at/ueber-uns/ 301
+/service-category/business/ https://sicher-umzug.at/leistungen/firmenumzug-wien/ 301
+/leistungen/haushaltsaufloesung-1220-wien/ https://sicher-umzug.at/leistungen/haushaltsaufloesung/ 301
+/dienstleistungen/raeumung/ https://sicher-umzug.at/leistungen/raeumung/ 301
+/service/kuechenmontage/ https://sicher-umzug.at/leistungen/moebelmontage/ 301
+/dienstleistungen/umzug-wien/ https://sicher-umzug.at/leistungen/umzug-wien/ 301
+/service/verpackungsmaterial/ https://sicher-umzug.at/leistungen/verpackungsservice/ 301
+/leistungen/wohnungsraeumung/ https://sicher-umzug.at/leistungen/wohnungsaufloesung/ 301
+/leistungen/entruempelungsdienst/ https://sicher-umzug.at/leistungen/entruempelung/ 301
+/ratgeber/2026-08-23-moebelmontage-abbau-tipps/ https://sicher-umzug.at/ratgeber/moebelmontage-abbau-tipps/ 301
+/ratgeber/2026-08-23-moebelmontage-abbau-tipps https://sicher-umzug.at/ratgeber/moebelmontage-abbau-tipps/ 301
+/gallery-addon/ / 301
+
+# Canonical Hostname Redirection
+https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!

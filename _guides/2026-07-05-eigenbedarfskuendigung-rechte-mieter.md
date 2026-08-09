@@ -1,5 +1,6 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
+sitemap: false
 layout: guide
 title: "Eigenbedarfskündigung durch den Vermieter: Was Mieter jetzt wissen müssen"
 date: 2026-07-05 10:15:00 +0200
