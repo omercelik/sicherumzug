@@ -91,7 +91,7 @@ Transparenz und Verlässlichkeit sind die Basis unserer Arbeit. So funktioniert 
 
 1.  **Kostenlose Besichtigung (oder Foto-Check):** Sie kontaktieren uns und wir sehen uns das Umzugsvolumen an – entweder unkompliziert per WhatsApp-Fotos oder bei einer persönlichen, kostenlosen Besichtigung in Mödling.
 2.  **Verbindlicher Fixpreis:** Basierend auf der Besichtigung kalkulieren wir den Aufwand. Sie erhalten ein schriftliches Angebot mit einer echten Fixpreisgarantie. Keine Nachverhandlungen, keine bösen Überraschungen am Umzugstag.
-3.  **Vorbereitung & Halteverbotszone:** Wir kümmern uns um die Genehmigungen für die Ladezone in Mödling, liefern Ihnen auf Wunsch vorab Umzugskartons und stellen sicher, dass am Umzugstag alles bereit ist. Nützliche Tipps zur Vorbereitung finden Sie auch in unserer [ultimativen Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/).
+3.  **Vorbereitung & Halteverbotszone:** Wir kümmern uns um die Genehmigungen für die Ladezone in Mödling, liefern Ihnen auf Wunsch vorab Umzugskartons und stellen sicher, dass am Umzugstag alles bereit ist. Nützliche Tipps zur Vorbereitung finden Sie auch in unserer [ultimativen Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/).
 4.  **Der Umzugstag:** Unser fest angestelltes, uniformiertes Team erscheint pünktlich. Wir demontieren Ihre Möbel, verpacken empfindliche Gegenstände bruchsicher und beladen den LKW.
 5.  **Montage und Abschluss:** Am Zielort laden wir alles aus, bringen die Kartons in die entsprechenden Räume und montieren Ihre Möbel fachgerecht.
 

@@ -91,7 +91,7 @@ Wir legen größten Wert auf eine transparente und effiziente Arbeitsweise:
 
 1.  **Die Ersteinschätzung:** Kontaktieren Sie uns per WhatsApp mit Fotos Ihres Inventars oder vereinbaren Sie eine kostenfreie Besichtigung vor Ort in Baden.
 2.  **Ihr Fixpreis-Angebot:** Sie erhalten von uns einen klaren, schriftlichen Kostenvoranschlag. Dank unserer Fixpreisgarantie gibt es am Umzugstag garantiert keine versteckten Kosten.
-3.  **Die Vorbereitung:** Wir klären die Halteverbote, planen die Route nach oder von Baden (z.B. für einen reibungslosen [Umzug nach Wien](/leistungen/umzug-wien/)) und liefern Ihnen auf Wunsch vorab stabile Umzugskartons. Nutzen Sie gerne unsere detaillierte [Umzugs-Checkliste](/ratgeber/umzug-checkliste-ultimativ/), um sich vorzubereiten.
+3.  **Die Vorbereitung:** Wir klären die Halteverbote, planen die Route nach oder von Baden (z.B. für einen reibungslosen [Umzug nach Wien](/leistungen/umzug-wien/)) und liefern Ihnen auf Wunsch vorab stabile Umzugskartons. Nutzen Sie gerne unsere detaillierte [Umzugs-Checkliste](/ratgeber/umzug-oesterreich-profi-guide/), um sich vorzubereiten.
 4.  **Der Umzugstag:** Unser motiviertes und erfahrenes Personal übernimmt die schwere Arbeit. Wir bauen ab, verpacken sicher, transportieren zügig und bauen alles am neuen Standort wieder auf.
 
 ### Was kostet ein Umzug in Baden?
