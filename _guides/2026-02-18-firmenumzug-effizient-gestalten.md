@@ -1,5 +1,6 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
+sitemap: false
 layout: guide
 title: "Firmenumzug effizient gestalten: Ausfallzeiten minimieren"
 date: 2026-02-18 08:00:00 +0100

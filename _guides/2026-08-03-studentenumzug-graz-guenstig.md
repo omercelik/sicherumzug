@@ -1,5 +1,6 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
+sitemap: false
 layout: guide
 title: "Studentenumzug in Österreich: Günstig, Schnell & Stressfrei in die erste WG"
 date: 2026-08-03 09:00:00 +0200

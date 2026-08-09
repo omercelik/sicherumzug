@@ -242,7 +242,7 @@
 # Legacy Service & WP Redirects
 /service/kuechenmontage/ /leistungen/moebelmontage/ 301
 /service/kuechenmontage /leistungen/moebelmontage/ 301
-/gallery-addon/ 410
+/gallery-addon/ / 301
 /service-category/business/ /leistungen/firmenumzug-wien/ 301
 /service-category/business /leistungen/firmenumzug-wien/ 301
 /online-termin/ /angebot/ 301
@@ -338,7 +338,7 @@
 /leistungen/entruempelungsdienst/ https://sicher-umzug.at/leistungen/entruempelung/ 301
 /ratgeber/2026-08-23-moebelmontage-abbau-tipps/ https://sicher-umzug.at/ratgeber/moebelmontage-abbau-tipps/ 301
 /ratgeber/2026-08-23-moebelmontage-abbau-tipps https://sicher-umzug.at/ratgeber/moebelmontage-abbau-tipps/ 301
-/gallery-addon/ 410
+/gallery-addon/ / 301
 
 # Canonical Hostname Redirection
 https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!

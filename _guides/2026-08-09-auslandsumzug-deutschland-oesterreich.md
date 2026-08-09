@@ -1,5 +1,6 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
+sitemap: false
 layout: guide
 title: "Auslandsumzug Österreich - Deutschland: Was Sie beachten müssen"
 date: 2026-08-09 09:00:00 +0200
