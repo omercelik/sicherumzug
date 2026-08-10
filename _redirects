@@ -64,8 +64,6 @@
 /entruempelung-burgenland /bundesland/burgenland/ 301
 /bundesland/ /bezirke/ 301
 /bundesland /bezirke/ 301
-/cdn-cgi/l/email-protection/ /impressum/ 301
-/cdn-cgi/l/email-protection /impressum/ 301
 /category/allgemein/feed/ /ratgeber/ 301
 /category/allgemein/feed /ratgeber/ 301
 /schnelle-bueroraeumung-in-wien-so-funktioniert-unsere-gewerbliche-entruempelung/feed/ /ratgeber/buero-und-gewerberaemung/ 301
@@ -171,7 +169,6 @@
 /leistungen/antiquitaeten-ankauf-:region /leistungen/antiquitaeten-ankauf/ 301
 
 # Cloudflare email protection artifact
-/cdn-cgi/l/email-protection /angebot/ 301
 /ratgeber/2024/01/20/checkliste-haushaltsaufloesung/ /ratgeber/checkliste-haushaltsaufloesung/ 301
 /ratgeber/2024/01/20/checkliste-haushaltsaufloesung /ratgeber/checkliste-haushaltsaufloesung/ 301
 /ratgeber/2024/02/10/ma48-vs-firma/ /ratgeber/ma48-vs-firma/ 301
@@ -342,3 +339,5 @@
 
 # Canonical Hostname Redirection
 https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!
+/ratgeber/ultimative-umzugs-checkliste/ /ratgeber/umzug-oesterreich-profi-guide/ 301
+/ratgeber/ultimative-umzugs-checkliste /ratgeber/umzug-oesterreich-profi-guide/ 301

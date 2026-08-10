@@ -55,7 +55,7 @@ schema_type: Service
 service_type: Umzug
 permalink: /leistungen/umzug-1220-wien/
 redirect_from:
-- /leistungen/haushaltsaufloesung-1220-wien/
+- /leistungen/haushaltsaufloesung/
 - /entruempelung-1220-wien/
 - /raeumung-1220-wien/
 local_logistics_note: In 1220 Wien stimmen wir Ladefenster, Liftzeiten und Zugangspunkte

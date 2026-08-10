@@ -129,6 +129,13 @@ exclude:
   - plans
   - AGENTS.md
   - .bundle
+  - docs
+  - phase-*
+  - report.md
+  - plan.md
+  - ui-ux-fix-plan.md
+  - semantic-audit-report.md
+  - consolidation-plan.md
 
 include:
   - _pages
