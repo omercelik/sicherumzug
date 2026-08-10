@@ -13,7 +13,7 @@ pillars:
     description: "Halteverbote, Stiegenhäuser und Ladezeiten planen wir täglich – inklusive Behördenwege."
   - title: "Schnelle Termine"
     description: "Dank Teams in allen Bezirken starten wir oft innerhalb von 48 Stunden."
-  - title: "Wertausgleich"
+  - title: "Wertanrechnung"
     description: "Antiquitäten, Technik und Sammlungen rechnen wir direkt am Angebot gegen."
 permalink: /bundesland/wien/
 ---

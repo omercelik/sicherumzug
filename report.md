@@ -121,3 +121,20 @@ BUILD
 - Jekyll build: PASS
 - Generated URL validation: SUCCESS
 - Sitemap validation: PASS
+
+## Final QA Update
+1. Consolidated SEO Metadata & Schema.org sitewide. Checked `_site/` directory ensuring one `<title>`, one `<meta name="description">`, and one `canonical`.
+2. Changed `Wertausgleich` URL to `Wertanrechnung`. Added a redirect. Updated page contents.
+3. Removed `sitemap: false` from legit guides so they are indexed. Verified they have self-referencing canonicals.
+4. Added Cloudflare redirect for `/cdn-cgi/l/email-protection` to `/angebot/`.
+5. Updated `bezirke` redirection out of the way so `bundesland` URLs act as standalones.
+6. LocalBusiness markup removed from non-root pages (only on index). Replaced with WebSite/Organization/Service schema depending on context.
+
+
+## Final QA Update
+1. Consolidated SEO Metadata & Schema.org sitewide. Checked `_site/` directory ensuring one `<title>`, one `<meta name="description">`, and one `canonical`.
+2. Changed `Wertausgleich` URL to `wertanrechnung-raeumung-wien` (lowercase per standard). Added redirects without chaining.
+3. Removed `sitemap: false` from legit guides so they are indexed. Verified they have self-referencing canonicals and output to `sitemap.xml`.
+4. Added Cloudflare redirect for `/cdn-cgi/l/email-protection` to `/angebot/`.
+5. Updated `bezirke` redirection out of the way so `bundesland` URLs act as standalones. Removed localBusiness schema injection arbitrarily per district to preserve strict Google map entity bounds.
+6. Ran rigorous end-to-end Ruby QA crawl scripts mimicking crawler logic on the generated `_site` to confirm compliance. Everything returns cleanly.

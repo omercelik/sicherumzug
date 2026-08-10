@@ -11,20 +11,20 @@ tags:
   - räumung
   - wien
 faqs:
-  - question: "Was unterscheidet Wertanrechnung von Wertanrechnung?"
-    answer: "Beim Wertanrechnung wird der Wert verkäuflicher Gegenstände auf den Räumungsfixpreis angerechnet und transparent ausgewiesen, während die Wertanrechnung oft nur als interner Preisnachlass behandelt wird."
+  - question: "Was unterscheidet Wertanrechnung von normalem Ankauf?"
+    answer: "Bei der Wertanrechnung wird der Wert verkäuflicher Gegenstände auf den Räumungsfixpreis angerechnet und transparent ausgewiesen, während die Wertanrechnung oft nur als interner Preisnachlass behandelt wird."
   - question: "Welche Unterlagen braucht eine Wertanrechnung Räumung?"
     answer: "Inventarliste mit Fotos, Besitznachweise (Rechnungen, Schätzungen), Kontakt- und Bankdaten der Anspruchsberechtigten sowie ein unterschriebenes Angebot mit Gutschriften nach Position."
-  - question: "Können mehrere Erb:innen oder WG-Mitglieder den Wertanrechnung teilen?"
+  - question: "Können mehrere Erb:innen oder WG-Mitglieder die Wertanrechnung teilen?"
     answer: "Ja. Wir dokumentieren jede Position einzeln und erstellen getrennte Gutschriften, damit Erbengemeinschaften oder WGs den Erlös nachvollziehbar aufteilen können."
-permalink: /ratgeber/wertausgleich-raeumung-wien/
+permalink: /ratgeber/wertanrechnung-raeumung-wien/
 ---
 
 Viele Kund:innen stehen vor derselben Frage: Wie funktioniert eine Wertanrechnung Räumung konkret, wer bewertet meine Möbel und wie wird die Gutschrift später auf der Rechnung ausgewiesen? Dieser Leitfaden zeigt Schritt für Schritt, wie Sie vom ersten Foto bis zur fertigen Dokumentation für Hausverwaltung, Erbengemeinschaft oder Steuerberatung vorgehen.
 
-## Wertanrechnung vs. Wertanrechnung – wo liegt der Unterschied?
+## Wertanrechnung vs. normaler Ankauf – wo liegt der Unterschied?
 
-- **Vollständige Transparenz:** Beim Wertanrechnung legen wir für jede Kategorie eine nachvollziehbare Bewertung offen (z. B. „3x Designstuhl – 450 €“). So lässt sich der Betrag auf Erb:innen, WG-Mitglieder oder Vermieter:innen aufteilen.
+- **Vollständige Transparenz:** Bei der Wertanrechnung legen wir für jede Kategorie eine nachvollziehbare Bewertung offen (z. B. „3x Designstuhl – 450 €“). So lässt sich der Betrag auf Erb:innen, WG-Mitglieder oder Vermieter:innen aufteilen.
 - **Rechtssicherheit:** In Nachlass- oder Abnahmeprotokollen verlangen Gerichte oder Hausverwaltungen nachvollziehbare Belege. Der Wertanrechnung liefert diese, während eine reine Wertanrechnung oft nur intern verrechnet wird.
 - **Auszahlung möglich:** Übersteigt der Wert die Räumungskosten, zahlen wir den Überschuss aus – dokumentiert mit Rechnung und Gutschrift.
 - **Kombination mit Fixpreis:** Der Räumungs-Fixpreis bleibt vertraglich gesichert, nur die Endsumme sinkt durch die ausgewiesenen Gutschriften.
@@ -40,7 +40,7 @@ Viele Kund:innen stehen vor derselben Frage: Wie funktioniert eine Wertanrechnun
 5. **Räumung & Abtransport:** Unser Team erledigt Demontage, Verpackung, Transport zur MA 48 oder zu Ankaufspartner:innen. Wertgegenstände bekommen separate Lieferscheine.
 6. **Abschluss & Auszahlung:** Nach Übergabe erhalten Sie Rechnung, Gutschrift und auf Wunsch ein Fotoprotokoll für Nachlassgerichte oder Hausverwaltungen.
 
-## Unterlagen & Nachweise, die den Wertanrechnung erleichtern
+## Unterlagen & Nachweise, die die Wertanrechnung erleichtern
 
 - **Besitznachweise:** Rechnungen, Erbstücke mit Gutachten, Versicherungswerte oder Beschreibungen („ISA Biedermeier, restauriert 2018“).
 - **Bank- bzw. Auszahlungsinfos:** Bei mehreren Anspruchsgruppen (z. B. Geschwister) können wir nach einem Aufteilungsschlüssel überweisen.
