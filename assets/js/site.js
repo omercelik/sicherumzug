@@ -440,38 +440,40 @@ document.addEventListener('DOMContentLoaded', function domReady() {
 
         if (res.ok && data.success) {
 
-  // Formular ausblenden
-  quoteForm.classList.add('none');
+          // Formular ausblenden
+          quoteForm.classList.add('hidden');
 
-if (responseDiv) {
-  responseDiv.className = 'mt-8 rounded-3xl bg-green-50 border-2 border-green-200 p-10 text-center shadow-lg animate-fade-in';
+          if (responseDiv) {
+            responseDiv.className = 'mt-8 rounded-3xl bg-green-50 border-2 border-green-200 p-10 text-center shadow-lg animate-fade-in outline-none';
+            responseDiv.setAttribute('tabindex', '-1');
 
-  responseDiv.innerHTML = `
-    <div class="flex justify-center">
-      <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
-        {% include svg/check_circle.svg class="w-[18px] h-[18px] shrink-0 text-green-600 fill-current mx-auto mb-4" %}
-      </div>
-    </div>
+            responseDiv.innerHTML = `
+              <div class="flex justify-center">
+                <div class="flex h-24 w-24 items-center justify-center rounded-full bg-green-100 shadow-inner">
+                  {% include svg/check_circle.svg class="w-12 h-12 shrink-0 text-green-600 fill-current mx-auto" %}
+                </div>
+              </div>
 
-    <h3 class="mt-6 text-3xl font-extrabold text-gray-900">
-      Vielen Dank!
-    </h3>
+              <h3 class="mt-6 text-3xl font-extrabold text-gray-900">
+                Vielen Dank!
+              </h3>
 
-    <p class="mt-4 text-lg font-semibold text-gray-700">
-      Ihre Anfrage wurde erfolgreich übermittelt.
-    </p>
+              <p class="mt-4 text-lg font-semibold text-gray-700">
+                Ihre Anfrage wurde erfolgreich übermittelt.
+              </p>
 
-    <p class="mt-3 text-base text-gray-600 leading-relaxed">
-      Wir haben Ihre Nachricht erhalten und melden uns
-      schnellstmöglich bei Ihnen.
-    </p>
+              <p class="mt-3 text-base text-gray-600 leading-relaxed">
+                Wir haben Ihre Nachricht erhalten und melden uns
+                schnellstmöglich bei Ihnen.
+              </p>
 
-    <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
-      {% include svg/phone_in_talk.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
-      Wir kontaktieren Sie persönlich
-    </div>
-  `;
-}
+              <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white font-bold shadow-md">
+                {% include svg/phone_in_talk.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
+                Wir kontaktieren Sie persönlich
+              </div>
+            `;
+            responseDiv.focus();
+          }
 
           
           if (typeof selectedFiles !== 'undefined') {
