@@ -17,7 +17,7 @@ faqs:
     answer: "Inventarliste mit Fotos, Besitznachweise (Rechnungen, Schätzungen), Kontakt- und Bankdaten der Anspruchsberechtigten sowie ein unterschriebenes Angebot mit Gutschriften nach Position."
   - question: "Können mehrere Erb:innen oder WG-Mitglieder den Wertanrechnung teilen?"
     answer: "Ja. Wir dokumentieren jede Position einzeln und erstellen getrennte Gutschriften, damit Erbengemeinschaften oder WGs den Erlös nachvollziehbar aufteilen können."
-permalink: /ratgeber/Wertanrechnung-raeumung-wien/
+permalink: /ratgeber/wertausgleich-raeumung-wien/
 ---
 
 Viele Kund:innen stehen vor derselben Frage: Wie funktioniert eine Wertanrechnung Räumung konkret, wer bewertet meine Möbel und wie wird die Gutschrift später auf der Rechnung ausgewiesen? Dieser Leitfaden zeigt Schritt für Schritt, wie Sie vom ersten Foto bis zur fertigen Dokumentation für Hausverwaltung, Erbengemeinschaft oder Steuerberatung vorgehen.

@@ -64,3 +64,9 @@ Der Studienbeginn sollte von Vorfreude geprägt sein, nicht von Umzugsstress und
 
 **Bereit für den Einzug ins Studentenleben?**
 Holen Sie sich jetzt Ihr günstiges und unverbindliches Umzugsangebot für Studenten. [Jetzt kostenloses Angebot anfordern](/angebot)!
+
+
+### Verwandte Links
+- [Haushaltsauflösung](/leistungen/haushaltsaufloesung/)
+- [Umzugs-Guide](/ratgeber/umzug-oesterreich-profi-guide/)
+- [Entrümpelung Wien](/leistungen/entruempelung-wien/)

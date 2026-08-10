@@ -71,7 +71,7 @@ Ein **Umzug in Wien** erfordert aufgrund enger Gassen, hoher Stockwerke in Altba
   <figcaption class="text-sm text-gray-500 text-center">Fachgerechter Möbeltransport und Übersiedlung durch unser fest angestelltes, geschultes Fachpersonal.</figcaption>
 </figure>
 
-Egal ob es sich um einen **Privatumzug**, einen **Firmenumzug**, einen **Büroumzug** oder einen sensiblen **Seniorenumzug** bzw. **Studentenumzug** handelt – unser **Umzugsservice** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen **Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren. Lesen Sie dazu auch [mehr Informationen zur Vorbereitung Ihres Umzugs](/ratgeber/ultimative-umzugs-checkliste/).
+Egal ob es sich um einen **Privatumzug**, einen **Firmenumzug**, einen **Büroumzug** oder einen sensiblen **Seniorenumzug** bzw. **Studentenumzug** handelt – unser **Umzugsservice** ist modular aufgebaut und passt sich perfekt Ihren Bedürfnissen an. Wir bieten Ihnen außerdem einen professionellen **Verpackungsservice** und kümmern uns um die Einrichtung einer **Halteverbotszone**, um Laufwege und Tragzeiten zu minimieren. Lesen Sie dazu auch [mehr Informationen zur Vorbereitung Ihres Umzugs](/ratgeber/umzug-oesterreich-profi-guide/).
 
 Mit unserer **Fixpreisgarantie** und der integrierten **Transportversicherung** bis zu einer Deckungssumme von € 1.000.000 sind Sie von der ersten Kartonpackung über den **Möbeltransport** und die **Möbelmontage** bis zum fertigen Aufbau in Ihrem neuen Zuhause auf der sicheren Seite.
 

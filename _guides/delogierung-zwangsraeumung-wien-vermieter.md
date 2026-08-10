@@ -118,3 +118,9 @@ Denken Sie daran: Jeder abgeschlossene Schritt bringt Sie Ihrem Ziel näher. Nut
 
 ### Rechtliche Rahmenbedingungen & Ablaufprotokoll
 Wir legen größten Wert auf eine lückenlose Dokumentation bei Zwangsräumungen. Unser Übergabeprotokoll (inklusive Fotodokumentation) dient Ihnen als rechtliche Absicherung gegenüber den ehemaligen Mietern und den Behörden.
+
+
+### Verwandte Links
+- [Umzugs-Guide](/ratgeber/umzug-oesterreich-profi-guide/)
+- [Haushaltsauflösung](/leistungen/haushaltsaufloesung/)
+- [Entrümpelung Wien](/leistungen/entruempelung-wien/)
