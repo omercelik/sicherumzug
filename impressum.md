@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
 title: "Impressum & Datenschutz"
 seo_title: "Sicher Team - Impressum & Datenschutz Wien"
-description: "Impressum, Datenschutzhinweise und rechtliche Informationen – Ihrem Partner für Entrümpelung in Wien."
+description: "Impressum, Datenschutzhinweise und rechtliche Informationen – Ihrem Partner für Umzug, Räumung und Entrümpelung in Wien."
 kicker: "Rechtliches"
 permalink: /impressum/
 ---
