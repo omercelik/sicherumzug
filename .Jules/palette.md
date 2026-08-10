@@ -33,3 +33,7 @@
 ## 2026-08-05 - Live Austrian Region Detection for Postcode Validation
 **Learning:** Providing real-time local region confirmation when typing a postcode in a localized service area drastically increases user trust and confidence. Coupling this with the existing dynamic error system and updating `aria-describedby` dynamically ensures high screen-reader accessibility and zero cognitive friction.
 **Action:** Always map national postcode prefixes to regional locations to provide immediate positive visual and auditory feedback on location coverage during typing.
+
+## 2026-08-10 - Success Message Focus Redirects and Visible Scale Enhancements
+**Learning:** When asynchronously submitting form contents on static single-page layouts, hiding the active interactive inputs using standard Tailwind CSS classes like `hidden` (rather than non-standard keywords) prevents visual layout jumps. Furthermore, programmatically shifting focus to the success message element using `tabindex="-1"` and `.focus()` immediately informs assistive screen readers of the terminal state. Centering and scaling visual feedback SVGs (like checkmarks) to robust sizes like `w-12 h-12` significantly boosts user delight and cognitive comprehension of completed states.
+**Action:** Ensure success response containers have `tabindex="-1"`, call `.focus()` immediately upon generation, and scale checking assets dynamically to prominent grid/flex proportion dimensions.
