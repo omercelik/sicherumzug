@@ -52,6 +52,7 @@ Mehr Stimmen – inklusive Projektfotos und Wertanrechnung-Beispielen – finden
 
 ### Beliebte Leistungen im Überblick
 
+- [Privatumzug](/leistungen/privatumzug/) für stressfreie Wohnungswechsel in ganz Österreich
 - [Umzug Wien zum Fixpreis](/leistungen/umzug-wien/) für Komplettprojekte in allen 23 Bezirken
 - [Umzug Wien](/leistungen/umzug-wien/) mit Wertanrechnung
 - [Wohnungsübersiedlung Wien](/leistungen/umzug-wien/) für Mieterwechsel, Übergaben und Fixpreise
