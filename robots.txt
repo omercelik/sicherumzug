@@ -52,4 +52,3 @@ User-agent: SemrushBot
 Disallow: /
 
 Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap-images.xml

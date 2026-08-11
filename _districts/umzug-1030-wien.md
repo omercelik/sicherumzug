@@ -5,7 +5,7 @@ checklist:
 - Diskrete Übersiedlung für Kanzleien & Diplomatenwohnungen
 - Kellerübersiedlung in den Gemeindebauten des Fasanviertels
 - Büroumzüge in Start-ups und Gewerbe im Neu Marx Areal
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in Landstraße und angrenzenden Bezirken."
 
 footer_title: Umzug & Übersiedlung 1030 (Landstraße)
 hero_image: /topbg.webp

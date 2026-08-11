@@ -1,10 +1,11 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
-title: "Küche abbauen und umziehen: Anleitung, Tipps & Profi-Service in Österreich"
+title: "Küche abbauen und umziehen: Tipps & Profi-Service"
 date: 2026-08-11 09:00:00 +0200
 categories: umzug kueche montage
 description: "Der Küchenumzug ist die Königsdisziplin der Übersiedlung. Erfahren Sie, wie Sie Küchenschränke, Arbeitsplatten und Geräte sicher demontieren und transportieren."
+seo_title: "Küche abbauen und umziehen: Tipps & Profi-Service"
 ---
 
 

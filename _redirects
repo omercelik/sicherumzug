@@ -336,6 +336,7 @@
 /gallery-addon/ / 301
 
 # Canonical Hostname Redirection
+http://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!
 https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!
 /ratgeber/ultimative-umzugs-checkliste/ /ratgeber/umzug-oesterreich-profi-guide/ 301
 /ratgeber/ultimative-umzugs-checkliste /ratgeber/umzug-oesterreich-profi-guide/ 301

@@ -1,10 +1,11 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
-title: "Tresortransport & Schwerlasttransport Österreich: Sicher und Zertifiziert"
+title: "Tresortransport & Schwerlasttransport in Österreich"
 date: 2026-08-05 09:00:00 +0200
 categories: umzug spezialtransport schwerlast
 description: "Suchen Sie Experten für den Tresortransport oder den Transport von Maschinen in Österreich? Erfahren Sie alles über Schwerlasttransporte und Logistik."
+seo_title: "Tresortransport & Schwerlasttransport in Österreich"
 ---
 
 

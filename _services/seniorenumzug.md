@@ -1,9 +1,9 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: service
-title: "Seniorenumzug Österreich | Behutsam & Stressfrei"
-seo_title: "Seniorenumzug Wien & Österreich - Stressfreie Übersiedlung ins Pflegeheim"
-description: "Behutsamer und stressfreier Umzug für Senioren in Wien und ganz Österreich. Wir bieten Einpackservice, Möbelmontage und die besenreine Räumung der alten Wohnung."
+title: "Seniorenumzug Wien & Österreich - Stressfrei ins Pflegeheim"
+seo_title: "Seniorenumzug Wien & Österreich - Stressfrei ins Pflegeheim"
+description: "Behutsamer Umzug für Senioren in Wien und Österreich. Wir bieten Einpackservice, Möbelmontage und die besenreine Räumung der alten Wohnung."
 kicker: "Für Senioren"
 permalink: /leistungen/seniorenumzug/
 intent_primary: transactional

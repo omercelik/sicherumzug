@@ -2,10 +2,11 @@
 last_modified_at: 2026-08-05T14:01:00+02:00
 
 layout: guide
-title: "Auslandsumzug planen: Was Sie bei einem Umzug über die Grenze beachten müssen"
+title: "Auslandsumzug planen: Tipps für den Umzug über die Grenze"
 date: 2026-06-08 09:30:00 +0200
 categories: umzug auslandsumzug
 description: Ein Umzug ins Ausland erfordert besondere Vorbereitung. Wir klären über Zollbestimmungen, Transportwege und wichtige Dokumente auf.
+seo_title: "Auslandsumzug planen: Tipps für den Umzug über die Grenze"
 ---
 Ein Umzug über die Staatsgrenzen hinweg ist ein aufregendes Abenteuer, verlangt jedoch auch eine weitaus detailliertere Logistik als ein Inlandsumzug.
 

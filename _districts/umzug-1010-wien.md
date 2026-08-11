@@ -4,7 +4,7 @@ checklist:
 - Altbauwohnungen rund um Stephansdom & Graben
 - Prachtvolle Salons, Kanzleien & Palais
 - Tresore, Kunst & Antiquitäten mit Wertgutachten
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt."
 
 footer_title: Umzug & Übersiedlung 1010 (Innere Stadt)
 hero_image: /topbg.webp

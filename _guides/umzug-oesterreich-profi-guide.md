@@ -2,7 +2,7 @@
 last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Umzug Österreich: Der ultimative Profi-Leitfaden für Ihre Übersiedlung"
 seo_title: "Umzug Österreich – Leitfaden, Kosten & Planung österreichweit"
-description: "Erfahren Sie alles über den Umzug in Österreich. Kosten, Planung von Wien bis Bregenz, Checklisten, rechtliche Rahmenbedingungen und Expertentipps für eine stressfreie Übersiedlung."
+description: "Alles über den Umzug in Österreich. Kosten, Planung von Wien bis Bregenz, Checklisten, rechtliche Rahmenbedingungen und Expertentipps für Ihre Übersiedlung."
 date: 2026-02-10
 category: "Ratgeber"
 tags:

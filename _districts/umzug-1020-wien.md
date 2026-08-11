@@ -5,7 +5,7 @@ checklist:
 - Kellerübersiedlungen & Tiefgaragenboxen im Nordbahnviertel
 - Balkone & Terrassen inklusive Pflanzenentsorgung nahe dem Prater
 - Büros & Gewerbe nahe der Messe Wien oder am Donaukanal
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in der Leopoldstadt."
 
 footer_title: Umzug & Übersiedlung 1020 (Leopoldstadt)
 hero_image: /topbg.webp
