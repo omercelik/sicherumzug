@@ -1,6 +1,8 @@
 services:
   - label: Kernleistungen
     items:
+      - title: Privatumzug
+        url: /leistungen/privatumzug/
       - title: Umzug Tirol
         url: /bundesland/tirol/
       - title: Entrümpelung Tirol
