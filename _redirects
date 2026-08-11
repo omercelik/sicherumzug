@@ -62,8 +62,6 @@
 /datenschutzerklaerung /impressum/ 301
 /entruempelung-burgenland/ /bundesland/burgenland/ 301
 /entruempelung-burgenland /bundesland/burgenland/ 301
-/bundesland/ /bezirke/ 301
-/bundesland /bezirke/ 301
 /category/allgemein/feed/ /ratgeber/ 301
 /category/allgemein/feed /ratgeber/ 301
 /schnelle-bueroraeumung-in-wien-so-funktioniert-unsere-gewerbliche-entruempelung/feed/ /ratgeber/buero-und-gewerberaemung/ 301
@@ -341,3 +339,12 @@
 https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!
 /ratgeber/ultimative-umzugs-checkliste/ /ratgeber/umzug-oesterreich-profi-guide/ 301
 /ratgeber/ultimative-umzugs-checkliste /ratgeber/umzug-oesterreich-profi-guide/ 301
+
+# Cloudflare protections
+/cdn-cgi/l/email-protection /angebot/ 301
+
+# URL remediation
+/ratgeber/wertausgleich-raeumung-wien/ /ratgeber/wertanrechnung-raeumung-wien/ 301
+/ratgeber/wertausgleich-raeumung-wien /ratgeber/wertanrechnung-raeumung-wien/ 301
+/ratgeber/Wertanrechnung-raeumung-wien/ /ratgeber/wertanrechnung-raeumung-wien/ 301
+/ratgeber/Wertanrechnung-raeumung-wien /ratgeber/wertanrechnung-raeumung-wien/ 301

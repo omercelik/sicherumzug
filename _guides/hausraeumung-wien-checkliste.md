@@ -27,7 +27,7 @@ Eine **Hausräumung in Wien** ist mehr als Sperrmüll abholen. Meist geht es um 
 
 1. **Projekt kurz erfassen**: Welche Bereiche sind betroffen (Haus, Keller, Dachboden, Garage, Garten)? Gibt es Zeitdruck durch Übergabe oder Verkauf?
 2. **Foto-Check oder Besichtigung**: So lässt sich Aufwand, Entsorgung und mögliche Wertanrechnung schnell einschätzen.
-3. **Fixpreis mit Wertanrechnung**: Sie erhalten ein Angebot, in dem Arbeitsleistung, Entsorgung und Gutschriften getrennt ausgewiesen sind. Details zum Vorgehen finden Sie im Leitfaden [Wertanrechnung Räumung Wien](/ratgeber/Wertanrechnung-raeumung-wien/).
+3. **Fixpreis mit Wertanrechnung**: Sie erhalten ein Angebot, in dem Arbeitsleistung, Entsorgung und Gutschriften getrennt ausgewiesen sind. Details zum Vorgehen finden Sie im Leitfaden [Wertanrechnung Räumung Wien](/ratgeber/wertanrechnung-raeumung-wien/).
 4. **Logistik klären**: Zufahrt, Halteverbot, Container und Tragewege planen. Für Selbstanlieferung hilft auch der Ratgeber [MA 48 Mistplatz Checkliste](/ratgeber/ma48-mistplatz-checkliste/).
 5. **Räumungstag**: Demontage, Sortierung (Sperrmüll, Elektro, Problemstoffe) und Abtransport aus allen Bereichen.
 6. **besenreine Hinterlassung**: Abschlusskontrolle und auf Wunsch Fotoprotokoll für Hausverwaltung oder Käufer:innen.

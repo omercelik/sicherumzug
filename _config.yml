@@ -113,7 +113,6 @@ defaults:
       proof_date: 2026-02-09
 
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
 

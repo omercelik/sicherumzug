@@ -20,8 +20,8 @@
           {% if part == 'leistungen' %}{% assign breadcrumb_title = 'Leistungen' %}{% endif %}
           {% if part == 'bezirke' %}{% assign breadcrumb_title = 'Bezirke' %}{% endif %}
           {% if part == 'ratgeber' %}{% assign breadcrumb_title = 'Ratgeber' %}{% endif %}
-          {% if part == 'bundesland' %}{% assign breadcrumb_title = 'Bundesländer' %}{% endif %}
-          <a href="{{ current_url | append: '/' | relative_url }}" class="hover:text-orange-400 transition-colors">{{ breadcrumb_title }}</a>
+          {% if part == 'bundesland' %}{% assign breadcrumb_title = 'Standorte' %}{% endif %}
+          <a href="{% if part == 'bundesland' %}/bezirke/{% else %}{{ current_url | append: '/' | relative_url }}{% endif %}" class="hover:text-orange-400 transition-colors">{{ breadcrumb_title }}</a>
           {% include svg/chevron_right.svg class="w-4 h-4 shrink-0 text-slate-400 fill-current" %}
         {% endif %}
       {% endif %}

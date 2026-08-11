@@ -31,7 +31,7 @@ Bevor auch nur ein Karton gepackt oder ein Möbelstück verschoben wird, sollten
 ## Schritt 2: Inventur machen (Was bleibt, was geht?)
 Verschaffen Sie sich einen Überblick über das gesamte Inventar. Teilen Sie die Gegenstände mental (oder mit Post-its) in drei Kategorien ein:
 1. **Behalten:** Was nehmen Sie selbst mit?
-2. **Verwerten:** Welche Möbel, Antiquitäten oder Elektrogeräte haben noch Wert? (Hier kommt der [Wertanrechnung](/ratgeber/Wertanrechnung-raeumung-wien/) durch eine Profi-Firma ins Spiel!)
+2. **Verwerten:** Welche Möbel, Antiquitäten oder Elektrogeräte haben noch Wert? (Hier kommt der [Wertanrechnung](/ratgeber/wertanrechnung-raeumung-wien/) durch eine Profi-Firma ins Spiel!)
 3. **Entsorgen:** Was ist reiner Sperrmüll oder Bauschutt?
 
 ## Schritt 3: Verträge kündigen und Fristen prüfen
