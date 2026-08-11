@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 title: Umzug 1070 Wien
 footer_title: "Umzug & Übersiedlung 1070 (Neubau)"
 seo_title: Umzug 1070 Wien - Übersiedlung Neubau
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in Neubau und angrenzenden Bezirken."
 
 kicker: Bezirk 1070
 state: wien

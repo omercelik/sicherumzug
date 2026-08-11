@@ -2,7 +2,7 @@
 last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Seniorenumzug in Österreich: Sorgenfrei und einfühlsam übersiedeln"
 seo_title: "Seniorenumzug Österreich – Sorgenfreie Übersiedlung im Alter"
-description: "Planen Sie einen Seniorenumzug in Österreich? Erfahren Sie, wie eine einfühlsame, professionelle Übersiedlung im Alter gelingt – inklusive Entrümpelung und Wertanrechnung."
+description: "Seniorenumzug in Österreich planen. Erfahren Sie, wie eine einfühlsame, professionelle Übersiedlung im Alter gelingt – inklusive Entrümpelung."
 date: 2026-02-10
 category: "Ratgeber"
 tags:

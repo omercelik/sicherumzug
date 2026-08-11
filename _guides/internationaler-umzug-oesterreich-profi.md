@@ -2,7 +2,7 @@
 last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Der große Leitfaden für den internationalen Umzug von und nach Österreich"
 seo_title: "Internationaler Umzug Österreich – Zoll, Logistik & Kosten"
-description: "Planen Sie einen internationalen Umzug von oder nach Österreich? Finden Sie alle Details zu Zollvorschriften, Logistik, Kosten und Checklisten für Ihre weltweite Übersiedlung."
+description: "Planen Sie einen internationalen Umzug von oder nach Österreich? Details zu Zollvorschriften, Logistik, Kosten und Checklisten für Ihre weltweite Übersiedlung."
 date: 2026-02-10
 category: "Ratgeber"
 tags:

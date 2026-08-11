@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 title: Umzug 1050 Wien
 footer_title: "Umzug & Übersiedlung 1050 (Margareten)"
 seo_title: Umzug 1050 Wien - Übersiedlung Margareten
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in Margareten und angrenzenden Bezirken."
 
 kicker: Bezirk 1050
 state: wien

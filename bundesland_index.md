@@ -2,7 +2,7 @@
 layout: page
 title: "Bundesländer Übersicht"
 seo_title: "Umzug in den Bundesländern | Sicher Team"
-description: "Übersicht unserer Service-Verfügbarkeit in den österreichischen Bundesländern."
+description: "Finden Sie alle Informationen zu unseren Umzugs- und Räumungsdiensten in den österreichischen Bundesländern von Wien bis Vorarlberg."
 permalink: /bundesland/
 kicker: "Standorte"
 ---

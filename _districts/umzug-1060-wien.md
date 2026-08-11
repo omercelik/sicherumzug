@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 title: Umzug 1060 Wien
 footer_title: "Umzug & Übersiedlung 1060 (Mariahilf)"
 seo_title: Umzug 1060 Wien - Übersiedlung Mariahilf
-description: Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, kurze Ladefenster und offizielle Halteverbotszonen in der Inneren Stadt und angrenzenden Bezirken.
+description: "Professioneller Umzug & Übersiedlung. Besonderer Fokus auf enge Gassen, Ladefenster und offizielle Halteverbotszonen in Mariahilf und angrenzenden Bezirken."
 
 kicker: Bezirk 1060
 state: wien

@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 layout: service
 title: "Umzug Österreich | Professionelle Übersiedlung"
 seo_title: "Umzug Österreich - Professionelle Umzugsfirma & Möbeltransport"
-description: "Professioneller Umzug in ganz Österreich zum garantierten Fixpreis. Ihre zuverlässige Umzugsfirma für Privatumzug, Firmenumzug und sicheren Möbeltransport mit Transportversicherung."
+description: "Professioneller Umzug in Österreich zum garantierten Fixpreis. Ihre zuverlässige Umzugsfirma für Privatumzug, Firmenumzug und sicheren Möbeltransport."
 kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local

@@ -1,10 +1,11 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: guide
-title: "Möbelpacker vs. DIY Umzug: Wann lohnt sich ein professionelles Unternehmen?"
+title: "Möbelpacker vs. DIY Umzug: Was lohnt sich wirklich?"
 date: 2026-08-13 09:00:00 +0200
 categories: umzug vergleich kosten
 description: "DIY mit Freunden oder eine professionelle Umzugsfirma in Österreich engagieren? Wir vergleichen Kosten, Stressfaktor und Risiken für Ihre Übersiedlung."
+seo_title: "Möbelpacker vs. DIY Umzug: Was lohnt sich wirklich?"
 ---
 
 
