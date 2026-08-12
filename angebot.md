@@ -47,10 +47,11 @@ Im Formular sind **Name, Telefon und PLZ** erforderlich. **E-Mail, Beschreibung 
       <span class="font-semibold text-primary">Telefon:</span>
       <a class="hover:text-gray-800" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a><br/>
       <span class="font-semibold text-primary">E-Mail:</span>
-      <a class="hover:text-gray-800" href="mailto:office@sicher-umzug.at">office@sicher-umzug.at</a>
+      <a class="hover:text-gray-800" href="mailto:office@sicher-umzug.at">office@sicher-umzug.at</a><br/>
+      <span class="font-semibold text-primary">Öffnungszeiten:</span> 06:00 - 23:00 Uhr
     </p>
   </div>
   <div class="overflow-hidden rounded-3xl shadow-2xl ring-1 ring-primary/10">
-    <iframe class="block h-[320px] w-full md:h-[520px] lg:h-[600px]" title="Standort von Sicher Team auf Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.8824294025114!2d16.311400!3d48.163300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zWildgartenallee+1%2C+1120+Wien!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" style="border:0;" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="block h-[320px] w-full md:h-[520px] lg:h-[600px]" title="Standort von Sicher Team auf Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5047674697935!2d16.296784578100933!3d48.15835207124567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2251e6f02cff7731%3A0xd16144e106caab4b!2sSicherteam%20Umzug%20%26%20R%C3%A4umung!5e0!3m2!1sde!2str!4v1786533489313!5m2!1sde!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
 </div>
