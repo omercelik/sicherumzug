@@ -3,7 +3,7 @@
   <div class="container relative z-20 mx-auto px-4 md:px-6 h-full flex flex-col justify-center">
     {% include breadcrumbs.html %}
     <div class="mt-8 max-w-4xl">
-      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight" data-hero-heading>{{ page.title }}</h1>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight" data-hero-heading>{{ page.title }}</h1>
       {% if page.description %}
       <p class="mt-4 text-lg text-slate-300">{{ page.description | strip_html | truncate: 160 }}</p>
       {% endif %}

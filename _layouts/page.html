@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
-<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-24">
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-16 md:pt-20">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
-  <div class="flex-grow flex flex-col justify-center py-12">
+  <div class="relative z-20 w-full">
+    {% include breadcrumbs.html %}
+  </div>
+  <div class="flex-grow flex flex-col justify-center pb-12">
     <div class="container relative z-20 mx-auto px-4 md:px-6">
       <div class="max-w-3xl">
         <p class="text-sm font-semibold uppercase tracking-widest text-orange-400">{{ page.kicker | default: 'Information' }}</p>
-        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight" data-hero-heading>{{ page.title }}</h1>
+        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-white tracking-tight" data-hero-heading>{{ page.title }}</h1>
 
         {% if page.description %}
         <p class="mt-6 text-lg text-slate-300 leading-relaxed">
@@ -24,9 +27,6 @@ layout: default
         {% endif %}
       </div>
     </div>
-  </div>
-  <div class="relative z-20 mt-auto w-full">
-    {% include breadcrumbs.html %}
   </div>
 </section>
 <section class="bg-background-light py-12">
