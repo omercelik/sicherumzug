@@ -4,46 +4,34 @@ layout: default
 {% include home-hero-vars.liquid %}
 {% assign call_href = site.phone | replace: ' ', '' | prepend: 'tel:' %}
 {% assign hero_kicker = page.kicker | default: 'Bundesland' %}
-<section class="relative min-h-[50vh] flex flex-col justify-center text-white overflow-hidden bg-slate-950" data-hero-banner>
-  <picture class="absolute inset-0 z-0">
-    <source
-      media="(max-width: 767px)"
-      srcset="{{ hero_mobile_srcset | strip }}"
-      sizes="100vw"
-      type="image/webp">
-    <source
-      media="(min-width: 768px)"
-      srcset="{{ hero_desktop_srcset | strip }}"
-      sizes="{{ hero_image_sizes }}"
-      type="image/webp">
-    <img src="{{ hero_desktop | relative_url }}"
-         alt="{{ page.title | escape }}"
-         class="h-full w-full object-cover object-center"
-         fetchpriority="high"
-         decoding="async"
-         width="{{ hero_width }}"
-         height="{{ hero_height }}">
-  </picture>
-  <div class="absolute inset-0 z-10 bg-gradient-to-b from-slate-950/75 via-slate-950/80 to-slate-950/90 backdrop-blur-[1px]"></div>
-  {% include breadcrumbs.html %}
-  {% include hero-content.html
-    title=page.title
-    subtitle=page.description
-    highlights=page.highlights
-    primary_cta=page.primary_cta
-    primary_label="Gratis Besichtigung"
-    primary_url="/angebot/"
-    whatsapp_label="WhatsApp"
-    whatsapp_url=site.whatsapp
-    call_label=site.phone
-    call_url=call_href
-    container_classes="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white"
-    content_classes="max-w-4xl space-y-5 md:space-y-6"
-    cta_wrap_classes="mt-6 flex flex-col gap-3"
-    show_kicker=true
-    kicker=hero_kicker
-    subtitle_class="pb-4"
-  %}
+<section class="relative bg-slate-950 text-white min-h-[50vh] flex flex-col pt-24 overflow-hidden">
+  <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
+  <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
+
+  <div class="flex-grow flex flex-col justify-center">
+    {% include hero-content.html
+      title=page.title
+      subtitle=page.description
+      highlights=page.highlights
+      primary_cta=page.primary_cta
+      primary_label="Gratis Besichtigung"
+      primary_url="/angebot/"
+      whatsapp_label="WhatsApp"
+      whatsapp_url=site.whatsapp
+      call_label=site.phone
+      call_url=call_href
+      container_classes="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white"
+      content_classes="max-w-4xl space-y-5 md:space-y-6"
+      cta_wrap_classes="mt-6 flex flex-col gap-3"
+      show_kicker=true
+      kicker=hero_kicker
+      subtitle_class="pb-4"
+    %}
+  </div>
+
+  <div class="relative z-20 mt-auto w-full">
+    {% include breadcrumbs.html %}
+  </div>
 </section>
 {% assign trimmed = content | strip %}
 {% unless trimmed == '' %}

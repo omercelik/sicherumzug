@@ -1,24 +1,32 @@
 ---
 layout: default
 ---
-{% include breadcrumbs.html %}
-<section class="bg-white py-16">
-  <div class="container mx-auto px-4">
-    <div class="max-w-3xl">
-      <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">{{ page.kicker | default: 'Information' }}</p>
-      <h1 class="mt-3 text-4xl font-black text-primary">{{ page.title }}</h1>
-      {% if page.description %}
-      <p class="mt-4 text-lg text-text-light">
-        {{ page.description }}
-      </p>
-      {% if page.description_link_label and page.description_link_href %}
-      <a class="mt-3 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition-opacity hover:bg-primary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light" href="{{ page.description_link_href }}">
-        <span class="text-base">→</span>
-        {{ page.description_link_label }}
-      </a>
-      {% endif %}
-      {% endif %}
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-24">
+  <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
+  <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
+  <div class="flex-grow flex flex-col justify-center py-12">
+    <div class="container relative z-20 mx-auto px-4 md:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-widest text-orange-400">{{ page.kicker | default: 'Information' }}</p>
+        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight" data-hero-heading>{{ page.title }}</h1>
+
+        {% if page.description %}
+        <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+          {{ page.description }}
+        </p>
+
+        {% if page.description_link_label and page.description_link_href %}
+        <a class="mt-6 inline-flex items-center gap-2 rounded-full bg-orange-500 hover:bg-orange-600 px-6 py-3 text-sm font-bold text-slate-950 shadow-sm transition-opacity" href="{{ page.description_link_href }}">
+          {{ page.description_link_label }}
+          {% include svg/north_east.svg class="w-4 h-4 shrink-0 fill-current" %}
+        </a>
+        {% endif %}
+        {% endif %}
+      </div>
     </div>
+  </div>
+  <div class="relative z-20 mt-auto w-full">
+    {% include breadcrumbs.html %}
   </div>
 </section>
 <section class="bg-background-light py-12">
