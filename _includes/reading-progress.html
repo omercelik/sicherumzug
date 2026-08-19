@@ -1,13 +1,32 @@
-<div class="fixed top-0 left-0 w-full h-1 z-50 bg-background-light">
-  <div id="reading-progress" class="h-full bg-primary-accent" style="width: 0%;"></div>
+<div class="fixed top-0 left-0 w-full h-1 z-50 bg-slate-900/10 dark:bg-slate-800/30 pointer-events-none" id="reading-progress-container" role="progressbar" aria-label="Lesefortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div id="reading-progress" class="h-full bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 transition-[width] duration-150 ease-out shadow-sm" style="width: 0%;"></div>
 </div>
 <script>
-document.addEventListener('scroll', function() {
-  const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  if (scrollTotal > 0) {
-    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    const progress = (scrollPosition / scrollTotal) * 100;
-    document.getElementById('reading-progress').style.width = progress + '%';
+(function() {
+  var container = document.getElementById('reading-progress-container');
+  var progressBar = document.getElementById('reading-progress');
+  if (!container || !progressBar) return;
+  var ticking = false;
+
+  function updateProgress() {
+    var scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollTotal > 0) {
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var rawProgress = (scrollPosition / scrollTotal) * 100;
+      var clampedProgress = Math.min(100, Math.max(0, rawProgress));
+      var roundedVal = Math.round(clampedProgress);
+
+      progressBar.style.width = clampedProgress + '%';
+      container.setAttribute('aria-valuenow', roundedVal);
+    }
+    ticking = false;
   }
-});
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
 </script>
