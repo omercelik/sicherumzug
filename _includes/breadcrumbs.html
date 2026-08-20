@@ -2,7 +2,7 @@
 <div class="w-full">
 <nav class="w-full z-40 py-4" aria-label="Breadcrumb">
   <div class="container mx-auto px-4 md:px-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300 overflow-x-auto whitespace-nowrap scrollbar-none">
-    <a href="{{ '/' | relative_url }}" class="hover:text-orange-400 transition-colors flex items-center gap-1">
+    <a href="{{ '/' | relative_url }}" aria-label="Startseite" class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded px-1 transition-colors flex items-center gap-1">
       {% include svg/home.svg class="w-4 h-4 shrink-0 fill-current" %}
       <span>Home</span>
     </a>
@@ -22,7 +22,7 @@
           {% if part == 'bezirke' %}{% assign breadcrumb_title = 'Bezirke' %}{% endif %}
           {% if part == 'ratgeber' %}{% assign breadcrumb_title = 'Ratgeber' %}{% endif %}
           {% if part == 'bundesland' %}{% assign breadcrumb_title = 'Standorte' %}{% endif %}
-          <a href="{% if part == 'bundesland' %}/bezirke/{% else %}{{ current_url | append: '/' | relative_url }}{% endif %}" class="hover:text-orange-400 transition-colors">{{ breadcrumb_title }}</a>
+          <a href="{% if part == 'bundesland' %}/bezirke/{% else %}{{ current_url | append: '/' | relative_url }}{% endif %}" class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded px-1 transition-colors">{{ breadcrumb_title }}</a>
           {% include svg/chevron_right.svg class="w-4 h-4 shrink-0 text-slate-400 fill-current" %}
         {% endif %}
       {% endif %}
