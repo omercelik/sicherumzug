@@ -1,32 +1,36 @@
 ---
 layout: default
 ---
-<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32">
+{% include home-hero-vars.liquid %}
+{% assign hero_kicker = page.hero_kicker | default: page.kicker | default: 'Information' %}
+{% assign call_href = site.phone | replace: ' ', '' | prepend: 'tel:' %}
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
     {% include breadcrumbs.html %}
   </div>
   <div class="flex-grow flex flex-col justify-center pb-12">
-    <div class="container relative z-20 mx-auto px-4 md:px-6">
-      <div class="max-w-3xl">
-        <p class="text-sm font-semibold uppercase tracking-widest text-orange-400">{{ page.kicker | default: 'Information' }}</p>
-        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-white tracking-tight" data-hero-heading>{{ page.title }}</h1>
-
-        {% if page.description %}
-        <p class="mt-6 text-lg text-slate-300 leading-relaxed">
-          {{ page.description }}
-        </p>
-
-        {% if page.description_link_label and page.description_link_href %}
-        <a class="mt-6 inline-flex items-center gap-2 rounded-full bg-orange-500 hover:bg-orange-600 px-6 py-3 text-sm font-bold text-slate-950 shadow-sm transition-opacity" href="{{ page.description_link_href }}">
-          {{ page.description_link_label }}
-          {% include svg/north_east.svg class="w-4 h-4 shrink-0 fill-current" %}
-        </a>
-        {% endif %}
-        {% endif %}
-      </div>
-    </div>
+    {% include hero-content.html
+      title=page.title
+      subtitle=page.description
+      highlights=page.highlights
+      primary_cta=page.primary_cta
+      cta_variant=page.cta_variant
+      risk_items=site.data.risk_reversal
+      primary_label="Gratis Besichtigung sichern"
+      primary_url="/angebot/"
+      whatsapp_label="WhatsApp"
+      whatsapp_url=site.whatsapp
+      call_label=site.phone
+      call_url=call_href
+      container_classes="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white"
+      content_classes="max-w-4xl space-y-5 md:space-y-6"
+      cta_wrap_classes="mt-6 flex flex-col gap-3"
+      show_kicker=true
+      kicker=hero_kicker
+      subtitle_class="pb-4"
+    %}
   </div>
 </section>
 <section class="bg-background-light py-12">
