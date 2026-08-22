@@ -139,7 +139,21 @@ layout: default
   </div>
 </section>
 {% endif %}
-{% if site.guides.size > 0 %}
+{% assign sorted_guides = site.guides | sort: 'url' %}
+{% assign guide_count = sorted_guides.size %}
+{% if guide_count > 0 %}
+{% assign curr_s_index = 0 %}
+{% assign sorted_services = site.services | sort: 'url' %}
+{% for s in sorted_services %}
+  {% if s.url == page.url %}
+    {% assign curr_s_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% assign g_idx1 = curr_s_index | times: 3 | modulo: guide_count %}
+{% assign g_idx2 = curr_s_index | times: 3 | plus: 1 | modulo: guide_count %}
+{% assign g_idx3 = curr_s_index | times: 3 | plus: 2 | modulo: guide_count %}
+
 <section class="bg-background-light py-12">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between">
@@ -147,17 +161,15 @@ layout: default
       <a href="{{ '/ratgeber/' | relative_url }}" class="text-sm font-semibold text-primary">Alle Beiträge →</a>
     </div>
     <div class="mt-6 grid gap-6 md:grid-cols-3">
-      {% assign related = site.guides | where_exp: 'item', 'item.tags contains page.slug' %}
-      {% if related.size < 2 %}
-      {% assign related = site.guides | sort: 'date' | reverse %}
-      {% endif %}
-      {% for guide in related limit:3 %}
-      <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p class="text-xs uppercase tracking-widest text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
-        <h3 class="mt-2 text-lg font-bold text-primary">{{ guide.title }}</h3>
-        <p class="mt-2 text-sm text-text-light">{{ guide.excerpt | strip_html | truncate: 120 }}</p>
-        <a href="{{ guide.url | relative_url }}" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Lesen {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}</a>
-      </article>
+      {% for guide in sorted_guides %}
+        {% if forloop.index0 == g_idx1 or forloop.index0 == g_idx2 or forloop.index0 == g_idx3 %}
+        <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <p class="text-xs uppercase tracking-widest text-primary-accent">{{ guide.category | default: 'Leitfaden' }}</p>
+          <h3 class="mt-2 text-lg font-bold text-primary">{{ guide.title }}</h3>
+          <p class="mt-2 text-sm text-text-light">{{ guide.excerpt | strip_html | truncate: 120 }}</p>
+          <a href="{{ guide.url | relative_url }}" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Lesen {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}</a>
+        </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
