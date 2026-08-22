@@ -41,3 +41,7 @@
 ## 2026-08-19 - Accessible & Throttled Reading Progress Indicators
 **Learning:** Fixed reading progress bars require explicit WAI-ARIA progressbar semantics (`role="progressbar"`, `aria-label`, `aria-valuemin`, `aria-valuemax`, and dynamic `aria-valuenow`) so screen readers accurately comprehend document completion state. Combining `requestAnimationFrame` throttling with `{ passive: true }` scroll event listeners prevents main-thread scroll jank while keeping DOM visual updates Butter-smooth.
 **Action:** Always attach `role="progressbar"` and dynamic `aria-valuenow` attributes to top-level progress elements, and throttle high-frequency scroll handlers with `requestAnimationFrame` and `passive: true`.
+
+## 2026-08-25 - High-Contrast Focus Visible Rings on Dark Breadcrumbs
+**Learning:** Navigation breadcrumb links rendered on dark backdrops often lack visible focus states when tabbed through via keyboard. Applying explicit `focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900` styling ensures high contrast and consistent focus indicators across dark theme headers, while adding explicit `aria-label="Startseite"` on icon-accompanied home links clarifies target context for screen reader users.
+**Action:** Always pair dark backdrop navigation links with high-contrast `focus-visible` rings matching brand accents, and provide descriptive `aria-label` tags for home/root links.
