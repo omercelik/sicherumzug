@@ -128,8 +128,8 @@ hero_preload: /topbg.webp
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "{{ site.url }}{{ site.baseurl }}/#business",
+  "@type": "Organization",
+  "@id": "{{ site.canonical_base_url }}/#organization",
   "name": "{{ site.brand_name }}",
   "aggregateRating": {
     "@type": "AggregateRating",
