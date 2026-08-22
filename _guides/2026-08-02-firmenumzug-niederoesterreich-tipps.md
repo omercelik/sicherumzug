@@ -68,7 +68,7 @@ Ja, die Ausgaben für eine betrieblich veranlasste Übersiedlung zählen zu den 
 Vertrauen Sie bei Ihrem Firmenumzug in Niederösterreich auf einen Partner, der Logistik, Planung und Sicherheit perfekt kombiniert. Wir sorgen für einen fließenden Übergang an Ihren neuen Firmenstandort.
 
 **Möchten Sie Ausfallzeiten minimieren und effizient umsiedeln?**
-Vereinbaren Sie noch heute einen Termin für eine kostenlose Besichtigung. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Vereinbaren Sie noch heute einen Termin für eine kostenlose Besichtigung. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

@@ -60,4 +60,4 @@ Selbstverständlich. Große amerikanische Side-by-Side-Kühlschränke oder schwe
 Lassen Sie sich bei Einzeltransporten nicht von der Logistik abschrecken. Wir holen ab, transportieren sicher und liefern bis in Ihr Wohnzimmer.
 
 **Benötigen Sie einen schnellen Transport für ein Möbelstück in Wien?**
-Kontaktieren Sie unser Möbeltaxi für eine sofortige Preisauskunft und Terminvereinbarung. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie unser Möbeltaxi für eine sofortige Preisauskunft und Terminvereinbarung. [Jetzt kostenloses Angebot anfordern](/angebot/)!

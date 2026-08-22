@@ -93,7 +93,7 @@ Wir vom Sicher Team wissen, dass eine [Wohnungsauflösung](/leistungen/wohnungsa
 **Nutzen Sie unsere kostenlose Erstbesichtigung mit Wertanrechnung.**
 Wir kommen unverbindlich in Wien oder Niederösterreich vorbei, schätzen den Restwert des Hausrats und erstellen Ihnen einen garantierten Fixpreis – ohne versteckte Kosten.
 
-[Kostenlose Besichtigung vereinbaren](/kontakt/)
+[Kostenlose Besichtigung vereinbaren](/angebot/)
 
 ### Verwandte Links
 - [Umzugs-Guide](/ratgeber/umzug-oesterreich-profi-guide/)

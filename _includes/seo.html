@@ -148,36 +148,80 @@
     "Messie-Entrümpelung",
     "Firmenräumung"
   ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Umzugs- und Räumungsleistungen",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Umzug & Übersiedlung",
-          "description": "Professioneller Privatumzug, Firmenumzug und Möbeltransport in ganz Österreich"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Haushaltsauflösung",
-          "description": "Komplette Auflösung von Wohnungen und Häusern inklusive Wertausgleich und besenreiner Übergabe"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Firmenräumung",
-          "description": "DSGVO-konforme Räumung von Büros, Lagerflächen und Produktionshallen"
-        }
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Umzug",
+        "serviceType": "Umzug"
       }
-    ]
-  },
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Messie-Entrümpelung",
+        "serviceType": "Messie-Entrümpelung"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Verlassenschaft",
+        "serviceType": "Verlassenschaft"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Möbeltransport",
+        "serviceType": "Möbeltransport"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Privatumzug",
+        "serviceType": "Privatumzug"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Firmenumzug",
+        "serviceType": "Firmenumzug"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Haushaltsauflösung",
+        "serviceType": "Haushaltsauflösung"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Entrümpelung",
+        "serviceType": "Entrümpelung"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Wohnungsräumung",
+        "serviceType": "Wohnungsräumung"
+      }
+    }
+  ],
   "openingHoursSpecification": [
     {% assign all_open_specs = "" | split: "," %}
     {% for window in site.open_hours %}

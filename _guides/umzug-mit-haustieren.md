@@ -66,7 +66,7 @@ Das ist sogar die allerbeste Lösung! Wenn Ihr Hund oder Ihre Katze bereits Freu
 Mit etwas Einfühlungsvermögen und der richtigen Vorbereitung wird auch der sensibelste Stubentiger den Umzug unbeschadet überstehen. Wir sorgen für die schnelle Umsetzung, damit Sie schnell wieder kuscheln können.
 
 **Steht ein Umzug mit der ganzen tierischen Familie an?**
-Lassen Sie uns die schwere Arbeit schnell und geräuscharm erledigen. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Lassen Sie uns die schwere Arbeit schnell und geräuscharm erledigen. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

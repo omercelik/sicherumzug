@@ -64,7 +64,7 @@ Innerhalb der EU gibt es in der Regel keine Beschränkungen für den privaten Tr
 Egal ob es Sie von den Alpen an die Nordsee zieht oder vom Ruhrgebiet nach Wien – wir sind Ihr kompetenter Partner für länderübergreifende Logistik.
 
 **Planen Sie Ihre internationale Übersiedlung?**
-Vertrauen Sie auf Erfahrung und ein festes Netzwerk. Kontaktieren Sie uns für ein ausführliches Beratungsgespräch und Ihr Fixpreis-Angebot. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Vertrauen Sie auf Erfahrung und ein festes Netzwerk. Kontaktieren Sie uns für ein ausführliches Beratungsgespräch und Ihr Fixpreis-Angebot. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

@@ -62,7 +62,7 @@ Verwenden Sie für Geschirr und Gläser niemals billige, dünne Baumarkt-Kartons
 Gehen Sie beim Verpacken Ihrer Liebhaberstücke keine Kompromisse ein. Nehmen Sie sich Zeit oder übergeben Sie diese anspruchsvolle Aufgabe direkt an erfahrene Profis.
 
 **Möchten Sie den Einpackservice gleich mitbuchen?**
-Wir verpacken Ihr Inventar schnell, sicher und versichert. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Wir verpacken Ihr Inventar schnell, sicher und versichert. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links
