@@ -65,4 +65,4 @@ Sollte der Transport über das Stiegenhaus statisch oder räumlich unmöglich se
 Überlassen Sie riskante Transporte nicht Amateuren. Vertrauen Sie auf zertifizierte Technik, jahrelange Erfahrung und absolute Sicherheit bei Ihrem Schwerlast-Projekt.
 
 **Müssen Sie einen Tresor oder schwere Maschinen transportieren lassen?**
-Kontaktieren Sie unsere Spezialisten für eine detaillierte Planung und fordern Sie Ihr Festpreis-Angebot an. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie unsere Spezialisten für eine detaillierte Planung und fordern Sie Ihr Festpreis-Angebot an. [Jetzt kostenloses Angebot anfordern](/angebot/)!

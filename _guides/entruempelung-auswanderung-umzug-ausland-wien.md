@@ -101,7 +101,7 @@ Verlieren Sie in den letzten Wochen vor der Abreise keine wertvolle Zeit mit dem
 **Bereit für den Neustart?**
 Kontaktieren Sie uns noch heute für eine kostenlose, unverbindliche Besichtigung in Wien und Niederösterreich. Wir garantieren Ihnen eine termingerechte und besenreine Übergabe, damit Sie beruhigt in Ihr neues Leben starten können.
 
-[Kostenlose Besichtigung vereinbaren](/kontakt/)
+[Kostenlose Besichtigung vereinbaren](/angebot/)
 
 ### Verwandte Links
 - [Kellerräumung](/leistungen/kellerraeumung/)

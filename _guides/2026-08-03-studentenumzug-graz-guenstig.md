@@ -64,7 +64,7 @@ Selbstverständlich. Wenn Sie über Willhaben ein günstiges Sofa oder einen gro
 Der Studienbeginn sollte von Vorfreude geprägt sein, nicht von Umzugsstress und Rückenschmerzen. Lassen Sie uns die schweren Kisten schleppen, während Sie sich auf Ihre erste Vorlesung vorbereiten.
 
 **Bereit für den Einzug ins Studentenleben?**
-Holen Sie sich jetzt Ihr günstiges und unverbindliches Umzugsangebot für Studenten. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Holen Sie sich jetzt Ihr günstiges und unverbindliches Umzugsangebot für Studenten. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

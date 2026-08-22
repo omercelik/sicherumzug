@@ -64,7 +64,7 @@ Oftmals passt die alte Arbeitsplatte aufgrund geänderter Raummaße nicht mehr i
 Ein Küchenumzug ist stressig, schwer und fehleranfällig. Lassen Sie die Profis ans Werk, damit Sie am ersten Abend im neuen Zuhause bereits entspannt kochen können.
 
 **Benötigen Sie Hilfe beim Abbau und Transport Ihrer Einbauküche?**
-Kontaktieren Sie unsere Montage-Profis für eine umfassende Beratung. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie unsere Montage-Profis für eine umfassende Beratung. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

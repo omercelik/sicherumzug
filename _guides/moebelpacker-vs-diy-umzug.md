@@ -63,4 +63,4 @@ Unter bestimmten Voraussetzungen (z.B. wenn der Umzug berufsbedingt zwingend erf
 Wer seinen Rücken, seine Freundschaften und sein Inventar schonen möchte, investiert in professionelle Möbelpacker. Die Zeit- und Kraftersparnis ist den Preis allemal wert.
 
 **Sind Sie den DIY-Stress leid?**
-Lassen Sie die Profis ran! Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein Fixpreis-Angebot. [Jetzt kostenloses Angebot anfordern](/angebot) oder suchen Sie nach [einer erfahrenen Umzugsfirma für Ihren Standortwechsel](/leistungen/umzug-wien/).
+Lassen Sie die Profis ran! Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein Fixpreis-Angebot. [Jetzt kostenloses Angebot anfordern](/angebot/) oder suchen Sie nach [einer erfahrenen Umzugsfirma für Ihren Standortwechsel](/leistungen/umzug-wien/).

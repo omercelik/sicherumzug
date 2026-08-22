@@ -61,7 +61,7 @@ Ja, als professionelle Umzugsfirma verfügen wir über eine umfassende Transport
 Überlassen Sie Ihren Umzug nicht dem Zufall. Setzen Sie auf Erfahrung, Zuverlässigkeit und regionale Expertise in Wien und ganz Österreich. Wir sorgen dafür, dass Ihr Inventar sicher, pünktlich und stressfrei an der neuen Adresse ankommt.
 
 **Sind Sie bereit für einen entspannten Umzug?**
-Kontaktieren Sie uns noch heute für eine unverbindliche Beratung und fordern Sie Ihr maßgeschneidertes Angebot an. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie uns noch heute für eine unverbindliche Beratung und fordern Sie Ihr maßgeschneidertes Angebot an. [Jetzt kostenloses Angebot anfordern](/angebot/)!
 
 
 ### Verwandte Links

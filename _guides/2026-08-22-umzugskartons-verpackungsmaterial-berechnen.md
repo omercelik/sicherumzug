@@ -76,4 +76,4 @@ Neben ausreichend Kartons benötigen Sie dringend:
 Lassen Sie sich am Vorabend des Umzugs nicht vom Materialmangel überraschen. Wir versorgen Sie rechtzeitig mit echten Profi-Kartons oder übernehmen das Einpacken gleich komplett für Sie.
 
 **Möchten Sie hochwertiges Verpackungsmaterial oder den kompletten Packservice buchen?**
-Kontaktieren Sie uns für eine kostenlose Volumenberechnung bei Ihnen zu Hause. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie uns für eine kostenlose Volumenberechnung bei Ihnen zu Hause. [Jetzt kostenloses Angebot anfordern](/angebot/)!

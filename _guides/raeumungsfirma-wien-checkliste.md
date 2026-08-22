@@ -80,4 +80,4 @@ Eine professionelle Räumung erfordert Erfahrung und das richtige Know-how. Beso
 
 Egal, ob es sich um eine Kellerentrümpelung, eine Verlassenschaft oder eine Firmenauflösung handelt: Das Team von Sicher Team übernimmt die schwere Arbeit. Wir garantieren Diskretion, eine besenreine Übergabe und faire Fixpreise durch unsere lukrative Wertanrechnung.
 
-[Jetzt unverbindliche Räumungs-Anfrage stellen](/kontakt/)
+[Jetzt unverbindliche Räumungs-Anfrage stellen](/angebot/)

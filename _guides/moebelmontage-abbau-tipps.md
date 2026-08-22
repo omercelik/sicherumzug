@@ -59,4 +59,4 @@ Das ist ein typisches Problem bei günstigeren Möbeln nach dem zweiten oder dri
 Ersparen Sie sich stundenlanges Rätselraten und kaputte Nerven. Wir haben das richtige Werkzeug, das technische Verständnis und die Muskelkraft für Ihre Möbel.
 
 **Suchen Sie professionelle Unterstützung bei der Möbelmontage?**
-Kontaktieren Sie uns für ein Angebot, das sowohl den Transport als auch den kompletten Auf- und Abbau inkludiert. [Jetzt kostenloses Angebot anfordern](/angebot)!
+Kontaktieren Sie uns für ein Angebot, das sowohl den Transport als auch den kompletten Auf- und Abbau inkludiert. [Jetzt kostenloses Angebot anfordern](/angebot/)!
