@@ -3,14 +3,20 @@ layout: default
 ---
 {% include home-hero-vars.liquid %}
 {% assign hero_kicker = page.kicker | default: 'Ratgeber' %}
-<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-16 md:pt-20">
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
     {% include breadcrumbs.html %}
   </div>
   <div class="flex-grow flex flex-col justify-center pb-12">
-    {% include hero-content.html title=page.title subtitle=page.description kicker=hero_kicker %}
+    {% include hero-content.html
+      title=page.title
+      subtitle=page.description
+      kicker=hero_kicker
+      container_classes="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white"
+      content_classes="max-w-4xl mx-auto text-left md:text-center space-y-4 md:space-y-5"
+    %}
   </div>
 </section>
 <section class="bg-background-light py-12">

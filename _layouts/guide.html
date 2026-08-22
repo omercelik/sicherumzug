@@ -3,14 +3,14 @@ layout: default
 ---
 {% include reading-progress.html %}
 
-<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-16 md:pt-20">
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
     {% include breadcrumbs.html %}
   </div>
   <div class="flex-grow flex flex-col justify-center pb-12">
-    <div class="container relative z-20 mx-auto px-4 md:px-6">
+    <div class="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white">
       <div class="mx-auto max-w-3xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-orange-400">{{ page.category | default: 'Ratgeber' }}</p>
         <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-white tracking-tight" data-hero-heading>{{ page.title }}</h1>
