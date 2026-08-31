@@ -74,6 +74,28 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     yearTarget.textContent = new Date().getFullYear();
   }
 
+  // Copy to clipboard buttons handler
+  var copyButtons = document.querySelectorAll('[data-copy-text]');
+  Array.prototype.forEach.call(copyButtons, function(btn) {
+    btn.addEventListener('click', function handleCopy() {
+      var textToCopy = btn.getAttribute('data-copy-text');
+      if (!textToCopy) return;
+      var feedbackEl = document.getElementById('footer-copy-feedback');
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        if (feedbackEl) {
+          feedbackEl.textContent = textToCopy + ' in die Zwischenablage kopiert.';
+        }
+        var origTitle = btn.getAttribute('title');
+        btn.setAttribute('title', 'Kopiert!');
+        btn.classList.add('text-amber-400');
+        setTimeout(function() {
+          btn.setAttribute('title', origTitle);
+          btn.classList.remove('text-amber-400');
+        }, 2000);
+      }).catch(function() {});
+    });
+  });
+
   Array.prototype.forEach.call(faqButtons, function register(btn) {
     btn.addEventListener('click', function handleFaqToggle() {
       var answerId = btn.getAttribute('data-faq-toggle');
