@@ -69,6 +69,26 @@ document.addEventListener('DOMContentLoaded', function domReady() {
     }
   });
 
+  // Dynamic aria-expanded synchronization for desktop mega menus
+  var desktopMenuGroups = document.querySelectorAll('header nav .group');
+  Array.prototype.forEach.call(desktopMenuGroups, function(group) {
+    var btn = group.querySelector('button[aria-expanded]');
+    if (!btn) return;
+
+    function updateExpanded() {
+      var isHovered = group.matches(':hover');
+      var isFocusedWithin = group.contains(document.activeElement);
+      btn.setAttribute('aria-expanded', (isHovered || isFocusedWithin) ? 'true' : 'false');
+    }
+
+    group.addEventListener('mouseenter', updateExpanded);
+    group.addEventListener('mouseleave', updateExpanded);
+    group.addEventListener('focusin', updateExpanded);
+    group.addEventListener('focusout', function() {
+      setTimeout(updateExpanded, 10);
+    });
+  });
+
   var yearTarget = document.getElementById('current-year');
   if (yearTarget) {
     yearTarget.textContent = new Date().getFullYear();

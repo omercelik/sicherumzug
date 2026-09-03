@@ -45,3 +45,7 @@
 ## 2026-08-25 - High-Contrast Focus Visible Rings on Dark Breadcrumbs
 **Learning:** Navigation breadcrumb links rendered on dark backdrops often lack visible focus states when tabbed through via keyboard. Applying explicit `focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900` styling ensures high contrast and consistent focus indicators across dark theme headers, while adding explicit `aria-label="Startseite"` on icon-accompanied home links clarifies target context for screen reader users.
 **Action:** Always pair dark backdrop navigation links with high-contrast `focus-visible` rings matching brand accents, and provide descriptive `aria-label` tags for home/root links.
+
+## 2026-09-03 - Skip to Content Links & Main Target Focus Management
+**Learning:** A visually hidden skip link (`sr-only`) requires explicit `focus:not-sr-only` and high-z-index focus styles (`z-[100]`) so keyboard navigators can jump over sticky headers. Additionally, setting `tabindex="-1"` and `focus:outline-none` on the target `<main id="main">` landmark ensures browser focus transitions smoothly to main content without leaving a visible focus ring on the entire page container.
+**Action:** Always place skip links at the top of default layouts and pair them with `tabindex="-1"` on `<main id="main">` for clean focus management.
