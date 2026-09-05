@@ -24,7 +24,12 @@
         margin: 0;
         color: #fff;
       }
-      [data-hero-banner] {
+      @media (min-width: 768px) {
+        h1[data-hero-heading] { font-size: 3.5rem; }
+      }
+      /* Split hero: only media-column images fill the frame.
+         Do NOT target all [data-hero-banner] img — that blew up WhatsApp icons. */
+      [data-hero-banner]:not(:has(.hero-split)) {
         position: relative;
         min-height: 60vh;
         display: flex;
@@ -32,33 +37,39 @@
         color: #fff;
         overflow: hidden;
       }
-      @media (min-width: 768px) {
-        [data-hero-banner] { min-height: 70vh; }
-        h1[data-hero-heading] {
-          font-size: 3.5rem;
-        }
-      }
-      [data-hero-banner]::before {
+      [data-hero-banner]:not(:has(.hero-split))::before {
         content: '';
         position: absolute;
         inset: 0;
         z-index: 10;
         background-image: linear-gradient(rgba(6, 26, 24, 0.5), rgba(6, 26, 24, 0.82));
       }
-      [data-hero-banner] picture {
+      [data-hero-banner]:not(:has(.hero-split)) picture {
         position: absolute;
         inset: 0;
         z-index: 0;
       }
-      [data-hero-banner] img {
+      [data-hero-banner]:not(:has(.hero-split)) .container {
+        position: relative;
+        z-index: 20;
+      }
+      .hero-split__media > picture {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-split__media > picture img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
       }
-      [data-hero-banner] .container {
-        position: relative;
-        z-index: 20;
+      img.icon-wa {
+        width: 1.125rem;
+        height: 1.125rem;
+        display: inline-block;
+        flex-shrink: 0;
+        object-fit: contain;
       }
       [data-mega-panel] {
         opacity: 0;
