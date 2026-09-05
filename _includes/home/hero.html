@@ -4,14 +4,14 @@
 {% assign primary_cta = page.hero.primary_cta %}
 {% assign primary_label = primary_cta.label | default: 'Gratis Fixpreis-Angebot' %}
 {% assign primary_url = primary_cta.url | default: '/angebot/' %}
-<section class="relative text-white overflow-hidden" data-hero-banner aria-label="Hauptbereich">
-  <div class="hero-split">
-    <div class="hero-split__copy px-4 md:px-8 lg:px-10 py-14 md:py-20 lg:py-24">
-      <div class="max-w-xl mx-auto lg:mx-0 lg:max-w-none lg:pl-[max(0px,calc((100vw-72rem)/2))] space-y-6">
+<section class="relative text-white overflow-hidden w-full max-w-full" data-hero-banner aria-label="Hauptbereich">
+  <div class="hero-split w-full max-w-full">
+    <div class="hero-split__copy min-w-0 px-4 md:px-8 lg:px-10 py-10 md:py-16 lg:py-20">
+      <div class="hero-split__copy-inner max-w-xl mx-auto lg:mx-0 lg:max-w-none space-y-5 md:space-y-6 min-w-0 w-full">
         <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#f0a060] backdrop-blur-sm">
           Wien · NÖ · Österreichweit · Fixpreis
         </p>
-        <h1 class="text-4xl sm:text-5xl xl:text-[3.35rem] font-extrabold tracking-tight text-white leading-[1.05]" data-hero-heading>
+        <h1 class="text-3xl sm:text-4xl md:text-[2.75rem] xl:text-[3.35rem] font-extrabold tracking-tight text-white leading-[1.08] break-words [overflow-wrap:anywhere]" data-hero-heading>
           {{ hero_title }}
         </h1>
         <p class="text-lg md:text-xl text-[#d4e5e0]/95 leading-relaxed max-w-xl">
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="hero-split__media">
+    <div class="hero-split__media min-w-0 w-full max-w-full">
       <picture class="absolute inset-0">
         <source
           media="(max-width: 1023px)"

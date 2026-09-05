@@ -1503,13 +1503,16 @@ select:disabled {
 .hero-split {
   display: grid;
   gap: 0;
-  min-height: 78vh;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
   .hero-split {
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    min-height: 86vh;
+    min-height: min(78vh, 640px);
   }
 }
 
@@ -1519,20 +1522,62 @@ select:disabled {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   background:
     linear-gradient(135deg, rgba(6, 26, 24, 0.97) 0%, rgba(11, 47, 43, 0.92) 55%, rgba(6, 26, 24, 0.88) 100%);
 }
 
+@media (min-width: 1024px) {
+  /* Align copy with centered 72rem container; lg+ only (never on phone) */
+  .hero-split__copy-inner {
+    padding-left: max(0px, calc((100vw - 72rem) / 2));
+  }
+}
+
 .hero-split__media {
   position: relative;
-  min-height: 42vh;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 220px;
+  max-height: min(42vh, 360px);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
   .hero-split__media {
     min-height: 100%;
+    max-height: min(78vh, 640px);
   }
+}
+
+/* Photo only — never match WhatsApp / CTA icons */
+.hero-split__media > picture img,
+.hero-split__media > img:not(.icon-wa) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+img.icon-wa {
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  display: inline-block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+[data-hero-banner] h1,
+h1[data-hero-heading] {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 .hero-split__media::after {

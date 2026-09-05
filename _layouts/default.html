@@ -18,20 +18,34 @@
       [data-mobile-menu] { display: none; }
       [data-mobile-menu]:not(.hidden) { display: flex; }
       h1[data-hero-heading] {
-        font-size: 2.25rem;
-        line-height: 1.2;
+        font-size: 1.875rem;
+        line-height: 1.15;
         font-weight: 800;
         margin: 0;
         color: #fff;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        max-width: 100%;
+      }
+      @media (min-width: 640px) {
+        h1[data-hero-heading] { font-size: 2.25rem; }
       }
       @media (min-width: 768px) {
-        h1[data-hero-heading] { font-size: 3.5rem; }
+        h1[data-hero-heading] { font-size: 2.75rem; }
+      }
+      @media (min-width: 1280px) {
+        h1[data-hero-heading] { font-size: 3.35rem; }
       }
       /* Split hero: only media-column images fill the frame.
          Do NOT target all [data-hero-banner] img — that blew up WhatsApp icons. */
+      [data-hero-banner] {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+      }
       [data-hero-banner]:not(:has(.hero-split)) {
         position: relative;
-        min-height: 60vh;
+        min-height: 42vh;
         display: flex;
         align-items: center;
         color: #fff;
@@ -53,6 +67,37 @@
         position: relative;
         z-index: 20;
       }
+      .hero-split {
+        display: grid;
+        gap: 0;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+      }
+      @media (min-width: 1024px) {
+        .hero-split {
+          grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+          min-height: min(78vh, 640px);
+        }
+      }
+      .hero-split__copy,
+      .hero-split__media {
+        min-width: 0;
+        max-width: 100%;
+      }
+      .hero-split__media {
+        position: relative;
+        min-height: 220px;
+        max-height: min(42vh, 360px);
+        overflow: hidden;
+      }
+      @media (min-width: 1024px) {
+        .hero-split__media {
+          min-height: 100%;
+          max-height: min(78vh, 640px);
+        }
+      }
+      /* Only the photo in the media column — never icons / CTAs */
       .hero-split__media > picture {
         position: absolute;
         inset: 0;
@@ -65,8 +110,10 @@
         object-position: center;
       }
       img.icon-wa {
-        width: 1.125rem;
-        height: 1.125rem;
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
         display: inline-block;
         flex-shrink: 0;
         object-fit: contain;
