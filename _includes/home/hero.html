@@ -1,69 +1,55 @@
-{% include home-hero-vars.liquid %}
 {% assign hero_title = page.hero.title | default: page.title %}
 {% assign hero_subtitle = page.hero.subtitle | default: page.description %}
 {% assign primary_cta = page.hero.primary_cta %}
 {% assign primary_label = primary_cta.label | default: 'Gratis Fixpreis-Angebot' %}
 {% assign primary_url = primary_cta.url | default: '/angebot/' %}
-<section class="relative text-white overflow-hidden w-full max-w-full" data-hero-banner aria-label="Hauptbereich">
+{% assign hero_img = site.images.hero_home | default: '/assets/images/generated/hero-street.webp' %}
+<section class="relative hero-light overflow-hidden w-full max-w-full bg-white border-b border-[color:var(--border-light)]" data-hero-banner aria-label="Hauptbereich">
   <div class="hero-split w-full max-w-full">
-    <div class="hero-split__copy min-w-0 px-4 md:px-8 lg:px-10 py-10 md:py-16 lg:py-20">
-      <div class="hero-split__copy-inner max-w-xl mx-auto lg:mx-0 lg:max-w-none space-y-5 md:space-y-6 min-w-0 w-full">
-        <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#f0a060] backdrop-blur-sm">
+    <div class="hero-split__copy min-w-0 px-4 md:px-8 lg:px-10 py-8 md:py-12 lg:py-14">
+      <div class="hero-split__copy-inner max-w-xl mx-auto lg:mx-0 lg:max-w-none space-y-4 md:space-y-5 min-w-0 w-full">
+        <p class="inline-flex items-center gap-2 rounded-full border border-[color:var(--border-light)] bg-[color:var(--surface-soft)] px-3.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[color:var(--brand-orange-dark)]">
           Wien · NÖ · Österreichweit · Fixpreis
         </p>
-        <h1 class="text-3xl sm:text-4xl md:text-[2.75rem] xl:text-[3.35rem] font-extrabold tracking-tight text-white leading-[1.08] break-words [overflow-wrap:anywhere]" data-hero-heading>
+        <h1 class="text-3xl sm:text-4xl md:text-[2.6rem] xl:text-[3rem] font-extrabold tracking-tight text-[color:var(--text-primary)] leading-[1.12] break-words [overflow-wrap:anywhere]" data-hero-heading>
           {{ hero_title }}
         </h1>
-        <p class="text-lg md:text-xl text-[#d4e5e0]/95 leading-relaxed max-w-xl">
+        <p class="text-base md:text-lg text-[color:var(--text-secondary)] leading-relaxed max-w-xl">
           {{ hero_subtitle }}
         </p>
-        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#b9d0cb] list-none m-0 p-0" aria-label="Kernversprechen">
-          <li class="inline-flex items-center gap-1.5"><span class="text-[#f0a060]" aria-hidden="true">●</span> Schriftlicher Fixpreis</li>
-          <li class="inline-flex items-center gap-1.5"><span class="text-[#f0a060]" aria-hidden="true">●</span> Wertanrechnung möglich</li>
-          <li class="inline-flex items-center gap-1.5"><span class="text-[#f0a060]" aria-hidden="true">●</span> All-Risk bis €&nbsp;1&nbsp;Mio.</li>
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[color:var(--text-secondary)] list-none m-0 p-0" aria-label="Kernversprechen">
+          <li class="inline-flex items-center gap-1.5"><span class="text-[color:var(--brand-orange)]" aria-hidden="true">●</span> Schriftlicher Fixpreis</li>
+          <li class="inline-flex items-center gap-1.5"><span class="text-[color:var(--brand-orange)]" aria-hidden="true">●</span> All-Risk bis €&nbsp;1&nbsp;Mio.</li>
+          <li class="inline-flex items-center gap-1.5"><span class="text-[color:var(--brand-orange)]" aria-hidden="true">●</span> Wertanrechnung möglich</li>
         </ul>
         <div class="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
           <a href="{{ primary_url | relative_url }}" class="btn-primary w-full sm:w-auto min-w-[220px] text-base justify-center">
             {{ primary_label }}
           </a>
-          <a href="tel:{{ site.phone | replace: ' ', '' }}" class="btn-ghost-light w-full sm:w-auto text-sm font-semibold justify-center">
-            {% include svg/call.svg class="w-4 h-4 shrink-0 fill-current" %}
-            {{ site.phone }}
+          <a href="{{ site.whatsapp }}" class="btn-ghost-light w-full sm:w-auto text-sm font-semibold justify-center">
+            <img src="{{ site.images.whatsapp | default: '/WhatsApp.svg' | relative_url }}" alt="" width="18" height="18" class="icon-wa" loading="eager" decoding="async"/>
+            WhatsApp-Foto senden
           </a>
         </div>
-        <p class="text-sm text-[#9bb8b2] flex flex-wrap items-center gap-2">
-          <img src="{{ site.images.whatsapp | default: '/WhatsApp.svg' | relative_url }}" alt="" width="18" height="18" class="icon-wa" loading="eager" decoding="async"/>
-          Oder
-          <a href="{{ site.whatsapp }}" class="font-semibold text-[#f0a060] underline decoration-[#f0a060]/40 underline-offset-4 hover:text-[#f5b97a]">WhatsApp-Foto senden</a>
-          — oft Antwort am selben Tag.
+        <p class="text-sm text-[color:var(--text-muted)] flex flex-wrap items-center gap-2 m-0">
+          Oder anrufen:
+          <a href="tel:{{ site.phone | replace: ' ', '' }}" class="font-semibold text-[color:var(--text-primary)] underline decoration-[color:var(--brand-orange)]/40 underline-offset-4 hover:text-[color:var(--brand-orange)]">{{ site.phone }}</a>
         </p>
       </div>
     </div>
 
     <div class="hero-split__media min-w-0 w-full max-w-full">
       <picture class="absolute inset-0">
-        <source
-          media="(max-width: 1023px)"
-          srcset="{{ hero_mobile_srcset | strip }}"
-          sizes="100vw"
-          type="image/avif">
-        <source
-          media="(min-width: 1024px)"
-          srcset="{{ hero_desktop_srcset | strip }}"
-          sizes="50vw"
-          type="image/avif">
-        <img src="{{ hero_desktop | relative_url }}"
-             srcset="{{ hero_desktop_srcset | strip }}"
-             sizes="(min-width: 1024px) 50vw, 100vw"
-             alt="Sicher Team Umzugsteam mit LKW in Österreich"
+        <img src="{{ hero_img | relative_url }}"
+             alt="Sicher Team Umzugsteam vor dem Fahrzeug in Österreich"
              class="w-full h-full object-cover object-center"
              fetchpriority="high"
              loading="eager"
-             width="{{ hero_width }}"
-             height="{{ hero_height }}">
+             width="1200"
+             height="900">
       </picture>
       <div class="absolute bottom-4 left-4 right-4 z-10 hidden lg:flex items-end justify-between gap-3 pointer-events-none">
-        <p class="rounded-xl bg-[#061a18]/75 backdrop-blur-md px-4 py-3 text-xs font-semibold text-white/95 max-w-xs border border-white/10">
+        <p class="rounded-xl bg-white/95 backdrop-blur-md px-4 py-3 text-xs font-semibold text-[color:var(--text-primary)] max-w-xs border border-[color:var(--border-light)] shadow-sm">
           Team vor Ort · Luftgefederte Fahrzeuge · Besenreine Übergabe
         </p>
       </div>

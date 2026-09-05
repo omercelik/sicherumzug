@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#061a18"/>
+    <meta name="theme-color" content="#0b1f3a"/>
     <style>
-      :root { color-scheme: light dark; }
+      :root { color-scheme: light; }
       body {
         margin: 0;
         font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        background-color: #faf6f0;
+        background-color: #f8fafc;
         min-height: 100vh;
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: Syne, 'Segoe UI', system-ui, sans-serif;
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       }
       [data-mobile-menu] { display: none; }
       [data-mobile-menu]:not(.hidden) { display: flex; }
@@ -22,7 +22,7 @@
         line-height: 1.15;
         font-weight: 800;
         margin: 0;
-        color: #fff;
+        color: #0b1f3a;
         overflow-wrap: anywhere;
         word-break: break-word;
         max-width: 100%;
@@ -56,7 +56,7 @@
         position: absolute;
         inset: 0;
         z-index: 10;
-        background-image: linear-gradient(rgba(6, 26, 24, 0.5), rgba(6, 26, 24, 0.82));
+        background-image: linear-gradient(rgba(11, 31, 58, 0.5), rgba(11, 31, 58, 0.82));
       }
       [data-hero-banner]:not(:has(.hero-split)) picture {
         position: absolute;
@@ -77,7 +77,8 @@
       @media (min-width: 1024px) {
         .hero-split {
           grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-          min-height: min(78vh, 640px);
+          min-height: auto;
+          max-height: 520px;
         }
       }
       .hero-split__copy,
@@ -94,7 +95,7 @@
       @media (min-width: 1024px) {
         .hero-split__media {
           min-height: 100%;
-          max-height: min(78vh, 640px);
+          max-height: 520px;
         }
       }
       /* Only the photo in the media column — never icons / CTAs */
@@ -147,7 +148,7 @@
     <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
     {% assign hero_preload = page.hero_preload | default: page.hero_image %}
     {% if page.layout == 'home' or page.layout == 'service' or page.layout == 'state' %}
@@ -170,7 +171,7 @@
 
   </head>
   <body>
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#f0a060] focus:text-[#061a18] focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#ea580c] focus:text-white focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
       Zum Hauptinhalt springen
     </a>
     <div class="bg-background-light font-body text-text-light">

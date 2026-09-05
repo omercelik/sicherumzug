@@ -1,3 +1,10 @@
+{% if page.layout == 'home' %}
+<link rel="preload"
+      href="{{ site.images.hero_home | default: '/assets/images/generated/hero-street.webp' | relative_url }}"
+      as="image"
+      type="image/webp"
+      fetchpriority="high">
+{% else %}
 {% include home-hero-vars.liquid %}
 {% if hero_mobile %}
 <link rel="preload"
@@ -16,4 +23,5 @@
       imagesizes="{{ hero_image_sizes }}"
       media="(min-width: 768px)"
       fetchpriority="high">
+{% endif %}
 {% endif %}

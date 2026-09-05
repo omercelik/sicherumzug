@@ -5,13 +5,12 @@ layout: default
 {% include home/trust.html %}
 {% include home/services.html %}
 {% include home/process.html %}
-{% include home/social-proof.html %}
 {% include home/pricing.html %}
 {% include home/faq.html %}
 {% include home/final-cta.html %}
 
 {% if content != blank %}
-<div class="border-t border-gray-100" id="home-extra">
+<div class="border-t border-[color:var(--border-light)]" id="home-extra">
   {{ content }}
 </div>
 {% endif %}

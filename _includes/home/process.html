@@ -1,23 +1,23 @@
-<section class="section-ink section-pad defer-section" id="ablauf">
+<section class="bg-white section-pad defer-section border-y border-[color:var(--border-light)]" id="ablauf">
   <div class="container mx-auto px-4 md:px-6">
     <div class="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[1fr_1.2fr] lg:items-end">
       <div>
         <p class="section-kicker">Ablauf</p>
-        <h2 class="section-title text-white">Vier Schritte. Ein Fixpreis.</h2>
+        <h2 class="section-title">Vier Schritte. Ein Fixpreis.</h2>
       </div>
       <p class="section-lede lg:text-right m-0">{{ page.process_intro }}</p>
     </div>
 
     <ol class="process-rail mt-12 grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto list-none m-0 p-0 relative z-[1]">
       {% for step in site.data.steps %}
-      <li class="relative rounded-2xl border border-white/10 bg-white/[0.06] backdrop-blur-sm p-6 h-full">
+      <li class="relative rounded-2xl border border-[color:var(--border-light)] bg-[color:var(--surface-soft)] p-6 h-full">
         <div class="flex items-center gap-3 mb-4">
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#e07830] to-[#9a4a18] text-white text-sm font-bold shrink-0 shadow-lg shadow-black/20">{{ step.order }}</span>
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[color:var(--brand-orange)] text-white text-sm font-bold shrink-0 shadow-md shadow-orange-500/25">{{ step.order }}</span>
           {% capture icon_path %}svg/{{ step.icon }}.svg{% endcapture %}
-          <span class="text-[#f0a060]">{% include {{ icon_path }} class="w-[18px] h-[18px] shrink-0 fill-current" %}</span>
+          <span class="text-[color:var(--brand-orange-dark)]">{% include {{ icon_path }} class="w-[18px] h-[18px] shrink-0 fill-current" %}</span>
         </div>
-        <h3 class="text-base font-bold text-white leading-snug">{{ step.title }}</h3>
-        <p class="mt-2 text-sm text-[#b9d0cb] leading-relaxed">{{ step.description }}</p>
+        <h3 class="text-base font-bold text-[color:var(--text-primary)] leading-snug">{{ step.title }}</h3>
+        <p class="mt-2 text-sm text-[color:var(--text-secondary)] leading-relaxed">{{ step.description }}</p>
       </li>
       {% endfor %}
     </ol>

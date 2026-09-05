@@ -1,33 +1,33 @@
 <form id="contactForm" enctype="multipart/form-data" class="space-y-4">
   <input type="hidden" name="subject" value="Neue Anfrage über die Website"/>
   <div>
-    <label class="text-sm font-bold text-[#061a18]" for="form-name">Name*</label>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-name">Name*</label>
     <input id="form-name" name="name" required type="text" class="form-field" placeholder="Max Mustermann" autocomplete="name"/>
   </div>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
     <div>
-      <label class="text-sm font-bold text-[#061a18]" for="form-email">E-Mail (optional)</label>
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-email">E-Mail (optional)</label>
       <input id="form-email" name="email" type="email" class="form-field" placeholder="max@example.com" autocomplete="email"/>
     </div>
     <div>
-      <label class="text-sm font-bold text-[#061a18]" for="form-phone">Telefon*</label>
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-phone">Telefon*</label>
       <input id="form-phone" name="phone" required type="tel" class="form-field" placeholder="{{ site.phone }}" autocomplete="tel"/>
     </div>
   </div>
   <div>
-    <label class="text-sm font-bold text-[#061a18]" for="form-postcode">PLZ*</label>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-postcode">PLZ*</label>
     <input id="form-postcode" name="postcode" required type="text" pattern="[0-9]{4}" inputmode="numeric" maxlength="4" class="form-field" placeholder="1010" autocomplete="postal-code"/>
   </div>
   <div>
     <div class="flex justify-between items-center">
-      <label class="text-sm font-bold text-[#061a18]" for="form-message">Kurzbeschreibung (optional)</label>
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-message">Kurzbeschreibung (optional)</label>
       <span id="form-message-counter" class="text-xs text-text-muted" aria-live="polite">0 / 1000</span>
     </div>
     <textarea id="form-message" name="message" rows="4" maxlength="1000" class="form-field" placeholder="Umzug von … nach …? Zimmerzahl, Terminwunsch, Räumung dabei?"></textarea>
   </div>
   <div>
-    <label class="text-sm font-bold text-[#061a18]" for="form-photos">Fotos (optional)</label>
-    <input id="form-photos" name="photos[]" type="file" multiple accept="image/*" class="form-field file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-[#fdf0e6] file:text-[#9a4a18] hover:file:bg-[#f0e6d8]"/>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-photos">Fotos (optional)</label>
+    <input id="form-photos" name="photos[]" type="file" multiple accept="image/*" class="form-field file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-[#fff7ed] file:text-[#c2410c] hover:file:bg-[#f1f5f9]"/>
     <div id="file-preview-container" class="mt-2 grid grid-cols-4 gap-2 empty:hidden"></div>
     <p class="mt-1.5 text-xs text-text-muted m-0">Alternativ können Sie Fotos später per WhatsApp senden.</p>
   </div>
@@ -36,7 +36,7 @@
       Jetzt kostenloses Angebot sichern
     </button>
     <p class="text-xs text-text-muted text-center m-0">Wir melden uns innerhalb eines Werktags mit einem Terminvorschlag.</p>
-    <p class="text-xs text-text-muted text-center m-0">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben (inkl. optionaler Fotos) gemäß unserer <a href="{{ '/datenschutz/' | relative_url }}" class="underline hover:text-[#7c3a12] font-semibold">Datenschutzerklärung</a> zu.</p>
+    <p class="text-xs text-text-muted text-center m-0">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben (inkl. optionaler Fotos) gemäß unserer <a href="{{ '/datenschutz/' | relative_url }}" class="underline hover:text-[#9a3412] font-semibold">Datenschutzerklärung</a> zu.</p>
   </div>
 </form>
 

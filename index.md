@@ -39,7 +39,7 @@ permalink: /
 schema_type: Homepage
 ---
 
-<section class="py-12 section-ink">
+<section class="py-12 md:py-16 bg-[#f8fafc]" id="umzugskosten-rechner" aria-labelledby="calc-heading">
   <div class="container mx-auto px-4">
     {% include calculator.html %}
   </div>

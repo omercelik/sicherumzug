@@ -30,10 +30,11 @@ open_hours:
     closes: "23:00"
 
 logo: /logo.svg
-og_image: /assets/images/hero/desktop.avif
+og_image: /assets/images/generated/hero-street.webp
 og_image_alt: "Sicher Team im Einsatz"
 
 images:
+  hero_home: /assets/images/generated/hero-street.webp
   hero_mobile: /assets/images/hero/mobile.avif
   hero_desktop: /assets/images/hero/desktop.avif
   hero_mobile_srcset:

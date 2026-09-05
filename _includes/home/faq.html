@@ -3,7 +3,7 @@
   {% assign faq_items = site.data.faqs %}
 {% endif %}
 {% if faq_items %}
-<section class="section-cream-deep section-pad defer-section" id="faq">
+<section class="bg-white section-pad defer-section border-t border-[color:var(--border-light)]" id="faq">
   <div class="container mx-auto px-4 md:px-6">
     <div class="grid gap-12 lg:grid-cols-12 lg:gap-16 max-w-6xl mx-auto">
       <div class="lg:col-span-5">
@@ -14,8 +14,8 @@
       </div>
       <div class="lg:col-span-7 space-y-3">
         {% for faq in faq_items %}
-        <div class="rounded-2xl border border-[color:var(--border-medium)] bg-[color:var(--surface)] p-4 md:p-5 shadow-sm">
-          <button class="flex w-full items-center justify-between text-left gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange-dark)] focus-visible:ring-offset-2 rounded-lg" data-faq-toggle="faq-{{ forloop.index }}" aria-expanded="false" aria-controls="faq-{{ forloop.index }}" id="faq-btn-{{ forloop.index }}">
+        <div class="rounded-2xl border border-[color:var(--border-medium)] bg-[color:var(--surface-soft)] p-4 md:p-5 shadow-sm">
+          <button class="flex w-full items-center justify-between text-left gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2 rounded-lg" data-faq-toggle="faq-{{ forloop.index }}" aria-expanded="false" aria-controls="faq-{{ forloop.index }}" id="faq-btn-{{ forloop.index }}">
             <h3 class="text-base font-semibold text-[color:var(--text-primary)] pr-2 m-0">{{ faq.question }}</h3>
             {% include svg/expand_more.svg class="w-5 h-5 transition-transform duration-200 shrink-0 fill-current text-[color:var(--text-muted)]" %}
           </button>
