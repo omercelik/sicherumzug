@@ -30,11 +30,11 @@ open_hours:
     closes: "23:00"
 
 logo: /logo.svg
-og_image: /assets/images/generated/hero-street.webp
-og_image_alt: "Sicher Team im Einsatz"
+og_image: /assets/images/generated/hero-movers.webp
+og_image_alt: "Umzugshelfer tragen ein Sofa — Sicher Team"
 
 images:
-  hero_home: /assets/images/generated/hero-street.webp
+  hero_home: /assets/images/generated/hero-movers.webp
   hero_mobile: /assets/images/hero/mobile.avif
   hero_desktop: /assets/images/hero/desktop.avif
   hero_mobile_srcset:

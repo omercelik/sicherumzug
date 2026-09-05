@@ -1,9 +1,11 @@
-# Preview overrides for GitHub Pages fork deploy at
-# https://omercelik.github.io/sicherumzug/
+# Preview overrides for GitHub Pages at
+# https://omercelik.github.io/sicherumzug-preview/
 #
 # Usage:
 #   bundle exec jekyll build --config _config.yml,_config_preview.yml
 #
 # Do NOT merge these url/baseurl values into production _config.yml.
 url: "https://omercelik.github.io"
-baseurl: "/sicherumzug"
+baseurl: "/sicherumzug-preview"
+
+canonical_base_url: "https://omercelik.github.io/sicherumzug-preview"

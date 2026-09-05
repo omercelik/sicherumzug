@@ -1,0 +1,27 @@
+<section class="section-cream section-pad border-b border-[color:var(--border-light)]" id="einsatzgebiete" aria-labelledby="areas-heading">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="areas-heading" class="section-title">In Wien zuhause. In Österreich unterwegs.</h2>
+      <p class="section-lede mt-3 m-0">Wir sind für Sie da – in der Bundeshauptstadt und darüber hinaus.</p>
+
+      <div class="mt-8 md:mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+        <a href="{{ '/bundesland/wien/' | relative_url }}" class="inline-flex items-center gap-2 text-base font-semibold text-[#0b1f3a] hover:text-[#ea580c] transition-colors">
+          {% include svg/location_on.svg class="w-5 h-5 shrink-0 fill-current text-[#ea580c]" %}
+          Wien
+        </a>
+        <a href="{{ '/bundesland/niederoesterreich/' | relative_url }}" class="inline-flex items-center gap-2 text-base font-semibold text-[#0b1f3a] hover:text-[#ea580c] transition-colors">
+          {% include svg/location_on.svg class="w-5 h-5 shrink-0 fill-current text-[#ea580c]" %}
+          Niederösterreich
+        </a>
+        <a href="{{ '/bundesland/burgenland/' | relative_url }}" class="inline-flex items-center gap-2 text-base font-semibold text-[#0b1f3a] hover:text-[#ea580c] transition-colors">
+          {% include svg/location_on.svg class="w-5 h-5 shrink-0 fill-current text-[#ea580c]" %}
+          Burgenland
+        </a>
+        <a href="{{ '/bezirke/' | relative_url }}" class="inline-flex items-center gap-1.5 text-base font-semibold text-[#0b1f3a] hover:text-[#ea580c] transition-colors ml-0 sm:ml-2">
+          Alle Einsatzgebiete
+          {% include svg/arrow_right_alt.svg class="w-4 h-4 fill-current" %}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

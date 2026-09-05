@@ -4,18 +4,17 @@
 {% endif %}
 {% assign states = states | sort: 'order' %}
 <footer class="bg-[#0b1f3a] text-white border-t border-[#1e3a5f]/50">
-  <div class="container mx-auto px-4 md:px-6 py-14 md:py-16">
+  <div class="container mx-auto px-4 md:px-6 py-12 md:py-14">
     <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 max-w-6xl mx-auto">
       <div id="kontakt" class="lg:col-span-4 space-y-4">
         <a href="{{ '/' | relative_url }}" class="inline-flex items-center gap-2.5 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1f3a] rounded-lg">
           <span class="sr-only">{{ site.brand_name }}</span>
-          <img src="{{ site.logo | default: '/logo.svg' | relative_url }}" alt="Sicher Team Logo" title="{{ site.brand_name }}" class="h-10 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="40" height="40" />
-          <span class="flex items-center text-xl font-black tracking-tight whitespace-nowrap">
-            <span class="text-white">SICHER</span>
-            <span class="ml-0.5 bg-gradient-to-r from-[#fb923c] to-[#ea580c] bg-clip-text text-transparent">TEAM</span>
+          <span class="flex items-center gap-2 text-xl font-semibold tracking-tight whitespace-nowrap text-white">
+            <span>sicher team</span>
+            {% include svg/box_logo.svg class="w-7 h-6 shrink-0 text-white" %}
           </span>
         </a>
-        <p class="text-sm text-[#94a3b8] leading-relaxed max-w-sm">{{ site.data.company.legal_name }} — staatlich konzessionierter Fachbetrieb für Umzug, Räumung und Entrümpelung. Fixpreis, Wertanrechnung &amp; All-Risk-Versicherung.</p>
+        <p class="text-sm text-[#94a3b8] leading-relaxed max-w-sm">{{ site.data.company.legal_name }} — Umzug, Räumung und Entrümpelung. Fixpreis, Wertanrechnung &amp; All-Risk-Versicherung.</p>
         <address class="space-y-2.5 text-sm text-[#94a3b8] not-italic">
           <p class="flex items-start gap-2 m-0">{% include svg/location_on.svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current mt-0.5" %}<span>{{ site.address.street }}, {{ site.address.postal_code }} {{ site.address.city }}</span></p>
           <p class="flex items-center gap-2 m-0">{% include svg/call.svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current" %}Tel: <a class="hover:text-[#fb923c] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded px-1" href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a></p>
@@ -26,23 +25,23 @@
       <div class="lg:col-span-2">
         <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Leistungen</h3>
         <ul class="mt-4 space-y-2 text-sm list-none m-0 p-0">
-          {% assign kern = site.data.navigation.services | first %}
-          {% for item in kern.items limit:6 %}
-          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-          {% endfor %}
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/leistungen/privatumzug/' | relative_url }}">Privatumzug</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/leistungen/firmenumzug-wien/' | relative_url }}">Firmenumzug</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/leistungen/raeumung/' | relative_url }}">Räumung</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/leistungen/entruempelung/' | relative_url }}">Entrümpelung</a></li>
           <li class="pt-2"><a class="text-[#fb923c] hover:text-white font-bold" href="{{ '/leistungen/' | relative_url }}">Alle Leistungen →</a></li>
         </ul>
       </div>
 
       {% if states.size > 0 %}
       <div class="lg:col-span-3">
-        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Standorte</h3>
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Einsatzgebiete</h3>
         <ul class="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-sm list-none m-0 p-0">
           {% for state in states %}
           <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 {% if state.title == 'Wien' %}font-bold text-white{% endif %}" href="{{ state.url | relative_url }}">{{ state.title }}</a></li>
           {% endfor %}
         </ul>
-        <a class="mt-3 inline-block text-sm text-[#fb923c] hover:text-white font-bold" href="{{ '/bezirke/' | relative_url }}">Alle Standorte →</a>
+        <a class="mt-3 inline-block text-sm text-[#fb923c] hover:text-white font-bold" href="{{ '/bezirke/' | relative_url }}">Alle Einsatzgebiete →</a>
       </div>
       {% endif %}
 
@@ -53,26 +52,17 @@
           <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/preise/' | relative_url }}">Preise</a></li>
           <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/ratgeber/' | relative_url }}">Ratgeber</a></li>
           <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/ueber-uns/' | relative_url }}">Über Uns</a></li>
-          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/angebot/' | relative_url }}">Gratis Angebot</a></li>
-          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/impressum/' | relative_url }}">Impressum</a></li>
-          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="{{ '/angebot/' | relative_url }}">Angebot anfragen</a></li>
         </ul>
-        <div class="mt-6 flex gap-3">
-          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
-            {% include svg/public.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
-          </a>
-          {% if site.instagram %}
-          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="{{ site.instagram }}" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
-            {% include svg/photo_camera.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
-          </a>
-          {% endif %}
-        </div>
       </div>
     </div>
 
-    <div class="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6a8580]">
-      <p class="m-0">© <span id="current-year"></span> {{ site.data.company.legal_name | default: site.brand_name }}. Alle Rechte vorbehalten.</p>
-      <p class="m-0">Marke: {{ site.brand_name }}</p>
+    <div class="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#94a3b8]">
+      <p class="m-0">© <span id="current-year"></span> {{ site.data.company.legal_name | default: site.brand_name }}</p>
+      <nav class="flex flex-wrap gap-x-5 gap-y-2" aria-label="Rechtliches">
+        <a class="hover:text-[#fb923c]" href="{{ '/impressum/' | relative_url }}">Impressum</a>
+        <a class="hover:text-[#fb923c]" href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
+      </nav>
     </div>
   </div>
 </footer>

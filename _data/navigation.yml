@@ -71,18 +71,10 @@ districts:
   - title: Vorarlberg
     url: /bundesland/vorarlberg/
 links:
-  - label: Ablauf
-    url: /ablauf/
-  - label: Preise
+  - label: Ablauf & Preise
     url: /preise/
-  - label: Bewertungen
-    url: /bewertungen/
   - label: Ratgeber
     url: /ratgeber/
-  - label: Über Uns
-    url: /ueber-uns/
-  - label: Kontakt
-    url: /angebot/
 cta:
-  label: Fixpreis-Angebot
+  label: Angebot anfragen
   url: /angebot/

@@ -1,105 +1,37 @@
-<!-- Compact trust strip -->
-<div class="site-announcement py-2 select-none">
-  <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1 text-[11px] font-semibold tracking-wide text-white/90">
-    <span>100% Fixpreis — schriftlich</span>
-    <span class="hidden sm:inline">All-Risk bis €1.000.000</span>
-    <span class="hidden md:inline">Wien · NÖ · Österreichweit</span>
-  </div>
-</div>
-
 <header class="sticky top-0 z-50 site-header shadow-sm">
   <div class="container mx-auto px-4">
-    <div class="flex h-16 items-center justify-between gap-4">
+    <div class="flex h-16 md:h-[4.25rem] items-center justify-between gap-4">
 
       <a
         href="{{ '/' | relative_url }}"
         class="flex items-center gap-2.5 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2"
       >
         <span class="sr-only">{{ site.brand_name }}</span>
-        <img
-          src="{{ site.logo | default: '/logo.svg' | relative_url }}"
-          alt="Sicher Team Logo"
-          title="{{ site.brand_name }}"
-          class="h-10 w-10 max-h-10 max-w-10 object-contain shrink-0"
-          width="40"
-          height="40"
-        />
-        <span class="site-logo-wordmark flex items-center text-lg sm:text-xl font-extrabold tracking-wide leading-none whitespace-nowrap text-white">
-          <span>SICHER</span>
-          <span class="ml-0.5 text-[color:var(--brand-orange)]">TEAM</span>
+        <span class="site-logo-wordmark flex items-center gap-2 text-[1.15rem] sm:text-xl font-semibold tracking-tight leading-none whitespace-nowrap text-[#0b1f3a]">
+          <span>sicher team</span>
+          {% include svg/box_logo.svg class="w-7 h-6 shrink-0 text-[#0b1f3a]" %}
         </span>
       </a>
 
-      <nav class="hidden items-center gap-1 text-sm font-semibold xl:flex" aria-label="Hauptnavigation">
-        <div class="group relative">
-          <button class="flex items-center gap-1 py-3 text-white/90 hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-services">
-            Leistungen
-            {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" %}
-          </button>
-          <div id="mega-panel-services" role="region" aria-label="Leistungen Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-[560px] -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-6 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
-            <div class="grid grid-cols-2 gap-6">
-              {% for group in site.data.navigation.services %}
-              <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">{{ group.label }}</p>
-                <ul class="mt-3 space-y-1.5 text-sm">
-                  {% for item in group.items %}
-                  <li>
-                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endfor %}
-            </div>
-            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--border-light)] pt-4 text-sm">
-              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="{{ '/leistungen/' | relative_url }}">Alle Leistungen →</a>
-              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="{{ '/preise/' | relative_url }}">Preise ansehen</a>
-            </div>
-          </div>
-        </div>
+      <nav class="hidden items-center gap-1 text-[0.95rem] font-medium lg:flex" aria-label="Hauptnavigation">
+        <a class="rounded-md px-3 py-2.5 text-[#0b1f3a] hover:text-[#ea580c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" href="{{ '/leistungen/' | relative_url }}">Leistungen</a>
+        <a class="rounded-md px-3 py-2.5 text-[#0b1f3a] hover:text-[#ea580c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" href="{{ '/bezirke/' | relative_url }}">Einsatzgebiete</a>
+        <a class="rounded-md px-3 py-2.5 text-[#0b1f3a] hover:text-[#ea580c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" href="{{ '/preise/' | relative_url }}">Ablauf &amp; Preise</a>
+        <a class="rounded-md px-3 py-2.5 text-[#0b1f3a] hover:text-[#ea580c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" href="{{ '/ratgeber/' | relative_url }}">Ratgeber</a>
 
-        <div class="group relative">
-          <button class="flex items-center gap-1 py-3 text-white/90 hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-districts">
-            Standorte
-            {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" %}
-          </button>
-          <div id="mega-panel-districts" role="region" aria-label="Standorte Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-4 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
-            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Bundesländer</p>
-            <ul class="space-y-1.5 text-sm columns-2 gap-x-4">
-              {% for state in site.data.navigation.districts %}
-              <li>
-                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] {% if state.title == 'Wien' %}font-bold text-[color:var(--text-primary)]{% endif %}" href="{{ state.url | relative_url }}">{{ state.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            <div class="mt-4 border-t border-[color:var(--border-light)] pt-3 text-sm">
-              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="{{ '/bezirke/' | relative_url }}">Alle Standorte →</a>
-            </div>
-          </div>
-        </div>
-
-        {% for link in site.data.navigation.links %}
-        <a class="hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-white/90" href="{{ link.url | relative_url }}">{{ link.label }}</a>
-        {% endfor %}
-
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="ml-1 inline-flex items-center gap-1.5 px-2.5 py-3 text-white hover:text-[#fb923c] font-bold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md" aria-label="Anrufen {{ site.phone }}">
-          {% include svg/call.svg class="w-4 h-4 shrink-0 fill-current" %}
-          <span class="hidden 2xl:inline">{{ site.phone }}</span>
-        </a>
-
-        <a class="ml-1 rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white font-bold px-5 py-2.5 shadow-md shadow-orange-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2" href="{{ site.data.navigation.cta.url | relative_url }}">
-          {{ site.data.navigation.cta.label }}
+        <a class="ml-3 inline-flex items-center justify-center rounded-md bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold px-5 py-2.5 shadow-md shadow-orange-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2" href="{{ '/angebot/' | relative_url }}">
+          Angebot anfragen
         </a>
       </nav>
 
-      <div class="flex items-center gap-2 xl:hidden">
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="hidden sm:inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/25 text-white hover:border-[#fb923c] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" aria-label="Anrufen">
+      <div class="flex items-center gap-2 lg:hidden">
+        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="hidden sm:inline-flex items-center justify-center h-10 w-10 rounded-full border border-[#e2e8f0] text-[#0b1f3a] hover:border-[#ea580c] hover:text-[#ea580c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" aria-label="Anrufen">
           {% include svg/call.svg class="w-[18px] h-[18px] fill-current" %}
         </a>
-        <a href="{{ site.data.navigation.cta.url | relative_url }}" class="hidden sm:inline-flex rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white text-xs font-bold px-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]">
+        <a href="{{ '/angebot/' | relative_url }}" class="hidden sm:inline-flex rounded-md bg-[#ea580c] hover:bg-[#c2410c] text-white text-xs font-bold px-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]">
           Angebot
         </a>
-        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-white bg-white/10 hover:bg-white/18 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-[#0b1f3a] bg-[#f1f5f9] hover:bg-[#e2e8f0] active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
       </div>

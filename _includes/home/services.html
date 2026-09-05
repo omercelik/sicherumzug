@@ -1,69 +1,51 @@
-<section class="section-cream section-pad defer-section border-b border-[color:var(--border-light)]" id="leistungen">
+<section class="section-cream section-pad border-b border-[color:var(--border-light)]" id="leistungen">
   <div class="container mx-auto px-4 md:px-6">
-    <div class="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-end">
-      <div>
-        <p class="section-kicker">Leistungen</p>
-        <h2 class="section-title">Umzug zuerst. Räumung, wenn’s Sinn macht.</h2>
-      </div>
-      <p class="section-lede lg:justify-self-end lg:text-right m-0">{{ page.services_intro }}</p>
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-center md:text-left">Was steht bei Ihnen an?</h2>
     </div>
 
-    <div class="mt-12 grid gap-6 lg:gap-7 md:grid-cols-3 max-w-6xl mx-auto">
-      {% assign moving_services = "" | split: "," %}
-      {% for item in site.data.service_cards %}
-        {% if item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
-          {% assign moving_services = moving_services | push: item %}
-        {% endif %}
-      {% endfor %}
-      {% for card in moving_services %}
-      {% if forloop.index == 1 %}
-        {% assign media_src = '/assets/images/generated/service-van.webp' %}
-      {% elsif forloop.index == 2 %}
-        {% assign media_src = '/assets/images/generated/service-cleared.webp' %}
-      {% else %}
-        {% assign media_src = '/assets/images/generated/service-boxes.webp' %}
-      {% endif %}
-      <a href="{{ card.url | relative_url }}" class="decision-card decision-card--media group text-left no-underline">
+    <div class="mt-10 md:mt-12 grid gap-6 lg:gap-7 md:grid-cols-3 max-w-6xl mx-auto">
+      <a href="{{ '/leistungen/privatumzug/' | relative_url }}" class="decision-card decision-card--media group text-left no-underline">
         <div class="decision-card__media">
-          <img src="{{ media_src | relative_url }}" alt="" class="object-cover" width="640" height="400" loading="lazy" decoding="async"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-[color:var(--text-primary)]/40 via-transparent to-transparent"></div>
+          <img src="{{ '/assets/images/generated/service-boxes.webp' | relative_url }}" alt="Umzugskartons in der Wohnung" class="object-cover" width="640" height="400" loading="lazy" decoding="async"/>
         </div>
         <div class="decision-card__body">
-          <h3 class="text-xl font-bold text-[color:var(--text-primary)] leading-tight">{{ card.title }}</h3>
-          <p class="mt-3 text-sm text-[color:var(--text-secondary)] leading-relaxed flex-1">{{ card.description }}</p>
-          <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[color:var(--brand-orange-dark)] group-hover:gap-2.5 transition-all">
+          <h3 class="text-xl font-bold text-[#0b1f3a] leading-tight">Privatumzug</h3>
+          <p class="mt-3 text-sm text-[#334155] leading-relaxed flex-1">Wohnung oder Haus — geplant, versichert und zum schriftlichen Fixpreis. Von Wien in ganz Österreich.</p>
+          <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#c2410c] group-hover:gap-2.5 transition-all">
             Mehr erfahren
             {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 fill-current" %}
           </span>
         </div>
       </a>
-      {% endfor %}
-    </div>
 
-    <div class="mt-16 pt-12 border-t border-[color:var(--border-light)]">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 max-w-6xl mx-auto">
-        <div>
-          <h3 class="text-xl md:text-2xl font-extrabold text-[color:var(--text-primary)] tracking-tight">Weitere Räumungs-Services</h3>
-          <p class="mt-2 text-sm md:text-base text-[color:var(--text-secondary)] max-w-2xl">{{ page.additional_services_intro }}</p>
+      <a href="{{ '/leistungen/firmenumzug-wien/' | relative_url }}" class="decision-card decision-card--media group text-left no-underline">
+        <div class="decision-card__media">
+          <img src="{{ '/assets/images/generated/service-van.webp' | relative_url }}" alt="Firmenumzug und Bürologistik" class="object-cover" width="640" height="400" loading="lazy" decoding="async"/>
         </div>
-        <a href="{{ '/leistungen/' | relative_url }}" class="btn-secondary self-start md:self-auto text-sm">Alle Leistungen</a>
-      </div>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-        {% assign clearing_services = "" | split: "," %}
-        {% for item in site.data.service_cards %}
-          {% unless item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
-            {% if item.title contains 'Räumung' or item.title contains 'Entrümpelung' or item.title contains 'Auflösung' or item.title contains 'Verlassenschaften' or item.title contains 'Keller' or item.title contains 'Garagen' %}
-              {% assign clearing_services = clearing_services | push: item %}
-            {% endif %}
-          {% endunless %}
-        {% endfor %}
-        {% for card in clearing_services %}
-        <a href="{{ card.url | relative_url }}" class="group flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] bg-white p-5 hover:border-[color:var(--brand-orange)]/35 hover:shadow-md transition-all duration-200">
-          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="shrink-0 w-[18px] h-[18px] text-[color:var(--brand-orange-dark)] mt-0.5 fill-current" %}
-          <span class="text-sm font-bold text-[color:var(--text-primary)] leading-snug group-hover:text-[color:var(--brand-orange-dark)]">{{ card.title }}</span>
-        </a>
-        {% endfor %}
-      </div>
+        <div class="decision-card__body">
+          <h3 class="text-xl font-bold text-[#0b1f3a] leading-tight">Firmenumzug</h3>
+          <p class="mt-3 text-sm text-[#334155] leading-relaxed flex-1">Büro, Praxis oder Lager mit klaren Zeitfenstern — damit Ihr Betrieb möglichst ohne Unterbrechung weiterläuft.</p>
+          <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#c2410c] group-hover:gap-2.5 transition-all">
+            Mehr erfahren
+            {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 fill-current" %}
+          </span>
+        </div>
+      </a>
+
+      <a href="{{ '/leistungen/raeumung/' | relative_url }}" class="decision-card decision-card--media group text-left no-underline">
+        <div class="decision-card__media">
+          <img src="{{ '/assets/images/generated/service-cleared.webp' | relative_url }}" alt="Besenreine Räumung und Entrümpelung" class="object-cover" width="640" height="400" loading="lazy" decoding="async"/>
+        </div>
+        <div class="decision-card__body">
+          <h3 class="text-xl font-bold text-[#0b1f3a] leading-tight">Räumung &amp; Entrümpelung</h3>
+          <p class="mt-3 text-sm text-[#334155] leading-relaxed flex-1">Wohnung, Keller oder Verlassenschaft besenrein — inkl. fachgerechter Entsorgung und optionaler Wertanrechnung.</p>
+          <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#c2410c] group-hover:gap-2.5 transition-all">
+            Mehr erfahren
+            {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 fill-current" %}
+          </span>
+        </div>
+      </a>
     </div>
   </div>
 </section>

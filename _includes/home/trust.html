@@ -1,39 +1,17 @@
-<section class="trust-strip defer-section relative z-20" aria-label="Vertrauenssignale">
-  <div class="container mx-auto px-4 md:px-6 py-5 md:py-6">
-    <ul class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 list-none m-0 p-0">
-      <li class="flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] bg-white px-4 py-3.5 shadow-sm">
-        <span class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--brand-orange-soft)] text-[color:var(--brand-orange-dark)] shrink-0 text-base" aria-hidden="true">★</span>
-        <span>
-          <span class="block text-[11px] md:text-xs font-bold uppercase tracking-wider text-[color:var(--text-primary)] leading-snug">5 Sterne Bewertungen</span>
-          <span class="mt-1 block text-xs text-[color:var(--text-muted)] leading-snug hidden sm:block">Kunden aus Wien &amp; Österreich</span>
-        </span>
+<section class="trust-strip" aria-label="Vertrauenssignale">
+  <div class="container mx-auto px-4 md:px-6">
+    <ul class="trust-strip__row list-none m-0 p-0">
+      <li class="trust-strip__item">
+        {% include svg/home.svg class="w-5 h-5 shrink-0 fill-current text-[#0b1f3a]" %}
+        <span>Kostenlose Besichtigung</span>
       </li>
-      <li class="flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] bg-white px-4 py-3.5 shadow-sm">
-        <span class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--brand-orange-soft)] text-[color:var(--brand-orange-dark)] shrink-0">
-          {% include svg/verified.svg class="w-[18px] h-[18px] fill-current" %}
-        </span>
-        <span>
-          <span class="block text-[11px] md:text-xs font-bold uppercase tracking-wider text-[color:var(--text-primary)] leading-snug">100% Fixpreis</span>
-          <span class="mt-1 block text-xs text-[color:var(--text-muted)] leading-snug hidden sm:block">Schriftlich — ohne Nachschlag</span>
-        </span>
+      <li class="trust-strip__item">
+        {% include svg/description.svg class="w-5 h-5 shrink-0 fill-current text-[#0b1f3a]" %}
+        <span>Schriftliches Angebot</span>
       </li>
-      <li class="flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] bg-white px-4 py-3.5 shadow-sm">
-        <span class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--brand-orange-soft)] text-[color:var(--brand-orange-dark)] shrink-0">
-          {% include svg/security.svg class="w-[18px] h-[18px] fill-current" %}
-        </span>
-        <span>
-          <span class="block text-[11px] md:text-xs font-bold uppercase tracking-wider text-[color:var(--text-primary)] leading-snug">All-Risk Versicherung</span>
-          <span class="mt-1 block text-xs text-[color:var(--text-muted)] leading-snug hidden sm:block">Deckung bis €&nbsp;1.000.000</span>
-        </span>
-      </li>
-      <li class="flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] bg-white px-4 py-3.5 shadow-sm">
-        <span class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--brand-orange-soft)] text-[color:var(--brand-orange-dark)] shrink-0">
-          {% include svg/task_alt.svg class="w-[18px] h-[18px] fill-current" %}
-        </span>
-        <span>
-          <span class="block text-[11px] md:text-xs font-bold uppercase tracking-wider text-[color:var(--text-primary)] leading-snug">{{ site.data.company.trust_signals.experience_years | default: 15 }} Jahre Erfahrung</span>
-          <span class="mt-1 block text-xs text-[color:var(--text-muted)] leading-snug hidden sm:block">Fest angestelltes Fachpersonal</span>
-        </span>
+      <li class="trust-strip__item">
+        {% include svg/diversity_3.svg class="w-5 h-5 shrink-0 fill-current text-[#0b1f3a]" %}
+        <span>Persönliche Abstimmung</span>
       </li>
     </ul>
   </div>

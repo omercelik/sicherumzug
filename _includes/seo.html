@@ -18,13 +18,13 @@
   content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ og_image_source | relative_url | absolute_url }}">
+<meta property="og:image" content="{{ og_image_source | absolute_url }}">
 <meta property="og:image:alt" content="{{ og_image_alt | strip_html | normalize_whitespace }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.seo_title | default: page.title | default: organization_name }}">
 <meta name="twitter:description"
   content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 200, '...' }}">
-<meta name="twitter:image" content="{{ og_image_source | relative_url | absolute_url }}">
+<meta name="twitter:image" content="{{ og_image_source | absolute_url }}">
 
 <!-- Organization Schema -->
 <script type="application/ld+json">
@@ -34,7 +34,7 @@
   "@id": "{{ site.canonical_base_url }}/#organization",
   "name": "{{ organization_name }}",
   "url": "{{ site.url }}{{ site.baseurl }}/",
-  "logo": "{{ site.logo | relative_url | absolute_url }}",
+  "logo": "{{ site.logo | absolute_url }}",
   "description": "{{ site.description | strip_html | normalize_whitespace }}",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -102,8 +102,8 @@
   "@type": ["HomeAndConstructionBusiness", "MovingCompany"],
   "@id": "{{ site.canonical_base_url }}/#localbusiness",
   "name": "Sicher Team",
-  "image": "{{ og_image_source | relative_url | absolute_url }}",
-  "logo": "{{ site.logo | relative_url | absolute_url }}",
+  "image": "{{ og_image_source | absolute_url }}",
+  "logo": "{{ site.logo | absolute_url }}",
   "url": "{{ site.canonical_base_url }}",
   "parentOrganization": {
     "@id": "{{ site.canonical_base_url }}/#organization"

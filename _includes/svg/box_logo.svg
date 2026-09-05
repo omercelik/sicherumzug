@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" class="{{ include.class }}" aria-hidden="true">
+  <path d="M16 2.5 L29 9.5 L16 16.5 L3 9.5 Z"/>
+  <path d="M3 9.5 V18.5 L16 25.5 L29 18.5 V9.5"/>
+  <path d="M16 16.5 V25.5"/>
+</svg>
