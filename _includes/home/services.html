@@ -1,38 +1,62 @@
-<section class="bg-white section-pad defer-section border-b border-gray-100" id="leistungen">
+<section class="section-cream section-pad defer-section border-b border-[color:var(--border-light)]" id="leistungen">
   <div class="container mx-auto px-4 md:px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="section-kicker">Leistungen</p>
-      <h2 class="section-title">Welche Lösung brauchen Sie?</h2>
-      <p class="section-lede mx-auto">{{ page.services_intro }}</p>
+    <div class="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-end">
+      <div>
+        <p class="section-kicker">Leistungen</p>
+        <h2 class="section-title">Umzug zuerst. Räumung, wenn’s Sinn macht.</h2>
+      </div>
+      <p class="section-lede lg:justify-self-end lg:text-right m-0">{{ page.services_intro }}</p>
     </div>
 
-    <div class="mt-12 grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    <div class="mt-12 grid gap-6 lg:gap-7 lg:grid-cols-12 max-w-6xl mx-auto">
       {% assign moving_services = "" | split: "," %}
       {% for item in site.data.service_cards %}
-        {% if item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
-          {% assign moving_services = moving_services | push: item %}
+        {% if item.title contains 'Umzug' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung' %}
+          {% if item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
+            {% assign moving_services = moving_services | push: item %}
+          {% endif %}
         {% endif %}
       {% endfor %}
       {% for card in moving_services %}
-      <a href="{{ card.url | relative_url }}" class="decision-card group text-left no-underline">
-        <div class="inline-flex rounded-2xl bg-orange-50 text-orange-700 p-3.5 ring-1 ring-orange-100 group-hover:bg-primary group-hover:text-white group-hover:ring-primary transition-colors duration-200">
-          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="w-5 h-5 shrink-0 fill-current" %}
+      {% assign col = 'lg:col-span-4' %}
+      {% if forloop.first %}{% assign col = 'lg:col-span-5' %}{% endif %}
+      {% if forloop.index == 2 %}{% assign col = 'lg:col-span-4' %}{% endif %}
+      {% if forloop.index == 3 %}{% assign col = 'lg:col-span-3' %}{% endif %}
+      {% assign media_src = '/assets/images/hero/desktop-1200w.avif' %}
+      {% assign media_pos = 'center' %}
+      {% if forloop.index == 2 %}
+        {% assign media_src = '/topbg.webp' %}
+        {% assign media_pos = 'center 40%' %}
+      {% endif %}
+      {% if forloop.index == 3 %}
+        {% assign media_src = '/assets/images/hero/mobile-800w.avif' %}
+        {% assign media_pos = 'center' %}
+      {% endif %}
+      <a href="{{ card.url | relative_url }}" class="decision-card decision-card--media group text-left no-underline {{ col }}">
+        <div class="decision-card__media">
+          <img src="{{ media_src | relative_url }}" alt="" class="object-cover" style="object-position: {{ media_pos }};" width="640" height="400" loading="lazy" decoding="async"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#061a18]/55 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 inline-flex rounded-xl bg-[#fffdf8]/95 text-[color:var(--brand-orange-dark)] p-2.5 shadow-sm ring-1 ring-black/5">
+            {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="w-5 h-5 shrink-0 fill-current" %}
+          </div>
         </div>
-        <h3 class="mt-5 text-xl font-bold text-primary leading-tight">{{ card.title }}</h3>
-        <p class="mt-3 text-sm text-text-light leading-relaxed flex-1">{{ card.description }}</p>
-        <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-orange-700 group-hover:text-orange-800">
-          Mehr erfahren
-          {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200 fill-current" %}
-        </span>
+        <div class="decision-card__body">
+          <h3 class="text-xl font-bold text-[color:var(--text-primary)] leading-tight">{{ card.title }}</h3>
+          <p class="mt-3 text-sm text-[color:var(--text-secondary)] leading-relaxed flex-1">{{ card.description }}</p>
+          <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[color:var(--brand-orange-dark)] group-hover:gap-2.5 transition-all">
+            Mehr erfahren
+            {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 fill-current" %}
+          </span>
+        </div>
       </a>
       {% endfor %}
     </div>
 
-    <div class="mt-16 pt-12 border-t border-gray-100">
+    <div class="mt-16 pt-12 border-t border-[color:var(--border-light)]">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 max-w-6xl mx-auto">
         <div>
-          <h3 class="text-xl md:text-2xl font-extrabold text-primary tracking-tight">Weitere Services</h3>
-          <p class="mt-2 text-sm md:text-base text-text-light max-w-2xl">{{ page.additional_services_intro }}</p>
+          <h3 class="text-xl md:text-2xl font-extrabold text-[color:var(--text-primary)] tracking-tight">Weitere Räumungs-Services</h3>
+          <p class="mt-2 text-sm md:text-base text-[color:var(--text-secondary)] max-w-2xl">{{ page.additional_services_intro }}</p>
         </div>
         <a href="{{ '/leistungen/' | relative_url }}" class="btn-secondary self-start md:self-auto text-sm">Alle Leistungen</a>
       </div>
@@ -46,9 +70,14 @@
           {% endunless %}
         {% endfor %}
         {% for card in clearing_services %}
-        <a href="{{ card.url | relative_url }}" class="group flex items-start gap-3 rounded-2xl border border-gray-100 bg-background-light p-5 hover:border-orange-200 hover:bg-white hover:shadow-md transition-all duration-200">
-          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="shrink-0 w-[18px] h-[18px] text-orange-700 mt-0.5 fill-current" %}
-          <span class="text-sm font-bold text-primary leading-snug group-hover:text-orange-800">{{ card.title }}</span>
+        {% assign mod = forloop.index0 | modulo: 4 %}
+        {% if mod == 0 %}{% assign panel_bg = 'bg-[#fffdf8]' %}
+        {% elsif mod == 1 %}{% assign panel_bg = 'bg-[#fdf0e6]' %}
+        {% elsif mod == 2 %}{% assign panel_bg = 'bg-[#e0f7fa]' %}
+        {% else %}{% assign panel_bg = 'bg-[#f0e6d8]' %}{% endif %}
+        <a href="{{ card.url | relative_url }}" class="group flex items-start gap-3 rounded-2xl border border-[color:var(--border-light)] {{ panel_bg }} p-5 hover:border-[color:var(--brand-orange)]/35 hover:shadow-md transition-all duration-200">
+          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="shrink-0 w-[18px] h-[18px] text-[color:var(--brand-orange-dark)] mt-0.5 fill-current" %}
+          <span class="text-sm font-bold text-[color:var(--text-primary)] leading-snug group-hover:text-[color:var(--brand-orange-dark)]">{{ card.title }}</span>
         </a>
         {% endfor %}
       </div>

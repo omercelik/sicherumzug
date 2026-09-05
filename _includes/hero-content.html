@@ -7,7 +7,7 @@
   <div class="{{ content_classes }}">
     {% assign display_kicker = include.kicker | default: '100% FIXPREISGARANTIE' %}
     {% if include.show_kicker != false %}
-    <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-orange-300 backdrop-blur-sm m-0">
+    <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-[#f0a060] backdrop-blur-sm m-0">
       {{ display_kicker }}
     </p>
     {% endif %}
@@ -16,19 +16,19 @@
       {% if include.title %}
         {{ include.title }}
       {% else %}
-        Professioneller Umzug &amp; Räumung — <span class="text-orange-300">zum Fixpreis</span>
+        Umzug zum Fixpreis — <span class="text-[#f0a060]">klar kalkuliert</span>
       {% endif %}
     </h1>
 
-    <p class="text-slate-200 text-base md:text-lg max-w-2xl leading-relaxed m-0 {{ include.subtitle_class }}">
+    <p class="text-[#d4e5e0] text-base md:text-lg max-w-2xl leading-relaxed m-0 {{ include.subtitle_class }}">
       {% if include.subtitle %}
         {{ include.subtitle }}
       {% else %}
-        Sicher Team — Fixpreis, All-Risk-Versicherung und geschultes Fachpersonal in Wien und ganz Österreich.
+        Schriftlicher Fixpreis, All-Risk bis € 1 Mio., optional Räumung mit Wertanrechnung — Wien & Österreich.
       {% endif %}
     </p>
 
-    {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label | default: 'Gratis Besichtigung sichern' %}
+    {% assign primary_label = cta_variant.primary_label | default: include.primary_cta.label | default: include.primary_label | default: 'Gratis Fixpreis-Angebot' %}
     {% assign primary_url = cta_variant.primary_url | default: include.primary_cta.url | default: include.primary_url | default: '/angebot/' %}
     {% assign whatsapp_label = cta_variant.whatsapp_label | default: include.whatsapp_label | default: 'WhatsApp' %}
     {% assign whatsapp_url = include.whatsapp_url | default: cta_variant.whatsapp_url | default: site.whatsapp %}
@@ -48,8 +48,8 @@
         {% include svg/chat.svg class="shrink-0 w-4 h-4 fill-current" %}
         {{ whatsapp_label }}
       </a>
-      <a href="{{ call_url }}" class="inline-flex items-center justify-center gap-2 min-h-[3.25rem] px-4 text-sm font-semibold text-slate-200 hover:text-white underline-offset-4 hover:underline">
-        {% include svg/call.svg class="shrink-0 w-4 h-4 text-orange-300 fill-current" %}
+      <a href="{{ call_url }}" class="inline-flex items-center justify-center gap-2 min-h-[3.25rem] px-4 text-sm font-semibold text-[#d4e5e0] hover:text-white underline-offset-4 hover:underline">
+        {% include svg/call.svg class="shrink-0 w-4 h-4 text-[#f0a060] fill-current" %}
         {{ call_label }}
       </a>
     </div>

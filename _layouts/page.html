@@ -4,7 +4,7 @@ layout: default
 {% include home-hero-vars.liquid %}
 {% assign hero_kicker = page.hero_kicker | default: page.kicker | default: 'Information' %}
 {% assign call_href = site.phone | replace: ' ', '' | prepend: 'tel:' %}
-<section class="relative bg-slate-950 text-white min-h-[38vh] flex flex-col pt-24 md:pt-28 overflow-hidden">
+<section class="relative bg-[#061a18] text-white min-h-[42vh] flex flex-col pt-24 md:pt-28 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
@@ -33,7 +33,7 @@ layout: default
     %}
   </div>
 </section>
-<section class="bg-background-light section-pad">
+<section class="section-cream section-pad">
   <div class="container mx-auto px-4 md:px-6">
     <article class="richtext max-w-4xl">
       {{ content }}
@@ -41,14 +41,20 @@ layout: default
   </div>
 </section>
 {% if page.include_form %}
-<section class="bg-white py-12"{% if page.form_anchor_id %} id="{{ page.form_anchor_id }}"{% endif %}>
-  <div class="container mx-auto px-4">
-    <div class="grid gap-8 lg:grid-cols-2">
+<section class="section-ink py-14 md:py-16"{% if page.form_anchor_id %} id="{{ page.form_anchor_id }}"{% endif %}>
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid gap-8 lg:grid-cols-2 lg:items-start max-w-6xl mx-auto">
       <div>
-        <h2 class="text-3xl font-extrabold text-primary">Kostenloses Angebot anfordern</h2>
-        <p class="mt-2 text-base text-text-light">Wir melden uns innerhalb eines Werktags mit einem Termin oder einer Ersteinschätzung.</p>
+        <p class="section-kicker">Umzug · Angebot</p>
+        <h2 class="section-title text-white">Fixpreis-Angebot anfordern</h2>
+        <p class="section-lede">Wir melden uns innerhalb eines Werktags mit Termin oder Ersteinschätzung — Umzug zuerst, Räumung auf Wunsch.</p>
+        <ul class="mt-6 space-y-2 text-sm text-[#b9d0cb] list-none m-0 p-0">
+          <li>● Schriftlicher Fixpreis</li>
+          <li>● All-Risk bis € 1 Mio.</li>
+          <li>● Wertanrechnung bei Räumung möglich</li>
+        </ul>
       </div>
-      <div class="form-panel p-6 md:p-8">
+      <div class="form-panel !bg-[#fffdf8] p-6 md:p-8">
         {% include quote-form.html %}
       </div>
     </div>
@@ -60,7 +66,7 @@ layout: default
   {% assign faq_items = site.data.faqs %}
 {% endif %}
 {% if faq_items %}
-<section class="bg-background-light py-12">
+<section class="section-cream-deep py-12">
   <div class="container mx-auto px-4">
     <h2 class="text-2xl font-extrabold text-primary">FAQ</h2>
     <div class="mt-6 space-y-4">

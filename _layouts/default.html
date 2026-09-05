@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#0f172a"/>
+    <meta name="theme-color" content="#061a18"/>
     <style>
       :root { color-scheme: light dark; }
       body {
         margin: 0;
-        font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-        background-color: #f4f6f9;
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #faf6f0;
         min-height: 100vh;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Syne, 'Segoe UI', system-ui, sans-serif;
       }
       [data-mobile-menu] { display: none; }
       [data-mobile-menu]:not(.hidden) { display: flex; }
@@ -40,7 +43,7 @@
         position: absolute;
         inset: 0;
         z-index: 10;
-        background-image: linear-gradient(rgba(2, 6, 23, 0.55), rgba(2, 6, 23, 0.82));
+        background-image: linear-gradient(rgba(6, 26, 24, 0.5), rgba(6, 26, 24, 0.82));
       }
       [data-hero-banner] picture {
         position: absolute;
@@ -84,6 +87,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}"/>
     <meta name="apple-mobile-web-app-title" content="{{ site.brand_name }}"/>
     <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
     {% assign hero_preload = page.hero_preload | default: page.hero_image %}
     {% if page.layout == 'home' or page.layout == 'service' or page.layout == 'state' %}
@@ -106,10 +112,10 @@
 
   </head>
   <body>
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-amber-400 focus:text-slate-950 focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#f0a060] focus:text-[#061a18] focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
       Zum Hauptinhalt springen
     </a>
-    <div class="bg-background-light font-display text-text-light">
+    <div class="bg-background-light font-body text-text-light">
     
       <div class="relative flex min-h-screen flex-col overflow-x-hidden pb-28 md:pb-0">
         {% include header.html %}

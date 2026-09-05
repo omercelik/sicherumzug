@@ -1,49 +1,49 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: home
-title: "Professioneller Umzug & Übersiedlung in Österreich | Sicher Team"
-seo_title: "Umzugsfirma Österreich | Möbeltransport & Montage"
-description: "Sicher Team ist Ihr Partner für Umzug & Übersiedlung in Österreich. 100% Fixpreis, Transportversicherung & geschultes Fachpersonal."
+title: "Umzug & Übersiedlung Österreich | Sicher Team"
+seo_title: "Umzugsfirma Österreich | Fixpreis & Möbeltransport"
+description: "Umzugsfirma Österreich: Fixpreis, All-Risk-Transportversicherung & Fachpersonal. Sicher Team — Wien, NÖ, bundesweit."
 hero:
-  title: "Professioneller Umzug & Übersiedlung in Österreich"
-  subtitle: "Sicher Team ist Ihr verlässlicher Experte für Privatumzüge, Firmenumzüge und Spezialtransporte österreichweit – mit All-Risk-Transportversicherung und 100% Fixpreisgarantie."
+  title: "Umzug in Österreich — Fixpreis, nicht Überraschung"
+  subtitle: "Sicher Team plant, trägt und montiert Ihren Privat- oder Firmenumzug. Schriftlicher Fixpreis, All-Risk bis € 1 Mio., optional Räumung mit Wertanrechnung. Wien, NÖ, bundesweit."
   primary_cta:
-    label: "Jetzt kostenloses Angebot anfordern"
+    label: "Gratis Fixpreis-Angebot"
     url: /angebot/#angebot-form
 brand_intro:
-  kicker: "Umzugs-Experten"
-  heading: "Sicher Team – Ihr Spezialist für stressfreie Übersiedlungen in Österreich"
-  text: "Sicher Team ist Ihr staatlich konzessioniertes und voll versichertes Umzugsunternehmen in Österreich. Wir bieten Ihnen den perfekten Komplettservice für Privatumzüge und Firmenumzüge in Wien und ganz Österreich. Unser bestens geschultes Fachpersonal übernimmt das sichere Verpacken Ihrer Möbel, die fachgerechte Demontage und Montage sowie den geschützten Transport. Vertrauen Sie auf unsere 15 Jahre Erfahrung, die All-Risk-Transportversicherung bis 1.000.000 EUR und transparente Fixpreise ohne versteckte Kosten. Fordern Sie jetzt Ihre kostenlose Besichtigung an."
+  kicker: "Umzugsexperten"
+  heading: "Sicher Team — Fixpreis-Umzug mit Wiener Gründlichkeit"
+  text: "Staatlich konzessioniert, voll versichert, fest angestelltes Fachpersonal. Wir übernehmen Verpacken, De- und Montage und den sicheren Transport — und auf Wunsch die Räumung der Altwohnung inkl. Wertanrechnung."
   bullets:
-    - "**Sicherer Möbeltransport:** Modernes Equipment und geschultes Personal sorgen für den unversehrten Transport Ihrer Einrichtung, inklusive Spezialverpackungen."
-    - "**Fachgerechte De- & Montage:** Wir übernehmen den Abbau und millimetergenauen Aufbau Ihrer Schränke, Betten und Küchen am neuen Wohnort."
-    - "**Firmen- & Privatumzüge:** Egal ob Einzelbüro, Konzern oder Familienhaus – wir planen und realisieren Ihren Umzug in ganz Österreich pünktlich."
-    - "**100% Fixpreisgarantie:** Schriftliches Festpreisangebot ohne Anfahrtskosten oder Wochenendzuschläge – volle Kostentransparenz von Anfang an."
-process_intro: "In 3 einfachen Schritten zu Ihrem neuen Zuhause – unkompliziert, sicher und transparent in ganz Österreich."
-services_intro: "Wir sind Ihr starker Partner für jeden Umzug. Entdecken Sie unsere maßgeschneiderten Lösungen für Ihren Wohnortwechsel."
-additional_services_intro: "Zusatzleistungen: Nach dem Auszug übernehmen wir auf Wunsch auch die besenreine Räumung, Entrümpelung und fachgerechte Entsorgung von Altmöbeln."
-why_intro: "Mehr als nur ein Möbeltransport: Wir bieten maximale Sicherheit, faire Wertanrechnung und ein bestens geschultes Team, das jedes Objekt besenrein übergibt."
+    - "**Fixpreis schriftlich:** Keine Anfahrtspauschale, keine Wochenendüberraschung."
+    - "**All-Risk bis € 1 Mio.:** Ihre Einrichtung ist abgesichert."
+    - "**Montage inklusive:** Schränke, Betten, Küche — Abbau und Aufbau."
+    - "**Räumung optional:** Entrümpelung mit Wertanrechnung aus einer Hand."
+process_intro: "Foto oder Besichtigung → Fixpreis → Umzugstag → Montage. Ohne Hin-und-Her, ohne Nachverhandeln."
+services_intro: "Drei klare Wege: Umzug als Kern. Räumung und Entrümpelung, wenn die Altwohnung oder der Keller mit muss — inkl. Wertanrechnung."
+additional_services_intro: "Keller, Garage, Verlassenschaft, Büro — dieselben Standards: Fixpreis, Dokumentation, besenreine Übergabe."
+why_intro: "Fixpreis, Versicherung und ein Team, das Wiener Altbau ebenso kennt wie Bundesland-Strecken."
 use_global_faqs: false
 faqs:
   - question: "Wie läuft ein Umzug mit Sicher Team ab?"
-    answer: "Ein Umzug mit Sicher Team ist einfach und stressfrei. Zuerst fordern Sie eine kostenlose Besichtigung an – entweder direkt vor Ort oder per schnellem WhatsApp-Foto-Check. Anschließend erhalten Sie ein verbindliches, schriftliches Festpreisangebot, das alle Leistungen wie Verpackung, De- und Montage, Transport und die All-Risk-Transportversicherung abdeckt. Am vereinbarten Wunschtermin führt unser geschultes Fachpersonal die Übersiedlung pünktlich und sicher durch."
-  - question: "Gilt der Fixpreis in ganz Österreich?"
-    answer: "Ja, Sicher Team ist Ihr verlässlicher Partner in ganz Österreich. Unsere schriftliche Fixpreisgarantie gilt bundesweit – egal ob in Wien, Graz, Linz, Salzburg, Innsbruck, Klagenfurt, Bregenz, St. Pölten oder Eisenstadt. Es gibt bei uns keine versteckten Kosten, keine Kilometerpauschalen und keine nachträglichen Aufschläge. Der vereinbarte Festpreis steht."
-  - question: "Sind meine Möbel beim Transport versichert?"
-    answer: "Ja! Als professionelles und staatlich konzessioniertes Umzugsunternehmen ist die Sicherheit Ihres Eigentums unser höchstes Gebot. Sicher Team bietet eine umfassende All-Risk-Transportversicherung sowie eine Haftpflichtversicherung mit einer Deckungssumme von bis zu € 1.000.000 für alle Übersiedlungen, Privatumzüge und Firmenumzüge in ganz Österreich."
-  - question: "Bietet Sicher Team auch Räumungen, Entrümpelungen und Wertanrechnung an?"
-    answer: "Als Zusatzleistung zu unserem Umzugsservice bieten wir auch Räumungen und Entrümpelungen an. Wir führen Haushaltsauflösungen, Wohnungsräumungen und gewerbliche Räumungen besenrein durch. Verwertbare Gegenstände, antike Möbel und funktionstüchtige Elektrogeräte werden dabei von unseren Sachverständigen bewertet und über die Wertanrechnung direkt von den Kosten abgezogen."
-  - question: "Bieten Sie auch Verpackungsmaterial an?"
-    answer: "Selbstverständlich. Für einen sicheren Transport stellen wir Ihnen auf Wunsch hochwertiges Verpackungsmaterial wie Umzugskartons, Luftpolsterfolie, Seidenpapier und spezielle Kleiderboxen zur Verfügung."
+    answer: "Foto-Check oder kostenlose Besichtigung → schriftlicher Fixpreis → Umzugstag mit Packen, Tragen, Transport → Montage und Abnahme. Optional räumen wir die Altwohnung gleich mit."
+  - question: "Gilt der Fixpreis wirklich österreichweit?"
+    answer: "Ja. Das schriftliche Festpreisangebot gilt bundesweit — Wien, Graz, Linz, Salzburg, Innsbruck und darüber hinaus. Keine Kilometerpauschale, keine versteckten Aufschläge."
+  - question: "Sind meine Möbel versichert?"
+    answer: "Ja. All-Risk-Transportversicherung und Haftpflicht mit Deckung bis € 1.000.000 für Privat- und Firmenumzüge."
+  - question: "Was bringt Wertanrechnung bei Räumung?"
+    answer: "Verwertbare Möbel, Geräte oder Antiquitäten bewerten wir und rechnen den Betrag vom Räumungspreis ab — oft spürbar günstiger als reine Entsorgung."
+  - question: "Bieten Sie Verpackungsmaterial?"
+    answer: "Ja — Kartons, Kleiderboxen, Luftpolsterfolie und Schutzmaterial auf Wunsch, eingepreist im Fixpreis."
 permalink: /
 schema_type: Homepage
 ---
 
-<section class="py-12 bg-slate-950">
+<section class="py-12 section-ink">
   <div class="container mx-auto px-4">
     {% include calculator.html %}
   </div>
 </section>
 
-## Umfassende Logistik & Abwicklung für Privat & Gewerbe
-Unsere Planung reicht vom Aufbau von Halteverbotszonen in stark frequentierten Bezirken bis hin zum Einsatz von Schrägaufzügen für Dachgeschosswohnungen. Auch am neuen Standort kümmern wir uns darum, dass jeder Karton ins richtige Zimmer getragen und jedes Möbelstück fachgerecht platziert wird. So wird Ihr Umzug zum Erfolg.
+## Logistik, die in Wien funktioniert
+Halteverbotszonen, enge Höfe, Dachgeschoss mit Schrägaufzug — wir planen die Zufahrt mit, nicht erst am Umzugstag. Am Zielort kommt jeder Karton ins richtige Zimmer, jedes Möbelstück an den richtigen Platz.

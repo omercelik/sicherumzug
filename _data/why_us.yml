@@ -1,12 +1,12 @@
-- title: Sicherer & geschützter Transport
-  description: Wir verwenden spezielle Schutzdecken, Luftpolsterfolien und Transportroller, um Kratzer oder Beschädigungen an Ihren wertvollen Möbeln auszuschließen.
-  icon: local_shipping
-- title: Professionelle De- & Montage
-  description: Unser erfahrenes Team kümmert sich um den millimetergenauen Abbau und den stabilen Aufbau Ihrer Einrichtung am neuen Wohnort.
-  icon: build_circle
-- title: 100% Fixpreis ohne Überraschungen
-  description: Sie erhalten vorab ein transparentes, schriftliches Festpreisangebot. Wir berechnen weder Anfahrtskosten noch versteckte Wochenendzuschläge.
+- title: Schriftlicher Fixpreis
+  description: Sie wissen vorher, was Sie zahlen. Keine Anfahrtskosten, keine versteckten Wochenendzuschläge.
   icon: price_check
-- title: Hochwertiges Verpackungsmaterial
-  description: Für einen optimalen Schutz stellen wir Ihnen stabile Umzugskartons, Kleiderboxen und spezielles Seidenpapier für Zerbrechliches zur Verfügung.
-  icon: inventory_2
+- title: Wertanrechnung statt Wegwerfen
+  description: Was noch Wert hat, rechnen wir an — oft günstiger als reine Entsorgung.
+  icon: recycling
+- title: De- & Montage aus einer Hand
+  description: Abbau, Transport, Aufbau — inklusive Küche, Schränke und sperriger Stücke.
+  icon: build_circle
+- title: Wien-erfahrenes Team
+  description: Halteverbote, Altbau, enge Höfe — wir planen die Logistik mit, nicht erst am Umzugstag.
+  icon: location_city

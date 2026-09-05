@@ -1,34 +1,59 @@
-<section class="bg-white section-pad defer-section border-y border-gray-100" id="kundenmeinungen">
+<section class="section-cream-deep section-pad defer-section" id="kundenmeinungen">
   <div class="container mx-auto px-4 md:px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="section-kicker">Kundenmeinungen</p>
-      <h2 class="section-title">Das sagen unsere Kund:innen</h2>
-      <p class="section-lede mx-auto">Zufriedene Kunden sind unsere beste Referenz — Fixpreis, Pünktlichkeit und Sorgfalt.</p>
-    </div>
-    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-      {% for testimonial in site.data.testimonials limit:3 %}
-      <figure class="flex h-full flex-col justify-between rounded-2xl border border-gray-100 bg-background-light p-7 text-left">
-        <div>
-          <div class="flex items-center gap-1 text-amber-500" role="img" aria-label="5,0 von 5 Sternen">
-            {% for i in (1..5) %}
-            <span class="text-lg leading-none" aria-hidden="true">★</span>
-            {% endfor %}
-          </div>
-          <blockquote class="mt-5 text-sm md:text-base text-text-light leading-relaxed m-0">
-            <p class="m-0">“{{ testimonial.quote }}”</p>
-          </blockquote>
+    <div class="max-w-6xl mx-auto grid gap-10 lg:grid-cols-12 lg:items-start">
+      <div class="lg:col-span-4">
+        <p class="section-kicker">Kundenmeinungen</p>
+        <h2 class="section-title">Echte Stimmen aus Wien & Österreich</h2>
+        <p class="section-lede">Fixpreis gehalten. Termine eingehalten. Möbel heil angekommen.</p>
+        <div class="mt-8 photo-tile aspect-[4/5] max-w-sm">
+          <img src="{{ '/topbg.webp' | relative_url }}" alt="Sicher Team vor dem Umzugswagen" width="480" height="600" class="object-cover" style="object-position: 60% center;" loading="lazy" decoding="async"/>
+          <div class="photo-tile-scrim"></div>
+          <p class="absolute bottom-4 left-4 right-4 z-[1] text-sm font-semibold text-white m-0">Fest angestelltes Fachpersonal — nicht nur „Helfer“.</p>
         </div>
-        <figcaption class="mt-6 pt-5 border-t border-gray-200 flex items-center gap-3">
-          <div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm shrink-0" aria-hidden="true">
-            {{ testimonial.name | slice: 0, 1 }}
+      </div>
+
+      <div class="lg:col-span-8 grid gap-5 sm:grid-cols-2">
+        {% for testimonial in site.data.testimonials limit:3 %}
+        {% if forloop.first %}
+        <figure class="quote-card quote-card--featured p-7 sm:col-span-2 text-left">
+          <div class="flex items-start justify-between gap-4">
+            <span class="quote-mark" aria-hidden="true">„</span>
+            <div class="flex items-center gap-1 text-[#f0a060]" role="img" aria-label="5 von 5 Sternen">
+              {% for i in (1..5) %}<span class="text-lg leading-none" aria-hidden="true">★</span>{% endfor %}
+            </div>
           </div>
+          <blockquote class="mt-2 text-base md:text-lg leading-relaxed m-0">
+            <p class="m-0 text-[#e8f2ef]">{{ testimonial.quote }}</p>
+          </blockquote>
+          <figcaption class="mt-6 pt-5 border-t border-white/10 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-[#f0a060]/20 flex items-center justify-center text-[#f0a060] font-bold text-sm shrink-0" aria-hidden="true">{{ testimonial.name | slice: 0, 1 }}</div>
+            <div>
+              <p class="text-sm font-bold text-white leading-tight m-0">{{ testimonial.name }}</p>
+              <p class="text-xs text-[#9bb8b2] mt-0.5 m-0">{{ testimonial.role }}</p>
+            </div>
+          </figcaption>
+        </figure>
+        {% else %}
+        <figure class="quote-card p-6 text-left flex flex-col justify-between h-full">
           <div>
-            <p class="text-sm font-bold text-primary leading-tight m-0">{{ testimonial.name }}</p>
-            <p class="text-xs text-text-muted mt-0.5 m-0">{{ testimonial.role }}</p>
+            <div class="flex items-center gap-1 text-[color:var(--brand-orange)]" role="img" aria-label="5 von 5 Sternen">
+              {% for i in (1..5) %}<span class="text-base leading-none" aria-hidden="true">★</span>{% endfor %}
+            </div>
+            <blockquote class="mt-4 text-sm md:text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
+              <p class="m-0">„{{ testimonial.quote }}“</p>
+            </blockquote>
           </div>
-        </figcaption>
-      </figure>
-      {% endfor %}
+          <figcaption class="mt-6 pt-4 border-t border-[color:var(--border-light)] flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full bg-[color:var(--brand-orange-soft)] flex items-center justify-center text-[color:var(--brand-orange-dark)] font-bold text-sm shrink-0" aria-hidden="true">{{ testimonial.name | slice: 0, 1 }}</div>
+            <div>
+              <p class="text-sm font-bold text-[color:var(--text-primary)] leading-tight m-0">{{ testimonial.name }}</p>
+              <p class="text-xs text-[color:var(--text-muted)] mt-0.5 m-0">{{ testimonial.role }}</p>
+            </div>
+          </figcaption>
+        </figure>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
     <div class="mt-10 text-center">
       <a href="{{ '/bewertungen/' | relative_url }}" class="btn-secondary">Alle Bewertungen ansehen</a>

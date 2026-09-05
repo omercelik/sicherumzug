@@ -1,21 +1,21 @@
 ---
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
-title: "Kostenloses Angebot anfordern"
+title: "Fixpreis-Angebot für Ihren Umzug"
 seo_title: "Umzug Angebot Wien | Fixpreis & Soforttermin"
-description: "Gratis Angebot für Umzug, Übersiedlung und Räumung in Wien & Österreich. Fixpreis, Transportversicherung und Montage – Termine per Formular, Telefon oder WhatsApp."
+description: "Kostenloses Fixpreis-Angebot für Umzug & Übersiedlung in Wien und ganz Österreich. Optional Räumung mit Wertanrechnung. Formular, Telefon oder WhatsApp."
 description_link_label: "Zum Kontaktformular"
 description_link_href: "#angebot-form"
-kicker: "Kontakt"
+kicker: "Umzug · Angebot"
 include_form: true
 form_anchor_id: "angebot-form"
 permalink: /angebot/
 ---
-## Angebot für Umzug & Übersiedlung
+## Umzug zum Fixpreis — Angebot anfordern
 
-Sie planen einen Privatumzug, Hausumzug oder Firmenumzug? Fordern Sie Ihr kostenloses Fixpreis-Angebot an – inklusive Transportversicherung und Montage. Wir melden uns innerhalb eines Werktags mit Termin oder Ersteinschätzung.
+Privatumzug, Hausumzug oder Firmenübersiedlung? Fordern Sie Ihr kostenloses Festpreis-Angebot an — inkl. Transportversicherung und Montage. Wir melden uns innerhalb eines Werktags mit Termin oder Ersteinschätzung.
 
-Entrümpelung und Räumung bleiben als ergänzender Pfad verfügbar: Bei jeder Besichtigung prüfen wir, welche Wertgegenstände wir anrechnen können und wie sich dadurch Ihr Fixpreis reduziert. Details im [Ratgeber zur Gratis Entrümpelung](/ratgeber/gratis-entruempelung-wien/).
+**Räumung & Entrümpelung** ergänzen den Umzug: Bei der Besichtigung prüfen wir, was sich anrechnen lässt und wie sich Ihr Preis dadurch senkt. Mehr im [Ratgeber zur Wertanrechnung](/ratgeber/gratis-entruempelung-wien/).
 
 ## Express-Service & Regionen
 
