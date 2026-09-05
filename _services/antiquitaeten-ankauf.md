@@ -4,7 +4,7 @@ title: Antiquitäten Ankauf? Wertanrechnung mit Entrümpelung
 seo_title: Antiquitäten Wertanrechnung Wien – fair & diskret bei Räumung
 description: Wir bewerten Antiquitäten und rechnen den Wert bei Entrümpelung, Räumung
   oder Verlassenschaft an. Keine Einzelabholung – faire Gutschrift oder Teil-Auszahlung.
-kicker: Wertanrechnung
+kicker: "Wertanrechnung"
 highlights:
 - Diskrete Wertanrechnung statt Einzelankauf
 - Kunsthistorische Bewertung durch erfahrene Schätzer

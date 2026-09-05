@@ -4,7 +4,7 @@ layout: service
 title: Express Umzugs-Notdienst
 description: 'Wenn es schnell gehen muss: Unser Express-Notdienst in Österreich rettet
   Sie bei kurzfristigen Kündigungen, geplatzten Terminen oder Wasserschäden.'
-kicker: Soforthilfe
+kicker: "Spezial"
 permalink: "/leistungen/express-notdienst/"
 highlights:
 - Reaktionszeit innerhalb von 24 Stunden

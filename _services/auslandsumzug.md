@@ -4,7 +4,7 @@ layout: service
 title: "Auslandsumzug Österreich | Internationaler Umzug"
 seo_title: "Auslandsumzug & Internationaler Umzug aus Österreich"
 description: "Professioneller Auslandsumzug von und nach Österreich. Wir übernehmen internationale Umzüge in der DACH-Region inkl. Zollabwicklung und Transportversicherung."
-kicker: "International"
+kicker: "Spezial"
 intent_primary: transactional
 intent_secondary: informational
 hero_kicker: "Europaweit"

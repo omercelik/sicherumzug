@@ -4,7 +4,7 @@ layout: service
 title: "Tresortransport & Schwerlasttransport Österreich"
 seo_title: "Tresortransport Österreich: Sicher & professionell zum Fixpreis"
 description: "Spezialisierter Tresortransport und Schwertransport in ganz Österreich. Fachgerechte Logistik für Waffenschränke, Klaviere und Tresore inkl. Versicherung."
-kicker: "Schwertransport"
+kicker: "Spezial"
 permalink: /leistungen/tresortransport/
 schema_type: Service
 service_type: Tresortransport

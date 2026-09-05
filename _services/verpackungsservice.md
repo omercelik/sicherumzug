@@ -4,7 +4,7 @@ layout: service
 title: "Verpackungsservice Wien & Österreich | Profi Einpackservice"
 seo_title: "Verpackungsservice Wien - Stressfrei umziehen mit Einpackservice"
 description: "Professioneller Verpackungsservice in Wien für Ihren Umzug. Wir stellen Kartons, packen Hausrat sicher ein und schützen empfindliches Inventar."
-kicker: "Service"
+kicker: "Spezial"
 permalink: /leistungen/verpackungsservice/
 intent_primary: transactional
 intent_secondary: informational

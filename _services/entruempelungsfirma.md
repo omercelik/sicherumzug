@@ -4,7 +4,7 @@ title: Räumungsfirma | Komplettservice mit Fixpreis
 seo_title: Räumungsfirma | Komplettservice, Fixpreis, Wertanrechnung
 description: Räumungsfirma für komplette Räumungen mit Fixpreis, Wertanrechnung und
   Übergabe. Planung, Demontage und Entsorgung aus einer Hand.
-kicker: Privat
+kicker: "Privat"
 highlights:
 - Komplette Entrümpelungen inklusive Demontage
 - Fixpreis mit dokumentiertem Wertanrechnung

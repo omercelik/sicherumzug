@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Vorarlberg | Sicher & Schnell"
 seo_title: "Umzug Vorarlberg - Umzugsfirma & Übersiedlung"
 description: "Professioneller Umzug in Vorarlberg. Transparente Fixpreise, sicherer Möbeltransport und schnelle Abwicklung."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Ganz Vorarlberg"

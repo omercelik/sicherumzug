@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Niederösterreich | Regional & Günstig"
 seo_title: "Umzug Niederösterreich - Umzugsfirma & Übersiedlung"
 description: "Regionaler Umzugsservice in ganz Niederösterreich. Fixpreisgarantie, Wertanrechnung und professioneller Möbeltransport für Privat und Gewerbe."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Ganz Niederösterreich"

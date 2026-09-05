@@ -4,7 +4,7 @@ layout: service
 title: "Möbeltransport Wien & Österreich | Einzeltransport & Kleintransporte"
 seo_title: "Möbeltransport Wien & Österreich - Sicher & Günstig"
 description: "Sicherer Möbeltransport und Kleintransporte in Wien und Österreich. Wir transportieren schwere Möbel, Sofas oder Antiquitäten zum Fixpreis."
-kicker: "Transport"
+kicker: "Spezial"
 permalink: /leistungen/moebeltransport/
 intent_primary: transactional
 intent_secondary: local

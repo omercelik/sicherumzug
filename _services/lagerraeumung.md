@@ -4,7 +4,7 @@ title: Lager- & Gewerbeparkräumung
 seo_title: Gewerbe & Lagerräumung Wien - Betriebe entrümpeln
 description: Lager ausräumen in Wien. Effiziente Lagerräumung von Produktionshallen
   und Gewerbeparks mit Gefahrstoff-Handling, Protokollierung und fixer Terminplanung.
-kicker: Gewerblich
+kicker: "Gewerbe"
 highlights:
 - Flächenscan & Mengengerüste für LVP/Bauschutt
 - Stapler, Container & Hallenreinigung aus einer Hand

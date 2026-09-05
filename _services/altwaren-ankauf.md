@@ -23,7 +23,7 @@ highlights:
 - Keine Einzelabholung – nur mit Entrümpelung/Räumung
 - Wertanrechnung für Sammlungen, Porzellan, Bücher
 - Gutschrift oder Teil-Auszahlung beim Projektstart
-kicker: Wertanrechnung
+kicker: "Wertanrechnung"
 permalink: "/leistungen/altwaren-ankauf/"
 process:
 - description: Wir prüfen Zustand und Marktwert vorab und planen die Anrechnung im

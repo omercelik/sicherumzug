@@ -4,7 +4,7 @@ layout: service
 title: "Hausumzug Wien & Umgebung | Professioneller Komplettservice"
 seo_title: "Hausumzug Wien: Sorglos ins neue Eigenheim umziehen"
 description: "Planen Sie einen Hausumzug? Sicher Team bietet Komplettservice für Hausumzüge in Wien und Österreich inkl. Logistik, Möbelmontage und Fixpreisgarantie."
-kicker: "Privatumzug"
+kicker: "Privat"
 permalink: /leistungen/hausumzug/
 schema_type: Service
 service_type: Hausumzug

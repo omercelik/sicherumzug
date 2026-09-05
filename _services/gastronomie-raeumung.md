@@ -4,7 +4,7 @@ title: Gastro & Retail Räumung
 seo_title: Gastronomie Räumung Wien - Restaurant Entrümpelung
 description: Komplette Räumung von Restaurants, Cafés und Shops inklusive Kühltechnik
   und Hygieneauflagen. Wertanrechnung für Ausstattung und schnelle Terminplanung.
-kicker: Gewerblich
+kicker: "Gewerbe"
 highlights:
 - Erfahrung mit Fettabscheidern & HACCP-Dokumentation
 - Rückbau von Theken, Lüftungen & Kühlhäusern

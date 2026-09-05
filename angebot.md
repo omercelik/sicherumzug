@@ -2,8 +2,8 @@
 last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
 title: "Kostenloses Angebot anfordern"
-seo_title: "Entrümpelung Angebot Wien | Fixpreis & Soforttermin"
-description: "Gratis Erstbesichtigung in Wien & NÖ, Fixpreis mit Wertanrechnung und Express-Teams. Termine per Formular, Telefon oder WhatsApp mit MA 48-Koordination."
+seo_title: "Umzug Angebot Wien | Fixpreis & Soforttermin"
+description: "Gratis Angebot für Umzug, Übersiedlung und Räumung in Wien & Österreich. Fixpreis, Transportversicherung und Montage – Termine per Formular, Telefon oder WhatsApp."
 description_link_label: "Zum Kontaktformular"
 description_link_href: "#angebot-form"
 kicker: "Kontakt"
@@ -11,13 +11,15 @@ include_form: true
 form_anchor_id: "angebot-form"
 permalink: /angebot/
 ---
-## Fragen zur kostenlosen Entrümpelung?
+## Angebot für Umzug & Übersiedlung
 
-Sie haben gelesen, dass Entrümpelungen in Wien manchmal gratis sind? Wir prüfen bei jeder Besichtigung, welche Wertgegenstände wir anrechnen können und wie sich dadurch Ihr Fixpreis reduziert. Im [Ratgeber zur Gratis Entrümpelung](/ratgeber/gratis-entruempelung-wien/) erfahren Sie vorab, welche Voraussetzungen erfüllt sein müssen und wie wir unser Angebot transparent dokumentieren.
+Sie planen einen Privatumzug, Hausumzug oder Firmenumzug? Fordern Sie Ihr kostenloses Fixpreis-Angebot an – inklusive Transportversicherung und Montage. Wir melden uns innerhalb eines Werktags mit Termin oder Ersteinschätzung.
+
+Entrümpelung und Räumung bleiben als ergänzender Pfad verfügbar: Bei jeder Besichtigung prüfen wir, welche Wertgegenstände wir anrechnen können und wie sich dadurch Ihr Fixpreis reduziert. Details im [Ratgeber zur Gratis Entrümpelung](/ratgeber/gratis-entruempelung-wien/).
 
 ## Express-Service & Regionen
 
-Einige Anfragen sind zeitkritisch - etwa bei Wasserschäden, Übergabeterminen oder Zwangsräumungen. In unserem Leitfaden [Entrümpelung Soforthilfe Wien - Express Räumung Tipps](/ratgeber/entruepelung-mit-sofort-hilfe/) zeigen wir, welche Informationen wir benötigen, um binnen 24 Stunden zu starten. Rufen Sie uns am besten direkt unter [{{ site.phone }}]({{ site.whatsapp }}) an, damit wir freie Express-Teams prüfen können.
+Einige Anfragen sind zeitkritisch – etwa bei engen Übergabeterminen, Wasserschäden oder Express-Umzügen. In unserem Leitfaden [Entrümpelung Soforthilfe Wien - Express Räumung Tipps](/ratgeber/entruepelung-mit-sofort-hilfe/) zeigen wir, welche Informationen wir für einen Start binnen 24 Stunden brauchen. Rufen Sie uns unter [{{ site.phone }}]({{ site.whatsapp }}) an, damit wir freie Teams prüfen können.
 
 Sie planen außerhalb von Wien? Unsere Landesprofile geben einen Überblick zu Anfahrt, Entsorgung und Genehmigungen:
 
@@ -25,7 +27,7 @@ Sie planen außerhalb von Wien? Unsere Landesprofile geben einen Überblick zu A
 - [Niederösterreich: Umland, Wienerwald & Bezirksstädte](/bundesland/niederoesterreich/)
 - [Burgenland: See-Region, Mittel- und Südburgenland](/bundesland/burgenland/)
 
-## MA 48 oder Vollservice mit Wertanrechnung?
+## Zusätzlich: Räumung, MA 48 oder Wertanrechnung?
 
 - **MA 48 Sperrmüll & Mistplätze:** Ideal für kleine Mengen. Unser Ratgeber [MA 48 Mistplatz Checkliste](/ratgeber/ma48-mistplatz-checkliste/) zeigt Ihnen, welche Unterlagen Sie brauchen und wann Terminbuchungen nötig sind.
 - **Wertanrechnung:** Antiquitäten, Designermöbel oder Maschinen rechnen wir nur im Zuge unserer Entrümpelung oder Räumung an. Keine Einzelankäufe. Mehr dazu im [Wertanrechnungs-Guide](/ratgeber/gratis-entruempelung-wien/) sowie auf den Seiten zu [Möbel-Wertanrechnung](/leistungen/moebel-ankauf/) und [Antiquitäten-Wertanrechnung](/leistungen/antiquitaeten-ankauf/).

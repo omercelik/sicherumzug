@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Salzburg | Stressfreie Übersiedlung"
 seo_title: "Umzug Salzburg - Professionelle Umzugsfirma & Möbeltransport"
 description: "Zuverlässige Umzugsfirma für Salzburg. Wir übernehmen Privatumzüge, Firmenübersiedlungen und Spezialtransporte zum Fixpreis inkl. Transportversicherung."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Salzburg Stadt & Land"

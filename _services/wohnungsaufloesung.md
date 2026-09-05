@@ -27,7 +27,7 @@ highlights:
 - Alle 23 Wiener Bezirke und Umgebung
 intent_primary: transactional
 intent_secondary: local
-kicker: Privat
+kicker: "Privat"
 permalink: /leistungen/wohnungsaufloesung/
 process:
 - description: Ersteinschätzung per Telefon oder WhatsApp, inkl. Zeitfenster und Zugängen.

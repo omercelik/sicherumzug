@@ -4,7 +4,7 @@ layout: service
 title: "Spezialtransporte Wien & Österreich | Sicherer Schwerguttransport"
 seo_title: "Spezialtransporte: Sicherer Transport von Klavier & Tresor"
 description: "Spezialtransporte für Klavier, Tresor, Kunst und Antiquitäten. Professioneller Schwerguttransport in Wien und ganz Österreich mit voller Versicherung."
-kicker: "Transport"
+kicker: "Spezial"
 permalink: /leistungen/spezialtransporte/
 schema_type: Service
 service_type: Spezialtransport

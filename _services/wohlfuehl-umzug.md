@@ -4,7 +4,7 @@ layout: service
 title: Full-Service Wohlfühl-Umzug
 description: 'Erleben Sie die neue Art der Übersiedlung in Österreich: Zurücklehnen,
   entspannen und einziehen. Wir kümmern uns um jedes Detail Ihres Wohnungswechsels.'
-kicker: Premium Service
+kicker: "Privat"
 permalink: "/leistungen/wohlfuehl-umzug/"
 highlights:
 - 'Kein Fingerkrumm-Garantie: Wir packen alles!'

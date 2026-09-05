@@ -4,7 +4,7 @@ layout: service
 title: Premium Logistik & Montage
 description: High-End Transportlösungen und millimetergenaue Möbelmontage für anspruchsvolle
   Privat- und Geschäftskunden in ganz Österreich.
-kicker: Spezialisten
+kicker: "Spezial"
 permalink: "/leistungen/premium-logistik/"
 highlights:
 - Zertifizierte Möbelmonteure für Designerstücke

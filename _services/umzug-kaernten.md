@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Kärnten | Stressfrei & Sicher"
 seo_title: "Umzug Kärnten - Professionelle Umzugsfirma & Möbeltransport"
 description: "Ihr stressfreier Umzug in Kärnten mit Fixpreisgarantie. Wir bieten professionellen Möbeltransport, Montage und Einpackservice."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Ganz Kärnten"

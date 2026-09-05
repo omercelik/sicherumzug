@@ -29,9 +29,37 @@ layout: default
   </div>
 </section>
 {% endunless %}
+{% if page.decision_cards %}
+<section class="bg-background-light py-12 border-b border-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col gap-3 text-center max-w-3xl mx-auto">
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Schnellfindung</p>
+      <h2 class="text-3xl font-extrabold text-primary">Welche Leistung brauchen Sie?</h2>
+      <p class="text-base text-text-light">Wählen Sie den passenden Weg – danach finden Sie alle Leistungen nach Kategorie.</p>
+    </div>
+    <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {% for card in page.decision_cards %}
+      <a href="{{ card.url | relative_url }}" class="group flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition-opacity hover:border-primary hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+        <h3 class="text-xl font-bold text-primary group-hover:text-primary-accent">{{ card.title }}</h3>
+        <p class="mt-3 flex-1 text-sm text-text-light">{{ card.description }}</p>
+        <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+          {{ card.cta | default: 'Mehr erfahren' }}
+          {% include svg/north_east.svg class="w-[18px] h-[18px] shrink-0 fill-current" %}
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 {% if page.categories %}
-<section class="bg-white py-12">
+<section class="bg-white py-12" id="alle-leistungen">
   <div class="container mx-auto px-4 space-y-12">
+    <div class="flex flex-col gap-2 max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Überblick</p>
+      <h2 class="text-3xl font-extrabold text-primary">Alle Leistungen</h2>
+      <p class="text-base text-text-light">Gruppiert nach Privat, Gewerbe, Spezial und Wertanrechnung.</p>
+    </div>
     {% assign services_all = site.services | sort: 'title' %}
     {% for category in page.categories %}
     <div id="category-{{ category.key | downcase | replace: ' ', '-' }}">

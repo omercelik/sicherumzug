@@ -369,3 +369,7 @@ https://www.sicher-umzug.at/* https://sicher-umzug.at/:splat 301!
 /umzugsservice /umzugsservice/ 301
 /umzugsservice/ /umzugsservice/ 200
 /docs/* / 301
+
+# Phase 1 IA: bundesland service duplicates → state hubs
+/leistungen/umzug-tirol/ /bundesland/tirol/ 301
+/leistungen/umzug-tirol /bundesland/tirol/ 301

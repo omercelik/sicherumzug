@@ -11,17 +11,34 @@ include_districts: true
 districts_intro: "Wir bedienen alle 23 Bezirke – jedes Standortprofil erhält eigene Inhalte inklusive Wertanrechnung, Halteverbotszonen und Behördenwegen."
 categories:
   - key: "Privat"
-    title: "Private Räumungen"
-    description: "Für Haushalte und Mieter, die Platz schaffen, umziehen oder eine Immobilie übergeben müssen."
-  - key: "Gewerblich"
+    title: "Private Umzüge & Räumungen"
+    description: "Wohnungs- und Hausumzüge, Haushaltsauflösungen und private Räumungen – Fixpreis inklusive Montage und Versicherung."
+  - key: "Gewerbe"
     title: "Gewerbliche Umzüge & Räumungen"
-    description: "Gewerbeumzug, Firmenübersiedlung und Office Relocations als unsere B2B-Kernleistungen, ergänzt durch DSGVO-konforme Räumungslösungen für Unternehmen."
-  - key: "Spezialfall"
-    title: "Spezialdienste"
-    description: "Diskrete Unterstützung für besondere Situationen wie Verlassenschaften, Messie-Räumungen oder Express-Sperrmüll."
+    description: "Firmenumzug, Büroübersiedlung und Office Relocations als B2B-Kernleistungen, ergänzt durch DSGVO-konforme Räumungen."
+  - key: "Spezial"
+    title: "Spezialdienste & Transport"
+    description: "Spezialtransporte, Montage, Express-Notdienst sowie diskrete Unterstützung bei Verlassenschaft oder Messie-Situationen."
   - key: "Wertanrechnung"
     title: "Wertanrechnung"
     description: "Wir rechnen Antiquitäten, Möbel und Altwaren nur im Zuge von Entrümpelung/Räumung an – faire Gutschrift statt Einzelankauf."
+decision_cards:
+  - title: "Umzug"
+    description: "Privatumzug, Hausumzug oder Übersiedlung in Wien und Österreich – Fixpreis, Versicherung, Montage."
+    url: "/leistungen/#category-privat"
+    cta: "Zu Umzügen"
+  - title: "Räumung"
+    description: "Wohnungs-, Haus- oder Kellerräumung mit besenreiner Übergabe und transparentem Ablauf."
+    url: "/leistungen/raeumung/"
+    cta: "Zur Räumung"
+  - title: "Entrümpelung & Wertanrechnung"
+    description: "Entrümpelung mit optionaler Wertanrechnung – Fixpreis und klare Dokumentation."
+    url: "/leistungen/#category-wertanrechnung"
+    cta: "Zu Entrümpelung"
+  - title: "Gewerbe"
+    description: "Firmen- & Büroumzug, Archivlogistik und gewerbliche Räumungen mit minimaler Ausfallzeit."
+    url: "/leistungen/#category-gewerbe"
+    cta: "Zu Gewerbe"
 ---
 Sicher Team ist Ihr vertrauenswürdiger Partner für jede Art von Umzug & Übersiedlung in Österreich. Von der privaten Übersiedlung über komplette Firmenumzüge bis hin zu sensiblen Spezialfällen bieten wir eine professionelle, transparente und faire Lösung. Unser Versprechen: **Fixpreis + Transportversicherung + Montage**. Größere Projekte betreuen wir gemeinsam mit Partnern auch außerhalb Wiens – inklusive Planung und Transport.
 
@@ -64,9 +81,9 @@ Mehr Stimmen – inklusive Projektfotos und Wertanrechnung-Beispielen – finden
 
 ### Gewerbliche Umzüge & Leistungen
 
-- **Gewerbeumzug & Firmenübersiedlung:** Unser B2B-Premium-Service für einen reibungslosen Standortwechsel. Wir planen Logistik, Transport und Aufbau für Ihr Unternehmen.
-- **Büroumzüge (Office Relocations):** Effiziente Arbeitsplatzverlegung mit minimaler Ausfallzeit.
-- [Firmen- und Büroauflösung](/leistungen/firmenaufloesung/): Ergänzende Räumung inklusive DSGVO-konformer Dokumentenvernichtung und besenreiner Übergabe alter Gewerbeflächen.
+- [Firmen- & Büroumzug Wien](/leistungen/firmenumzug-wien/): B2B-Service für Standortwechsel mit Logistik, Transport und Aufbau.
+- [Archiv- & Aktenumzug](/leistungen/archivumzug/): Diskrete B2B-Logistik für Akten und sensibelste Unterlagen.
+- [Firmen- und Büroauflösung](/leistungen/firmenaufloesung/): Ergänzende Räumung inklusive DSGVO-konformer Dokumentenvernichtung und besenreiner Übergabe.
 
 ### Guides zu Anbieterwahl & Wohnung
 

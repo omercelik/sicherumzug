@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Graz | Günstige Übersiedlung in die Steiermark"
 seo_title: "Umzug Graz - Professionelle Umzugsfirma & Möbeltransport"
 description: "Professioneller Umzug in Graz und der gesamten Steiermark zum garantierten Fixpreis. Ihre zuverlässige Umzugsfirma für Privatumzug, Studenten und Firmen."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Graz & Steiermark"

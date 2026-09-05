@@ -4,7 +4,7 @@ layout: service
 title: "Klaviertransport Wien & Österreich | Sicherer Pianotransport"
 seo_title: "Klaviertransport Wien & Österreich - Sicherer Pianotransport"
 description: "Professioneller Klaviertransport in Wien und Österreich. Spezial-Equipment, voll versichert und geschulte Träger für Ihr Klavier oder Ihren Flügel."
-kicker: "Spezialtransport"
+kicker: "Spezial"
 permalink: /leistungen/klaviertransport/
 intent_primary: transactional
 intent_secondary: local

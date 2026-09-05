@@ -4,7 +4,7 @@ layout: service
 title: Günstiger Studentenumzug
 description: 'Stressfrei, flexibel und leistbar: Unsere Umzugslösungen für Studenten
   in Österreich. Vom DIY-Transport bis zum Möbelmontage-Service.'
-kicker: Für Studenten
+kicker: "Privat"
 permalink: "/leistungen/studentenumzug/"
 highlights:
 - 'Flexibel: Vom Reinen Transport bis zum Full-Service'

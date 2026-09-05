@@ -4,7 +4,7 @@ title: Firmen- & Büroauflösung Wien
 seo_title: Firmen- & Büroauflösung Wien - Betriebsauflösung
 description: Ihre Firmenauflösung Wien. Wir bieten Betriebsauflösung, Büroauflösung
   Wien und Firmen Auflösung für Büros und Gewerberäume mit Fixpreis an.
-kicker: Gewerblich
+kicker: "Gewerbe"
 highlights:
 - Projektleitung & Zeitplan nach Meilensteinen
 - DSGVO-konforme Datenvernichtung mit Zertifikat

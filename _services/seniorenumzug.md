@@ -4,7 +4,7 @@ layout: service
 title: "Seniorenumzug Wien & Österreich - Stressfrei ins Pflegeheim"
 seo_title: "Seniorenumzug Wien & Österreich - Stressfrei ins Pflegeheim"
 description: "Behutsamer Umzug für Senioren in Wien und Österreich. Wir bieten Einpackservice, Möbelmontage und die besenreine Räumung der alten Wohnung."
-kicker: "Für Senioren"
+kicker: "Privat"
 permalink: /leistungen/seniorenumzug/
 intent_primary: transactional
 intent_secondary: informational

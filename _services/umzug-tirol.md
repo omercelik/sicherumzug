@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Tirol | Übersiedlung mit Fixpreis"
 seo_title: "Umzug Tirol - Professionelle Umzugsfirma & Möbeltransport"
 description: "Zuverlässige Umzugsfirma für Tirol. Wir übernehmen Privatumzüge, Firmenübersiedlungen und Spezialtransporte zum Fixpreis inkl. Transportversicherung."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Ganz Tirol"

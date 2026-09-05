@@ -4,7 +4,7 @@ title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
 seo_title: Möbel Ankauf? Wertanrechnung nur mit Entrümpelung
 description: Wir rechnen den Wert von Möbeln ausschließlich als Teil unserer Entrümpelung
   oder Räumung an. Keine Einzelabholung – Anrechnung direkt auf den Fixpreis.
-kicker: Wertanrechnung
+kicker: "Wertanrechnung"
 highlights:
 - Keine Einzelabholung – nur mit Entrümpelung/Räumung
 - Wertanrechnung für Designermöbel & hochwertige Stücke

@@ -4,7 +4,7 @@ layout: service
 title: "Möbelmontage Wien | Küchenabbau & Aufbau Service"
 seo_title: "Möbelmontage Wien - Professioneller Aufbau & Küchenabbau"
 description: "Professionelle Möbelmontage und Demontage in Wien. Unser Fachpersonal baut Ihre Möbel, Küchen und Schränke sicher ab und am neuen Wohnort wieder auf."
-kicker: "Handwerk"
+kicker: "Spezial"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Wien & Umgebung"

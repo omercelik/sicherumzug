@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 title: "Hausräumung Österreich | Komplette Hausentrümpelung"
 seo_title: "Hausräumung & Hausentrümpelung in ganz Österreich - Fixpreis"
 description: "Professionelle Hausräumung für Einfamilienhäuser und Reihenhäuser in Österreich. Bundesweite Hausentrümpelung inkl. Keller, Dachboden und Garten."
-kicker: Privat
+kicker: "Privat"
 highlights:
 - Spezialisten für Einfamilienhäuser und Reihenhaus-Räumungen
 - Erfahrung mit Mehrgenerationen-Haushalten und geerbten Häusern

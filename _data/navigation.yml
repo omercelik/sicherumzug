@@ -3,42 +3,42 @@ services:
     items:
       - title: Privatumzug
         url: /leistungen/privatumzug/
-      - title: Umzug Tirol
-        url: /bundesland/tirol/
-      - title: Entrümpelung Tirol
-        url: /bundesland/tirol/
-      - title: Fernumzug Österreich
-        url: /leistungen/umzug-oesterreich/
-      - title: Umzug Österreich
-        url: /leistungen/umzug-oesterreich/
       - title: Umzug Wien
         url: /leistungen/umzug-wien/
+      - title: Hausumzug
+        url: /leistungen/hausumzug/
       - title: Räumung
         url: /leistungen/raeumung/
       - title: Entrümpelung
         url: /leistungen/entruempelung-wien/
-  - label: Gewerblich
+      - title: Umzug Österreich
+        url: /leistungen/umzug-oesterreich/
+      - title: Fernumzug / Ausland
+        url: /leistungen/auslandsumzug/
+  - label: Gewerbe
     items:
-      - title: Gewerbe Umzug
-        url: /leistungen/
+      - title: Firmen- & Büroumzug
+        url: /leistungen/firmenumzug-wien/
       - title: Firmenauflösung
         url: /leistungen/firmenaufloesung/
-      - title: Büroumzug
-        url: /leistungen/
+      - title: Archiv- & Aktenumzug
+        url: /leistungen/archivumzug/
       - title: Alle Gewerbe-Leistungen
-        url: /leistungen/
-  - label: Premium Logistik
+        url: /leistungen/#category-gewerbe
+  - label: Premium & Spezial
     items:
       - title: Wohlfühl-Umzug (Full-Service)
         url: /leistungen/wohlfuehl-umzug/
       - title: Premium Logistik & Montage
         url: /leistungen/premium-logistik/
+      - title: Möbelmontage
+        url: /leistungen/moebelmontage/
       - title: Seniorenumzug
         url: /leistungen/seniorenumzug/
-      - title: Express Notdienst
-        url: /leistungen/express-notdienst/
       - title: Studentenumzug
         url: /leistungen/studentenumzug/
+      - title: Express Notdienst
+        url: /leistungen/express-notdienst/
   - label: Wertanrechnung
     items:
       - title: Gratis Entrümpelung
@@ -52,8 +52,6 @@ services:
       - title: Alle Leistungen
         url: /leistungen/
 districts:
-  - title: Tirol
-    url: /bundesland/tirol/
   - title: Wien
     url: /bundesland/wien/
   - title: Niederösterreich
@@ -62,12 +60,14 @@ districts:
     url: /bundesland/burgenland/
   - title: Steiermark
     url: /bundesland/steiermark/
-  - title: Kärnten
-    url: /bundesland/kaernten/
   - title: Oberösterreich
     url: /bundesland/oberoesterreich/
   - title: Salzburg
     url: /bundesland/salzburg/
+  - title: Kärnten
+    url: /bundesland/kaernten/
+  - title: Tirol
+    url: /bundesland/tirol/
   - title: Vorarlberg
     url: /bundesland/vorarlberg/
 links:

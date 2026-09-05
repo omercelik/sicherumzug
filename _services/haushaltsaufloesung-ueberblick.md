@@ -4,7 +4,7 @@ title: Wohnungsauflösung Wien Überblick
 seo_title: Wohnungsauflösung Wien | Überblick & Fixpreis
 description: 'Kompletter Überblick zur Wohnungsauflösung in Wien: Kosten, Ablauf,
   Wertanrechnung & besenreine Hinterlassung. Alle 23 Bezirke mit MA48-Anbindung!'
-kicker: Überblick
+kicker: "Privat"
 highlights:
 - 'Kompletter Überblick: Kosten, Ablauf & Wertanrechnung'
 - Alle 23 Wiener Bezirke mit lokalen Entsorgungsstellen

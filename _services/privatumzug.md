@@ -4,7 +4,7 @@ layout: service
 title: "Privatumzug Wien & Österreich | Professionelle Übersiedlung"
 seo_title: "Privatumzug planen: Stressfrei & zum Fixpreis umziehen"
 description: "Ihr zuverlässiger Partner für den Privatumzug in Wien und ganz Österreich. Fachgerechte Möbelmontage, Transport und Verpackungsservice aus einer Hand."
-kicker: "Privatumzug"
+kicker: "Privat"
 permalink: /leistungen/privatumzug/
 schema_type: Service
 service_type: Privatumzug

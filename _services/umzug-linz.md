@@ -4,7 +4,7 @@ layout: service
 title: "Umzug Linz | Günstige Übersiedlung nach Oberösterreich"
 seo_title: "Umzug Linz - Professionelle Umzugsfirma & Möbeltransport"
 description: "Ihr stressfreier Umzug in Linz und ganz Oberösterreich mit Fixpreisgarantie. Wir bieten professionellen Möbeltransport für Firmen- und Privatumzüge."
-kicker: "Privat & Gewerbe"
+kicker: "Privat"
 intent_primary: transactional
 intent_secondary: local
 hero_kicker: "Linz & Umgebung"

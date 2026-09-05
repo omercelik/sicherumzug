@@ -4,7 +4,7 @@ title: Dachbodenräumung Wien
 seo_title: Dachbodenräumung Wien - Dachboden entrümpeln Fixpreis
 description: Sichere Räumung von Dachböden inklusive Abtransport über enge Stiegenhäuser
   und Lastenaufzüge. Fixpreis, Wertanrechnung und Unterstützung bei Genehmigungen.
-kicker: Privat
+kicker: "Privat"
 highlights:
 - Sichere Räumung über schmale Stiegen
 - Vorsichtige Behandlung historischer Substanz
