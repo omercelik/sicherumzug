@@ -3,7 +3,7 @@ last_modified_at: 2026-08-05T14:01:00+02:00
 layout: page
 title: "Datenschutzerklärung"
 seo_title: "Datenschutz & DSGVO | Sicher Team"
-description: "Datenschutzerklärung der Sicher Team e.U. gemäß DSGVO. Informationen zur Verarbeitung Ihrer personenbezogenen Daten auf unserer Website."
+description: "Datenschutzerklärung der Sicherteam Umzug & Räumung e.U. gemäß DSGVO. Informationen zur Verarbeitung Ihrer personenbezogenen Daten auf unserer Website."
 permalink: /datenschutz/
 llm_exclude: true
 ---
@@ -23,7 +23,7 @@ llm_exclude: true
     <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. In Österreich ist dies die Datenschutzbehörde.</p>
 
     <h2>Sie erreichen uns unter folgenden Kontaktdaten:</h2>
-    <p>Sicher Team e.U.<br>
+    <p>Sicherteam Umzug & Räumung e.U.<br>
     Wildgartenallee 1<br>
     1120 Wien<br>
     E-Mail: office@sicher-umzug.at<br>

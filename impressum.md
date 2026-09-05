@@ -7,7 +7,7 @@ description: "Impressum, Datenschutzhinweise und rechtliche Informationen – Ih
 kicker: "Rechtliches"
 permalink: /impressum/
 ---
-**Sicher Team e.U.** (Vermittlungsfirma)
+**Sicherteam Umzug & Räumung e.U.** (Vermittlungsfirma)
 {{ site.address.street }},
 {{ site.address.postal_code }} {{ site.address.city }}
 Telefon: [{{ site.phone }}](tel:{{ site.phone | replace: ' ', '' }})
