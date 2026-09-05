@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#052349"/>
+    <meta name="theme-color" content="#0f172a"/>
     <style>
       :root { color-scheme: light dark; }
       body {
         margin: 0;
         font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-        background-color: #F5F5F5;
+        background-color: #f4f6f9;
         min-height: 100vh;
       }
       [data-mobile-menu] { display: none; }
@@ -40,7 +40,7 @@
         position: absolute;
         inset: 0;
         z-index: 10;
-        background-image: linear-gradient(rgba(2, 44, 34, 0.40), rgba(2, 44, 34, 0.75));
+        background-image: linear-gradient(rgba(2, 6, 23, 0.55), rgba(2, 6, 23, 0.82));
       }
       [data-hero-banner] picture {
         position: absolute;
@@ -84,8 +84,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}"/>
     <meta name="apple-mobile-web-app-title" content="{{ site.brand_name }}"/>
     <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}"/>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="print" onload="this.media='all';this.onload=null;"/>
-    <noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/></noscript>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
     {% assign hero_preload = page.hero_preload | default: page.hero_image %}
     {% if page.layout == 'home' or page.layout == 'service' or page.layout == 'state' %}
     {% include head-home-hero-preload.html %}

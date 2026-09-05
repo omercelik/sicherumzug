@@ -1,0 +1,58 @@
+{% include home-hero-vars.liquid %}
+{% assign hero_title = page.hero.title | default: page.title %}
+{% assign hero_subtitle = page.hero.subtitle | default: page.description %}
+{% assign primary_cta = page.hero.primary_cta %}
+{% assign primary_label = primary_cta.label | default: 'Gratis Angebot anfordern' %}
+{% assign primary_url = primary_cta.url | default: '/angebot/' %}
+<section class="relative min-h-[78vh] md:min-h-[82vh] flex flex-col justify-center text-white overflow-hidden" data-hero-banner>
+  <picture class="absolute inset-0 z-0">
+    <source
+      media="(max-width: 767px)"
+      srcset="{{ hero_mobile_srcset | strip }}"
+      sizes="100vw"
+      type="image/webp">
+    <source
+      media="(min-width: 768px)"
+      srcset="{{ hero_desktop_srcset | strip }}"
+      sizes="{{ hero_image_sizes }}"
+      type="image/webp">
+    <img src="{{ hero_desktop | relative_url }}"
+         srcset="{{ hero_desktop_srcset | strip }}"
+         sizes="{{ hero_image_sizes }}"
+         alt="Professioneller Umzug und Räumung in Österreich"
+         class="w-full h-full object-cover object-center"
+         fetchpriority="high"
+         loading="eager"
+         width="{{ hero_width }}"
+         height="{{ hero_height }}">
+  </picture>
+  <div class="absolute inset-0 z-10 bg-gradient-to-b from-slate-950/70 via-slate-950/78 to-slate-950/92"></div>
+
+  <div class="container relative z-20 mx-auto px-4 md:px-6 py-16 md:py-24 text-white">
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+      <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-orange-300 backdrop-blur-sm">
+        Wien · Niederösterreich · Österreichweit
+      </p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.08]" data-hero-heading>
+        {{ hero_title }}
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200/95 leading-relaxed max-w-2xl mx-auto">
+        {{ hero_subtitle }}
+      </p>
+      <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+        <a href="{{ primary_url | relative_url }}" class="btn-primary w-full sm:w-auto min-w-[220px] text-base">
+          {{ primary_label }}
+        </a>
+        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="btn-ghost-light w-full sm:w-auto text-sm font-semibold">
+          {% include svg/call.svg class="w-4 h-4 shrink-0 fill-current" %}
+          {{ site.phone }}
+        </a>
+      </div>
+      <p class="text-sm text-slate-300/90">
+        Oder per
+        <a href="{{ site.whatsapp }}" class="font-semibold text-orange-300 underline decoration-orange-400/40 underline-offset-4 hover:text-orange-200">WhatsApp Foto senden</a>
+        — Antwort meist am selben Tag.
+      </p>
+    </div>
+  </div>
+</section>

@@ -4,7 +4,7 @@ layout: default
 {% include home-hero-vars.liquid %}
 {% assign hero_kicker = page.hero_kicker | default: page.kicker | default: 'Information' %}
 {% assign call_href = site.phone | replace: ' ', '' | prepend: 'tel:' %}
-<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
+<section class="relative bg-slate-950 text-white min-h-[38vh] flex flex-col pt-24 md:pt-28 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
@@ -33,9 +33,9 @@ layout: default
     %}
   </div>
 </section>
-<section class="bg-background-light py-12">
-  <div class="container mx-auto px-4">
-    <article class="richtext">
+<section class="bg-background-light section-pad">
+  <div class="container mx-auto px-4 md:px-6">
+    <article class="richtext max-w-4xl">
       {{ content }}
     </article>
   </div>
@@ -48,7 +48,7 @@ layout: default
         <h2 class="text-3xl font-extrabold text-primary">Kostenloses Angebot anfordern</h2>
         <p class="mt-2 text-base text-text-light">Wir melden uns innerhalb eines Werktags mit einem Termin oder einer Ersteinschätzung.</p>
       </div>
-      <div class="rounded-3xl bg-background-light p-8 shadow-xl">
+      <div class="form-panel p-6 md:p-8">
         {% include quote-form.html %}
       </div>
     </div>

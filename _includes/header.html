@@ -1,136 +1,98 @@
-<!-- Top Announcement Bar -->
-<div class="bg-slate-950 border-b border-slate-800/80 py-2 overflow-hidden whitespace-nowrap select-none">
-  <!-- Desktop -->
-  <div class="hidden md:flex justify-between items-center max-w-7xl mx-auto px-4 text-[11px] font-medium tracking-wide text-amber-400">
-    <span>🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
-    <span>🛡️ All-Risk Transportversicherung bis €1.000.000</span>
-    <span>⭐ 5/5 Sterne aus 450+ Bewertungen in Österreich</span>
-  </div>
-  <!-- Mobile Marquee -->
-  <div class="flex md:hidden overflow-hidden">
-    <div class="animate-marquee flex w-max gap-4 text-[11px] font-medium tracking-wide text-amber-400" style="will-change: transform;">
-      <span class="shrink-0">🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">⚡ Express-Umzug innerhalb von 24h möglich</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">🛡️ All-Risk Schutz bis €1.000.000 versichert</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">📸 Foto per WhatsApp senden & Fixpreis erhalten</span>
-      <!-- Duplicate for seamless loop -->
-      <span class="shrink-0">🏷️ 100% Fixpreisgarantie — Keine versteckten Kosten</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">⚡ Express-Umzug innerhalb von 24h möglich</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">🛡️ All-Risk Schutz bis €1.000.000 versichert</span>
-      <span class="shrink-0">•</span>
-      <span class="shrink-0">📸 Foto per WhatsApp senden & Fixpreis erhalten</span>
-    </div>
+<!-- Compact trust strip — no marquee noise -->
+<div class="site-announcement py-2 select-none">
+  <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1 text-[11px] font-semibold tracking-wide text-orange-300/95">
+    <span>100% Fixpreisgarantie</span>
+    <span class="hidden sm:inline">All-Risk bis €1.000.000</span>
+    <span class="hidden md:inline">Wien · NÖ · Österreichweit</span>
   </div>
 </div>
 
-<header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10 text-white shadow-xl">
+<header class="sticky top-0 z-50 site-header text-white shadow-lg">
   <div class="container mx-auto px-4">
-    <div class="flex py-2 h-16 sm:h-18 items-center justify-between">
+    <div class="flex h-16 items-center justify-between gap-4">
 
-<a
-  href="{{ '/' | relative_url }}"
-  class="flex items-center gap-3 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
->
-  <span class="sr-only">{{ site.brand_name }}</span>
+      <a
+        href="{{ '/' | relative_url }}"
+        class="flex items-center gap-2.5 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+      >
+        <span class="sr-only">{{ site.brand_name }}</span>
+        <img
+          src="{{ site.logo | default: '/logo.svg' | relative_url }}"
+          alt="Sicher Team Logo"
+          title="{{ site.brand_name }}"
+          class="h-10 w-10 max-h-10 max-w-10 object-contain shrink-0"
+          width="40"
+          height="40"
+        />
+        <span class="flex items-center text-lg sm:text-xl font-extrabold tracking-wide leading-none whitespace-nowrap">
+          <span class="text-white">SICHER</span>
+          <span class="ml-0.5 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">TEAM</span>
+        </span>
+      </a>
 
-<img
-  src="{{ site.logo | default: '/logo.svg' | relative_url }}"
-  alt="Sicher Team Logo"
-  title="{{ site.brand_name }}"
-  class="h-12 w-12 max-h-12 max-w-12 object-contain shrink-0"
-  width="48"
-  height="48"
-/>
-
-  <span class="flex items-center text-xl sm:text-2xl font-extrabold tracking-wide leading-none whitespace-nowrap">
-    <span class="text-white">SICHER</span>
-    <span class="ml-0.5 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">TEAM</span>
-  </span>
-</a>
-      
-      {% assign states = site.states | default: site.collections.states.docs %}
-      {% if states == nil %}
-        {% assign states = '' | split: '' %}
-      {% endif %}
-      {% assign states = states | sort: 'order' %}
-
-      <!-- Desktop Navigation -->
-      <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex">
-        
-        <!-- Services dropdown -->
+      <nav class="hidden items-center gap-1 text-sm font-semibold xl:flex" aria-label="Hauptnavigation">
         <div class="group relative">
-          <button class="flex items-center gap-1 py-4 text-slate-200 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-services">
+          <button class="flex items-center gap-1 py-3 text-slate-200 hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-services">
             Leistungen
             {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" %}
           </button>
-          <div id="mega-panel-services" role="region" aria-label="Leistungen Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-[520px] -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-800 p-6 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+          <div id="mega-panel-services" role="region" aria-label="Leistungen Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-[560px] -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-700/80 p-6 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
             <div class="grid grid-cols-2 gap-6">
               {% for group in site.data.navigation.services %}
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-amber-400">{{ group.label }}</p>
-                <ul class="mt-3 space-y-2 text-sm">
+                <p class="text-xs font-bold uppercase tracking-wider text-orange-300">{{ group.label }}</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
                   {% for item in group.items %}
                   <li>
-                    <a class="hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded px-1 transition-colors block py-0.5 text-slate-300" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    <a class="hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded px-1 transition-colors block py-1 text-slate-300" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                   </li>
                   {% endfor %}
                 </ul>
               </div>
               {% endfor %}
             </div>
-            <div class="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-slate-800 pt-4 text-sm">
-              <a class="inline-flex items-center gap-1 text-amber-400 hover:text-amber-300 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded px-1 transition-colors" href="{{ '/leistungen/' | relative_url }}">
-                Alle Leistungen &rarr;
-              </a>
-              <a class="inline-flex items-center gap-1 text-amber-400 hover:text-amber-300 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded px-1 transition-colors" href="{{ '/preise/' | relative_url }}">
-                Preise ansehen
-              </a>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-slate-700/80 pt-4 text-sm">
+              <a class="inline-flex items-center gap-1 text-orange-300 hover:text-orange-200 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded px-1" href="{{ '/leistungen/' | relative_url }}">Alle Leistungen →</a>
+              <a class="inline-flex items-center gap-1 text-orange-300 hover:text-orange-200 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded px-1" href="{{ '/preise/' | relative_url }}">Preise ansehen</a>
             </div>
           </div>
         </div>
 
-        <!-- Standorte / Bundesländer dropdown -->
         <div class="group relative">
-          <button class="flex items-center gap-1 py-4 text-slate-200 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-districts">
-            Bundesländer
+          <button class="flex items-center gap-1 py-3 text-slate-200 hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-districts">
+            Standorte
             {% include svg/expand_more.svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" %}
           </button>
-          <div id="mega-panel-districts" role="region" aria-label="Bundesländer Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-800 p-4 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
-            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-amber-400">Unsere Standorte</p>
-            <ul class="space-y-2 text-sm">
+          <div id="mega-panel-districts" role="region" aria-label="Standorte Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-slate-900 border border-slate-700/80 p-4 text-slate-200 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-orange-300">Bundesländer</p>
+            <ul class="space-y-1.5 text-sm columns-2 gap-x-4">
               {% for state in site.data.navigation.districts %}
               <li>
-                <a class="hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded px-1 transition-colors block py-0.5 text-slate-300" href="{{ state.url | relative_url }}">{{ state.title }}</a>
+                <a class="hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded px-1 transition-colors block py-1 text-slate-300 {% if state.title == 'Wien' %}font-bold text-white{% endif %}" href="{{ state.url | relative_url }}">{{ state.title }}</a>
               </li>
               {% endfor %}
             </ul>
-            <div class="mt-4 border-t border-slate-800 pt-3 text-sm">
-              <a class="inline-flex items-center gap-1 text-amber-400 hover:text-amber-300 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded px-1 transition-colors" href="{{ '/bezirke/' | relative_url }}">
-                Alle Standorte &rarr;
-              </a>
+            <div class="mt-4 border-t border-slate-700/80 pt-3 text-sm">
+              <a class="inline-flex items-center gap-1 text-orange-300 hover:text-orange-200 font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 rounded px-1" href="{{ '/bezirke/' | relative_url }}">Alle Standorte →</a>
             </div>
           </div>
         </div>
 
         {% for link in site.data.navigation.links %}
-        <a class="hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2 transition-colors py-4 text-slate-200" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+        <a class="hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-md px-2.5 transition-colors py-3 text-slate-200" href="{{ link.url | relative_url }}">{{ link.label }}</a>
         {% endfor %}
 
-        <!-- Main Button CTA -->
-        <a class="rounded-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-950 font-bold px-5 py-2.5 shadow-lg shadow-orange-500/20 transition-all hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" href="{{ site.data.navigation.cta.url | relative_url }}">
+        <a class="ml-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-400 hover:to-orange-600 text-white font-bold px-5 py-2.5 shadow-lg shadow-orange-900/30 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" href="{{ site.data.navigation.cta.url | relative_url }}">
           {{ site.data.navigation.cta.label }}
         </a>
       </nav>
 
-      <!-- Mobile Right Utility -->
-      <div class="flex items-center gap-3 lg:hidden">
-        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-white bg-white/10 hover:bg-white/20 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="w-6 h-6 shrink-0 fill-current" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      <div class="flex items-center gap-2 xl:hidden">
+        <a href="{{ site.data.navigation.cta.url | relative_url }}" class="hidden sm:inline-flex rounded-full bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400">
+          Angebot
+        </a>
+        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-white bg-white/10 hover:bg-white/20 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
       </div>
 

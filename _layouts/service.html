@@ -5,7 +5,7 @@ layout: default
 {% include home-hero-vars.liquid %}
 {% assign hero_kicker = page.hero_kicker | default: page.kicker | default: 'Leistung' %}
 {% assign call_href = site.phone | replace: ' ', '' | prepend: 'tel:' %}
-<section class="relative bg-slate-950 text-white min-h-[50vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
+<section class="relative bg-slate-950 text-white min-h-[48vh] flex flex-col pt-24 md:pt-28 overflow-hidden">
   <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
   <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
   <div class="relative z-20 w-full">
@@ -35,12 +35,12 @@ layout: default
     %}
   </div>
 </section>
-<section class="bg-white py-4">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap gap-3 text-center text-sm font-semibold uppercase tracking-widest text-primary">
+<section class="trust-strip">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex flex-wrap gap-3 justify-center md:justify-start text-center text-xs font-bold uppercase tracking-wider text-primary">
       {% assign risk_items = site.data.risk_reversal | where: 'active', true | sort: 'priority' %}
       {% for risk in risk_items %}
-      <span class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-background-light px-4 py-2" title="{{ risk.detail }}">
+      <span class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3.5 py-2 shadow-sm" title="{{ risk.detail }}">
         {% capture icon_path %}svg/{{ risk.icon | default: 'verified'  }}.svg{% endcapture %}{% include {{ icon_path }} class="w-[18px] h-[18px] shrink-0 fill-current" %}
         <span>{{ risk.label }}</span>
       </span>
@@ -48,8 +48,8 @@ layout: default
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
-  <div class="container mx-auto px-4">
+<section class="bg-white section-pad">
+  <div class="container mx-auto px-4 md:px-6">
     <div class="grid gap-10 lg:grid-cols-3">
       <div class="lg:col-span-2">
         <article class="richtext">
@@ -70,7 +70,7 @@ layout: default
         {% endif %}
       </div>
       <aside class="lg:col-span-1">
-        <div class="sticky top-24 rounded-3xl bg-background-light p-6 shadow-xl">
+        <div class="sticky top-24 form-panel p-6 md:p-7">
           <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kostenloses Angebot</p>
           <h2 class="mt-3 text-2xl font-extrabold text-primary">Direkt anfragen</h2>
           {% include quote-form.html %}

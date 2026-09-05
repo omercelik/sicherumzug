@@ -1,0 +1,57 @@
+<section class="bg-white section-pad defer-section border-b border-gray-100" id="leistungen">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="section-kicker">Leistungen</p>
+      <h2 class="section-title">Welche Lösung brauchen Sie?</h2>
+      <p class="section-lede mx-auto">{{ page.services_intro }}</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      {% assign moving_services = "" | split: "," %}
+      {% for item in site.data.service_cards %}
+        {% if item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
+          {% assign moving_services = moving_services | push: item %}
+        {% endif %}
+      {% endfor %}
+      {% for card in moving_services %}
+      <a href="{{ card.url | relative_url }}" class="decision-card group text-left no-underline">
+        <div class="inline-flex rounded-2xl bg-orange-50 text-orange-700 p-3.5 ring-1 ring-orange-100 group-hover:bg-primary group-hover:text-white group-hover:ring-primary transition-colors duration-200">
+          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="w-5 h-5 shrink-0 fill-current" %}
+        </div>
+        <h3 class="mt-5 text-xl font-bold text-primary leading-tight">{{ card.title }}</h3>
+        <p class="mt-3 text-sm text-text-light leading-relaxed flex-1">{{ card.description }}</p>
+        <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-orange-700 group-hover:text-orange-800">
+          Mehr erfahren
+          {% include svg/arrow_right_alt.svg class="shrink-0 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200 fill-current" %}
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="mt-16 pt-12 border-t border-gray-100">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 max-w-6xl mx-auto">
+        <div>
+          <h3 class="text-xl md:text-2xl font-extrabold text-primary tracking-tight">Weitere Services</h3>
+          <p class="mt-2 text-sm md:text-base text-text-light max-w-2xl">{{ page.additional_services_intro }}</p>
+        </div>
+        <a href="{{ '/leistungen/' | relative_url }}" class="btn-secondary self-start md:self-auto text-sm">Alle Leistungen</a>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        {% assign clearing_services = "" | split: "," %}
+        {% for item in site.data.service_cards %}
+          {% unless item.title contains 'Umzug & Übersiedlung' or item.title contains 'Räumung & Hausauflösung' or item.title contains 'Entrümpelung & Wertanrechnung' %}
+            {% if item.title contains 'Räumung' or item.title contains 'Entrümpelung' or item.title contains 'Auflösung' or item.title contains 'Verlassenschaften' or item.title contains 'Keller' or item.title contains 'Garagen' %}
+              {% assign clearing_services = clearing_services | push: item %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+        {% for card in clearing_services %}
+        <a href="{{ card.url | relative_url }}" class="group flex items-start gap-3 rounded-2xl border border-gray-100 bg-background-light p-5 hover:border-orange-200 hover:bg-white hover:shadow-md transition-all duration-200">
+          {% capture icon_path %}svg/{{ card.icon }}.svg{% endcapture %}{% include {{ icon_path }} class="shrink-0 w-[18px] h-[18px] text-orange-700 mt-0.5 fill-current" %}
+          <span class="text-sm font-bold text-primary leading-snug group-hover:text-orange-800">{{ card.title }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

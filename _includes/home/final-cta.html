@@ -1,0 +1,24 @@
+<section class="section-dark section-pad defer-section" id="final-cta">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.14em] text-orange-300">Nächster Schritt</p>
+      <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-white tracking-tight">Bereit für Ihren stressfreien Umzug?</h2>
+      <p class="mt-4 text-base md:text-lg text-slate-300 leading-relaxed">Kostenlose Besichtigung, schriftlicher Fixpreis und ein Team, das Wien & Österreich kennt.</p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+        <a href="{{ '/angebot/' | relative_url }}" class="btn-primary w-full sm:w-auto min-w-[220px]">Gratis Angebot anfordern</a>
+        <a href="{{ site.whatsapp }}" class="btn-ghost-light w-full sm:w-auto">
+          {% include svg/chat.svg class="w-4 h-4 shrink-0 fill-current" %}
+          WhatsApp Foto senden
+        </a>
+      </div>
+      <div class="mt-10 max-w-xl mx-auto text-left form-panel !bg-white !text-slate-900 p-6 md:p-8" id="angebot">
+        <p class="text-xs font-bold uppercase tracking-[0.12em] text-orange-700 m-0">Kurzformular</p>
+        <h3 class="mt-2 text-xl font-extrabold text-primary m-0">Kostenlose Ersteinschätzung</h3>
+        <p class="mt-2 text-sm text-text-light m-0">Nur die wichtigsten Felder — wir melden uns rasch.</p>
+        <div class="mt-5">
+          {% include quote-form.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
