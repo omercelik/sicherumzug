@@ -42,7 +42,7 @@
           <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 mb-3 group-hover:scale-110 transition-transform">
             {% include svg/local_shipping.svg class="w-6 h-6 fill-current" %}
           </div>
-          <h4 class="font-bold text-white text-base">Umzug & Übersiedlung</h4>
+          <h4 class="font-bold !text-white text-base">Umzug & Übersiedlung</h4>
           <p class="text-xs text-slate-400 mt-1">Möbeltransport, Packservice & De-/Montage.</p>
         </button>
 
@@ -50,7 +50,7 @@
           <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 mb-3 group-hover:scale-110 transition-transform">
             {% include svg/cleaning_services.svg class="w-6 h-6 fill-current" %}
           </div>
-          <h4 class="font-bold text-white text-base">Entrümpelung & Räumung</h4>
+          <h4 class="font-bold !text-white text-base">Entrümpelung & Räumung</h4>
           <p class="text-xs text-slate-400 mt-1">Fachgerechte Entsorgung inkl. Wertanrechnung.</p>
         </button>
 
@@ -58,7 +58,7 @@
           <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 mb-3 group-hover:scale-110 transition-transform">
             {% include svg/recycling.svg class="w-6 h-6 fill-current" %}
           </div>
-          <h4 class="font-bold text-white text-base">Kombi: Umzug + Räumung</h4>
+          <h4 class="font-bold !text-white text-base">Kombi: Umzug + Räumung</h4>
           <p class="text-xs text-slate-400 mt-1">Neues Heim einrichten, altes besenrein räumen.</p>
         </button>
       </div>
@@ -70,25 +70,25 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
         <button type="button" onclick="selectSize('small', '1 Zimmer / bis 40 m²', 320)" class="size-opt p-4 rounded-2xl border border-slate-800 bg-slate-950/60 hover:border-orange-500/50 text-center transition-all cursor-pointer">
           <span class="block text-xl mb-1">🏢</span>
-          <span class="block font-bold text-sm text-white">Garconniere</span>
+          <span class="block font-bold text-sm !text-white">Garconniere</span>
           <span class="block text-[11px] text-slate-400">bis 40 m²</span>
         </button>
 
         <button type="button" onclick="selectSize('medium', '2-3 Zimmer / 40-80 m²', 520)" class="size-opt p-4 rounded-2xl border border-slate-800 bg-slate-950/60 hover:border-orange-500/50 text-center transition-all cursor-pointer">
           <span class="block text-xl mb-1">🏠</span>
-          <span class="block font-bold text-sm text-white">2 - 3 Zimmer</span>
+          <span class="block font-bold text-sm !text-white">2 - 3 Zimmer</span>
           <span class="block text-[11px] text-slate-400">40 - 80 m²</span>
         </button>
 
         <button type="button" onclick="selectSize('large', '4+ Zimmer / ab 80 m²', 850)" class="size-opt p-4 rounded-2xl border border-slate-800 bg-slate-950/60 hover:border-orange-500/50 text-center transition-all cursor-pointer">
           <span class="block text-xl mb-1">🏡</span>
-          <span class="block font-bold text-sm text-white">4+ Zimmer / Haus</span>
+          <span class="block font-bold text-sm !text-white">4+ Zimmer / Haus</span>
           <span class="block text-[11px] text-slate-400">ab 80 m²</span>
         </button>
 
         <button type="button" onclick="selectSize('special', 'Keller / Gewerbe', 280)" class="size-opt p-4 rounded-2xl border border-slate-800 bg-slate-950/60 hover:border-orange-500/50 text-center transition-all cursor-pointer">
           <span class="block text-xl mb-1">📦</span>
-          <span class="block font-bold text-sm text-white">Keller / Büro</span>
+          <span class="block font-bold text-sm !text-white">Keller / Büro</span>
           <span class="block text-[11px] text-slate-400">Teilbereich</span>
         </button>
       </div>

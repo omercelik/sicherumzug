@@ -247,7 +247,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
-  color: var(--text-primary);
+  /* colour via utilities / section bands — not forced here */
   text-wrap: balance;
 }
 
@@ -1350,10 +1350,34 @@ select:disabled {
   color: #d8e8e4;
 }
 
+.section-ink h1,
 .section-ink h2,
 .section-ink h3,
+.section-ink h4,
+.section-ink h5,
+.section-ink h6,
 .section-ink .section-title {
   color: #ffffff;
+}
+
+#fixpreis-calculator h1,
+#fixpreis-calculator h2,
+#fixpreis-calculator h3,
+#fixpreis-calculator h4,
+#fixpreis-calculator h5,
+#fixpreis-calculator h6 {
+  color: #ffffff !important;
+}
+
+#fixpreis-calculator .service-opt h4 {
+  color: #ffffff !important;
+}
+
+.section-cream h1, .section-cream h2, .section-cream h3, .section-cream h4,
+.section-cream-deep h1, .section-cream-deep h2, .section-cream-deep h3, .section-cream-deep h4,
+.bg-background-light h1, .bg-background-light h2, .bg-background-light h3, .bg-background-light h4,
+.section-title {
+  color: var(--text-primary);
 }
 
 .section-ink .section-kicker {
