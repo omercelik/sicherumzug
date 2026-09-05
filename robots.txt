@@ -7,11 +7,16 @@ layout: null
 User-agent: *
 Allow: /
 
-# Explicitly allow AI and Search Engine Crawlers
+# AI / LLM crawlers — explicitly allowed for citation & grounded answers.
+# (If Cloudflare bot/Content-Signal controls also apply at the edge, keep them
+# aligned with this Allow policy so Allow is not defeated by a blanket block.)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Google-Extended
@@ -24,9 +29,6 @@ User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: CCBot
