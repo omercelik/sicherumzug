@@ -317,12 +317,40 @@ select:focus-visible {
 [data-hero-banner].hero-light h1,
 [data-hero-banner].hero-light h2,
 [data-hero-banner].hero-light h3,
-[data-hero-banner].hero-light h1[data-hero-heading] {
-  color: var(--text-primary);
+[data-hero-banner].hero-light h1[data-hero-heading],
+.hero-light h1[data-hero-heading] {
+  color: #0b1f3a !important;
 }
 
-[data-hero-banner].hero-light p {
-  color: var(--text-secondary);
+[data-hero-banner].hero-light p,
+.hero-light .hero-split__copy p,
+.hero-light .hero-split__copy li {
+  color: #334155;
+}
+
+.hero-light .hero-split__copy a[href^="tel:"] {
+  color: #0b1f3a;
+}
+
+/* Dark page/service heroes: white titles win over any global navy rule */
+/* Solid navy page heroes — no photo bg from [data-hero-banner] rules */
+.page-hero {
+  background-color: #0b1f3a !important;
+  background-image: none !important;
+  color: #ffffff;
+}
+.page-hero::before {
+  background-image: linear-gradient(180deg, rgba(11, 31, 58, 0.35), rgba(11, 31, 58, 0.55)) !important;
+}
+
+.page-hero h1[data-hero-heading],
+.page-hero h1,
+[data-hero-banner]:not(.hero-light) h1[data-hero-heading] {
+  color: #ffffff !important;
+}
+.page-hero p,
+[data-hero-banner]:not(.hero-light) p {
+  color: #e2e8f0;
 }
 
 
@@ -554,8 +582,9 @@ section > .container {
 }
 
 .defer-section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
+  /* Disabled: content-visibility hid H2s until scroll (SEO + first impression). */
+  content-visibility: visible;
+  contain-intrinsic-size: none;
 }
 
 
@@ -1232,9 +1261,40 @@ select:disabled {
 }
 
 .site-header {
-  background: rgba(11, 31, 58, 0.94);
-  border-bottom: 1px solid rgba(26, 92, 84, 0.55);
+  background: #0b1f3a;
+  border-bottom: 1px solid rgba(30, 58, 95, 0.85);
   backdrop-filter: blur(14px);
+}
+
+/* Navy header: force light logo/nav (utilities may still say text-primary) */
+.site-header .site-logo-wordmark,
+.site-header .site-logo-wordmark span:first-child {
+  color: #ffffff;
+}
+.site-header nav > a,
+.site-header nav > div > button {
+  color: rgba(255, 255, 255, 0.88);
+}
+.site-header nav > a:hover,
+.site-header nav > div > button:hover {
+  color: #fb923c;
+}
+.site-header a[href^="tel:"] {
+  color: #ffffff;
+}
+.site-header a[href^="tel:"]:hover {
+  color: #fb923c;
+}
+.site-header #mobile-menu-open {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.site-header #mobile-menu-open:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.site-header .sm\:inline-flex.items-center.justify-center.h-10.w-10 {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .site-announcement {
@@ -1491,8 +1551,10 @@ select:disabled {
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
-  background:
-    linear-gradient(135deg, rgba(11, 31, 58, 0.97) 0%, rgba(11, 47, 43, 0.92) 55%, rgba(11, 31, 58, 0.88) 100%);
+  /* Light cream/white copy panel — navy text (AA) + photo on right */
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: var(--text-primary);
+  border-right: 1px solid var(--border-light);
 }
 
 @media (min-width: 1024px) {

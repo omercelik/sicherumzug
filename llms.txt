@@ -1,5 +1,5 @@
 # LLM Resource Index – Professioneller Umzug & Übersiedlung in Österreich | Sicher Team
-_Generated 2026-09-05 12:42 UTC_
+_Generated 2026-09-05 12:54 UTC_
 
 This document lists every public page in a crawler-friendly hierarchy. Fetch `/llms-all.txt` to read the full text of each entry.
 
