@@ -1,0 +1,1620 @@
+@source "../../_includes/**/*.html";
+@source "../../_layouts/**/*.html";
+@source "../../_services/**/*.md";
+@source "../../_states/**/*.md";
+@source "../../_districts/**/*.md";
+@source "../../_guides/**/*.md";
+@source "../../*.html";
+@source "../../*.md";
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+/* ==========================================================
+   DESIGN SYSTEM
+   Light first · Deep navy + one orange CTA
+   Calm local-service · Sicher Team · de-AT
+   WCAG 2.2 AA / SEO / GEO
+   ========================================================== */
+
+@theme {
+
+  --color-primary: #0b1f3a;
+  --color-primary-light: #143056;
+  --color-primary-dark: #071529;
+
+  --color-nordic: #0b1f3a;
+  --color-nordic-light: #1e3a5f;
+  --color-nordic-dark: #071529;
+
+  --color-amber-accent: #ea580c;
+  --color-amber-hover: #c2410c;
+  --color-amber-content: #c2410c;
+  --color-amber-strong: #9a3412;
+
+  --color-primary-button: #ea580c;
+  --color-primary-accent: #ea580c;
+  --color-content-accent: #c2410c;
+
+  --color-crimson: #ea580c;
+  --color-crimson-hover: #c2410c;
+
+  --color-info: #0369a1;
+  --color-info-dark: #075985;
+
+  --color-background-light: #f8fafc;
+  --color-background-dark: #0b1f3a;
+
+  --color-surface: #ffffff;
+  --color-surface-background: #f8fafc;
+
+  --color-text-light: #334155;
+  --color-text-muted: #64748b;
+  --color-border-subtle: #e2e8f0;
+  --color-text-dark: #ffffff;
+
+  --font-display:
+    "Source Sans 3",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  --font-body:
+    "Source Sans 3",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Roboto",
+    sans-serif;
+
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+
+/* ==========================================================
+   ROOT DESIGN TOKENS
+   ========================================================== */
+
+:root {
+  color-scheme: light;
+
+  --page-bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-soft: #f1f5f9;
+  --surface-raised: #ffffff;
+  --surface-tint: #fff7ed;
+  --cream: #f8fafc;
+  --cream-deep: #f1f5f9;
+
+  --text-primary: #0b1f3a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-strong: #94a3b8;
+
+  --brand-orange: #ea580c;
+  --brand-orange-hover: #c2410c;
+  --brand-orange-dark: #c2410c;
+  --brand-orange-strong: #9a3412;
+  --brand-orange-soft: #fff7ed;
+  --brand-orange-on-dark: #fb923c;
+
+  --brand-teal: #0369a1;
+  --brand-teal-dark: #075985;
+  --brand-teal-soft: #e0f2fe;
+
+  --dark-bg: #0b1f3a;
+  --dark-surface: #143056;
+  --dark-surface-raised: #1e3a5f;
+  --dark-border: #1e3a5f;
+
+  --content-width: 72rem;
+  --content-padding: 1.25rem;
+  --section-y: 4.75rem;
+  --section-y-lg: 6.5rem;
+  --radius-card: 1.25rem;
+  --radius-cta: 9999px;
+
+  --icon-size-xs: 1rem;
+  --icon-size-sm: 1.125rem;
+  --icon-size-md: 1.25rem;
+  --icon-size-lg: 1.5rem;
+  --icon-size-xl: 1.75rem;
+}
+
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 1.75rem;
+  }
+}
+
+
+/* ==========================================================
+   BASE RESET
+   ========================================================== */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--page-bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: var(--font-body);
+
+  background-color: var(--page-bg);
+  color: var(--text-secondary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ==========================================================
+   GLOBAL CONTAINER
+
+   All major sections should use:
+
+   .container.mx-auto.px-4.md\:px-6
+
+   This keeps the entire site aligned to one
+   consistent vertical grid.
+   ========================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+}
+
+
+/* ==========================================================
+   HEADINGS
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-body);
+  /* colour via utilities / section bands — not forced here */
+  text-wrap: balance;
+}
+
+h1 {
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  letter-spacing: -0.02em;
+}
+
+
+/* ==========================================================
+   GLOBAL LINKS
+   ========================================================== */
+
+a {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+
+/* ==========================================================
+   ACCESSIBLE FOCUS
+
+   WCAG 2.2 AA
+   ========================================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--brand-orange-strong);
+  outline-offset: 3px;
+}
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+[data-hero-banner]:not(:has(.hero-split)) {
+  --hero-image: var(--hero-desktop);
+
+  position: relative;
+
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[data-hero-banner]:has(.hero-split) {
+  position: relative;
+  background-image: none;
+}
+
+
+@media (max-width: 767px) {
+
+  [data-hero-banner] {
+    --hero-image:
+      var(--hero-mobile, var(--hero-desktop));
+  }
+
+}
+
+
+/*
+ * IMPORTANT:
+ *
+ * The hero HTML already contains its own scrim:
+ *
+ * bg-gradient-to-b
+ * from-slate-950/75
+ * via-slate-950/80
+ * to-slate-950/90
+ *
+ * Therefore we intentionally DO NOT create another
+ * ::after overlay here.
+ *
+ * This prevents:
+ *
+ * - double darkening
+ * - unnecessary stacking contexts
+ * - inconsistent contrast
+ * - visual heaviness
+ */
+
+
+/* ==========================================================
+   HERO CONTENT
+   ========================================================== */
+
+[data-hero-banner]:not(.hero-light) h1,
+[data-hero-banner]:not(.hero-light) h2,
+[data-hero-banner]:not(.hero-light) h3 {
+  color: #ffffff;
+}
+
+[data-hero-banner]:not(.hero-light) p {
+  color: #e2e8f0;
+}
+
+[data-hero-banner].hero-light h1,
+[data-hero-banner].hero-light h2,
+[data-hero-banner].hero-light h3,
+[data-hero-banner].hero-light h1[data-hero-heading] {
+  color: var(--text-primary);
+}
+
+[data-hero-banner].hero-light p {
+  color: var(--text-secondary);
+}
+
+
+/* Dark hero accent */
+
+[data-hero-banner] .text-primary-accent {
+  color: #fb923c;
+}
+
+[data-hero-banner] .text-orange-400 {
+  color: #fb923c;
+}
+
+[data-hero-banner] .text-orange-500 {
+  color: #fb923c;
+}
+
+
+/* ==========================================================
+   PREMIUM ORANGE SYSTEM
+   ========================================================== */
+
+/* Decorative accent */
+
+.text-primary-accent {
+  color: var(--brand-orange-dark); /* Ensure AA contrast on light background by default */
+}
+
+
+/* AA-safe content accent */
+
+.text-content-accent {
+  color: var(--brand-orange-dark);
+}
+
+
+/* Decorative orange background */
+
+.bg-primary-accent {
+  background-color: var(--brand-orange);
+}
+
+
+/* Accent border */
+
+.border-primary-accent {
+  border-color: var(--brand-orange);
+}
+
+
+/* ==========================================================
+   PRIMARY / DARK SYSTEM
+   ========================================================== */
+
+.bg-primary {
+  background-color: var(--dark-bg);
+}
+
+.hover\:bg-primary-light:hover {
+  background-color: var(--dark-surface);
+}
+
+
+/* ==========================================================
+   PRIMARY ORANGE BUTTON
+
+   Orange 700 + white text
+   ========================================================== */
+
+.bg-primary-button {
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
+}
+
+.bg-primary-button:hover {
+  background-color: var(--brand-orange-strong);
+}
+
+
+/*
+ * Legacy usage:
+ *
+ * bg-primary-accent
+ *
+ * When used as a button/background,
+ * make it AA-safe.
+ */
+
+.bg-primary-accent {
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
+}
+
+.hover\:bg-primary-accent:hover {
+  background-color: var(--brand-orange-strong);
+}
+
+
+/*
+ * IMPORTANT:
+ *
+ * We intentionally DO NOT globally override:
+ *
+ * bg-orange-500
+ * bg-orange-400
+ *
+ * because those utilities may be used for
+ * decorative elements.
+ */
+
+
+/* ==========================================================
+   PREMIUM CARD SYSTEM
+   ========================================================== */
+
+.premium-card {
+  background: var(--surface);
+
+  border: 1px solid var(--border-light);
+
+  border-radius: 1.5rem;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 8px 24px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+
+  border-color: var(--border-medium);
+
+  box-shadow:
+    0 4px 6px rgba(15, 23, 42, 0.05),
+    0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ==========================================================
+   DARK SECTION SYSTEM
+   ========================================================== */
+
+.section-dark {
+  background:
+    linear-gradient(
+      160deg,
+      #0b1f3a 0%,
+      #143056 55%,
+      #1e3a5f 100%
+    );
+
+  color: #e2e8f0;
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: #ffffff;
+}
+
+.section-dark p {
+  color: #cbd5e1;
+}
+
+.section-dark .card {
+  background: rgba(19, 70, 64, 0.72);
+  border-color: #1e3a5f;
+}
+
+
+/* ==========================================================
+   DARK BACKGROUND UTILITIES
+   ========================================================== */
+
+.bg-background-dark {
+  background-color: #143056;
+}
+
+.bg-primary-dark {
+  background-color: #0b1f3a;
+}
+
+
+/* ==========================================================
+   DARK SURFACE
+   ========================================================== */
+
+.dark-surface {
+  background-color: #1e3a5f;
+  border-color: #1e3a5f;
+}
+
+
+/* ==========================================================
+   TRUST BAR
+   ========================================================== */
+
+.trust-badge {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   SECTION RHYTHM
+
+   Keeps the page visually aligned and prevents
+   random protrusions between sections.
+   ========================================================== */
+
+section {
+  position: relative;
+}
+
+section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.defer-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
+
+/* ==========================================================
+   SECTION DIVIDERS
+   ========================================================== */
+
+.border-gray-100 {
+  border-color: #e2e8f0;
+}
+
+.border-gray-200 {
+  border-color: #cbd5e1;
+}
+
+
+/* ==========================================================
+   SVG ICON SYSTEM
+   ========================================================== */
+
+/*
+ * All SVG icons should:
+ *
+ * - remain proportional
+ * - never shrink unexpectedly
+ * - never grow to viewport size
+ * - inherit currentColor
+ *
+ * Preferred markup:
+ *
+ * <svg class="icon icon-md" ...>
+ *
+ * or:
+ *
+ * <span class="icon icon-md">
+ *   <svg ...>
+ * </span>
+ */
+
+
+/* Base SVG behavior */
+
+svg {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+
+/*
+ * Standard icon class
+ */
+
+.icon {
+  display: inline-block;
+  flex: 0 0 auto;
+
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+
+  max-width: var(--icon-size-md);
+  max-height: var(--icon-size-md);
+
+  vertical-align: middle;
+
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+
+/* Icon sizes */
+
+.icon-xs {
+  width: var(--icon-size-xs);
+  height: var(--icon-size-xs);
+
+  max-width: var(--icon-size-xs);
+  max-height: var(--icon-size-xs);
+}
+
+.icon-sm {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+
+  max-width: var(--icon-size-sm);
+  max-height: var(--icon-size-sm);
+}
+
+.icon-md {
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+
+  max-width: var(--icon-size-md);
+  max-height: var(--icon-size-md);
+}
+
+.icon-lg {
+  width: var(--icon-size-lg);
+  height: var(--icon-size-lg);
+
+  max-width: var(--icon-size-lg);
+  max-height: var(--icon-size-lg);
+}
+
+.icon-xl {
+  width: var(--icon-size-xl);
+  height: var(--icon-size-xl);
+
+  max-width: var(--icon-size-xl);
+  max-height: var(--icon-size-xl);
+}
+
+
+/*
+ * SVGs used inside an element with .icon-wrapper
+ */
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+}
+
+.icon-wrapper > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  max-width: 1.25rem;
+  max-height: 1.25rem;
+
+  flex: 0 0 1.25rem;
+}
+
+
+/* ==========================================================
+   MOBILE SVG ICON SAFETY
+   ========================================================== */
+
+@media (max-width: 639px) {
+
+  .icon,
+  .icon-sm,
+  .icon-md,
+  .icon-lg,
+  .icon-xl {
+    flex-shrink: 0;
+  }
+
+  /*
+   * Normal inline icons should remain compact on mobile.
+   */
+
+  .icon-md {
+    width: 1.125rem;
+    height: 1.125rem;
+
+    max-width: 1.125rem;
+    max-height: 1.125rem;
+  }
+
+  .icon-lg {
+    width: 1.375rem;
+    height: 1.375rem;
+
+    max-width: 1.375rem;
+    max-height: 1.375rem;
+  }
+
+  .icon-xl {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+  }
+
+}
+
+
+
+
+/* ==========================================================
+   SVG COLOR INHERITANCE
+   ========================================================== */
+
+.icon,
+.icon svg,
+.icon-wrapper svg,
+button svg,
+a svg {
+  color: inherit;
+}
+
+
+/*
+ * Do not force fill on SVGs that are explicitly stroke-based.
+ */
+
+.icon[data-stroke],
+.icon-wrapper[data-stroke] svg {
+  fill: none;
+}
+
+
+/* ==========================================================
+   RICH TEXT
+   ========================================================== */
+
+@layer components {
+
+  .richtext {
+    @apply max-w-none text-base leading-relaxed text-slate-600;
+  }
+
+  .richtext > *:first-child {
+    margin-top: 0;
+  }
+
+  .richtext h2 {
+    @apply mt-10 text-3xl font-extrabold tracking-tight text-slate-900;
+  }
+
+  .richtext h3 {
+    @apply mt-8 text-2xl font-bold tracking-tight text-slate-900;
+  }
+
+  .richtext h4 {
+    @apply mt-6 text-xl font-semibold text-slate-900;
+  }
+
+  .richtext p,
+  .richtext ul,
+  .richtext ol,
+  .richtext blockquote {
+    @apply mt-4;
+  }
+
+  .richtext ul {
+    @apply list-disc space-y-2 pl-5;
+  }
+
+  .richtext ol {
+    @apply list-decimal space-y-2 pl-5;
+  }
+
+  .richtext li {
+    @apply text-base leading-relaxed text-slate-600;
+  }
+
+  .richtext blockquote {
+    @apply rounded-r-lg border-l-4 border-orange-600 bg-orange-50/60 py-2 pl-4 italic text-slate-700;
+  }
+
+  /*
+   * AA-safe orange text on light surfaces.
+   */
+
+  .richtext a {
+    @apply font-semibold text-orange-700 underline decoration-orange-500/40 underline-offset-4 transition-colors;
+  }
+
+  .richtext a:hover {
+    @apply text-orange-800 decoration-orange-700;
+  }
+
+  .richtext strong {
+    @apply font-bold text-slate-900;
+  }
+
+  .richtext table {
+    @apply mt-6 w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm;
+
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+
+  .richtext thead {
+    @apply bg-slate-800 text-white;
+  }
+
+  .richtext thead th {
+    @apply px-4 py-3 text-xs font-semibold uppercase tracking-wider text-slate-200;
+  }
+
+  .richtext tbody tr:nth-child(even) {
+    @apply bg-slate-50;
+  }
+
+  .richtext th,
+  .richtext td {
+    @apply border-b border-slate-100 px-4 py-3 align-top text-sm text-slate-600;
+  }
+
+  .richtext tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+}
+
+
+/* ==========================================================
+   FORM SYSTEM
+   ========================================================== */
+
+input,
+textarea,
+select {
+  border-color: #cbd5e1;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+}
+
+
+/*
+ * Focus state
+ */
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--brand-orange-dark);
+
+  box-shadow:
+    0 0 0 3px rgba(194, 65, 12, 0.2);
+}
+
+
+/*
+ * Disabled controls
+ */
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+
+/* ==========================================================
+   FAQ
+   ========================================================== */
+
+[data-faq-toggle] {
+  color: #0f172a;
+}
+
+[data-faq-toggle]:hover {
+  color: var(--brand-orange-dark);
+}
+
+[data-faq-toggle]:focus-visible {
+  outline: 3px solid var(--brand-orange-strong);
+  outline-offset: 3px;
+}
+
+
+/* ==========================================================
+   MATERIAL SYMBOLS
+   ========================================================== */
+
+
+
+
+
+
+/* ==========================================================
+   SCROLLBAR
+   ========================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e3a5f;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f8fafc;
+}
+
+
+/* ==========================================================
+   TEXT SELECTION
+   ========================================================== */
+
+::selection {
+  background-color: var(--brand-orange-dark);
+  color: #ffffff;
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY
+   WCAG 2.2 AA
+   ========================================================== */
+
+@layer utilities {
+
+  /*
+   * ----------------------------------------------------------
+   * DARK SURFACES
+   * ----------------------------------------------------------
+   *
+   * Orange 400 provides strong readability on dark slate.
+   */
+
+  .dark .text-primary-accent,
+  footer .text-primary-accent,
+  [data-hero-banner] .text-primary-accent {
+    color: #fb923c;
+  }
+
+  .dark .hover\:text-primary-accent:hover,
+  footer .hover\:text-primary-accent:hover,
+  [data-hero-banner] .hover\:text-primary-accent:hover {
+    color: #fdba74;
+  }
+
+
+  /*
+   * ----------------------------------------------------------
+   * LIGHT SURFACES
+   * ----------------------------------------------------------
+   *
+   * Orange 700 is used for readable text.
+   */
+
+  .bg-white .text-primary-accent,
+  .bg-background-light .text-primary-accent {
+    color: #c2410c;
+  }
+
+  /* Ensure text-primary-accent has correct contrast inside bg-primary (dark) */
+  .bg-primary .text-primary-accent,
+  .bg-primary-dark .text-primary-accent {
+    color: #fb923c !important;
+  }
+
+  /* Fix headings inside dark blocks */
+  .bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6,
+  .bg-primary-dark h1, .bg-primary-dark h2, .bg-primary-dark h3, .bg-primary-dark h4, .bg-primary-dark h5, .bg-primary-dark h6 {
+      color: #ffffff !important;
+  }
+
+
+  /*
+   * Content accent
+   */
+
+  .text-content-accent {
+    color: #c2410c;
+  }
+
+
+  /*
+   * ----------------------------------------------------------
+   * LEGACY CRIMSON COMPATIBILITY
+   * ----------------------------------------------------------
+   *
+   * These classes are kept only so old templates
+   * do not break.
+   *
+   * They are now completely mapped to orange.
+   */
+
+  .text-crimson {
+    color: var(--brand-orange-dark);
+  }
+
+  .bg-crimson {
+    background-color: var(--brand-orange-dark);
+    color: #ffffff;
+  }
+
+  .border-crimson {
+    border-color: var(--brand-orange);
+  }
+
+  .hover\:text-crimson:hover {
+    color: var(--brand-orange-strong);
+  }
+
+  .hover\:bg-crimson:hover {
+    background-color: var(--brand-orange-strong);
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE SAFETY
+   ========================================================== */
+
+@media (max-width: 639px) {
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    letter-spacing: -0.02em;
+  }
+
+}
+
+
+
+
+/* ==========================================================
+   UI REDESIGN — SECTION + COMPONENT SYSTEM
+   ========================================================== */
+
+.section-pad {
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: var(--section-y-lg);
+    padding-bottom: var(--section-y-lg);
+  }
+}
+
+.section-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-orange-dark);
+}
+
+.section-title {
+  margin-top: 0.75rem;
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+.section-lede {
+  margin-top: 0.875rem;
+  max-width: 40rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3.25rem;
+  padding: 0.875rem 1.65rem;
+  border-radius: var(--radius-cta);
+  background: #ea580c;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 24px rgba(234, 88, 12, 0.28);
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.btn-primary:hover {
+  background: #c2410c;
+  box-shadow: 0 14px 28px rgba(194, 65, 12, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3.25rem;
+  padding: 0.875rem 1.35rem;
+  border-radius: var(--radius-cta);
+  border: 1px solid var(--border-medium);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-soft);
+  transform: translateY(-1px);
+}
+
+.btn-ghost-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3.25rem;
+  padding: 0.875rem 1.35rem;
+  border-radius: var(--radius-cta);
+  border: 1px solid var(--border-medium);
+  background: #ffffff;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.btn-ghost-light:hover {
+  background: var(--surface-soft);
+  border-color: var(--border-strong);
+}
+
+.decision-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.75rem;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-light);
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 12px 28px rgba(15, 23, 42, 0.05);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.decision-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(234, 88, 12, 0.35);
+  box-shadow: 0 8px 16px rgba(11, 31, 58, 0.06), 0 20px 40px rgba(11, 31, 58, 0.1);
+}
+
+.trust-strip {
+  border-bottom: 1px solid var(--border-light);
+  background: #ffffff;
+}
+
+.site-header {
+  background: rgba(11, 31, 58, 0.94);
+  border-bottom: 1px solid rgba(26, 92, 84, 0.55);
+  backdrop-filter: blur(14px);
+}
+
+.site-announcement {
+  background: #071529;
+  border-bottom: 1px solid rgba(26, 92, 84, 0.65);
+}
+
+.form-panel {
+  border: 1px solid var(--border-light);
+  border-radius: calc(var(--radius-card) + 0.25rem);
+  background: var(--surface);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.form-field {
+  margin-top: 0.4rem;
+  width: 100%;
+  border-radius: 0.875rem;
+  border: 1px solid var(--border-medium);
+  background: #fff;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.form-field:focus {
+  border-color: var(--brand-orange-dark);
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.18);
+  outline: none;
+}
+
+.sticky-cta-bar {
+  background: rgba(11, 31, 58, 0.95);
+  border-top: 1px solid rgba(26, 92, 84, 0.75);
+  backdrop-filter: blur(16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-secondary,
+  .decision-card,
+  .premium-card {
+    transition: none !important;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .decision-card:hover,
+  .premium-card:hover {
+    transform: none !important;
+  }
+
+  .animate-marquee {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+
+
+/* ==========================================================
+   SECTION BANDS + PHOTO TREATMENT
+   ========================================================== */
+
+.section-cream {
+  background: var(--cream);
+}
+
+.section-cream-deep {
+  background: var(--cream-deep);
+}
+
+.section-ink {
+  background: #f8fafc;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-ink h1,
+.section-ink h2,
+.section-ink h3,
+.section-ink h4,
+.section-ink h5,
+.section-ink h6,
+.section-ink .section-title {
+  color: var(--text-primary);
+}
+
+#fixpreis-calculator h1,
+#fixpreis-calculator h2,
+#fixpreis-calculator h3,
+#fixpreis-calculator h4,
+#fixpreis-calculator h5,
+#fixpreis-calculator h6 {
+  color: var(--text-primary) !important;
+}
+
+#fixpreis-calculator .service-opt h4 {
+  color: var(--text-primary) !important;
+}
+
+.section-cream h1, .section-cream h2, .section-cream h3, .section-cream h4,
+.section-cream-deep h1, .section-cream-deep h2, .section-cream-deep h3, .section-cream-deep h4,
+.bg-background-light h1, .bg-background-light h2, .bg-background-light h3, .bg-background-light h4,
+.section-title {
+  color: var(--text-primary);
+}
+
+.section-ink .section-kicker {
+  color: var(--brand-orange-on-dark);
+}
+
+.section-ink .section-lede,
+.section-ink p {
+  color: var(--text-secondary);
+}
+
+.section-kicker {
+  color: var(--brand-orange-dark);
+}
+
+.text-info {
+  color: var(--brand-teal-dark);
+}
+
+.bg-info-soft {
+  background-color: var(--brand-teal-soft);
+}
+
+.photo-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius-card) - 0.15rem);
+  isolation: isolate;
+}
+
+.photo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-tile-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(11, 31, 58, 0.78) 100%);
+  pointer-events: none;
+}
+
+.decision-card--media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.decision-card--media .decision-card__body {
+  padding: 1.5rem 1.5rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.decision-card--media .decision-card__media {
+  aspect-ratio: 16 / 10;
+  position: relative;
+  overflow: hidden;
+  background: #143056;
+}
+
+.decision-card--media .decision-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 320ms ease;
+}
+
+.decision-card--media:hover .decision-card__media img {
+  transform: scale(1.04);
+}
+
+.quote-card {
+  position: relative;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-light);
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(11, 31, 58, 0.06);
+  overflow: hidden;
+}
+
+.quote-card--featured {
+  background:
+    linear-gradient(145deg, #143056 0%, #0b1f3a 100%);
+  border-color: rgba(26, 92, 84, 0.6);
+  color: #e2e8f0;
+}
+
+.quote-card--featured blockquote,
+.quote-card--featured p {
+  color: #cbd5e1;
+}
+
+.quote-mark {
+  font-family: var(--font-body);
+  font-size: 4.5rem;
+  line-height: 0.8;
+  color: var(--brand-orange);
+  opacity: 0.55;
+  font-weight: 800;
+}
+
+.process-rail {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .process-rail::before {
+    content: '';
+    position: absolute;
+    top: 2.25rem;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.45), transparent);
+    z-index: 0;
+  }
+}
+
+.hero-split {
+  display: grid;
+  gap: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .hero-split {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    min-height: auto;
+    max-height: 520px;
+  }
+}
+
+.hero-split__copy {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  background:
+    linear-gradient(135deg, rgba(11, 31, 58, 0.97) 0%, rgba(11, 47, 43, 0.92) 55%, rgba(11, 31, 58, 0.88) 100%);
+}
+
+@media (min-width: 1024px) {
+  /* Align copy with centered 72rem container; lg+ only (never on phone) */
+  .hero-split__copy-inner {
+    padding-left: max(0px, calc((100vw - 72rem) / 2));
+  }
+}
+
+.hero-split__media {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 220px;
+  max-height: min(42vh, 360px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .hero-split__media {
+    min-height: 100%;
+    max-height: 520px;
+  }
+}
+
+/* Photo only — never match WhatsApp / CTA icons */
+.hero-split__media > picture img,
+.hero-split__media > img:not(.icon-wa) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+img.icon-wa {
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  display: inline-block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+[data-hero-banner] h1,
+h1[data-hero-heading] {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.hero-split__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(248, 250, 252, 0.4) 0%, transparent 24%),
+    linear-gradient(180deg, transparent 60%, rgba(11, 31, 58, 0.2) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn-secondary {
+  font-family: var(--font-body);
+}
+
+.btn-ghost-light {
+  font-family: var(--font-body);
+}
+
+.link-cool {
+  color: var(--brand-teal-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(14, 116, 144, 0.35);
+}
+
+.link-cool:hover {
+  color: var(--brand-teal);
+}
+
+
+/* ==========================================================
+   PRINT
+   ========================================================== */
+
+@media print {
+
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  [data-hero-banner] {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  [data-hero-banner] * {
+    color: #000000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+}
+
+/* ==========================================================
+   CUSTOM HERO STYLES
+   ========================================================== */
+
+.hero-grid {
+  background-image: linear-gradient(rgba(148,163,184,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 95%);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 72% 32%, rgba(234, 88, 12,.22), transparent 38%), radial-gradient(circle at 18% 70%, rgba(14,116,144,.12), transparent 40%);
+}

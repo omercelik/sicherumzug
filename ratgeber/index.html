@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="de-AT" class="light">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#0b1f3a"/>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #f8fafc;
+        min-height: 100vh;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      [data-mobile-menu] { display: none; }
+      [data-mobile-menu]:not(.hidden) { display: flex; }
+      h1[data-hero-heading] {
+        font-size: 1.875rem;
+        line-height: 1.15;
+        font-weight: 800;
+        margin: 0;
+        color: #0b1f3a;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        max-width: 100%;
+      }
+      @media (min-width: 640px) {
+        h1[data-hero-heading] { font-size: 2.25rem; }
+      }
+      @media (min-width: 768px) {
+        h1[data-hero-heading] { font-size: 2.75rem; }
+      }
+      @media (min-width: 1280px) {
+        h1[data-hero-heading] { font-size: 3.35rem; }
+      }
+      /* Split hero: only media-column images fill the frame.
+         Do NOT target all [data-hero-banner] img — that blew up WhatsApp icons. */
+      [data-hero-banner] {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+      }
+      [data-hero-banner]:not(:has(.hero-split)) {
+        position: relative;
+        min-height: 42vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        overflow: hidden;
+      }
+      [data-hero-banner]:not(:has(.hero-split))::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        background-image: linear-gradient(rgba(11, 31, 58, 0.5), rgba(11, 31, 58, 0.82));
+      }
+      [data-hero-banner]:not(:has(.hero-split)) picture {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      [data-hero-banner]:not(:has(.hero-split)) .container {
+        position: relative;
+        z-index: 20;
+      }
+      .hero-split {
+        display: grid;
+        gap: 0;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+      }
+      @media (min-width: 1024px) {
+        .hero-split {
+          grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+          min-height: auto;
+          max-height: 520px;
+        }
+      }
+      .hero-split__copy,
+      .hero-split__media {
+        min-width: 0;
+        max-width: 100%;
+      }
+      .hero-split__media {
+        position: relative;
+        min-height: 220px;
+        max-height: min(42vh, 360px);
+        overflow: hidden;
+      }
+      @media (min-width: 1024px) {
+        .hero-split__media {
+          min-height: 100%;
+          max-height: 520px;
+        }
+      }
+      /* Only the photo in the media column — never icons / CTAs */
+      .hero-split__media > picture {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-split__media > picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      img.icon-wa {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
+        display: inline-block;
+        flex-shrink: 0;
+        object-fit: contain;
+      }
+      [data-mega-panel] {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, visibility .2s ease;
+      }
+      [data-mega-panel]::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        height: 20px;
+      }
+      .group:hover > [data-mega-panel],
+      .group:focus-within > [data-mega-panel] {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="/sicherumzug/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/sicherumzug/favicon.svg"/>
+    <link rel="shortcut icon" href="/sicherumzug/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/sicherumzug/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Sicher Team"/>
+    <link rel="manifest" href="/sicherumzug/site.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/sicherumzug/assets/css/main.css"/>
+    
+    
+    
+
+
+<title>Umzug & Entrümpelung Ratgeber für ganz Österreich | Leitfäden</title>
+<meta name="description"
+  content="Aktuelle Leitfäden zu Umzug, Nachlass, Kosten und Wertanrechnung in ganz Österreich. Praxisnah, verlässlich und mit klaren nächsten Schritten.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sicher Team">
+
+<link rel="canonical" href="https://omercelik.github.io/sicherumzug/ratgeber/">
+<link rel="alternate" hreflang="de-at" href="https://omercelik.github.io/sicherumzug/ratgeber/" />
+<link rel="alternate" hreflang="de" href="https://omercelik.github.io/sicherumzug/ratgeber/" />
+<link rel="alternate" hreflang="x-default" href="https://omercelik.github.io/sicherumzug/ratgeber/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Umzug & Entrümpelung Ratgeber für ganz Österreich | Leitfäden">
+<meta property="og:description"
+  content="Aktuelle Leitfäden zu Umzug, Nachlass, Kosten und Wertanrechnung in ganz Österreich. Praxisnah, verlässlich und mit klaren nächsten Schritten.">
+<meta property="og:url" content="https://omercelik.github.io/sicherumzug/ratgeber/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://omercelik.github.io/sicherumzug/sicherumzug/assets/images/generated/hero-street.webp">
+<meta property="og:image:alt" content="Sicher Team im Einsatz">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Umzug & Entrümpelung Ratgeber für ganz Österreich | Leitfäden">
+<meta name="twitter:description"
+  content="Aktuelle Leitfäden zu Umzug, Nachlass, Kosten und Wertanrechnung in ganz Österreich. Praxisnah, verlässlich und mit klaren nächsten Schritten.">
+<meta name="twitter:image" content="https://omercelik.github.io/sicherumzug/sicherumzug/assets/images/generated/hero-street.webp">
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://sicher-umzug.at/#organization",
+  "name": "Sicher Team",
+  "url": "https://omercelik.github.io/sicherumzug/",
+  "logo": "https://omercelik.github.io/sicherumzug/sicherumzug/logo.svg",
+  "description": "Sicher Team ist Ihr voll versicherter Partner für Umzug & Übersiedlung in ganz Österreich. 100% Fixpreis, All-Risk-Transportversicherung & geschultes Fachpersonal.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+43 660 6060775",
+    "contactType": "customer service",
+    "availableLanguage": ["German"]
+  },
+  
+  
+  
+  "sameAs": [
+    
+      "https://www.facebook.com/profile.php?id=61582785665791",
+    
+      "https://www.instagram.com/sicherteam"
+    
+  ]
+}
+</script>
+
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://sicher-umzug.at/#website",
+  "url": "https://omercelik.github.io/sicherumzug/",
+  "name": "Professioneller Umzug & Übersiedlung in Österreich | Sicher Team",
+  "publisher": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "inLanguage": "de-AT"
+}
+</script>
+
+<!-- WebPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://omercelik.github.io/sicherumzug/ratgeber/#webpage",
+  "url": "https://omercelik.github.io/sicherumzug/ratgeber/",
+  "name": "Umzug & Entrümpelung Ratgeber für ganz Österreich | Leitfäden",
+  "isPartOf": {
+    "@id": "https://sicher-umzug.at/#website"
+  },
+  "about": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "description": "Aktuelle Leitfäden zu Umzug, Nachlass, Kosten und Wertanrechnung in ganz Österreich. Praxisnah, verlässlich und mit klaren nächsten Schritten."
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- Breadcrumb Navigation Schema -->
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://omercelik.github.io/sicherumzug/ratgeber/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://omercelik.github.io/sicherumzug/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ratgeber &amp; Ressourcen",
+      "item": "https://omercelik.github.io/sicherumzug/ratgeber/"
+    }
+    
+  ]
+}
+</script>
+
+
+    <!-- GDPR Consent Management -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{
+    'ad_storage':'denied',
+    'ad_user_data':'denied',
+    'ad_personalization':'denied',
+    'analytics_storage':'denied'
+  });
+</script>
+
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#ea580c] focus:text-white focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
+      Zum Hauptinhalt springen
+    </a>
+    <div class="bg-background-light font-body text-text-light">
+    
+      <div class="relative flex min-h-screen flex-col overflow-x-hidden pb-28 md:pb-0">
+        <!-- Compact trust strip -->
+<div class="site-announcement py-2 select-none">
+  <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1 text-[11px] font-semibold tracking-wide text-white/90">
+    <span>100% Fixpreis — schriftlich</span>
+    <span class="hidden sm:inline">All-Risk bis €1.000.000</span>
+    <span class="hidden md:inline">Wien · NÖ · Österreichweit</span>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 site-header shadow-sm">
+  <div class="container mx-auto px-4">
+    <div class="flex h-16 items-center justify-between gap-4">
+
+      <a
+        href="/sicherumzug/"
+        class="flex items-center gap-2.5 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2"
+      >
+        <span class="sr-only">Sicher Team</span>
+        <img
+          src="/sicherumzug/logo.svg"
+          alt="Sicher Team Logo"
+          title="Sicher Team"
+          class="h-10 w-10 max-h-10 max-w-10 object-contain shrink-0"
+          width="40"
+          height="40"
+        />
+        <span class="flex items-center text-lg sm:text-xl font-extrabold tracking-wide leading-none whitespace-nowrap text-[color:var(--text-primary)]">
+          <span>SICHER</span>
+          <span class="ml-0.5 text-[color:var(--brand-orange)]">TEAM</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-1 text-sm font-semibold xl:flex" aria-label="Hauptnavigation">
+        <div class="group relative">
+          <button class="flex items-center gap-1 py-3 text-[color:var(--text-secondary)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-services">
+            Leistungen
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+          <div id="mega-panel-services" role="region" aria-label="Leistungen Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-[560px] -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-6 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+            <div class="grid grid-cols-2 gap-6">
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Kernleistungen</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/privatumzug/">Privatumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/umzug-wien/">Umzug Wien</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/hausumzug/">Hausumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/raeumung/">Räumung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/entruempelung-wien/">Entrümpelung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/umzug-oesterreich/">Umzug Österreich</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/auslandsumzug/">Fernumzug / Ausland</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Gewerbe</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/firmenumzug-wien/">Firmen- & Büroumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/firmenaufloesung/">Firmenauflösung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/archivumzug/">Archiv- & Aktenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/#category-gewerbe">Alle Gewerbe-Leistungen</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Premium & Spezial</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/wohlfuehl-umzug/">Wohlfühl-Umzug (Full-Service)</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/premium-logistik/">Premium Logistik & Montage</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/moebelmontage/">Möbelmontage</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/seniorenumzug/">Seniorenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/studentenumzug/">Studentenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/express-notdienst/">Express Notdienst</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Wertanrechnung</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/gratis-entruempelung/">Gratis Entrümpelung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/gratis-raeumung/">Gratis Räumung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/antiquitaeten-ankauf/">Antiquitäten Wertanrechnung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/moebel-ankauf/">Möbel Wertanrechnung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/">Alle Leistungen</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--border-light)] pt-4 text-sm">
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/leistungen/">Alle Leistungen →</a>
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/preise/">Preise ansehen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <button class="flex items-center gap-1 py-3 text-[color:var(--text-secondary)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-districts">
+            Standorte
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+          <div id="mega-panel-districts" role="region" aria-label="Standorte Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-4 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Bundesländer</p>
+            <ul class="space-y-1.5 text-sm columns-2 gap-x-4">
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] font-bold text-[color:var(--text-primary)]" href="/sicherumzug/bundesland/wien/">Wien</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/niederoesterreich/">Niederösterreich</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/burgenland/">Burgenland</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/steiermark/">Steiermark</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/oberoesterreich/">Oberösterreich</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/salzburg/">Salzburg</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/kaernten/">Kärnten</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/tirol/">Tirol</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/vorarlberg/">Vorarlberg</a>
+              </li>
+              
+            </ul>
+            <div class="mt-4 border-t border-[color:var(--border-light)] pt-3 text-sm">
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/bezirke/">Alle Standorte →</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ablauf/">Ablauf</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/preise/">Preise</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/bewertungen/">Bewertungen</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ratgeber/">Ratgeber</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ueber-uns/">Über Uns</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/angebot/">Kontakt</a>
+        
+
+        <a href="tel:+436606060775" class="ml-1 inline-flex items-center gap-1.5 px-2.5 py-3 text-[color:var(--text-primary)] hover:text-[color:var(--brand-orange)] font-bold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md" aria-label="Anrufen +43 660 6060775">
+          <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          <span class="hidden 2xl:inline">+43 660 6060775</span>
+        </a>
+
+        <a class="ml-1 rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white font-bold px-5 py-2.5 shadow-md shadow-orange-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2" href="/sicherumzug/angebot/">
+          Fixpreis-Angebot
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2 xl:hidden">
+        <a href="tel:+436606060775" class="hidden sm:inline-flex items-center justify-center h-10 w-10 rounded-full border border-[color:var(--border-light)] text-[color:var(--text-primary)] hover:border-[color:var(--brand-orange)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" aria-label="Anrufen">
+          <svg class="w-[18px] h-[18px] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        </a>
+        <a href="/sicherumzug/angebot/" class="hidden sm:inline-flex rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white text-xs font-bold px-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]">
+          Angebot
+        </a>
+        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-[color:var(--text-primary)] bg-[color:var(--surface-soft)] hover:bg-[color:var(--border-light)] active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+        <main id="main" tabindex="-1" class="flex-1 min-h-[60vh] focus:outline-none" role="main">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+    
+    
+      
+      
+
+
+
+  
+  
+  
+    
+    
+  
+    
+    
+      
+      
+
+
+
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
+  <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
+  <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
+  <div class="relative z-20 w-full">
+    
+<div class="w-full">
+<nav class="w-full z-40 py-2" aria-label="Breadcrumb">
+  <div class="container mx-auto px-4 md:px-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300 overflow-x-auto whitespace-nowrap scrollbar-none">
+    <a href="/sicherumzug/" aria-label="Startseite" class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded px-1 transition-colors flex items-center gap-1">
+      <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+      <span>Home</span>
+    </a>
+    <svg class="w-4 h-4 shrink-0 text-slate-400 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+
+    
+    
+
+    
+      
+    
+      
+        
+        
+          <span class="text-white font-bold max-w-[200px] truncate" aria-current="page">Ratgeber & Ressourcen</span>
+        
+      
+    
+  </div>
+</nav>
+</div>
+
+
+  </div>
+  <div class="flex-grow flex flex-col justify-center pb-12">
+    
+
+
+
+
+<div class="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white">
+  <div class="max-w-4xl mx-auto text-left md:text-center space-y-4 md:space-y-5">
+    
+    
+    <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-[#f0a060] backdrop-blur-sm m-0">
+      Ratgeber
+    </p>
+    
+
+    <h1 class="text-3xl sm:text-4xl md:text-[2.75rem] xl:text-5xl font-extrabold text-white leading-tight tracking-tight m-0 break-words [overflow-wrap:anywhere] max-w-full" data-hero-heading>
+      
+        Ratgeber & Ressourcen
+      
+    </h1>
+
+    <p class="text-[#d4e5e0] text-base md:text-lg max-w-2xl leading-relaxed m-0 ">
+      
+        Aktuelle Leitfäden zu Umzug, Nachlass, Kosten und Wertanrechnung in ganz Österreich. Praxisnah, verlässlich und mit klaren nächsten Schritten.
+      
+    </p>
+
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="pt-1 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
+      
+        <a href="/sicherumzug/angebot/#angebot-form" class="btn-primary">
+          Gratis Besichtigung sichern
+        </a>
+      
+      <a href="https://wa.me/436606060775" class="btn-ghost-light text-sm">
+        <svg class="shrink-0 w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+        WhatsApp Foto senden
+      </a>
+      <a href="tel:+436606060775" class="inline-flex items-center justify-center gap-2 min-h-[3.25rem] px-4 text-sm font-semibold text-[#d4e5e0] hover:text-white underline-offset-4 hover:underline">
+        <svg class="shrink-0 w-4 h-4 text-[#f0a060] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        Jetzt anrufen
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+<section class="bg-background-light py-12">
+  <div class="container mx-auto px-4">
+    
+    
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Betriebskostenabrechnung beim Auszug in Österreich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Betriebskosten &amp; Auszug in Österreich
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/betriebskostenabrechnung-auszug-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Sperrmüll & Entsorgung in Niederösterreich & Burgenland</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Entsorgung in NÖ &amp; Burgenland
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/sperrmuell-entsorgung-niederoesterreich-burgenland/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Kunst- & Antiquitätentransport Wien: Spezialverpackung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Kunst- &amp; Antiquitätentransport
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/kunst-antiquitaetentransport-wien-wertanrechnung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzugsaufzug & Möbellift mieten in Wien: StVO & Kosten</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Außenaufzug / Möbellift in Wien
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzugsaufzug-moebellift-mieten-wien-stvo/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzug mit Kindern in Österreich: Schulwechsel & Fristen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Familienumzug Checklist in Österreich
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzug-mit-kindern-oesterreich-schulwechsel/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzug ins betreute Wohnen & Seniorenheim in Österreich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Seniorenumzug &amp; Wohnungsauflösung
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzug-betreutes-wohnen-seniorenheim-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Haftung bei Umzugsschäden in Österreich: Privathelfer vs. Profi</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Haftung bei Transportschäden
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/haftung-umzugsschaeden-oesterreich-spedition/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Mietkaution & Ausmalpflicht in Österreich: MRG-Rechtslage</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Kaution &amp; Wandzustand beim Auszug
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/mietkaution-ausmalpflicht-oesterreich-mrg/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzugskosten steuerlich absetzen in Österreich (Arbeitnehmerveranlagung)</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Umzugskosten &amp; Steuer in Österreich
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzugskosten-steuerlich-absetzen-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Sonderurlaub bei Umzug in Österreich: Anspruch & Recht</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schnell-Überblick: Fakten zum Sonderurlaub bei Übersiedlung
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/sonderurlaub-umzug-oesterreich-arbeitsrecht/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Möbelmontage beim Umzug: Tipps für den perfekten Schrank-Abbau</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn es an den Wohnungswechsel in Wien oder ganz Österreich geht, sind Kisten schnell gepackt. Das wahre Nadelöhr eines jeden Umzugs ist jedoch die fachgerec...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 23.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/moebelmontage-abbau-tipps/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzugskartons berechnen: Wie viele brauchen Sie?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Einer der häufigsten Fehler bei der Umzugsplanung ist die drastische Unterschätzung des benötigten Verpackungsmaterials. Am letzten Abend vor dem Umzug geht ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 22.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-22-umzugskartons-verpackungsmaterial-berechnen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Möbeltaxi Wien: Der schnelle Transport für Einzelstücke</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Manchmal steht kein kompletter Wohnungswechsel an, sondern es geht nur um den Transport eines einzigen, schweren Möbelstücks. Sie haben auf Willhaben ein wun...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 21.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-21-moebeltaxi-wien-kleintransport/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Zerbrechliche Gegenstände sicher verpacken: So geht nichts zu Bruch</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Das Klirren von zerbrochenem Glas oder wertvollem Porzellan ist das Geräusch, das niemand am Umzugstag hören möchte. Das fachgerechte Verpacken (Einpackservi...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 17.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/zerbrechliche-gegenstaende-verpacken/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzug mit Haustieren in Österreich: Stressfrei für Hund und Katze</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug bedeutet für uns Menschen vor allem logistischen Aufwand und organisatorischen Stress. Für unsere tierischen Mitbewohner bedeutet er jedoch den kom...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 16.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzug-mit-haustieren/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Möbelpacker vs. DIY Umzug: Was lohnt sich wirklich?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn ein Wohnungswechsel ansteht, stellt sich fast jeder in Österreich dieselbe Frage: Beauftrage ich ein professionelles Umzugsunternehmen oder wähle ich de...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 13.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/moebelpacker-vs-diy-umzug/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Küche abbauen und umziehen: Tipps & Profi-Service</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Küche ist nicht nur das Herzstück jeder Wohnung, sondern auch der komplexeste und schwerste Teil eines jeden Wohnungswechsels. Ein Küchenumzug bedeutet w...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 11.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/kueche-abbauen-umziehen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Auslandsumzug Österreich - Deutschland: Was Sie beachten müssen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Wohnsitzwechsel in ein anderes Land ist stets ein spannendes Kapitel, bringt jedoch logistische und planerische Herausforderungen mit sich. Auch wenn es ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-09-auslandsumzug-deutschland-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Tresortransport & Schwerlasttransport in Österreich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Normale Möbelpacker stoßen bei Gegenständen, die mehrere hundert Kilogramm wiegen, schnell an ihre Grenzen. Ob es sich um den Umzug eines schweren Waffenschr...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 05.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/tresortransport-schwerlast-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Studentenumzug Österreich: Günstig in die WG</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Der Beginn eines Studiums ist eine aufregende Zeit. Der erste große Schritt in die Unabhängigkeit ist oft der Umzug in eine neue Stadt, sei es nach Wien, Gra...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 03.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-03-studentenumzug-graz-guenstig/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Firmenumzug Niederösterreich: Planung & Logistik</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Firmenumzug stellt Unternehmen vor enorme logistische Herausforderungen. Ob Sie Ihr Büro nach St. Pölten, Wiener Neustadt oder in die Umgebung von Wien v...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 02.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-02-firmenumzug-niederoesterreich-tipps/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Professionelle Übersiedlung Wien: Ihr Logistik-Partner</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug – ob privat oder geschäftlich – bedeutet oft einen enormen organisatorischen und logistischen Aufwand. Doch mit der richtigen Planung und einem ver...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 01.08.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-08-01-professionelle-uebersiedlung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Eigenbedarfskündigung: Was Mieter jetzt wissen müssen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Eigenbedarfskündigung trifft Mieter meist völlig unvorbereitet. In Österreich ist das Mietrecht jedoch sehr mieterfreundlich gestaltet. Eine Kündigung w...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 05.07.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-07-05-eigenbedarfskuendigung-rechte-mieter/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Auslandsumzug planen: Tipps für den Umzug über die Grenze</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug über die Staatsgrenzen hinweg ist ein aufregendes Abenteuer, verlangt jedoch auch eine weitaus detailliertere Logistik als ein Inlandsumzug.
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 08.06.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-06-08-auslandsumzug-planen-tipps/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung vor der Sanierung: Was muss raus?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Bevor die Handwerker kommen, muss Platz geschaffen werden. Lesen Sie, warum eine professionelle Räumung inklusive Demontage vor einer Renovierung Zeit und Ge...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 16.04.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-vor-sanierung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Zum Artikel
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Recht</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Delogierung & Zwangsräumung: Hilfe für Vermieter</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die juristische Räumungsklage war erfolgreich, doch die Wohnung gleicht einem Schlachtfeld? Wir unterstützen Vermieter und Hausverwaltungen in Wien mit diskr...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 16.04.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/delogierung-zwangsraeumung-wien-vermieter/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Zum Artikel
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Räumung Wien: 5 fatale Fehler, die Sie vermeiden müssen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Schwarze Schafe in der Branche locken oft mit falschen Versprechen. Erfahren Sie, wie Sie Abzocke, versteckte Kosten und Ärger bei der Beauftragung einer Räu...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.04.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/raeumung-wien-5-fatale-fehler/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Zum Artikel
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung im Gemeindebau: Tipps für die Rückgabe an Wiener Wohnen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Rückgabe einer Gemeindewohnung an Wiener Wohnen ist mit strengen Vorgaben verbunden. Werden diese nicht eingehalten, drohen Nachzahlungen oder Verzögerun...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 20.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-gemeindebau-wiener-wohnen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Firmenumzug effizient gestalten: Ausfallzeiten minimieren</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Firmenumzug ist ein logistisches Großprojekt. Jede Stunde Ausfallzeit kostet Geld. Eine lückenlose Planung ist daher der Schlüssel zu einer schnellen Bet...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 18.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-02-18-firmenumzug-effizient-gestalten/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Checkliste</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Die perfekte Checkliste für die Wohnungsräumung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine ganze Wohnung auflösen – wo fängt man an? Mit unserer praxiserprobten 7-Schritte-Checkliste behalten Sie den Überblick bis zur besenreinen Übergabe.</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 12.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/checkliste-wohnungsraeumung-7-schritte/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Zum Artikel
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Firmenumzug in Österreich: Erfolgreiche Planung für Ihr Unternehmen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Firmenumzug oder eine Betriebsverlagerung ist ein hochkomplexes Projekt, das sich in wesentlichen Punkten von einem privaten Umzug unterscheidet. Während...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/firmenumzug-oesterreich-profi-planung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Verpackungstipps für den Umzug: Richtig packen wie die Profis</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Das richtige Verpacken des Hausrats ist die wichtigste Voraussetzung für einen schadenfreien Umzug. Viele Menschen unterschätzen diesen Schritt und beginnen ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/verpackungstipps-umzug-anleitung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzugskosten in Österreich: Transparente Preise und clevere Spartipps</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">TL;DR: Was kostet ein Umzug?
+
+  Wer: Privatpersonen und Firmen, die einen Überblick über realistische Preise suchen.
+  Was: Ein professioneller Umzug in Öste...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzugskosten-oesterreich-sparen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Umzug Österreich: Der ultimative Profi-Leitfaden für Ihre Übersiedlung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug innerhalb Österreichs – ob von der Bundeshauptstadt Wien in die idyllischen Alpen nach Tirol, von Linz nach Graz oder innerhalb der eigenen Gemeind...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/umzug-oesterreich-profi-guide/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Studentenumzug in Österreich: Günstig und schlau ins neue Semester starten</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Der Start in das Studium ist ein aufregendes neues Kapitel im Leben. Ob Sie für Ihr Studium an die Universität Wien, die TU Graz, die JKU Linz oder die Unive...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/studentenumzug-oesterreich-wg-tipps/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Seniorenumzug in Österreich: Sorgenfrei und einfühlsam übersiedeln</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug im fortgeschrittenen Alter ist weit mehr als nur ein Wechsel der Adresse. Oft bedeutet er den Abschied von einem Zuhause, in dem man jahrzehntelang...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/seniorenumzug-oesterreich-profi-hilfe/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Möbeltransport in Österreich: Sicherer Transport für Ihre Einrichtung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Der Transport von Möbeln stellt bei jeder Übersiedlung eine besondere logistische Herausforderung dar. Ob wertvolle Antiquitäten, empfindliche Designermöbel,...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/moebeltransport-profi-leitfaden/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Der große Leitfaden für den internationalen Umzug von und nach Österreich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug über Ländergrenzen hinweg ist eine logistische und organisatorische Meisterleistung. Ob Sie von Deutschland, der Schweiz oder aus Übersee nach Öste...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/internationaler-umzug-oesterreich-profi/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Halteverbotszone für den Umzug einrichten: Vorschriften und Ablauf in Österreich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein erfolgreicher Umzug steht und fällt mit der Logistik direkt vor der Haustür. Wer am Umzugstag mit einem großen Lkw ankommt und keinen Parkplatz in der Nä...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/halteverbotszone-umzug-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Behörden nach dem Umzug in Österreich: Ihr praktischer Amtsweg-Leitfaden</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Der physische Umzug ist geschafft, alle Kisten stehen in den neuen Räumen und die Möbel sind aufgebaut. Doch bevor Sie sich ganz entspannt zurücklehnen könne...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/behoerdenwege-nach-umzug-oesterreich/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Gebrauchte Möbel bewerten in Wien: Schrott oder verkaufbar?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Viele Haushalte entsorgen zu früh. Genau dort geht Geld verloren. In Wien sehen wir regelmässig gut erhaltene Stücke, die als Sperrmüll eingeplant wurden, ob...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/gebrauchte-moebel-verkaufen-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Was kostet eine Wohnungsauflösung in Wien? Preislogik 2026</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Zusammenfassung: Das Sicher Team kalkuliert jede Haushaltsauflösung und Entrümpelung in Wien transparent und nachvollziehbar mit einer 100% Fixpreis-Garantie...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/was-kostet-eine-haushaltsaufloesung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Was tun mit alten Schätzen? Verkaufen, Spenden, Recyceln</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Nicht alles, was bei einer Wohnungsauflösung aussortiert wird, muss auf dem Müll landen. Viele Gegenstände haben noch einen Wert und können verkauft, gespend...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/verkaufen-spenden-recycling/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Richtig ausmisten: So schaffen Sie Platz und Ordnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ausmisten ist oft der erste Schritt zu einer erfolgreichen Wohnungsauflösung. Es schafft nicht nur physisch Platz, sondern auch mentale Klarheit. Mit den ric...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/richtig-ausmisten/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Nachlass</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Nachlassverbindlichkeiten bei der Wohnungsauflösung verstehen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Nach einem Todesfall wird oft zuerst über Emotionen gesprochen und erst später über Kosten. In der Praxis ist es umgekehrt sinnvoll: Wer Nachlassverbindlichk...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/nachlassverbindlichkeiten-wohnungsaufloesung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Möbel verkaufen: Willhaben vs. Sofort-Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ausgangslage: Möbel loswerden ohne Stress
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/moebel-verkaufen-willhaben-vs-sofort-ankauf/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Vergleich</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">MA 48 oder Räumungsfirma? Der Praxisvergleich 2026</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Frage “MA 48 oder Firma?” wird oft als reine Preisfrage gestellt. In der Praxis geht es aber um vier Faktoren gleichzeitig: Zeit, Risiko, Koordination un...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/ma48-vs-firma/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">MA 48 Mistplatz: Regeln, Abfallwege und Checkliste 2026</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die MA 48 ist in Wien eine starke Option für geordnete Entsorgung. Trotzdem scheitern viele Projekte an der Praxis: falsche Trennung, zu wenig Zeit, zu klein...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/ma48-mistplatz-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wohnungsauflösung nach einem Todesfall: Was ist zu beachten?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Auflösung einer Wohnung nach einem Todesfall ist eine emotionale und organisatorische Herausforderung. Neben der Trauer müssen sich die Hinterbliebenen u...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/haushaltsaufloesung-todesfall/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Express Entrümpelung & Containerlogistik in Wien und Umgebung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn es schnell gehen muss
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/express-entruempelung-container-logistik/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Checkliste für die Wohnungsauflösung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Wohnungsauflösung kann überfordern. Mit der richtigen Struktur behalten Sie jedoch den Überblick. Nutzen Sie diese Checkliste, um Schritt für Schritt vo...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 09.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/checkliste-haushaltsaufloesung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Vergleich</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung: Entrümpelungsdienst oder Räumungsfirma?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Entrümpelung ist mehr als Abtransport. Es geht um Planung, Sortierung, Entsorgung und eine saubere Übergabe. Ob ein Entrümpelungsdienst reicht oder eine...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 02.02.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelungsdienst-oder-entruempelungsfirma/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Business</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Praxisauflösung in Wien: Checkliste und Ablauf</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Praxisauflösung erfordert klare Schritte, saubere Dokumentation und sensible Abläufe. Hier ist eine kompakte Checkliste für Wien, damit die Übergabe pla...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 29.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/praxisaufloesung-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Klavier-Transport sicher planen: Warum Profis unverzichtbar sind</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Klaviere und Flügel sind nicht nur schwer und sperrig, sondern auch hochgradig empfindlich. Ein unsachgemäßer Transport kann teure Schäden an Gehäuse und Mec...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/2026-01-25-klavier-transport-sicher-planen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Räumung Wien: Übergabeprotokoll, Besenrein und Schlüsselrückgabe</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Nach einer Räumung in Wien entscheidet das Übergabeprotokoll, ob alles sauber abgeschlossen ist. Mit klaren Punkten, Fotos und besenreiner Übergabe vermeiden...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 18.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/raeumung-wien-uebergabeprotokoll/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Zimmer Räumung Wien: WG-Übergabe, Zeitplan und Kostenfaktoren</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Zimmer Räumung in Wien ist oft kurzfristig, etwa bei WG-Wechsel, Studienende oder Umzug. Mit einem klaren Zeitplan und einem Fixpreis behalten Sie die K...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 17.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/zimmer-raeumung-wien-wg-uebergabe/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Räumungexperte Wien: So läuft die Besichtigung zum Fixpreis</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wer nach einem Räumungexperten in Wien sucht, will Klarheit: Wie läuft die Besichtigung ab, wie entsteht der Fixpreis und welche Fragen sollte man stellen? D...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 14.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/raeumungexperte-wien-besichtigung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Kellerräumung Wien: Kosten, Feuchtigkeit und Problemstoffe</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Kellerräumung in Wien hat eigene Herausforderungen: enge Zugänge, feuchte Wände und oft viele Mischmaterialien. Mit der richtigen Vorbereitung sparen Si...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/kellerraeumung-wien-kosten-feuchtigkeit/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn ein Geschäftslokal in Wien geräumt werden muss, zählen klare Termine und eine saubere Übergabe. Dieser Leitfaden zeigt, wie Rückbau, Entsorgung und Fixp...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 08.01.2026
+        </div>
+        <a href="/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entrümpelung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Gartenräumung Wien: Frühjahrsputz, Herbstlaub & Gartenmöbel Entsorgung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Gartenräumung steht mindestens zweimal im Jahr an: im Frühjahr nach dem Winter und im Herbst vor dem Frost. Doch auch ein Umzug, eine Wohnungsauflösung ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 19.12.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/gartenraeumung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Haus</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Hausräumung Wien: Checkliste, Ablauf & Kosten mit Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Hausräumung in Wien ist mehr als Sperrmüll abholen. Meist geht es um mehrere Etagen, Keller, Dachboden und oft auch den Garten. Dieser Leitfaden zeigt I...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 12.12.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/hausraeumung-wien-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Standorte</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung Korneuburg, Tulln & Schwechat: Logistik, Preise, Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wer in Wien-Umgebung entrümpeln will, braucht klare Logistik und faire Preise. Hier fassen wir zusammen, wie Entrümpelungen in Korneuburg, Tulln und Schwecha...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 06.12.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/niederoesterreich-umland-standorte/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Standorte</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung Burgenland Nord & Mitte: Mattersburg, Rust, Oberpullendorf</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Für Burgenland Nord &amp; Mitte zählen kurze Wege, regionale Entsorger und die richtige Planung für Seehäuser, Vierkanthöfe oder Gewerbeobjekte. So laufen En...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 06.12.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/burgenland-nord-standorte/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung Wien: MA 48 und Wertanrechnung richtig kombinieren</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Viele Haushalte googeln „entrümpelung wien ma 48“, „Wertanrechnungräumung wien“ oder „zimmer räumung wien“, wenn die Übergabe naht. Dieser Leitfaden zeigt, w...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 04.12.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/ma48-Wertanrechnung-entrumpelung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Gratis Räumung Wien mit Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Viele Kundinnen und Kunden fragen: Geht eine Räumung auch gratis? Ja, wenn genug Werte vor Ort sind und angerechnet werden. Wir kaufen verwertbare Stücke an,...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 27.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/gratis-raeumung-wertanrechnung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Standorte</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung österreichweit: Steiermark, Kärnten, Oberösterreich & Salzburg</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wir bleiben mit Teams in Wien verankert, betreuen aber ab sofort auch größere Räumungen in der Steiermark, Kärnten, Oberösterreich und Salzburg. Für Sie heiß...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 26.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-oesterreich-standorte/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">MA 48 Entrümpelung Wien: Kosten, Ablauf & Alternativen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die MA 48 (Abfallwirtschaft, Straßenreinigung und Fuhrpark) ist für die Sauberkeit in Wien unverzichtbar. Wenn es um die tägliche Müllabfuhr oder die Entsorg...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 18.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/ma48-entruempelung-kosten-ablauf/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelungsangebot Wien: MA 48 oder Wertanrechnung?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Suchanfragen der vergangenen Woche zeigen einen klaren Trend: „Entrümpelung Wien MA 48“, „Dachboden Räumung Wien“ und „Wertanrechnungräumung“ stehen ganz...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 13.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelungsangebot-wien-ma48/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wertanrechnung Räumung Wien: So läuft die faire Anrechnung von Fundstücken</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Viele Kund:innen stehen vor derselben Frage: Wie funktioniert eine Wertanrechnung Räumung konkret, wer bewertet meine Möbel und wie wird die Gutschrift späte...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 08.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/wertanrechnung-raeumung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Spezialfall</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Dachbodenräumung Wien: Checkliste für MA 48 & Profi</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Dachbodenräumung in Wien ist selten ein schneller Wochenendjob. Steile Altbau-Stiegen, niedrige Luken, Spitzböden ohne Licht und historische Substanz er...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 05.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/dachboden-raeumung-wien-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Gewerbe</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung zum Jahresabschluss: Firmen fit für 2026 machen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Der Jahreswechsel ist die ideale Gelegenheit, Büros, Lager und Archive aufzuräumen. Mit einer strukturierten Entrümpelung reduzieren Sie Bestände, schaffen P...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 01.11.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/firmen-entrumpelung-jahresabschluss/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Saison</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung vor dem Winter: So bleibt alles frei und sicher</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die kalte Jahreszeit bringt spezielle Anforderungen mit sich: vereiste Gehsteige, gefrorene Gegenstände, knappe Halteverbotszeiten und Feiertage. Mit unseren...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 31.10.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/winter-entrumpelung-vorbereiten/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Wohnung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wohnungsentrümpelung Wien: Ablauf, Kosten & MA 48 vs. Profi</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Wohnungsentrümpelung Wien gelingt stressfrei, wenn Ablauf, Logistik und Wertanrechnung klar geplant sind. Diese Anleitung fasst die wichtigsten Schritte...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 29.10.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/wohnungsentruempelung-wien-guide/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Anbieterwahl</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Räumungsfirma Wien: Checkliste für Fixpreis & Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 06.10.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/raeumungsfirma-wien-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wertanrechnung meistern: So senken Sie Ihre Räumungskosten</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Wertanrechnung ist der schnellste Weg, eine Entrümpelung oder Wohnungsauflösung zu finanzieren. Je nach Objekt lassen sich mehrere tausend Euro an Erlöse...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 30.09.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/wertanrechnung-guide/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entsorgung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Elektrogeräte entsorgen: Richtige Wege für Wien & Umgebung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ob Wohnung, Haus oder Gewerbefläche: Elektrogeräte stellen bei der Entrümpelung eine eigene Disziplin dar. Sie müssen fachgerecht getrennt, transportiert und...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 26.09.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/elektrogeraete-entsorgen-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Gewerbe</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Checkliste Lager-Entrümpelung: Vom Regalsystem bis zur Übergabe</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Lager-Entrümpelung ist oft der letzte Schritt vor Rückgabe oder Umzug. Damit keine Überraschungen auftreten, haben wir die wichtigsten Aufgaben in einer...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 19.09.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/lagerraeumung-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Planung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Herbst-Entrümpelung: MA 48 Termine optimal nutzen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn die Temperaturen sinken, füllen sich die Terminkalender der MA 48. Viele Haushalte entrümpeln jetzt Keller, Dachboden oder Gartenhaus, bevor Wintereinla...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 12.09.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/herbst-entrumpelung-ma48/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Privat</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wohnungsräumung für Senioren: Sanfter Umzug planen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Wohnungsräumung für Senioren erfordert mehr als Muskelkraft. Häufig geht es um ein neues Kapitel in einer betreuten Einrichtung oder um das Zusammenzieh...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 05.09.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/wohnungsraeumung-senioren/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wohnungsauflösung bei Umzug ins Pflegeheim</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein Umzug ins Pflegeheim ist emotional schwer. Wir übernehmen die Wohnungsauflösung in Wien diskret, schnell und mit fairer Wertanrechnung.</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 15.05.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/uebersiedlung-pflegeheim-wohnungsaufloesung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Mehr erfahren
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Bibliothek & Sammlungen auflösen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wenn tausende Bücher oder seltene Sammlungen aufgelöst werden müssen: Logistik, Schätzung und profitabler Wertanrechnung in Wien.</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 15.05.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/bibliothek-sammlungen-aufloesen-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Mehr erfahren
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Räumung einer Altbauwohnung in Wien</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Herausforderungen bei der Entrümpelung einer Wiener Altbauwohnung meistern: Von Logistik und Parkraum bis hin zum profitablen Wertanrechnung.</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 15.05.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/altbauwohnung-raeumung-wien-logistik-Wertanrechnung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Mehr erfahren
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Keller</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Kellerräumung Wien: Checkliste, Ablauf & Kosten mit Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein voller Keller kostet Zeit, Platz und oft Nerven. Mit einer klaren Planung wird die Kellerräumung in Wien schneller, günstiger und stressfrei. Dieser Leit...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 14.02.2025
+        </div>
+        <a href="/sicherumzug/ratgeber/kellerraeumung-wien-checkliste/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Verwaltung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wohnungsräumung kostenlos melden: Formulare & Fristen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wer eine Wohnungsräumung kostenlos melden möchte, braucht einen klaren Überblick über Zuständigkeiten und Fristen. In Wien und Niederösterreich gibt es zwar ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 24.09.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/wohnungsraeumung-kostenlos-melden/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Gratis Entrümpelung in Wien: Überblick mit MA 48 & Wertanrechnung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Sie suchen nach einer Gratis Entrümpelung in Wien? Viele Angebote wirken verlockend, doch nicht jedes hält stand. Tatsächlich kann eine Entrümpelung kostenfr...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 18.09.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/gratis-entruempelung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Notfall</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung mit Sofort-Hilfe: Express-Räumungen in Wien</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Manchmal duldet eine Entrümpelung keinen Aufschub. Ob ein plötzlicher Umzug, ein Wasserschaden im Keller oder die dringende Übergabe einer Messie-Wohnung: In...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 03.09.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/entruepelung-mit-sofort-hilfe/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Beseitigung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Sperrmüllabholung in Wien: Privat oder MA 48?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ob nach dem Ausmisten oder vor dem Umzug: Sperrmüll muss weg. In Wien gibt es dafür zwei Wege – die städtische MA 48 und private Anbieter. Doch welcher Weg i...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 12.08.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/sperrmuell-abholung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Nachhaltigkeit</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Nachhaltig entrümpeln in Wien: Wertanrechnung, Spenden, Recycling</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Nachhaltig entrümpeln muss kein Wegwerfprojekt sein. Mit Wertanrechnung, Spenden und sortenreiner Trennung holen Sie das Maximum aus jedem Gegenstand heraus ...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 22.07.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/nachhaltig-entrumpeln-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Business</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Büro- und Gewerberäumung DSGVO-konform abwickeln</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Gewerbliche Räumungen bedeuten mehr als Möbel abtransportieren. IT, Akten und Branding müssen sicher entfernt werden, damit DSGVO und Markenrichtlinien einge...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 01.07.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/buero-und-gewerberaemung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Spezialfall</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Messie-Wohnung räumen: Sicherheits- und Hygieneplan</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Messie-Wohnungen stellen hohe Anforderungen an Sicherheit, Psychologie und Logistik. Dieser Leitfaden erklärt, wie Entrümpelung und Reinigung zusammenspielen.
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 10.06.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/messie-wohnung-aufloesen/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wie lange dauert eine Wohnungsauflösung in Wien? (Zeitplan)</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Zeit ist Geld – besonders wenn Mietverträge enden oder Immobilien verkauft werden sollen. Mieter und Erben unterschätzen oft den zeitlichen Aufwand einer kom...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 19.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/dauer-haushaltsaufloesung-zeitplan-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Schwerlastentsorgung Wien: Tresore, Klaviere und Maschinen richtig räumen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Standard-Möbel kann man mit ein paar Helfern meist selbst tragen. Doch was passiert bei einer Wohnungsauflösung, wenn man plötzlich vor einem 400-Kilo-Tresor...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 18.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/schwerlastentsorgung-tresor-klavier-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Verlassenschaftsankauf & Notarablauf in Wien: Schritt-für-Schritt</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Nach einem Todesfall in Wien stehen Erben nicht nur vor emotionalen, sondern auch vor streng bürokratischen Herausforderungen. Die Abwicklung einer Verlassen...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 17.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/verlassenschaftsankauf-notar-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Garagenräumung in Wien: Sondermüll, Reifen und Altöl richtig entsorgen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Garagen in Wien mutieren oft zu heimlichen Lagerräumen für alles, was im Haus keinen Platz mehr findet. Bei einer Garagenräumung stößt man jedoch schnell auf...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 16.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/garagenraeumung-wien-sondermuell/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung nach Mietnomaden in Wien: Kosten, Ablauf & Rechte für Vermieter</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Hinterlassenschaften von Mietnomaden sind für Vermieter in Wien ein Albtraum: Zerstörte Substanz, Müllberge und blockierte Einnahmen. Dieser Leitfaden bi...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 15.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-mietnomaden-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Ablauf einer Entrümpelung mit Wertanrechnung im Wiener Altbau: Logistik, Halteverbote & MA 48</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Wiener Altbauwohnungen bestechen durch ihren historischen Charme, hohe Decken und klassische Flügeltüren. Doch genau diese Eigenschaften machen die Auflösung...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 03.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/ablauf-entruempelung-wertanrechnung-wiener-altbau/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Wertanrechnung vs. Willhaben-Verkauf bei Wohnungsräumungen in Wien: Ein Kosten-Zeit-Vergleich</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Eine Wohnungsräumung oder Wohnungsauflösung in Wien steht an, und Sie stehen in einer Wohnung voller Möbel, Bücher, Geschirr und Hausrat. Der erste Gedanke v...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 02.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/wertanrechnung-vs-willhaben-verkauf-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Verlassenschaften in Wien richtig schätzen: Was ist Müll, was ist wertvoll?</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Die Auflösung einer Verlassenschaft ist oft nicht nur eine große emotionale Belastung, sondern auch eine immense logistische und finanzielle Herausforderung....</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 01.05.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/verlassenschaften-wien-schaetzen-wertanrechnung/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Logistik</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Halteverbot für die Entrümpelung in Wien beantragen</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Ein genehmigtes Halteverbot direkt vor dem Objekt entscheidet, ob eine Räumung in wenigen Stunden oder in mehreren Tagen erledigt ist. Hier erfahren Sie, wie...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 15.04.2024
+        </div>
+        <a href="/sicherumzug/ratgeber/halteverbot-entrumpelung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entrümpelung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Kostenfallen bei Entrümpelungen in Wien: Vorsicht vor Lockangeboten</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">TL;DR: So schützen Sie sich vor Betrug bei Räumungen
+
+  Vorsicht bei “Gratis”: Kostenlose Räumungen gibt es nur, wenn der Wert des Inventars die hohen Arbeit...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.10.2023
+        </div>
+        <a href="/sicherumzug/ratgeber/kostenfallen-entruempelung-wien-lockangebote/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entrümpelung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Kleingarten & Schrebergarten Räumung in Wien: Diskret, Schnell & Besenrein</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">TL;DR: Die wichtigsten Fakten zur Kleingartenräumung in Wien
+
+  Speziallogistik: Wir meistern schmale Gehwege, fehlende Zufahrten und strenge Vereinsregeln i...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.10.2023
+        </div>
+        <a href="/sicherumzug/ratgeber/kleingarten-schrebergarten-raeumung-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Gewerblich</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Hotel- & Gastronomie Räumung in Wien: Gewerbe-Entrümpelung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">TL;DR: Gewerbliche Räumung für Gastro &amp; Hotellerie in Wien
+
+  Volumen-Spezialisten: Wir bewältigen hunderte Quadratmeter Hotelzimmer oder riesige Gastros...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.10.2023
+        </div>
+        <a href="/sicherumzug/ratgeber/hotel-gastronomie-raeumung-gewerbe-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entrümpelung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung nach Brand- oder Wasserschaden in Wien: Schnelle Hilfe</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">TL;DR: Soforthilfe bei Schadensfällen in Wien
+
+  Express-Service: Rasche Besichtigung und schnelle Räumung nach Freigabe durch Behörden/Versicherung.
+  Siche...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.10.2023
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-brand-wasserschaden-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Entrümpelung</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Entrümpelung bei Auswanderung aus Wien: Stressfrei ins Ausland</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">
+
+</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 25.10.2023
+        </div>
+        <a href="/sicherumzug/ratgeber/entruempelung-auswanderung-umzug-ausland-wien/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Weiterlesen
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+      <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-accent">Leitfaden</p>
+        <h2 class="mt-3 text-xl font-bold text-primary">Firmenauflösung & Büroräumung in Wien: DSGVO & Verwertung</h2>
+        <p class="mt-3 flex-1 text-sm text-text-light">Bei einer Betriebsauflösung geht es um mehr als nur Möbel. Erfahren Sie, warum DSGVO-konforme Aktenvernichtung und die Verwertung von Büro-Inventar entscheid...</p>
+        <div class="mt-4 text-xs uppercase tracking-widest text-gray-500">
+          Aktualisiert am 
+        </div>
+        <a href="/sicherumzug/ratgeber/firmenauflesung-bueroraeumung-wien-dsgvo/" class="mt-6 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary hover:bg-primary-light px-4 py-2.5 text-sm font-bold text-white transition-opacity duration-200">
+          Zum Artikel
+          <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+        </a>
+      </article>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="richtext max-w-3xl">
+      <h2 id="noch-fragen">Noch Fragen?</h2>
+
+<p>Fehlt ein Thema rund um Umzug, Räumung, Verlassenschaft oder den Ablauf in Ihrem Bundesland? Schreiben Sie uns. Wir erweitern den Ratgeber laufend mit neuen Inhalten für ganz Österreich.</p>
+
+<h3 id="neu-erschienene-ratgeber--rechtsthemen">Neu erschienene Ratgeber &amp; Rechtsthemen</h3>
+
+<ul>
+  <li><a href="/ratgeber/sonderurlaub-umzug-oesterreich-arbeitsrecht/">Sonderurlaub bei Umzug in Österreich: Anspruch &amp; Recht</a></li>
+  <li><a href="/ratgeber/umzugskosten-steuerlich-absetzen-oesterreich/">Umzugskosten steuerlich absetzen in Österreich (Arbeitnehmerveranlagung)</a></li>
+  <li><a href="/ratgeber/mietkaution-ausmalpflicht-oesterreich-mrg/">Mietkaution &amp; Ausmalpflicht in Österreich: MRG-Rechtslage</a></li>
+  <li><a href="/ratgeber/haftung-umzugsschaeden-oesterreich-spedition/">Haftung bei Umzugsschäden in Österreich: Privathelfer vs. Profi</a></li>
+  <li><a href="/ratgeber/umzug-betreutes-wohnen-seniorenheim-oesterreich/">Umzug ins betreute Wohnen &amp; Seniorenheim in Österreich</a></li>
+  <li><a href="/ratgeber/umzug-mit-kindern-oesterreich-schulwechsel/">Umzug mit Kindern in Österreich: Schulwechsel &amp; Fristen</a></li>
+  <li><a href="/ratgeber/umzugsaufzug-moebellift-mieten-wien-stvo/">Umzugsaufzug &amp; Möbellift mieten in Wien: StVO &amp; Kosten</a></li>
+  <li><a href="/ratgeber/kunst-antiquitaetentransport-wien-wertanrechnung/">Kunst- &amp; Antiquitätentransport Wien: Spezialverpackung</a></li>
+  <li><a href="/ratgeber/sperrmuell-entsorgung-niederoesterreich-burgenland/">Sperrmüll &amp; Entsorgung in Niederösterreich &amp; Burgenland</a></li>
+  <li><a href="/ratgeber/betriebskostenabrechnung-auszug-oesterreich/">Betriebskostenabrechnung beim Auszug in Österreich</a></li>
+</ul>
+
+<h3 id="bereich-a-recht-nachlass-und-finanzierung">Bereich A: Recht, Nachlass und Finanzierung</h3>
+
+<ul>
+  <li><a href="/ratgeber/haushaltsaufloesung-todesfall/">Wohnungsauflösung nach Todesfall in Wien</a></li>
+  <li><a href="/ratgeber/nachlassverbindlichkeiten-wohnungsaufloesung/">Nachlassverbindlichkeiten bei Wohnungsauflösung</a></li>
+  <li><a href="/ratgeber/umzugskosten-oesterreich-sparen/">Entrümpelung steuerlich absetzen in Wien</a></li>
+  <li><a href="/ratgeber/delogierung-zwangsraeumung-wien-vermieter/">Delogierung &amp; Zwangsräumung Wien | Hilfe für Vermieter</a></li>
+  <li><a href="/ratgeber/entruempelung-mietnomaden-wien/">Entrümpelung nach Mietnomaden in Wien: Rechte &amp; Kosten</a></li>
+  <li><a href="/ratgeber/verlassenschaftsankauf-notar-wien/">Verlassenschaftsankauf &amp; Notarablauf in Wien</a></li>
+</ul>
+
+<h3 id="bereich-b-lokale-praxis-und-ma-48">Bereich B: Lokale Praxis und MA 48</h3>
+
+<ul>
+  <li><a href="/ratgeber/ma48-mistplatz-checkliste/">MA 48 Mistplatz: Regeln, Abfallwege und Checkliste</a></li>
+  <li><a href="/ratgeber/gebrauchte-moebel-verkaufen-wien/">Möbel bewerten in Wien: Schrott oder verkaufbar?</a></li>
+  <li><a href="/ratgeber/garagenraeumung-wien-sondermuell/">Garagenräumung in Wien: Sondermüll &amp; Reifen entsorgen</a></li>
+  <li><a href="/ratgeber/schwerlastentsorgung-tresor-klavier-wien/">Schwerlastentsorgung Wien: Tresore &amp; Klaviere räumen</a></li>
+</ul>
+
+<h3 id="bereich-c-entscheidung-und-kosten">Bereich C: Entscheidung und Kosten</h3>
+
+<ul>
+  <li><a href="/ratgeber/ma48-vs-firma/">MA 48 oder Räumungsfirma?</a></li>
+  <li><a href="/ratgeber/was-kostet-eine-haushaltsaufloesung/">Was kostet eine Wohnungsauflösung in Wien?</a></li>
+  <li><a href="/ratgeber/dauer-haushaltsaufloesung-zeitplan-wien/">Wie lange dauert eine Wohnungsauflösung in Wien? (Zeitplan)</a></li>
+  <li><a href="/ratgeber/wertanrechnung-vs-willhaben-verkauf-wien/">Wertanrechnung vs. Willhaben-Verkauf bei Wohnungsräumungen in Wien: Ein Kosten-Zeit-Vergleich</a></li>
+  <li><a href="/ratgeber/verlassenschaften-wien-schaetzen-wertanrechnung/">Verlassenschaften in Wien richtig schätzen: Was ist Müll, was ist wertvoll?</a></li>
+</ul>
+
+<h3 id="weitere-stark-nachgefragte-themen">Weitere stark nachgefragte Themen</h3>
+
+<ul>
+  <li><a href="/ratgeber/checkliste-wohnungsraeumung-7-schritte/">Die perfekte Checkliste für die Wohnungsräumung</a></li>
+  <li><a href="/ratgeber/wertanrechnung-guide/">Wertanrechnung Leitfaden</a></li>
+  <li><a href="/ratgeber/ablauf-entruempelung-wertanrechnung-wiener-altbau/">Ablauf einer Entrümpelung mit Wertanrechnung im Wiener Altbau: Logistik, Halteverbote &amp; MA 48</a></li>
+  <li><a href="/ratgeber/express-entruempelung-container-logistik/">Express Entrümpelung und Containerlogistik</a></li>
+  <li><a href="/ratgeber/sperrmuell-abholung-wien/">Sperrmüll-Abholung in Wien</a></li>
+  <li><a href="/ratgeber/raeumung-wien-uebergabeprotokoll/">Räumung Wien: Übergabeprotokoll und besenrein</a></li>
+  <li><a href="/ratgeber/raeumung-wien-5-fatale-fehler/">Räumung Wien: 5 fatale Fehler bei Entrümpelungsfirmen</a></li>
+  <li><a href="/ratgeber/firmenauflesung-bueroraeumung-wien-dsgvo/">Firmenauflösung &amp; Büroräumung in Wien: DSGVO &amp; Verwertung</a></li>
+  <li><a href="/ratgeber/messie-wohnung-aufloesen/">Messie-Wohnung entrümpeln: Diskretion &amp; Ablauf in Wien</a></li>
+  <li><a href="/ratgeber/entruempelung-gemeindebau-wiener-wohnen/">Entrümpelung im Gemeindebau: Tipps für die Rückgabe</a></li>
+  <li><a href="/ratgeber/entruempelung-vor-sanierung-wien/">Entrümpelung vor der Sanierung: Was muss raus?</a></li>
+  <li><a href="/ratgeber/altbauwohnung-raeumung-wien-logistik-Wertanrechnung/">Altbauwohnung Räumung in Wien: Kosten, Logistik &amp; Wertanrechnung</a></li>
+  <li><a href="/ratgeber/uebersiedlung-pflegeheim-wohnungsaufloesung-wien/">Übersiedlung ins Pflegeheim: Wohnungsauflösung in Wien diskret organisieren</a></li>
+  <li><a href="/ratgeber/bibliothek-sammlungen-aufloesen-wien/">Ganze Bibliothek &amp; Sammlungen auflösen in Wien: Spenden, verkaufen oder anrechnen lassen?</a></li>
+</ul>
+
+<h3 id="spezial-räumungen--aktuelles">Spezial-Räumungen &amp; Aktuelles</h3>
+
+<ul>
+  <li><a href="/ratgeber/kleingarten-schrebergarten-raeumung-wien/">Kleingarten &amp; Schrebergarten Räumung in Wien: Diskret, Schnell &amp; Besenrein</a></li>
+  <li><a href="/ratgeber/entruempelung-brand-wasserschaden-wien/">Entrümpelung nach Brand- oder Wasserschaden in Wien: Schnelle Hilfe</a></li>
+  <li><a href="/ratgeber/kostenfallen-entruempelung-wien-lockangebote/">Kostenfallen bei Entrümpelungen in Wien: Vorsicht vor Lockangeboten</a></li>
+  <li><a href="/ratgeber/entruempelung-auswanderung-umzug-ausland-wien/">Entrümpelung bei Auswanderung aus Wien: Stressfrei ins Ausland</a></li>
+  <li><a href="/ratgeber/hotel-gastronomie-raeumung-gewerbe-wien/">Hotel- &amp; Gastronomie Räumung in Wien: Gewerbe-Entrümpelung</a></li>
+</ul>
+
+<h3 id="weitere-themen-und-checklisten">Weitere Themen und Checklisten</h3>
+
+<ul>
+  <li><a href="/ratgeber/ma48-entruempelung-kosten-ablauf/">MA 48 Entrümpelung Wien: Kosten, Ablauf &amp; Alternativen</a></li>
+  <li><a href="/ratgeber/ma48-Wertanrechnung-entrumpelung-wien/">Entrümpelung Wien MA 48 + Wertanrechnung</a></li>
+  <li><a href="/ratgeber/entruempelungsangebot-wien-ma48/">Entrümpelungsangebot Wien: MA 48 oder Wertanrechnung?</a></li>
+  <li><a href="/ratgeber/nachhaltig-entrumpeln-wien/">Nachhaltig entrümpeln Wien - Wertanrechnung, Spenden &amp; Recycling</a></li>
+  <li><a href="/ratgeber/geschaeftslokal-raeumung-wien/">Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis</a></li>
+  <li><a href="/ratgeber/verkaufen-spenden-recycling/">Alte Schätze verwerten - Verkaufen, Spenden &amp; Recycling Tipps</a></li>
+  <li><a href="/ratgeber/kellerraeumung-wien-kosten-feuchtigkeit/">Kellerräumung Wien | Kosten, Ablauf, Problemstoffe</a></li>
+  <li><a href="/ratgeber/richtig-ausmisten/">Richtig ausmisten - Platz schaffen mit Profi Entrümpelung</a></li>
+  <li><a href="/ratgeber/entruempelungsdienst-oder-entruempelungsfirma/">Entrümpelung - Entrümpelungsdienst oder Räumungsfirma wählen</a></li>
+  <li><a href="/ratgeber/wohnungsraeumung-senioren/">Wohnungsräumung Senioren Wien - Sanfter Umzug &amp; Wertanrechnung</a></li>
+  <li><a href="/ratgeber/entruempelung-oesterreich-standorte/">Entrümpelung Österreichweit - Neue Standorte &amp; Notdienst</a></li>
+  <li><a href="/ratgeber/zimmer-raeumung-wien-wg-uebergabe/">Zimmer Räumung Wien | WG-Übergabe, Zeitplan, Fixpreis</a></li>
+  <li><a href="/ratgeber/checkliste-haushaltsaufloesung/">Checkliste Wohnungsauflösung - Schritt für Schritt in Wien</a></li>
+  <li><a href="/ratgeber/herbst-entrumpelung-ma48/">Herbst Entrümpelung Wien - MA 48 Termine &amp; Fixpreis</a></li>
+  <li><a href="/ratgeber/winter-entrumpelung-vorbereiten/">Entrümpelung vor Winter - Checkliste für Wien &amp; Umgebung</a></li>
+  <li><a href="/ratgeber/haushaltsaufloesung-todesfall/">Wohnungsauflösung nach Todesfall Wien - Ablauf &amp; Checkliste</a></li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+        </main>
+        
+
+
+<footer class="bg-[#0b1f3a] text-white border-t border-[#1e3a5f]/50">
+  <div class="container mx-auto px-4 md:px-6 py-14 md:py-16">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 max-w-6xl mx-auto">
+      <div id="kontakt" class="lg:col-span-4 space-y-4">
+        <a href="/sicherumzug/" class="inline-flex items-center gap-2.5 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1f3a] rounded-lg">
+          <span class="sr-only">Sicher Team</span>
+          <img src="/sicherumzug/logo.svg" alt="Sicher Team Logo" title="Sicher Team" class="h-10 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="40" height="40" />
+          <span class="flex items-center text-xl font-black tracking-tight whitespace-nowrap">
+            <span class="text-white">SICHER</span>
+            <span class="ml-0.5 bg-gradient-to-r from-[#fb923c] to-[#ea580c] bg-clip-text text-transparent">TEAM</span>
+          </span>
+        </a>
+        <p class="text-sm text-[#94a3b8] leading-relaxed max-w-sm">Sicherteam Umzug & Räumung e.U. — staatlich konzessionierter Fachbetrieb für Umzug, Räumung und Entrümpelung. Fixpreis, Wertanrechnung &amp; All-Risk-Versicherung.</p>
+        <address class="space-y-2.5 text-sm text-[#94a3b8] not-italic">
+          <p class="flex items-start gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current mt-0.5" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><span>Wildgartenallee 1, 1120 Wien</span></p>
+          <p class="flex items-center gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>Tel: <a class="hover:text-[#fb923c] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded px-1" href="tel:+436606060775">+43 660 6060775</a></p>
+          <p class="flex items-center gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>Email: <a class="hover:text-[#fb923c] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded px-1" href="mailto:office@sicher-umzug.at">office@sicher-umzug.at</a></p>
+        </address>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Leistungen</h3>
+        <ul class="mt-4 space-y-2 text-sm list-none m-0 p-0">
+          
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/privatumzug/">Privatumzug</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/umzug-wien/">Umzug Wien</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/hausumzug/">Hausumzug</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/raeumung/">Räumung</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/entruempelung-wien/">Entrümpelung</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/umzug-oesterreich/">Umzug Österreich</a></li>
+          
+          <li class="pt-2"><a class="text-[#fb923c] hover:text-white font-bold" href="/sicherumzug/leistungen/">Alle Leistungen →</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="lg:col-span-3">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Standorte</h3>
+        <ul class="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-sm list-none m-0 p-0">
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/tirol/">Professioneller Umzug & Übersiedlung in Tirol</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/wien/">Professioneller Umzug & Übersiedlung in Wien</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/niederoesterreich/">Professioneller Umzug & Übersiedlung in Niederösterreich</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/burgenland/">Professioneller Umzug & Übersiedlung in Burgenland</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/oberoesterreich/">Professioneller Umzug & Übersiedlung in Oberösterreich</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/salzburg/">Professioneller Umzug & Übersiedlung in Salzburg</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/steiermark/">Professioneller Umzug & Übersiedlung in Steiermark</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/kaernten/">Professioneller Umzug & Übersiedlung in Kärnten</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/vorarlberg/">Professioneller Umzug & Übersiedlung in Vorarlberg</a></li>
+          
+        </ul>
+        <a class="mt-3 inline-block text-sm text-[#fb923c] hover:text-white font-bold" href="/sicherumzug/bezirke/">Alle Standorte →</a>
+      </div>
+      
+
+      <div class="lg:col-span-3">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Unternehmen</h3>
+        <ul class="mt-4 space-y-2 text-sm list-none m-0 p-0">
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ablauf/">Ablauf</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/preise/">Preise</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ratgeber/">Ratgeber</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ueber-uns/">Über Uns</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/angebot/">Gratis Angebot</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/impressum/">Impressum</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/datenschutz/">Datenschutz</a></li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q20-22 36-47.5t26.5-53q10.5-27.5 16-56.5t5.5-59q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"/></svg>
+          </a>
+          
+          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6a8580]">
+      <p class="m-0">© <span id="current-year"></span> Sicherteam Umzug & Räumung e.U.. Alle Rechte vorbehalten.</p>
+      <p class="m-0">Marke: Sicher Team</p>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Sticky Bottom Bar -->
+<div class="fixed bottom-0 inset-x-0 z-50 md:hidden no-print" role="navigation" aria-label="Schnellkontakt">
+  <div class="sticky-cta-bar p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-8px_rgba(15,23,42,0.18)] flex gap-2.5">
+    <a href="tel:+436606060775" class="flex-1 inline-flex items-center justify-center gap-2 min-h-[48px] rounded-xl bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white font-bold text-[11px] uppercase tracking-wider shadow-md shadow-orange-500/25 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2 transition-transform">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+      <span>Anrufen</span>
+    </a>
+    <a href="https://wa.me/436606060775" class="flex-1 inline-flex items-center justify-center gap-2 min-h-[48px] rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] uppercase tracking-wider shadow-md shadow-emerald-700/20 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 transition-transform">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</div>
+
+        <div id="mobile-menu" class="fixed inset-0 z-50 hidden flex-col bg-[#0b1f3a] text-white xl:hidden" data-mobile-menu>
+  <div class="flex items-center justify-between gap-4 border-b border-[#1e3a5f]/40 px-4 py-3">
+    <a href="/sicherumzug/" class="flex items-center gap-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-lg">
+      <span class="sr-only">Sicher Team</span>
+      <img src="/sicherumzug/logo.svg" alt="Sicher Team" class="h-9 w-9 object-contain" width="36" height="36" />
+      <span class="font-extrabold tracking-wide"><span class="text-white">SICHER</span><span class="text-[#ea580c]">TEAM</span></span>
+    </a>
+    <button id="mobile-menu-close" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] transition-opacity" onclick="mobileMenuToggle()" aria-label="Menü schließen">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-5 py-5 space-y-2">
+    <div>
+      <button class="flex w-full items-center justify-between border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" aria-expanded="false" aria-controls="mobile-services" onclick="toggleSubMenu(this, 'mobile-services')">
+        <span>Leistungen</span>
+        <svg class="w-5 h-5 shrink-0 transition-transform duration-200 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+      </button>
+      <div id="mobile-services" role="region" class="hidden space-y-4 pt-3 pl-1">
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Kernleistungen</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/privatumzug/" onclick="mobileMenuToggle()">Privatumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/umzug-wien/" onclick="mobileMenuToggle()">Umzug Wien</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/hausumzug/" onclick="mobileMenuToggle()">Hausumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/raeumung/" onclick="mobileMenuToggle()">Räumung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/entruempelung-wien/" onclick="mobileMenuToggle()">Entrümpelung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/umzug-oesterreich/" onclick="mobileMenuToggle()">Umzug Österreich</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/auslandsumzug/" onclick="mobileMenuToggle()">Fernumzug / Ausland</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Gewerbe</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/firmenumzug-wien/" onclick="mobileMenuToggle()">Firmen- & Büroumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/firmenaufloesung/" onclick="mobileMenuToggle()">Firmenauflösung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/archivumzug/" onclick="mobileMenuToggle()">Archiv- & Aktenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/#category-gewerbe" onclick="mobileMenuToggle()">Alle Gewerbe-Leistungen</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Premium & Spezial</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/wohlfuehl-umzug/" onclick="mobileMenuToggle()">Wohlfühl-Umzug (Full-Service)</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/premium-logistik/" onclick="mobileMenuToggle()">Premium Logistik & Montage</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/moebelmontage/" onclick="mobileMenuToggle()">Möbelmontage</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/seniorenumzug/" onclick="mobileMenuToggle()">Seniorenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/studentenumzug/" onclick="mobileMenuToggle()">Studentenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/express-notdienst/" onclick="mobileMenuToggle()">Express Notdienst</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Wertanrechnung</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/gratis-entruempelung/" onclick="mobileMenuToggle()">Gratis Entrümpelung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/gratis-raeumung/" onclick="mobileMenuToggle()">Gratis Räumung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/antiquitaeten-ankauf/" onclick="mobileMenuToggle()">Antiquitäten Wertanrechnung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/moebel-ankauf/" onclick="mobileMenuToggle()">Möbel Wertanrechnung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/" onclick="mobileMenuToggle()">Alle Leistungen</a></li>
+            
+          </ul>
+        </div>
+        
+        <a class="inline-flex items-center gap-1 text-sm font-semibold text-[#fb923c]" href="/sicherumzug/leistungen/" onclick="mobileMenuToggle()">Alle Leistungen <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+      </div>
+    </div>
+
+    <div>
+      <button class="flex w-full items-center justify-between border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" aria-expanded="false" aria-controls="mobile-districts" onclick="toggleSubMenu(this, 'mobile-districts')">
+        <span>Standorte</span>
+        <svg class="w-5 h-5 shrink-0 transition-transform duration-200 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+      </button>
+      <div id="mobile-districts" role="region" class="hidden space-y-1 pt-3 pl-1 text-sm border-l border-[#1e3a5f]/40 ml-1 pl-3">
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 font-bold text-white" href="/sicherumzug/bundesland/wien/" onclick="mobileMenuToggle()">Wien</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/niederoesterreich/" onclick="mobileMenuToggle()">Niederösterreich</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/burgenland/" onclick="mobileMenuToggle()">Burgenland</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/steiermark/" onclick="mobileMenuToggle()">Steiermark</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/oberoesterreich/" onclick="mobileMenuToggle()">Oberösterreich</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/salzburg/" onclick="mobileMenuToggle()">Salzburg</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/kaernten/" onclick="mobileMenuToggle()">Kärnten</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/tirol/" onclick="mobileMenuToggle()">Tirol</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/vorarlberg/" onclick="mobileMenuToggle()">Vorarlberg</a>
+        
+        <a class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#fb923c]" href="/sicherumzug/bezirke/" onclick="mobileMenuToggle()">Alle Standorte <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+      </div>
+    </div>
+
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ablauf/" onclick="mobileMenuToggle()">Ablauf</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/preise/" onclick="mobileMenuToggle()">Preise</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/bewertungen/" onclick="mobileMenuToggle()">Bewertungen</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ratgeber/" onclick="mobileMenuToggle()">Ratgeber</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ueber-uns/" onclick="mobileMenuToggle()">Über Uns</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/angebot/" onclick="mobileMenuToggle()">Kontakt</a>
+    
+  </div>
+  <div class="border-t border-[#1e3a5f]/40 p-5 bg-[#0b1f3a] space-y-3">
+    <a class="btn-primary w-full" href="/sicherumzug/angebot/" onclick="mobileMenuToggle()">Fixpreis-Angebot</a>
+    <a class="btn-ghost-light w-full text-sm" href="tel:+436606060775" onclick="mobileMenuToggle()">+43 660 6060775</a>
+  </div>
+</div>
+
+      </div>
+      <script src="/sicherumzug/assets/js/site.js?v=1788612160" defer></script>
+    </div>
+  </body>
+</html>

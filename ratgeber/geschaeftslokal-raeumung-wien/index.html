@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="de-AT" class="light">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#0b1f3a"/>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #f8fafc;
+        min-height: 100vh;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      [data-mobile-menu] { display: none; }
+      [data-mobile-menu]:not(.hidden) { display: flex; }
+      h1[data-hero-heading] {
+        font-size: 1.875rem;
+        line-height: 1.15;
+        font-weight: 800;
+        margin: 0;
+        color: #0b1f3a;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        max-width: 100%;
+      }
+      @media (min-width: 640px) {
+        h1[data-hero-heading] { font-size: 2.25rem; }
+      }
+      @media (min-width: 768px) {
+        h1[data-hero-heading] { font-size: 2.75rem; }
+      }
+      @media (min-width: 1280px) {
+        h1[data-hero-heading] { font-size: 3.35rem; }
+      }
+      /* Split hero: only media-column images fill the frame.
+         Do NOT target all [data-hero-banner] img — that blew up WhatsApp icons. */
+      [data-hero-banner] {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+      }
+      [data-hero-banner]:not(:has(.hero-split)) {
+        position: relative;
+        min-height: 42vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        overflow: hidden;
+      }
+      [data-hero-banner]:not(:has(.hero-split))::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        background-image: linear-gradient(rgba(11, 31, 58, 0.5), rgba(11, 31, 58, 0.82));
+      }
+      [data-hero-banner]:not(:has(.hero-split)) picture {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      [data-hero-banner]:not(:has(.hero-split)) .container {
+        position: relative;
+        z-index: 20;
+      }
+      .hero-split {
+        display: grid;
+        gap: 0;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+      }
+      @media (min-width: 1024px) {
+        .hero-split {
+          grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+          min-height: auto;
+          max-height: 520px;
+        }
+      }
+      .hero-split__copy,
+      .hero-split__media {
+        min-width: 0;
+        max-width: 100%;
+      }
+      .hero-split__media {
+        position: relative;
+        min-height: 220px;
+        max-height: min(42vh, 360px);
+        overflow: hidden;
+      }
+      @media (min-width: 1024px) {
+        .hero-split__media {
+          min-height: 100%;
+          max-height: 520px;
+        }
+      }
+      /* Only the photo in the media column — never icons / CTAs */
+      .hero-split__media > picture {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-split__media > picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      img.icon-wa {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
+        display: inline-block;
+        flex-shrink: 0;
+        object-fit: contain;
+      }
+      [data-mega-panel] {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, visibility .2s ease;
+      }
+      [data-mega-panel]::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        height: 20px;
+      }
+      .group:hover > [data-mega-panel],
+      .group:focus-within > [data-mega-panel] {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="/sicherumzug/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/sicherumzug/favicon.svg"/>
+    <link rel="shortcut icon" href="/sicherumzug/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/sicherumzug/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Sicher Team"/>
+    <link rel="manifest" href="/sicherumzug/site.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/sicherumzug/assets/css/main.css"/>
+    
+    
+    
+
+
+<title>Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis</title>
+<meta name="description"
+  content="Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sicher Team">
+
+<link rel="canonical" href="https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/">
+<link rel="alternate" hreflang="de-at" href="https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/" />
+<link rel="alternate" hreflang="de" href="https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/" />
+<link rel="alternate" hreflang="x-default" href="https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis">
+<meta property="og:description"
+  content="Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht.">
+<meta property="og:url" content="https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://omercelik.github.io/sicherumzug/sicherumzug/assets/images/generated/hero-street.webp">
+<meta property="og:image:alt" content="Sicher Team im Einsatz">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis">
+<meta name="twitter:description"
+  content="Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht.">
+<meta name="twitter:image" content="https://omercelik.github.io/sicherumzug/sicherumzug/assets/images/generated/hero-street.webp">
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://sicher-umzug.at/#organization",
+  "name": "Sicher Team",
+  "url": "https://omercelik.github.io/sicherumzug/",
+  "logo": "https://omercelik.github.io/sicherumzug/sicherumzug/logo.svg",
+  "description": "Sicher Team ist Ihr voll versicherter Partner für Umzug & Übersiedlung in ganz Österreich. 100% Fixpreis, All-Risk-Transportversicherung & geschultes Fachpersonal.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+43 660 6060775",
+    "contactType": "customer service",
+    "availableLanguage": ["German"]
+  },
+  
+  
+  
+  "sameAs": [
+    
+      "https://www.facebook.com/profile.php?id=61582785665791",
+    
+      "https://www.instagram.com/sicherteam"
+    
+  ]
+}
+</script>
+
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://sicher-umzug.at/#website",
+  "url": "https://omercelik.github.io/sicherumzug/",
+  "name": "Professioneller Umzug & Übersiedlung in Österreich | Sicher Team",
+  "publisher": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "inLanguage": "de-AT"
+}
+</script>
+
+<!-- WebPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/#webpage",
+  "url": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/",
+  "name": "Geschäftslokal räumen Wien | Rückbau, Übergabe, Fixpreis",
+  "isPartOf": {
+    "@id": "https://sicher-umzug.at/#website"
+  },
+  "about": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "description": "Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht."
+}
+</script>
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/#article",
+  "headline": "Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis",
+  "description": "Leitfaden für Geschäftslokale in Wien: Terminplanung, Rückbau, Entsorgungsnachweise und wie der Fixpreis entsteht.",
+  "datePublished": "2026-01-08",
+  "dateModified": "2026-01-08",
+  "author": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "publisher": {
+    "@id": "https://sicher-umzug.at/#organization"
+  },
+  "mainEntityOfPage": {
+    "@id": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/#webpage"
+  },
+  "articleSection": "Ratgeber",
+  "keywords": ""
+}
+</script>
+
+
+<!-- Breadcrumb Navigation Schema -->
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://omercelik.github.io/sicherumzug/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ratgeber",
+      "item": "https://omercelik.github.io/sicherumzug/ratgeber/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis",
+      "item": "https://omercelik.github.io/sicherumzug/ratgeber/geschaeftslokal-raeumung-wien/"
+    }
+    
+  ]
+}
+</script>
+
+
+    <!-- GDPR Consent Management -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{
+    'ad_storage':'denied',
+    'ad_user_data':'denied',
+    'ad_personalization':'denied',
+    'analytics_storage':'denied'
+  });
+</script>
+
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#ea580c] focus:text-white focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 transition-all">
+      Zum Hauptinhalt springen
+    </a>
+    <div class="bg-background-light font-body text-text-light">
+    
+      <div class="relative flex min-h-screen flex-col overflow-x-hidden pb-28 md:pb-0">
+        <!-- Compact trust strip -->
+<div class="site-announcement py-2 select-none">
+  <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1 text-[11px] font-semibold tracking-wide text-white/90">
+    <span>100% Fixpreis — schriftlich</span>
+    <span class="hidden sm:inline">All-Risk bis €1.000.000</span>
+    <span class="hidden md:inline">Wien · NÖ · Österreichweit</span>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 site-header shadow-sm">
+  <div class="container mx-auto px-4">
+    <div class="flex h-16 items-center justify-between gap-4">
+
+      <a
+        href="/sicherumzug/"
+        class="flex items-center gap-2.5 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2"
+      >
+        <span class="sr-only">Sicher Team</span>
+        <img
+          src="/sicherumzug/logo.svg"
+          alt="Sicher Team Logo"
+          title="Sicher Team"
+          class="h-10 w-10 max-h-10 max-w-10 object-contain shrink-0"
+          width="40"
+          height="40"
+        />
+        <span class="flex items-center text-lg sm:text-xl font-extrabold tracking-wide leading-none whitespace-nowrap text-[color:var(--text-primary)]">
+          <span>SICHER</span>
+          <span class="ml-0.5 text-[color:var(--brand-orange)]">TEAM</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-1 text-sm font-semibold xl:flex" aria-label="Hauptnavigation">
+        <div class="group relative">
+          <button class="flex items-center gap-1 py-3 text-[color:var(--text-secondary)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-services">
+            Leistungen
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+          <div id="mega-panel-services" role="region" aria-label="Leistungen Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-[560px] -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-6 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+            <div class="grid grid-cols-2 gap-6">
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Kernleistungen</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/privatumzug/">Privatumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/umzug-wien/">Umzug Wien</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/hausumzug/">Hausumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/raeumung/">Räumung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/entruempelung-wien/">Entrümpelung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/umzug-oesterreich/">Umzug Österreich</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/auslandsumzug/">Fernumzug / Ausland</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Gewerbe</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/firmenumzug-wien/">Firmen- & Büroumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/firmenaufloesung/">Firmenauflösung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/archivumzug/">Archiv- & Aktenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/#category-gewerbe">Alle Gewerbe-Leistungen</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Premium & Spezial</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/wohlfuehl-umzug/">Wohlfühl-Umzug (Full-Service)</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/premium-logistik/">Premium Logistik & Montage</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/moebelmontage/">Möbelmontage</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/seniorenumzug/">Seniorenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/studentenumzug/">Studentenumzug</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/express-notdienst/">Express Notdienst</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Wertanrechnung</p>
+                <ul class="mt-3 space-y-1.5 text-sm">
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/gratis-entruempelung/">Gratis Entrümpelung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/gratis-raeumung/">Gratis Räumung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/antiquitaeten-ankauf/">Antiquitäten Wertanrechnung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/moebel-ankauf/">Möbel Wertanrechnung</a>
+                  </li>
+                  
+                  <li>
+                    <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)]" href="/sicherumzug/leistungen/">Alle Leistungen</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--border-light)] pt-4 text-sm">
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/leistungen/">Alle Leistungen →</a>
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/preise/">Preise ansehen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <button class="flex items-center gap-1 py-3 text-[color:var(--text-secondary)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-districts">
+            Standorte
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+          <div id="mega-panel-districts" role="region" aria-label="Standorte Untermenü" class="invisible absolute left-1/2 z-30 mt-1 w-72 -translate-x-1/2 rounded-2xl bg-white border border-[color:var(--border-light)] p-4 text-[color:var(--text-secondary)] opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100" data-mega-panel>
+            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-orange-dark)]">Bundesländer</p>
+            <ul class="space-y-1.5 text-sm columns-2 gap-x-4">
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] font-bold text-[color:var(--text-primary)]" href="/sicherumzug/bundesland/wien/">Wien</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/niederoesterreich/">Niederösterreich</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/burgenland/">Burgenland</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/steiermark/">Steiermark</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/oberoesterreich/">Oberösterreich</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/salzburg/">Salzburg</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/kaernten/">Kärnten</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/tirol/">Tirol</a>
+              </li>
+              
+              <li>
+                <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1 transition-colors block py-1 text-[color:var(--text-secondary)] " href="/sicherumzug/bundesland/vorarlberg/">Vorarlberg</a>
+              </li>
+              
+            </ul>
+            <div class="mt-4 border-t border-[color:var(--border-light)] pt-3 text-sm">
+              <a class="inline-flex items-center gap-1 text-[color:var(--brand-orange-dark)] hover:text-[color:var(--brand-orange)] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded px-1" href="/sicherumzug/bezirke/">Alle Standorte →</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ablauf/">Ablauf</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/preise/">Preise</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/bewertungen/">Bewertungen</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ratgeber/">Ratgeber</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/ueber-uns/">Über Uns</a>
+        
+        <a class="hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md px-2.5 transition-colors py-3 text-[color:var(--text-secondary)]" href="/sicherumzug/angebot/">Kontakt</a>
+        
+
+        <a href="tel:+436606060775" class="ml-1 inline-flex items-center gap-1.5 px-2.5 py-3 text-[color:var(--text-primary)] hover:text-[color:var(--brand-orange)] font-bold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] rounded-md" aria-label="Anrufen +43 660 6060775">
+          <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          <span class="hidden 2xl:inline">+43 660 6060775</span>
+        </a>
+
+        <a class="ml-1 rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white font-bold px-5 py-2.5 shadow-md shadow-orange-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2" href="/sicherumzug/angebot/">
+          Fixpreis-Angebot
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2 xl:hidden">
+        <a href="tel:+436606060775" class="hidden sm:inline-flex items-center justify-center h-10 w-10 rounded-full border border-[color:var(--border-light)] text-[color:var(--text-primary)] hover:border-[color:var(--brand-orange)] hover:text-[color:var(--brand-orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" aria-label="Anrufen">
+          <svg class="w-[18px] h-[18px] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        </a>
+        <a href="/sicherumzug/angebot/" class="hidden sm:inline-flex rounded-full bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white text-xs font-bold px-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]">
+          Angebot
+        </a>
+        <button id="mobile-menu-open" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-[color:var(--text-primary)] bg-[color:var(--surface-soft)] hover:bg-[color:var(--border-light)] active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)]" onclick="mobileMenuToggle()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+        <main id="main" tabindex="-1" class="flex-1 min-h-[60vh] focus:outline-none" role="main">
+          <div class="fixed top-0 left-0 w-full h-1 z-50 bg-slate-900/10 dark:bg-slate-800/30 pointer-events-none" id="reading-progress-container" role="progressbar" aria-label="Lesefortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div id="reading-progress" class="h-full bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 transition-[width] duration-150 ease-out shadow-sm" style="width: 0%;"></div>
+</div>
+<script>
+(function() {
+  var container = document.getElementById('reading-progress-container');
+  var progressBar = document.getElementById('reading-progress');
+  if (!container || !progressBar) return;
+  var ticking = false;
+
+  function updateProgress() {
+    var scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollTotal > 0) {
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var rawProgress = (scrollPosition / scrollTotal) * 100;
+      var clampedProgress = Math.min(100, Math.max(0, rawProgress));
+      var roundedVal = Math.round(clampedProgress);
+
+      progressBar.style.width = clampedProgress + '%';
+      container.setAttribute('aria-valuenow', roundedVal);
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
+
+
+<section class="relative bg-slate-950 text-white min-h-[40vh] flex flex-col pt-28 md:pt-32 overflow-hidden">
+  <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
+  <div class="absolute inset-0 z-0 hero-glow pointer-events-none"></div>
+  <div class="relative z-20 w-full">
+    
+<div class="w-full">
+<nav class="w-full z-40 py-2" aria-label="Breadcrumb">
+  <div class="container mx-auto px-4 md:px-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300 overflow-x-auto whitespace-nowrap scrollbar-none">
+    <a href="/sicherumzug/" aria-label="Startseite" class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded px-1 transition-colors flex items-center gap-1">
+      <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+      <span>Home</span>
+    </a>
+    <svg class="w-4 h-4 shrink-0 text-slate-400 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+
+    
+    
+
+    
+      
+    
+      
+        
+        
+          
+          
+          
+          
+          
+          <a href="/sicherumzug/ratgeber/" class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded px-1 transition-colors">Ratgeber</a>
+          <svg class="w-4 h-4 shrink-0 text-slate-400 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+        
+      
+    
+      
+        
+        
+          <span class="text-white font-bold max-w-[200px] truncate" aria-current="page">Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis</span>
+        
+      
+    
+  </div>
+</nav>
+</div>
+
+
+  </div>
+  <div class="flex-grow flex flex-col justify-center pb-12">
+    <div class="container relative z-20 mx-auto px-4 md:px-6 py-10 md:py-16 text-white">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-orange-400">Ratgeber</p>
+        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-white tracking-tight" data-hero-heading>Geschäftslokal räumen lassen in Wien: Rückbau, Übergabe, Fixpreis</h1>
+
+        <div class="mt-6 flex flex-wrap justify-center items-center gap-4 text-sm text-slate-300">
+          <span>Aktualisiert am 08.01.2026</span>
+
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-700/50 bg-slate-800/50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-400 backdrop-blur-sm">
+            <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
+            Geprüft am 09.02.2026
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<article class="bg-white py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto max-w-3xl">
+      <div class="lg:grid lg:grid-cols-4 lg:gap-8 items-start">
+        <aside class="hidden lg:block lg:col-span-1 sticky top-24">
+          <div class="rounded-2xl bg-background-light p-5 border border-gray-100">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-3">Inhaltsverzeichnis</h3>
+            <div class="text-sm text-text-light hover:[&_a]:text-orange-500">
+              
+
+
+  <nav aria-label="Inhaltsverzeichnis">
+    <ul class="toc space-y-2">
+    
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#terminplan-rückwärts-denken" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Terminplan rückwärts denken</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#was-unter-rückbau-fällt" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Was unter Rückbau fällt</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#gastro-und-retail-besonderheiten" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Gastro und Retail: Besonderheiten</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#entsorgungsnachweise-und-dokumentation" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Entsorgungsnachweise und Dokumentation</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#fixpreis-für-geschäftslokale" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Fixpreis für Geschäftslokale</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#kombination-mit-firmenauflösung" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Kombination mit Firmenauflösung</a></li>
+        
+      
+    
+      
+        
+        
+
+        
+        
+
+        
+          <li class="toc-entry"><a href="#verwandte-links" class="inline-block hover:text-primary-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 rounded transition-colors">Angebot für Geschäftslokal Räumung</a></li>
+        
+      
+    
+    </ul>
+  </nav>
+
+
+            </div>
+          </div>
+        </aside>
+
+        <div class="lg:col-span-3 richtext" role="document">
+          <p>Wenn ein <strong>Geschäftslokal in Wien geräumt</strong> werden muss, zählen klare Termine und eine saubere Übergabe. Dieser Leitfaden zeigt, wie Rückbau, Entsorgung und Fixpreis zusammenpassen, ohne den Betrieb unnötig zu blockieren.</p>
+
+<h2 id="terminplan-rückwärts-denken">Terminplan rückwärts denken</h2>
+
+<ul>
+  <li><strong>Kündigungsdatum</strong> als Endpunkt setzen</li>
+  <li><strong>Inventarverkauf</strong> oder Wertanrechnung frühzeitig prüfen</li>
+  <li><strong>Rückbau</strong> und Demontage einplanen</li>
+  <li><strong>Übergabeprotokoll</strong> mit dem Vermieter vorbereiten</li>
+</ul>
+
+<h2 id="was-unter-rückbau-fällt">Was unter Rückbau fällt</h2>
+
+<ul>
+  <li>Entfernung von Ladenbau, Regalen, Theken</li>
+  <li>Demontage von Leuchtreklamen und Beschilderung</li>
+  <li>Rückbau von Einbauten, Küche oder Sanitär</li>
+  <li>Entfernung von Bodenbelägen oder Abtrennungen</li>
+</ul>
+
+<p>Tipp: Die Kosten sinken, wenn Rückbau und Räumung in einem Termin kombiniert werden.</p>
+
+<h2 id="gastro-und-retail-besonderheiten">Gastro und Retail: Besonderheiten</h2>
+
+<ul>
+  <li>Kühlgeräte und Küchenequipment fachgerecht entsorgen</li>
+  <li>Fettabscheider, Abluft und Hygienezonen dokumentieren</li>
+  <li>Sperrige Teile vorher demontieren, um das Stiegenhaus zu schonen</li>
+</ul>
+
+<p>Mehr dazu im Service <a href="/leistungen/gastronomie-raeumung/">Gastro &amp; Retail Räumung</a>.</p>
+
+<h2 id="entsorgungsnachweise-und-dokumentation">Entsorgungsnachweise und Dokumentation</h2>
+
+<p>Bei Gewerbeflächen sind oft Nachweise nötig, etwa für Elektrogeräte, Metalle oder Problemstoffe. Eine professionelle Räumung dokumentiert die Entsorgung und erleichtert die Abnahme.</p>
+
+<h2 id="fixpreis-für-geschäftslokale">Fixpreis für Geschäftslokale</h2>
+
+<p>Der Fixpreis hängt ab von:</p>
+
+<ul>
+  <li>Fläche und Menge der Einrichtung</li>
+  <li>Rückbauumfang und Demontage</li>
+  <li>Sondermüll und Elektrogeräte</li>
+  <li>Tragewegen, Ladezonen und Halteverbot</li>
+  <li>Zeitdruck vor der Übergabe</li>
+</ul>
+
+<h2 id="kombination-mit-firmenauflösung">Kombination mit Firmenauflösung</h2>
+
+<p>Wenn neben dem Lokal auch Büro oder Lager geräumt werden, lohnt sich eine kombinierte Planung. Details im Service <a href="/leistungen/firmenaufloesung/">Firmen- &amp; Büroauflösung</a>.</p>
+
+<h2 id="angebot-für-geschäftslokal-räumung">Angebot für Geschäftslokal Räumung</h2>
+
+<p>Senden Sie Fotos oder einen kurzen Rundgang per <a href="https://wa.me/436606060775">WhatsApp +43 660 6060775</a> oder nutzen Sie das <a href="/angebot/">Angebotsformular</a>. Wir melden uns mit Fixpreis und einem realistischen Zeitplan.</p>
+
+<h3 id="die-bedeutung-einer-detaillierten-planung">Die Bedeutung einer detaillierten Planung</h3>
+
+<p>Unabhängig von der spezifischen Aufgabenstellung ist eine gründliche Vorab-Planung der Schlüssel zum Erfolg. Ein häufiger Fehler ist es, den Arbeits- und Zeitaufwand zu unterschätzen. Beginnen Sie frühzeitig mit der Organisation. Erstellen Sie Checklisten und Zeitpläne, um den Überblick zu behalten. Definieren Sie klare Meilensteine: Wann muss was erledigt sein? Wer ist für welche Aufgabe verantwortlich?</p>
+
+<p>Es ist ratsam, sich einen kleinen Puffer für unvorhergesehene Verzögerungen einzuplanen. Bedenken Sie auch logistische Aspekte: Sind ausreichend Verpackungsmaterialien vorhanden? Ist die Zufahrt zum Gebäude für größere Fahrzeuge gewährleistet? Müssen Parkverbotszonen bei der zuständigen Gemeinde beantragt werden? Eine strukturierte Herangehensweise reduziert nicht nur den Stress, sondern minimiert auch das Risiko von Fehlern und vermeidbaren Zusatzkosten. Je detaillierter Sie planen, desto reibungsloser wird der eigentliche Ablauf funktionieren.</p>
+
+<h3 id="häufige-fehler-und-wie-sie-sie-vermeiden">Häufige Fehler und wie Sie sie vermeiden</h3>
+
+<p>Im Eifer des Gefechts passieren leicht Fehler, die sich im Nachhinein als teuer oder zeitaufwendig erweisen können. Ein klassisches Beispiel ist falsches oder unzureichendes Verpacken. Wenn zerbrechliche Gegenstände nicht richtig gepolstert oder schwere Dinge in zu schwachen Kartons verstaut werden, sind Schäden vorprogrammiert. Verwenden Sie daher immer hochwertiges Verpackungsmaterial und investieren Sie ausreichend Zeit in das sorgfältige Einpacken.</p>
+
+<p>Ein weiterer typischer Fehler ist die fehlende Dokumentation. Besonders bei wertvollen Gegenständen oder bei der Übergabe von Räumlichkeiten sollten Sie den Zustand vor und nach den Arbeiten genau dokumentieren. Machen Sie Fotos und halten Sie wichtige Absprachen schriftlich fest. Das schützt Sie im Falle von Unstimmigkeiten oder Schadensersatzforderungen. Vermeiden Sie auch, wichtige Dokumente, Schlüssel oder Wertsachen in unbeschrifteten Kartons zu verstauen. Diese sollten Sie immer separat aufbewahren und am besten persönlich transportieren.</p>
+
+<h3 id="der-wert-professioneller-unterstützung">Der Wert professioneller Unterstützung</h3>
+
+<p>Viele Menschen versuchen, aus Kostengründen alles in Eigenregie zu erledigen. Das ist verständlich, kann aber schnell an die physischen und psychischen Grenzen führen. Die Beauftragung von Profis mag auf den ersten Blick teurer erscheinen, zahlt sich aber oft aus. Fachkräfte verfügen über die nötige Erfahrung, das richtige Equipment und die erforderliche Routine, um Aufgaben effizient und sicher zu erledigen.</p>
+
+<p>Profis wissen, wie man schwere Lasten rückenschonend trägt, wie empfindliche Oberflächen geschützt werden und wie komplexe logistische Herausforderungen gemeistert werden. Zudem sind sie in der Regel versichert, was Ihnen im Schadensfall viel Ärger erspart. Überlegen Sie sich genau, welche Aufgaben Sie selbst übernehmen können und wo Sie besser auf Experten vertrauen sollten. Oftmals ist eine Kombination aus Eigenleistung und professioneller Hilfe der ideale Weg, um Kosten und Aufwand in Balance zu halten.</p>
+
+<h3 id="checkliste-für-einen-reibungslosen-ablauf">Checkliste für einen reibungslosen Ablauf</h3>
+
+<p>Um Ihnen die Organisation zu erleichtern, haben wir eine allgemeine Checkliste zusammengestellt. Diese Punkte sollten Sie in jedem Fall berücksichtigen:</p>
+
+<ol>
+  <li><strong>Bedarfsermittlung:</strong> Was genau muss erledigt werden? Erfassen Sie den kompletten Umfang der Aufgabe.</li>
+  <li><strong>Budgetplanung:</strong> Welche Kosten kommen voraussichtlich auf Sie zu? Holen Sie rechtzeitig Angebote ein und vergleichen Sie diese.</li>
+  <li><strong>Zeitplan erstellen:</strong> Setzen Sie realistische Deadlines für die einzelnen Arbeitsschritte.</li>
+  <li><strong>Helfer organisieren:</strong> Klären Sie frühzeitig, wer Sie aus Familie und Freundeskreis unterstützen kann.</li>
+  <li><strong>Behördengänge erledigen:</strong> Müssen Halteverbote beantragt oder Ummeldungen vorgenommen werden?</li>
+  <li><strong>Material besorgen:</strong> Kümmern Sie sich rechtzeitig um ausreichend Kartons, Klebeband, Polstermaterial und Werkzeug.</li>
+  <li><strong>Sortieren und Ausmisten:</strong> Trennen Sie sich vorab von Dingen, die Sie nicht mehr benötigen. Das spart Zeit und Platz.</li>
+  <li><strong>Kommunikation sichern:</strong> Informieren Sie alle Beteiligten (Nachbarn, Hausverwaltung etc.) über den geplanten Ablauf.</li>
+  <li><strong>Wichtiges separat packen:</strong> Bewahren Sie Dokumente, Wertsachen und Dinge des täglichen Bedarfs griffbereit in einer extra Tasche auf.</li>
+  <li><strong>Abschlusskontrolle:</strong> Gehen Sie am Ende noch einmal alles durch, um sicherzustellen, dass nichts vergessen wurde.</li>
+</ol>
+
+<h3 id="fazit-mit-struktur-zum-ziel">Fazit: Mit Struktur zum Ziel</h3>
+
+<p>Jedes größere Projekt, sei es eine Umgestaltung, eine Räumung oder ein Standortwechsel, ist eine Herausforderung. Mit der richtigen Einstellung, einer detaillierten Planung und gegebenenfalls der Unterstützung durch erfahrene Experten lassen sich diese Aufgaben jedoch sehr gut bewältigen. Behalten Sie das Ziel im Auge, arbeiten Sie strukturiert Ihre Checklisten ab und bewahren Sie Ruhe, auch wenn nicht alles exakt nach Plan läuft.</p>
+
+<p>Denken Sie daran: Jeder abgeschlossene Schritt bringt Sie Ihrem Ziel näher. Nutzen Sie die Gelegenheit, sich von altem Ballast zu befreien und Platz für Neues zu schaffen. Wir hoffen, dieser Ratgeber hat Ihnen wertvolle Impulse und praktische Hilfestellungen für Ihr Vorhaben gegeben. Bei weiteren Fragen oder dem Wunsch nach professioneller Unterstützung stehen wir Ihnen selbstverständlich gerne mit Rat und Tat zur Seite.</p>
+
+<h3 id="verwandte-links">Verwandte Links</h3>
+<ul>
+  <li><a href="/ratgeber/wertanrechnung-guide/">Wertanrechnung Guide</a></li>
+  <li><a href="/leistungen/haushaltsaufloesung/">Haushaltsauflösung</a></li>
+  <li><a href="/leistungen/kellerraeumung/">Kellerräumung</a></li>
+</ul>
+
+        </div>
+      </div>
+
+      
+      <div class="mt-8 rounded-3xl border border-gray-200 bg-background-light p-6">
+        <p class="text-xs font-semibold uppercase tracking-widest text-gray-600">Nächster Schritt</p>
+        <div class="mt-3 flex flex-wrap gap-3">
+          <a href="/sicherumzug/leistungen/entruempelung-wien/" class="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition">
+            Entrümpelung Wien
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+          <a href="/sicherumzug/angebot/" class="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-primary-light transition">
+            Kostenloses Angebot
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<section class="bg-background-light py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold text-primary">Weiterführende Leistungen</h2>
+        <ul class="mt-4 space-y-2 text-sm text-primary">
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/entruempelungsfirma/">Räumungsfirma & Entrümpelungsfirma</a></li>
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/hausumzug/">Hausumzug & Privatumzug</a></li>
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/tresortransport/">Tresortransport</a></li>
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/spezialtransporte/">Spezialtransporte & Schwerlast</a></li>
+          
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/altwaren-ankauf/">Altwaren Ankauf? Wertanrechnung nur mit Entrümpelung</a></li>
+          
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/antiquitaeten-ankauf/">Antiquitäten Ankauf? Wertanrechnung mit Entrümpelung</a></li>
+          
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/archivumzug/">Akten- & Archivumzug Wien | Diskrete & Sichere B2B Logistik</a></li>
+          
+          <li><a class="font-semibold hover:text-gray-800" href="/sicherumzug/leistungen/auslandsumzug/">Auslandsumzug Österreich | Internationaler Umzug</a></li>
+          
+        </ul>
+      </div>
+      <div class="rounded-3xl bg-white p-6 shadow-xl">
+        <h2 class="text-xl font-bold text-primary">Fixpreis anfordern</h2>
+        <form id="contactForm" enctype="multipart/form-data" class="space-y-4">
+  <input type="hidden" name="subject" value="Neue Anfrage über die Website"/>
+  <div>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-name">Name*</label>
+    <input id="form-name" name="name" required type="text" class="form-field" placeholder="Max Mustermann" autocomplete="name"/>
+  </div>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <div>
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-email">E-Mail (optional)</label>
+      <input id="form-email" name="email" type="email" class="form-field" placeholder="max@example.com" autocomplete="email"/>
+    </div>
+    <div>
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-phone">Telefon*</label>
+      <input id="form-phone" name="phone" required type="tel" class="form-field" placeholder="+43 660 6060775" autocomplete="tel"/>
+    </div>
+  </div>
+  <div>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-postcode">PLZ*</label>
+    <input id="form-postcode" name="postcode" required type="text" pattern="[0-9]{4}" inputmode="numeric" maxlength="4" class="form-field" placeholder="1010" autocomplete="postal-code"/>
+  </div>
+  <div>
+    <div class="flex justify-between items-center">
+      <label class="text-sm font-bold text-[#0b1f3a]" for="form-message">Kurzbeschreibung (optional)</label>
+      <span id="form-message-counter" class="text-xs text-text-muted" aria-live="polite">0 / 1000</span>
+    </div>
+    <textarea id="form-message" name="message" rows="4" maxlength="1000" class="form-field" placeholder="Umzug von … nach …? Zimmerzahl, Terminwunsch, Räumung dabei?"></textarea>
+  </div>
+  <div>
+    <label class="text-sm font-bold text-[#0b1f3a]" for="form-photos">Fotos (optional)</label>
+    <input id="form-photos" name="photos[]" type="file" multiple accept="image/*" class="form-field file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-[#fff7ed] file:text-[#c2410c] hover:file:bg-[#f1f5f9]"/>
+    <div id="file-preview-container" class="mt-2 grid grid-cols-4 gap-2 empty:hidden"></div>
+    <p class="mt-1.5 text-xs text-text-muted m-0">Alternativ können Sie Fotos später per WhatsApp senden.</p>
+  </div>
+  <div class="pt-1 space-y-3">
+    <button type="submit" class="btn-primary w-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-700 focus-visible:ring-offset-2">
+      Jetzt kostenloses Angebot sichern
+    </button>
+    <p class="text-xs text-text-muted text-center m-0">Wir melden uns innerhalb eines Werktags mit einem Terminvorschlag.</p>
+    <p class="text-xs text-text-muted text-center m-0">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben (inkl. optionaler Fotos) gemäß unserer <a href="/sicherumzug/datenschutz/" class="underline hover:text-[#9a3412] font-semibold">Datenschutzerklärung</a> zu.</p>
+  </div>
+</form>
+
+<div id="formResponse" class="mt-4 text-center text-sm font-bold"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-12 border-t border-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-extrabold text-primary">Weitere Ratgeber & Fachthemen</h2>
+      <a href="/sicherumzug/ratgeber/" class="text-sm font-semibold text-primary hover:text-orange-600 transition">Alle Beiträge →</a>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <article class="flex h-full flex-col rounded-2xl border border-gray-200 bg-background-light p-5 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+          <h3 class="mt-2 text-base font-bold text-primary flex-1"><a href="/sicherumzug/ratgeber/gratis-entruempelung-wien/" class="hover:text-orange-600 transition">Gratis Entrümpelung in Wien: Überblick mit MA 48 & Wertanrechnung</a></h3>
+          <p class="mt-2 text-xs text-text-light line-clamp-2">Wie Sie MA 48, Spenden und Wertanrechnung kombinieren, um die Entrümpelung in Wien deutlich zu ve...</p>
+          <a href="/sicherumzug/ratgeber/gratis-entruempelung-wien/" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-orange-600 transition">
+            Lesen <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+        </article>
+        
+      
+        
+        <article class="flex h-full flex-col rounded-2xl border border-gray-200 bg-background-light p-5 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary-accent">Kosten</p>
+          <h3 class="mt-2 text-base font-bold text-primary flex-1"><a href="/sicherumzug/ratgeber/gratis-raeumung-wertanrechnung/" class="hover:text-orange-600 transition">Gratis Räumung Wien mit Wertanrechnung</a></h3>
+          <p class="mt-2 text-xs text-text-light line-clamp-2">Wie Ankauf und Wertanrechnung eine Wohnungsauflösung finanzieren: Foto-Check, Beispiele, Wertetre...</p>
+          <a href="/sicherumzug/ratgeber/gratis-raeumung-wertanrechnung/" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-orange-600 transition">
+            Lesen <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+        </article>
+        
+      
+        
+        <article class="flex h-full flex-col rounded-2xl border border-gray-200 bg-background-light p-5 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary-accent">Ratgeber</p>
+          <h3 class="mt-2 text-base font-bold text-primary flex-1"><a href="/sicherumzug/ratgeber/haftung-umzugsschaeden-oesterreich-spedition/" class="hover:text-orange-600 transition">Haftung bei Umzugsschäden in Österreich: Privathelfer vs. Profi</a></h3>
+          <p class="mt-2 text-xs text-text-light line-clamp-2">Wer haftet bei Schäden beim Umzug? Unterschiede zwischen privaten Umzugshelfern & Spedition, Tran...</p>
+          <a href="/sicherumzug/ratgeber/haftung-umzugsschaeden-oesterreich-spedition/" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-orange-600 transition">
+            Lesen <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+        </article>
+        
+      
+        
+        <article class="flex h-full flex-col rounded-2xl border border-gray-200 bg-background-light p-5 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary-accent">Logistik</p>
+          <h3 class="mt-2 text-base font-bold text-primary flex-1"><a href="/sicherumzug/ratgeber/halteverbot-entrumpelung-wien/" class="hover:text-orange-600 transition">Halteverbot für die Entrümpelung in Wien beantragen</a></h3>
+          <p class="mt-2 text-xs text-text-light line-clamp-2">Schritt-für-Schritt-Anleitung für Halteverbotszonen bei Wohnungsauflösungen inklusive Fristen, Ko...</p>
+          <a href="/sicherumzug/ratgeber/halteverbot-entrumpelung-wien/" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-orange-600 transition">
+            Lesen <svg class="w-4 h-4 shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
+          </a>
+        </article>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+        </main>
+        
+
+
+<footer class="bg-[#0b1f3a] text-white border-t border-[#1e3a5f]/50">
+  <div class="container mx-auto px-4 md:px-6 py-14 md:py-16">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 max-w-6xl mx-auto">
+      <div id="kontakt" class="lg:col-span-4 space-y-4">
+        <a href="/sicherumzug/" class="inline-flex items-center gap-2.5 group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1f3a] rounded-lg">
+          <span class="sr-only">Sicher Team</span>
+          <img src="/sicherumzug/logo.svg" alt="Sicher Team Logo" title="Sicher Team" class="h-10 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="40" height="40" />
+          <span class="flex items-center text-xl font-black tracking-tight whitespace-nowrap">
+            <span class="text-white">SICHER</span>
+            <span class="ml-0.5 bg-gradient-to-r from-[#fb923c] to-[#ea580c] bg-clip-text text-transparent">TEAM</span>
+          </span>
+        </a>
+        <p class="text-sm text-[#94a3b8] leading-relaxed max-w-sm">Sicherteam Umzug & Räumung e.U. — staatlich konzessionierter Fachbetrieb für Umzug, Räumung und Entrümpelung. Fixpreis, Wertanrechnung &amp; All-Risk-Versicherung.</p>
+        <address class="space-y-2.5 text-sm text-[#94a3b8] not-italic">
+          <p class="flex items-start gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current mt-0.5" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><span>Wildgartenallee 1, 1120 Wien</span></p>
+          <p class="flex items-center gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>Tel: <a class="hover:text-[#fb923c] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded px-1" href="tel:+436606060775">+43 660 6060775</a></p>
+          <p class="flex items-center gap-2 m-0"><svg class="w-[18px] h-[18px] shrink-0 text-[#fb923c] fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>Email: <a class="hover:text-[#fb923c] font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded px-1" href="mailto:office@sicher-umzug.at">office@sicher-umzug.at</a></p>
+        </address>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Leistungen</h3>
+        <ul class="mt-4 space-y-2 text-sm list-none m-0 p-0">
+          
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/privatumzug/">Privatumzug</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/umzug-wien/">Umzug Wien</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/hausumzug/">Hausumzug</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/raeumung/">Räumung</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/entruempelung-wien/">Entrümpelung</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/leistungen/umzug-oesterreich/">Umzug Österreich</a></li>
+          
+          <li class="pt-2"><a class="text-[#fb923c] hover:text-white font-bold" href="/sicherumzug/leistungen/">Alle Leistungen →</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="lg:col-span-3">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Standorte</h3>
+        <ul class="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-sm list-none m-0 p-0">
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/tirol/">Professioneller Umzug & Übersiedlung in Tirol</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/wien/">Professioneller Umzug & Übersiedlung in Wien</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/niederoesterreich/">Professioneller Umzug & Übersiedlung in Niederösterreich</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/burgenland/">Professioneller Umzug & Übersiedlung in Burgenland</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/oberoesterreich/">Professioneller Umzug & Übersiedlung in Oberösterreich</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/salzburg/">Professioneller Umzug & Übersiedlung in Salzburg</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/steiermark/">Professioneller Umzug & Übersiedlung in Steiermark</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/kaernten/">Professioneller Umzug & Übersiedlung in Kärnten</a></li>
+          
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5 " href="/sicherumzug/bundesland/vorarlberg/">Professioneller Umzug & Übersiedlung in Vorarlberg</a></li>
+          
+        </ul>
+        <a class="mt-3 inline-block text-sm text-[#fb923c] hover:text-white font-bold" href="/sicherumzug/bezirke/">Alle Standorte →</a>
+      </div>
+      
+
+      <div class="lg:col-span-3">
+        <h3 class="text-xs font-bold text-[#fb923c] uppercase tracking-[0.14em] m-0">Unternehmen</h3>
+        <ul class="mt-4 space-y-2 text-sm list-none m-0 p-0">
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ablauf/">Ablauf</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/preise/">Preise</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ratgeber/">Ratgeber</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/ueber-uns/">Über Uns</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/angebot/">Gratis Angebot</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/impressum/">Impressum</a></li>
+          <li><a class="text-[#94a3b8] hover:text-[#fb923c] transition-colors block py-0.5" href="/sicherumzug/datenschutz/">Datenschutz</a></li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="https://www.facebook.com/profile.php?id=61582785665791" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q20-22 36-47.5t26.5-53q10.5-27.5 16-56.5t5.5-59q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"/></svg>
+          </a>
+          
+          <a class="text-[#7a9a94] hover:text-[#fb923c] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-full p-1 inline-flex" href="" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6a8580]">
+      <p class="m-0">© <span id="current-year"></span> Sicherteam Umzug & Räumung e.U.. Alle Rechte vorbehalten.</p>
+      <p class="m-0">Marke: Sicher Team</p>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Sticky Bottom Bar -->
+<div class="fixed bottom-0 inset-x-0 z-50 md:hidden no-print" role="navigation" aria-label="Schnellkontakt">
+  <div class="sticky-cta-bar p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-8px_rgba(15,23,42,0.18)] flex gap-2.5">
+    <a href="tel:+436606060775" class="flex-1 inline-flex items-center justify-center gap-2 min-h-[48px] rounded-xl bg-[color:var(--brand-orange)] hover:bg-[color:var(--brand-orange-hover)] text-white font-bold text-[11px] uppercase tracking-wider shadow-md shadow-orange-500/25 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--brand-orange)] focus-visible:ring-offset-2 transition-transform">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+      <span>Anrufen</span>
+    </a>
+    <a href="https://wa.me/436606060775" class="flex-1 inline-flex items-center justify-center gap-2 min-h-[48px] rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] uppercase tracking-wider shadow-md shadow-emerald-700/20 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 transition-transform">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</div>
+
+        <div id="mobile-menu" class="fixed inset-0 z-50 hidden flex-col bg-[#0b1f3a] text-white xl:hidden" data-mobile-menu>
+  <div class="flex items-center justify-between gap-4 border-b border-[#1e3a5f]/40 px-4 py-3">
+    <a href="/sicherumzug/" class="flex items-center gap-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] rounded-lg">
+      <span class="sr-only">Sicher Team</span>
+      <img src="/sicherumzug/logo.svg" alt="Sicher Team" class="h-9 w-9 object-contain" width="36" height="36" />
+      <span class="font-extrabold tracking-wide"><span class="text-white">SICHER</span><span class="text-[#ea580c]">TEAM</span></span>
+    </a>
+    <button id="mobile-menu-close" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c] transition-opacity" onclick="mobileMenuToggle()" aria-label="Menü schließen">
+      <svg class="w-[18px] h-[18px] shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-5 py-5 space-y-2">
+    <div>
+      <button class="flex w-full items-center justify-between border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" aria-expanded="false" aria-controls="mobile-services" onclick="toggleSubMenu(this, 'mobile-services')">
+        <span>Leistungen</span>
+        <svg class="w-5 h-5 shrink-0 transition-transform duration-200 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+      </button>
+      <div id="mobile-services" role="region" class="hidden space-y-4 pt-3 pl-1">
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Kernleistungen</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/privatumzug/" onclick="mobileMenuToggle()">Privatumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/umzug-wien/" onclick="mobileMenuToggle()">Umzug Wien</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/hausumzug/" onclick="mobileMenuToggle()">Hausumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/raeumung/" onclick="mobileMenuToggle()">Räumung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/entruempelung-wien/" onclick="mobileMenuToggle()">Entrümpelung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/umzug-oesterreich/" onclick="mobileMenuToggle()">Umzug Österreich</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/auslandsumzug/" onclick="mobileMenuToggle()">Fernumzug / Ausland</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Gewerbe</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/firmenumzug-wien/" onclick="mobileMenuToggle()">Firmen- & Büroumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/firmenaufloesung/" onclick="mobileMenuToggle()">Firmenauflösung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/archivumzug/" onclick="mobileMenuToggle()">Archiv- & Aktenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/#category-gewerbe" onclick="mobileMenuToggle()">Alle Gewerbe-Leistungen</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Premium & Spezial</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/wohlfuehl-umzug/" onclick="mobileMenuToggle()">Wohlfühl-Umzug (Full-Service)</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/premium-logistik/" onclick="mobileMenuToggle()">Premium Logistik & Montage</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/moebelmontage/" onclick="mobileMenuToggle()">Möbelmontage</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/seniorenumzug/" onclick="mobileMenuToggle()">Seniorenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/studentenumzug/" onclick="mobileMenuToggle()">Studentenumzug</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/express-notdienst/" onclick="mobileMenuToggle()">Express Notdienst</a></li>
+            
+          </ul>
+        </div>
+        
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-wider text-[#fb923c]/80">Wertanrechnung</p>
+          <ul class="space-y-1 text-sm border-l border-[#1e3a5f]/40 pl-3 list-none m-0 p-0">
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/gratis-entruempelung/" onclick="mobileMenuToggle()">Gratis Entrümpelung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/gratis-raeumung/" onclick="mobileMenuToggle()">Gratis Räumung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/antiquitaeten-ankauf/" onclick="mobileMenuToggle()">Antiquitäten Wertanrechnung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/moebel-ankauf/" onclick="mobileMenuToggle()">Möbel Wertanrechnung</a></li>
+            
+            <li><a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/leistungen/" onclick="mobileMenuToggle()">Alle Leistungen</a></li>
+            
+          </ul>
+        </div>
+        
+        <a class="inline-flex items-center gap-1 text-sm font-semibold text-[#fb923c]" href="/sicherumzug/leistungen/" onclick="mobileMenuToggle()">Alle Leistungen <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+      </div>
+    </div>
+
+    <div>
+      <button class="flex w-full items-center justify-between border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" aria-expanded="false" aria-controls="mobile-districts" onclick="toggleSubMenu(this, 'mobile-districts')">
+        <span>Standorte</span>
+        <svg class="w-5 h-5 shrink-0 transition-transform duration-200 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+      </button>
+      <div id="mobile-districts" role="region" class="hidden space-y-1 pt-3 pl-1 text-sm border-l border-[#1e3a5f]/40 ml-1 pl-3">
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 font-bold text-white" href="/sicherumzug/bundesland/wien/" onclick="mobileMenuToggle()">Wien</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/niederoesterreich/" onclick="mobileMenuToggle()">Niederösterreich</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/burgenland/" onclick="mobileMenuToggle()">Burgenland</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/steiermark/" onclick="mobileMenuToggle()">Steiermark</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/oberoesterreich/" onclick="mobileMenuToggle()">Oberösterreich</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/salzburg/" onclick="mobileMenuToggle()">Salzburg</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/kaernten/" onclick="mobileMenuToggle()">Kärnten</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/tirol/" onclick="mobileMenuToggle()">Tirol</a>
+        
+        <a class="block py-1.5 text-[#cbd5e1] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1 " href="/sicherumzug/bundesland/vorarlberg/" onclick="mobileMenuToggle()">Vorarlberg</a>
+        
+        <a class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#fb923c]" href="/sicherumzug/bezirke/" onclick="mobileMenuToggle()">Alle Standorte <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
+      </div>
+    </div>
+
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ablauf/" onclick="mobileMenuToggle()">Ablauf</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/preise/" onclick="mobileMenuToggle()">Preise</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/bewertungen/" onclick="mobileMenuToggle()">Bewertungen</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ratgeber/" onclick="mobileMenuToggle()">Ratgeber</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/ueber-uns/" onclick="mobileMenuToggle()">Über Uns</a>
+    
+    <a class="block border-b border-[#1e3a5f]/40 py-3.5 text-base font-semibold text-[#e2e8f0] hover:text-[#fb923c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#fb923c]/50 rounded px-1" href="/sicherumzug/angebot/" onclick="mobileMenuToggle()">Kontakt</a>
+    
+  </div>
+  <div class="border-t border-[#1e3a5f]/40 p-5 bg-[#0b1f3a] space-y-3">
+    <a class="btn-primary w-full" href="/sicherumzug/angebot/" onclick="mobileMenuToggle()">Fixpreis-Angebot</a>
+    <a class="btn-ghost-light w-full text-sm" href="tel:+436606060775" onclick="mobileMenuToggle()">+43 660 6060775</a>
+  </div>
+</div>
+
+      </div>
+      <script src="/sicherumzug/assets/js/site.js?v=1788612160" defer></script>
+    </div>
+  </body>
+</html>
